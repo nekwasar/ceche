@@ -2,6 +2,8 @@
 
 > Enterprise-grade B2B domain discovery platform. 12 phases, ~90 days to production.
 
+> **Scaling Strategy:** See `docs/scaling-insights.md` for data pipeline strategy, caching architecture, and cost projections.
+
 ---
 
 ## Timeline Summary
@@ -334,11 +336,11 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 
 ---
 
-## Phase 4: Reveal & Payment System
+## Phase 4: Reveal, Payment & Lock-and-Reserve System
 **Duration:** Day 19-26
-**Goal:** Users pay to reveal hidden domain names
+**Goal:** Users pay to reveal hidden domain names, with anti-front-running lock mechanism
 
-### Backend
+### Backend — Domain Encryption
 - Tables: `reveals` (id, user_id, domain_hash, reveal_type, amount, paystack_ref, status, created_at)
 - Tables: `subscriptions` (id, user_id, plan, paystack_sub_id, status, current_period_end)
 - Domain name encryption: AES-256-GCM
@@ -353,6 +355,43 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
   - Partial: $5-10 (dynamic based on score)
   - Try Your Luck: $3-5
   - Full: additional $2-5
+
+### Backend — Lock-and-Reserve Architecture
+Anti-front-running mechanism ensuring no two users pay to unmask the same domain simultaneously.
+
+- Tables: `domain_locks` (id, user_id, domain_hash, listing_id, locked_at, expires_at, status)
+  - `status` enum: `active`, `expired`, `released`, `completed`
+  - Unique constraint on `domain_hash` WHERE `status = 'active'` (prevents double-lock)
+- RDAP Client:
+  - Real-time RDAP lookup for domain availability verification
+  - Free, structured JSON response from TLD registries
+  - 5-second timeout with fallback to DNS check
+  - Cache RDAP results for 1 hour (domain registration changes slowly)
+- Lock Flow:
+  1. User clicks masked domain → `POST /api/v1/locks`
+  2. Server runs RDAP check (real-time availability)
+  3. If available: create lock with 5-minute TTL
+  4. If already registered: return error, purge from marketplace feed
+  5. User completes payment within 5 minutes
+  6. On payment success: lock status → `completed`, domain revealed
+  7. If lock expires: status → `expired`, domain returns to feed
+- Lock Expiry Goroutine:
+  - Runs every 30 seconds
+  - Queries `domain_locks WHERE status = 'active' AND expires_at < NOW()`
+  - Updates status to `expired`
+  - Returns domain to available feed
+- RDAP Verification Endpoint:
+  - `GET /api/v1/health/check?domain=example.com`
+  - Returns: `{available: true/false, registrar: "...", expiry: "..."}`
+  - Used by frontend to verify availability before lock
+- Registration Handoff:
+  - After reveal, provide deep links to registrar partners:
+    - Dynadot: `https://www.dynadot.com/domain/search?domain={domain}`
+    - Namecheap: `https://www.namecheap.com/domains/registration/results?domain={domain}`
+    - Porkbun: `https://porkbun.com/checkout/search?q={domain}`
+  - Future: Direct registration via reseller APIs (NameSilo, OpenSRS)
+
+### Backend — Payment Integration
 - Paystack integration:
   - `POST /api/v1/reveals` → initialize transaction
   - `POST /api/v1/webhooks/paystack` → verify payment
@@ -370,8 +409,9 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 
 ### Frontend (app subdomain)
 - Reveal button with price display on scan results and marketplace
+- Lock countdown timer (5-minute checkout window)
 - Payment flow (Paystack checkout)
-- Reveal result page: full domain name
+- Reveal result page: full domain name + registration handoff links
 - Subscription management
 - Billing history
 
@@ -383,10 +423,15 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 - [ ] Partial reveal shows `c*****m.com`
 - [ ] Try Your Luck shows `????.com`
 - [ ] Full reveal shows complete name
+- [ ] RDAP check returns real-time availability
+- [ ] Lock acquired successfully (5-min TTL)
+- [ ] Second user cannot lock same domain (unique constraint)
+- [ ] Lock expiry goroutine purges expired locks
 - [ ] Payment webhook verifies signature
 - [ ] Idempotency prevents double charges
 - [ ] Credits decrement correctly
 - [ ] Subscription creation/cancellation works
+- [ ] Registration handoff links work
 
 ### Things to Avoid
 - Never log decrypted domain names
@@ -394,6 +439,9 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 - Don't skip webhook signature verification
 - Don't allow reveal without payment
 - Don't process webhooks synchronously (queue them)
+- Don't allow lock without RDAP verification
+- Don't skip lock expiry cleanup (memory leak)
+- Don't allow concurrent locks on same domain
 
 ---
 
@@ -481,8 +529,9 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 **Duration:** Day 39-48
 **Goal:** Buy domains directly through Ceche — split across www (teaser) and app (full)
 
-### Backend (shared)
+### Backend — Core Marketplace
 - Tables: `listings` (id, domain_hash, domain_encrypted, price, seller_id, status, featured, score, created_at)
+  - `status` enum: `active`, `sold`, `expired`, `pending_verification`, `suspended`
 - Tables: `orders` (id, listing_id, buyer_id, amount, paystack_ref, status, created_at)
 - Tables: `escrow` (id, order_id, amount, status, released_at)
 - Listing flow:
@@ -501,6 +550,43 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 - `POST /api/v1/orders` → purchase
 - `POST /api/v1/webhooks/paystack` → handle escrow
 
+### Backend — Seller Transition Pipeline
+Organic seller pipeline: after buyer acquires a domain, prompt them to list it for resale.
+
+- Tables: `seller_listings` (id, user_id, domain_hash, domain_encrypted, price, verification_status, listing_fee_paid, created_at)
+  - `verification_status` enum: `pending`, `verified`, `failed`, `expired`
+- Tables: `domain_verification` (id, listing_id, method, challenge_token, verified_at, expires_at)
+  - `method` enum: `txt_record`, `cname_record`
+- Post-Purchase Seller Prompt:
+  - After successful domain acquisition, show CTA: "Want to list this domain for resale?"
+  - One-click to seller submission portal
+  - Pre-fill domain data from purchase record
+- Domain Verification Flow:
+  1. User submits domain for listing
+  2. Server generates challenge token (e.g., `_ceche-verify=abc123`)
+  3. User adds TXT record or CNAME record to domain DNS
+  4. Server verifies DNS record (with 24h expiry)
+  5. On success: `verification_status` → `verified`
+  6. On failure: `verification_status` → `failed`, notify user
+- Listing Fee Calculator:
+  - Based on appraisal score:
+    - Score 90+: $0 listing fee (premium placement)
+    - Score 70-89: $9.99 listing fee
+    - Score 50-69: $19.99 listing fee
+    - Score < 50: $29.99 listing fee
+  - Listing fee payable via Paystack before listing goes live
+  - Non-refundable (covers verification + marketplace placement)
+- Seller Submission Portal:
+  - `POST /api/v1/seller/submit` → submit domain for listing
+  - `POST /api/v1/seller/verify` → initiate DNS verification
+  - `GET /api/v1/seller/listings` → list seller's submissions
+  - `DELETE /api/v1/seller/listings/:id` → remove listing
+- Admin Moderation:
+  - `GET /api/v1/admin/listings/pending` → pending submissions
+  - `POST /api/v1/admin/listings/:id/approve` → approve listing
+  - `POST /api/v1/admin/listings/:id/reject` → reject listing
+  - Admin notification via Brevo email
+
 ### Frontend — www subdomain (teaser)
 - `/marketplace` page: top 6-8 featured listings
 - Each listing shows: domain (partially hidden), score, price range, "Reveal to Buy" CTA
@@ -512,31 +598,49 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 ### Frontend — app subdomain (full)
 - `/marketplace` page: all listings with filters (score, price, TLD, category)
 - Domain detail page with appraisal + intelligence
-- Checkout flow (Paystack)
+- Checkout flow (Paystack) with lock-and-reserve countdown
 - Order history
 - Transfer status tracking
+- Seller portal: `/sell` page
+  - Submit domain form
+  - DNS verification instructions
+  - Listing status dashboard
+  - Listing fee payment
+- Post-purchase CTA: "List this domain for resale"
 - Fetches from `GET /api/v1/listings` with full query params
 
 ### Subdomain Integration
 - Same API endpoint, different query params per subdomain
 - Teaser page is public (no auth), full marketplace requires auth
 - After reveal, user can purchase domain
+- After purchase, seller prompt appears
 
 ### Verification Checklist
 - [ ] www marketplace shows top featured listings (no auth required)
 - [ ] app marketplace shows all listings (auth required)
+- [ ] Lock-and-reserve works with marketplace listings
 - [ ] Escrow holds funds correctly
 - [ ] Domain transfer verified
 - [ ] Funds released only after confirmation
 - [ ] All payments logged
 - [ ] Refund policy enforced (no refunds)
 - [ ] Teaser → signup conversion flow works
+- [ ] Seller can submit domain for listing
+- [ ] DNS verification works (TXT and CNAME)
+- [ ] Listing fee charged correctly
+- [ ] Admin moderation queue works
+- [ ] Post-purchase seller prompt appears
+- [ ] Seller listing status dashboard works
 
 ### Things to Avoid
 - Don't show full domain names on www teaser (partial reveal only)
 - Don't allow purchase without auth
 - Don't skip escrow step
 - Don't show sensitive order data on www
+- Don't allow listing without domain verification
+- Don't skip listing fee (quality filter)
+- Don't allow seller to list domains they don't own
+- Don't skip admin moderation (prevent junk listings)
 
 ---
 
