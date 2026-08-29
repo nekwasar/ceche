@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "platform": "Plataforma",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "pricing": "Precios",
+    "login": "Iniciar sesión",
+    "getStarted": "Comenzar"
+  },
+  "home": {
+    "title": "Encuentra dominios premium antes que nadie",
+    "subtitle": "Plataforma de descubrimiento, inteligencia y mercado de dominios",
+    "cta": "Comenzar",
+    "features": {
+      "appraiser": {
+        "title": "Evaluador de dominios",
+        "description": "Evalúa cualquier nombre de dominio con nuestro análisis de 15 módulos"
+      },
+      "scanner": {
+        "title": "Escáner de dominios",
+        "description": "Encuentra dominios premium disponibles antes que nadie"
+      },
+      "marketplace": {
+        "title": "Mercado de dominios",
+        "description": "Compra dominios premium con datos de inteligencia completos"
+      }
+    }
+  },
+  "platform": {
+    "title": "Plataforma",
+    "subtitle": "Descubrimiento, inteligencia y mercado de dominios"
+  },
+  "pricing": {
+    "title": "Precios simples y transparentes",
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "period": "para siempre",
+      "features": ["5 revelaciones/mes", "Evaluación básica", "Verificación de salud"]
+    },
+    "starter": {
+      "name": "Inicial",
+      "price": "$29",
+      "period": "/mes",
+      "features": ["50 revelaciones/mes", "Todos los tipos", "Alertas básicas"]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$49",
+      "period": "/mes",
+      "features": ["200 revelaciones/mes", "Todos los tipos", "Soporte prioritario"]
+    },
+    "enterprise": {
+      "name": "Empresarial",
+      "price": "$199",
+      "period": "/mes",
+      "features": ["Revelaciones ilimitadas", "Acceso API", "White-label"]
+    }
+  },
+  "footer": {
+    "product": "Producto",
+    "resources": "Recursos",
+    "company": "Empresa",
+    "legal": "Legal",
+    "copyright": "© 2026 Ceche. Todos los derechos reservados."
+  }
+}

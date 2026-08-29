@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "platform": "Plattform",
+    "solutions": "Lösungen",
+    "resources": "Ressourcen",
+    "pricing": "Preise",
+    "login": "Anmelden",
+    "getStarted": "Loslegen"
+  },
+  "home": {
+    "title": "Finden Sie Premium-Domains vor allen anderen",
+    "subtitle": "Domain-Entdeckungs-, Intelligenz- und Marktplattform",
+    "cta": "Loslegen",
+    "features": {
+      "appraiser": {
+        "title": "Domain-Bewerter",
+        "description": "Bewerten Sie jeden Domain-Namen mit unserer 15-Modul-Analyse"
+      },
+      "scanner": {
+        "title": "Domain-Scanner",
+        "description": "Finden Sie verfügbare Premium-Domains vor allen anderen"
+      },
+      "marketplace": {
+        "title": "Domain-Marktplatz",
+        "description": "Kaufen Sie Premium-Domains mit vollständigen Intelligenzdaten"
+      }
+    }
+  },
+  "platform": {
+    "title": "Plattform",
+    "subtitle": "Domain-Entdeckung, Intelligenz und Marktplatz"
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preise",
+    "free": {
+      "name": "Kostenlos",
+      "price": "0€",
+      "period": "für immer",
+      "features": ["5 Enthüllungen/Monat", "Basis-Bewertung", "Gesundheitscheck"]
+    },
+    "starter": {
+      "name": "Starter",
+      "price": "29€",
+      "period": "/Monat",
+      "features": ["50 Enthüllungen/Monat", "Alle Typen", "Basis-Alarme"]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "49€",
+      "period": "/Monat",
+      "features": ["200 Enthüllungen/Monat", "Alle Typen", "Prioritäts-Support"]
+    },
+    "enterprise": {
+      "name": "Unternehmen",
+      "price": "199€",
+      "period": "/Monat",
+      "features": ["Unbegrenzte Enthüllungen", "API-Zugang", "White-Label"]
+    }
+  },
+  "footer": {
+    "product": "Produkt",
+    "resources": "Ressourcen",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "copyright": "© 2026 Ceche. Alle Rechte vorbehalten."
+  }
+}

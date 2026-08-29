@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "platform": "Piattaforma",
+    "solutions": "Soluzioni",
+    "resources": "Risorse",
+    "pricing": "Prezzi",
+    "login": "Accedi",
+    "getStarted": "Inizia"
+  },
+  "home": {
+    "title": "Trova domini premium prima di tutti",
+    "subtitle": "Piattaforma di scoperta, intelligenza e mercato dei domini",
+    "cta": "Inizia",
+    "features": {
+      "appraiser": {
+        "title": "Valutatore di domini",
+        "description": "Valuta qualsiasi nome di dominio con la nostra analisi a 15 moduli"
+      },
+      "scanner": {
+        "title": "Scanner di domini",
+        "description": "Trova domini premium disponibili prima di tutti"
+      },
+      "marketplace": {
+        "title": "Mercato dei domini",
+        "description": "Acquista domini premium con dati di intelligenza completi"
+      }
+    }
+  },
+  "platform": {
+    "title": "Piattaforma",
+    "subtitle": "Scoperta, intelligenza e mercato dei domini"
+  },
+  "pricing": {
+    "title": "Prezzi semplici e trasparenti",
+    "free": {
+      "name": "Gratuito",
+      "price": "€0",
+      "period": "per sempre",
+      "features": ["5 rivelazioni/mese", "Valutazione base", "Controllo salute"]
+    },
+    "starter": {
+      "name": "Starter",
+      "price": "€29",
+      "period": "/mese",
+      "features": ["50 rivelazioni/mese", "Tutti i tipi", "Avvisi base"]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€49",
+      "period": "/mese",
+      "features": ["200 rivelazioni/mese", "Tutti i tipi", "Supporto prioritario"]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "€199",
+      "period": "/mese",
+      "features": ["Rivelazioni illimitate", "Accesso API", "White-label"]
+    }
+  },
+  "footer": {
+    "product": "Prodotto",
+    "resources": "Risorse",
+    "company": "Azienda",
+    "legal": "Legale",
+    "copyright": "© 2026 Ceche. Tutti i diritti riservati."
+  }
+}

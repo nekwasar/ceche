@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "platform": "平台",
+    "solutions": "解决方案",
+    "resources": "资源",
+    "pricing": "价格",
+    "login": "登录",
+    "getStarted": "开始使用"
+  },
+  "home": {
+    "title": "比任何人都更早找到优质域名",
+    "subtitle": "域名发现、智能分析和市场平台",
+    "cta": "开始使用",
+    "features": {
+      "appraiser": {
+        "title": "域名评估器",
+        "description": "使用我们的15模块分析为任何域名评分"
+      },
+      "scanner": {
+        "title": "域名扫描器",
+        "description": "比任何人都更早找到可用的优质域名"
+      },
+      "marketplace": {
+        "title": "域名市场",
+        "description": "使用完整的智能数据购买优质域名"
+      }
+    }
+  },
+  "platform": {
+    "title": "平台",
+    "subtitle": "域名发现、智能分析和市场"
+  },
+  "pricing": {
+    "title": "简单透明的定价",
+    "free": {
+      "name": "免费",
+      "price": "¥0",
+      "period": "永久",
+      "features": ["每月5次揭示", "基础评估", "健康检查"]
+    },
+    "starter": {
+      "name": "入门版",
+      "price": "¥29",
+      "period": "/月",
+      "features": ["每月50次揭示", "所有类型", "基础提醒"]
+    },
+    "pro": {
+      "name": "专业版",
+      "price": "¥49",
+      "period": "/月",
+      "features": ["每月200次揭示", "所有类型", "优先支持"]
+    },
+    "enterprise": {
+      "name": "企业版",
+      "price": "¥199",
+      "period": "/月",
+      "features": ["无限揭示", "API访问", "白标"]
+    }
+  },
+  "footer": {
+    "product": "产品",
+    "resources": "资源",
+    "company": "公司",
+    "legal": "法律",
+    "copyright": "© 2026 Ceche. 保留所有权利。"
+  }
+}
