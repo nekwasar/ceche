@@ -51,6 +51,11 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 			r.Post("/api-keys", handleCreateAPIKey(db))
 			r.Delete("/api-keys/{id}", handleDeleteAPIKey(db))
 			r.Get("/api-keys", handleListAPIKeys(db))
+
+			// Appraisals
+			r.Post("/appraise", handleAppraise(db))
+			r.Get("/appraisals", handleGetAppraisals(db))
+			r.Get("/appraisals/{id}", handleGetAppraisal(db))
 		})
 	})
 
