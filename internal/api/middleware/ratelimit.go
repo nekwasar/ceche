@@ -11,13 +11,40 @@ type RateLimiter struct {
 	requests map[string][]time.Time
 	limit    int
 	window   time.Duration
+	maxAge   time.Duration
 }
 
 func NewRateLimiter(limit int, window time.Duration) *RateLimiter {
-	return &RateLimiter{
+	rl := &RateLimiter{
 		requests: make(map[string][]time.Time),
 		limit:    limit,
 		window:   window,
+		maxAge:   window * 10,
+	}
+	go rl.cleanup()
+	return rl
+}
+
+func (rl *RateLimiter) cleanup() {
+	ticker := time.NewTicker(60 * time.Second)
+	for range ticker.C {
+		rl.mu.Lock()
+		now := time.Now()
+		cutoff := now.Add(-rl.maxAge)
+		for key, timestamps := range rl.requests {
+			valid := make([]time.Time, 0)
+			for _, t := range timestamps {
+				if t.After(cutoff) {
+					valid = append(valid, t)
+				}
+			}
+			if len(valid) == 0 {
+				delete(rl.requests, key)
+			} else {
+				rl.requests[key] = valid
+			}
+		}
+		rl.mu.Unlock()
 	}
 }
 

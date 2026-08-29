@@ -67,18 +67,23 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 
 		score, metrics := service.CalculateScore(req.Domain)
 
+		tld := ""
+		if idx := strings.LastIndex(req.Domain, "."); idx != -1 {
+			tld = req.Domain[idx+1:]
+		}
+
 		metricsJSON, _ := json.Marshal(map[string]interface{}{
-			"domain":            req.Domain,
-			"score":             score,
-			"metrics":           metrics,
-			"idempotency_key":   idempotencyKey,
+			"domain":          req.Domain,
+			"score":           score,
+			"metrics":         metrics,
+			"idempotency_key": idempotencyKey,
 		})
 
 		var appraisalID string
 		err := db.QueryRow(r.Context(),
-			`INSERT INTO appraisals (user_id, domain, score, metrics, idempotency_key)
-			 VALUES ($1, $2, $3, $4, $5) RETURNING id`,
-			userID, req.Domain, score, metricsJSON, idempotencyKey,
+			`INSERT INTO appraisals (user_id, domain, tld, score, metrics, idempotency_key)
+			 VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`,
+			userID, req.Domain, tld, score, metricsJSON, idempotencyKey,
 		).Scan(&appraisalID)
 		if err != nil {
 			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to save appraisal"}}`, http.StatusInternalServerError)

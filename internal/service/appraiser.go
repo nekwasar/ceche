@@ -6,11 +6,13 @@ import (
 )
 
 type ModuleResult struct {
-	Value    float64                `json:"value"`
-	Confidence float64              `json:"confidence"`
-	Data     map[string]interface{} `json:"data"`
-	Status   string                 `json:"status"`
+	Value      *float64              `json:"value"`
+	Confidence float64               `json:"confidence"`
+	Data       map[string]interface{} `json:"data"`
+	Status     string                `json:"status"`
 }
+
+func float64Ptr(v float64) *float64 { return &v }
 
 type AppraisalMetrics struct {
 	Domain            string                 `json:"domain"`
@@ -85,6 +87,99 @@ func isVowel(c byte) bool {
 	return vowels[c]
 }
 
+var commonWords = map[string]bool{
+	"go": true, "app": true, "web": true, "data": true, "net": true,
+	"cloud": true, "tech": true, "dev": true, "hub": true, "lab": true,
+	"box": true, "top": true, "pro": true, "max": true, "one": true,
+	"ai": true, "api": true, "bit": true, "pay": true, "buy": true,
+	"sell": true, "shop": true, "store": true, "market": true, "trade": true,
+	"crypto": true, "block": true, "chain": true, "meta": true, "open": true,
+	"fast": true, "quick": true, "easy": true, "smart": true, "blue": true,
+	"prime": true, "ultra": true, "mega": true, "super": true,
+	"pulse": true, "spark": true, "flow": true, "sync": true,
+	"core": true, "base": true, "flex": true, "zoom": true, "wave": true,
+	"access": true, "account": true, "agent": true, "analytics": true,
+	"archive": true, "audio": true, "auto": true, "backend": true,
+	"bank": true, "bill": true, "book": true, "build": true,
+	"business": true, "calendar": true, "camp": true, "capital": true,
+	"card": true, "care": true, "career": true, "cash": true,
+	"chat": true, "check": true, "city": true, "class": true,
+	"clean": true, "click": true, "client": true, "club": true,
+	"code": true, "college": true, "commerce": true, "company": true,
+	"connect": true, "consulting": true, "contact": true, "control": true,
+	"cook": true, "copy": true, "creative": true, "cube": true,
+	"currency": true, "customer": true, "dance": true, "deal": true,
+	"design": true, "digital": true, "direct": true, "docs": true,
+	"domain": true, "drive": true, "drop": true, "earn": true,
+	"education": true, "electric": true, "email": true, "engage": true,
+	"engine": true, "enterprise": true, "event": true, "exchange": true,
+	"express": true, "farm": true, "finance": true, "fit": true,
+	"fitness": true, "food": true, "foot": true, "frame": true,
+	"fresh": true, "fund": true, "fusion": true, "game": true,
+	"gear": true, "gift": true, "global": true, "golf": true,
+	"good": true, "green": true, "group": true, "growth": true,
+	"guard": true, "guide": true, "guru": true, "gym": true,
+	"health": true, "heart": true, "home": true, "hook": true,
+	"host": true, "house": true, "hunt": true, "ice": true,
+	"idea": true, "image": true, "inbox": true, "india": true,
+	"ink": true, "input": true, "insight": true, "instinct": true,
+	"institute": true, "insurance": true, "intern": true, "invest": true,
+	"io": true, "island": true, "jet": true, "job": true,
+	"join": true, "journal": true, "joy": true, "jump": true,
+	"justice": true, "keep": true, "key": true, "kid": true,
+	"kitchen": true, "lab": true, "land": true, "law": true,
+	"lawyer": true, "lead": true, "learn": true, "legal": true,
+	"life": true, "light": true, "link": true, "list": true,
+	"live": true, "loan": true, "local": true, "lock": true,
+	"logo": true, "love": true, "mail": true, "main": true,
+	"manage": true, "map": true, "margin": true, "mark": true,
+	"market": true, "media": true, "meet": true, "menu": true,
+	"merge": true, "metal": true, "mind": true, "mix": true,
+	"mobile": true, "mode": true, "money": true, "moon": true,
+	"mortgage": true, "motor": true, "music": true, "net": true,
+	"network": true, "news": true, "next": true, "node": true,
+	"note": true, "office": true, "online": true, "open": true,
+	"option": true, "oracle": true, "order": true, "organ": true,
+	"page": true, "paint": true, "pan": true, "park": true,
+	"partner": true, "path": true, "pay": true, "peer": true,
+	"phone": true, "photo": true, "piano": true, "pic": true,
+	"plan": true, "play": true, "pod": true, "point": true,
+	"pool": true, "pop": true, "power": true, "press": true,
+	"price": true, "print": true, "privacy": true, "private": true,
+	"profit": true, "project": true, "promo": true, "property": true,
+	"public": true, "publish": true, "quest": true, "quote": true,
+	"radio": true, "range": true, "rate": true, "read": true,
+	"real": true, "record": true, "recruit": true, "rent": true,
+	"report": true, "research": true, "resource": true, "rest": true,
+	"retail": true, "review": true, "ride": true, "risk": true,
+	"robot": true, "rock": true, "role": true, "room": true,
+	"root": true, "route": true, "run": true, "safe": true,
+	"sale": true, "salt": true, "sand": true, "save": true,
+	"scan": true, "school": true, "score": true, "search": true,
+	"secure": true, "select": true, "serve": true, "service": true,
+	"session": true, "set": true, "share": true, "ship": true,
+	"shop": true, "show": true, "side": true, "site": true,
+	"smart": true, "snap": true, "social": true, "solar": true,
+	"solution": true, "sonic": true, "source": true, "space": true,
+	"sport": true, "spot": true, "stage": true, "start": true,
+	"state": true, "stock": true, "store": true, "stream": true,
+	"studio": true, "style": true, "supply": true, "support": true,
+	"sync": true, "system": true, "tab": true, "talk": true,
+	"target": true, "task": true, "tax": true, "team": true,
+	"tech": true, "term": true, "test": true, "text": true,
+	"time": true, "tip": true, "today": true, "tool": true,
+	"top": true, "tour": true, "town": true, "track": true,
+	"trade": true, "train": true, "trend": true, "trip": true,
+	"truck": true, "trust": true, "tube": true, "tune": true,
+	"tv": true, "university": true, "up": true, "us": true,
+	"value": true, "video": true, "view": true, "village": true,
+	"vinyl": true, "visa": true, "vision": true, "voice": true,
+	"volume": true, "vote": true, "wage": true, "watch": true,
+	"water": true, "wave": true, "web": true, "week": true,
+	"weight": true, "wheel": true, "win": true, "wire": true,
+	"wise": true, "work": true, "world": true, "zone": true,
+}
+
 func CalculateScore(domain string) (int, AppraisalMetrics) {
 	domain = strings.ToLower(domain)
 	sld := domain
@@ -116,7 +211,7 @@ func CalculateScore(domain string) (int, AppraisalMetrics) {
 
 	estimatedValue, rangeLow, rangeHigh, breakdown := m15Pricing(sld, tld, words, modules)
 	modules["m15_pricing"] = ModuleResult{
-		Value: estimatedValue,
+		Value:      float64Ptr(estimatedValue),
 		Confidence: m13.Confidence,
 		Data: map[string]interface{}{
 			"estimated_value": estimatedValue,
@@ -146,7 +241,7 @@ func CalculateScore(domain string) (int, AppraisalMetrics) {
 
 func m1Rdap(domain string) ModuleResult {
 	return ModuleResult{
-		Value:      1.0,
+		Value:      float64Ptr(1.0),
 		Confidence: 0.5,
 		Data: map[string]interface{}{
 			"registered": false,
@@ -163,11 +258,11 @@ func m2TldTable(tld string) ModuleResult {
 		score = 0.2
 	}
 	return ModuleResult{
-		Value:      score,
+		Value:      float64Ptr(score),
 		Confidence: 1.0,
 		Data: map[string]interface{}{
-			"tld":         tld,
-			"tld_score":   score,
+			"tld":            tld,
+			"tld_score":      score,
 			"weight_profile": resolveTldProfile(score),
 		},
 		Status: "SUCCESS",
@@ -203,7 +298,7 @@ func m3Length(sld string) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      mult,
+		Value:      float64Ptr(mult),
 		Confidence: 1.0,
 		Data: map[string]interface{}{
 			"raw_length": length,
@@ -239,7 +334,7 @@ func m4WordCount(words ModuleResult) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      mult,
+		Value:      float64Ptr(mult),
 		Confidence: 1.0,
 		Data: map[string]interface{}{
 			"word_count": wordCount,
@@ -254,7 +349,7 @@ func m5Pronounceability(sld string) ModuleResult {
 	length := len(sld)
 	if length <= 2 {
 		return ModuleResult{
-			Value: 2.0, Confidence: 1.0,
+			Value: float64Ptr(2.0), Confidence: 1.0,
 			Data:   map[string]interface{}{"score": 100.0, "multiplier": 2.0, "length": length},
 			Status: "SUCCESS",
 		}
@@ -289,14 +384,14 @@ func m5Pronounceability(sld string) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      mult,
+		Value:      float64Ptr(mult),
 		Confidence: 1.0,
 		Data: map[string]interface{}{
-			"score":          math.Round(score*100) / 100,
-			"multiplier":     mult,
-			"vowel_score":    math.Round(vowelScore*100) / 100,
-			"cluster_score":  math.Round(clusterScore*100) / 100,
-			"bigram_score":   math.Round(bigramSc*100) / 100,
+			"score":         math.Round(score*100) / 100,
+			"multiplier":    mult,
+			"vowel_score":   math.Round(vowelScore*100) / 100,
+			"cluster_score": math.Round(clusterScore*100) / 100,
+			"bigram_score":  math.Round(bigramSc*100) / 100,
 		},
 		Status: "SUCCESS",
 	}
@@ -324,24 +419,32 @@ func m6Segmenter(sld string) ModuleResult {
 }
 
 func simpleSegment(sld string) []string {
-	common := map[string]bool{
-		"go": true, "app": true, "web": true, "data": true, "net": true,
-		"cloud": true, "tech": true, "dev": true, "hub": true, "lab": true,
-		"box": true, "top": true, "pro": true, "max": true, "one": true,
-		"ai": true, "api": true, "bit": true, "pay": true, "buy": true,
-		"sell": true, "shop": true, "store": true, "market": true, "trade": true,
-		"crypto": true, "block": true, "chain": true, "meta": true, "open": true,
-		"fast": true, "quick": true, "easy": true, "smart": true, "blue": true,
-		"prime": true, "ultra": true, "mega": true, "super": true,
-		"pulse": true, "spark": true, "flow": true, "sync": true,
-		"core": true, "base": true, "flex": true, "zoom": true, "wave": true,
-	}
-
-	for word := range common {
+	for word := range commonWords {
 		if len(word) >= 2 && strings.Contains(sld, word) {
+			remaining := strings.Replace(sld, word, "", 1)
+			if remaining != "" && len(remaining) >= 2 {
+				return []string{word, remaining}
+			}
 			return []string{word}
 		}
 	}
+
+	splitPoints := []int{}
+	for i := 0; i < len(sld)-1; i++ {
+		if isVowel(sld[i]) && !isVowel(sld[i+1]) && i > 1 && i < len(sld)-2 {
+			splitPoints = append(splitPoints, i+1)
+		}
+	}
+	for _, pos := range splitPoints {
+		left := sld[:pos]
+		right := sld[pos:]
+		if len(left) >= 2 && len(right) >= 2 {
+			if commonWords[left] || commonWords[right] {
+				return []string{left, right}
+			}
+		}
+	}
+
 	return []string{sld}
 }
 
@@ -377,7 +480,7 @@ func m7KeywordPopularity(words ModuleResult) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      mult,
+		Value:      float64Ptr(mult),
 		Confidence: 0.5,
 		Data: map[string]interface{}{
 			"domain_score": domainScore,
@@ -411,11 +514,11 @@ func m8Cpc(words ModuleResult, sld string) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      bestMult,
+		Value:      float64Ptr(bestMult),
 		Confidence: 0.7,
 		Data: map[string]interface{}{
-			"tier":        bestTier,
-			"multiplier":  bestMult,
+			"tier":       bestTier,
+			"multiplier": bestMult,
 		},
 		Status: "SUCCESS",
 	}
@@ -423,7 +526,7 @@ func m8Cpc(words ModuleResult, sld string) ModuleResult {
 
 func m9SearchResults(domain string) ModuleResult {
 	return ModuleResult{
-		Value:      1.0,
+		Value:      float64Ptr(1.0),
 		Confidence: 0.3,
 		Data: map[string]interface{}{
 			"result_count": nil,
@@ -447,7 +550,7 @@ func m10CrossTld(domain string, tld string) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      penalty,
+		Value:      float64Ptr(penalty),
 		Confidence: 0.5,
 		Data: map[string]interface{}{
 			"is_com":     isCom,
@@ -460,7 +563,7 @@ func m10CrossTld(domain string, tld string) ModuleResult {
 
 func m11Trademark(sld string, words ModuleResult) ModuleResult {
 	return ModuleResult{
-		Value:      1.0,
+		Value:      float64Ptr(1.0),
 		Confidence: 0.5,
 		Data: map[string]interface{}{
 			"severity":   "none",
@@ -474,16 +577,16 @@ func m11Trademark(sld string, words ModuleResult) ModuleResult {
 
 func m12Authority(domain string) ModuleResult {
 	return ModuleResult{
-		Value:      1.0,
+		Value:      float64Ptr(1.0),
 		Confidence: 0.3,
 		Data: map[string]interface{}{
-			"authority":    nil,
-			"ahrefs_dr":    nil,
-			"opr_score":    nil,
-			"snapshots":    0,
-			"parked":       false,
-			"multiplier":   1.0,
-			"note":         "Authority check requires Ahrefs/OPR API",
+			"authority":  nil,
+			"ahrefs_dr":  nil,
+			"opr_score":  nil,
+			"snapshots":  0,
+			"parked":     false,
+			"multiplier": 1.0,
+			"note":       "Authority check requires Ahrefs/OPR API",
 		},
 		Status: "SUCCESS",
 	}
@@ -510,7 +613,7 @@ func m13Confidence(modules map[string]ModuleResult) ModuleResult {
 
 	if total == 0 {
 		return ModuleResult{
-			Value: 0.0, Confidence: 0.0,
+			Value: nil, Confidence: 0.0,
 			Data:   map[string]interface{}{"completeness_ratio": 0.0, "label": "none"},
 			Status: "SUCCESS",
 		}
@@ -528,7 +631,7 @@ func m13Confidence(modules map[string]ModuleResult) ModuleResult {
 	}
 
 	return ModuleResult{
-		Value:      ratio,
+		Value:      float64Ptr(ratio),
 		Confidence: ratio,
 		Data: map[string]interface{}{
 			"completeness_ratio": math.Round(ratio*100) / 100,
@@ -623,6 +726,124 @@ func normalizeScore(value float64, modules map[string]ModuleResult) int {
 	}
 
 	return score
+}
+
+func m16Brandability(sld string, words ModuleResult) ModuleResult {
+	score := 0.0
+	data := map[string]interface{}{
+		"is_dictionary":  false,
+		"syllable_count": 0,
+		"pattern_type":   "unknown",
+		"ending_quality": "none",
+	}
+
+	wordList, _ := words.Data["winner"].([]string)
+	if len(wordList) > 0 {
+		for _, w := range wordList {
+			if commonWords[w] {
+				data["is_dictionary"] = true
+				score += 30
+				break
+			}
+		}
+	}
+
+	syllables := countSyllables(sld)
+	data["syllable_count"] = syllables
+	switch {
+	case syllables <= 2:
+		score += 25
+	case syllables <= 3:
+		score += 15
+	case syllables <= 4:
+		score += 5
+	}
+
+	pattern := detectPattern(sld)
+	data["pattern_type"] = pattern
+	switch pattern {
+	case "rhyme":
+		score += 15
+	case "alliteration":
+		score += 10
+	case "repetition":
+		score += 8
+	case "blend":
+		score += 12
+	}
+
+	ending := ""
+	if len(sld) >= 3 {
+		ending = sld[len(sld)-3:]
+	} else {
+		ending = sld
+	}
+	data["ending_quality"] = ending
+	if isStrongEnding(ending) {
+		score += 15
+	}
+
+	if len(sld) > 10 {
+		score -= float64(len(sld)-10) * 2
+	}
+
+	normalized := math.Max(0, math.Min(10, score/10))
+
+	return ModuleResult{
+		Value:      float64Ptr(normalized),
+		Confidence: 0.8,
+		Data:       data,
+		Status:     "SUCCESS",
+	}
+}
+
+func countSyllables(s string) int {
+	count := 0
+	prevVowel := false
+	for i := 0; i < len(s); i++ {
+		isV := isVowel(s[i])
+		if isV && !prevVowel {
+			count++
+		}
+		prevVowel = isV
+	}
+	if count == 0 {
+		count = 1
+	}
+	return count
+}
+
+func detectPattern(s string) string {
+	if len(s) >= 4 {
+		ending := s[len(s)-2:]
+		for i := 0; i < len(s)-2; i++ {
+			if i+2 <= len(s) && s[i:i+2] == ending {
+				return "rhyme"
+			}
+		}
+	}
+	if len(s) >= 4 && s[0] == s[2] {
+		return "alliteration"
+	}
+	if len(s) >= 4 && s[0] == s[1] {
+		return "repetition"
+	}
+	seeds := []string{"cloud", "tech", "web", "data", "app", "hub", "lab", "box", "top", "pro"}
+	for _, w := range seeds {
+		if strings.Contains(s, w) && len(s) > len(w) {
+			return "blend"
+		}
+	}
+	return "none"
+}
+
+func isStrongEnding(ending string) bool {
+	for _, s := range strongEnds {
+		if ending == s {
+			return true
+		}
+	}
+	return false
 }
 
 func vowelScore(s string) float64 {
