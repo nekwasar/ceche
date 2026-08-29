@@ -1,292 +1,242 @@
-# Ceche Web — Agent Context for Web Platform Build
+# Ceche — Agent Context
 
-This file governs all work on Phases 2A through 4 of the Ceche web platform. AI agents read this at the start of every session.
+> Domain name discovery, intelligence, and marketplace platform.
+> This file governs ALL work on the Ceche project. AI agents read this at the start of every session.
 
 ---
 
 ## What We Are Building
 
-A hyper-modern, SEO-optimized web platform for domain appraisal. 12+ pages, admin panel, blog, documentation, comparison pages. All animations use pre-built libraries only. All UI components use DaisyUI / Tailwind UI / Headless UI only.
+An enterprise-grade B2B platform that finds premium available domain names, shows full intelligence profiles, and sells the name via pay-to-reveal mechanics. The domain name IS the product. Intelligence proves value. Name is hidden until paid reveal.
 
 ---
 
-## Phase Structure
+## Tech Stack (FINAL — Do Not Change)
 
-```
-Phase 1 (DONE) — Foundation: Astro project, MySQL schema, FastAPI admin API, JWT auth, CI/CD
-Phase 2A — Public pages: Home, Appraise, Pricing, FAQ
-Phase 2B — Admin panel: Dashboard, Domains, Blog editor, Docs editor, Settings, API keys, Users, Rate limits
-Phase 2C — Blog system: Blog index, post pages, 20 launch posts
-Phase 2D — Documentation: Docs index, sidebar, 10+ pages
-Phase 3 — SEO + Comparisons: Sitemap, meta tags, structured data, /vs/* pages, enterprise page
-Phase 4 — Polish + Launch: CWV audit, performance, reduced-motion, 404, deploy
-```
-
-Phases 2A, 2B, 2C, 2D can be built in parallel. Phase 3 depends on content from 2C and 2D. Phase 4 is final.
-
----
-
-## Architecture Decisions
-
-| Decision | Choice | Why |
-|---|---|---|
-| Framework | Astro (SSG + SSR hybrid) | SEO-first, zero JS by default, island architecture |
-| Styling | Tailwind CSS v4 + DaisyUI v4 | Pre-built components, consistent theming |
-| Animations | GSAP + Lenis + AOS + tsParticles + Splitting.js | Pre-built, zero custom animation code |
-| Charts | Chart.js | Pre-built, for admin dashboard |
-| Icons | Lucide | Pre-built SVG set, no emoji |
-| Markdown | rehype + remark (Astro built-in) | Existing, no custom pipeline |
-| Markdown editor | `@uiw/react-md-editor` | Pre-built CMS editor for admin |
-| Auth | HMAC token (24h expiry) + bcrypt passwords | Enterprise-grade, no plaintext |
-| Admin DB | SQLite at `~/.config/ceche/admin.db` | Simple, no MySQL dependency for auth |
-| Content DB | MySQL 8 via SQLAlchemy | Persistent, scalable |
+| Layer | Technology | Rationale |
+|-------|-----------|-----------|
+| **Backend** | Go (Fiber or Gin) | 69ms cold start, 60MB memory, goroutines for parallel scanning |
+| **Database** | PostgreSQL 16 | Full-text search, JSONB, mature, ACID |
+| **Frontend** | Next.js 15 (App Router) | SSR for SEO, React ecosystem, i18n support |
+| **i18n** | next-intl | App Router native, Server Components, 2KB bundle |
+| **Styling** | Tailwind CSS + shadcn/ui | Consistent design system, accessible components |
+| **Payments** | Paystack (→ Stripe later) | Currently primary until Stripe account ready |
+| **Email** | Brevo | Transactional emails |
+| **Auth** | JWT (15min) + refresh tokens (7d) | Stateless, fast, secure |
+| **Scanner** | Go goroutines (parallel TLDs) | .com, .net, .io, .co only |
+| **Word Lists** | Bundled (10K-50K English words) | No external API dependency |
+| **Cache** | In-memory LRU (bigcache) | Fast, no external dependency |
 
 ---
 
-## Color System
+## Domain & Deployment
 
-These are final. Do not change without explicit approval.
-
-### Dark Mode (default)
-
-```
-Background:       #050805    (green-black)
-Surface:          #0d120d    (cards)
-Surface raised:   #141c14    (hover states)
-Primary text:     #ffffff
-Secondary text:   #9ca3af
-Accent / CTA:     #ff8800    (orange — buttons, links, highlights)
-Accent hover:     #ffa033
-Border:           #1a261a
-Success ($):      #22c55e    (green FOR MONEY VALUES ONLY)
-Danger:           #ef4444
-```
-
-### Light Mode
-
-```
-Background:       #f8faf8
-Surface:          #ffffff
-Primary text:     #1a1a1a
-Secondary text:   #6b7280
-Accent:           #ff8800
-Border:           #e5e7eb
-```
-
-### CSS Variable Implementation
-
-```css
-:root { --bg: #050805; --surface: #0d120d; --text: #ffffff; --accent: #ff8800; }
-[data-theme="light"] { --bg: #f8faf8; --surface: #ffffff; --text: #1a1a1a; }
-```
-
-DaisyUI theme names: `ceche` (dark), `cechelight` (light). Toggle via `data-theme` attribute. Persisted in `localStorage` under key `ceche-theme`.
+- **Domain**: ceche.net (DNS live)
+- **Server**: Ubuntu 22.04 at 77.67.23.30
+- **SSL**: Let's Encrypt (or Cloudflare)
+- **Payment Gateway**: Paystack (primary until Stripe ready)
+- **Brevo**: Account created and ready
 
 ---
 
-## Typography
+## Project Structure
 
-| Element | Font | Weight | Size |
-|---|---|---|---|
-| Body | Inter | 400 | 16px |
-| Headings | Inter | 600-700 | 20-48px |
-| Code | JetBrains Mono | 400 | 14px |
-| Value display | Inter | 700 | 36px |
-
-Loaded from Google Fonts CDN with `preconnect`.
-
----
-
-## Component Rules
-
-### Allowed UI Libraries (No Custom Components)
-- **DaisyUI:** `btn`, `card`, `input`, `badge`, `loading`, `skeleton`, `collapse`, `avatar`, `table`, `stat`, `modal`, `dropdown`, `tabs`, `toggle`, `tooltip`, `progress`, `divider`, `breadcrumbs`, `menu`, `navbar`, `footer`
-- **Headless UI:** `Dialog`, `Menu`, `Listbox`, `Combobox`, `Switch`, `Tabs`, `Transition`
-- **Tailwind UI:** Any pattern from the Tailwind UI component library
-- **Lucide:** Any icon from the Lucide set (import via `lucide-astro` or direct SVG)
-
-### Prohibited
-- No emoji in UI (no `⚡`, `✓`, `🎉`, etc.)
-- No custom CSS animations (use GSAP, Lenis, AOS)
-- No custom React/Vue components (use DaisyUI + Headless UI)
-- No chart libraries other than Chart.js
-
----
-
-## Animation Rules
-
-### Allowed Libraries (Pre-built, Zero Custom Code)
-| Library | Size | Purpose |
-|---|---|---|
-| GSAP | ~30KB | Core engine, timelines, stagger, transforms |
-| GSAP ScrollTrigger | ~15KB | Scroll-driven reveals, pin, parallax |
-| GSAP MotionPath | ~8KB | SVG path drawing (module graph) |
-| Lenis | ~8KB | Smooth scroll with inertia |
-| Splitting.js | ~5KB | Text character/word splitting for reveal |
-| tsParticles | ~50KB | Hero background particles |
-| Typed.js | ~10KB | Typewriter subtitle effect |
-| AutoAnimate | ~3KB | Auto-animate DOM mount/unmount |
-| astro-page-transition | built-in | Page morph transitions |
-| nprogress | ~2KB | Top loading progress bar |
-| DaisyUI skeleton | built-in | Content loading placeholders |
-| AOS | ~20KB | Simple fade-in (fallback for minor sections) |
-
-### Animation Placement
-- **Hero:** tsParticles (background) + Splitting.js (text reveal) + Typed.js (subtitle) + GSAP counter (value)
-- **Feature cards:** GSAP stagger on scroll into view + hover scale(1.02)
-- **Module graph:** GSAP MotionPath line drawing on scroll + ScrollTrigger pin
-- **Pricing:** GSAP stagger fly-in from bottom
-- **Blog:** AutoAnimate on filter + AOS fade-in on scroll
-- **Page transitions:** astro-page-transition morph + nprogress bar
-- **Values/stats:** GSAP count-up animation
-
-### Respect Reduced Motion
-```css
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+```
+ceche/
+├── cmd/server/main.go              (Go entry point)
+├── internal/
+│   ├── config/config.go            (env-based config)
+│   ├── database/postgres.go        (connection pool)
+│   ├── api/
+│   │   ├── v1/router.go            (versioned routes)
+│   │   └── middleware/              (cors, ratelimit, auth, logging, recovery)
+│   ├── models/                     (structs, not DB)
+│   ├── repository/                 (DB queries)
+│   ├── service/                    (business logic)
+│   ├── scanner/                    (TLD scanning engine)
+│   └── worker/                     (background goroutines)
+├── migrations/                     (SQL files)
+├── app/                            (Next.js frontend)
+│   └── [locale]/                   (i18n locale segment)
+├── docs/                           (project documentation)
+├── docker-compose.yml
+├── .env.example
+├── product-spec.md
+└── AGENTS.md                       (this file)
 ```
 
 ---
 
-## Page Structure Conventions
+## Navigation Structure (3 Categories)
 
-### Astro Layouts
-```astro
----
-// Standard layout pattern
-import Base from "../layouts/Base.astro";
----
-
-<Base title="Page Title — Ceche" description="SEO description">
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-    <!-- content -->
-  </section>
-</Base>
+### Primary Navigation
+```
+Platform ▾    Solutions ▾    Resources ▾    Pricing    [Language]    Login    Get Started
 ```
 
-### SEO Requirements (Every Page)
-- `<title>` — unique per page, ends with "— Ceche"
-- `<meta name="description">` — 150-160 chars
-- `<meta property="og:title">` — matches title
-- `<meta property="og:description">` — matches description
-- `<meta name="twitter:card">` — `summary_large_image`
-- `<link rel="canonical">` — `Astro.url.href`
-- JSON-LD structured data where applicable (Product, FAQPage, Article, BreadcrumbList)
+### Page Categories
+
+**1. Platform** — Public product pages
+- `/platform` — Overview
+- `/platform/domain-appraiser`
+- `/platform/domain-scanner`
+- `/platform/domain-marketplace`
+- `/platform/intelligence-profile`
+- `/platform/name-suggestions`
+- `/platform/api`
+
+**2. Solutions** — Who we serve
+- `/solutions` — Overview
+- By Use Case: find-available, research-intelligence, buy-premium, monitor-expiration, generate-ideas, validate-investment
+- By Industry: startups, agencies, enterprises, domain-investors, brand-strategists, web-developers
+
+**3. Resources** — User guides
+- Learn: blog, guides, customer-stories, ebooks, changelog, about, company
+- Support: help-center, contact, affiliate, partner, community
+
+**Plus**: pricing, legal (terms/privacy/cookies/data/dpa), company (news/about/careers), auth (login/signup/demo), socials, newsletter
 
 ---
 
-## Admin Panel Conventions
+## i18n Strategy
 
-### Auth Flow
-1. Admin layout always renders shell + login form (client-side)
-2. On load: `fetch('/admin/api/verify')` with cookie → shows admin or login
-3. Login: `POST /admin/api/login` → sets `ceche_admin_token` cookie (HttpOnly, 24h)
-4. Logout: `POST /admin/api/logout` → clears cookie
-
-### First Admin Setup
-- Set `CECHE_ADMIN_PASSWORD` environment variable on the server
-- First login with any email + that password creates the admin user
-- After first login, remove or rotate the env var
-
-### All Admin API Endpoints
-| Method | Path | Auth | Purpose |
-|---|---|---|---|
-| POST | `/admin/api/login` | No | Login with email + bcrypt password |
-| POST | `/admin/api/logout` | No | Clear auth cookie |
-| GET | `/admin/api/verify` | Yes | Check token validity |
-| GET | `/admin/api/stats` | Yes | Dashboard stats (total, today, avg, top) |
-| GET | `/admin/api/recent` | Yes | Recent appraisals table |
-| GET/POST | `/admin/api/blog` | Yes | Blog CRUD |
-| GET/PUT/DELETE | `/admin/api/blog/{id}` | Yes | Single blog post |
-| GET/POST | `/admin/api/docs` | Yes | Docs CRUD |
-| GET/PUT/DELETE | `/admin/api/docs/{id}` | Yes | Single doc page |
-| GET/PUT | `/admin/api/settings` | Yes | System settings key-value |
-| GET/POST/DELETE | `/admin/api/api-keys` | Yes | API key management |
-| GET/PUT | `/admin/api/rate-limits` | Yes | Rate limit config |
-| GET/POST/DELETE | `/admin/api/users` | Yes | Admin user management |
-| GET | `/admin/api/domains` | Yes | Appraised domains viewer |
+- **Library**: next-intl with App Router
+- **URL Pattern**: Sub-path routing (`/en/platform`, `/fr/platform`)
+- **Supported Locales**: en (default), fr, de, es, pt
+- **Language Switcher**: In top nav, persists across all routes
+- **SEO**: hreflang tags on all pages, localized sitemaps
 
 ---
 
-## Database Conventions (MySQL)
+## Enterprise Standards (MANDATORY)
 
-```sql
--- All tables InnoDB, utf8mb4, with indexes
-CREATE TABLE IF NOT EXISTS tablename (
-    id          INT AUTO_INCREMENT PRIMARY KEY,
-    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB;
+Every phase must include:
 
--- Index foreign keys and frequently queried columns
-INDEX idx_column (column)
-```
+1. **API Versioning** — `/api/v1/...` from day one
+2. **Idempotency** — UUID keys on all write operations
+3. **Audit Logging** — Immutable append-only table
+4. **RBAC** — admin, user, api_key roles
+5. **Rate Limiting** — Per endpoint + per user
+6. **Structured Logging** — JSON + correlation IDs
+7. **Health Checks** — `GET /health` endpoint
+8. **SLO** — p99 < 500ms, 99.9% uptime
+9. **Encryption** — AES-256 at rest for domain names
+10. **Webhook Verification** — HMAC signature check
 
-### Current Tables (8)
-- `appraisals` — All domain appraisals from any source
-- `blog_posts` — Blog posts with markdown content
-- `documentation_pages` — Documentation with category + sort order
-- `settings` — System key-value configuration
-- `api_keys` — External API access keys
-- `users` — Admin user accounts
-- `rate_limit_logs` — API rate limiting
+---
+
+## Pricing Structure
+
+| Plan | Price | Reveals/mo | API Calls |
+|------|-------|------------|-----------|
+| Free | $0 | 5 | 0 |
+| Starter | $29/mo | 50 | 100 |
+| Pro | $49/mo | 200 | 500 |
+| Enterprise | $199/mo | Unlimited | Unlimited |
+
+Reveal pricing: $5-10 partial, $3-5 Try Your Luck
 
 ---
 
 ## Security Rules (Hard Blockers)
 
 - **NEVER hardcode credentials.** No emails, passwords, API keys, or tokens in source files.
-- **NEVER put fake data in production paths.** No lorem ipsum, dummy testimonials, or placeholder content.
-- **All passwords use bcrypt** via `bcrypt.hashpw()` / `bcrypt.checkpw()`.
-- **All auth tokens expire within 24h.** Verify on every request.
+- **NEVER log decrypted domain names.**
+- **NEVER expose encryption keys in code.**
+- **All passwords use bcrypt** (cost 12).
+- **JWT signed with HS256**, 15min expiry, refresh tokens 7d.
+- **All auth tokens stored in httpOnly cookies.**
 - **Login always returns 401 "Invalid credentials"** — never reveal whether email exists.
-- **Admin users created only at runtime** via `CECHE_ADMIN_PASSWORD` env var. No pre-seeded users in SQL.
-- **SQL queries use parameterized statements**, never f-string interpolation.
+- **SQL queries use parameterized statements**, never string interpolation.
+- **Domain names encrypted at rest** with AES-256-GCM.
+- **Webhook signatures verified** (HMAC-SHA512) before processing.
+- **Rate limiting on all endpoints** (100 req/min per user, 1000 per API key).
+- **CORS configured** via `CECHE_CORS_ORIGINS` env var.
+- **Security headers**: CSP, HSTS, X-Frame-Options, X-Content-Type-Options.
 
 ---
 
-## CLI Commands for Web Development
+## Refund Policy
+
+**No refunds.** All sales are final. Digital goods. This is stated clearly on pricing page and in Terms of Service.
+
+---
+
+## What Ceche Is NOT
+
+- Not a registrar (doesn't sell domain registrations)
+- Not an appraisal-only tool (appraisal is part of the intelligence layer)
+- Not a data competitor (can't beat Sedo/GoDaddy on sales history)
+- Not a name seller (Ceche finds names, users register them elsewhere)
+
+---
+
+## Important Context
+
+- **Ceche only** seller at MVP (no third-party sellers)
+- **Scanner TLDs**: .com, .net, .io, .co ONLY
+- **API access**: Day one
+- **Launch model**: Ceche only, no marketplace sellers initially
+- **Reveal types**: Partial (first+last char visible), Try Your Luck (no hint), Full
+- **Domain name is the product** — intelligence proves value — name hidden until paid
+- **Paystack is primary** until Stripe account is ready
+- **No refunds strictly** — digital goods policy
+
+---
+
+## CLI Commands
 
 ```bash
-# Astro
-cd web && npm run dev           # Development server (localhost:4321)
-cd web && npm run build         # Static build to web/dist/
+# Backend
+go run cmd/server/main.go           # Development server
+go test ./...                        # Run all tests
 
-# FastAPI
-ceche server serve --port 8080  # API server with admin endpoints
-
-# Tests
-pytest tests/ -q                # Backend tests (470+)
+# Frontend
+npm run dev                          # Development server (localhost:3000)
+npm run build                        # Production build
+npm run lint                         # ESLint
 
 # Database
-mysql -u root -e "source database/schema.sql"  # Initialize MySQL schema
+migrate -path migrations -database $DATABASE_URL up    # Run migrations
+migrate -path migrations -database $DATABASE_URL down  # Rollback
+
+# Docker
+docker-compose up -d                 # Start all services
+docker-compose down                  # Stop all services
 
 # Deploy
-git tag v0.x.x && git push origin v0.x.x       # CI publishes + deploys
+git push origin main                 # Triggers CI/CD
 ```
 
 ---
 
 ## File Naming Conventions
 
-- `web/src/pages/` — One `.astro` file per route. `index.astro` for `/`, `[slug].astro` for dynamic.
-- `web/src/layouts/` — `Base.astro` (public), `Admin.astro` (admin with auth).
-- `web/src/components/` — Astro components (`.astro`) or framework islands (`.jsx`/`.tsx`).
-- `ceche/interfaces/api/` — FastAPI route files. `app.py` (public), `admin.py` (admin).
-- `database/` — SQL schema files. `schema.sql` (full schema), `migrations/` (incremental changes).
+- Go: `snake_case.go` (e.g., `domain_scanner.go`)
+- TypeScript: `PascalCase.tsx` for components, `camelCase.ts` for utilities
+- SQL migrations: `001_initial.up.sql`, `001_initial.down.sql`
+- Messages: `en.json`, `fr.json`, etc. in `messages/` directory
+- Pages: `page.tsx` in App Router convention
 
 ---
 
-## Important Context (Do Not Overwrite)
+## Before Starting Work
 
-- Version: 0.3.2
-- CLI: 49 commands, `ceche check` (not `appraise`), `ceche keys` (not `ceche ai key-list`)
-- TUI: `ceche start` launches Textual interface
-- Admin first login: `CECHE_ADMIN_PASSWORD` env var must be set
-- Colors: Green-black bg, orange accent, green for money only
-- Animations: All pre-built libraries, no custom animation code
-- Components: All DaisyUI + Tailwind UI + Headless UI, no custom UI components
+1. Read this file completely
+2. Read `docs/implementation-plan.md` for current phase details
+3. Read `docs/tech-stack.md` for technology decisions
+4. Read `docs/enterprise-standards.md` for compliance requirements
+5. Check `.env.example` for required environment variables
+6. Run `docker-compose up -d` to verify dev environment
+7. Run tests to ensure nothing is broken
+
+---
+
+## When Completing Work
+
+1. Run linter (golangci-lint for Go, eslint for TypeScript)
+2. Run type checker (go vet for Go, tsc for TypeScript)
+3. Run tests (go test ./... for Go, jest for TypeScript)
+4. Update relevant documentation if architecture changed
+5. Commit with descriptive message
+6. Do NOT commit secrets, keys, or credentials
