@@ -10,12 +10,13 @@ import Admin from "../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../lib/api';
 async function init() {
   const params = new URLSearchParams(window.location.search);
   const docId = params.get('id');
   if (!docId) { document.getElementById('editor').innerHTML = '<p class="text-red-400">No document ID provided.</p>'; return; }
 
-  const r = await fetch('/admin/api/docs/' + docId);
+  const r = await fetch(apiUrl('/admin/api/docs/' + docId));
   const d = await r.json();
 
   document.getElementById('editor').innerHTML = `
@@ -34,7 +35,7 @@ async function init() {
 
   document.getElementById('doc-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    await fetch('/admin/api/docs/' + docId, { method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({
+    await fetch(apiUrl('/admin/api/docs/' + docId), { method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({
       title: document.getElementById('title').value,
       slug: document.getElementById('slug').value,
       category: document.getElementById('category').value,

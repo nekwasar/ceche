@@ -79,6 +79,7 @@ const {
     </div>
 
     <script>
+import { apiUrl } from '../lib/api';
       // Theme toggle
       const sun = document.getElementById('sun-icon');
       const moon = document.getElementById('moon-icon');
@@ -110,7 +111,7 @@ const {
       document.head.appendChild(script);
 
       // Maintenance mode check
-      fetch('/admin/api/settings/maintenance_mode')
+      fetch(apiUrl('/admin/api/settings/maintenance_mode'))
         .then(r => r.json())
         .then(d => {
           if (d.value === 'true') {
@@ -130,7 +131,7 @@ const {
         .catch(() => {});
 
       // Domain counter
-      fetch('/admin/api/stats')
+      fetch(apiUrl('/admin/api/stats'))
         .then(r => r.json())
         .then(d => {
           document.querySelectorAll('#domain-counter, #domain-counter-desktop, #domain-count-home, #domain-count-home-desktop').forEach(el => {

@@ -34,9 +34,10 @@ import Base from "../layouts/Base.astro";
 </Base>
 
 <script>
+import { apiUrl } from '../lib/api';
 async function load() {
   try {
-    const r = await fetch('/api/blog');
+    const r = await fetch(apiUrl('/api/blog'));
     const posts = await r.json();
 
     const mobileContainer = document.getElementById('blog-mobile');

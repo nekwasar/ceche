@@ -16,8 +16,9 @@ import Admin from "../../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../../lib/api';
 async function load() {
-  const r = await fetch('/admin/api/pages'); const d = await r.json();
+  const r = await fetch(apiUrl('/admin/api/pages')); const d = await r.json();
   const t = document.getElementById('pages-table');
   if (!d.length) { t.innerHTML = '<tr><td colspan="4" class="text-center text-base-content/60 py-8">No pages yet.</td></tr>'; return; }
   t.innerHTML = d.map(i => `<tr class="border-b border-base-300"><td class="p-3 font-mono text-sm">${i.slug}</td><td class="p-3">${i.title}</td><td class="text-center p-3 text-base-content/60">${i.updated_at ? 'Yes' : '--'}</td><td class="text-center p-3"><a href="/admin/pages-edit?slug=${i.slug}" class="btn btn-ghost btn-xs">Edit</a> <button class="btn btn-ghost btn-xs text-red-400" onclick="delPage('${i.slug}')">Delete</button></td></tr>`).join('');
@@ -26,8 +27,8 @@ function addPage() {
   const s = prompt('Slug (e.g. about):'); if (!s) return;
   const t = prompt('Title:'); if (!t) return;
   const c = prompt('Content:'); if (!c) return;
-  fetch('/admin/api/pages', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({slug:s, title:t, content:c})}).then(load);
+  fetch(apiUrl('/admin/api/pages'), {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({slug:s, title:t, content:c})}).then(load);
 }
-async function delPage(slug) { if (confirm('Delete?')) { await fetch('/admin/api/pages/'+slug, {method:'DELETE'}); load(); } }
+async function delPage(slug) { if (confirm('Delete?')) { await fetch(apiUrl('/admin/api/pages/'+slug), {method:'DELETE'}); load(); } }
 load();
 </script>

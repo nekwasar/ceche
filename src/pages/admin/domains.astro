@@ -21,12 +21,13 @@ import Admin from "../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../lib/api';
 let page = 1;
 async function loadDomains() {
   const search = document.getElementById('search-input').value;
   const tld = document.getElementById('tld-filter').value;
   try {
-    const r = await fetch(`/admin/api/domains?page=${page}&per_page=50&search=${encodeURIComponent(search)}&tld=${tld}`);
+    const r = await fetch(apiUrl(`/admin/api/domains?page=${page}&per_page=50&search=${encodeURIComponent(search)}&tld=${tld}`));
     const d = await r.json();
     document.getElementById('domain-count').textContent = `${d.total} domains`;
     const t = document.getElementById('domains-table');

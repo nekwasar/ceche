@@ -16,8 +16,9 @@ import Admin from "../../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../../lib/api';
 async function load() {
-  const r = await fetch('/admin/api/features'); const d = await r.json();
+  const r = await fetch(apiUrl('/admin/api/features')); const d = await r.json();
   const t = document.getElementById('features-table');
   if (!d.length) { t.innerHTML = '<tr><td colspan="4" class="text-center text-base-content/60 py-8">No features yet.</td></tr>'; return; }
   t.innerHTML = d.map(i => `<tr class="border-b border-base-300"><td class="p-3 font-medium">${i.title}</td><td class="p-3 text-sm text-base-content/60">${(i.description||'').slice(0,80)}</td><td class="text-center p-3">${i.sort_order}</td><td class="text-center p-3"><button class="btn btn-ghost btn-xs" onclick="editItem(${i.id})">Edit</button> <button class="btn btn-ghost btn-xs text-red-400" onclick="delItem(${i.id})">Delete</button></td></tr>`).join('');
@@ -25,13 +26,13 @@ async function load() {
 function addItem() {
   const t = prompt('Title:'); if (!t) return;
   const d = prompt('Description:'); if (!d) return;
-  fetch('/admin/api/features', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({title:t, description:d})}).then(load);
+  fetch(apiUrl('/admin/api/features'), {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({title:t, description:d})}).then(load);
 }
 function editItem(id) {
   const t = prompt('Title:'); if (t === null) return;
   const d = prompt('Description:'); if (d === null) return;
-  fetch('/admin/api/features/'+id, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({title:t,description:d})}).then(load);
+  fetch(apiUrl('/admin/api/features/'+id), {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({title:t,description:d})}).then(load);
 }
-async function delItem(id) { if (confirm('Delete?')) { await fetch('/admin/api/features/'+id, {method:'DELETE'}); load(); } }
+async function delItem(id) { if (confirm('Delete?')) { await fetch(apiUrl('/admin/api/features/'+id), {method:'DELETE'}); load(); } }
 load();
 </script>

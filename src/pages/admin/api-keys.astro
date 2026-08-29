@@ -20,9 +20,10 @@ import Admin from "../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../lib/api';
 async function load() {
   try {
-    const r = await fetch('/admin/api/api-keys');
+    const r = await fetch(apiUrl('/admin/api/api-keys'));
     const d = await r.json();
     const t = document.getElementById('keys-table');
     if (!d.length) { t.innerHTML = '<tr><td colspan="6" class="text-center text-base-content/60 py-8">No keys yet.</td></tr>'; return; }
@@ -31,12 +32,12 @@ async function load() {
 }
 async function createKey() {
   const name = prompt('Key name:'); if (!name) return;
-  const r = await fetch('/admin/api/api-keys', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name})});
+  const r = await fetch(apiUrl('/admin/api/api-keys'), {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({name})});
   const d = await r.json();
   document.getElementById('new-key-value').textContent = d.key || '';
   document.getElementById('new-key-display').classList.remove('hidden');
   load();
 }
-async function delKey(id) { if (confirm('Revoke this key?')) { await fetch('/admin/api/api-keys/' + id, {method:'DELETE'}); load(); } }
+async function delKey(id) { if (confirm('Revoke this key?')) { await fetch(apiUrl('/admin/api/api-keys/' + id), {method:'DELETE'}); load(); } }
 load();
 </script>

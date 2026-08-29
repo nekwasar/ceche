@@ -16,15 +16,16 @@ import Admin from "../../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../../lib/api';
 async function load() {
   try {
-    const r = await fetch('/admin/api/blog');
+    const r = await fetch(apiUrl('/admin/api/blog'));
     const d = await r.json();
     const t = document.getElementById('blog-table');
     if (!d.length) { t.innerHTML = '<tr><td colspan="4" class="text-center text-base-content/60 py-8">No posts yet.</td></tr>'; return; }
     t.innerHTML = d.map(p => `<tr class="border-b border-base-300"><td class="p-3"><a href="/admin/blog-edit?id=${p.id}" class="hover:text-primary">${p.title}</a></td><td class="text-center p-3"><span class="badge ${p.status === 'published' ? 'badge-success' : 'badge-ghost'} badge-sm">${p.status}</span></td><td class="text-right p-3 text-base-content/60">${p.published_at ? new Date(p.published_at*1000).toLocaleDateString() : '--'}</td><td class="text-center p-3"><a href="/admin/blog-edit?id=${p.id}" class="btn btn-ghost btn-xs">Edit</a> <button class="btn btn-ghost btn-xs text-red-400" onclick="del(${p.id})">Delete</button></td></tr>`).join('');
   } catch(e) {}
 }
-async function del(id) { if (confirm('Delete?')) { await fetch('/admin/api/blog/' + id, {method:'DELETE'}); load(); } }
+async function del(id) { if (confirm('Delete?')) { await fetch(apiUrl('/admin/api/blog/' + id), {method:'DELETE'}); load(); } }
 load();
 </script>

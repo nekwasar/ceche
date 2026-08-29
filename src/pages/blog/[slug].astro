@@ -1,14 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
 import RenderMd from "../../components/RenderMd.astro";
+import { apiUrl } from "../../lib/api";
 export const prerender = false;
 const { slug } = Astro.params;
 let postData = null;
 let fetchError = false;
 
 try {
-  const apiUrl = `http://127.0.0.1:8080/api/blog/${encodeURIComponent(slug)}`;
-  const res = await fetch(apiUrl);
+  const res = await fetch(apiUrl(`/api/blog/${encodeURIComponent(slug)}`));
   if (res.ok) {
     postData = await res.json();
   } else {
@@ -93,6 +93,7 @@ function isoDate(d: unknown): string {
 </Base>
 
 <script>
+import { apiUrl } from '../../lib/api';
 (function() {
   var toc = document.getElementById('toc-desktop');
   if (toc) {

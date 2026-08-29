@@ -23,11 +23,12 @@ import Base from "../layouts/Base.astro";
 </Base>
 
 <script>
+import { apiUrl } from '../lib/api';
 async function load() {
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('slug') || window.location.pathname.split('/').filter(Boolean).pop();
   try {
-    const r = await fetch('/api/comparisons');
+    const r = await fetch(apiUrl('/api/comparisons'));
     const all = await r.json();
     const comp = all.find(c => c.slug === slug);
     if (!comp) {

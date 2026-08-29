@@ -16,8 +16,9 @@ import Admin from "../../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../../lib/api';
 async function load() {
-  const r = await fetch('/admin/api/faq'); const d = await r.json();
+  const r = await fetch(apiUrl('/admin/api/faq')); const d = await r.json();
   const t = document.getElementById('faq-table');
   if (!d.length) { t.innerHTML = '<tr><td colspan="4" class="text-center text-base-content/60 py-8">No items yet.</td></tr>'; return; }
   t.innerHTML = d.map(i => `<tr class="border-b border-base-300"><td class="p-3">${i.question?.slice(0,80)}</td><td class="text-center p-3">${i.sort_order}</td><td class="text-center p-3">${i.active ? '<span class="text-green-400">Yes</span>' : 'No'}</td><td class="text-center p-3"><button class="btn btn-ghost btn-xs" onclick="editItem(${i.id})">Edit</button> <button class="btn btn-ghost btn-xs text-red-400" onclick="delItem(${i.id})">Delete</button></td></tr>`).join('');
@@ -25,13 +26,13 @@ async function load() {
 function addItem() {
   const q = prompt('Question:'); if (!q) return;
   const a = prompt('Answer:'); if (!a) return;
-  fetch('/admin/api/faq', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, answer:a})}).then(load);
+  fetch(apiUrl('/admin/api/faq'), {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, answer:a})}).then(load);
 }
 function editItem(id) {
   const q = prompt('Question:'); if (q === null) return;
   const a = prompt('Answer:'); if (a === null) return;
-  fetch('/admin/api/faq/'+id, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, answer:a})}).then(load);
+  fetch(apiUrl('/admin/api/faq/'+id), {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({question:q, answer:a})}).then(load);
 }
-async function delItem(id) { if (confirm('Delete?')) { await fetch('/admin/api/faq/'+id, {method:'DELETE'}); load(); } }
+async function delItem(id) { if (confirm('Delete?')) { await fetch(apiUrl('/admin/api/faq/'+id), {method:'DELETE'}); load(); } }
 load();
 </script>

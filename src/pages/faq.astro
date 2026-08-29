@@ -38,9 +38,10 @@ const description = "Frequently asked questions about domain appraisal, valuatio
 </Base>
 
 <script>
+import { apiUrl } from '../lib/api';
 async function load() {
   try {
-    const r = await fetch('/api/faq');
+    const r = await fetch(apiUrl('/api/faq'));
     const items = await r.json();
     const mobileContainer = document.getElementById('faq-mobile');
     const desktopContainer = document.getElementById('faq-desktop');

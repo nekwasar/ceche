@@ -61,9 +61,10 @@ const description = "Free domain appraisal CLI, affordable API access, and enter
 </Base>
 
 <script>
+import { apiUrl } from '../lib/api';
 async function load() {
   try {
-    const r = await fetch('/api/pricing');
+    const r = await fetch(apiUrl('/api/pricing'));
     const tiers = await r.json();
     if (!tiers.length) {
       document.querySelectorAll('#pricing-mobile, #pricing-desktop').forEach(el => el.innerHTML = '<p class="text-center text-base-content/50 py-16">No pricing configured.</p>');

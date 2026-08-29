@@ -237,6 +237,7 @@ import Base from "../layouts/Base.astro";
 </Base>
 
 <script>
+import { apiUrl } from '../lib/api';
 const loadingSteps = [
   { t: 0, msg: 'Appraising domain...' },
   { t: 3000, msg: 'Checking registration data...' },
@@ -286,7 +287,7 @@ function setupAppraise(formId, inputId, resultId, loadingId, nameId, valueId, ra
       var controller = new AbortController();
       var timeout = setTimeout(function() { controller.abort(); }, 120000);
 
-      fetch('/api/appraise', {
+      fetch(apiUrl('/api/appraise'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ domain: domain }),
@@ -308,7 +309,7 @@ function setupAppraise(formId, inputId, resultId, loadingId, nameId, valueId, ra
             aiContent.classList.add('hidden');
             aiContent.innerHTML = '';
 
-            fetch('/api/appraise/' + encodeURIComponent(domain) + '/review', {
+            fetch(apiUrl('/api/appraise/' + encodeURIComponent(domain) + '/review'), {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ domain: domain }),

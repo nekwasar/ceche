@@ -34,9 +34,10 @@ import Admin from "../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../lib/api';
 async function load() {
   try {
-    const r = await fetch('/admin/api/stats');
+    const r = await fetch(apiUrl('/admin/api/stats'));
     const s = await r.json();
     document.getElementById('total-appraisals').textContent = (s.total_appraisals || 0).toLocaleString();
     document.getElementById('today-appraisals').textContent = (s.today_appraisals || 0).toLocaleString();
@@ -44,7 +45,7 @@ async function load() {
     document.getElementById('top-domain').textContent = s.top_domain || '--';
   } catch(e) {}
   try {
-    const r = await fetch('/admin/api/recent?limit=10');
+    const r = await fetch(apiUrl('/admin/api/recent?limit=10'));
     const d = await r.json();
     const t = document.getElementById('recent-table');
     if (!d.length) { t.innerHTML = '<tr><td colspan="5" class="text-center text-base-content/60 py-8">No appraisals yet.</td></tr>'; return; }

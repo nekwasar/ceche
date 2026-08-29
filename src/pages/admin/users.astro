@@ -16,9 +16,10 @@ import Admin from "../../layouts/Admin.astro";
 </Admin>
 
 <script>
+import { apiUrl } from '../../lib/api';
 async function load() {
   try {
-    const r = await fetch('/admin/api/users');
+    const r = await fetch(apiUrl('/admin/api/users'));
     const d = await r.json();
     const t = document.getElementById('users-table');
     if (!d.length) { t.innerHTML = '<tr><td colspan="5" class="text-center text-base-content/60 py-8">No users yet.</td></tr>'; return; }
@@ -28,9 +29,9 @@ async function load() {
 async function inviteUser() {
   const email = prompt('Email:'); if (!email) return;
   const password = prompt('Temporary password:'); if (!password) return;
-  await fetch('/admin/api/users', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email, password, name: email.split('@')[0]})});
+  await fetch(apiUrl('/admin/api/users'), {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email, password, name: email.split('@')[0]})});
   load();
 }
-async function delUser(id) { if (confirm('Remove this user?')) { await fetch('/admin/api/users/' + id, {method:'DELETE'}); load(); } }
+async function delUser(id) { if (confirm('Remove this user?')) { await fetch(apiUrl('/admin/api/users/' + id), {method:'DELETE'}); load(); } }
 load();
 </script>
