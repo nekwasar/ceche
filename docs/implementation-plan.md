@@ -8,18 +8,18 @@
 
 | Phase | Days | Milestone |
 |-------|------|-----------|
-| 0 | 1-2 | Foundation |
-| 1 | 3-5 | Auth & Users |
+| 0 | 1-2 | Foundation + Subdomain Architecture |
+| 1 | 3-5 | Auth & Users (app subdomain) |
 | 2 | 6-10 | Appraiser |
 | 3 | 11-18 | Scanner |
 | 4 | 19-26 | Reveal & Payments |
 | 5 | 27-32 | Intelligence |
 | 6 | 33-38 | Name Suggestions |
-| 7 | 39-48 | Marketplace |
+| 7 | 39-48 | Marketplace (www teaser + app full) |
 | 8 | 49-52 | API Access |
-| 9 | 53-65 | Public Pages |
+| 9 | 53-65 | Public Pages (www subdomain) |
 | 10 | 66-70 | Observability |
-| 11 | 71-80 | Deployment |
+| 11 | 71-80 | Deployment + Subdomain DNS/Nginx |
 | 12 | 81-90 | Polish & Launch |
 
 ---
@@ -42,9 +42,54 @@ Phase 12 (after Phase 11)
 
 ---
 
+## Subdomain Architecture
+
+### Domain Split
+
+| Subdomain | Purpose | Pages |
+|-----------|---------|-------|
+| `ceche.net` | Root | 301 redirect → `www.ceche.net` |
+| `www.ceche.net` | Public marketing | `/`, `/platform/*`, `/solutions/*`, `/resources/*`, `/pricing`, `/legal/*`, `/company/*`, `/marketplace` |
+| `app.ceche.net` | Authenticated app | `/`, `/login`, `/signup`, `/api-keys`, `/marketplace`, `/appraise`, `/scan`, `/reveal` |
+
+### Routing Rules
+
+| Request | Behavior |
+|---------|----------|
+| `ceche.net/*` | 301 → `www.ceche.net/*` |
+| `www.ceche.net/en/*` | 301 → `www.ceche.net/*` (English = no prefix) |
+| `app.ceche.net/en/*` | 301 → `app.ceche.net/*` |
+| `www.ceche.net/login` | 301 → `app.ceche.net/login` |
+| `www.ceche.net/signup` | 301 → `app.ceche.net/signup` |
+| `www.ceche.net/api-keys` | 301 → `app.ceche.net/api-keys` |
+| `app.ceche.net/platform/*` | 301 → `www.ceche.net/platform/*` |
+| `app.ceche.net/pricing` | 301 → `www.ceche.net/pricing` |
+| `app.ceche.net/solutions/*` | 301 → `www.ceche.net/solutions/*` |
+| `app.ceche.net/resources/*` | 301 → `www.ceche.net/resources/*` |
+
+### Locale Rules
+
+- English: no prefix (`www.ceche.net/platform/domain-appraiser`)
+- Other locales: prefix required (`www.ceche.net/fr/platform/domain-appraiser`)
+- next-intl config: `localePrefix: "as-needed"`
+- Both subdomains support full i18n (9 locales)
+
+### Marketplace on Both Subdomains
+
+| Subdomain | Path | What |
+|-----------|------|------|
+| **www** | `/marketplace` | Teaser: top 6-8 featured listings, CTA to signup |
+| **app** | `/marketplace` | Full marketplace: all listings, filters, buy flow |
+
+Both fetch from the same API (`GET /api/v1/listings`) with different query params:
+- Teaser: `?featured=true&limit=8`
+- Full: all listings with filters, pagination, sort
+
+---
+
 ## Phase 0: Project Scaffolding & Foundation
 **Duration:** Day 1-2
-**Goal:** Clean repo, working dev environment, all tooling configured
+**Goal:** Clean repo, working dev environment, all tooling configured, subdomain architecture foundation
 
 ### Backend (Go)
 - Initialize Go module: `github.com/nekwasar/ceche`
@@ -70,7 +115,7 @@ Phase 12 (after Phase 11)
 ### Database
 - PostgreSQL 16 with connection pooling
 - Migrations using `golang-migrate/migrate`
-- Initial schema: `users`, `api_keys` tables only
+- Initial schema: `users`, `api_keys`, `audit_logs` tables
 
 ### Frontend (Next.js 15)
 - `npx create-next-app@latest` with App Router, TypeScript, Tailwind
@@ -87,14 +132,30 @@ Phase 12 (after Phase 11)
     login/
     signup/
   components/ui/ (shadcn/ui)
-  components/layout/ (Header, Footer, LanguageSwitcher)
+  components/layout/ (PublicHeader, AppHeader, Footer, LanguageSwitcher)
   messages/{en,fr,de,es,pt,ko,zh,ja,it}.json
   i18n/config.ts
   i18n/request.ts
+  lib/subdomain.ts
   ```
-- Middleware for locale detection
-- Language switcher in header
-- Placeholder pages for all routes
+
+### Subdomain Foundation (New)
+- **`lib/subdomain.ts`**: `getSubdomain(hostname)` → `"app" | "www"`
+  - Parses `x-forwarded-host` or `host` header
+  - Returns `"app"` for `app.ceche.net`, `"www"` for everything else
+- **`middleware.ts`**: Rewritten with subdomain logic:
+  1. Extract hostname from `x-forwarded-host` or `host`
+  2. If `ceche.net` (no www) → 301 to `www.ceche.net`
+  3. Detect subdomain: `"app"` | `"www"`
+  4. Enforce subdomain routing (app-only paths on www → redirect, www-only paths on app → redirect)
+  5. Run next-intl locale middleware
+  6. English `/en/` → `/` redirect (localePrefix: "as-needed")
+- **`i18n/config.ts`**: `localePrefix: "as-needed"` (English = no prefix)
+- **`components/layout/PublicHeader.tsx`**: www header with Platform/Solutions/Resources dropdowns, language switcher, Login/Get Started CTAs
+- **`components/layout/AppHeader.tsx`**: app header with user info, logout, navigation to app features
+- **`components/layout/Footer.tsx`**: www footer (product, resources, company, legal, socials, newsletter)
+- **`[locale]/layout.tsx`**: Conditional layout — public header+footer on www, app header on app
+- **`[locale]/page.tsx`**: Split — www homepage (public marketing) vs app homepage (authenticated placeholder)
 
 ### DevOps
 - `docker-compose.yml` with postgres, backend, frontend
@@ -104,7 +165,12 @@ Phase 12 (after Phase 11)
 - [ ] `docker-compose up` starts all 3 services
 - [ ] `GET /health` returns 200
 - [ ] Frontend loads at `localhost:3000`
+- [ ] Subdomain detection works: `app.*` → app layout, `www.*` → public layout
+- [ ] `ceche.net` → 301 → `www.ceche.net`
+- [ ] `www.ceche.net/login` → 301 → `app.ceche.net/login`
+- [ ] `app.ceche.net/platform` → 301 → `www.ceche.net/platform`
 - [ ] Locale prefix works: `/en/`, `/fr/`
+- [ ] English `/en/platform` → 301 → `/platform` (no prefix)
 - [ ] Language switcher changes locale
 - [ ] All placeholder pages render
 
@@ -113,16 +179,18 @@ Phase 12 (after Phase 11)
 - Don't create premature abstractions
 - Don't skip TypeScript strict mode
 - Don't use `any` type anywhere
+- Don't hardcode subdomain logic (use `lib/subdomain.ts`)
 
 ---
 
 ## Phase 1: Authentication & User Management
 **Duration:** Day 3-5
-**Goal:** Users can register, login, manage API keys
+**Goal:** Users can register, login, manage API keys — all on app subdomain
 
 ### Backend
 - Tables: `users` (id, email, password_hash, name, plan, created_at, updated_at)
 - Tables: `api_keys` (id, user_id, key_hash, name, permissions, rate_limit, created_at, last_used_at)
+- Tables: `audit_logs` (user_id, action, resource, ip, user_agent, created_at)
 - `POST /api/v1/auth/register` → bcrypt password, create user
 - `POST /api/v1/auth/login` → JWT (15min) + refresh token (7d)
 - `POST /api/v1/auth/refresh` → new JWT
@@ -131,23 +199,31 @@ Phase 12 (after Phase 11)
 - `POST /api/v1/api-keys` → create API key (permission: `appraise`, `scan`, `reveal`)
 - `DELETE /api/v1/api-keys/:id` → revoke
 - Rate limiting: 100 req/min per user, 1000 req/min per API key
-- Audit log table: `audit_logs` (user_id, action, resource, ip, user_agent, created_at)
+- Audit log: write all auth events (register, login, refresh, api_key_create, api_key_delete)
 
-### Frontend
-- `/login` page with email/password form
-- `/signup` page with registration form
-- Auth context with JWT storage (httpOnly cookie)
-- Protected dashboard layout
-- API key management UI
+### Frontend (app subdomain only)
+- `/login` page with email/password form → after login, redirect to `app.ceche.net/`
+- `/signup` page with registration form → after signup, redirect to `app.ceche.net/`
+- Auth context with JWT storage (localStorage)
+- Protected app layout (AppHeader from Phase 0)
+- `/api-keys` page: create, list, delete API keys
+- App homepage (`app.ceche.net/`): authenticated placeholder with quick actions
+
+### Subdomain Integration
+- Login/signup pages exist only on app subdomain
+- Middleware redirects `www.ceche.net/login` → `app.ceche.net/login`
+- After successful auth, redirect to `app.ceche.net/` (not `/dashboard`)
+- Auth context stores token, used by app subdomain pages
 
 ### Verification Checklist
-- [ ] Register → receive JWT
-- [ ] Login → receive JWT
+- [ ] Register → receive JWT → redirect to app homepage
+- [ ] Login → receive JWT → redirect to app homepage
 - [ ] JWT expires → refresh works
 - [ ] Invalid credentials → 401
 - [ ] Rate limit → 429
-- [ ] Audit log records all auth events
+- [ ] Audit log records all auth events (IP + user agent)
 - [ ] API key creation/revocation works
+- [ ] `www.ceche.net/login` → 301 → `app.ceche.net/login`
 
 ### Things to Avoid
 - Never store passwords in plaintext
@@ -183,11 +259,14 @@ Phase 12 (after Phase 11)
 - Cache: Redis or in-memory for repeat lookups (24h TTL)
 - Audit: log every appraisal request
 
-### Frontend
-- Dashboard: search bar for domain appraisal
+### Frontend (app subdomain)
+- `/appraise` page: search bar for domain appraisal
 - Results page: score visualization, metrics breakdown
 - History: list of past appraisals
 - Loading states with skeletons
+
+### Subdomain Impact
+- None. Page lives on app subdomain, layout already handles it from Phase 0.
 
 ### Verification Checklist
 - [ ] `POST /api/v1/appraise` with `google.com` → returns score
@@ -228,12 +307,15 @@ Phase 12 (after Phase 11)
   - `POST /api/v1/word-lists` → upload custom
   - `GET /api/v1/word-lists` → list all
 
-### Frontend
-- Scan creation form: select word list, choose TLDs
+### Frontend (app subdomain)
+- `/scan` page: scan creation form (select word list, choose TLDs)
 - Real-time progress bar via SSE
 - Results table: domain, tld, available, price
 - Filter/sort available domains
 - Export results (CSV)
+
+### Subdomain Impact
+- None. Page lives on app subdomain.
 
 ### Verification Checklist
 - [ ] Scan starts and progresses
@@ -286,12 +368,15 @@ Phase 12 (after Phase 11)
   - Pro: 200/month
   - Enterprise: unlimited
 
-### Frontend
-- Reveal button with price display
+### Frontend (app subdomain)
+- Reveal button with price display on scan results and marketplace
 - Payment flow (Paystack checkout)
 - Reveal result page: full domain name
 - Subscription management
 - Billing history
+
+### Subdomain Impact
+- None. Pages live on app subdomain.
 
 ### Verification Checklist
 - [ ] Domain names encrypted at rest
@@ -332,12 +417,16 @@ Phase 12 (after Phase 11)
 - Rate limiting: 10 requests/min per domain
 - Caching: 24h TTL for non-sensitive data
 
-### Frontend
+### Frontend (app subdomain)
 - Intelligence profile page with tabs
 - Summary card: age, expiry, DNS status
 - Details: full WHOIS, DNS records
 - History timeline
 - Comparison: vs similar domains
+- Intelligence summary cards on marketplace listings (both subdomains)
+
+### Subdomain Impact
+- Intelligence data flows to both www (marketplace teaser listings) and app (full detail).
 
 ### Verification Checklist
 - [ ] Intelligence data populated correctly
@@ -369,12 +458,15 @@ Phase 12 (after Phase 11)
 - Each suggestion includes: domain, tld, score, reasoning
 - Rate limit: 20 suggestions/day free, unlimited paid
 
-### Frontend
+### Frontend (app subdomain)
 - Input: seed word or phrase
 - Filters: TLD preference, length, style
 - Results grid with scores
 - One-click appraisal from suggestion
 - One-click scan from suggestion
+
+### Subdomain Impact
+- None. Page lives on app subdomain.
 
 ### Verification Checklist
 - [ ] Suggestions are relevant to seed
@@ -387,15 +479,16 @@ Phase 12 (after Phase 11)
 
 ## Phase 7: Marketplace
 **Duration:** Day 39-48
-**Goal:** Buy domains directly through Ceche
+**Goal:** Buy domains directly through Ceche — split across www (teaser) and app (full)
 
-### Backend
-- Tables: `listings` (id, domain_hash, domain_encrypted, price, seller_id, status, created_at)
+### Backend (shared)
+- Tables: `listings` (id, domain_hash, domain_encrypted, price, seller_id, status, featured, score, created_at)
 - Tables: `orders` (id, listing_id, buyer_id, amount, paystack_ref, status, created_at)
 - Tables: `escrow` (id, order_id, amount, status, released_at)
 - Listing flow:
   - Ceche lists premium domains from scanner
   - Price based on appraisal score
+  - `featured` boolean controls what shows on www teaser
   - Buy now or make offer
 - Order flow:
   - Buyer pays → escrow holds funds
@@ -403,29 +496,53 @@ Phase 12 (after Phase 11)
   - Buyer confirms receipt
   - Funds released to Ceche
 - `POST /api/v1/listings` → create listing (admin only)
-- `GET /api/v1/listings` → browse marketplace
+- `GET /api/v1/listings` → browse marketplace (supports `?featured=true&limit=8` for teaser)
+- `GET /api/v1/listings/:id` → listing detail (includes appraisal score + intelligence summary)
 - `POST /api/v1/orders` → purchase
 - `POST /api/v1/webhooks/paystack` → handle escrow
 
-### Frontend
-- Marketplace browse page with filters
+### Frontend — www subdomain (teaser)
+- `/marketplace` page: top 6-8 featured listings
+- Each listing shows: domain (partially hidden), score, price range, "Reveal to Buy" CTA
+- Banner: "Create an account to access the full marketplace"
+- Links to `/signup` with UTM params
+- No auth required to view teaser
+- Fetches from `GET /api/v1/listings?featured=true&limit=8`
+
+### Frontend — app subdomain (full)
+- `/marketplace` page: all listings with filters (score, price, TLD, category)
 - Domain detail page with appraisal + intelligence
-- Checkout flow
+- Checkout flow (Paystack)
 - Order history
 - Transfer status tracking
+- Fetches from `GET /api/v1/listings` with full query params
+
+### Subdomain Integration
+- Same API endpoint, different query params per subdomain
+- Teaser page is public (no auth), full marketplace requires auth
+- After reveal, user can purchase domain
 
 ### Verification Checklist
+- [ ] www marketplace shows top featured listings (no auth required)
+- [ ] app marketplace shows all listings (auth required)
 - [ ] Escrow holds funds correctly
 - [ ] Domain transfer verified
 - [ ] Funds released only after confirmation
 - [ ] All payments logged
 - [ ] Refund policy enforced (no refunds)
+- [ ] Teaser → signup conversion flow works
+
+### Things to Avoid
+- Don't show full domain names on www teaser (partial reveal only)
+- Don't allow purchase without auth
+- Don't skip escrow step
+- Don't show sensitive order data on www
 
 ---
 
 ## Phase 8: API Access
 **Duration:** Day 49-52
-**Goal:** Public API for developers
+**Goal:** Public API for developers — split across www (marketing) and app (management)
 
 ### Backend
 - `GET /api/v1` → API documentation (OpenAPI/Swagger)
@@ -441,12 +558,18 @@ Phase 12 (after Phase 11)
 - Request/response logging for API calls
 - CORS headers for cross-origin API access
 
-### Frontend
-- `/platform/api` page with docs
-- Interactive API explorer (Swagger UI)
-- Code examples (Python, JavaScript, Go)
-- API key management dashboard
+### Frontend — www subdomain (marketing)
+- `/platform/api` page with docs, Swagger UI, code examples (Python, JavaScript, Go)
+- No auth required to view docs
+
+### Frontend — app subdomain (management)
+- `/api-keys` page: API key management (built in Phase 1)
 - Usage statistics per API key
+- Rate limit status display
+
+### Subdomain Integration
+- Marketing docs page on www, key management on app
+- Same API, different views per subdomain
 
 ### Verification Checklist
 - [ ] Swagger UI renders at `/api/docs`
@@ -468,9 +591,9 @@ Phase 12 (after Phase 11)
 
 ## Phase 9: Public Pages
 **Duration:** Day 53-65
-**Goal:** Complete marketing site
+**Goal:** Complete marketing site on www subdomain
 
-### Pages to Build (in order)
+### Pages to Build (all on www subdomain)
 
 **Platform Pages (7)**
 1. `/platform` — Overview
@@ -481,26 +604,30 @@ Phase 12 (after Phase 11)
 6. `/platform/name-suggestions`
 7. `/platform/api`
 
-**Solutions Pages (9)**
+**Solutions Pages (13)**
 1. `/solutions` — Overview
 2. `/solutions/use-cases/find-available-domain-names`
 3. `/solutions/use-cases/research-domain-intelligence`
 4. `/solutions/use-cases/buy-premium-domains`
 5. `/solutions/use-cases/monitor-domain-expiration`
 6. `/solutions/use-cases/generate-brand-name-ideas`
-7. `/solutions/industries/startups`
-8. `/solutions/industries/agencies`
-9. `/solutions/industries/domain-investors`
+7. `/solutions/use-cases/validate-domain-investment`
+8. `/solutions/industries/startups`
+9. `/solutions/industries/agencies`
+10. `/solutions/industries/enterprises`
+11. `/solutions/industries/domain-investors`
+12. `/solutions/industries/brand-strategists`
+13. `/solutions/industries/web-developers`
 
 **Resources Pages (12)**
 1. `/resources` — Overview
 2. `/resources/blog` + `/resources/blog/[slug]`
 3. `/resources/guides` + `/resources/guides/[slug]`
-4. `/resources/customer-stories`
-5. `/resources/ebooks`
+4. `/resources/customer-stories` + `/resources/customer-stories/[slug]`
+5. `/resources/ebooks` + `/resources/ebooks/[slug]`
 6. `/resources/changelog`
 7. `/resources/about`
-8. `/resources/help-center`
+8. `/resources/help-center` + `/resources/help-center/[slug]`
 9. `/resources/contact`
 10. `/resources/affiliate`
 11. `/resources/partner`
@@ -520,12 +647,15 @@ Phase 12 (after Phase 11)
 
 **Other Pages**
 1. `/pricing` — with tier comparison
-2. `/login` — auth
-3. `/signup` — registration
-4. `/demo` — demo request
+2. `/marketplace` — teaser (built in Phase 7)
+
+### Subdomain Impact
+- All pages live on www subdomain
+- Layout already handles www from Phase 0
+- PublicHeader + Footer from Phase 0
 
 ### Verification Checklist
-- [ ] All 40+ pages render correctly
+- [ ] All 40+ pages render correctly on www
 - [ ] All pages localized (en/fr/de/es/pt/ko/zh/ja/it)
 - [ ] Language switcher works on every page
 - [ ] SEO metadata on all pages
@@ -533,6 +663,7 @@ Phase 12 (after Phase 11)
 - [ ] Mobile responsive
 - [ ] Accessibility (WCAG 2.1 AA)
 - [ ] Page speed < 3s on 3G
+- [ ] No app-only pages accessible on www (login → redirect)
 
 ### Things to Avoid
 - Don't duplicate content across locales
@@ -540,6 +671,7 @@ Phase 12 (after Phase 11)
 - Don't skip meta descriptions
 - Don't use placeholder images in production
 - Don't leave TODO comments
+- Don't serve app-only pages on www (enforce subdomain routing)
 
 ---
 
@@ -548,7 +680,7 @@ Phase 12 (after Phase 11)
 **Goal:** Full visibility into system health
 
 ### Backend
-- Structured logging: JSON format with correlation IDs
+- Structured logging: JSON format with correlation IDs + subdomain metadata
 - Request tracing: every request gets `X-Request-ID`
 - Metrics endpoint: `GET /metrics` (Prometheus format)
 - SLO definitions:
@@ -566,8 +698,12 @@ Phase 12 (after Phase 11)
 - Web Vitals tracking
 - User session recording (opt-in)
 
+### Subdomain Impact
+- Add subdomain to log metadata (`"subdomain": "app"`)
+- Optional: separate metrics dashboards per subdomain
+
 ### Verification Checklist
-- [ ] All requests logged with correlation ID
+- [ ] All requests logged with correlation ID + subdomain
 - [ ] Metrics endpoint returns data
 - [ ] Alerts fire on threshold breach
 - [ ] Logs queryable by request ID
@@ -577,14 +713,50 @@ Phase 12 (after Phase 11)
 
 ## Phase 11: Deployment & Production
 **Duration:** Day 71-80
-**Goal:** Live on ceche.net
+**Goal:** Live on ceche.net with subdomain routing
 
 ### Infrastructure
 - Docker images: backend, frontend
 - Docker Compose on production server
-- Nginx reverse proxy with SSL (Let's Encrypt)
 - PostgreSQL backup: daily automated, 30-day retention
 - Environment variables in `.env` (not in code)
+
+### DNS Records
+| Record | Type | Value |
+|--------|------|-------|
+| `ceche.net` | A | 77.67.23.30 |
+| `www.ceche.net` | A | 77.67.23.30 |
+| `app.ceche.net` | A | 77.67.23.30 |
+
+### SSL
+- Wildcard cert: `*.ceche.net` (Let's Encrypt or paid)
+- Covers both `www` and `app` subdomains
+
+### Nginx Configuration
+```nginx
+# Redirect root to www
+server {
+    server_name ceche.net;
+    return 301 https://www.ceche.net$request_uri;
+}
+
+# Serve both www and app from same container
+server {
+    server_name www.ceche.net app.ceche.net;
+    
+    ssl_certificate /etc/ssl/certs/ceche.net.pem;
+    ssl_certificate_key /etc/ssl/private/ceche.net.key;
+    
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+```
 
 ### CI/CD (GitHub Actions)
 - On push to main:
@@ -610,9 +782,13 @@ Phase 12 (after Phase 11)
 - RTO: 2 hours
 
 ### Verification Checklist
-- [ ] Site live at ceche.net
-- [ ] SSL valid (Let's Encrypt)
-- [ ] All pages accessible
+- [ ] Site live at www.ceche.net
+- [ ] App live at app.ceche.net
+- [ ] ceche.net → 301 → www.ceche.net
+- [ ] SSL valid (wildcard)
+- [ ] All www pages accessible
+- [ ] All app pages accessible
+- [ ] Cross-subdomain redirects work
 - [ ] API endpoints working
 - [ ] Payments processing
 - [ ] Backups running
@@ -627,13 +803,20 @@ Phase 12 (after Phase 11)
 
 ### Tasks
 - Performance optimization (Core Web Vitals)
-- SEO audit (all pages)
+- SEO audit (all pages on both subdomains)
 - Accessibility audit (WCAG 2.1 AA)
 - Security audit (OWASP Top 10)
 - Load testing (1000 concurrent users)
 - User acceptance testing
 - Documentation update
 - Support ticket system setup
+
+### Subdomain-Specific Testing
+- Test all redirects (ceche.net → www, www/login → app, app/platform → www)
+- Test locale routing on both subdomains
+- Test cross-subdomain auth flow (login on app, link from www)
+- Test marketplace teaser → signup flow
+- Test API docs (www) → key management (app) flow
 
 ### Verification Checklist
 - [ ] Lighthouse score > 90
@@ -643,3 +826,5 @@ Phase 12 (after Phase 11)
 - [ ] User testing completed
 - [ ] Documentation complete
 - [ ] Support system ready
+- [ ] All subdomain redirects verified
+- [ ] Cross-subdomain flows tested
