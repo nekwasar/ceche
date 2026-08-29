@@ -19,7 +19,7 @@ export default function SignupPage() {
     setIsLoading(true);
     try {
       await register(email, password, name);
-      router.push("/en/platform");
+      router.push("/");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Registration failed");
     } finally {

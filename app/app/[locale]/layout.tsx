@@ -4,6 +4,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/config";
 import { Providers } from "@/components/Providers";
+import { SubdomainLayout } from "@/components/layout/SubdomainLayout";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
@@ -35,7 +36,7 @@ export default async function LocaleLayout({
       <body>
         <Providers>
           <NextIntlClientProvider messages={messages}>
-            {children}
+            <SubdomainLayout>{children}</SubdomainLayout>
           </NextIntlClientProvider>
         </Providers>
       </body>
