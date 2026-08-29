@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getSubdomain, type Subdomain } from "@/lib/subdomain";
-import { PublicHeader } from "./PublicHeader";
+import { Navbar } from "./Navbar";
 import { AppHeader } from "./AppHeader";
 import { Footer } from "./Footer";
 
@@ -16,7 +16,7 @@ export function SubdomainLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {subdomain === "www" ? <PublicHeader /> : <AppHeader />}
+      {subdomain === "www" ? <Navbar /> : <AppHeader />}
       <main className="flex-1">{children}</main>
       {subdomain === "www" && <Footer />}
     </div>

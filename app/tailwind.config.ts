@@ -7,18 +7,28 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Ubuntu", "sans-serif"],
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        "primary-foreground": "var(--primary-foreground)",
-        muted: "var(--muted)",
-        "muted-foreground": "var(--muted-foreground)",
-        accent: "var(--accent)",
-        "accent-foreground": "var(--accent-foreground)",
-        border: "var(--border)",
-        ring: "var(--ring)",
+        canvas: "#FAF7F2",
+        "canvas-dark": "#F0EDE8",
+        brand: {
+          DEFAULT: "#9E2A2B",
+          light: "#B83A1B",
+          dark: "#7A1F20",
+        },
+        accent: {
+          DEFAULT: "#F4A261",
+          light: "#E9C46A",
+          dark: "#D4893A",
+        },
+        slate: {
+          DEFAULT: "#1A1A1A",
+          light: "#3D3D3D",
+          muted: "#6B6B6B",
+        },
       },
     },
   },

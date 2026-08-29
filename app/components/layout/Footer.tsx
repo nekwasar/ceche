@@ -1,78 +1,120 @@
+import { Globe, Twitter, Linkedin, Github } from "lucide-react";
+
+const footerLinks = {
+  products: [
+    { label: "Domain Appraiser", href: "/tools/appraisal" },
+    { label: "SEO Scanner", href: "/tools/seo-scanner" },
+    { label: "Extended Insights", href: "/tools/extended-insights" },
+    { label: "Bulk Analyzer", href: "/tools/bulk-analyzer" },
+    { label: "API Access", href: "/tools/api" },
+  ],
+  marketplace: [
+    { label: "Curated Domains", href: "/marketplace/curated" },
+    { label: "Try Your Luck", href: "/marketplace/try-your-luck" },
+    { label: "Sell Domains", href: "/marketplace/sell" },
+    { label: "How Unmasking Works", href: "/marketplace/how-unmasking-works" },
+  ],
+  company: [
+    { label: "About", href: "/company/about" },
+    { label: "Careers", href: "/company/careers" },
+    { label: "Blog", href: "/resources/blog" },
+    { label: "Contact", href: "/resources/contact" },
+  ],
+  legal: [
+    { label: "Terms of Service", href: "/legal/terms" },
+    { label: "Privacy Policy", href: "/legal/privacy" },
+    { label: "Cookie Policy", href: "/legal/cookies" },
+  ],
+};
+
 export function Footer() {
   return (
-    <footer className="border-t border-border py-12 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-slate text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <a href="/" className="text-xl font-bold text-primary">Ceche</a>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Know what&apos;s available. Know what it&apos;s worth. Own it first.
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 bg-accent rounded-md flex items-center justify-center">
+                <span className="text-slate font-bold text-lg">C</span>
+              </div>
+              <span className="font-bold text-xl tracking-tight">Ceche</span>
+            </div>
+            <p className="text-white/50 text-sm leading-relaxed max-w-xs">
+              Enterprise-grade domain intelligence and marketplace platform.
             </p>
-            <div className="flex gap-4 mt-4">
-              <a href="https://x.com/nekwasar" className="text-muted-foreground hover:text-primary text-sm">X</a>
-              <a href="https://linkedin.com/company/nekwasar" className="text-muted-foreground hover:text-primary text-sm">LinkedIn</a>
-              <a href="https://github.com/nekwasar" className="text-muted-foreground hover:text-primary text-sm">GitHub</a>
+            <div className="flex items-center gap-3 mt-6">
+              <a href="#" className="text-white/40 hover:text-accent transition-colors">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href="#" className="text-white/40 hover:text-accent transition-colors">
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a href="#" className="text-white/40 hover:text-accent transition-colors">
+                <Github className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-3">Product</h3>
-            <ul className="space-y-2">
-              <li><a href="/platform/domain-appraiser" className="text-sm text-muted-foreground hover:text-primary">Appraiser</a></li>
-              <li><a href="/platform/domain-scanner" className="text-sm text-muted-foreground hover:text-primary">Scanner</a></li>
-              <li><a href="/platform/domain-marketplace" className="text-sm text-muted-foreground hover:text-primary">Marketplace</a></li>
-              <li><a href="/platform/intelligence-profile" className="text-sm text-muted-foreground hover:text-primary">Intelligence</a></li>
-              <li><a href="/platform/name-suggestions" className="text-sm text-muted-foreground hover:text-primary">Suggestions</a></li>
+            <h4 className="font-semibold text-sm mb-4">Products</h4>
+            <ul className="space-y-2.5">
+              {footerLinks.products.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-white/50 hover:text-white text-sm transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-3">Resources</h3>
-            <ul className="space-y-2">
-              <li><a href="/resources/blog" className="text-sm text-muted-foreground hover:text-primary">Blog</a></li>
-              <li><a href="/resources/guides" className="text-sm text-muted-foreground hover:text-primary">Guides</a></li>
-              <li><a href="/resources/help-center" className="text-sm text-muted-foreground hover:text-primary">Help Center</a></li>
-              <li><a href="/resources/contact" className="text-sm text-muted-foreground hover:text-primary">Contact</a></li>
-              <li><a href="/resources/changelog" className="text-sm text-muted-foreground hover:text-primary">Changelog</a></li>
+            <h4 className="font-semibold text-sm mb-4">Marketplace</h4>
+            <ul className="space-y-2.5">
+              {footerLinks.marketplace.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-white/50 hover:text-white text-sm transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-3">Company</h3>
-            <ul className="space-y-2">
-              <li><a href="/company/about" className="text-sm text-muted-foreground hover:text-primary">About</a></li>
-              <li><a href="/company/news" className="text-sm text-muted-foreground hover:text-primary">News</a></li>
-              <li><a href="/company/careers" className="text-sm text-muted-foreground hover:text-primary">Careers</a></li>
-              <li><a href="/resources/affiliate" className="text-sm text-muted-foreground hover:text-primary">Affiliate</a></li>
-              <li><a href="/resources/partner" className="text-sm text-muted-foreground hover:text-primary">Partner</a></li>
+            <h4 className="font-semibold text-sm mb-4">Company</h4>
+            <ul className="space-y-2.5">
+              {footerLinks.company.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-white/50 hover:text-white text-sm transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="font-semibold text-sm mb-3">Legal</h3>
-            <ul className="space-y-2">
-              <li><a href="/legal/terms" className="text-sm text-muted-foreground hover:text-primary">Terms</a></li>
-              <li><a href="/legal/privacy" className="text-sm text-muted-foreground hover:text-primary">Privacy</a></li>
-              <li><a href="/legal/cookies" className="text-sm text-muted-foreground hover:text-primary">Cookies</a></li>
-              <li><a href="/legal/data" className="text-sm text-muted-foreground hover:text-primary">Data Policy</a></li>
-              <li><a href="/legal/dpa" className="text-sm text-muted-foreground hover:text-primary">DPA</a></li>
+            <h4 className="font-semibold text-sm mb-4">Legal</h4>
+            <ul className="space-y-2.5">
+              {footerLinks.legal.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="text-white/50 hover:text-white text-sm transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            &copy; 2026 Ceche. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/30 text-sm">
+            &copy; {new Date().getFullYear()} Ceche. All rights reserved.
           </p>
-          <div className="flex items-center gap-2">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="text-sm border border-border rounded-md px-3 py-1.5 bg-background"
-            />
-            <button className="bg-primary text-primary-foreground px-4 py-1.5 rounded-md text-sm font-medium hover:opacity-90">
-              Subscribe
-            </button>
+          <div className="flex items-center gap-2 text-white/30 text-sm">
+            <Globe className="w-3.5 h-3.5" />
+            <span>Domain Intelligence Platform</span>
           </div>
         </div>
       </div>
