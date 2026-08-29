@@ -88,7 +88,7 @@ Phase 12 (after Phase 11)
     signup/
   components/ui/ (shadcn/ui)
   components/layout/ (Header, Footer, LanguageSwitcher)
-  messages/{en,fr,de,es,pt}.json
+  messages/{en,fr,de,es,pt,ko,zh,ja,it}.json
   i18n/config.ts
   i18n/request.ts
   ```
@@ -437,11 +437,32 @@ Phase 12 (after Phase 11)
 - API key authentication via `Authorization: Bearer <key>`
 - Versioning: `/api/v1/`, `/api/v2/` (future)
 - Deprecation headers on old versions
+- API key rotation mechanism
+- Request/response logging for API calls
+- CORS headers for cross-origin API access
 
 ### Frontend
 - `/platform/api` page with docs
 - Interactive API explorer (Swagger UI)
 - Code examples (Python, JavaScript, Go)
+- API key management dashboard
+- Usage statistics per API key
+
+### Verification Checklist
+- [ ] Swagger UI renders at `/api/docs`
+- [ ] API key authentication works
+- [ ] Rate limits enforced per tier
+- [ ] Deprecation headers present on old versions
+- [ ] API key rotation works
+- [ ] Usage stats displayed correctly
+- [ ] CORS headers correct for cross-origin
+
+### Things to Avoid
+- Don't expose API keys in URLs or logs
+- Don't skip rate limiting on API endpoints
+- Don't forget CORS headers for browser-based API clients
+- Don't allow API key enumeration
+- Don't skip request/response logging for debugging
 
 ---
 
@@ -505,7 +526,7 @@ Phase 12 (after Phase 11)
 
 ### Verification Checklist
 - [ ] All 40+ pages render correctly
-- [ ] All pages localized (en/fr/de/es/pt)
+- [ ] All pages localized (en/fr/de/es/pt/ko/zh/ja/it)
 - [ ] Language switcher works on every page
 - [ ] SEO metadata on all pages
 - [ ] hreflang tags correct

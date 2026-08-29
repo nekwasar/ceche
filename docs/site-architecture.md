@@ -110,29 +110,33 @@
 │
 ├── NEWSLETTER (footer signup)
 │
-└── LOCALE PAMES (localized versions of ALL above)
+└── LOCALE PAGES (localized versions of ALL above)
     ├── /en/...                                    English (default)
     ├── /fr/...                                    French
     ├── /de/...                                    German
     ├── /es/...                                    Spanish
-    └── /pt/...                                    Portuguese
+    ├── /pt/...                                    Portuguese
+    ├── /ko/...                                    Korean
+    ├── /zh/...                                    Chinese
+    ├── /ja/...                                    Japanese
+    └── /it/...                                    Italian
 ```
 
 ---
 
 ## Page Count
 
-| Category | Pages | Localized (x5) |
+| Category | Pages | Localized (x9) |
 |----------|-------|----------------|
-| Platform | 7 | 35 |
-| Solutions | 13 | 65 |
-| Resources | 12 | 60 |
-| Pricing | 1 | 5 |
-| Legal | 5 | 25 |
-| Company | 3 | 15 |
-| Auth | 3 | 15 |
-| Homepage | 1 | 5 |
-| **Total** | **45** | **225** |
+| Platform | 7 | 63 |
+| Solutions | 13 | 117 |
+| Resources | 12 | 108 |
+| Pricing | 1 | 9 |
+| Legal | 5 | 45 |
+| Company | 3 | 27 |
+| Auth | 3 | 27 |
+| Homepage | 1 | 9 |
+| **Total** | **45** | **405** |
 
 ---
 
@@ -145,6 +149,10 @@
 /de/platform
 /es/platform
 /pt/platform
+/ko/platform
+/zh/platform
+/ja/platform
+/it/platform
 ```
 
 ### Dynamic Routes
@@ -265,10 +273,14 @@
 - **SEO**: hreflang tags on every page, localized sitemaps
 
 ### Supported Locales
-| Code | Label | Flag |
-|------|-------|------|
-| `en` | English | — |
-| `fr` | Français | — |
-| `de` | Deutsch | — |
-| `es` | Español | — |
-| `pt` | Português | — |
+| Code | Label | Native Name |
+|------|-------|-------------|
+| `en` | English | English |
+| `fr` | French | Français |
+| `de` | German | Deutsch |
+| `es` | Spanish | Español |
+| `pt` | Portuguese | Português |
+| `ko` | Korean | 한국어 |
+| `zh` | Chinese | 中文 |
+| `ja` | Japanese | 日本語 |
+| `it` | Italian | Italiano |

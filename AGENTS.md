@@ -102,7 +102,7 @@ Platform ▾    Solutions ▾    Resources ▾    Pricing    [Language]    Login
 
 - **Library**: next-intl with App Router
 - **URL Pattern**: Sub-path routing (`/en/platform`, `/fr/platform`)
-- **Supported Locales**: en (default), fr, de, es, pt
+- **Supported Locales**: en (default), fr, de, es, pt, ko, zh, ja, it
 - **Language Switcher**: In top nav, persists across all routes
 - **SEO**: hreflang tags on all pages, localized sitemaps
 
