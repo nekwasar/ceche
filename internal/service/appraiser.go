@@ -180,7 +180,7 @@ var commonWords = map[string]bool{
 	"wise": true, "work": true, "world": true, "zone": true,
 }
 
-func CalculateScore(domain string) (int, AppraisalMetrics) {
+func CalculateScore(domain string, tier string) (int, AppraisalMetrics) {
 	domain = strings.ToLower(domain)
 	sld := domain
 	tld := ""
@@ -224,7 +224,7 @@ func CalculateScore(domain string) (int, AppraisalMetrics) {
 	score := normalizeScore(estimatedValue, modules)
 	tldProfile := resolveTldProfile(tldScores[tld])
 
-	return score, AppraisalMetrics{
+	metrics := AppraisalMetrics{
 		Domain:            domain,
 		SLD:               sld,
 		TLD:               tld,
@@ -237,6 +237,71 @@ func CalculateScore(domain string) (int, AppraisalMetrics) {
 		WeightProfile:     tldProfile,
 		Modules:           modules,
 	}
+
+	return score, shapeResponse(metrics, tier)
+}
+
+func shapeResponse(metrics AppraisalMetrics, tier string) AppraisalMetrics {
+	switch tier {
+	case "free":
+		return shapeFreeResponse(metrics)
+	case "starter", "pro", "enterprise":
+		return shapePremiumResponse(metrics)
+	default:
+		return shapeFreeResponse(metrics)
+	}
+}
+
+func shapeFreeResponse(metrics AppraisalMetrics) AppraisalMetrics {
+	flagged := 0
+	for _, mod := range metrics.Modules {
+		if mod.Value != nil && *mod.Value < 1.0 && mod.Status == "SUCCESS" {
+			flagged++
+		}
+	}
+
+	freeMetrics := AppraisalMetrics{
+		Domain:            metrics.Domain,
+		SLD:               metrics.SLD,
+		TLD:               metrics.TLD,
+		Score:             metrics.Score,
+		Confidence:        "free_tier",
+		CompletenessRatio: metrics.CompletenessRatio,
+		WeightProfile:     metrics.WeightProfile,
+		Modules: map[string]ModuleResult{
+			"teaser": {
+				Value: float64Ptr(float64(metrics.Score)),
+				Data: map[string]interface{}{
+					"score":      metrics.Score,
+					"modules":    16,
+					"flagged":    flagged,
+					"premium":    false,
+					"teaser":     generateTeaser(metrics.Score, flagged),
+				},
+				Status: "FREE_TIER",
+			},
+			"m2_tld_table": metrics.Modules["m2_tld_table"],
+			"m3_length": metrics.Modules["m3_length"],
+			"m5_pronounceability": metrics.Modules["m5_pronounceability"],
+		},
+	}
+
+	return freeMetrics
+}
+
+func shapePremiumResponse(metrics AppraisalMetrics) AppraisalMetrics {
+	return metrics
+}
+
+func generateTeaser(score int, flagged int) string {
+	if score >= 80 {
+		return fmt.Sprintf("Score: %d/100 — Premium domain with strong brandability. %d risk factors flagged.", score, flagged)
+	} else if score >= 60 {
+		return fmt.Sprintf("Score: %d/100 — Strong domain with good commercial potential. %d risk factors flagged.", score, flagged)
+	} else if score >= 40 {
+		return fmt.Sprintf("Score: %d/100 — Moderate domain with some risk factors. %d issues flagged.", score, flagged)
+	}
+	return fmt.Sprintf("Score: %d/100 — Developing domain with %d risk factors. Upgrade for full analysis.", score, flagged)
 }
 
 func m1Rdap(domain string) ModuleResult {

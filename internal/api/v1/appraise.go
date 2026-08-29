@@ -1,8 +1,6 @@
 package v1
 
 import (
-	"crypto/sha256"
-	"encoding/hex"
 	"encoding/json"
 	"net/http"
 	"regexp"
@@ -11,10 +9,23 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"github.com/nekwasar/ceche/internal/cache"
 	"github.com/nekwasar/ceche/internal/service"
 )
 
 var domainRegex = regexp.MustCompile(`^[a-zA-Z0-9]([a-zA-Z0-9\-]*[a-zA-Z0-9])?(\.[a-zA-Z]{2,})+$`)
+
+func getUserTier(db *pgxpool.Pool, userID string) string {
+	var plan string
+	err := db.QueryRow(nil,
+		`SELECT plan FROM users WHERE id = $1`,
+		userID,
+	).Scan(&plan)
+	if err != nil || plan == "" {
+		return "free"
+	}
+	return plan
+}
 
 func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -65,7 +76,24 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 			}
 		}
 
-		score, metrics := service.CalculateScore(req.Domain)
+		tier := getUserTier(db, userID)
+
+		cacheKey := "appraisal:" + req.Domain + ":" + tier
+		var cachedMetrics service.AppraisalMetrics
+		if c := cache.GetCache(); c != nil {
+			if err := c.Get(cacheKey, &cachedMetrics); err == nil {
+				w.Header().Set("Content-Type", "application/json")
+				json.NewEncoder(w).Encode(map[string]interface{}{
+					"domain":   req.Domain,
+					"score":    cachedMetrics.Score,
+					"metrics":  cachedMetrics,
+					"cached":   true,
+				})
+				return
+			}
+		}
+
+		score, metrics := service.CalculateScore(req.Domain, tier)
 
 		tld := ""
 		if idx := strings.LastIndex(req.Domain, "."); idx != -1 {
@@ -90,12 +118,15 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 			return
 		}
 
-		domainHash := sha256.Sum256([]byte(req.Domain))
 		db.Exec(r.Context(),
 			`INSERT INTO audit_logs (user_id, action, resource, resource_id, ip_address, user_agent)
 			 VALUES ($1, 'appraise', 'appraisal', $2, $3, $4)`,
 			userID, appraisalID, r.RemoteAddr, r.UserAgent(),
 		)
+
+		if c := cache.GetCache(); c != nil {
+			c.Set(cacheKey, metrics)
+		}
 
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(metricsJSON)
@@ -166,9 +197,6 @@ func handleGetAppraisal(db *pgxpool.Pool) http.HandlerFunc {
 			return
 		}
 
-		domainHash := sha256.Sum256([]byte(domain))
-		_ = domainHash
-
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode(map[string]interface{}{
 			"id":         appraisalID,
@@ -178,9 +206,4 @@ func handleGetAppraisal(db *pgxpool.Pool) http.HandlerFunc {
 			"created_at": createdAt,
 		})
 	}
-}
-
-func hashDomain(domain string) string {
-	h := sha256.Sum256([]byte(domain))
-	return hex.EncodeToString(h[:])
 }

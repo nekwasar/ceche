@@ -12,8 +12,10 @@ import (
 	"github.com/rs/zerolog/log"
 
 	"github.com/nekwasar/ceche/internal/api/v1"
+	"github.com/nekwasar/ceche/internal/cache"
 	"github.com/nekwasar/ceche/internal/config"
 	"github.com/nekwasar/ceche/internal/database"
+	"github.com/nekwasar/ceche/internal/service"
 )
 
 func main() {
@@ -30,6 +32,16 @@ func main() {
 		log.Fatal().Err(err).Msg("failed to connect to database")
 	}
 	defer pool.Close()
+
+	if err := service.InitDomainEncryption(); err != nil {
+		log.Warn().Err(err).Msg("domain encryption not initialized (DOMAIN_ENCRYPTION_KEY not set)")
+	}
+
+	if err := cache.InitCache(); err != nil {
+		log.Warn().Err(err).Msg("cache not initialized")
+	} else {
+		log.Info().Msg("cache initialized")
+	}
 
 	router := v1.NewRouter(cfg, pool)
 
