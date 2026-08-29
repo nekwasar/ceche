@@ -56,6 +56,17 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 			r.Post("/appraise", handleAppraise(db))
 			r.Get("/appraisals", handleGetAppraisals(db))
 			r.Get("/appraisals/{id}", handleGetAppraisal(db))
+
+			// Scans
+			r.Post("/scans", handleCreateScan(db))
+			r.Get("/scans", handleGetUserScans(db))
+			r.Get("/scans/{id}", handleGetScan(db))
+			r.Get("/scans/{id}/export", handleExportScanResults(db))
+
+			// Word Lists
+			r.Get("/word-lists", handleGetWordLists(db))
+			r.Post("/word-lists", handleCreateWordList(db))
+			r.Delete("/word-lists/{id}", handleDeleteWordList(db))
 		})
 	})
 
