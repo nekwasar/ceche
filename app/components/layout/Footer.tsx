@@ -1,4 +1,4 @@
-import { Globe, Twitter, Linkedin, Github } from "lucide-react";
+import { Globe, ExternalLink } from "lucide-react";
 
 const footerLinks = {
   products: [
@@ -44,13 +44,13 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-6">
               <a href="#" className="text-white/40 hover:text-accent transition-colors">
-                <Twitter className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4" />
               </a>
               <a href="#" className="text-white/40 hover:text-accent transition-colors">
-                <Linkedin className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4" />
               </a>
               <a href="#" className="text-white/40 hover:text-accent transition-colors">
-                <Github className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
