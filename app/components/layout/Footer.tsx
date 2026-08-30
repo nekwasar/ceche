@@ -34,7 +34,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
             <div className="mb-4">
-              <span className="font-branded text-2xl tracking-tight text-white">Ceche</span>
+              <span className="font-bold text-xl tracking-tight text-white">Ceche</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               Enterprise-grade domain intelligence and marketplace platform.
