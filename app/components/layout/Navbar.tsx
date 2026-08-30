@@ -157,7 +157,7 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-10">
               <a href="/" className="flex items-center">
-                <span className="text-white font-bold text-xl tracking-tight">Ceche</span>
+                <span className="text-white font-branded text-2xl tracking-tight">Ceche</span>
               </a>
 
               <nav className="hidden lg:flex items-center gap-0" ref={navRef}>
@@ -214,7 +214,7 @@ export function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center">
-                  <span className="text-white font-bold text-xl tracking-tight">Ceche</span>
+                  <span className="text-white font-branded text-2xl tracking-tight">Ceche</span>
                 </div>
                 <button
                   onClick={() => setActiveMenu(null)}
