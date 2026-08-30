@@ -33,11 +33,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-accent rounded-md flex items-center justify-center">
-                <span className="text-slate font-bold text-lg">C</span>
-              </div>
-              <span className="font-bold text-xl tracking-tight">Ceche</span>
+            <div className="mb-4">
+              <span className="font-branded text-2xl tracking-tight text-white">Ceche</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               Enterprise-grade domain intelligence and marketplace platform.
