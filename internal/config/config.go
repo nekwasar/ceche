@@ -1,6 +1,7 @@
 package config
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/caarlos0/env/v11"
@@ -14,8 +15,8 @@ type Config struct {
 	// Database
 	DatabaseURL string `env:"DATABASE_URL" envDefault:"postgres://ceche:secret@localhost:5432/ceche?sslmode=disable"`
 
-	// Auth
-	JWTSecret     string        `env:"JWT_SECRET" envDefault:"change-me-in-production"`
+	// Auth — NO defaults in production; must be set explicitly
+	JWTSecret     string        `env:"JWT_SECRET"`
 	JWTExpiry     time.Duration `env:"JWT_EXPIRY" envDefault:"15m"`
 	RefreshExpiry time.Duration `env:"REFRESH_EXPIRY" envDefault:"168h"`
 
@@ -31,8 +32,8 @@ type Config struct {
 	// CORS
 	CORSOrigins string `env:"CORS_ORIGINS" envDefault:"http://localhost:3000"`
 
-	// Encryption
-	DomainEncryptionKey string `env:"DOMAIN_ENCRYPTION_KEY" envDefault:"change-me-to-32-byte-key!!!!"`
+	// Encryption — NO default; must be set explicitly
+	DomainEncryptionKey string `env:"DOMAIN_ENCRYPTION_KEY"`
 
 	// Scanner
 	ScannerConcurrency int `env:"SCANNER_CONCURRENCY" envDefault:"50"`
@@ -47,5 +48,14 @@ func Load() (*Config, error) {
 	if err := env.Parse(cfg); err != nil {
 		return nil, err
 	}
+
+	// Fail fast if required secrets are not set
+	if cfg.JWTSecret == "" {
+		return nil, fmt.Errorf("JWT_SECRET environment variable is required")
+	}
+	if cfg.DomainEncryptionKey == "" {
+		return nil, fmt.Errorf("DOMAIN_ENCRYPTION_KEY environment variable is required")
+	}
+
 	return cfg, nil
 }

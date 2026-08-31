@@ -43,6 +43,15 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 		r.Post("/auth/login", handleLogin(db, cfg))
 		r.Post("/auth/refresh", handleRefresh(db, cfg))
 
+		// Public pricing info
+		r.Get("/pricing/reveal", handleGetRevealPricing())
+
+		// Intelligence (public summary, full requires auth)
+		r.Get("/intelligence/{domain}/summary", handleGetIntelligenceSummary(db))
+
+		// Webhook (no auth — verified by HMAC signature)
+		r.Post("/webhooks/paystack", handlePaystackWebhook(db))
+
 		// Protected routes
 		r.Group(func(r chi.Router) {
 			r.Use(AuthMiddleware(db, cfg))
@@ -67,6 +76,26 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 			r.Get("/word-lists", handleGetWordLists(db))
 			r.Post("/word-lists", handleCreateWordList(db))
 			r.Delete("/word-lists/{id}", handleDeleteWordList(db))
+
+			// Locks (Phase 4)
+			r.Post("/locks", handleAcquireLock(db))
+			r.Delete("/locks/{id}", handleReleaseLock(db))
+
+			// Reveals (Phase 4)
+			r.Post("/reveals", handleCreateReveal(db))
+			r.Get("/reveals", handleGetUserReveals(db))
+			r.Get("/reveals/{id}", handleGetReveal(db))
+
+			// Subscriptions (Phase 4)
+			r.Post("/subscriptions", handleCreateSubscription(db))
+			r.Get("/subscriptions", handleGetSubscription(db))
+			r.Delete("/subscriptions", handleCancelSubscription(db))
+
+			// Intelligence (Phase 5)
+			r.Get("/intelligence/{domain}", handleGetIntelligence(db))
+
+			// Suggestions (Phase 6)
+			r.Post("/suggestions", handleGenerateSuggestions(db))
 		})
 	})
 

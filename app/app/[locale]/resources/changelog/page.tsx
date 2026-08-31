@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import { Clock } from "lucide-react";
 import { ToolPageTemplate } from "@/components/layout/ToolPageTemplate";
 
 const features = [
@@ -13,7 +13,7 @@ const features = [
 export default function ChangelogPage() {
   return (
     <ToolPageTemplate
-      icon={Zap}
+      icon={Clock}
       title="Changelog"
       subtitle="Product updates and new feature releases. Stay informed about what's new in Ceche."
       features={features}

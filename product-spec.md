@@ -1,7 +1,7 @@
 # Ceche — Product Specification
 
 > Domain name discovery, intelligence, and marketplace platform.
-> Find premium available domains before anyone else. See why they're valuable. Buy the name.
+> Find premium available domains. See why they're valuable. Buy the name.
 
 ---
 
@@ -10,9 +10,9 @@
 1. [Vision](#vision)
 2. [How It Works](#how-it-works)
 3. [Product Pages](#product-pages)
-4. [Reveal Mechanics](#reveal-mechanics)
-5. [Marketplace](#marketplace)
-6. [Free Tools](#free-tools)
+4. [Tools](#tools)
+5. [Reveal Mechanics](#reveal-mechanics)
+6. [Marketplace](#marketplace)
 7. [Revenue Model](#revenue-model)
 8. [Admin Panel](#admin-panel)
 9. [Technical Architecture](#technical-architecture)
@@ -27,18 +27,18 @@
 
 ### What Ceche Is
 
-Ceche is a domain name discovery and marketplace platform. It finds premium available (unregistered) domain names, shows you their full intelligence profile — appraisal value, health score, keyword data, CPC, authority, brandability — and sells you the name.
+Ceche is a domain name discovery and marketplace platform. It helps you find premium available domain names, shows you why they're valuable with real intelligence, and gives you the tools to buy or sell them.
 
 ### What Ceche Is NOT
 
 - Not a registrar (doesn't sell domain registrations)
-- Not an appraisal-only tool (appraisal is part of the intelligence layer)
+- Not an appraisal-only tool (appraisal is one feature among many)
 - Not a data competitor (can't beat Sedo/GoDaddy on sales history)
-- Not a name seller (Ceche finds names, users register them elsewhere)
+- Not a name seller directly (Ceche finds names, users register them elsewhere)
 
 ### Core Strength
 
-Technical efficiency. Ceche uses algorithms to FIND premium domains, ANALYZE them with 15 AI-powered modules, and PRESENT them in a way that proves value before revealing the name.
+Technical efficiency. Ceche uses algorithms to FIND premium domains, ANALYZE them with a 16-dimension engine, and PRESENT them in a way that proves value before you commit.
 
 ### Tagline
 
@@ -51,170 +51,267 @@ Technical efficiency. Ceche uses algorithms to FIND premium domains, ANALYZE the
 ### The Discovery Flow
 
 ```
-1. Ceche engine finds "cloudops.com" (available, premium score: 92)
-2. Domain name is HIDDEN — user sees: "c*****m.com"
-3. User sees full stats:
-   - Estimated value: $15,200
-   - Health score: 85/100
-   - CPC: $8.50
-   - Domain authority: 45
-   - Brandability: 78/100
-   - TLD score: 10/10 (.com)
-   - Keyword: "cloud ops" (high commercial intent)
-4. User pays $10 to reveal → gets "cloudops.com"
-5. User goes to GoDaddy/Namecheap to register it
+1. User searches "cloudops.com" on the homepage
+2. Ceche checks availability instantly
+3. If AVAILABLE: shows "Premium" label, what you can build with it, CTA "Appraise this name"
+4. If TAKEN: shows WHOIS details (registrant, expiry, registrar)
+5. User clicks "Appraise this name" → full 16-dimension analysis
+6. If premium user → also sees DA, spam score, backlink profile
+```
+
+### The Marketplace Flow
+
+```
+1. Premium domain listed on Ceche marketplace (name HIDDEN, no hint at all)
+2. Buyer sees full stats: score, value, CPC, brandability, TLD, category
+3. Buyer pays reveal fee → gets the actual domain name
+4. Buyer registers the domain at their preferred registrar
 ```
 
 ### The Guarantee
 
-**All names listed on Ceche are premium.** Every single domain discovered by the engine meets the premium threshold. No filler. No junk.
+**All names listed on Ceche are premium.** Every single domain meets the premium threshold. No filler. No junk.
 
 ---
 
 ## Product Pages
 
-### Public Pages
+### Public Pages (www.ceche.net)
 
 | Page | URL | Description |
 |------|-----|-------------|
-| **Home** | `/` | Hero: "Find Premium Domains Before Anyone Else." Search bar, featured discoveries, stats. |
-| **Discover** | `/discover` | Browse Ceche's found premium domains. Filters: TLD, value range, score, category. Names hidden. |
-| **Marketplace** | `/marketplace` | Browse seller-listed premium domains. Filter by TLD, price, category. Names hidden. |
-| **Health Check** | `/health` | Free tool. Enter any domain → instant DNS, SSL, speed, authority report. |
-| **Appraise** | `/appraise` | Free basic / paid full domain appraisal. 15-module analysis. |
-| **Pricing** | `/pricing` | Subscription tiers + reveal pricing. |
-| **Blog** | `/blog` | Content marketing: "How to find premium domains", domain investing guides. |
-| **FAQ** | `/faq` | Common questions about Ceche, reveals, marketplace. |
-| **Enterprise** | `/enterprise` | API access, bulk analysis, white-label options. |
-| **Terms** | `/terms` | Terms of service. |
-| **Privacy** | `/privacy` | Privacy policy. |
-| **Contact** | `/contact` | Contact form + info. |
+| **Home** | `/` | Hero with name search bar. Stats, feature sections, FAQ. |
+| **Name Search** | `/` (hero search) | Search any domain → availability + premium/mid/low label |
+| **Appraise** | `/tools/appraisal` | 16-dimension domain appraisal (rate-limited) |
+| **Standard Marketplace** | `/marketplace` | Browse premium domains (name hidden, no hint). Pay to reveal. |
+| **Try Your Luck** | `/marketplace/try-your-luck` | Pick a TLD, spin, pick a box, reveal |
+| **Seller Listings** | `/marketplace/sell` | List your premium domain for sale |
+| **Pricing** | `/pricing` | Subscription tiers + reveal pricing |
+| **Solutions** | `/solutions/*` | By role (investors, founders, agencies) and by need |
+| **Resources** | `/resources/*` | Explore (blog, ebooks, case studies), Support (help center, API docs, contact, changelog) |
+| **Legal** | `/legal/*` | Terms, privacy, cookies |
 
-### Auth Pages
+> **Documentation Migration**: The 16-Dimension Framework, Domain Sales Trends, and Platform Pricing docs are being migrated into the Help Center (`/resources/help-center`). They are no longer separate nav items. Users access documentation through the Help Center.
 
-| Page | URL | Description |
-|------|-----|-------------|
-| **Sign Up** | `/auth/signup` | Create account. Required for reveals + marketplace. |
-| **Login** | `/auth/login` | Email/password login. |
-| **Dashboard** | `/dashboard` | User dashboard: reveal history, saved domains, subscription status. |
-
-### Admin Pages
+### Auth Pages (app.ceche.net)
 
 | Page | URL | Description |
 |------|-----|-------------|
-| **Dashboard** | `/admin` | Stats: total discoveries, reveals, revenue, active users. |
-| **Discoveries** | `/admin/discoveries` | Manage found premium domains. Approve/reject/list. |
-| **Marketplace** | `/admin/marketplace` | Manage seller listings. Approve/reject/feature. |
-| **Premium Scanner** | `/admin/scanner` | Scanner status, run history, configuration. |
-| **Users** | `/admin/users` | User management. |
-| **Revenue** | `/admin/revenue` | Revenue tracking: reveals, commissions, subscriptions. |
-| **Blog** | `/admin/blog` | Blog post management. |
-| **Settings** | `/admin/settings` | System settings. |
+| **Sign Up** | `/signup` | Create account |
+| **Login** | `/login` | Email/password login |
+| **Appraise** | `/appraise` | 16-dimension appraisal (higher rate limits) |
+| **Scanner** | `/scan` | Premium domain scanner (DA, spam, backlinks) |
+| **Extended Insights** | `/extended-insights` | Deep DNS, USPTO/WIPO, trademark history |
+| **Bulk Audit** | `/bulk-audit` | Bulk domain analysis |
+| **Marketplace** | `/marketplace` | Browse/manage marketplace |
+| **API Keys** | `/api-keys` | Manage API access |
+
+---
+
+## Tools
+
+### 1. Name Search Tool (FREE — SEO traffic driver)
+
+**URL**: Homepage search bar on www.ceche.net
+
+**What it does**: Search any domain name → instant availability check + intelligence
+
+**Flow**:
+```
+User types "cloudops.com" → clicks Search
+  ↓
+  IF UNAVAILABLE:
+    → Show WHOIS details (registrant, expiry date, registrar, nameservers)
+  IF AVAILABLE:
+    → Show availability badge
+    → Show premium / mid / low value label (no numeric scores)
+    → Show "What you can build with this" suggestions
+    → CTA: "Appraise this name →" (links to /tools/appraisal?domain=cloudops.com)
+```
+
+**Free version shows**:
+- Domain availability (available / taken)
+- WHOIS details (if taken)
+- Premium / mid / low value label
+- Suggested uses for the domain
+- Link to appraise
+
+**This is the primary SEO traffic driver.** Every domain search is a potential entry point.
+
+### 2. Domain Appraisal (Rate-limited)
+
+**URL**: `/tools/appraisal` (www) or `/appraise` (app)
+
+**What it does**: 16-dimension deep analysis of any domain
+
+**Rate Limits**:
+
+| User Type | Appraisals/Day |
+|-----------|----------------|
+| Free (not signed up) | 3 |
+| Free (signed up) | 12 |
+| Premium Startup | 30 |
+| Premium Enterprise | Unlimited |
+
+**After limit reached**: Custom error page
+- Message: "This request didn't go through. Sign up to increase your rate limit and appraise more domains."
+- CTA: "Sign Up" → app.ceche.net/signup
+- CTA: "Go Back Home" → /
+
+**The 16 dimensions**:
+1. RDAP (domain availability, registration data)
+2. TLD Authority (extension quality score)
+3. Length (character count penalty/bonus)
+4. Word Count (single-word premium bonus)
+5. Pronounceability (vowel ratio, phonetic patterns)
+6. Segmenter (compound word detection)
+7. Keyword (commercial intent scoring)
+8. CPC (cost-per-click estimation)
+9. Search Volume (monthly search trends)
+10. Cross-TLD (availability across extensions)
+11. Trademark (USPTO/WIPO conflict check)
+12. Authority (backlink profile, domain age)
+13. Confidence (overall score confidence)
+15. Pricing (estimated value range)
+16. Brandability (memorability, type-ability)
+
+### 3. Domain Scanner (PREMIUM ONLY)
+
+**URL**: app.ceche.net/scan
+
+**What it does**: Premium version of the name search tool. Batch-scan domains with deep SEO metrics.
+
+**Requires**: Premium subscription (Startup or Enterprise)
+
+**Features**:
+- DA (Domain Authority) scoring
+- Spam score detection
+- Backlink profile analysis
+- Indexation status across search engines (Google, Bing, Yandex)
+- WHOIS history
+- TLD pricing lookup
+
+**Not available to free users.** Free users see the name search tool on www.ceche.net.
+
+### 4. Extended Insights (PREMIUM ONLY)
+
+**URL**: app.ceche.net/extended-insights
+
+**What it does**: Deep-dive intelligence for serious buyers
+
+**Features**:
+- Full DNS record history
+- USPTO/WIPO trademark database search
+- WHOIS history (previous owners, registration changes)
+- Historical spam/blacklist records
+- Backlink toxicity analysis
+
+### 5. Bulk Domain Audit (PREMIUM ONLY)
+
+**URL**: app.ceche.net/bulk-audit
+
+**What it does**: Analyze up to 1000 domains at once
+
+**Features**:
+- CSV upload
+- Batch appraisal scores
+- Availability check across all domains
+- Export results
 
 ---
 
 ## Reveal Mechanics
 
-### Partial Reveal (Standard)
+### Standard Marketplace
 
-**What the user sees**: Domain name with middle characters hidden.
+**What the user sees**: Premium domain listings with full stats but NO name hint at all.
 
-**Format**: `{first_char}*****{last_char}.{tld}`
-
-**Examples**:
-| Actual Domain | Partial Reveal |
-|--------------|----------------|
-| `cloudops.com` | `c*****m.com` |
-| `dataflow.io` | `d*****o.io` |
-| `quickship.net` | `q*****p.net` |
-| `zenstudio.app` | `z*****o.app` |
-| `apicraft.dev` | `a*****t.dev` |
-
-**Rules**:
-- First character is always visible
-- Last character before TLD is always visible
-- TLD is always visible
-- Middle characters replaced with `*`
-- Minimum 3 characters (e.g., `a*e.com` for a 3-char domain)
-
-**Pricing**: $10 per reveal (configurable per subscription tier)
-
-### Try Your Luck Reveal (Budget)
-
-**What the user sees**: NO domain name. Only brief stats.
-
-**Display**:
+**Display per listing**:
 ```
-????.tld
-- Premium Score: 87/100
-- Estimated Value: $5,000 - $12,000
-- TLD: .com
-- Length: 8 characters
-- Type: Keyword domain
+Estimated Value: $15,200
+Health Score: 85/100
+CPC: $8.50
+Domain Authority: 45
+Brandability: 78/100
+TLD: .com
+Category: Tech / Cloud Infrastructure
+Keyword Intent: High commercial intent
 ```
 
-**No name hint at all.** Just enough info to know it's premium.
+**No name, no partial hint, no asterisks.** Just the intelligence.
 
-**Pricing**: $3 per reveal (configurable)
+**Pricing**: Pay to reveal the full name. Price varies by domain value.
 
-### Reveal Flow
+### Try Your Luck (with TLD selection)
 
+**What happens**:
 ```
-1. User browses /discover
-2. Clicks "Reveal" on a listing
-3. Chooses: Partial Reveal ($10) or Try Your Luck ($3)
-4. Payment via Stripe
-5. On success:
-   - Partial: shows "c*****m.com" → user can then pay full price to see complete name
-   - Try Your Luck: shows ????.tld → user can upgrade to partial or full reveal
-6. Full reveal (additional $5): shows complete domain name
-7. User receives email with the revealed domain name
+1. User selects a TLD (.com, .net, .io, or .co)
+2. User pays the TLD-specific price
+3. Three closed boxes appear (spinning animation)
+4. Animation stops → user picks one box
+5. Domain name revealed → prompt to buy immediately
+6. Domain is LOCKED — no other user can purchase it through any means on the platform
 ```
 
-### Reveal Pricing Tiers
+**Pricing by TLD**:
 
-| Tier | Partial Reveal | Try Your Luck | Full Reveal | Notes |
-|------|---------------|---------------|-------------|-------|
-| **Free** | N/A | N/A | N/A | Can browse, can't reveal |
-| **Starter** | $10 | $3 | $5 | Pay-per-reveal |
-| **Pro** | $7 | $2 | $3 | Monthly subscription ($49/mo, 20 reveals included) |
-| **Enterprise** | $5 | $1 | $2 | Custom plan, unlimited reveals |
+| TLD | Price |
+|-----|-------|
+| .com | $79 |
+| .net | $39 |
+| .io | $29 |
+| .co | $9 |
+
+**Each box contains a unique domain.** The other two boxes are discarded — those domains are not available to any other user on the platform through any means.
+
+### Try Your Luck (no TLD selection — flat rate)
+
+**What happens**: Same as above, but user doesn't pick a TLD. Flat $19.
+
+```
+1. User pays $19
+2. Three closed boxes appear (random TLDs)
+3. Animation stops → user picks one box
+4. Domain name revealed → prompt to buy immediately
+5. Domain LOCKED
+```
+
+**Pricing**: Flat $19 regardless of TLD.
 
 ---
 
 ## Marketplace
 
-### How It Works
+### Seller Listings
 
-Anyone can list their premium domain names on Ceche. Ceche provides the intelligence layer (appraisal, health check, stats) and the marketplace (buyer discovery, trust, payments).
+Anyone can list their premium domain names on Ceche.
 
-### Listing Flow
-
+**Listing Flow**:
 ```
-1. Seller signs up / logs in
+1. Seller signs up / logs in (app.ceche.net)
 2. Goes to /marketplace/sell
 3. Enters domain name
-4. Ceche automatically appraises it (15 modules)
+4. Ceche appraises it (16 dimensions)
 5. Seller sets price (or uses Ceche's suggested price)
 6. Seller pays listing fee
-7. Domain listed on /marketplace (name HIDDEN until buyer reveals)
-8. Buyer pays to reveal → gets name + seller contact
-9. Buyer and seller complete transaction off-platform OR through Ceche
+7. Domain listed on /marketplace (name HIDDEN — no hint at all)
+8. Buyer pays reveal fee → gets name + seller contact
+9. Buyer and seller complete transaction off-platform
 10. Ceche takes commission
 ```
 
 ### Listing Fees
 
-| Listing Type | Fee | Duration | Visibility |
-|-------------|-----|----------|-----------|
-| **Standard** | $5 | 90 days | Standard listing in browse/search |
-| **Featured** | $15 | 90 days | Top of category, highlighted badge |
-| **Premium** | $25 | 180 days | Homepage rotation, email blast, featured |
+| Listing Type | Fee | Notes |
+|-------------|-----|-------|
+| **Standard** | $5 | Standard placement in browse/search |
+| **Priority** | $10 | Top placement, highlighted, "Priority" badge |
 
-### Commission Structure
+### Commission on Sale
 
-| Sale Price | Commission Rate | Minimum |
-|-----------|----------------|---------|
+| Sale Price | Commission Rate | Minimum Commission |
+|-----------|----------------|-------------------|
 | $0 - $500 | 15% | $10 |
 | $501 - $5,000 | 12% | $50 |
 | $5,001 - $50,000 | 10% | $500 |
@@ -222,62 +319,16 @@ Anyone can list their premium domain names on Ceche. Ceche provides the intellig
 
 ### Marketplace Listing Display
 
-Each listing shows (name HIDDEN):
-- Partial reveal: `c*****m.com`
+Each listing shows (name HIDDEN — no hint at all):
 - Estimated value (Ceche appraisal)
 - Seller's asking price
 - Health score
-- TLD score
+- TLD
 - Category (keyword, brandable, short, etc.)
+- CPC tier
+- Brandability rating
 - Listing age
 - "Reveal Name" button
-
----
-
-## Free Tools
-
-### Domain Health Check
-
-**URL**: `/health`
-
-**What it does**: Enter any domain → instant health report.
-
-**Checks performed** (all in parallel, <5s):
-| Check | What It Tests | Display |
-|-------|--------------|---------|
-| **DNS** | A, AAAA, MX, NS, TXT records | Record list, resolver status |
-| **SSL** | TLS certificate validity, issuer, expiry | Valid/Invalid, issuer, days until expiry |
-| **Speed** | Time to first byte (TTFB) | ms rating (fast/medium/slow) |
-| **Page Size** | Content-Length header | KB/MB |
-| **Parked** | Content analysis for parked pages | Parked/Active/Unknown |
-| **Authority** | Ahrefs DR + Open PageRank | Score 0-100 |
-| **Backlinks** | Total backlink count | Number |
-| **Value** | Quick appraisal estimate | Dollar range |
-
-**SEO benefits**:
-- Unique URL per check: `/health/example.com`
-- Structured data (JSON-LD) for rich snippets
-- No login required
-- Generates shareable reports
-
-### Basic Appraisal
-
-**URL**: `/appraise`
-
-**What it does**: Enter any domain → free basic appraisal (3 modules: TLD, length, pronounceability).
-
-**Upgrade path**: "Get full 15-module analysis → Sign up for Pro"
-
-### Blog
-
-**URL**: `/blog`
-
-**Content strategy**:
-- "How to Find Premium Domains" — beginner guide
-- "Domain Investing 101" — getting started
-- "Why Ceche's Appraisal Differs from GoDaddy" — differentiation
-- "Bulk Domain Valuation: How to Price 100 Domains" — power user guide
-- "What Makes a Domain Premium?" — educational
 
 ---
 
@@ -287,19 +338,19 @@ Each listing shows (name HIDDEN):
 
 | Stream | Description | Estimated % of Revenue |
 |--------|-------------|----------------------|
-| **Reveal Fees** | Users pay to reveal domain names | 40% |
-| **Subscriptions** | Monthly Pro/Enterprise plans | 30% |
-| **Marketplace Commission** | % of domain sales through marketplace | 20% |
-| **Listing Fees** | Sellers pay to list domains | 10% |
+| **Reveal Fees** | Standard marketplace + Try Your Luck | 40% |
+| **Subscriptions** | Premium Startup + Enterprise plans | 30% |
+| **Marketplace Commission** | 8-15% on seller domain sales | 20% |
+| **Listing Fees** | $5-$15 per seller listing | 10% |
 
 ### Subscription Tiers
 
-| Tier | Price | Includes | Target |
-|------|-------|----------|--------|
-| **Free** | $0 | Browse, health check, basic appraisal | Everyone (traffic driver) |
-| **Starter** | $29/mo | 5 reveals/mo, partial reveal, basic alerts | Hobbyists |
-| **Pro** | $49/mo | 20 reveals/mo, all reveal types, alerts, bulk analysis | Active investors |
-| **Enterprise** | $199/mo | Unlimited reveals, API access, white-label, priority support | Professionals |
+| Tier | Price | Appraisals/Day | Tools | Target |
+|------|-------|----------------|-------|--------|
+| **Free (unsigned)** | $0 | 3 | Name search only | Traffic |
+| **Free (signed up)** | $0 | 12 | Name search + basic appraisal | Casual users |
+| **Premium Startup** | $79/mo | 30 | Scanner, Extended Insights, Bulk Audit | Small teams |
+| **Premium Enterprise** | $129/mo | Unlimited | All tools, API access, priority support | Professionals |
 
 ### Revenue Projections (Conservative)
 
@@ -317,82 +368,49 @@ Each listing shows (name HIDDEN):
 ### Dashboard (`/admin`)
 
 **Stats cards**:
-- Total discoveries (all-time)
+- Total searches (all-time)
 - Total reveals (today / all-time)
 - Total revenue (today / all-time)
 - Active subscribers
-- Premium domains in pipeline
 - Marketplace listings
-
-**Recent activity feed**:
-- New discoveries
-- Recent reveals
-- New marketplace listings
-- Revenue transactions
+- Premium domains in pipeline
 
 ### Discoveries (`/admin/discoveries`)
 
-**List view**:
-- Domain (hidden or full, depending on admin view)
+- Domain (full view for admins)
 - Premium score
 - Estimated value
 - TLD
 - Status: discovered / approved / listed / revealed / expired
 - Actions: approve, reject, list, feature, delete
 
-**Filters**: status, TLD, value range, score range, date range
-
-**Bulk actions**: approve selected, list selected, export CSV
-
-### Premium Scanner (`/admin/scanner`)
-
-**Status panel**:
-- Scanner running/stopped
-- Last run: timestamp, domains checked, premium found, errors
-- Next scheduled run
-
-**Configuration**:
-- Scan interval (default: 6 hours)
-- TLDs to scan
-- Minimum premium score threshold
-- API keys status (RDAP, Ahrefs, OPR)
-
-**Run history**:
-- Timestamp
-- Duration
-- Domains scanned
-- Premium found
-- Errors
-- Action: run now
-
 ### Marketplace (`/admin/marketplace`)
 
-**List view**:
 - Domain
 - Seller
 - Asking price
 - Ceche estimated value
-- Listing type (standard/featured/premium)
+- Listing type (standard/priority)
 - Status: pending / active / sold / expired
 - Commission earned
 
-**Actions**: approve, reject, feature, remove
+### Premium Scanner (`/admin/scanner`)
 
-### Revenue (`/admin/revenue`)
-
-**Summary**:
-- Revenue by stream (reveals, subscriptions, commissions, listings)
-- Revenue by period (today, week, month, year)
-- Average reveal value
-- Average commission per sale
-
-**Transaction log**:
-- Date, type, amount, user, domain, status
+- Scanner running/stopped
+- Last run: timestamp, domains checked, premium found
+- TLDs to scan
+- Minimum premium score threshold
 
 ### Users (`/admin/users`)
 
-- User list with email, role, subscription tier, reveal count
+- User list with email, role, subscription tier
 - Actions: edit role, suspend, delete
+
+### Revenue (`/admin/revenue`)
+
+- Revenue by stream (reveals, subscriptions, commissions, listings)
+- Revenue by period (today, week, month, year)
+- Transaction log
 
 ---
 
@@ -402,282 +420,84 @@ Each listing shows (name HIDDEN):
 
 | Layer | Technology | Rationale |
 |-------|-----------|-----------|
-| **Frontend** | Next.js 15 (App Router) | SSR for SEO, React ecosystem, fast builds, great DX |
-| **Styling** | Tailwind CSS + shadcn/ui | Consistent design system, accessible components |
-| **Backend** | Go (net/http + chi router) | Compiled binary, goroutines for parallelism, fast cold starts |
-| **Database** | PostgreSQL | Full-text search, JSONB for flexible data, mature |
-| **Cache** | In-memory LRU (bigcache) | Fast, no external dependency |
-| **Payments** | Stripe | Industry standard, handles subscriptions + one-time |
+| **Frontend** | Next.js 15 (App Router) | SSR for SEO, React ecosystem, fast builds |
+| **Styling** | Tailwind CSS v4 | Design system, utility classes |
+| **Backend** | Go (net/http + chi router) | Compiled binary, goroutines, fast cold starts |
+| **Database** | PostgreSQL 16 | Full-text search, JSONB, mature |
+| **Cache** | In-memory (bigcache) | Fast, no external dependency |
+| **Payments** | Paystack (primary) | Handles subscriptions + one-time |
 | **Auth** | JWT (Go) + Next.js middleware | Stateless, fast, secure |
-| **Analytics** | Plausible (self-hosted) | Privacy-focused, cookie-free |
+| **Encryption** | AES-256-GCM | Domain names encrypted at rest |
+
+### Subdomain Architecture
+
+| Subdomain | Purpose | Stack |
+|-----------|---------|-------|
+| `www.ceche.net` | Public marketing, name search, marketplace browse | Next.js (port 4321) |
+| `app.ceche.net` | Authenticated app: appraisal, scanner, insights | Next.js (port 4321, different layout) |
+| `ceche.net` | 301 redirect → `www.ceche.net` | Nginx |
 
 ### Go Backend Structure
 
 ```
 ceche-api/
-├── cmd/ceche/main.go
+├── cmd/server/main.go
 ├── internal/
 │   ├── config/config.go
-│   ├── engine/              # 15-module appraisal engine
-│   │   ├── engine.go
-│   │   ├── models.go
-│   │   ├── m01_rdap.go
-│   │   ├── m02_tld.go
-│   │   ├── m03_length.go
-│   │   ├── m04_wordcount.go
-│   │   ├── m05_pronounce.go
-│   │   ├── m06_segmenter.go
-│   │   ├── m07_keyword.go
-│   │   ├── m08_cpc.go
-│   │   ├── m09_search.go
-│   │   ├── m10_crosstld.go
-│   │   ├── m11_trademark.go
-│   │   ├── m12_authority.go
-│   │   ├── m13_confidence.go
-│   │   ├── m15_pricing.go
-│   │   └── m16_brandability.go
-│   ├── discovery/           # Premium domain finder
-│   │   ├── scanner.go
-│   │   ├── scorer.go
-│   │   └── models.go
-│   ├── health/              # Domain health checker
-│   │   ├── checker.go
-│   │   ├── dns.go
-│   │   ├── ssl.go
-│   │   └── models.go
-│   ├── marketplace/         # Seller listings + transactions
-│   │   ├── listings.go
-│   │   ├── transactions.go
-│   │   └── models.go
-│   ├── reveal/              # Pay-to-reveal logic
-│   │   ├── reveal.go
-│   │   ├── stripe.go
-│   │   └── models.go
-│   ├── api/                 # HTTP handlers
-│   │   ├── router.go
+│   ├── api/
+│   │   ├── v1/router.go
+│   │   ├── v1/auth.go
+│   │   ├── v1/appraise.go
+│   │   ├── v1/scan.go
+│   │   ├── v1/lock.go
+│   │   ├── v1/reveal.go
+│   │   ├── v1/webhook.go
+│   │   └── v1/subscription.go
+│   ├── middleware/
 │   │   ├── auth.go
-│   │   ├── discovery.go
-│   │   ├── health.go
-│   │   ├── marketplace.go
-│   │   ├── reveal.go
-│   │   ├── appraisal.go
-│   │   ├── admin.go
-│   │   └── cms.go
-│   ├── store/               # PostgreSQL queries
-│   │   ├── db.go
-│   │   ├── discoveries.go
-│   │   ├── listings.go
-│   │   ├── reveals.go
-│   │   ├── users.go
-│   │   └── cms.go
-│   ├── adapters/            # External API clients
-│   │   ├── rdap.go
-│   │   ├── wayback.go
-│   │   ├── ahrefs.go
-│   │   ├── opr.go
-│   │   ├── google_cse.go
-│   │   ├── brave.go
-│   │   └── ai.go
-│   └── cache/cache.go
-├── data/
-│   ├── tld_scores.json
-│   ├── cpc_keywords.json
-│   └── wordlist.txt
+│   │   ├── cors.go
+│   │   ├── logging.go
+│   │   └── ratelimit.go
+│   ├── service/
+│   │   ├── appraiser.go          # 16-dimension engine
+│   │   ├── encryption.go         # AES-256-GCM
+│   │   ├── rdap.go               # Domain availability
+│   │   ├── lock.go               # Domain reservation
+│   │   ├── reveal.go             # Reveal logic
+│   │   └── subscription.go       # Subscription management
+│   ├── scanner/
+│   │   ├── scanner.go            # Goroutine pool scanner
+│   │   └── words.go              # Word lists
+│   ├── cache/
+│   │   └── cache.go              # bigcache wrapper
+│   ├── worker/
+│   │   └── lock_expiry.go        # Background lock cleanup
+│   └── database/
+│       └── postgres.go           # Connection pool
 ├── migrations/
 │   ├── 001_initial.up.sql
-│   └── 001_initial.down.sql
-├── go.mod
-├── go.sum
-├── Dockerfile
-└── README.md
+│   ├── 002_appraisals.up.sql
+│   ├── 003_scans.up.sql
+│   └── 004_locks_reveals.up.sql
+└── go.mod
 ```
-
-### Next.js Frontend Structure
-
-```
-ceche-web/
-├── src/
-│   ├── app/                    # App Router pages
-│   │   ├── layout.tsx          # Root layout (nav, footer, theme)
-│   │   ├── page.tsx            # Home
-│   │   ├── discover/
-│   │   │   └── page.tsx        # Browse premium domains
-│   │   ├── marketplace/
-│   │   │   ├── page.tsx        # Browse seller listings
-│   │   │   └── sell/
-│   │   │       └── page.tsx    # List a domain for sale
-│   │   ├── health/
-│   │   │   ├── page.tsx        # Health check tool
-│   │   │   └── [domain]/
-│   │   │       └── page.tsx    # Domain health report
-│   │   ├── appraise/
-│   │   │   ├── page.tsx        # Appraisal tool
-│   │   │   └── [domain]/
-│   │   │       └── page.tsx    # Domain appraisal report
-│   │   ├── auth/
-│   │   │   ├── signup/
-│   │   │   │   └── page.tsx
-│   │   │   └── login/
-│   │   │       └── page.tsx
-│   │   ├── dashboard/
-│   │   │   └── page.tsx        # User dashboard
-│   │   ├── pricing/page.tsx
-│   │   ├── blog/
-│   │   │   ├── page.tsx
-│   │   │   └── [slug]/
-│   │   │       └── page.tsx
-│   │   ├── faq/page.tsx
-│   │   ├── enterprise/page.tsx
-│   │   ├── contact/page.tsx
-│   │   ├── terms/page.tsx
-│   │   ├── privacy/page.tsx
-│   │   ├── sitemap.ts
-│   │   └── robots.ts
-│   ├── components/
-│   │   ├── ui/                 # shadcn/ui components
-│   │   ├── DomainCard.tsx      # Domain listing card (name hidden)
-│   │   ├── RevealModal.tsx     # Partial + Try Your Luck reveal
-│   │   ├── HealthCheck.tsx     # Health check results
-│   │   ├── AppraisalResult.tsx # Full appraisal display
-│   │   ├── Nav.tsx
-│   │   ├── Footer.tsx
-│   │   └── ThemeToggle.tsx
-│   ├── lib/
-│   │   ├── api.ts              # API client (Go backend)
-│   │   ├── auth.ts             # Auth helpers
-│   │   └── stripe.ts           # Stripe integration
-│   └── styles/
-│       └── globals.css
-├── next.config.ts
-├── tailwind.config.ts
-├── package.json
-├── tsconfig.json
-└── Dockerfile
-```
-
-### Engine Execution (Go)
-
-**Target**: Full 15-module appraisal in < 20 seconds.
-
-**Strategy**: Run ALL I/O modules in parallel via goroutines.
-
-```
-┌─ Group 1 (goroutines) ─────────────────────┐
-│  M1 (RDAP)     │  M2 (TLD)  │  M6 (Segment) │
-└────────────────┴────────────┴───────────────┘
-                    ↓ (M6 output needed)
-┌─ Group 2 (sequential, <1ms each) ──────────┐
-│  M3 (Length) → M4 (WordCount) → M5 (Pron)  │
-└─────────────────────────────────────────────┘
-                    ↓
-┌─ Group 3 (ALL goroutines) ─────────────────┐
-│  M7 (Keyword) │ M8 (CPC) │ M9 (Search)     │
-│  M10 (TLD)    │ M11 (TM) │ M12 (Authority) │
-└─────────────────────────────────────────────┘
-                    ↓
-┌─ Group 4 (goroutine, brandable only) ──────┐
-│  M16 (Brandability)                         │
-└─────────────────────────────────────────────┘
-                    ↓
-┌─ Group 5 (sequential, <1ms each) ──────────┐
-│  M13 (Confidence) → M15 (Pricing)           │
-└─────────────────────────────────────────────┘
-```
-
-**Estimated time**:
-- Group 1: ~3s (RDAP is bottleneck, cached after first call)
-- Group 2: <1ms (pure math)
-- Group 3: ~5s (Ahrefs/OPR are bottlenecks)
-- Group 4: ~1ms (pure computation, optional AI)
-- Group 5: <1ms (pure math)
-- **Total: ~8-12s** (well under 20s target)
 
 ---
 
 ## Database Schema
 
 ```sql
--- Premium domain discoveries (Ceche finds these)
-CREATE TABLE discoveries (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    domain TEXT NOT NULL UNIQUE,
-    tld TEXT NOT NULL,
-    sld TEXT NOT NULL,
-    premium_score NUMERIC(3,0) NOT NULL,       -- 0-100
-    estimated_value NUMERIC(15,2),
-    range_low NUMERIC(15,2),
-    range_high NUMERIC(15,2),
-    modules JSONB NOT NULL,                     -- full appraisal breakdown
-    category TEXT,                              -- keyword/brandable/short/mixed
-    word_count INTEGER,
-    length INTEGER,
-    tld_score NUMERIC(3,1),
-    cpc_tier TEXT,                              -- elite/high/medium/low
-    authority_score NUMERIC(3,2),
-    is_available BOOLEAN DEFAULT true,
-    status TEXT DEFAULT 'discovered',           -- discovered/approved/listed/revealed/expired
-    featured BOOLEAN DEFAULT false,
-    created_at TIMESTAMPTZ DEFAULT NOW(),
-    updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE INDEX idx_discoveries_status ON discoveries(status);
-CREATE INDEX idx_discoveries_score ON discoveries(premium_score DESC);
-CREATE INDEX idx_discoveries_value ON discoveries(estimated_value DESC NULLS LAST);
-CREATE INDEX idx_discoveries_tld ON discoveries(tld);
-CREATE INDEX idx_discoveries_category ON discoveries(category);
-
--- Marketplace listings (sellers list their domains)
-CREATE TABLE listings (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    seller_id UUID NOT NULL REFERENCES users(id),
-    domain TEXT NOT NULL,
-    tld TEXT NOT NULL,
-    asking_price NUMERIC(15,2) NOT NULL,
-    estimated_value NUMERIC(15,2),              -- Ceche appraisal
-    modules JSONB,                              -- appraisal breakdown
-    listing_type TEXT DEFAULT 'standard',       -- standard/featured/premium
-    listing_fee NUMERIC(10,2) NOT NULL,
-    status TEXT DEFAULT 'pending',              -- pending/active/sold/expired/removed
-    sold_price NUMERIC(15,2),
-    commission NUMERIC(10,2),
-    expires_at TIMESTAMPTZ,
-    created_at TIMESTAMPTZ DEFAULT NOW(),
-    updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE INDEX idx_listings_status ON listings(status);
-CREATE INDEX idx_listings_seller ON listings(seller_id);
-CREATE INDEX idx_listings_price ON listings(asking_price);
-
--- Reveal transactions
-CREATE TABLE reveals (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id UUID NOT NULL REFERENCES users(id),
-    discovery_id UUID REFERENCES discoveries(id),
-    listing_id UUID REFERENCES listings(id),
-    reveal_type TEXT NOT NULL,                  -- partial/luck/full
-    amount NUMERIC(10,2) NOT NULL,
-    stripe_payment_id TEXT,
-    revealed_domain TEXT,                       -- actual name (encrypted until reveal)
-    status TEXT DEFAULT 'pending',              -- pending/completed/refunded
-    created_at TIMESTAMPTZ DEFAULT NOW()
-);
-
-CREATE INDEX idx_reveals_user ON reveals(user_id);
-CREATE INDEX idx_reveals_created ON reveals(created_at DESC);
-
 -- Users
 CREATE TABLE users (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     email TEXT UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
     name TEXT,
-    role TEXT DEFAULT 'user',                   -- user/admin
-    subscription_tier TEXT DEFAULT 'free',      -- free/starter/pro/enterprise
+    role TEXT DEFAULT 'user',
+    subscription_tier TEXT DEFAULT 'free',
     subscription_status TEXT DEFAULT 'inactive',
-    stripe_customer_id TEXT,
-    stripe_subscription_id TEXT,
+    paystack_customer_id TEXT,
+    paystack_subscription_id TEXT,
     reveals_remaining INTEGER DEFAULT 0,
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
@@ -688,46 +508,134 @@ CREATE TABLE api_keys (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id UUID NOT NULL REFERENCES users(id),
     name TEXT NOT NULL,
-    key_hash TEXT NOT NULL UNIQUE,
-    tier TEXT DEFAULT 'free',
-    rate_limit INTEGER DEFAULT 60,
+    key_hash TEXT UNIQUE NOT NULL,
+    permissions JSONB DEFAULT '["appraise","scan","reveal"]',
+    rate_limit INTEGER DEFAULT 1000,
     active BOOLEAN DEFAULT true,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    last_used_at TIMESTAMPTZ
+);
+
+-- Appraisals
+CREATE TABLE appraisals (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES users(id),
+    domain TEXT NOT NULL,
+    tld TEXT NOT NULL,
+    score INTEGER,
+    metrics JSONB,
+    idempotency_key TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- Blog posts
-CREATE TABLE blog_posts (
+-- Scans
+CREATE TABLE scans (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    title TEXT NOT NULL,
-    slug TEXT UNIQUE NOT NULL,
-    content TEXT,
-    excerpt TEXT,
-    featured_image TEXT,
-    status TEXT DEFAULT 'draft',
+    user_id UUID REFERENCES users(id),
+    word_list_name TEXT,
+    tlds TEXT[],
+    status TEXT DEFAULT 'pending',
+    total_domains INTEGER,
+    scanned_domains INTEGER,
+    available_domains INTEGER,
+    error_message TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    started_at TIMESTAMPTZ,
+    completed_at TIMESTAMPTZ
+);
+
+CREATE TABLE scan_results (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    scan_id UUID NOT NULL REFERENCES scans(id) ON DELETE CASCADE,
+    domain TEXT NOT NULL,
+    tld TEXT NOT NULL,
+    available BOOLEAN NOT NULL DEFAULT false,
+    price DECIMAL(10,2),
+    registrar TEXT,
+    expiry_date TIMESTAMPTZ,
+    checked_at TIMESTAMPTZ DEFAULT NOW(),
+    error TEXT
+);
+
+-- Word lists
+CREATE TABLE word_lists (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID REFERENCES users(id),
+    name TEXT NOT NULL,
+    words TEXT[] NOT NULL,
+    word_count INTEGER NOT NULL,
+    source TEXT DEFAULT 'custom',
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Domain locks (reservation during checkout)
+CREATE TABLE domain_locks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id),
+    domain_hash TEXT NOT NULL,
+    listing_id UUID,
+    locked_at TIMESTAMPTZ DEFAULT NOW(),
+    expires_at TIMESTAMPTZ NOT NULL,
+    status TEXT DEFAULT 'active'
+);
+
+CREATE UNIQUE INDEX idx_domain_locks_active ON domain_locks (domain_hash) WHERE status = 'active';
+
+-- Reveals
+CREATE TABLE reveals (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id),
+    domain_hash TEXT NOT NULL,
+    reveal_type TEXT NOT NULL,
+    amount NUMERIC(10,2) NOT NULL,
+    paystack_ref TEXT,
+    status TEXT DEFAULT 'pending',
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Subscriptions
+CREATE TABLE subscriptions (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id),
+    plan TEXT NOT NULL,
+    paystack_sub_id TEXT,
+    status TEXT DEFAULT 'active',
+    current_period_end TIMESTAMPTZ,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Marketplace listings
+CREATE TABLE listings (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    seller_id UUID NOT NULL REFERENCES users(id),
+    domain_encrypted TEXT NOT NULL,
+    domain_hash TEXT NOT NULL,
+    tld TEXT NOT NULL,
+    asking_price NUMERIC(15,2) NOT NULL,
+    estimated_value NUMERIC(15,2),
+    modules JSONB,
+    listing_type TEXT DEFAULT 'standard',
+    listing_fee NUMERIC(10,2) NOT NULL,
+    status TEXT DEFAULT 'pending',
+    sold_price NUMERIC(15,2),
+    commission NUMERIC(10,2),
+    priority BOOLEAN DEFAULT false,
+    expires_at TIMESTAMPTZ,
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- FAQ items
-CREATE TABLE faq_items (
+-- Audit logs
+CREATE TABLE audit_logs (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    question TEXT NOT NULL,
-    answer TEXT NOT NULL,
-    sort_order INTEGER DEFAULT 0,
-    active BOOLEAN DEFAULT true
-);
-
--- Pricing tiers
-CREATE TABLE pricing_tiers (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    name TEXT NOT NULL,
-    price_label TEXT,
-    price_subtext TEXT,
-    features JSONB DEFAULT '[]',
-    cta_label TEXT,
-    cta_url TEXT,
-    highlighted BOOLEAN DEFAULT false,
-    sort_order INTEGER DEFAULT 0
+    user_id UUID REFERENCES users(id),
+    action TEXT NOT NULL,
+    resource TEXT,
+    resource_id TEXT,
+    ip_address INET,
+    user_agent TEXT,
+    metadata JSONB,
+    created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 -- Settings
@@ -736,61 +644,83 @@ CREATE TABLE settings (
     value TEXT,
     description TEXT
 );
-
--- Scanner run history
-CREATE TABLE scanner_runs (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    started_at TIMESTAMPTZ DEFAULT NOW(),
-    completed_at TIMESTAMPTZ,
-    domains_scanned INTEGER DEFAULT 0,
-    premium_found INTEGER DEFAULT 0,
-    errors INTEGER DEFAULT 0
-);
 ```
 
 ---
 
 ## API Endpoints
 
-### Public API
+### Public API (www.ceche.net)
 
 | Method | Path | Description |
 |--------|------|-------------|
-| `GET` | `/api/discover` | List premium discoveries (paginated, filtered) |
-| `GET` | `/api/discover/:id` | Get discovery details (without name) |
-| `POST` | `/api/reveal` | Reveal a domain name (payment required) |
-| `GET` | `/api/marketplace` | List marketplace listings (paginated, filtered) |
-| `GET` | `/api/marketplace/:id` | Get listing details (without name) |
-| `POST` | `/api/marketplace/list` | Submit a domain for listing |
-| `GET` | `/api/health/check?domain=X` | Domain health check |
-| `POST` | `/api/appraise` | Domain appraisal |
-| `GET` | `/api/blog` | List blog posts |
-| `GET` | `/api/blog/:slug` | Get blog post |
-| `GET` | `/api/faq` | List FAQ items |
-| `GET` | `/api/pricing` | List pricing tiers |
-| `GET` | `/api/features` | List enterprise features |
-| `GET` | `/api/comparisons` | List competitor comparisons |
 | `GET` | `/health` | Server health check |
+| `POST` | `/api/v1/search` | Name search — check domain availability |
+| `POST` | `/api/v1/appraise` | Domain appraisal (rate-limited) |
+| `GET` | `/api/v1/marketplace` | Browse standard marketplace (names hidden) |
+| `GET` | `/api/v1/marketplace/:id` | Listing details (name hidden) |
+| `POST` | `/api/v1/marketplace/list` | Submit domain for listing |
 
 ### Auth API
 
 | Method | Path | Description |
 |--------|------|-------------|
-| `POST` | `/api/auth/signup` | Create account |
-| `POST` | `/api/auth/login` | Login |
-| `POST` | `/api/auth/logout` | Logout |
-| `GET` | `/api/auth/verify` | Verify token |
-| `POST` | `/api/auth/forgot` | Password reset request |
-| `POST` | `/api/auth/reset` | Password reset confirm |
+| `POST` | `/api/v1/auth/register` | Create account |
+| `POST` | `/api/v1/auth/login` | Login (returns JWT + refresh token) |
+| `POST` | `/api/v1/auth/refresh` | Refresh JWT |
 
 ### User API (authenticated)
 
 | Method | Path | Description |
 |--------|------|-------------|
-| `GET` | `/api/user/dashboard` | User dashboard data |
-| `GET` | `/api/user/reveals` | User's reveal history |
-| `GET` | `/api/user/saved` | User's saved domains |
-| `PUT` | `/api/user/profile` | Update profile |
+| `GET` | `/api/v1/users/me` | Get profile |
+| `PUT` | `/api/v1/users/me` | Update profile |
+| `POST` | `/api/v1/api-keys` | Create API key |
+| `GET` | `/api/v1/api-keys` | List API keys |
+| `DELETE` | `/api/v1/api-keys/:id` | Delete API key |
+
+### Appraisal API (authenticated)
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/v1/appraise` | Appraise a domain |
+| `GET` | `/api/v1/appraisals` | List user's appraisals |
+| `GET` | `/api/v1/appraisals/:id` | Get single appraisal |
+
+### Scanner API (premium only)
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/v1/scans` | Create a new scan |
+| `GET` | `/api/v1/scans` | List user's scans |
+| `GET` | `/api/v1/scans/:id` | Get scan details + results |
+| `GET` | `/api/v1/scans/:id/export` | Export scan results as CSV |
+| `GET` | `/api/v1/word-lists` | List word lists |
+| `POST` | `/api/v1/word-lists` | Create custom word list |
+| `DELETE` | `/api/v1/word-lists/:id` | Delete word list |
+
+### Lock & Reveal API (authenticated)
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/v1/locks` | Acquire 5-min domain lock |
+| `DELETE` | `/api/v1/locks/:id` | Release a lock |
+| `POST` | `/api/v1/reveals` | Initialize reveal payment |
+| `GET` | `/api/v1/reveals/:id` | Get reveal result |
+
+### Subscription API (authenticated)
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/v1/subscriptions` | Create subscription |
+| `GET` | `/api/v1/subscriptions` | Get subscription status |
+| `DELETE` | `/api/v1/subscriptions` | Cancel subscription |
+
+### Webhook API
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/v1/webhooks/paystack` | Paystack payment webhook (HMAC verified) |
 
 ### Admin API (admin role required)
 
@@ -799,90 +729,59 @@ CREATE TABLE scanner_runs (
 | `GET` | `/admin/api/stats` | Dashboard statistics |
 | `GET` | `/admin/api/discoveries` | List all discoveries |
 | `PUT` | `/admin/api/discoveries/:id` | Update discovery status |
-| `DELETE` | `/admin/api/discoveries/:id` | Delete discovery |
-| `POST` | `/admin/api/discoveries/bulk` | Bulk actions on discoveries |
 | `GET` | `/admin/api/marketplace` | List all marketplace listings |
 | `PUT` | `/admin/api/marketplace/:id` | Update listing status |
-| `DELETE` | `/admin/api/marketplace/:id` | Remove listing |
-| `GET` | `/admin/api/scanner` | Scanner status |
-| `POST` | `/admin/api/scanner/run` | Trigger scanner run |
-| `PUT` | `/admin/api/scanner/config` | Update scanner config |
 | `GET` | `/admin/api/users` | List users |
 | `PUT` | `/admin/api/users/:id` | Update user |
-| `DELETE` | `/admin/api/users/:id` | Delete user |
 | `GET` | `/admin/api/revenue` | Revenue report |
-| `GET` | `/admin/api/revenue/transactions` | Transaction log |
-| `GET` | `/admin/api/blog` | List blog posts |
-| `POST` | `/admin/api/blog` | Create blog post |
-| `PUT` | `/admin/api/blog/:id` | Update blog post |
-| `DELETE` | `/admin/api/blog/:id` | Delete blog post |
-| `GET/PUT` | `/admin/api/settings/:key` | Settings CRUD |
-| `GET` | `/admin/api/faq` | List FAQ items |
-| `POST/PUT/DELETE` | `/admin/api/faq/:id` | FAQ CRUD |
 
 ---
 
 ## Deployment
 
-### Docker Compose
+### Server
 
-```yaml
-version: "3.8"
-services:
-  ceche-api:
-    build: ./ceche-api
-    ports: ["8080:8080"]
-    environment:
-      DATABASE_URL: postgres://ceche:secret@postgres:5432/ceche
-      STRIPE_KEY: ${STRIPE_KEY}
-      JWT_SECRET: ${JWT_SECRET}
-    depends_on: [postgres]
+- **IP**: 77.67.23.30 (Ubuntu 22.04)
+- **Domain**: ceche.net (DNS live)
+- **Backend**: Go on port 8080
+- **Frontend**: Next.js on port 4321
+- **Database**: PostgreSQL 16 on port 5432
 
-  ceche-web:
-    build: ./ceche-web
-    ports: ["3000:3000"]
-    environment:
-      API_URL: http://ceche-api:8080
-    depends_on: [ceche-api]
-
-  postgres:
-    image: postgres:16-alpine
-    volumes: ["pgdata:/var/lib/postgresql/data"]
-    environment:
-      POSTGRES_DB: ceche
-      POSTGRES_USER: ceche
-      POSTGRES_PASSWORD: secret
-
-volumes:
-  pgdata:
-```
-
-### Nginx
+### Nginx Config
 
 ```nginx
+# ceche.net → 301 redirect to www.ceche.net
 server {
     listen 80;
     server_name ceche.net;
+    return 301 https://www.ceche.net$request_uri;
+}
 
-    # Frontend
+# www.ceche.net — public marketing + name search
+server {
+    listen 443 ssl;
+    server_name www.ceche.net;
+
     location / {
-        proxy_pass http://ceche-web:3000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
+        proxy_pass http://localhost:4321;
     }
 
-    # API
     location /api/ {
-        proxy_pass http://ceche-api:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
+        proxy_pass http://localhost:8080;
+    }
+}
+
+# app.ceche.net — authenticated app
+server {
+    listen 443 ssl;
+    server_name app.ceche.net;
+
+    location / {
+        proxy_pass http://localhost:4321;
     }
 
-    # Admin API
-    location /admin/api/ {
-        proxy_pass http://ceche-api:8080;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
+    location /api/ {
+        proxy_pass http://localhost:8080;
     }
 }
 ```
@@ -891,61 +790,87 @@ server {
 
 ## Milestones
 
-### Phase 1: Foundation (Week 1-2)
-- [ ] Go project setup (chi router, PostgreSQL, config)
-- [ ] PostgreSQL schema (all tables)
-- [ ] Auth system (JWT, signup/login/logout)
-- [ ] Basic API server with health check
-- [ ] Next.js project setup (App Router, Tailwind, shadcn/ui)
+### Phase 0: Foundation ✅
+- Go project setup (chi router, PostgreSQL, config)
+- PostgreSQL schema
+- Auth system (JWT, signup/login/logout)
+- Basic API server with health check
+- Next.js project setup
 
-### Phase 2: Appraisal Engine (Week 2-4)
-- [ ] Core modules: M1-M6, M15 (pricing)
-- [ ] External adapters: RDAP, Wayback, Ahrefs, OPR, Google CSE, Brave
-- [ ] Parallel execution (errgroup)
-- [ ] In-memory cache (bigcache)
-- [ ] API endpoint: POST /api/appraise
+### Phase 1: Auth & Users ✅
+- JWT authentication
+- User profiles
+- API key management
+- Rate limiting
 
-### Phase 3: Premium Discovery (Week 4-5)
-- [ ] Domain scanner (find available premium domains)
-- [ ] Premium scorer (score domains 0-100)
-- [ ] Background goroutine (scheduled scans)
-- [ ] Admin: scanner config + run history
+### Phase 2: 16-Dimension Scoring ✅
+- Core appraisal engine (16 modules)
+- AES-256-GCM encryption
+- bigcache caching
+- Free/premium gating
+- Frontend appraisal page
 
-### Phase 4: Reveal System (Week 5-6)
-- [ ] Stripe integration (payments)
-- [ ] Partial reveal mechanic
-- [ ] Try Your Luck mechanic
-- [ ] Full reveal flow
-- [ ] Email notifications
+### Phase 3: Domain Scanner Engine ✅
+- Goroutine pool scanner (50 workers)
+- DNS lookup
+- Batch processing
+- Word lists (4 built-in)
+- Scan API + frontend
 
-### Phase 5: Marketplace (Week 6-7)
-- [ ] Seller listings CRUD
-- [ ] Listing fees (Stripe)
-- [ ] Commission tracking
-- [ ] Featured/premium placement
+### Phase 4: Lock-and-Reserve System (NEXT)
+- RDAP client for real-time availability
+- Domain lock (5-min TTL checkout reservation)
+- Lock expiry goroutine (30s cleanup)
+- Registration handoff (Dynadot, Namecheap, Porkbun)
+- Reveal payment flow
 
-### Phase 6: Health Check (Week 7-8)
-- [ ] DNS resolution (Go net package)
-- [ ] SSL certificate check (crypto/tls)
-- [ ] Page speed (HTTP HEAD request)
-- [ ] Parked detection
-- [ ] Authority lookup (Ahrefs, OPR)
-- [ ] Public health check page
+### Phase 5: Payment Integration
+- Paystack integration (subscriptions + one-time)
+- Subscription management (Startup $79, Enterprise $129)
+- Reveal credits
+- Webhook handling (HMAC-SHA512)
 
-### Phase 7: Frontend (Week 8-10)
-- [ ] Next.js pages (all routes)
-- [ ] DomainCard component (name hidden)
-- [ ] RevealModal component
-- [ ] Health check UI
-- [ ] Appraisal UI
-- [ ] Dashboard UI
-- [ ] Admin panel
+### Phase 6: Name Search Tool
+- Homepage search bar → availability results
+- WHOIS details (if taken)
+- Premium/mid/low label (if available)
+- "What you can build" suggestions
+- CTA to appraisal
 
-### Phase 8: Polish + Launch (Week 10-12)
-- [ ] Docker setup
-- [ ] Nginx config
-- [ ] Performance testing (< 20s appraisal)
-- [ ] Security audit
-- [ ] SEO optimization
-- [ ] Content (blog posts, FAQ)
-- [ ] Launch
+### Phase 7: Standard Marketplace
+- Blind listing browse (no name hint)
+- Reveal flow (pay to see name)
+- Seller listing CRUD
+- Listing fees ($5-$15)
+- Commission tracking (8-15%)
+
+### Phase 8: Try Your Luck
+- TLD selection UI
+- Spin animation (3 boxes)
+- Domain lock on reveal
+- TLD-specific pricing (.com $79, .net $39, .io $29, .co $9)
+- Flat-rate option ($19)
+
+### Phase 9: Email & Notifications
+- Brevo integration
+- Reveal confirmation emails
+- Subscription receipts
+- Weekly digest
+
+### Phase 10: SEO & Sitemap
+- Dynamic sitemap
+- Structured data (JSON-LD)
+- Meta tags
+- Open Graph
+
+### Phase 11: i18n (9 locales)
+- en, fr, de, es, pt, ko, zh, ja, it
+- next-intl integration
+- localePrefix: "as-needed"
+
+### Phase 12: Polish & Launch
+- Performance testing
+- Security audit
+- Docker setup
+- Nginx config
+- Launch

@@ -14,7 +14,7 @@ export default function MarketplacePricingPage() {
   return (
     <ToolPageTemplate
       icon={DollarSign}
-      title="Pricing Calculator"
+      title="Seller Fees"
       subtitle="Automated listing fee and valuation estimates. Transparent pricing for sellers."
       features={features}
     />

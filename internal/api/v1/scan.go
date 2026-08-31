@@ -3,6 +3,8 @@ package v1
 import (
 	"encoding/json"
 	"net/http"
+	"strconv"
+	"strings"
 	"time"
 
 	"github.com/go-chi/chi/v5"
@@ -14,12 +16,17 @@ import (
 func handleCreateScan(db *pgxpool.Pool) http.HandlerFunc {
 	type scanRequest struct {
 		WordListName string   `json:"word_list_name"`
-		Tlds         []string `json:"tlds"`
-		Words        []string `json:"words"`
+		TLDs         []string `json:"tlds"`
+		Words        []string `json:"words,omitempty"`
+		CustomWords  []string `json:"custom_words,omitempty"`
 	}
 
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		limitBody(r)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		var req scanRequest
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
@@ -41,7 +48,7 @@ func handleCreateScan(db *pgxpool.Pool) http.HandlerFunc {
 			return
 		}
 
-		tlds := req.Tlds
+		tlds := req.TLDs
 		if len(tlds) == 0 {
 			tlds = []string{"com", "net", "io", "co"}
 		}
@@ -56,6 +63,11 @@ func handleCreateScan(db *pgxpool.Pool) http.HandlerFunc {
 
 		domains := scanner.GenerateCombinations(words, tlds)
 		totalDomains := len(domains) * len(tlds)
+
+		if totalDomains > 5000 {
+			writeError(w, http.StatusBadRequest, "too many domains to scan (max 5000)")
+			return
+		}
 
 		wordListName := req.WordListName
 		if wordListName == "" {
@@ -88,7 +100,10 @@ func handleCreateScan(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleGetScan(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 		scanID := chi.URLParam(r, "id")
 
 		var total, scanned, available int
@@ -115,27 +130,29 @@ func handleGetScan(db *pgxpool.Pool) http.HandlerFunc {
 			 LIMIT 1000`,
 			scanID,
 		)
-		if err == nil {
-			defer rows.Close()
-			for rows.Next() {
-				var domain, tld string
-				var available bool
-				var price *float64
-				var registrar, errorStr *string
-				var checkedAt interface{}
-				if err := rows.Scan(&domain, &tld, &available, &price, &registrar, &errorStr, &checkedAt); err != nil {
-					continue
-				}
-				results = append(results, map[string]interface{}{
-					"domain":     domain,
-					"tld":        tld,
-					"available":  available,
-					"price":      price,
-					"registrar":  registrar,
-					"error":      errorStr,
-					"checked_at": checkedAt,
-				})
+		if err != nil {
+			writeError(w, http.StatusInternalServerError, "failed to load scan results")
+			return
+		}
+		defer rows.Close()
+		for rows.Next() {
+			var domain, tld string
+			var available bool
+			var price *float64
+			var registrar, errorStr *string
+			var checkedAt interface{}
+			if err := rows.Scan(&domain, &tld, &available, &price, &registrar, &errorStr, &checkedAt); err != nil {
+				continue
 			}
+			results = append(results, map[string]interface{}{
+				"domain":     domain,
+				"tld":        tld,
+				"available":  available,
+				"price":      price,
+				"registrar":  registrar,
+				"error":      errorStr,
+				"checked_at": checkedAt,
+			})
 		}
 
 		if results == nil {
@@ -162,7 +179,10 @@ func handleGetScan(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleGetUserScans(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		rows, err := db.Query(r.Context(),
 			`SELECT id, word_list_name, tlds, status, total_domains, scanned_domains, available_domains, created_at, completed_at
@@ -211,7 +231,10 @@ func handleGetUserScans(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleGetWordLists(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		lists := []map[string]interface{}{
 			{"name": "builtin", "word_count": len(scanner.GetBuiltinWords()), "source": "system"},
@@ -259,7 +282,10 @@ func handleCreateWordList(db *pgxpool.Pool) http.HandlerFunc {
 	}
 
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		var req wordListRequest
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
@@ -274,6 +300,11 @@ func handleCreateWordList(db *pgxpool.Pool) http.HandlerFunc {
 
 		if len(req.Words) == 0 {
 			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Words array is required"}}`, http.StatusBadRequest)
+			return
+		}
+
+		if len(req.Words) > 10000 {
+			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Maximum 10000 words allowed"}}`, http.StatusBadRequest)
 			return
 		}
 
@@ -300,7 +331,10 @@ func handleCreateWordList(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleDeleteWordList(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 		listID := chi.URLParam(r, "id")
 
 		result, err := db.Exec(r.Context(),
@@ -327,7 +361,10 @@ func handleDeleteWordList(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleExportScanResults(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 		scanID := chi.URLParam(r, "id")
 
 		var exists bool
@@ -366,13 +403,21 @@ func handleExportScanResults(db *pgxpool.Pool) http.HandlerFunc {
 		}
 		priceStr := ""
 		if price != nil {
-			priceStr = string(rune(*price))
+			priceStr = strconv.FormatFloat(*price, 'f', -1, 64)
 		}
 		errorVal := ""
 		if errorStr != nil {
 			errorVal = *errorStr
 		}
-		w.Write([]byte(domain + "." + tld + "," + tld + "," + boolToCSV(available) + "," + priceStr + "," + errorVal + "\n"))
+		// Escape CSV values that might contain commas or quotes
+		domainVal := domain + "." + tld
+		if strings.ContainsAny(domainVal, ",\"") {
+			domainVal = "\"" + strings.ReplaceAll(domainVal, "\"", "\"\"") + "\""
+		}
+		if strings.ContainsAny(errorVal, ",\"") {
+			errorVal = "\"" + strings.ReplaceAll(errorVal, "\"", "\"\"") + "\""
+		}
+		w.Write([]byte(domainVal + "," + tld + "," + boolToCSV(available) + "," + priceStr + "," + errorVal + "\n"))
 	}
 	}
 }

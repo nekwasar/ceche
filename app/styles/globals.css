@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Noto+Serif:wght@400;700;900&family=Playball&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kaushan+Script&family=Pacifico&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 @import "tailwindcss";
 
@@ -6,7 +6,8 @@
   --font-sans: "Ubuntu", sans-serif;
   --font-branded: "Berkshire Swash", cursive;
   --font-serif: "Noto Serif", serif;
-  --font-display: "Playball", cursive;
+  --font-display: "Kaushan Script", cursive;
+  --font-logo: "Pacifico", cursive;
 
   --color-canvas: #FAF7F2;
   --color-canvas-dark: #F0EDE8;
@@ -47,12 +48,12 @@
 
   .mega-menu-panel {
     position: fixed;
-    top: 0;
+    top: 64px;
     left: 0;
     right: 0;
-    z-index: 50;
+    z-index: 65;
     background-color: var(--color-brand);
-    min-height: 100vh;
+    min-height: calc(100vh - 64px);
   }
 
   .nav-trigger {

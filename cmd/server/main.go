@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 	"os"
 	"os/signal"
@@ -16,6 +15,7 @@ import (
 	"github.com/nekwasar/ceche/internal/config"
 	"github.com/nekwasar/ceche/internal/database"
 	"github.com/nekwasar/ceche/internal/service"
+	"github.com/nekwasar/ceche/internal/worker"
 )
 
 func main() {
@@ -43,6 +43,13 @@ func main() {
 		log.Info().Msg("cache initialized")
 	}
 
+	service.InitRDAP()
+	log.Info().Msg("RDAP client initialized")
+
+	lockWorker := worker.NewLockExpiryWorker(pool, 30*time.Second)
+	lockWorker.Start(ctx)
+	defer lockWorker.Stop()
+
 	router := v1.NewRouter(cfg, pool)
 
 	srv := &http.Server{
@@ -65,6 +72,7 @@ func main() {
 	<-quit
 
 	log.Info().Msg("shutting down server...")
+	lockWorker.Stop()
 	shutdownCtx, shutdownCancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer shutdownCancel()
 
@@ -72,6 +80,5 @@ func main() {
 		log.Fatal().Err(err).Msg("server forced to shutdown")
 	}
 
-	log.Info().Msg("server exited")
-	fmt.Println("Server stopped gracefully")
+	log.Info().Msg("server exited gracefully")
 }

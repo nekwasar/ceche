@@ -1,7 +1,6 @@
 package cache
 
 import (
-	"context"
 	"encoding/json"
 	"time"
 
@@ -14,7 +13,7 @@ type Cache struct {
 }
 
 func New(ttl time.Duration) (*Cache, error) {
-	l1, err := bigcache.New(context.Background(), bigcache.Config{
+	l1, err := bigcache.NewBigCache(bigcache.Config{
 		Shards:             1024,
 		LifeWindow:         ttl,
 		CleanWindow:        5 * time.Minute,

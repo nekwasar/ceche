@@ -94,7 +94,7 @@ func InitDomainEncryption() error {
 	return err
 }
 
-func GetDomainEncryptor() *DomainEncryptor {
+func getDomainEncryptor() *DomainEncryptor {
 	return globalEncryptor
 }
 

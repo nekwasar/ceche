@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import { Rocket } from "lucide-react";
 import { ToolPageTemplate } from "@/components/layout/ToolPageTemplate";
 
 const features = [
@@ -13,7 +13,7 @@ const features = [
 export default function StartupFoundersPage() {
   return (
     <ToolPageTemplate
-      icon={Zap}
+      icon={Rocket}
       title="Startup Founders"
       subtitle="Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup."
       features={features}

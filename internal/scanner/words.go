@@ -102,7 +102,3 @@ var creativeWords = []string{
 	"magic", "wonder", "dream", "fantasy", "story", "narrative",
 	"voice", "sound", "music", "rhythm", "beat", "pulse", "vibe",
 }
-
-func init() {
-	builtinWords = GetWordListByName("builtin")
-}

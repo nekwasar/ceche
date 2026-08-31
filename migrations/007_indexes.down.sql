@@ -1,0 +1,10 @@
+DROP INDEX IF EXISTS idx_domain_locks_expires;
+DROP INDEX IF EXISTS idx_domain_locks_listing;
+DROP INDEX IF EXISTS idx_subscriptions_paystack_id;
+DROP INDEX IF EXISTS idx_subscriptions_period_end;
+DROP INDEX IF EXISTS idx_reveals_status;
+DROP INDEX IF EXISTS idx_scans_user_created;
+DROP INDEX IF EXISTS idx_scan_results_scan_available;
+DROP INDEX IF EXISTS idx_appraisals_score;
+DROP INDEX IF EXISTS idx_suggestions_seed;
+DROP INDEX IF EXISTS idx_audit_logs_resource;

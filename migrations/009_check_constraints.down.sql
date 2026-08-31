@@ -1,0 +1,12 @@
+ALTER TABLE users DROP CONSTRAINT IF EXISTS chk_users_role;
+ALTER TABLE users DROP CONSTRAINT IF EXISTS chk_users_subscription_tier;
+ALTER TABLE users DROP CONSTRAINT IF EXISTS chk_users_subscription_status;
+ALTER TABLE users DROP CONSTRAINT IF EXISTS chk_users_reveals_non_negative;
+ALTER TABLE scans DROP CONSTRAINT IF EXISTS chk_scans_status;
+ALTER TABLE domain_locks DROP CONSTRAINT IF EXISTS chk_domain_locks_status;
+ALTER TABLE reveals DROP CONSTRAINT IF EXISTS chk_reveals_status;
+ALTER TABLE reveals DROP CONSTRAINT IF EXISTS chk_reveals_type;
+ALTER TABLE reveals DROP CONSTRAINT IF EXISTS chk_reveals_amount_positive;
+ALTER TABLE subscriptions DROP CONSTRAINT IF EXISTS chk_subscriptions_status;
+ALTER TABLE subscriptions DROP CONSTRAINT IF EXISTS chk_subscriptions_plan;
+ALTER TABLE appraisals DROP CONSTRAINT IF EXISTS chk_appraisals_score_range;

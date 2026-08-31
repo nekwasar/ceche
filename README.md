@@ -26,10 +26,10 @@ cd ceche
 docker compose up -d db          # PostgreSQL 16 on :5432
 cp .env.example .env             # set DATABASE_URL, JWT_SECRET, DOMAIN_ENCRYPTION_KEY
 go run ./cmd/server/migrate     # apply migrations
-cd app && npm install && npm run dev  # frontend on http://localhost:3000
+cd app && npm install && npm run dev  # frontend on http://localhost:4321
 ```
 
-Then open http://localhost:3000/en. Create an account. You get 5 free reveals. Appraise a domain with the API:
+Then open http://localhost:4321/en. Create an account. You get 12 free appraisals. Appraise a domain with the API:
 
 ```bash
 curl -X POST http://localhost:8080/api/v1/appraise \
@@ -95,7 +95,7 @@ Ceche is built as a monorepo: a Go API backend with PostgreSQL 16, and a Next.js
 | JWT refresh token | 7 days |
 | bcrypt cost | 12 |
 | Free reveals at signup | 5 |
-| Paid tiers | Starter $29, Pro $49, Enterprise $199 |
+| Paid tiers | Premium Startup $79, Premium Enterprise $129 |
 | Reveal types | Partial, Try Your Luck, Full |
 | Word lists | 4 built-in (common, tech, business, creative) |
 | Cold start | 69ms |
@@ -193,7 +193,7 @@ cp .env.example .env
 # Optional:
 #   PAYSTACK_SECRET_KEY=sk_test_...
 #   BREVO_API_KEY=...
-#   CEche_CORS_ORIGINS=http://localhost:3000
+#   CEche_CORS_ORIGINS=http://localhost:4321
 ```
 
 Apply migrations:
@@ -207,7 +207,7 @@ Install and start the frontend:
 ```bash
 cd app
 npm install
-npm run dev                    # http://localhost:3000
+npm run dev                    # http://localhost:4321
 ```
 
 Start the API server:
@@ -330,9 +330,9 @@ Every request validates input at the boundary. Rate limits apply per IP (configu
 
 ## Status and roadmap
 
-**Shipped:** Phase 0 (Foundation), Phase 1 (Auth & Users), Phase 2 (16-Dimension Scoring + Free/Premium Gating), Phase 3 (Domain Scanner Engine).
+**Shipped:** Phase 0 (Foundation), Phase 1 (Auth & Users), Phase 2 (16-Dimension Scoring + Free/Premium Gating), Phase 3 (Domain Scanner Engine), Phase 4 (Lock-and-Reserve System), Phase 5 (Intelligence Profiles), Phase 6 (Name Suggestions Engine).
 
-**In progress:** Phase 4 (Lock-and-Reserve System).
+**In progress:** Phase 7 (Marketplace & Seller Transition).
 
 **Remaining phases:**
 
@@ -352,14 +352,14 @@ Every request validates input at the boundary. Rate limits apply per IP (configu
 | 11 | Deployment | Pending |
 | 12 | Polish & Launch | Pending |
 
-See [`docs/implementation-plan.md`](docs/implementation-plan.md) for the full 12-phase plan with detailed tasks.
+See [`docs/implementation-plan.md`](docs/implementation-plan.md) for the full 13-phase plan with detailed tasks.
 
 ## Contributing
 
 Worth reading before any change, in this order:
 
 1. [`AGENTS.md`](AGENTS.md) — Agent context and session protocol.
-2. [`docs/implementation-plan.md`](docs/implementation-plan.md) — The 12-phase plan.
+2. [`docs/implementation-plan.md`](docs/implementation-plan.md) — The 13-phase plan.
 3. [`docs/tech-stack.md`](docs/tech-stack.md) — Technology decisions.
 4. [`docs/enterprise-standards.md`](docs/enterprise-standards.md) — Security, observability, delivery standards.
 
@@ -373,7 +373,7 @@ No license is granted to use, copy, modify, or redistribute this code. Written p
 
 ## Docs
 
-- [`docs/implementation-plan.md`](docs/implementation-plan.md) — 12-phase implementation plan
+- [`docs/implementation-plan.md`](docs/implementation-plan.md) — 13-phase implementation plan
 - [`docs/tech-stack.md`](docs/tech-stack.md) — Technology decisions and rationale
 - [`docs/site-architecture.md`](docs/site-architecture.md) — Full sitemap and page structure
 - [`docs/enterprise-standards.md`](docs/enterprise-standards.md) — Security, observability, delivery

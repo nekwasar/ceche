@@ -1,9 +1,9 @@
 package v1
 
 import (
+	"context"
 	"encoding/json"
 	"net/http"
-	"regexp"
 	"strings"
 
 	"github.com/go-chi/chi/v5"
@@ -13,23 +13,25 @@ import (
 	"github.com/nekwasar/ceche/internal/service"
 )
 
-var domainRegex = regexp.MustCompile(`^[a-zA-Z0-9]([a-zA-Z0-9\-]*[a-zA-Z0-9])?(\.[a-zA-Z]{2,})+$`)
-
-func getUserTier(db *pgxpool.Pool, userID string) string {
-	var plan string
-	err := db.QueryRow(nil,
-		`SELECT plan FROM users WHERE id = $1`,
+func getUserTier(ctx context.Context, db *pgxpool.Pool, userID string) string {
+	var tier string
+	err := db.QueryRow(ctx,
+		`SELECT subscription_tier FROM users WHERE id = $1`,
 		userID,
-	).Scan(&plan)
-	if err != nil || plan == "" {
+	).Scan(&tier)
+	if err != nil || tier == "" {
 		return "free"
 	}
-	return plan
+	return tier
 }
 
 func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
+		limitBody(r)
 
 		var req struct {
 			Domain         string `json:"domain"`
@@ -65,10 +67,13 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 			if err == nil {
 				var score int
 				var metrics []byte
-				db.QueryRow(r.Context(),
+				if err := db.QueryRow(r.Context(),
 					`SELECT score, metrics FROM appraisals WHERE id = $1`,
 					existingID,
-				).Scan(&score, &metrics)
+				).Scan(&score, &metrics); err != nil {
+					writeError(w, http.StatusInternalServerError, "failed to load cached appraisal")
+					return
+				}
 
 				w.Header().Set("Content-Type", "application/json")
 				w.Write(metrics)
@@ -76,7 +81,7 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 			}
 		}
 
-		tier := getUserTier(db, userID)
+		tier := getUserTier(r.Context(), db, userID)
 
 		cacheKey := "appraisal:" + req.Domain + ":" + tier
 		var cachedMetrics service.AppraisalMetrics
@@ -123,6 +128,7 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 			 VALUES ($1, 'appraise', 'appraisal', $2, $3, $4)`,
 			userID, appraisalID, r.RemoteAddr, r.UserAgent(),
 		)
+		// Audit log errors are logged but don't fail the request
 
 		if c := cache.GetCache(); c != nil {
 			c.Set(cacheKey, metrics)
@@ -135,7 +141,10 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleGetAppraisals(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		rows, err := db.Query(r.Context(),
 			`SELECT id, domain, score, metrics, created_at
@@ -180,7 +189,10 @@ func handleGetAppraisals(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleGetAppraisal(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 		appraisalID := chi.URLParam(r, "id")
 
 		var domain string

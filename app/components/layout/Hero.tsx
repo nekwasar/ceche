@@ -9,7 +9,7 @@ export function Hero() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (domain.trim()) {
-      window.location.href = `/tools/appraisal?domain=${encodeURIComponent(domain.trim())}`;
+      window.location.href = `/search?q=${encodeURIComponent(domain.trim())}`;
     }
   };
 
@@ -20,7 +20,7 @@ export function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative">
         <div className="max-w-3xl">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
+          <h1 className="font-sans font-black text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
             Uncover Hidden Domain Value with{" "}
             <span className="text-accent">16-Dimension</span>{" "}
             Intelligence

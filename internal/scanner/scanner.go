@@ -44,6 +44,7 @@ type Scanner struct {
 	progress    chan ScanProgress
 	quit        chan struct{}
 	wg          sync.WaitGroup
+	cancelOnce  sync.Once
 }
 
 func New(db *pgxpool.Pool, concurrency int) *Scanner {
@@ -259,7 +260,9 @@ func (s *Scanner) updateScanFailed(ctx context.Context, scanID string, errMsg st
 }
 
 func (s *Scanner) Cancel() {
-	close(s.quit)
+	s.cancelOnce.Do(func() {
+		close(s.quit)
+	})
 }
 
 func (s *Scanner) Progress() <-chan ScanProgress {

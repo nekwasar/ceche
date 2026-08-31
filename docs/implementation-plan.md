@@ -1,6 +1,6 @@
 # Ceche — Implementation Plan
 
-> Enterprise-grade B2B domain discovery platform. 12 phases, ~90 days to production.
+> Enterprise-grade B2B domain discovery platform. 13 phases, ~35 days to production.
 
 > **Scaling Strategy:** See `docs/scaling-insights.md` for data pipeline strategy, caching architecture, and cost projections.
 
@@ -166,7 +166,7 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
 ### Verification Checklist
 - [ ] `docker-compose up` starts all 3 services
 - [ ] `GET /health` returns 200
-- [ ] Frontend loads at `localhost:3000`
+- [ ] Frontend loads at `localhost:4321`
 - [ ] Subdomain detection works: `app.*` → app layout, `www.*` → public layout
 - [ ] `ceche.net` → 301 → `www.ceche.net`
 - [ ] `www.ceche.net/login` → 301 → `app.ceche.net/login`
@@ -348,13 +348,16 @@ Both fetch from the same API (`GET /api/v1/listings`) with different query param
   - `domain_encrypted` = AES-256-GCM(domain) for storage
   - Decryption key from env var `DOMAIN_ENCRYPTION_KEY`
 - Reveal types:
-  - **Partial**: show first char + last char + TLD (e.g., `c*****m.com`)
-  - **Try Your Luck**: show `????.tld` only
-  - **Full**: show complete domain
+  - **Standard Marketplace**: name hidden with NO hint at all, full stats shown
+  - **Try Your Luck (with TLD)**: user selects TLD, spins 3 boxes, picks one
+  - **Try Your Luck (flat rate)**: no TLD selection, flat $19
 - Pricing:
-  - Partial: $5-10 (dynamic based on score)
-  - Try Your Luck: $3-5
-  - Full: additional $2-5
+  - Standard Marketplace: $5-$50 (varies by domain value)
+  - Try Your Luck .com: $79
+  - Try Your Luck .net: $39
+  - Try Your Luck .io: $29
+  - Try Your Luck .co: $9
+  - Try Your Luck flat: $19
 
 ### Backend — Lock-and-Reserve Architecture
 Anti-front-running mechanism ensuring no two users pay to unmask the same domain simultaneously.
@@ -402,10 +405,10 @@ Anti-front-running mechanism ensuring no two users pay to unmask the same domain
   - `GET /api/v1/subscriptions` → status
   - `DELETE /api/v1/subscriptions` → cancel
 - Reveal credits system:
-  - Free: 5 reveals/month
-  - Starter: 50/month
-  - Pro: 200/month
-  - Enterprise: unlimited
+  - Free (unsigned): 3 appraisals/day
+  - Free (signed up): 12 appraisals/day
+  - Premium Startup ($79/mo): 30 appraisals/day, scanner, extended insights, bulk audit
+  - Premium Enterprise ($129/mo): unlimited appraisals, all tools, API access
 
 ### Frontend (app subdomain)
 - Reveal button with price display on scan results and marketplace
@@ -568,12 +571,9 @@ Organic seller pipeline: after buyer acquires a domain, prompt them to list it f
   4. Server verifies DNS record (with 24h expiry)
   5. On success: `verification_status` → `verified`
   6. On failure: `verification_status` → `failed`, notify user
-- Listing Fee Calculator:
-  - Based on appraisal score:
-    - Score 90+: $0 listing fee (premium placement)
-    - Score 70-89: $9.99 listing fee
-    - Score 50-69: $19.99 listing fee
-    - Score < 50: $29.99 listing fee
+- Listing Fee:
+  - Standard: $5 (standard placement)
+  - Priority: $10 (top placement, highlighted badge)
   - Listing fee payable via Paystack before listing goes live
   - Non-refundable (covers verification + marketplace placement)
 - Seller Submission Portal:
@@ -652,9 +652,8 @@ Organic seller pipeline: after buyer acquires a domain, prompt them to list it f
 - `GET /api/v1` → API documentation (OpenAPI/Swagger)
 - Rate limits per tier:
   - Free: 10 req/day
-  - Starter: 100 req/day
-  - Pro: 500 req/day
-  - Enterprise: unlimited
+  - Premium Startup: 100 req/day
+  - Premium Enterprise: unlimited
 - API key authentication via `Authorization: Bearer <key>`
 - Versioning: `/api/v1/`, `/api/v2/` (future)
 - Deprecation headers on old versions
@@ -852,7 +851,7 @@ server {
     ssl_certificate_key /etc/ssl/private/ceche.net.key;
     
     location / {
-        proxy_pass http://localhost:3000;
+        proxy_pass http://localhost:4321;
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-Host $host;
         proxy_set_header X-Forwarded-Proto $scheme;

@@ -7,8 +7,8 @@
 ## Current State
 
 - **Primary Gateway**: Paystack (until Stripe account ready)
-- **Migration Path**: Paystack → Stripe (interface-based, swap implementation)
-- **Currency**: NGN (Paystack primary), USD (future with Stripe)
+- **Currency**: USD (primary)
+- **No Refunds**: All sales final (digital goods)
 
 ---
 
@@ -26,8 +26,8 @@ client := paystack.NewClient(os.Getenv("PAYSTACK_SECRET_KEY"))
 func InitializePayment(ctx context.Context, email string, amount int64, metadata map[string]interface{}) (*transactions.InitializeResponse, error) {
     req := &transactions.InitializeRequest{
         Email:    email,
-        Amount:   fmt.Sprintf("%d", amount), // in kobo
-        Currency: paystackapi.CurrencyNGN,
+        Amount:   fmt.Sprintf("%d", amount), // in cents (USD)
+        Currency: "USD",
         Metadata: metadata,
     }
     return client.Transactions.Initialize(ctx, req)
@@ -73,61 +73,107 @@ func HandleWebhook(w http.ResponseWriter, r *http.Request) {
 
 ---
 
-## Reveal Payment Flow
+## Subscription Pricing
 
-### 1. User Initiates Reveal
-```
-POST /api/v1/reveals
-{
-  "domain_id": "uuid",
-  "reveal_type": "partial" | "luck" | "full"
-}
-```
+### Tiers
 
-### 2. Backend Creates Payment
+| Tier | Price | Appraisals/Day | Features |
+|------|-------|----------------|----------|
+| **Free (unsigned)** | $0 | 3 | Name search only |
+| **Free (signed up)** | $0 | 12 | Name search + basic appraisal |
+| **Premium Startup** | $79/mo | 30 | Scanner, Extended Insights, Bulk Audit |
+| **Premium Enterprise** | $129/mo | Unlimited | All tools, API access, priority support |
+
+### Go Config
 ```go
-func CreateReveal(ctx context.Context, userID string, domainID string, revealType string) (*Reveal, error) {
-    // 1. Check user has credits
-    // 2. Get domain (encrypted)
-    // 3. Calculate price based on reveal type and score
-    // 4. Initialize Paystack transaction
-    // 5. Return authorization URL
+var SubscriptionPlans = map[string]Plan{
+    "free": {
+        Name:            "Free",
+        Price:           0,
+        AppraisalsPerDay: 3,
+        Features:        []string{"name_search"},
+    },
+    "free_signed_up": {
+        Name:            "Free (Signed Up)",
+        Price:           0,
+        AppraisalsPerDay: 12,
+        Features:        []string{"name_search", "basic_appraisal"},
+    },
+    "startup": {
+        Name:            "Premium Startup",
+        Price:           7900, // $79 in cents
+        AppraisalsPerDay: 30,
+        Features:        []string{"name_search", "appraisal", "scanner", "extended_insights", "bulk_audit"},
+    },
+    "enterprise": {
+        Name:            "Premium Enterprise",
+        Price:           12900, // $129 in cents
+        AppraisalsPerDay: -1,   // Unlimited
+        Features:        []string{"name_search", "appraisal", "scanner", "extended_insights", "bulk_audit", "api_access", "priority_support"},
+    },
 }
 ```
 
-### 3. User Completes Payment
-- Redirect to Paystack checkout
-- User pays with card, bank transfer, USSD, etc.
+---
 
-### 4. Webhook Confirms Payment
-```
-POST /api/v1/webhooks/paystack
-{
-  "event": "charge.success",
-  "data": {
-    "reference": "txn_xxx",
-    "amount": 500000,
-    "status": "success",
-    "metadata": {
-      "reveal_id": "uuid",
-      "user_id": "uuid"
-    }
-  }
-}
-```
+## Reveal Pricing
 
-### 5. Backend Fulfills Reveal
+### Standard Marketplace
+
+Pay to reveal a blind listing (name hidden, no hint).
+
+| Domain Value Range | Reveal Price |
+|-------------------|--------------|
+| Under $1,000 | $5 |
+| $1,000 - $10,000 | $10 |
+| $10,000 - $50,000 | $25 |
+| $50,000+ | $50 |
+
+### Try Your Luck (with TLD selection)
+
+| TLD | Price |
+|-----|-------|
+| .com | $79 |
+| .net | $39 |
+| .io | $29 |
+| .co | $9 |
+
+### Try Your Luck (no TLD — flat rate)
+
+| TLD | Price |
+|-----|-------|
+| Any | $19 |
+
+### Go Config
 ```go
-func HandleChargeSuccess(data map[string]interface{}) {
-    revealID := data["metadata"]["reveal_id"]
-    // 1. Verify payment with Paystack
-    // 2. Decrypt domain name
-    // 3. Store revealed domain for user
-    // 4. Decrement user credits
-    // 5. Send email with revealed domain
-    // 6. Log audit event
+var TryYourLuckPricing = map[string]int64{
+    "com":  7900, // $79
+    "net":  3900, // $39
+    "io":   2900, // $29
+    "co":   900,  // $9
+    "flat": 1900, // $19 (no TLD selection)
 }
 ```
+
+---
+
+## Seller Marketplace Fees
+
+### Listing Fees
+
+| Type | Fee |
+|------|-----|
+| Standard | $5 |
+| Priority | $10 |
+
+### Commission on Sale
+
+| Sale Price | Commission Rate | Minimum |
+|-----------|----------------|---------|
+| $0 - $500 | 15% | $10 |
+| $501 - $5,000 | 12% | $50 |
+| $5,001 - $50,000 | 10% | $500 |
+| $50,001+ | 8% | $4,000 |
 
 ---
 
@@ -137,7 +183,7 @@ func HandleChargeSuccess(data map[string]interface{}) {
 ```
 POST /api/v1/subscriptions
 {
-  "plan": "starter" | "pro" | "enterprise"
+  "plan": "startup" | "enterprise"
 }
 ```
 
@@ -161,12 +207,8 @@ POST /api/v1/webhooks/paystack
   "event": "subscription.create",
   "data": {
     "subscription_code": "sub_xxx",
-    "customer": {
-      "email": "user@email.com"
-    },
-    "plan": {
-      "code": "PLN_xxx"
-    }
+    "customer": { "email": "user@email.com" },
+    "plan": { "code": "PLN_xxx" }
   }
 }
 ```
@@ -178,69 +220,50 @@ func HandleSubscriptionCreate(data map[string]interface{}) {
     // 2. Update user plan
     // 3. Set subscription status to active
     // 4. Set current_period_end
-    // 5. Grant reveal credits
-    // 6. Send welcome email
-    // 7. Log audit event
+    // 5. Send welcome email
+    // 6. Log audit event
 }
 ```
 
 ---
 
-## Pricing Configuration
+## Reveal Payment Flow
 
-### Reveal Pricing
-```go
-var RevealPricing = map[string]map[string]int64{
-    "partial": {
-        "free": 0,        // Can't reveal on free
-        "starter": 1000,  // $10 (1000 kobo = $10)
-        "pro": 700,       // $7
-        "enterprise": 500, // $5
-    },
-    "luck": {
-        "free": 0,
-        "starter": 300,   // $3
-        "pro": 200,       // $2
-        "enterprise": 100, // $1
-    },
-    "full": {
-        "free": 0,
-        "starter": 500,   // $5
-        "pro": 300,       // $3
-        "enterprise": 200, // $2
-    },
-}
+### Standard Marketplace Reveal
+
+```
+1. User browses /marketplace
+2. Clicks "Reveal Name" on a listing
+3. Pays reveal price (varies by domain value)
+4. Payment verified via webhook
+5. Domain name decrypted and shown
+6. User prompted to register at preferred registrar
 ```
 
-### Subscription Plans
-```go
-var SubscriptionPlans = map[string]Plan{
-    "free": {
-        Name:           "Free",
-        Price:          0,
-        RevealsPerMonth: 5,
-        APICallsPerDay: 0,
-    },
-    "starter": {
-        Name:           "Starter",
-        Price:          2900, // $29 in kobo
-        RevealsPerMonth: 50,
-        APICallsPerDay: 100,
-    },
-    "pro": {
-        Name:           "Pro",
-        Price:          4900, // $49 in kobo
-        RevealsPerMonth: 200,
-        APICallsPerDay: 500,
-    },
-    "enterprise": {
-        Name:           "Enterprise",
-        Price:          19900, // $199 in kobo
-        RevealsPerMonth: -1,   // Unlimited
-        APICallsPerDay: -1,    // Unlimited
-    },
-}
+### Try Your Luck Reveal
+
 ```
+1. User goes to /marketplace/try-your-luck
+2. Selects TLD (or flat-rate option)
+3. Pays TLD-specific price
+4. Three closed boxes appear (spinning animation)
+5. User picks one box
+6. Domain name revealed
+7. Domain LOCKED — no other user can purchase it
+8. User prompted to buy immediately
+```
+
+---
+
+## No Refund Policy
+
+**All sales are final.** No refunds for:
+- Reveal purchases
+- Subscription payments
+- Marketplace purchases
+- Try Your Luck spins
+
+Exception: Duplicate charges due to system error (handled case-by-case).
 
 ---
 
@@ -263,20 +286,3 @@ type PaymentProvider interface {
 3. Implement Stripe provider
 4. Swap via config: `PAYMENT_PROVIDER=paystack|stripe`
 5. No changes to business logic
-
----
-
-## No Refund Policy
-
-**All sales are final.** No refunds for:
-- Reveal purchases
-- Subscription payments
-- Marketplace purchases
-
-This is stated clearly on:
-- Pricing page
-- Terms of Service
-- Checkout flow (before payment)
-- Receipt emails
-
-Exception: Duplicate charges due to system error (handled case-by-case).

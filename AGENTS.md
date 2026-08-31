@@ -29,7 +29,34 @@ An enterprise-grade B2B platform that finds premium available domain names, show
 
 ---
 
-## Domain & Deployment
+## Design Rules (MANDATORY — All New Pages Must Comply)
+
+> Every new page created in this platform MUST comply with ALL 6 rules below.
+> Non-compliant pages will be rejected and rebuilt.
+
+### Rule 1: No Duplicate Page Templates
+No 2 pages in the root app (`app/app/[locale]/`) should use the same UI template design. Every page must have a unique layout, structure, and visual identity. The `ToolPageTemplate` is BANNED for new pages — each page must be purpose-built.
+
+### Rule 2: No Duplicate Sections
+No 2 sections across any pages should look the same. Each section must have a distinct layout, typography pattern, and visual treatment. Repeating the same section structure (e.g., icon + title + description grid) across multiple pages is prohibited.
+
+### Rule 3: Card UI Banned
+Card-based UI (`bg-white rounded-xl border p-6` patterns) is BANNED. Maximum 1 card per page, and only if absolutely necessary with no better alternative. Use stone containers, inline layouts, or other non-card patterns instead.
+
+### Rule 4: No Empty Pages
+Every page must be filled with meaningful components that add value. No page should look empty or like a placeholder. Pages must have sufficient content density, visual hierarchy, and industry-standard layouts. "Coming Soon" pages are BANNED — build real content or don't ship the page.
+
+### Rule 5: Minimum 5 Unique UI Elements
+Each page must have at least 5 unique UI elements (buttons, inputs, badges, icons, text blocks, dividers, etc.). **6-8 elements = acceptable. 9+ elements = recommended** for ensuring page uniqueness and complete UI.
+
+### Rule 6: Cross-Linking Required
+Every page must connect or link back to at least 2 other pages in the platform. Pages with 0 outbound links are prohibited. Navigation, CTAs, and inline links all count.
+
+### Enforcement
+- Before creating any new page, review these rules
+- Before merging any page PR, verify compliance against all 6 rules
+- Enforcement starts in Phase 11 (Frontend Redesign & Content)
+- Existing non-compliant pages are tracked in `BUGS.md` under frontend bugs
 
 - **Domain**: ceche.net (DNS live)
 - **Server**: Ubuntu 22.04 at 77.67.23.30
@@ -127,14 +154,14 @@ Every phase must include:
 
 ## Pricing Structure
 
-| Plan | Price | Reveals/mo | API Calls |
-|------|-------|------------|-----------|
-| Free | $0 | 5 | 0 |
-| Starter | $29/mo | 50 | 100 |
-| Pro | $49/mo | 200 | 500 |
-| Enterprise | $199/mo | Unlimited | Unlimited |
+| Plan | Price | Appraisals/day | Features |
+|------|-------|----------------|----------|
+| Free (unsigned) | $0 | 3 | Name search tool |
+| Free (signed up) | $0 | 12 | Name search + basic appraisal |
+| Premium Startup | $79/mo | 30 | Scanner, Extended Insights, Bulk Audit |
+| Premium Enterprise | $129/mo | Unlimited | All tools, API access, priority support |
 
-Reveal pricing: $5-10 partial, $3-5 Try Your Luck
+Reveal pricing: Standard Marketplace $5-$50 (varies by domain value), Try Your Luck .com $79, .net $39, .io $29, .co $9, flat $19
 
 ---
 
@@ -173,10 +200,10 @@ Reveal pricing: $5-10 partial, $3-5 Try Your Luck
 
 ## Important Context
 
-- **Ceche only** seller at MVP (no third-party sellers)
+- **Ceche only** seller at MVP (no third-party sellers initially — Ceche lists premium domains from scanner)
 - **Scanner TLDs**: .com, .net, .io, .co ONLY
 - **API access**: Day one
-- **Launch model**: Ceche only, no marketplace sellers initially
+- **Launch model**: Ceche lists premium domains initially; third-party seller marketplace opens after Phase 11 (Frontend Redesign)
 - **Reveal types**: Partial (first+last char visible), Try Your Luck (no hint), Full
 - **Domain name is the product** — intelligence proves value — name hidden until paid
 - **Paystack is primary** until Stripe account is ready

@@ -5,11 +5,14 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"encoding/json"
+	"errors"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/golang-jwt/jwt/v5"
+	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"golang.org/x/crypto/bcrypt"
 
@@ -56,7 +59,7 @@ func AuthMiddleware(db *pgxpool.Pool, cfg *config.Config) func(http.Handler) htt
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			authHeader := r.Header.Get("Authorization")
 			if authHeader == "" {
-				http.Error(w, `{"error":{"code":"UNAUTHORIZED","message":"Missing authorization header"}}`, http.StatusUnauthorized)
+				writeError(w, http.StatusUnauthorized, "Missing authorization header")
 				return
 			}
 
@@ -71,7 +74,7 @@ func AuthMiddleware(db *pgxpool.Pool, cfg *config.Config) func(http.Handler) htt
 			})
 
 			if err != nil || !token.Valid {
-				http.Error(w, `{"error":{"code":"UNAUTHORIZED","message":"Invalid token"}}`, http.StatusUnauthorized)
+				writeError(w, http.StatusUnauthorized, "Invalid token")
 				return
 			}
 
@@ -91,18 +94,18 @@ func handleRegister(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 			Name     string `json:"name"`
 		}
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid request body"}}`, http.StatusBadRequest)
+			writeError(w, http.StatusBadRequest, "Invalid request body")
 			return
 		}
 
-		if req.Email == "" || req.Password == "" {
-			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Email and password required"}}`, http.StatusBadRequest)
+		if req.Email == "" || req.Password == "" || !strings.Contains(req.Email, "@") {
+			writeError(w, http.StatusBadRequest, "Email and password required")
 			return
 		}
 
 		hash, err := bcrypt.GenerateFromPassword([]byte(req.Password), 12)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to hash password"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to hash password")
 			return
 		}
 
@@ -112,19 +115,19 @@ func handleRegister(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 			req.Email, string(hash), req.Name,
 		).Scan(&userID)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"CONFLICT","message":"Email already exists"}}`, http.StatusConflict)
+			writeError(w, http.StatusConflict, "Email already exists")
 			return
 		}
 
 		token, err := generateToken(cfg, userID, req.Email, "user")
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to generate token"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to generate token")
 			return
 		}
 
 		refreshToken, err := generateRefreshToken(cfg, userID, req.Email, "user")
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to generate refresh token"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to generate refresh token")
 			return
 		}
 
@@ -144,7 +147,7 @@ func handleLogin(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 			Password string `json:"password"`
 		}
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid request body"}}`, http.StatusBadRequest)
+			writeError(w, http.StatusBadRequest, "Invalid request body")
 			return
 		}
 
@@ -154,24 +157,24 @@ func handleLogin(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 			req.Email,
 		).Scan(&userID, &passwordHash, &role)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"UNAUTHORIZED","message":"Invalid credentials"}}`, http.StatusUnauthorized)
+			writeError(w, http.StatusUnauthorized, "Invalid credentials")
 			return
 		}
 
 		if err := bcrypt.CompareHashAndPassword([]byte(passwordHash), []byte(req.Password)); err != nil {
-			http.Error(w, `{"error":{"code":"UNAUTHORIZED","message":"Invalid credentials"}}`, http.StatusUnauthorized)
+			writeError(w, http.StatusUnauthorized, "Invalid credentials")
 			return
 		}
 
 		token, err := generateToken(cfg, userID, req.Email, role)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to generate token"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to generate token")
 			return
 		}
 
 		refreshToken, err := generateRefreshToken(cfg, userID, req.Email, role)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to generate refresh token"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to generate refresh token")
 			return
 		}
 
@@ -190,7 +193,7 @@ func handleRefresh(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 			RefreshToken string `json:"refresh_token"`
 		}
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid request body"}}`, http.StatusBadRequest)
+			writeError(w, http.StatusBadRequest, "Invalid request body")
 			return
 		}
 
@@ -200,13 +203,13 @@ func handleRefresh(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 		})
 
 		if err != nil || !token.Valid {
-			http.Error(w, `{"error":{"code":"UNAUTHORIZED","message":"Invalid refresh token"}}`, http.StatusUnauthorized)
+			writeError(w, http.StatusUnauthorized, "Invalid refresh token")
 			return
 		}
 
 		newToken, err := generateToken(cfg, claims.UserID, claims.Email, claims.Role)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to generate token"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to generate token")
 			return
 		}
 
@@ -219,7 +222,10 @@ func handleRefresh(db *pgxpool.Pool, cfg *config.Config) http.HandlerFunc {
 
 func handleGetUser(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		var email, name, role, plan string
 		err := db.QueryRow(r.Context(),
@@ -227,7 +233,11 @@ func handleGetUser(db *pgxpool.Pool) http.HandlerFunc {
 			userID,
 		).Scan(&email, &name, &role, &plan)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"NOT_FOUND","message":"User not found"}}`, http.StatusNotFound)
+			if errors.Is(err, pgx.ErrNoRows) {
+				writeError(w, http.StatusNotFound, "User not found")
+			} else {
+				writeError(w, http.StatusInternalServerError, "Failed to fetch user")
+			}
 			return
 		}
 
@@ -244,13 +254,16 @@ func handleGetUser(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleUpdateUser(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		var req struct {
 			Name string `json:"name"`
 		}
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid request body"}}`, http.StatusBadRequest)
+			writeError(w, http.StatusBadRequest, "Invalid request body")
 			return
 		}
 
@@ -259,7 +272,7 @@ func handleUpdateUser(db *pgxpool.Pool) http.HandlerFunc {
 			req.Name, userID,
 		)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to update user"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to update user")
 			return
 		}
 
@@ -272,13 +285,16 @@ func handleUpdateUser(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleCreateAPIKey(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		var req struct {
 			Name string `json:"name"`
 		}
 		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid request body"}}`, http.StatusBadRequest)
+			writeError(w, http.StatusBadRequest, "Invalid request body")
 			return
 		}
 
@@ -291,7 +307,7 @@ func handleCreateAPIKey(db *pgxpool.Pool) http.HandlerFunc {
 			userID, req.Name, keyHash,
 		).Scan(&keyID)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to create API key"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to create API key")
 			return
 		}
 
@@ -306,15 +322,23 @@ func handleCreateAPIKey(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleDeleteAPIKey(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 		keyID := chi.URLParam(r, "id")
 
-		_, err := db.Exec(r.Context(),
+		result, err := db.Exec(r.Context(),
 			`DELETE FROM api_keys WHERE id = $1 AND user_id = $2`,
 			keyID, userID,
 		)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to delete API key"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to delete API key")
+			return
+		}
+
+		if result.RowsAffected() == 0 {
+			writeError(w, http.StatusNotFound, "API key not found")
 			return
 		}
 
@@ -327,14 +351,17 @@ func handleDeleteAPIKey(db *pgxpool.Pool) http.HandlerFunc {
 
 func handleListAPIKeys(db *pgxpool.Pool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		userID := r.Context().Value("user_id").(string)
+		userID, ok := getUserID(w, r)
+		if !ok {
+			return
+		}
 
 		rows, err := db.Query(r.Context(),
 			`SELECT id, name, created_at, last_used_at FROM api_keys WHERE user_id = $1 ORDER BY created_at DESC`,
 			userID,
 		)
 		if err != nil {
-			http.Error(w, `{"error":{"code":"INTERNAL_ERROR","message":"Failed to list API keys"}}`, http.StatusInternalServerError)
+			writeError(w, http.StatusInternalServerError, "Failed to list API keys")
 			return
 		}
 		defer rows.Close()

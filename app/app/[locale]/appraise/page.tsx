@@ -324,7 +324,7 @@ export default function AppraisePage() {
                       ))}
                     </div>
                   ) : (
-                    <PadlockOverlay onUpgrade={() => router.push("/resources/pricing")} />
+                    <PadlockOverlay onUpgrade={() => router.push("/pricing")} />
                   )}
                 </div>
               </div>
@@ -402,7 +402,7 @@ export default function AppraisePage() {
                   </div>
                 </div>
               ) : (
-                <PadlockOverlay onUpgrade={() => router.push("/resources/pricing")} />
+                <PadlockOverlay onUpgrade={() => router.push("/pricing")} />
               )}
             </div>
 
@@ -448,7 +448,7 @@ export default function AppraisePage() {
                   </div>
                 </div>
               ) : (
-                <PadlockOverlay onUpgrade={() => router.push("/resources/pricing")} />
+                <PadlockOverlay onUpgrade={() => router.push("/pricing")} />
               )}
             </div>
           </div>

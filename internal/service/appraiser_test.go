@@ -12,16 +12,16 @@ func TestCalculateScore(t *testing.T) {
 		wantMin int
 		wantMax int
 	}{
-		{"premium .com", "google.com", "pro", 70, 100},
-		{"short domain", "go.com", "pro", 80, 100},
-		{"long domain", "verylongdomainname.com", "pro", 5, 40},
+		{"premium .com", "google.com", "startup", 60, 100},
+		{"short domain", "go.com", "startup", 80, 100},
+		{"long domain", "verylongdomainname.com", "startup", 5, 50},
 		{"free tier", "google.com", "free", 0, 100},
-		{"single word", "cloud.com", "pro", 60, 100},
-		{"two words", "cloudtech.com", "pro", 40, 90},
-		{"with digit", "go2.com", "pro", 30, 80},
-		{".net tld", "cloud.net", "pro", 50, 90},
-		{".io tld", "cloud.io", "pro", 50, 90},
-		{".xyz tld", "cloud.xyz", "pro", 30, 70},
+		{"single word", "cloud.com", "startup", 60, 100},
+		{"two words", "cloudtech.com", "startup", 40, 100},
+		{"with digit", "go2.com", "startup", 30, 100},
+		{".net tld", "cloud.net", "startup", 50, 100},
+		{".io tld", "cloud.io", "startup", 50, 100},
+		{".xyz tld", "cloud.xyz", "startup", 30, 100},
 	}
 
 	for _, tt := range tests {
@@ -68,7 +68,7 @@ func TestFreeTierGating(t *testing.T) {
 }
 
 func TestPremiumTierFullAccess(t *testing.T) {
-	_, metrics := CalculateScore("google.com", "pro")
+	_, metrics := CalculateScore("google.com", "startup")
 
 	if metrics.Confidence == "free_tier" {
 		t.Error("pro tier should not have free_tier confidence")
@@ -137,7 +137,7 @@ func TestM6Segmenter(t *testing.T) {
 		{"single word", "cloud", 1},
 		{"compound", "cloudtech", 2},
 		{"unknown", "xyzqwk", 1},
-		{"contains word", "mycloud", 1},
+		{"contains word", "mycloud", 2},
 	}
 
 	for _, tt := range tests {

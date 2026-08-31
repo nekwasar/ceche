@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useAuth } from '@/lib/auth-context';
+
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
 
 const TLD_OPTIONS = [
   { id: 'com', label: '.com', price: '$9.99' },
@@ -46,8 +48,8 @@ interface CustomWordList {
 }
 
 export default function ScanPage() {
-  const t = useTranslations();
   const router = useRouter();
+  const { token } = useAuth();
   
   const [selectedWordList, setSelectedWordList] = useState('builtin');
   const [selectedTlds, setSelectedTlds] = useState<string[]>(['com', 'net']);
@@ -72,8 +74,8 @@ export default function ScanPage() {
 
   const fetchScans = async () => {
     try {
-      const response = await fetch('/api/v1/scans', {
-        headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
+      const response = await fetch(`${API_URL}/api/v1/scans`, {
+        headers: { 'Authorization': `Bearer ${token}` }
       });
       if (response.ok) {
         const data = await response.json();
@@ -86,8 +88,8 @@ export default function ScanPage() {
 
   const fetchWordLists = async () => {
     try {
-      const response = await fetch('/api/v1/word-lists', {
-        headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
+      const response = await fetch(`${API_URL}/api/v1/word-lists`, {
+        headers: { 'Authorization': `Bearer ${token}` }
       });
       if (response.ok) {
         const data = await response.json();
@@ -114,11 +116,11 @@ export default function ScanPage() {
         body.word_list_name = selectedWordList;
       }
 
-      const response = await fetch('/api/v1/scans', {
+      const response = await fetch(`${API_URL}/api/v1/scans`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`,
+          'Authorization': `Bearer ${token}`,
         },
         body: JSON.stringify(body),
       });
@@ -150,7 +152,7 @@ export default function ScanPage() {
     const pollInterval = setInterval(async () => {
       try {
         const response = await fetch(`/api/v1/scans/${scanId}`, {
-          headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
+          headers: { 'Authorization': `Bearer ${token}` }
         });
         
         if (response.ok) {
@@ -183,7 +185,7 @@ export default function ScanPage() {
     
     try {
       const response = await fetch(`/api/v1/scans/${currentScan.id}/export`, {
-        headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
+        headers: { 'Authorization': `Bearer ${token}` }
       });
       
       if (response.ok) {

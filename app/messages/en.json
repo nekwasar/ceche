@@ -14,7 +14,7 @@
     "features": {
       "appraiser": {
         "title": "Domain Appraiser",
-        "description": "Score any domain name with our 15-module analysis"
+        "description": "Score any domain name with our 16-dimension analysis"
       },
       "scanner": {
         "title": "Domain Scanner",
@@ -36,25 +36,19 @@
       "name": "Free",
       "price": "$0",
       "period": "forever",
-      "features": ["5 reveals/month", "Basic appraisal", "Health check"]
+      "features": ["3 appraisals/day", "Name search tool", "Basic WHOIS lookup"]
     },
-    "starter": {
-      "name": "Starter",
-      "price": "$29",
+    "startup": {
+      "name": "Premium Startup",
+      "price": "$79",
       "period": "/month",
-      "features": ["50 reveals/month", "All reveal types", "Basic alerts"]
-    },
-    "pro": {
-      "name": "Pro",
-      "price": "$49",
-      "period": "/month",
-      "features": ["200 reveals/month", "All reveal types", "Priority support"]
+      "features": ["30 appraisals/day", "Domain Scanner", "Extended Insights", "Bulk Audit"]
     },
     "enterprise": {
-      "name": "Enterprise",
-      "price": "$199",
+      "name": "Premium Enterprise",
+      "price": "$129",
       "period": "/month",
-      "features": ["Unlimited reveals", "API access", "White-label"]
+      "features": ["Unlimited appraisals", "All premium tools", "API access", "Priority support"]
     }
   },
   "footer": {
