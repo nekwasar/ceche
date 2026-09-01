@@ -58,6 +58,11 @@ Every page must connect or link back to at least 2 other pages in the platform. 
 - Enforcement starts in Phase 11 (Frontend Redesign & Content)
 - Existing non-compliant pages are tracked in `BUGS.md` under frontend bugs
 
+### File Editing Rules
+- **BANNED**: Using bash commands (`sed`, `cat >`, `echo >`) to edit or create files
+- **REQUIRED**: Use only the `edit` tool for modifications and `write` tool for new files
+- **Reason**: Ensures consistent formatting, prevents accidental data loss, and maintains audit trail
+
 - **Domain**: ceche.net (DNS live)
 - **Server**: Ubuntu 22.04 at 77.67.23.30
 - **SSL**: Let's Encrypt (or Cloudflare)
