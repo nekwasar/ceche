@@ -126,7 +126,7 @@ Platform ▾    Solutions ▾    Resources ▾    Pricing    [Language]    Login
 - Learn: blog, guides, customer-stories, ebooks, changelog, about, company
 - Support: help-center, contact, affiliate, partner, community
 
-**Plus**: pricing, legal (terms/privacy/cookies/data/dpa), company (news/about/careers), auth (login/signup/demo), socials, newsletter
+**Plus**: pricing, legal (terms/privacy/cookies/data/dpa), company (news/about), auth (login/signup/demo), socials, newsletter
 
 ---
 
