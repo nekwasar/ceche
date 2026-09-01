@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, BarChart3, Globe, TrendingUp, Shield } from "lucide-react";
+import { ArrowRight, BarChart3, Globe, Shield, Eye } from "lucide-react";
 
 export function Hero() {
   const [domain, setDomain] = useState("");
@@ -21,13 +21,12 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative">
         <div className="max-w-3xl">
           <h1 className="font-sans font-black text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
-            Uncover Hidden Domain Value with{" "}
-            <span className="text-accent">16-Dimension</span>{" "}
-            Intelligence
+            Premium domain names, bought and sold with{" "}
+            <span className="text-accent">intelligence</span>
           </h1>
 
           <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-xl">
-            Instant SEO audit, algorithmic domain appraisals, extended technical insights, and high-intent unmasking marketplace.
+            Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.
           </p>
 
           <form onSubmit={handleSubmit} className="mt-8 flex items-stretch gap-3 max-w-lg">
@@ -37,28 +36,28 @@ export function Hero() {
                 type="text"
                 value={domain}
                 onChange={(e) => setDomain(e.target.value)}
-                placeholder="Enter any domain name, e.g., brand.com"
+                placeholder="Search any domain name, e.g., brand.com"
                 className="input-search pl-12"
               />
             </div>
             <button type="submit" className="cta-button flex items-center gap-2 whitespace-nowrap">
-              Scan Domain
+              Search Domain
               <ArrowRight className="w-4 h-4" />
             </button>
           </form>
 
           <div className="mt-10 flex items-center gap-8 text-white/50 text-sm">
             <div className="flex items-center gap-2">
-              <Shield className="w-4 h-4 text-accent/70" />
-              <span>USPTO Checks</span>
+              <Eye className="w-4 h-4 text-accent/70" />
+              <span>Blind Listings</span>
             </div>
             <div className="flex items-center gap-2">
               <BarChart3 className="w-4 h-4 text-accent/70" />
-              <span>16 Dimensions</span>
+              <span>16-Dimension Intelligence</span>
             </div>
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-accent/70" />
-              <span>Real-time Pricing</span>
+              <Shield className="w-4 h-4 text-accent/70" />
+              <span>Escrow Protected</span>
             </div>
           </div>
         </div>

@@ -41,7 +41,7 @@ export function WwwHomepage() {
               Search Any Domain Name
             </h2>
             <p className="text-base max-w-2xl mb-12 leading-relaxed" style={{ color: "#666666" }}>
-              Type any domain into the search bar above. We'll tell you if it's available, what it's worth, and what you could build with it. No signup required.
+              Type any domain into the search bar above. We&apos;ll tell you if it&apos;s available, what it&apos;s worth, and what you could build with it. No signup required.
             </p>
 
             <div className="grid md:grid-cols-3 gap-0">
@@ -74,7 +74,7 @@ export function WwwHomepage() {
                 </div>
                 <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Deep Appraisal</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
-                  Click "Appraise this name" for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range.
+                  Click &quot;Appraise this name&quot; for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range.
                 </p>
               </div>
             </div>
@@ -82,178 +82,243 @@ export function WwwHomepage() {
         </div>
       </section>
 
-      {/* SECTION B: Who Ceche Is Built For */}
-      <section className="w-full max-w-6xl mx-auto my-12 px-4" style={{ backgroundColor: "#FAF7F2" }}>
-        <div className="bg-[#EFECE6] rounded-2xl p-6 md:p-10 border border-black/5">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
-
-            {/* Domain Investors */}
-            <div className="flex flex-col items-start text-left md:pr-8 md:border-r border-black/10 pb-6 md:pb-0 border-b md:border-b-0">
-              <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-5 h-5" style={{ color: "#111111" }} />
-              </div>
-              <span className="text-[10px] font-mono tracking-widest uppercase mb-1" style={{ color: "#999999" }}>
-                Domain Investors
+      {/* SECTION B: Who Ceche Is Built For — HORIZONTAL PERSONA ROWS */}
+      <section className="py-20" style={{ backgroundColor: "#FAF7F2" }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#EFECE6] rounded-3xl overflow-hidden">
+            {/* Section Header */}
+            <div className="px-10 pt-10 pb-6">
+              <span className="text-[10px] font-mono tracking-widest uppercase mb-3 block" style={{ color: "#999999" }}>
+                Built For
               </span>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Find Undervalued Names Fast</h3>
-              <p className="text-xs md:text-sm leading-relaxed" style={{ color: "#666666" }}>
-                Search thousands of domains, check availability instantly, and appraise the ones that look promising. Our scanner finds names before the market catches on.
-              </p>
-              <div className="mt-4 pt-3 border-t border-black/5 w-full text-[11px] font-mono flex items-center gap-1.5" style={{ color: "#047857" }}>
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                Bulk scanning • Drop alerts • Portfolio tracking
-              </div>
+              <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#111111" }}>
+                Three kinds of people, one platform
+              </h2>
             </div>
 
-            {/* Startup Founders */}
-            <div className="flex flex-col items-start text-left md:px-8 md:border-r border-black/10 pb-6 md:pb-0 border-b md:border-b-0">
-              <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                <Rocket className="w-5 h-5" style={{ color: "#111111" }} />
+            {/* Persona Rows */}
+            <div className="border-t border-black/10">
+              {/* Row 1: Domain Investors */}
+              <div className="flex flex-col md:flex-row md:items-center gap-6 px-10 py-8 border-b border-black/10 hover:bg-[#E5DFD3]/30 transition-colors">
+                <div className="w-14 h-14 bg-[#9E2A2B] rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-1" style={{ color: "#111111" }}>Domain Investors</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
+                    Scan thousands of word combinations, appraise shortlists in seconds, and spot undervalued names before the market catches on. The scanner surfaces DA, spam score, and backlink profiles on every available name.
+                  </p>
+                </div>
+                <div className="flex-shrink-0 text-right">
+                  <div className="text-2xl font-bold" style={{ color: "#111111" }}>200+</div>
+                  <div className="text-xs" style={{ color: "#999999" }}>checks per scan</div>
+                </div>
               </div>
-              <span className="text-[10px] font-mono tracking-widest uppercase mb-1" style={{ color: "#999999" }}>
-                Startup Founders
-              </span>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Find a Brandable, Risk-Free Name</h3>
-              <p className="text-xs md:text-sm leading-relaxed" style={{ color: "#666666" }}>
-                You need a name that's easy to say, spell, and won't get you sued. Our 16-dimension engine checks all three before you register — so you pick a name that works as a brand.
-              </p>
-              <div className="mt-4 pt-3 border-t border-black/5 w-full text-[11px] font-mono" style={{ color: "#999999" }}>
-                Brandability index • Trademark check • Clean DNS history
+
+              {/* Row 2: Startup Founders */}
+              <div className="flex flex-col md:flex-row md:items-center gap-6 px-10 py-8 border-b border-black/10 hover:bg-[#E5DFD3]/30 transition-colors">
+                <div className="w-14 h-14 bg-[#9E2A2B] rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Rocket className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-1" style={{ color: "#111111" }}>Startup Founders</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
+                    Find a name that&apos;s easy to say, easy to spell, and safe to use. The 16-dimension engine checks pronounceability, trademark conflicts, and brandability before you commit to a brand.
+                  </p>
+                </div>
+                <div className="flex-shrink-0 text-right">
+                  <div className="text-2xl font-bold" style={{ color: "#111111" }}>16</div>
+                  <div className="text-xs" style={{ color: "#999999" }}>dimensions checked</div>
+                </div>
+              </div>
+
+              {/* Row 3: SEO Agencies */}
+              <div className="flex flex-col md:flex-row md:items-center gap-6 px-10 py-8 hover:bg-[#E5DFD3]/30 transition-colors">
+                <div className="w-14 h-14 bg-[#9E2A2B] rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <Globe className="w-6 h-6 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-1" style={{ color: "#111111" }}>SEO Agencies</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
+                    Find expired domains that still carry authority and clean backlinks. The scanner surfaces DA, spam score, and indexation status so you start with existing SEO value, not zero.
+                  </p>
+                </div>
+                <div className="flex-shrink-0 text-right">
+                  <div className="text-2xl font-bold" style={{ color: "#111111" }}>4</div>
+                  <div className="text-xs" style={{ color: "#999999" }}>metrics per domain</div>
+                </div>
               </div>
             </div>
-
-            {/* SEO Agencies */}
-            <div className="flex flex-col items-start text-left md:pl-8">
-              <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                <Globe className="w-5 h-5" style={{ color: "#111111" }} />
-              </div>
-              <span className="text-[10px] font-mono tracking-widest uppercase mb-1" style={{ color: "#999999" }}>
-                SEO Agencies
-              </span>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Expired Domains with Real Authority</h3>
-              <p className="text-xs md:text-sm leading-relaxed" style={{ color: "#666666" }}>
-                Find expired or available domains that still carry domain authority and clean backlinks. Our premium scanner shows DA, spam score, and backlink profiles so you start with existing SEO juice.
-              </p>
-              <div className="mt-4 pt-3 border-t border-black/5 w-full text-[11px] font-mono" style={{ color: "#999999" }}>
-                DA scoring • Backlink profiles • Spam recovery audits
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
 
-      {/* SECTION C: Standard Marketplace — Blind Listings */}
+      {/* SECTION C: Marketplace — TWO-COLUMN WITH PRICING TABLE + CTA */}
       <section className="py-20" style={{ backgroundColor: "#FAF7F2" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#EFECE6] rounded-3xl p-10 md:p-14">
+            <div className="grid md:grid-cols-5 gap-10 md:gap-12">
+              {/* Left: Explanation (3 cols) */}
+              <div className="md:col-span-3">
+                <span className="text-[10px] font-mono tracking-widest uppercase mb-3 block" style={{ color: "#999999" }}>
+                  Marketplace
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "#111111" }}>
+                  Premium names, names hidden
+                </h2>
+                <p className="text-base leading-relaxed mb-6" style={{ color: "#666666" }}>
+                  Every listing shows full intelligence — estimated value, health score, CPC, brandability, TLD, and keyword intent — everything except the name itself. No hints. No partial reveals. No asterisks.
+                </p>
+                <p className="text-base leading-relaxed mb-8" style={{ color: "#666666" }}>
+                  Public marketplaces get scraped the moment a premium name appears. Ceche hides the name and shows the intelligence instead — so value, not visibility, drives the transaction. Investors who read the stats well consistently find names before auction fever inflates them.
+                </p>
+                <a
+                  href="/marketplace"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all bg-[#9E2A2B] text-white hover:bg-[#7A1F21]"
+                >
+                  Browse the marketplace
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+
+              {/* Right: Pricing Table (2 cols) */}
+              <div className="md:col-span-2">
+                <div className="bg-white rounded-2xl p-6 border border-black/5">
+                  <h3 className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "#111111" }}>
+                    Reveal Pricing
+                  </h3>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex justify-between items-center py-2 border-b border-black/5">
+                      <span className="text-sm" style={{ color: "#666666" }}>Under $1,000</span>
+                      <span className="text-sm font-bold" style={{ color: "#111111" }}>$5</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-black/5">
+                      <span className="text-sm" style={{ color: "#666666" }}>$1K – $10K</span>
+                      <span className="text-sm font-bold" style={{ color: "#111111" }}>$10</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-black/5">
+                      <span className="text-sm" style={{ color: "#666666" }}>$10K – $50K</span>
+                      <span className="text-sm font-bold" style={{ color: "#111111" }}>$25</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="text-sm" style={{ color: "#666666" }}>$50K+</span>
+                      <span className="text-sm font-bold" style={{ color: "#111111" }}>$50</span>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-black/10 pt-4 mb-4">
+                    <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: "#111111" }}>
+                      Try Your Luck
+                    </h4>
+                    <div className="grid grid-cols-2 gap-2 text-sm">
+                      <div className="flex justify-between">
+                        <span style={{ color: "#666666" }}>.com</span>
+                        <span className="font-bold" style={{ color: "#111111" }}>$79</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span style={{ color: "#666666" }}>.net</span>
+                        <span className="font-bold" style={{ color: "#111111" }}>$39</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span style={{ color: "#666666" }}>.io</span>
+                        <span className="font-bold" style={{ color: "#111111" }}>$29</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span style={{ color: "#666666" }}>.co</span>
+                        <span className="font-bold" style={{ color: "#111111" }}>$9</span>
+                      </div>
+                    </div>
+                    <div className="mt-3 pt-3 border-t border-black/5 flex justify-between text-sm">
+                      <span style={{ color: "#666666" }}>Any TLD (flat)</span>
+                      <span className="font-bold" style={{ color: "#111111" }}>$19</span>
+                    </div>
+                  </div>
+
+                  <a
+                    href="/marketplace/try-your-luck"
+                    className="block w-full text-center py-3 rounded-full font-medium text-sm transition-all border border-[#9E2A2B] text-[#9E2A2B] hover:bg-[#9E2A2B] hover:text-white mt-4"
+                  >
+                    Try Your Luck
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION D: Try Your Luck — NUMBERED STEP FLOW WITH SQUARES */}
+      <section className="py-20" style={{ backgroundColor: "#FAF7F2" }}>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#EFECE6] rounded-3xl p-10 md:p-14">
             <span className="text-[10px] font-mono tracking-widest uppercase mb-3 block" style={{ color: "#999999" }}>
-              Marketplace
+              How It Works
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#111111" }}>
-              Premium Domains, Names Hidden
+            <h2 className="text-3xl md:text-4xl font-bold mb-10" style={{ color: "#111111" }}>
+              Spin, pick, own
             </h2>
-            <p className="text-base max-w-2xl mb-12 leading-relaxed" style={{ color: "#666666" }}>
-              Browse our curated inventory of premium domains. You see everything — the score, the value, the CPC, the brandability — except the name itself. No hints. No partial reveals. Just the intelligence.
-            </p>
 
-            <div className="grid md:grid-cols-3 gap-0">
-              {/* Full Stats */}
-              <div className="md:border-r border-black/10 md:pr-8 pb-8 md:pb-0 border-b md:border-b-0">
-                <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                  <BarChart3 className="w-5 h-5" style={{ color: "#111111" }} />
+            {/* Step Flow — Squares, not circles */}
+            <div className="flex flex-col md:flex-row md:items-start gap-0">
+              {/* Step 1 */}
+              <div className="flex-1 flex flex-col items-center text-center px-6">
+                <div className="w-16 h-16 bg-[#9E2A2B] rounded-2xl flex items-center justify-center mb-5">
+                  <span className="text-white text-2xl font-bold">1</span>
                 </div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Full Intelligence, Zero Name</h3>
+                <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Pick your TLD</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
-                  Every listing shows estimated value, health score, CPC, brandability, TLD, and keyword intent. You evaluate the numbers — not the name.
+                  Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD.
                 </p>
               </div>
 
-              {/* Pay to Reveal */}
-              <div className="md:px-8 md:border-r border-black/10 pb-8 md:pb-0 border-b md:border-b-0">
-                <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                  <Eye className="w-5 h-5" style={{ color: "#111111" }} />
+              {/* Connector 1 */}
+              <div className="hidden md:flex items-center justify-center w-12 flex-shrink-0 pt-6">
+                <div className="w-full h-[2px] bg-black/10" />
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex-1 flex flex-col items-center text-center px-6">
+                <div className="w-16 h-16 bg-[#9E2A2B] rounded-2xl flex items-center justify-center mb-5">
+                  <span className="text-white text-2xl font-bold">2</span>
                 </div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Pay to Reveal</h3>
+                <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Spin &amp; pick a box</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
-                  When you're ready, pay the reveal fee to see the actual domain name. Price varies by domain value — from $5 for lower-value names to $50 for premium picks.
+                  Three closed boxes appear with a spinning animation. Each holds a unique premium domain. When it stops, pick one.
                 </p>
               </div>
 
-              {/* Register */}
-              <div className="md:pl-8">
-                <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                  <Globe className="w-5 h-5" style={{ color: "#111111" }} />
+              {/* Connector 2 */}
+              <div className="hidden md:flex items-center justify-center w-12 flex-shrink-0 pt-6">
+                <div className="w-full h-[2px] bg-black/10" />
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex-1 flex flex-col items-center text-center px-6">
+                <div className="w-16 h-16 bg-[#9E2A2B] rounded-2xl flex items-center justify-center mb-5">
+                  <span className="text-white text-2xl font-bold">3</span>
                 </div>
-                <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Register Anywhere</h3>
+                <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Reveal &amp; register</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
-                  After reveal, we give you direct links to register the domain at Dynadot, Namecheap, or Porkbun. You choose where — we don't lock you into a registrar.
+                  Your domain is revealed instantly. It&apos;s locked exclusively for you — no one else can buy it. Register immediately at your preferred registrar.
                 </p>
               </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-10">
+              <a
+                href="/marketplace/try-your-luck"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-medium text-base transition-all bg-[#9E2A2B] text-white hover:bg-[#7A1F21]"
+              >
+                Try Your Luck now
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION D: Try Your Luck — Spin mechanic */}
-      <section className="w-full max-w-6xl mx-auto my-12 px-4" style={{ backgroundColor: "#FAF7F2" }}>
-        <div className="bg-[#EFECE6] rounded-2xl p-6 md:p-10 border border-black/5">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
-
-            {/* Pick a TLD */}
-            <div className="flex flex-col items-start text-left md:pr-8 md:border-r border-black/10 pb-6 md:pb-0 border-b md:border-b-0">
-              <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                <Globe className="w-5 h-5" style={{ color: "#111111" }} />
-              </div>
-              <span className="text-[10px] font-mono tracking-widest uppercase mb-1" style={{ color: "#999999" }}>
-                Step 1
-              </span>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Pick Your TLD</h3>
-              <p className="text-xs md:text-sm leading-relaxed" style={{ color: "#666666" }}>
-                Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD.
-              </p>
-              <div className="mt-4 pt-3 border-t border-black/5 w-full text-[11px] font-mono" style={{ color: "#999999" }}>
-                .com $79 • .net $39 • .io $29 • .co $9 • Flat $19
-              </div>
-            </div>
-
-            {/* Spin & Pick */}
-            <div className="flex flex-col items-start text-left md:px-8 md:border-r border-black/10 pb-6 md:pb-0 border-b md:border-b-0">
-              <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                <Box className="w-5 h-5" style={{ color: "#111111" }} />
-              </div>
-              <span className="text-[10px] font-mono tracking-widest uppercase mb-1" style={{ color: "#999999" }}>
-                Step 2
-              </span>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Spin & Pick a Box</h3>
-              <p className="text-xs md:text-sm leading-relaxed" style={{ color: "#666666" }}>
-                Three closed boxes appear with a spinning animation. Each box contains a unique premium domain. When it stops, pick one. The other two are gone forever.
-              </p>
-            </div>
-
-            {/* Reveal & Buy */}
-            <div className="flex flex-col items-start text-left md:pl-8">
-              <div className="w-10 h-10 bg-[#E5DFD3] rounded-lg flex items-center justify-center mb-4">
-                <Sparkles className="w-5 h-5" style={{ color: "#111111" }} />
-              </div>
-              <span className="text-[10px] font-mono tracking-widest uppercase mb-1" style={{ color: "#999999" }}>
-                Step 3
-              </span>
-              <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>Reveal & Buy Now</h3>
-              <p className="text-xs md:text-sm leading-relaxed" style={{ color: "#666666" }}>
-                Your domain is revealed instantly. It's locked — no one else on the platform can buy it. You're prompted to register it immediately at your preferred registrar.
-              </p>
-              <div className="mt-4 pt-3 border-t border-black/5 w-full text-[11px] font-mono flex items-center gap-1.5" style={{ color: "#047857" }}>
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-                Domain locked • Exclusive access
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION E: Deep Technical Architecture */}
+      {/* SECTION E: Deep Technical Architecture (kept as-is) */}
       <section className="py-20" style={{ backgroundColor: "#FAF7F2" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#EFECE6] rounded-3xl p-10 md:p-14">
@@ -286,7 +351,7 @@ export function WwwHomepage() {
                 </div>
                 <h3 className="text-lg font-bold mb-2" style={{ color: "#111111" }}>AES-256-GCM Encryption</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#666666" }}>
-                  Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they'd see garbage — not your search history.
+                  Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they&apos;d see garbage — not your search history.
                 </p>
               </div>
 
@@ -318,22 +383,22 @@ export function WwwHomepage() {
           <div className="bg-[#EFECE6] rounded-2xl px-8 border border-black/5">
             <FaqItem
               question="How many free appraisals do I get?"
-              answer="If you're not signed up, you get 3 appraisals per day. Sign up for free and you get 12 per day. Premium Startup ($79/mo) gets 30 per day, and Premium Enterprise ($129/mo) gets unlimited."
+              answer="If you&apos;re not signed up, you get 3 appraisals per day. Sign up for free and you get 12 per day. Premium Startup ($79/mo) gets 30 per day, and Premium Enterprise ($129/mo) gets unlimited."
             />
             <FaqItem
-              question="What's the difference between name search and appraisal?"
+              question="What&apos;s the difference between name search and appraisal?"
               answer="Name search is free and instant — it tells you if a domain is available, shows WHOIS if taken, or ranks it Premium/Mid/Low if available. Appraisal is the deep 16-dimension analysis that scores pronounceability, trademark risk, brandability, and estimated value."
             />
             <FaqItem
               question="How does Try Your Luck work?"
-              answer="Pick a TLD (.com, .net, .io, or .co) and pay the TLD-specific price. Three closed boxes appear with a spinning animation. Pick one when it stops. You get a unique premium domain revealed instantly. It's locked — no one else can buy it. Or pay a flat $19 without selecting a TLD."
+              answer="Pick a TLD (.com, .net, .io, or .co) and pay the TLD-specific price. Three closed boxes appear with a spinning animation. Pick one when it stops. You get a unique premium domain revealed instantly. It&apos;s locked — no one else can buy it. Or pay a flat $19 without selecting a TLD."
             />
             <FaqItem
               question="What happens after I reveal a domain name?"
-              answer="After reveal, the domain is yours to evaluate. We show you direct links to register it at Dynadot, Namecheap, or Porkbun. You choose where to register — we don't lock you into a registrar."
+              answer="After reveal, the domain is yours to evaluate. We show you direct links to register it at Dynadot, Namecheap, or Porkbun. You choose where to register — we don&apos;t lock you into a registrar."
             />
             <FaqItem
-              question="What's included in the Premium subscription?"
+              question="What&apos;s included in the Premium subscription?"
               answer="Premium Startup ($79/mo) gives you 30 appraisals/day plus access to the Domain Scanner (DA, spam score, backlinks), Extended Insights (USPTO/WIPO, trademark history), and Bulk Domain Audit. Enterprise ($129/mo) adds unlimited appraisals, API access, and priority support."
             />
             <FaqItem
@@ -342,7 +407,7 @@ export function WwwHomepage() {
             />
             <FaqItem
               question="Is my search data private?"
-              answer="Yes. Domain names you search are encrypted with AES-256-GCM before storage. We don't sell or share search data. Your competition won't see what you're looking at."
+              answer="Yes. Domain names you search are encrypted with AES-256-GCM before storage. We don&apos;t sell or share search data. Your competition won&apos;t see what you&apos;re looking at."
             />
           </div>
         </div>
