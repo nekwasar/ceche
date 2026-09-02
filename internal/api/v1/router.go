@@ -46,6 +46,9 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 		// Public pricing info
 		r.Get("/pricing/reveal", handleGetRevealPricing())
 
+		// Public appraisal (free tier: 3 per IP per day)
+		r.Post("/appraise/public", handleAppraisePublic(db))
+
 		// Intelligence (public summary, full requires auth)
 		r.Get("/intelligence/{domain}/summary", handleGetIntelligenceSummary(db))
 

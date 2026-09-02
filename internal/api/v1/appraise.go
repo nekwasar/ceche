@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 	"strings"
+	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -82,6 +83,11 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 		}
 
 		tier := getUserTier(r.Context(), db, userID)
+
+		// Dev bypass: override tier to enterprise for full 16-dimension results
+		if r.Header.Get("X-Dev-Bypass") == "true" {
+			tier = "enterprise"
+		}
 
 		cacheKey := "appraisal:" + req.Domain + ":" + tier
 		var cachedMetrics service.AppraisalMetrics
@@ -217,5 +223,97 @@ func handleGetAppraisal(db *pgxpool.Pool) http.HandlerFunc {
 			"metrics":    json.RawMessage(metrics),
 			"created_at": createdAt,
 		})
+	}
+}
+
+// handleAppraisePublic allows unauthenticated users to appraise (free tier: 3 per IP per day)
+var publicRateMap = make(map[string]*publicIPCount)
+
+type publicIPCount struct {
+	count int
+	date  string
+}
+
+func handleAppraisePublic(db *pgxpool.Pool) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		limitBody(r)
+
+		var req struct {
+			Domain string `json:"domain"`
+		}
+		if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid request body"}}`, http.StatusBadRequest)
+			return
+		}
+
+		req.Domain = strings.TrimSpace(strings.ToLower(req.Domain))
+		if req.Domain == "" {
+			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Domain is required"}}`, http.StatusBadRequest)
+			return
+		}
+
+		if !domainRegex.MatchString(req.Domain) {
+			http.Error(w, `{"error":{"code":"VALIDATION_ERROR","message":"Invalid domain format"}}`, http.StatusBadRequest)
+			return
+		}
+
+		// Rate limit: 3 per IP per day
+		ip := r.RemoteAddr
+		if fwd := r.Header.Get("X-Forwarded-For"); fwd != "" {
+			ip = strings.Split(fwd, ",")[0]
+		}
+		if idx := strings.LastIndex(ip, ":"); idx != -1 {
+			ip = ip[:idx]
+		}
+		today := time.Now().Format("2006-01-02")
+
+		if rc, exists := publicRateMap[ip]; exists {
+			if rc.date == today {
+				if rc.count >= 3 {
+					w.Header().Set("Content-Type", "application/json")
+					w.WriteHeader(http.StatusTooManyRequests)
+					json.NewEncoder(w).Encode(map[string]interface{}{
+						"error": map[string]interface{}{
+							"code":    "RATE_LIMITED",
+							"message": "Free limit reached. Create an account for 12 appraisals/day.",
+						},
+						"remaining": 0,
+					})
+					return
+				}
+				rc.count++
+			} else {
+				rc.count = 1
+				rc.date = today
+			}
+		} else {
+			publicRateMap[ip] = &publicIPCount{count: 1, date: today}
+		}
+
+		// Calculate score (free tier)
+		score, metrics := service.CalculateScore(req.Domain, "free")
+
+		tld := ""
+		if idx := strings.LastIndex(req.Domain, "."); idx != -1 {
+			tld = req.Domain[idx+1:]
+		}
+
+		metricsJSON, _ := json.Marshal(map[string]interface{}{
+			"domain":          req.Domain,
+			"score":           score,
+			"metrics":         metrics,
+			"idempotency_key": "",
+		})
+
+		// Try to save to database (use anonymous user ID)
+		anonymousID := "00000000-0000-0000-0000-000000000000"
+		db.Exec(r.Context(),
+			`INSERT INTO appraisals (user_id, domain, tld, score, metrics, idempotency_key)
+			 VALUES ($1, $2, $3, $4, $5, '') ON CONFLICT DO NOTHING`,
+			anonymousID, req.Domain, tld, score, metricsJSON,
+		)
+
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(metricsJSON)
 	}
 }
