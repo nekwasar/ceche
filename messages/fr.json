@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "platform": "Plateforme",
+    "solutions": "Solutions",
+    "resources": "Ressources",
+    "pricing": "Tarifs",
+    "login": "Connexion",
+    "getStarted": "Commencer"
+  },
+  "home": {
+    "title": "Trouvez des domaines premium avant tout le monde",
+    "subtitle": "Plateforme de découverte, d'intelligence et de marché de domaines",
+    "cta": "Commencer",
+    "features": {
+      "appraiser": {
+        "title": "Évaluateur de domaine",
+        "description": "Évaluez n'importe quel nom de domaine avec notre analyse en 15 modules"
+      },
+      "scanner": {
+        "title": "Scanner de domaine",
+        "description": "Trouvez des domaines premium disponibles avant tout le monde"
+      },
+      "marketplace": {
+        "title": "Marché de domaines",
+        "description": "Achetez des domaines premium avec des données d'intelligence complètes"
+      }
+    }
+  },
+  "platform": {
+    "title": "Plateforme",
+    "subtitle": "Découverte, intelligence et marché de domaines"
+  },
+  "pricing": {
+    "title": "Tarifs simples et transparents",
+    "free": {
+      "name": "Gratuit",
+      "price": "0€",
+      "period": "pour toujours",
+      "features": ["5 révélations/mois", "Évaluation de base", "Vérification santé"]
+    },
+    "starter": {
+      "name": "Débutant",
+      "price": "29€",
+      "period": "/mois",
+      "features": ["50 révélations/mois", "Tous les types", "Alertes de base"]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "49€",
+      "period": "/mois",
+      "features": ["200 révélations/mois", "Tous les types", "Support prioritaire"]
+    },
+    "enterprise": {
+      "name": "Entreprise",
+      "price": "199€",
+      "period": "/mois",
+      "features": ["Révélations illimitées", "Accès API", "White-label"]
+    }
+  },
+  "footer": {
+    "product": "Produit",
+    "resources": "Ressources",
+    "company": "Entreprise",
+    "legal": "Juridique",
+    "copyright": "© 2026 Ceche. Tous droits réservés."
+  }
+}

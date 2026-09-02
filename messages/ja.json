@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "platform": "プラットフォーム",
+    "solutions": "ソリューション",
+    "resources": "リソース",
+    "pricing": "料金",
+    "login": "ログイン",
+    "getStarted": "始める"
+  },
+  "home": {
+    "title": "誰よりも先にプレミアムドメインを見つける",
+    "subtitle": "ドメイン発見、インテリジェンス、マーケットプレイスプラットフォーム",
+    "cta": "始める",
+    "features": {
+      "appraiser": {
+        "title": "ドメイン評価ツール",
+        "description": "15モジュール分析で任意のドメイン名にスコアをつけます"
+      },
+      "scanner": {
+        "title": "ドメインスキャナー",
+        "description": "誰よりも先に利用可能なプレミアムドメインを見つけます"
+      },
+      "marketplace": {
+        "title": "ドメインマーケットプレイス",
+        "description": "完全なインテリジェンスデータでプレミアムドメインを購入"
+      }
+    }
+  },
+  "platform": {
+    "title": "プラットフォーム",
+    "subtitle": "ドメイン発見、インテリジェンス、マーケットプレイス"
+  },
+  "pricing": {
+    "title": "シンプルで透明な料金",
+    "free": {
+      "name": "無料",
+      "price": "¥0",
+      "period": "永久",
+      "features": ["月5回開示", "基本評価", "ヘルスチェック"]
+    },
+    "starter": {
+      "name": "スターター",
+      "price": "¥2,900",
+      "period": "/月",
+      "features": ["月50回開示", "全タイプ", "基本アラート"]
+    },
+    "pro": {
+      "name": "プロ",
+      "price": "¥4,900",
+      "period": "/月",
+      "features": ["月200回開示", "全タイプ", "優先サポート"]
+    },
+    "enterprise": {
+      "name": "エンタープライズ",
+      "price": "¥19,900",
+      "period": "/月",
+      "features": ["無制限の開示", "APIアクセス", "ホワイトラベル"]
+    }
+  },
+  "footer": {
+    "product": "製品",
+    "resources": "リソース",
+    "company": "会社",
+    "legal": "法的情報",
+    "copyright": "© 2026 Ceche. All rights reserved."
+  }
+}

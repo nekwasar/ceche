@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "platform": "Platform",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "pricing": "Pricing",
+    "login": "Login",
+    "getStarted": "Get Started"
+  },
+  "home": {
+    "title": "Find Premium Domains Before Anyone Else",
+    "subtitle": "Domain discovery, intelligence, and marketplace platform",
+    "cta": "Get Started",
+    "features": {
+      "appraiser": {
+        "title": "Domain Appraiser",
+        "description": "Score any domain name with our 16-dimension analysis"
+      },
+      "scanner": {
+        "title": "Domain Scanner",
+        "description": "Find available premium domains before anyone else"
+      },
+      "marketplace": {
+        "title": "Domain Marketplace",
+        "description": "Buy premium domains with full intelligence data"
+      }
+    }
+  },
+  "platform": {
+    "title": "Platform",
+    "subtitle": "Domain discovery, intelligence, and marketplace"
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "period": "forever",
+      "features": ["3 appraisals/day", "Name search tool", "Basic WHOIS lookup"]
+    },
+    "startup": {
+      "name": "Premium Startup",
+      "price": "$79",
+      "period": "/month",
+      "features": ["30 appraisals/day", "Domain Scanner", "Extended Insights", "Bulk Audit"]
+    },
+    "enterprise": {
+      "name": "Premium Enterprise",
+      "price": "$129",
+      "period": "/month",
+      "features": ["Unlimited appraisals", "All premium tools", "API access", "Priority support"]
+    }
+  },
+  "footer": {
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "legal": "Legal",
+    "copyright": "© 2026 Ceche. All rights reserved."
+  }
+}
