@@ -717,302 +717,302 @@
     "bulk": {
       "badge": "企业版",
       "title": "批量分析器",
-      "description": "Multi-domain batch evaluation tool for portfolio analysis and large-scale domain research. Process thousands of domains in seconds.",
+      "description": "多域名批量评估工具，用于投资组合分析和大规模域名研究。在几秒内处理数千个域名。",
       "cta": "获取批量访问",
       "statValue": "5,000",
       "statLabel": "每批域名数",
       "stats": [
         {
           "value": "16",
-          "label": "Dimensions"
+          "label": "维度"
         },
         {
           "value": "4",
-          "label": "TLDs"
+          "label": "TLD"
         },
         {
           "value": "<3s",
-          "label": "Per Domain"
+          "label": "每个域名"
         }
       ],
       "howItWorks": {
         "title": "运作方式",
         "steps": [
           {
-            "title": "Upload List",
-            "desc": "Paste domains or upload a CSV file with up to 5,000 domains."
+            "title": "上传列表",
+            "desc": "粘贴域名或上传包含最多5,000个域名的CSV文件。"
           },
           {
-            "title": "Configure Scoring",
-            "desc": "Set custom weights for each of the 16 scoring dimensions."
+            "title": "配置评分",
+            "desc": "为16个评分维度中的每一个设置自定义权重。"
           },
           {
-            "title": "Process",
-            "desc": "Our engine evaluates all domains in parallel with priority queuing."
+            "title": "处理",
+            "desc": "我们的引擎使用优先队列并行评估所有域名。"
           },
           {
-            "title": "Export Results",
-            "desc": "Download CSV with scores, pricing data, and priority rankings."
+            "title": "导出结果",
+            "desc": "下载包含评分、定价数据和优先级排名的CSV。"
           }
         ]
       },
       "outputTitle": "输出列",
       "outputHeaders": [
-        "Column",
-        "Description",
-        "Example"
+        "列",
+        "描述",
+        "示例"
       ],
       "outputRows": [
         [
-          "Domain",
-          "The domain name analyzed",
+          "域名",
+          "分析的域名名称",
           "example.com"
         ],
         [
-          "Domain Rating",
-          "Authority score 0-100",
+          "域名评级",
+          "权威评分 0-100",
           "72"
         ],
         [
-          "SEO Score",
-          "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)",
+          "SEO评分",
+          "综合评分（反向链接40%，流量30%，关键词20%，技术10%）",
           "68"
         ],
         [
-          "Buyer Intent",
-          "Score 0-100 indicating purchase likelihood",
+          "购买意向",
+          "0-100分表示购买可能性",
           "45"
         ],
         [
-          "Priority Score",
-          "Combined ranking across all dimensions",
-          "High"
+          "优先级评分",
+          "所有维度的综合排名",
+          "高"
         ],
         [
-          "Estimated Value",
-          "Fair market value range",
+          "估价",
+          "公允市场价值范围",
           "$2,400 - $3,600"
         ]
       ],
       "priorityTitle": "优先级评分分解",
       "dimensions": [
         {
-          "name": "Backlink Profile",
+          "name": "反向链接概况",
           "weight": "40%",
           "bar": 40
         },
         {
-          "name": "Traffic Analysis",
+          "name": "流量分析",
           "weight": "30%",
           "bar": 30
         },
         {
-          "name": "Keyword Metrics",
+          "name": "关键词指标",
           "weight": "20%",
           "bar": 20
         },
         {
-          "name": "Technical SEO",
+          "name": "技术SEO",
           "weight": "10%",
           "bar": 10
         }
       ],
       "customTitle": "自定义评分",
-      "customDescription": "Weight dimensions based on your specific use case. Whether you prioritize SEO metrics, traffic potential, or buyer intent, adjust the scoring to match your portfolio strategy.",
+      "customDescription": "根据您的具体用例调整维度权重。无论您优先考虑SEO指标、流量潜力还是购买意向，都可以调整评分以匹配您的投资组合策略。",
       "modes": [
         {
-          "title": "Investor Mode",
-          "desc": "Maximize ROI with traffic and value focus"
+          "title": "投资者模式",
+          "desc": "以流量和价值为中心最大化投资回报"
         },
         {
-          "title": "Developer Mode",
-          "desc": "Prioritize technical metrics and authority"
+          "title": "开发者模式",
+          "desc": "优先考虑技术指标和权威性"
         },
         {
-          "title": "Brand Mode",
-          "desc": "Emphasize trademark safety and memorability"
+          "title": "品牌模式",
+          "desc": "强调商标安全性和可记忆性"
         }
       ],
       "ctaTitle": "准备好扩展您的域名研究了吗？",
-      "ctaDescription": "Process up to 5,000 domains per batch with Enterprise access.",
+      "ctaDescription": "通过企业版访问每批处理最多5,000个域名。",
       "startTrial": "开始企业版试用",
       "tryLookup": "试试单域名查询"
     },
     "api": {
       "badge": "开发者",
       "title": "API接口",
-      "description": "RESTful API for programmatic domain intelligence. Build custom integrations, automate workflows, and access all domain data programmatically.",
+      "description": "用于程序化域名智能分析的RESTful API。构建自定义集成、自动化工作流，并以编程方式访问所有域名数据。",
       "getKey": "获取API密钥",
       "readDocs": "阅读文档",
       "buildTitle": "您可以构建什么",
       "buildCards": [
         {
-          "title": "Domain Portfolio Tracker",
-          "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.",
-          "linkText": "Try Domain Lookup"
+          "title": "域名投资组合追踪器",
+          "desc": "自动监控您的投资组合的价值变化、到期提醒和SEO变化。",
+          "linkText": "试试域名查询"
         },
         {
-          "title": "Market Intelligence Dashboard",
-          "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.",
-          "linkText": "Explore Bulk Analyzer"
+          "title": "市场情报仪表板",
+          "desc": "构建具有实时域名定价、趋势和竞争分析的自定义仪表板。",
+          "linkText": "探索批量分析器"
         },
         {
-          "title": "Brand Protection System",
-          "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.",
-          "linkText": "See Trademark Monitor"
+          "title": "品牌保护系统",
+          "desc": "自动化商标监控并即时获取潜在品牌冲突的提醒。",
+          "linkText": "查看商标监控"
         }
       ],
       "featuresTitle": "API功能",
       "features": [
         {
           "title": "RESTful API",
-          "desc": "Full access to all domain intelligence endpoints with standard HTTP methods."
+          "desc": "通过标准HTTP方法完全访问所有域名情报端点。"
         },
         {
-          "title": "Webhooks",
-          "desc": "Real-time notifications for domain changes and events via webhook callbacks."
+          "title": "Webhook",
+          "desc": "通过webhook回调实时通知域名变更和事件。"
         },
         {
-          "title": "Rate Limits",
-          "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes."
+          "title": "速率限制",
+          "desc": "企业版每天10,000次调用，具有突发容量。"
         },
         {
-          "title": "SDKs",
-          "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation."
+          "title": "SDK",
+          "desc": "Python、Node.js、Go和Ruby的官方库，附完整文档。"
         },
         {
-          "title": "Sandbox",
-          "desc": "Test environment for development and integration testing before going live."
+          "title": "沙盒",
+          "desc": "用于开发和上线前集成测试的测试环境。"
         },
         {
-          "title": "Documentation",
-          "desc": "Complete API reference with code examples, tutorials, and best practices."
+          "title": "文档",
+          "desc": "完整的API参考，包含代码示例、教程和最佳实践。"
         }
       ],
       "ctaTitle": "准备好构建了吗？",
-      "ctaDescription": "Get your API key and start integrating domain intelligence today.",
+      "ctaDescription": "获取您的API密钥，立即开始集成域名情报。",
       "viewDocs": "查看API文档",
       "modal": {
-        "title": "Get Your API Key",
-        "description": "Create a free account to get your API key and start building with domain intelligence data.",
-        "cta": "Create Free Account",
-        "back": "Go back"
+        "title": "获取您的API密钥",
+        "description": "创建免费账户以获取API密钥，开始使用域名情报数据构建。",
+        "cta": "创建免费账户",
+        "back": "返回"
       }
     },
     "trademark": {
       "badge": "高级版",
       "title": "商标监控",
-      "description": "USPTO/WIPO conflict detection and alerts. Protect your brand with proactive trademark monitoring across global databases.",
+      "description": "USPTO/WIPO冲突检测和提醒。通过全球数据库的主动商标监控保护您的品牌。",
       "cta": "开始监控",
       "severityTitle": "威胁严重程度",
       "levels": [
         {
-          "level": "Critical",
-          "desc": "Direct trademark conflict detected"
+          "level": "严重",
+          "desc": "检测到直接商标冲突"
         },
         {
-          "level": "High",
-          "desc": "Similar mark in same industry"
+          "level": "高",
+          "desc": "同行业相似商标"
         },
         {
-          "level": "Medium",
-          "desc": "Similar name, different class"
+          "level": "中",
+          "desc": "不同类别的相似名称"
         },
         {
-          "level": "Low",
-          "desc": "Minor similarity, low risk"
+          "level": "低",
+          "desc": "轻微相似，低风险"
         }
       ],
       "problemTitle": "问题所在",
       "problems": [
-        "Trademark infringement lawsuits cost $100K+ on average",
-        "New domain registrations happen every minute",
-        "Manual monitoring is impossible at scale",
-        "By the time you notice, damage is done"
+        "商标侵权诉讼平均成本超过10万美元",
+        "新的域名注册每分钟都在发生",
+        "大规模手动监控是不可能的",
+        "当您发现时，损害已经造成"
       ],
       "solutionTitle": "我们的解决方案",
       "solutions": [
-        "Real-time USPTO and WIPO database monitoring",
-        "Scan up to 5,000 domains per list",
-        "Instant conflict alerts via email and webhook",
-        "Risk scoring with confidence levels"
+        "实时USPTO和WIPO数据库监控",
+        "每个列表扫描最多5,000个域名",
+        "通过电子邮件和webhook即时冲突提醒",
+        "带有置信水平的风险评分"
       ],
       "howItWorks": {
         "title": "运作方式",
         "steps": [
           {
-            "title": "Add Domains",
-            "desc": "Upload your brand domains or keywords to monitor."
+            "title": "添加域名",
+            "desc": "上传您的品牌域名或要监控的关键词。"
           },
           {
-            "title": "Set Criteria",
-            "desc": "Define industry, geographic scope, and sensitivity."
+            "title": "设置标准",
+            "desc": "定义行业、地理范围和敏感度。"
           },
           {
-            "title": "Monitor",
-            "desc": "We scan USPTO, EUIPO, and WIPO databases continuously."
+            "title": "监控",
+            "desc": "我们持续扫描USPTO、EUIPO和WIPO数据库。"
           },
           {
-            "title": "Get Alerts",
-            "desc": "Receive instant notifications for potential conflicts."
+            "title": "获取提醒",
+            "desc": "接收潜在冲突的即时通知。"
           }
         ]
       },
       "useCasesTitle": "应用场景",
       "useCases": [
         {
-          "title": "Brand Protection",
-          "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs."
+          "title": "品牌保护",
+          "content": "监控所有主要TLD上的域名抢注、拼写错误抢注和品牌冒充。"
         },
         {
-          "title": "Product Launch",
-          "content": "Clear trademarks before launching new products or entering new markets."
+          "title": "产品发布",
+          "content": "在推出新产品或进入新市场之前清理商标。"
         },
         {
-          "title": "M&A Due Diligence",
-          "content": "Audit trademark risks during mergers, acquisitions, or investment rounds."
+          "title": "并购尽职调查",
+          "content": "在合并、收购或投资轮次中审计商标风险。"
         },
         {
-          "title": "Portfolio Management",
-          "content": "Protect your domain portfolio from trademark challenges and legal disputes."
+          "title": "投资组合管理",
+          "content": "保护您的域名投资组合免受商标挑战和法律纠纷。"
         }
       ],
       "pricingTitle": "定价",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "免费版",
           "price": "$0",
           "features": [
-            "3 unsigned scans/day",
-            "12 signed scans/day",
-            "Basic metrics"
+            "每天3次未签名扫描",
+            "每天12次签名扫描",
+            "基础指标"
           ]
         },
         {
-          "plan": "Startup",
+          "plan": "创业版",
           "price": "$79/mo",
           "features": [
-            "30 scans/day",
-            "Priority processing",
-            "CSV export",
-            "Email alerts"
+            "每天30次扫描",
+            "优先处理",
+            "CSV导出",
+            "邮件提醒"
           ],
           "popular": true
         },
         {
-          "plan": "Enterprise",
+          "plan": "企业版",
           "price": "$129/mo",
           "features": [
-            "Unlimited scans",
-            "API access (10K calls/day)",
-            "Webhook integration",
-            "Dedicated support"
+            "无限制扫描",
+            "API访问（每天10K次调用）",
+            "Webhook集成",
+            "专属支持"
           ]
         }
       ],
       "popular": "热门",
       "ctaTitle": "立即保护您的品牌",
-      "ctaDescription": "Don't wait until it's too late. Start monitoring now.",
+      "ctaDescription": "不要等到为时已晚。立即开始监控。",
       "startFreeTrial": "开始免费试用",
       "tryLookup": "试试域名查询",
       "runScan": "运行SEO扫描"
@@ -1021,107 +1021,107 @@
       "badge": "全面数据",
       "statValue": "2,847",
       "statLabel": "跟踪的TLD覆盖所有注册机构",
-      "description": "Access the most comprehensive domain database available. Track registrations, expirations, and pricing across every major TLD.",
+      "description": "访问最全面的域名数据库。跟踪每个主要TLD的注册、到期和定价。",
       "stats": [
         {
           "value": "420M+",
-          "label": "Domains Tracked",
-          "desc": "Active registrations across all TLDs"
+          "label": "跟踪的域名",
+          "desc": "所有TLD的活跃注册"
         },
         {
           "value": "2.1B",
-          "label": "Historical Records",
-          "desc": "Registration and expiration history"
+          "label": "历史记录",
+          "desc": "注册和过期历史"
         },
         {
           "value": "50K+",
-          "label": "Daily Updates",
-          "desc": "New registrations processed daily"
+          "label": "每日更新",
+          "desc": "每天处理的新注册"
         },
         {
           "value": "99.9%",
-          "label": "Uptime",
-          "desc": "Database availability guarantee"
+          "label": "正常运行时间",
+          "desc": "数据库可用性保证"
         }
       ],
       "methodsTitle": "搜索方式",
       "methods": [
         {
-          "title": "Single Lookup",
-          "desc": "Search any domain for instant registration data and availability status."
+          "title": "单次查询",
+          "desc": "搜索任何域名以获取即时注册数据和可用性状态。"
         },
         {
-          "title": "Bulk Check",
-          "desc": "Upload up to 5,000 domains at once for batch availability analysis."
+          "title": "批量检查",
+          "desc": "一次上传最多5,000个域名进行批量可用性分析。"
         },
         {
-          "title": "API Query",
-          "desc": "Programmatic access via RESTful API with up to 10,000 calls per day."
+          "title": "API查询",
+          "desc": "通过RESTful API进行程序化访问，每天最多10,000次调用。"
         }
       ],
       "sourcesTitle": "数据来源",
       "sources": [
         {
           "source": "ICANN",
-          "desc": "Official domain registration data"
+          "desc": "官方域名注册数据"
         },
         {
-          "source": "Registry Operators",
-          "desc": "Direct TLD zone file access"
+          "source": "注册机构运营商",
+          "desc": "直接TLD区域文件访问"
         },
         {
           "source": "WHOIS/RDAP",
-          "desc": "Registration and contact information"
+          "desc": "注册和联系信息"
         },
         {
           "source": "Wayback Machine",
-          "desc": "Historical content snapshots"
+          "desc": "历史内容快照"
         },
         {
-          "source": "Certificate Transparency",
-          "desc": "SSL certificate monitoring"
+          "source": "证书透明度",
+          "desc": "SSL证书监控"
         },
         {
-          "source": "DNS Resolvers",
-          "desc": "Real-time DNS record verification"
+          "source": "DNS解析器",
+          "desc": "实时DNS记录验证"
         }
       ],
       "levelsTitle": "访问级别",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "免费版",
           "price": "$0",
           "features": [
-            "Basic lookup",
-            "3 searches/day",
-            "Limited TLDs"
+            "基础查询",
+            "每天3次搜索",
+            "有限TLD"
           ]
         },
         {
-          "plan": "Startup",
+          "plan": "创业版",
           "price": "$79/mo",
           "features": [
-            "Full database",
-            "30 searches/day",
-            "CSV export",
-            "Priority support"
+            "完整数据库",
+            "每天30次搜索",
+            "CSV导出",
+            "优先支持"
           ],
           "popular": true
         },
         {
-          "plan": "Enterprise",
+          "plan": "企业版",
           "price": "$129/mo",
           "features": [
-            "Unlimited access",
-            "API (10K calls/day)",
-            "Webhooks",
-            "Custom data"
+            "无限制访问",
+            "API（每天10K次调用）",
+            "Webhook",
+            "自定义数据"
           ]
         }
       ],
       "popular": "热门",
       "ctaTitle": "访问完整的域名数据库",
-      "ctaDescription": "2,847 TLDs, 420M+ domains, real-time data at your fingertips.",
+      "ctaDescription": "2,847个TLD、4.2亿+域名、实时数据触手可及。",
       "startFreeTrial": "开始免费试用",
       "tryLookup": "试试域名查询",
       "viewDocs": "查看API文档"
@@ -1192,7 +1192,7 @@
       "modal": {
         "title": "创建账户",
         "desc": "Sign up to reveal domain names and make purchases.",
-        "redirecting": "Redirecting to signup in {count} seconds...",
+        "redirecting": "正在跳转到注册页面，{count}秒后...",
         "signup": "免费注册",
         "later": "稍后再说"
       }
@@ -2425,7 +2425,7 @@
     "takenBadge": "Taken",
     "appraise": "Appraise",
     "noResults": "暂无扫描结果",
-    "noResultsDesc": "Configure your scan settings and click \"Start Scan\" to find available domains.",
+    "noResultsDesc": "配置您的扫描设置并点击「开始扫描」以查找可用域名。",
     "recentScans": "最近的扫描",
     "scan": "扫描"
   },
@@ -2437,9 +2437,9 @@
     "analyzing": "分析中...",
     "button": "评估",
     "devMode": "开发模式 — 无限制",
-    "appraisalsLeft": "{count} appraisal{plural} left today",
-    "devBypass": "Dev bypass",
-    "activate": "Activate",
+    "appraisalsLeft": "今天剩余 {count} 次评估",
+    "devBypass": "开发绕过码",
+    "activate": "激活",
     "loading": "加载中...",
     "error": "错误",
     "estimatedValue": "估价",
@@ -2449,17 +2449,17 @@
     "aboveAvg": "高于平均",
     "belowAvg": "低于平均",
     "avg": "平均",
-    "unlockPrompt": "Unlock all 13 remaining dimensions with a premium plan",
+    "unlockPrompt": "通过Premium套餐解锁剩余13个维度",
     "viewPricing": "查看定价",
-    "whoisHint": "Want WHOIS + DNS data?",
-    "domainLookup": "Try Domain Lookup — no account required",
-    "domainLookupCta": "Domain Lookup",
-    "deeperHint": "Want deeper analysis?",
-    "extendedInsights": "Extended Insights — backlinks, trademarks, comparables",
-    "extendedInsightsCta": "Extended Insights",
+    "whoisHint": "需要WHOIS + DNS数据？",
+    "domainLookup": "试试域名查询——无需账户",
+    "domainLookupCta": "域名查询",
+    "deeperHint": "需要更深入的分析？",
+    "extendedInsights": "深度洞察——反向链接、商标、可比数据",
+    "extendedInsightsCta": "深度洞察",
     "recentAppraisals": "最近的评估",
     "limitTitle": "每日限额已达",
-    "limitDesc": "You've used all {limit} appraisals today. Create an account to get {signed} per day.",
+    "limitDesc": "您已用完今天的 {limit} 次评估。创建账户以每天获得 {signed} 次。",
     "createAccount": "创建账户",
     "goBack": "返回",
     "redirecting": "正在跳转...",
@@ -2484,104 +2484,104 @@
     "badge": "文档",
     "title1": "每个工具，",
     "title2": "都有文档。",
-    "desc": "The Ceche Help Center covers the SEO Scanner, Extended Insights, Bulk Analyzer, Trademark Monitor, Domain Database, and API. Over 320 articles organized by tool, topic, and difficulty level.",
+    "desc": "Ceche帮助中心涵盖SEO扫描器、深度洞察、批量分析器、商标监控、域名数据库和API。超过320篇文章按工具、主题和难度级别组织。",
     "tools": [
       {
-        "name": "Domain Lookup",
-        "desc": "Free tool. WHOIS data, DNS records, and registrar information for any domain.",
-        "pricing": "Free",
+        "name": "域名查询",
+        "desc": "免费工具。任何域名的WHOIS数据、DNS记录和注册商信息。",
+        "pricing": "免费",
         "features": [
-          "WHOIS lookup",
-          "DNS record export (A, AAAA, MX, TXT, CNAME)",
-          "Registrar detection",
-          "Expiration tracking"
+          "WHOIS查询",
+          "DNS记录导出（A, AAAA, MX, TXT, CNAME）",
+          "注册商检测",
+          "到期追踪"
         ]
       },
       {
-        "name": "16-Dimension Appraisal",
-        "desc": "Deep domain valuation using 16 analysis dimensions — RDAP, TLD scoring, brandability, commercial intent, and more.",
-        "pricing": "Free (3 unsigned / 12 signed per day)",
+        "name": "16维评估",
+        "desc": "使用16个分析维度的深度域名估值——RDAP、TLD评分、品牌性、商业意图等。",
+        "pricing": "免费（每天3次未签名 / 12次已签名）",
         "features": [
-          "16 scoring dimensions",
-          "Market-based pricing",
-          "Comparable analysis",
-          "Confidence intervals"
+          "16个评分维度",
+          "市场化定价",
+          "可比分析",
+          "置信区间"
         ]
       },
       {
-        "name": "SEO Scanner",
-        "desc": "Evaluate search visibility, backlink quality, organic traffic, and SEO authority in 3-5 seconds.",
-        "pricing": "Premium",
+        "name": "SEO扫描器",
+        "desc": "在3-5秒内评估搜索可见性、反向链接质量、有机流量和SEO权威。",
+        "pricing": "高级版",
         "features": [
-          "Domain Rating 0-100",
-          "Organic traffic estimates",
-          "Keyword rankings",
-          "SEO Score composite"
+          "域名评级 0-100",
+          "有机流量估算",
+          "关键词排名",
+          "SEO评分综合"
         ]
       },
       {
-        "name": "Extended Insights",
-        "desc": "Deep due diligence — 16-dimension valuation, trademark screening, comparable sales, and buyer intent scoring.",
-        "pricing": "$5-$50 per report",
+        "name": "深度洞察",
+        "desc": "深度尽职调查——16维估值、商标筛查、可比销售和购买意向评分。",
+        "pricing": "$5-$50/报告",
         "features": [
-          "6 report sections",
-          "Trademark conflict check",
-          "Buyer Intent Score 0-100",
-          "PDF/JSON export"
+          "6个报告部分",
+          "商标冲突检查",
+          "购买意向评分 0-100",
+          "PDF/JSON导出"
         ]
       },
       {
-        "name": "Bulk Domain Audit",
-        "desc": "Upload a CSV of up to 5,000 domains. Get valuations, SEO scores, priority rankings, and recommended actions.",
-        "pricing": "Premium ($79+/mo)",
+        "name": "批量域名审计",
+        "desc": "上传最多5,000个域名的CSV。获得估价、SEO评分、优先级排名和推荐操作。",
+        "pricing": "高级版（$79+/月）",
         "features": [
-          "5,000 domains/batch",
-          "Priority Score 1-100",
-          "Custom scoring profiles",
-          "CSV export"
+          "每批5,000个域名",
+          "优先级评分 1-100",
+          "自定义评分配置",
+          "CSV导出"
         ]
       },
       {
-        "name": "Trademark Monitor",
-        "desc": "Automated USPTO and WIPO screening. Get alerts before a trademark conflict becomes a legal problem.",
-        "pricing": "Premium ($79+/mo)",
+        "name": "商标监控",
+        "desc": "自动USPTO和WIPO筛查。在商标冲突成为法律问题之前获取提醒。",
+        "pricing": "高级版（$79+/月）",
         "features": [
-          "Daily USPTO/WIPO scanning",
-          "4 severity levels",
-          "Email + SMS alerts",
-          "5,000 domains per list"
+          "每日USPTO/WIPO扫描",
+          "4个严重程度级别",
+          "电子邮件+短信提醒",
+          "每个列表5,000个域名"
         ]
       },
       {
-        "name": "Domain Database",
-        "desc": "Registration statistics, pricing history, and renewal costs for 2,847 TLDs. Updated daily from ICANN zone files.",
-        "pricing": "Free (current pricing)",
+        "name": "域名数据库",
+        "desc": "2,847个TLD的注册统计、定价历史和续费成本。每天从ICANN区域文件更新。",
+        "pricing": "免费（当前定价）",
         "features": [
-          "2,847 TLDs tracked",
-          "24-month pricing history",
-          "420+ registrar feeds",
-          "Search by TLD, keyword, or price"
+          "跟踪2,847个TLD",
+          "24个月定价历史",
+          "420+注册商数据源",
+          "按TLD、关键词或价格搜索"
         ]
       }
     ],
     "tiersTitle": "订阅层级",
     "tiers": [
       {
-        "tier": "Free",
+        "tier": "免费版",
         "price": "$0",
-        "features": "12 appraisals/day, basic SEO Scanner, Help Center access",
+        "features": "每天12次评估、基础SEO扫描器、帮助中心访问",
         "color": "#888888"
       },
       {
-        "tier": "Startup",
-        "price": "$79/mo",
-        "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor",
+        "tier": "创业版",
+        "price": "$79/月",
+        "features": "每天30次评估、完整扫描器、深度洞察、批量分析器、商标监控",
         "color": "#F4A261"
       },
       {
-        "tier": "Enterprise",
-        "price": "$129/mo",
-        "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support",
+        "tier": "企业版",
+        "price": "$129/月",
+        "features": "无限制评估、所有创业版功能、API（每天10K次调用）、专属支持",
         "color": "#9E2A2B"
       }
     ],
@@ -2596,94 +2596,94 @@
     "badge": "常见问题",
     "title1": "常见",
     "title2": "问题。",
-    "desc": "Answers to the most common questions about Ceche — pricing, tools, API, marketplace, and account management.",
+    "desc": "关于Ceche最常见问题的答案——定价、工具、API、市场和账户管理。",
     "sections": [
       {
-        "title": "Getting started",
+        "title": "入门",
         "items": [
           {
-            "q": "What is Ceche?",
-            "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace."
+            "q": "什么是Ceche？",
+            "a": "Ceche是一个域名市场，优质名称在这里买卖。评估引擎通过16维评分证明价值。搜索和扫描工具帮助您找到名称。一切都与市场相连。"
           },
           {
-            "q": "How does the appraisal engine work?",
-            "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights."
+            "q": "评估引擎如何工作？",
+            "a": "评估引擎使用Ceche专有的16维框架，跨四个类别评估域名：词汇分析（30%）、技术权威（25%）、市场动态（25%）和品牌性（20%）。每个维度独立评分，使用统计推导的权重组合。"
           },
           {
-            "q": "What TLDs does Ceche support?",
-            "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions."
+            "q": "Ceche支持哪些TLD？",
+            "a": "Ceche支持.com、.net、.io和.co域名。域名数据库跟踪2,847个TLD的定价和注册数据，但评估和市场功能目前仅限于这四个扩展名。"
           },
           {
-            "q": "How do I create an account?",
-            "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required."
+            "q": "如何创建账户？",
+            "a": "点击导航栏中的「免费注册」。免费账户包括每天12次评估、基础SEO扫描器访问和完整的帮助中心访问。无需信用卡。"
           }
         ]
       },
       {
-        "title": "Pricing & billing",
+        "title": "定价和付款",
         "items": [
           {
-            "q": "What are the subscription tiers?",
-            "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting."
+            "q": "订阅层级有哪些？",
+            "a": "免费版：每天12次评估、基础SEO扫描器、帮助中心。创业版（$79/月）：每天30次评估、完整SEO扫描器、深度洞察（$5-$50/报告）、批量分析器、商标监控、域名数据库、优先支持。企业版（$129/月）：无限制评估、所有创业版功能、API访问（每天10,000次调用）、专属客户经理、私人Slack频道、自定义报告。"
           },
           {
-            "q": "How does Try Your Luck pricing work?",
-            "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring."
+            "q": "试试运气的定价如何运作？",
+            "a": "试试运气提供统一价格的神秘域名收购：.com（$79）、.net（$39）、.io（$29）、.co（$9），或任意TLD（$19统一价格）。每次收购都包含Ceche的16维评分估值报告。"
           },
           {
-            "q": "What are the marketplace fees?",
-            "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000."
+            "q": "市场费用是多少？",
+            "a": "标准上架：每个域名$5。优先上架：每个域名$10（包含72小时可见性提升）。佣金：成交价格的8-15%滑动比例——低于$500的交易15%，$500-$5,000为12%，$5,000-$50,000为10%，$50,000以上为8%。"
           },
           {
-            "q": "Do you offer refunds?",
-            "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable."
+            "q": "是否提供退款？",
+            "a": "不提供。数字商品（揭示、订阅、市场、试试运气）的所有费用均不可退还。"
           }
         ]
       },
       {
-        "title": "Tools",
+        "title": "工具",
         "items": [
           {
-            "q": "What's the difference between SEO Scanner and Extended Insights?",
-            "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring."
+            "q": "SEO扫描器和深度洞察有什么区别？",
+            "a": "SEO扫描器评估搜索可见性、反向链接概况、有机流量历史和关键词相关性——3-5秒内返回结果。深度洞察提供更深入的尽职调查，包括商标筛查、可比销售和购买意向评分。"
           },
           {
-            "q": "How does the Bulk Analyzer work?",
-            "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds."
+            "q": "批量分析器如何工作？",
+            "a": "上传包含一列（表头：'domain'）的CSV文件，每行一个域名。输出包括域名名称、Ceche估价、16维评分、优先级评分（1-100）、推荐操作和预估销售时间。处理5,000个域名大约需要2分28秒。"
           },
           {
-            "q": "How does the Trademark Monitor work?",
-            "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)."
+            "q": "商标监控如何工作？",
+            "a": "从仪表板将域名添加到您的监控列表。该工具每天筛选新的USPTO和WIPO备案。您在24小时内收到电子邮件提醒。严重程度级别：严重（相同类别的相同标记）、高（不同类别的相似标记）、中（不同商品的相似名称）、低（部分匹配）。"
           }
         ]
       },
       {
-        "title": "API & integrations",
+        "title": "API和集成",
         "items": [
           {
-            "q": "How do I authenticate API requests?",
-            "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys."
+            "q": "如何验证API请求？",
+            "a": "在Authorization头中包含您的API密钥作为Bearer令牌：Authorization: Bearer YOUR_API_KEY。从账户设置 > API密钥生成密钥。"
           },
           {
-            "q": "What are the API rate limits?",
-            "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC."
+            "q": "API速率限制是多少？",
+            "a": "免费版：每天100次调用。创业版（$79/月）：每天500次调用。企业版（$129/月）：每天10,000次调用。速率限制每天00:00 UTC重置。"
           },
           {
-            "q": "What SDKs are available?",
-            "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff."
+            "q": "有哪些SDK可用？",
+            "a": "Python、JavaScript/Node.js、Go和Ruby的官方SDK可用。Webhook配置可用于自动通知，使用指数退避重试逻辑。"
           }
         ]
       },
       {
-        "title": "Account & support",
+        "title": "账户和支持",
         "items": [
           {
-            "q": "How do I contact support?",
-            "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel."
+            "q": "如何联系支持？",
+            "a": "Premium订阅者在4个工作小时内收到回复。免费账户用户在24个工作小时内。企业版订阅者还可以通过私人Slack频道联系支持团队。"
           },
           {
-            "q": "Can I cancel my subscription?",
-            "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable."
+            "q": "可以取消订阅吗？",
+            "a": "可以。随时从账户设置 > 账单取消。您保留Premium访问权限直到当前计费周期结束。订阅费不可退还。"
           }
         ]
       }
@@ -2696,50 +2696,25 @@
     "badge": "API文档",
     "title1": "构建与",
     "title2": "Ceche。",
-    "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
+    "desc": "用于程序化域名智能分析的统一REST API。构建自定义集成、自动化工作流。",
     "baseUrl": "基础URL",
     "auth": "身份验证",
-    "endpoints": [
-      {
-        "title": "评估域名",
-        "desc": "返回完整的16维估价。包含估价、维度评分、品牌性评级和可比销售数据。"
-      },
-      {
-        "title": "批量评估",
-        "desc": "在单个请求中评估最多5,000个域名。返回个人估价、优先级评分和推荐操作。"
-      },
-      {
-        "title": "域名档案",
-        "desc": "获取完整的情报档案——估价、SEO指标、反向链接概况、流量历史和商标状态。"
-      },
-      {
-        "title": "商标检查",
-        "desc": "针对USPTO和WIPO商标数据库筛查域名名称。返回冲突严重程度和推荐操作。"
-      },
-      {
-        "title": "上架域名",
-        "desc": "在Ceche市场上架域名。标准（$5）或优先（$10）上架。"
-      },
-      {
-        "title": "注册webhook",
-        "desc": "注册webhook URL以获取估值变更、商标提醒和市场事件的实时通知。"
-      }
-    ],
+    "endpoints": "端点",
     "rateLimits": "速率限制",
     "limits": [
       {
-        "tier": "Free",
-        "limit": "100 calls/day",
+        "tier": "免费版",
+        "limit": "每天100次调用",
         "color": "#888888"
       },
       {
-        "tier": "Startup",
-        "limit": "500 calls/day",
+        "tier": "创业版",
+        "limit": "每天500次调用",
         "color": "#F4A261"
       },
       {
-        "tier": "Enterprise",
-        "limit": "10,000 calls/day",
+        "tier": "企业版",
+        "limit": "每天10,000次调用",
         "color": "#9E2A2B"
       }
     ],
@@ -2748,64 +2723,64 @@
       "title": "每天10,000次API调用",
       "cta": "获取API密钥"
     },
-    "openTool": "Open tool"
+    "openTool": "打开工具"
   },
   "helpContact": {
     "badge": "联系我们",
     "title1": "联系",
     "title2": "我们。",
-    "desc": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours.",
+    "desc": "Premium订阅者在4个工作小时内收到回复。免费账户用户在24个工作小时内。",
     "form": {
       "name": "姓名",
       "namePlaceholder": "您的姓名",
       "email": "电子邮件",
-      "emailPlaceholder": "you@company.com",
+      "emailPlaceholder": "your@company.com",
       "subject": "主题",
       "subjects": [
-        "General inquiry",
-        "Technical support",
-        "Billing question",
-        "Partnership",
-        "Press / Media"
+        "一般咨询",
+        "技术支持",
+        "账单问题",
+        "合作",
+        "媒体/新闻"
       ],
       "message": "消息",
-      "messagePlaceholder": "How can we help?",
+      "messagePlaceholder": "我们如何帮助您？",
       "send": "发送消息"
     },
     "channels": {
       "title": "其他联系方式",
       "email": {
-        "title": "Email",
+        "title": "电子邮件",
         "value": "support@ceche.net"
       },
       "slack": {
-        "title": "Enterprise Slack",
-        "value": "Private channel for Enterprise subscribers"
+        "title": "企业Slack",
+        "value": "企业版订阅者的私人频道"
       }
     },
     "responseTimes": {
       "title": "响应时间",
       "times": [
         {
-          "tier": "Enterprise",
-          "time": "4 hours",
+          "tier": "企业版",
+          "time": "4小时",
           "color": "#9E2A2B"
         },
         {
-          "tier": "Startup",
-          "time": "4 hours",
+          "tier": "创业版",
+          "time": "4小时",
           "color": "#F4A261"
         },
         {
-          "tier": "Free",
-          "time": "24 hours",
+          "tier": "免费版",
+          "time": "24小时",
           "color": "#888888"
         }
       ]
     },
     "businessHours": {
       "title": "营业时间",
-      "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers."
+      "desc": "周一至周五，上午9:00 - 下午6:00 ET。Premium企业版：24/7 Slack支持。所有企业版订阅者的关键问题全天候监控。"
     }
   },
   "helpChangelog": {
