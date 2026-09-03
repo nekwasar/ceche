@@ -229,5 +229,130 @@
       "apiKeys": "API Keys",
       "manageKeys": "Manage keys →"
     }
+  },
+  "pricingPage": {
+    "hero": {
+      "badge": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Start free. Upgrade when you need more power. Cancel anytime."
+    },
+    "annual": {
+      "banner": "Save up to $260/yr with annual billing",
+      "mostPopular": "Most Popular"
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "description": "Get started with basic tools. No credit card required.",
+        "annualNote": "",
+        "cta": "Get Started",
+        "features": [
+          "3 appraisals/day (unsigned)",
+          "12 appraisals/day (signed up)",
+          "Name search tool",
+          "Basic WHOIS lookup",
+          "Domain Scanner (DA, spam, backlinks)",
+          "Extended Insights (USPTO/WIPO)",
+          "Bulk Domain Audit",
+          "API access"
+        ],
+        "included": [true, true, true, true, false, false, false, false]
+      },
+      "startup": {
+        "name": "Premium Startup",
+        "description": "For small teams and serious domain investors.",
+        "annualNote": "saves $160/yr",
+        "cta": "Start Premium",
+        "features": [
+          "30 appraisals/day",
+          "Name search tool",
+          "Domain Scanner (DA, spam, backlinks)",
+          "Extended Insights (USPTO/WIPO)",
+          "Bulk Domain Audit",
+          "Priority marketplace listing",
+          "API access",
+          "Priority support"
+        ],
+        "included": [true, true, true, true, true, true, false, false]
+      },
+      "enterprise": {
+        "name": "Premium Enterprise",
+        "description": "For agencies, professionals, and power users.",
+        "annualNote": "saves $260/yr",
+        "cta": "Start Enterprise",
+        "features": [
+          "Unlimited appraisals",
+          "Name search tool",
+          "Domain Scanner (DA, spam, backlinks)",
+          "Extended Insights (USPTO/WIPO)",
+          "Bulk Domain Audit",
+          "Priority marketplace listing",
+          "Full API access",
+          "Priority support"
+        ],
+        "included": [true, true, true, true, true, true, true, true]
+      }
+    },
+    "tryYourLuck": {
+      "badge": "Try Your Luck",
+      "title": "Spin. Reveal. Own.",
+      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.",
+      "mostPopular": "Most Popular"
+    },
+    "fees": {
+      "reveal": {
+        "badge": "Marketplace",
+        "title": "Reveal Fees",
+        "description": "Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.",
+        "headers": { "tier": "Tier", "valueRange": "Value Range", "fee": "Fee" },
+        "rows": [
+          { "tier": "Low", "range": "Under $500", "fee": "$5" },
+          { "tier": "Mid", "range": "$500 – $5,000", "fee": "$10" },
+          { "tier": "High", "range": "$5,001 – $50,000", "fee": "$25" },
+          { "tier": "Premium", "range": "$50,001+", "fee": "$50" }
+        ]
+      },
+      "listing": {
+        "badge": "For Sellers",
+        "title": "Listing Fees",
+        "standard": { "name": "Standard listing", "desc": "30-day visibility", "price": "$5" },
+        "priority": { "name": "Priority placement", "desc": "72-hour boost + featured", "price": "$10" }
+      },
+      "commission": {
+        "badge": "Commissions",
+        "title": "Seller Commission Rates",
+        "headers": { "saleAmount": "Sale Amount", "rate": "Rate", "minFee": "Min Fee" },
+        "rows": [
+          { "amount": "$0 – $500", "rate": "15%", "min": "$10" },
+          { "amount": "$501 – $5,000", "rate": "12%", "min": "$50" },
+          { "amount": "$5,001 – $50,000", "rate": "10%", "min": "$500" },
+          { "amount": "$50,001+", "rate": "8%", "min": "$4,000" }
+        ]
+      }
+    },
+    "compare": {
+      "badge": "Compare",
+      "title": "Ceche vs the Competition",
+      "subtitle": "See how Ceche stacks up against legacy domain platforms.",
+      "headers": { "feature": "Feature", "ceche": "Ceche", "godaddy": "GoDaddy", "sedo": "Sedo" },
+      "rows": [
+        "AI domain valuation",
+        "16-dimension scoring",
+        "WHOIS + DNS intel",
+        "SEO/DA/spam scan",
+        "Bulk domain audit",
+        "Trademark monitoring",
+        "Marketplace reveal model",
+        "API access",
+        "Free tier available"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Create a free account in seconds. No credit card required.",
+      "signup": "Create Free Account",
+      "help": "Visit Help Center",
+      "lookup": "Free Domain Lookup"
+    }
   }
 }
