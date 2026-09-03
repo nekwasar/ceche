@@ -2699,7 +2699,32 @@
     "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
     "baseUrl": "基础URL",
     "auth": "身份验证",
-    "endpoints": "端点",
+    "endpoints": [
+      {
+        "title": "评估域名",
+        "desc": "返回完整的16维估价。包含估价、维度评分、品牌性评级和可比销售数据。"
+      },
+      {
+        "title": "批量评估",
+        "desc": "在单个请求中评估最多5,000个域名。返回个人估价、优先级评分和推荐操作。"
+      },
+      {
+        "title": "域名档案",
+        "desc": "获取完整的情报档案——估价、SEO指标、反向链接概况、流量历史和商标状态。"
+      },
+      {
+        "title": "商标检查",
+        "desc": "针对USPTO和WIPO商标数据库筛查域名名称。返回冲突严重程度和推荐操作。"
+      },
+      {
+        "title": "上架域名",
+        "desc": "在Ceche市场上架域名。标准（$5）或优先（$10）上架。"
+      },
+      {
+        "title": "注册webhook",
+        "desc": "注册webhook URL以获取估值变更、商标提醒和市场事件的实时通知。"
+      }
+    ],
     "rateLimits": "速率限制",
     "limits": [
       {
