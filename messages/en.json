@@ -354,5 +354,289 @@
       "help": "Visit Help Center",
       "lookup": "Free Domain Lookup"
     }
+  },
+  "tools": {
+    "scanner": {
+      "badge": "SEO SCANNER",
+      "title": "SEO Scanner",
+      "description": "Domain and SEO audit with DA, spam score, backlink profiles, and indexation status. Get instant insights into any domain's search engine health.",
+      "placeholder": "Enter domain to scan",
+      "scanButton": "Scan Now",
+      "scanningButton": "Scanning...",
+      "limitsTitle": "Scan Limits",
+      "limits": [
+        { "plan": "Startup", "scans": "30 per day", "price": "$79/mo" },
+        { "plan": "Enterprise", "scans": "Unlimited", "price": "$129/mo" }
+      ],
+      "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+          { "title": "Enter Domain", "desc": "Type any domain name into the search bar above." },
+          { "title": "Run Analysis", "desc": "Our engine scans 16 dimensions of domain health instantly." },
+          { "title": "Get Report", "desc": "View detailed SEO metrics, backlink data, and spam scores." }
+        ]
+      },
+      "features": {
+        "title": "What You Get",
+        "items": [
+          { "title": "Domain Authority & Page Authority", "desc": "DA and PA metrics with historical trends showing domain strength over time." },
+          { "title": "Backlink Profile", "desc": "Complete backlink analysis with referring domains and anchor text distribution." },
+          { "title": "Spam Score", "desc": "Machine learning spam detection with penalty risk assessment and recommendations." },
+          { "title": "Indexation Status", "desc": "Search engine indexation checks across Google, Bing, and Yandex." },
+          { "title": "Technical SEO", "desc": "Core Web Vitals, mobile-friendliness, and structured data analysis." },
+          { "title": "Competitor Analysis", "desc": "Compare domain metrics against top competitors in your niche." }
+        ]
+      },
+      "included": {
+        "title": "What's Included",
+        "items": [
+          "DA and PA metrics with historical trends",
+          "Complete backlink analysis with referring domains",
+          "Machine learning spam detection with penalty risk assessment",
+          "Search engine indexation checks across Google, Bing, and Yandex",
+          "Core Web Vitals, mobile-friendliness, and structured data analysis",
+          "Competitor comparison against top domains in your niche"
+        ],
+        "cta": "Need deeper analysis? Try Extended Insights →"
+      },
+      "cta": {
+        "title": "Ready for Deeper Analysis?",
+        "description": "Upgrade to access historical data, bulk scanning, and API integrations.",
+        "pricing": "View Pricing",
+        "extended": "View Extended Insights"
+      }
+    },
+    "lookup": {
+      "badge": "FREE TOOL",
+      "title": "Domain Lookup",
+      "description": "Instant WHOIS data, DNS records, and registration details for any domain. Get the intelligence you need in seconds.",
+      "placeholder": "Enter domain (e.g., example.com)",
+      "lookupButton": "Lookup",
+      "searchingButton": "Searching...",
+      "loading": "Fetching domain data...",
+      "whoisTitle": "WHOIS Information",
+      "dnsTitle": "DNS Records",
+      "dnsHeaders": ["Type", "Name", "Value", "TTL"],
+      "whoisLabels": ["Domain", "Registrar", "Registration Date", "Expiration Date", "Last Updated", "Nameservers", "Status", "Registrant Org", "Country"],
+      "needMore": {
+        "title": "Need More Details?",
+        "description": "Get historical data, trademark checks, and comprehensive domain intelligence with Extended Insights.",
+        "signup": "Signup Free",
+        "seoScan": "Run SEO Scan"
+      },
+      "empty": {
+        "title": "Enter a Domain to Get Started",
+        "description": "Search any domain to view WHOIS data, DNS records, and registration details."
+      }
+    },
+    "insights": {
+      "badge": "PREMIUM",
+      "title": "Extended Insights",
+      "description": "Deep historical data, DNS records, USPTO/WIPO trademark checks, and WHOIS/RDAP logs for comprehensive domain research.",
+      "cta": "Get Extended Insights",
+      "revealTitle": "Reveal Pricing",
+      "tiers": [
+        { "name": "Basic", "price": "$5", "desc": "Standard domain value" },
+        { "name": "Standard", "price": "$10", "desc": "Moderate domain value" },
+        { "name": "Premium", "price": "$25", "desc": "High-value domain" },
+        { "name": "Enterprise", "price": "$50", "desc": "Ultra-premium domain" }
+      ],
+      "pricingNote": "Pricing based on domain value and complexity",
+      "reportTitle": "What's Included in Your Report",
+      "sections": [
+        { "title": "Historical Data", "desc": "Wayback Machine snapshots and historical content changes over time." },
+        { "title": "DNS Records", "desc": "Complete DNS record enumeration including A, MX, NS, TXT, and CNAME." },
+        { "title": "WHOIS / RDAP", "desc": "Registration data, domain age, registrar history, and nameserver changes." },
+        { "title": "Trademark Checks", "desc": "USPTO and WIPO trademark database conflict detection." },
+        { "title": "SSL Certificate", "desc": "Certificate authority, expiry dates, and chain verification." },
+        { "title": "Server Intelligence", "desc": "Hosting provider, IP geolocation, and technology stack detection." }
+      ],
+      "useCasesTitle": "When to Use Extended Insights",
+      "useCases": [
+        { "title": "Domain Acquisition", "desc": "Research domain history before making an offer." },
+        { "title": "Trademark Clearance", "desc": "Check for conflicts before launching a brand." },
+        { "title": "Competitor Analysis", "desc": "Understand competitor domain strategies and history." },
+        { "title": "Portfolio Due Diligence", "desc": "Audit your portfolio for hidden risks and opportunities." }
+      ],
+      "ctaTitle": "Unlock Domain Intelligence",
+      "ctaDescription": "Get the complete picture with Extended Insights reports.",
+      "startFreeTrial": "Start Free Trial",
+      "tryLookup": "Try Domain Lookup First"
+    },
+    "bulk": {
+      "badge": "ENTERPRISE",
+      "title": "Bulk Analyzer",
+      "description": "Multi-domain batch evaluation tool for portfolio analysis and large-scale domain research. Process thousands of domains in seconds.",
+      "cta": "Get Bulk Access",
+      "statValue": "5,000",
+      "statLabel": "domains per batch",
+      "stats": [
+        { "value": "16", "label": "Dimensions" },
+        { "value": "4", "label": "TLDs" },
+        { "value": "<3s", "label": "Per Domain" }
+      ],
+      "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+          { "title": "Upload List", "desc": "Paste domains or upload a CSV file with up to 5,000 domains." },
+          { "title": "Configure Scoring", "desc": "Set custom weights for each of the 16 scoring dimensions." },
+          { "title": "Process", "desc": "Our engine evaluates all domains in parallel with priority queuing." },
+          { "title": "Export Results", "desc": "Download CSV with scores, pricing data, and priority rankings." }
+        ]
+      },
+      "outputTitle": "Output Columns",
+      "outputHeaders": ["Column", "Description", "Example"],
+      "outputRows": [
+        ["Domain", "The domain name analyzed", "example.com"],
+        ["Domain Rating", "Authority score 0-100", "72"],
+        ["SEO Score", "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)", "68"],
+        ["Buyer Intent", "Score 0-100 indicating purchase likelihood", "45"],
+        ["Priority Score", "Combined ranking across all dimensions", "High"],
+        ["Estimated Value", "Fair market value range", "$2,400 - $3,600"]
+      ],
+      "priorityTitle": "Priority Score Breakdown",
+      "dimensions": [
+        { "name": "Backlink Profile", "weight": "40%", "bar": 40 },
+        { "name": "Traffic Analysis", "weight": "30%", "bar": 30 },
+        { "name": "Keyword Metrics", "weight": "20%", "bar": 20 },
+        { "name": "Technical SEO", "weight": "10%", "bar": 10 }
+      ],
+      "customTitle": "Custom Scoring",
+      "customDescription": "Weight dimensions based on your specific use case. Whether you prioritize SEO metrics, traffic potential, or buyer intent, adjust the scoring to match your portfolio strategy.",
+      "modes": [
+        { "title": "Investor Mode", "desc": "Maximize ROI with traffic and value focus" },
+        { "title": "Developer Mode", "desc": "Prioritize technical metrics and authority" },
+        { "title": "Brand Mode", "desc": "Emphasize trademark safety and memorability" }
+      ],
+      "ctaTitle": "Ready to Scale Your Domain Research?",
+      "ctaDescription": "Process up to 5,000 domains per batch with Enterprise access.",
+      "startTrial": "Start Enterprise Trial",
+      "tryLookup": "Try Single Domain Lookup"
+    },
+    "api": {
+      "badge": "DEVELOPER",
+      "title": "API Access",
+      "description": "RESTful API for programmatic domain intelligence. Build custom integrations, automate workflows, and access all domain data programmatically.",
+      "getKey": "Get API Key",
+      "readDocs": "Read Documentation",
+      "buildTitle": "What You Can Build",
+      "buildCards": [
+        { "title": "Domain Portfolio Tracker", "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.", "linkText": "Try Domain Lookup" },
+        { "title": "Market Intelligence Dashboard", "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.", "linkText": "Explore Bulk Analyzer" },
+        { "title": "Brand Protection System", "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.", "linkText": "See Trademark Monitor" }
+      ],
+      "featuresTitle": "API Features",
+      "features": [
+        { "title": "RESTful API", "desc": "Full access to all domain intelligence endpoints with standard HTTP methods." },
+        { "title": "Webhooks", "desc": "Real-time notifications for domain changes and events via webhook callbacks." },
+        { "title": "Rate Limits", "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes." },
+        { "title": "SDKs", "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation." },
+        { "title": "Sandbox", "desc": "Test environment for development and integration testing before going live." },
+        { "title": "Documentation", "desc": "Complete API reference with code examples, tutorials, and best practices." }
+      ],
+      "ctaTitle": "Ready to Build?",
+      "ctaDescription": "Get your API key and start integrating domain intelligence today.",
+      "viewDocs": "View API Docs",
+      "modal": {
+        "title": "Get Your API Key",
+        "description": "Create a free account to get your API key and start building with domain intelligence data.",
+        "cta": "Create Free Account",
+        "back": "Go back"
+      }
+    },
+    "trademark": {
+      "badge": "PREMIUM",
+      "title": "Trademark Monitor",
+      "description": "USPTO/WIPO conflict detection and alerts. Protect your brand with proactive trademark monitoring across global databases.",
+      "cta": "Start Monitoring",
+      "severityTitle": "Threat Severity Levels",
+      "levels": [
+        { "level": "Critical", "desc": "Direct trademark conflict detected" },
+        { "level": "High", "desc": "Similar mark in same industry" },
+        { "level": "Medium", "desc": "Similar name, different class" },
+        { "level": "Low", "desc": "Minor similarity, low risk" }
+      ],
+      "problemTitle": "The Problem",
+      "problems": [
+        "Trademark infringement lawsuits cost $100K+ on average",
+        "New domain registrations happen every minute",
+        "Manual monitoring is impossible at scale",
+        "By the time you notice, damage is done"
+      ],
+      "solutionTitle": "Our Solution",
+      "solutions": [
+        "Real-time USPTO and WIPO database monitoring",
+        "Scan up to 5,000 domains per list",
+        "Instant conflict alerts via email and webhook",
+        "Risk scoring with confidence levels"
+      ],
+      "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+          { "title": "Add Domains", "desc": "Upload your brand domains or keywords to monitor." },
+          { "title": "Set Criteria", "desc": "Define industry, geographic scope, and sensitivity." },
+          { "title": "Monitor", "desc": "We scan USPTO, EUIPO, and WIPO databases continuously." },
+          { "title": "Get Alerts", "desc": "Receive instant notifications for potential conflicts." }
+        ]
+      },
+      "useCasesTitle": "Use Cases",
+      "useCases": [
+        { "title": "Brand Protection", "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs." },
+        { "title": "Product Launch", "content": "Clear trademarks before launching new products or entering new markets." },
+        { "title": "M&A Due Diligence", "content": "Audit trademark risks during mergers, acquisitions, or investment rounds." },
+        { "title": "Portfolio Management", "content": "Protect your domain portfolio from trademark challenges and legal disputes." }
+      ],
+      "pricingTitle": "Pricing",
+      "plans": [
+        { "plan": "Free", "price": "$0", "features": ["3 unsigned scans/day", "12 signed scans/day", "Basic metrics"] },
+        { "plan": "Startup", "price": "$79/mo", "features": ["30 scans/day", "Priority processing", "CSV export", "Email alerts"], "popular": true },
+        { "plan": "Enterprise", "price": "$129/mo", "features": ["Unlimited scans", "API access (10K calls/day)", "Webhook integration", "Dedicated support"] }
+      ],
+      "popular": "POPULAR",
+      "ctaTitle": "Protect Your Brand Today",
+      "ctaDescription": "Don't wait until it's too late. Start monitoring now.",
+      "startFreeTrial": "Start Free Trial",
+      "tryLookup": "Try Domain Lookup",
+      "runScan": "Run SEO Scan"
+    },
+    "database": {
+      "badge": "COMPREHENSIVE DATA",
+      "statValue": "2,847",
+      "statLabel": "TLDs tracked across all registries",
+      "description": "Access the most comprehensive domain database available. Track registrations, expirations, and pricing across every major TLD.",
+      "stats": [
+        { "value": "420M+", "label": "Domains Tracked", "desc": "Active registrations across all TLDs" },
+        { "value": "2.1B", "label": "Historical Records", "desc": "Registration and expiration history" },
+        { "value": "50K+", "label": "Daily Updates", "desc": "New registrations processed daily" },
+        { "value": "99.9%", "label": "Uptime", "desc": "Database availability guarantee" }
+      ],
+      "methodsTitle": "Search Methods",
+      "methods": [
+        { "title": "Single Lookup", "desc": "Search any domain for instant registration data and availability status." },
+        { "title": "Bulk Check", "desc": "Upload up to 5,000 domains at once for batch availability analysis." },
+        { "title": "API Query", "desc": "Programmatic access via RESTful API with up to 10,000 calls per day." }
+      ],
+      "sourcesTitle": "Data Sources",
+      "sources": [
+        { "source": "ICANN", "desc": "Official domain registration data" },
+        { "source": "Registry Operators", "desc": "Direct TLD zone file access" },
+        { "source": "WHOIS/RDAP", "desc": "Registration and contact information" },
+        { "source": "Wayback Machine", "desc": "Historical content snapshots" },
+        { "source": "Certificate Transparency", "desc": "SSL certificate monitoring" },
+        { "source": "DNS Resolvers", "desc": "Real-time DNS record verification" }
+      ],
+      "levelsTitle": "Access Levels",
+      "plans": [
+        { "plan": "Free", "price": "$0", "features": ["Basic lookup", "3 searches/day", "Limited TLDs"] },
+        { "plan": "Startup", "price": "$79/mo", "features": ["Full database", "30 searches/day", "CSV export", "Priority support"], "popular": true },
+        { "plan": "Enterprise", "price": "$129/mo", "features": ["Unlimited access", "API (10K calls/day)", "Webhooks", "Custom data"] }
+      ],
+      "popular": "POPULAR",
+      "ctaTitle": "Access the Complete Domain Database",
+      "ctaDescription": "2,847 TLDs, 420M+ domains, real-time data at your fingertips.",
+      "startFreeTrial": "Start Free Trial",
+      "tryLookup": "Try Domain Lookup",
+      "viewDocs": "View API Docs"
+    }
   }
 }
