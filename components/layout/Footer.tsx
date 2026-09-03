@@ -1,33 +1,36 @@
 import { Globe, ExternalLink } from "lucide-react";
-
-const footerLinks = {
-  products: [
-    { label: "Domain Appraiser", href: "/appraise" },
-    { label: "SEO Scanner", href: "/tools/seo-scanner" },
-    { label: "Extended Insights", href: "/tools/extended-insights" },
-    { label: "Bulk Analyzer", href: "/tools/bulk-analyzer" },
-    { label: "API Access", href: "/tools/api" },
-  ],
-  marketplace: [
-    { label: "Curated Domains", href: "/marketplace/curated" },
-    { label: "Try Your Luck", href: "/marketplace/try-your-luck" },
-    { label: "Sell Domains", href: "/marketplace/sell" },
-    { label: "How Unmasking Works", href: "/marketplace/how-unmasking-works" },
-  ],
-  company: [
-    { label: "About", href: "/company/about" },
-    { label: "Affiliates", href: "/company/affiliates" },
-    { label: "Blog", href: "/resources/blog" },
-    { label: "Contact", href: "/help/contact" },
-  ],
-  legal: [
-    { label: "Terms of Service", href: "/legal/terms" },
-    { label: "Privacy Policy", href: "/legal/privacy" },
-    { label: "Cookie Policy", href: "/legal/cookies" },
-  ],
-};
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations("footer");
+
+  const footerLinks = {
+    products: [
+      { label: t("links.domainAppraiser"), href: "/appraise" },
+      { label: t("links.seoScanner"), href: "/tools/seo-scanner" },
+      { label: t("links.extendedInsights"), href: "/tools/extended-insights" },
+      { label: t("links.bulkAnalyzer"), href: "/tools/bulk-analyzer" },
+      { label: t("links.apiAccess"), href: "/tools/api" },
+    ],
+    marketplace: [
+      { label: t("links.curatedDomains"), href: "/marketplace/curated" },
+      { label: t("links.tryYourLuck"), href: "/marketplace/try-your-luck" },
+      { label: t("links.sellDomains"), href: "/marketplace/sell" },
+      { label: t("links.howUnmaskingWorks"), href: "/marketplace/how-unmasking-works" },
+    ],
+    company: [
+      { label: t("links.about"), href: "/company/about" },
+      { label: t("links.affiliates"), href: "/company/affiliates" },
+      { label: t("links.blog"), href: "/resources/blog" },
+      { label: t("links.contact"), href: "/help/contact" },
+    ],
+    legal: [
+      { label: t("links.terms"), href: "/legal/terms" },
+      { label: t("links.privacy"), href: "/legal/privacy" },
+      { label: t("links.cookies"), href: "/legal/cookies" },
+    ],
+  };
+
   return (
     <footer className="bg-slate text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -37,7 +40,7 @@ export function Footer() {
               <span className="font-branded text-2xl font-bold tracking-tight text-white">Ceche</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
-              Enterprise-grade domain intelligence and marketplace platform.
+              {t("tagline")}
             </p>
             <div className="flex items-center gap-3 mt-6">
               <a href="#" className="text-white/40 hover:text-accent transition-colors">
@@ -53,7 +56,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Products</h4>
+            <h4 className="font-semibold text-sm mb-4">{t("sections.products")}</h4>
             <ul className="space-y-2.5">
               {footerLinks.products.map((link) => (
                 <li key={link.href}>
@@ -66,7 +69,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Marketplace</h4>
+            <h4 className="font-semibold text-sm mb-4">{t("sections.marketplace")}</h4>
             <ul className="space-y-2.5">
               {footerLinks.marketplace.map((link) => (
                 <li key={link.href}>
@@ -79,7 +82,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Company</h4>
+            <h4 className="font-semibold text-sm mb-4">{t("sections.company")}</h4>
             <ul className="space-y-2.5">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
@@ -92,7 +95,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm mb-4">Legal</h4>
+            <h4 className="font-semibold text-sm mb-4">{t("sections.legal")}</h4>
             <ul className="space-y-2.5">
               {footerLinks.legal.map((link) => (
                 <li key={link.href}>
@@ -107,11 +110,11 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm">
-            &copy; {new Date().getFullYear()} Ceche. All rights reserved.
+            &copy; {new Date().getFullYear()} Ceche. {t("copyright")}
           </p>
           <div className="flex items-center gap-2 text-white/30 text-sm">
             <Globe className="w-3.5 h-3.5" />
-            <span>Domain Intelligence Platform</span>
+            <span>{t("platform")}</span>
           </div>
         </div>
       </div>

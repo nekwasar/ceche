@@ -1,67 +1,81 @@
 {
   "nav": {
-    "platform": "Plattform",
-    "solutions": "Lösungen",
-    "resources": "Ressourcen",
-    "pricing": "Preise",
-    "login": "Anmelden",
-    "getStarted": "Loslegen"
-  },
-  "home": {
-    "title": "Finden Sie Premium-Domains vor allen anderen",
-    "subtitle": "Domain-Entdeckungs-, Intelligenz- und Marktplattform",
-    "cta": "Loslegen",
-    "features": {
-      "appraiser": {
-        "title": "Domain-Bewerter",
-        "description": "Bewerten Sie jeden Domain-Namen mit unserer 15-Modul-Analyse"
-      },
-      "scanner": {
-        "title": "Domain-Scanner",
-        "description": "Finden Sie verfügbare Premium-Domains vor allen anderen"
-      },
-      "marketplace": {
-        "title": "Domain-Marktplatz",
-        "description": "Kaufen Sie Premium-Domains mit vollständigen Intelligenzdaten"
-      }
-    }
-  },
-  "platform": {
-    "title": "Plattform",
-    "subtitle": "Domain-Entdeckung, Intelligenz und Marktplatz"
-  },
-  "pricing": {
-    "title": "Einfache, transparente Preise",
-    "free": {
-      "name": "Kostenlos",
-      "price": "0€",
-      "period": "für immer",
-      "features": ["5 Enthüllungen/Monat", "Basis-Bewertung", "Gesundheitscheck"]
+    "triggers": {
+      "products": "Products",
+      "marketplace": "Marketplace",
+      "solutions": "Solutions",
+      "resources": "Resources"
     },
-    "starter": {
-      "name": "Starter",
-      "price": "29€",
-      "period": "/Monat",
-      "features": ["50 Enthüllungen/Monat", "Alle Typen", "Basis-Alarme"]
+    "links": {
+      "pricing": "Pricing",
+      "login": "Log In",
+      "signup": "Signup Free"
     },
-    "pro": {
-      "name": "Pro",
-      "price": "49€",
-      "period": "/Monat",
-      "features": ["200 Enthüllungen/Monat", "Alle Typen", "Prioritäts-Support"]
+    "categories": {
+      "intelligence": "Intelligence",
+      "platform": "Platform",
+      "buyDomains": "Buy Domains",
+      "sellDomains": "Sell Domains",
+      "byRole": "By Role",
+      "byNeed": "By Need",
+      "explore": "Explore",
+      "support": "Support"
     },
-    "enterprise": {
-      "name": "Unternehmen",
-      "price": "199€",
-      "period": "/Monat",
-      "features": ["Unbegrenzte Enthüllungen", "API-Zugang", "White-Label"]
+    "items": {
+      "domainLookup": { "title": "Domain Lookup", "desc": "Free tool: WHOIS data, DNS records." },
+      "appraisal": { "title": "16-Dimension Appraisal", "desc": "Deep domain valuation with 16 metric breakdowns and market-based pricing." },
+      "domainScanner": { "title": "Domain Scanner", "desc": "Premium tool: DA, spam score, backlink profiles, and indexation status. Requires subscription." },
+      "extendedInsights": { "title": "Extended Insights", "desc": "Premium tool: deep DNS records, USPTO/WIPO trademarks, and WHOIS history." },
+      "bulkAudit": { "title": "Bulk Domain Audit", "desc": "Premium tool: batch process and analyze up to 1000 domains at once." },
+      "apiAccess": { "title": "API Access", "desc": "RESTful API for programmatic domain intelligence at scale." },
+      "trademarkMonitor": { "title": "Trademark Monitor", "desc": "USPTO/WIPO conflict detection and automated alerts." },
+      "domainDatabase": { "title": "Domain Database", "desc": "Comprehensive TLD registry and expiry tracking." },
+      "standardMarketplace": { "title": "Standard Marketplace", "desc": "Browse premium domains with full stats. Name hidden — pay to reveal." },
+      "curatedDomains": { "title": "Curated Domains", "desc": "Hand-picked premium domains verified by our team." },
+      "tryYourLuck": { "title": "Try Your Luck", "desc": "Pick a TLD, spin 3 boxes, reveal a premium domain. Locked exclusively for you." },
+      "listDomain": { "title": "List a Domain", "desc": "Sell your premium domain on Ceche. $5-$10 listing fee, 8-15% commission." },
+      "domainInvestors": { "title": "Domain Investors", "desc": "Portfolio yield tracking, flipper valuation, and drop-catching alerts." },
+      "startupFounders": { "title": "Startup Founders", "desc": "Brandability index, pronounceability, and extension checking." },
+      "seoAgencies": { "title": "SEO Agencies", "desc": "Expired domain backlink authority scoring and spam recovery audits." },
+      "findAvailable": { "title": "Find Available Domains", "desc": "Scan millions of combinations for available premium names." },
+      "researchIntelligence": { "title": "Research Intelligence", "desc": "Deep domain analysis before acquisition decisions." },
+      "buyPremium": { "title": "Buy Premium Domains", "desc": "Acquire high-value domains with secure, transparent transactions." },
+      "blog": { "title": "Blog", "desc": "Domain investing tips, platform updates, and industry insights." },
+      "ebooks": { "title": "Ebooks", "desc": "In-depth guides on domain valuation, SEO, and brand strategy." },
+      "caseStudies": { "title": "Case Studies", "desc": "Real stories from domain investors and startup founders." },
+      "helpCenter": { "title": "Help Center", "desc": "Documentation, FAQs, and getting started guides." },
+      "apiDocs": { "title": "API Docs", "desc": "API reference, authentication, and integration guides." },
+      "contact": { "title": "Contact", "desc": "Reach our team for support or partnerships." },
+      "changelog": { "title": "Changelog", "desc": "Product updates and new feature releases." }
     }
   },
   "footer": {
-    "product": "Produkt",
-    "resources": "Ressourcen",
-    "company": "Unternehmen",
-    "legal": "Rechtliches",
-    "copyright": "© 2026 Ceche. Alle Rechte vorbehalten."
+    "tagline": "Enterprise-grade domain intelligence and marketplace platform.",
+    "sections": {
+      "products": "Products",
+      "marketplace": "Marketplace",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "domainAppraiser": "Domain Appraiser",
+      "seoScanner": "SEO Scanner",
+      "extendedInsights": "Extended Insights",
+      "bulkAnalyzer": "Bulk Analyzer",
+      "apiAccess": "API Access",
+      "curatedDomains": "Curated Domains",
+      "tryYourLuck": "Try Your Luck",
+      "sellDomains": "Sell Domains",
+      "howUnmaskingWorks": "How Unmasking Works",
+      "about": "About",
+      "affiliates": "Affiliates",
+      "blog": "Blog",
+      "contact": "Contact",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy"
+    },
+    "copyright": "All rights reserved.",
+    "platform": "Domain Intelligence Platform"
   }
 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Search, X, ChevronDown, ChevronRight, BarChart3, Globe, ShoppingCart, Users, BookOpen, Shield, Rocket, TrendingUp, Eye, FileSearch, Layers, Database, Gavel, Code } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 
 type MegaMenuKey = "products" | "marketplace" | "solutions" | "resources" | null;
@@ -18,94 +19,88 @@ interface MegaMenuCategory {
   items: MegaMenuItem[];
 }
 
-const megaMenuData: Record<MegaMenuKey, MegaMenuCategory[]> = {
-  products: [
-    {
-      label: "Intelligence",
-      items: [
-        { icon: <Globe className="w-5 h-5" />, title: "Domain Lookup", desc: "Free tool: WHOIS data, DNS records.", href: "/tools/domain-lookup" },
-        { icon: <BarChart3 className="w-5 h-5" />, title: "16-Dimension Appraisal", desc: "Deep domain valuation with 16 metric breakdowns and market-based pricing.", href: "/appraise" },
-        { icon: <Globe className="w-5 h-5" />, title: "Domain Scanner", desc: "Premium tool: DA, spam score, backlink profiles, and indexation status. Requires subscription.", href: "/tools/seo-scanner" },
-        { icon: <Eye className="w-5 h-5" />, title: "Extended Insights", desc: "Premium tool: deep DNS records, USPTO/WIPO trademarks, and WHOIS history.", href: "/tools/extended-insights" },
-        { icon: <Layers className="w-5 h-5" />, title: "Bulk Domain Audit", desc: "Premium tool: batch process and analyze up to 1000 domains at once.", href: "/tools/bulk-analyzer" },
-      ],
-    },
-    {
-      label: "Platform",
-      items: [
-        { icon: <Code className="w-5 h-5" />, title: "API Access", desc: "RESTful API for programmatic domain intelligence at scale.", href: "/tools/api" },
-        { icon: <Shield className="w-5 h-5" />, title: "Trademark Monitor", desc: "USPTO/WIPO conflict detection and automated alerts.", href: "/tools/trademark-monitor" },
-        { icon: <Database className="w-5 h-5" />, title: "Domain Database", desc: "Comprehensive TLD registry and expiry tracking.", href: "/tools/domain-database" },
-      ],
-    },
-  ],
-  marketplace: [
-    {
-      label: "Buy Domains",
-      items: [
-        { icon: <ShoppingCart className="w-5 h-5" />, title: "Standard Marketplace", desc: "Browse premium domains with full stats. Name hidden — pay to reveal.", href: "/marketplace" },
-        { icon: <Layers className="w-5 h-5" />, title: "Curated Domains", desc: "Hand-picked premium domains verified by our team.", href: "/marketplace/curated" },
-        { icon: <Gavel className="w-5 h-5" />, title: "Try Your Luck", desc: "Pick a TLD, spin 3 boxes, reveal a premium domain. Locked exclusively for you.", href: "/marketplace/try-your-luck" },
-      ],
-    },
-    {
-      label: "Sell Domains",
-      items: [
-        { icon: <TrendingUp className="w-5 h-5" />, title: "List a Domain", desc: "Sell your premium domain on Ceche. $5-$10 listing fee, 8-15% commission.", href: "/marketplace/sell" },
-      ],
-    },
-  ],
-  solutions: [
-    {
-      label: "By Role",
-      items: [
-        { icon: <TrendingUp className="w-5 h-5" />, title: "Domain Investors", desc: "Portfolio yield tracking, flipper valuation, and drop-catching alerts.", href: "/solutions/domain-investors" },
-        { icon: <Rocket className="w-5 h-5" />, title: "Startup Founders", desc: "Brandability index, pronounceability, and extension checking.", href: "/solutions/startup-founders" },
-        { icon: <BarChart3 className="w-5 h-5" />, title: "SEO Agencies", desc: "Expired domain backlink authority scoring and spam recovery audits.", href: "/solutions/seo-agencies" },
-      ],
-    },
-    {
-      label: "By Need",
-      items: [
-        { icon: <Globe className="w-5 h-5" />, title: "Find Available Domains", desc: "Scan millions of combinations for available premium names.", href: "/solutions/find-available" },
-        { icon: <Eye className="w-5 h-5" />, title: "Research Intelligence", desc: "Deep domain analysis before acquisition decisions.", href: "/solutions/research-intelligence" },
-        { icon: <ShoppingCart className="w-5 h-5" />, title: "Buy Premium Domains", desc: "Acquire high-value domains with secure, transparent transactions.", href: "/solutions/buy-premium" },
-      ],
-    },
-  ],
-  resources: [
-    {
-      label: "Explore",
-      items: [
-        { icon: <BookOpen className="w-5 h-5" />, title: "Blog", desc: "Domain investing tips, platform updates, and industry insights.", href: "/resources/blog" },
-        { icon: <FileSearch className="w-5 h-5" />, title: "Ebooks", desc: "In-depth guides on domain valuation, SEO, and brand strategy.", href: "/resources/ebooks" },
-        { icon: <Users className="w-5 h-5" />, title: "Case Studies", desc: "Real stories from domain investors and startup founders.", href: "/resources/case-studies" },
-      ],
-    },
-    {
-      label: "Support",
-      items: [
-        { icon: <FileSearch className="w-5 h-5" />, title: "Help Center", desc: "Documentation, FAQs, and getting started guides.", href: "/help" },
-        { icon: <BookOpen className="w-5 h-5" />, title: "API Docs", desc: "API reference, authentication, and integration guides.", href: "/help/api" },
-        { icon: <Users className="w-5 h-5" />, title: "Contact", desc: "Reach our team for support or partnerships.", href: "/help/contact" },
-        { icon: <Globe className="w-5 h-5" />, title: "Changelog", desc: "Product updates and new feature releases.", href: "/help/changelog" },
-      ],
-    },
-  ],
-};
+function getMegaMenuData(t: any): Record<MegaMenuKey, MegaMenuCategory[]> {
+  return {
+    products: [
+      {
+        label: t("categories.intelligence"),
+        items: [
+          { icon: <Globe className="w-5 h-5" />, title: t("items.domainLookup.title"), desc: t("items.domainLookup.desc"), href: "/tools/domain-lookup" },
+          { icon: <BarChart3 className="w-5 h-5" />, title: t("items.appraisal.title"), desc: t("items.appraisal.desc"), href: "/appraise" },
+          { icon: <Globe className="w-5 h-5" />, title: t("items.domainScanner.title"), desc: t("items.domainScanner.desc"), href: "/tools/seo-scanner" },
+          { icon: <Eye className="w-5 h-5" />, title: t("items.extendedInsights.title"), desc: t("items.extendedInsights.desc"), href: "/tools/extended-insights" },
+          { icon: <Layers className="w-5 h-5" />, title: t("items.bulkAudit.title"), desc: t("items.bulkAudit.desc"), href: "/tools/bulk-analyzer" },
+        ],
+      },
+      {
+        label: t("categories.platform"),
+        items: [
+          { icon: <Code className="w-5 h-5" />, title: t("items.apiAccess.title"), desc: t("items.apiAccess.desc"), href: "/tools/api" },
+          { icon: <Shield className="w-5 h-5" />, title: t("items.trademarkMonitor.title"), desc: t("items.trademarkMonitor.desc"), href: "/tools/trademark-monitor" },
+          { icon: <Database className="w-5 h-5" />, title: t("items.domainDatabase.title"), desc: t("items.domainDatabase.desc"), href: "/tools/domain-database" },
+        ],
+      },
+    ],
+    marketplace: [
+      {
+        label: t("categories.buyDomains"),
+        items: [
+          { icon: <ShoppingCart className="w-5 h-5" />, title: t("items.standardMarketplace.title"), desc: t("items.standardMarketplace.desc"), href: "/marketplace" },
+          { icon: <Layers className="w-5 h-5" />, title: t("items.curatedDomains.title"), desc: t("items.curatedDomains.desc"), href: "/marketplace/curated" },
+          { icon: <Gavel className="w-5 h-5" />, title: t("items.tryYourLuck.title"), desc: t("items.tryYourLuck.desc"), href: "/marketplace/try-your-luck" },
+        ],
+      },
+      {
+        label: t("categories.sellDomains"),
+        items: [
+          { icon: <TrendingUp className="w-5 h-5" />, title: t("items.listDomain.title"), desc: t("items.listDomain.desc"), href: "/marketplace/sell" },
+        ],
+      },
+    ],
+    solutions: [
+      {
+        label: t("categories.byRole"),
+        items: [
+          { icon: <TrendingUp className="w-5 h-5" />, title: t("items.domainInvestors.title"), desc: t("items.domainInvestors.desc"), href: "/solutions/domain-investors" },
+          { icon: <Rocket className="w-5 h-5" />, title: t("items.startupFounders.title"), desc: t("items.startupFounders.desc"), href: "/solutions/startup-founders" },
+          { icon: <BarChart3 className="w-5 h-5" />, title: t("items.seoAgencies.title"), desc: t("items.seoAgencies.desc"), href: "/solutions/seo-agencies" },
+        ],
+      },
+      {
+        label: t("categories.byNeed"),
+        items: [
+          { icon: <Globe className="w-5 h-5" />, title: t("items.findAvailable.title"), desc: t("items.findAvailable.desc"), href: "/solutions/find-available" },
+          { icon: <Eye className="w-5 h-5" />, title: t("items.researchIntelligence.title"), desc: t("items.researchIntelligence.desc"), href: "/solutions/research-intelligence" },
+          { icon: <ShoppingCart className="w-5 h-5" />, title: t("items.buyPremium.title"), desc: t("items.buyPremium.desc"), href: "/solutions/buy-premium" },
+        ],
+      },
+    ],
+    resources: [
+      {
+        label: t("categories.explore"),
+        items: [
+          { icon: <BookOpen className="w-5 h-5" />, title: t("items.blog.title"), desc: t("items.blog.desc"), href: "/resources/blog" },
+          { icon: <FileSearch className="w-5 h-5" />, title: t("items.ebooks.title"), desc: t("items.ebooks.desc"), href: "/resources/ebooks" },
+          { icon: <Users className="w-5 h-5" />, title: t("items.caseStudies.title"), desc: t("items.caseStudies.desc"), href: "/resources/case-studies" },
+        ],
+      },
+      {
+        label: t("categories.support"),
+        items: [
+          { icon: <FileSearch className="w-5 h-5" />, title: t("items.helpCenter.title"), desc: t("items.helpCenter.desc"), href: "/help" },
+          { icon: <BookOpen className="w-5 h-5" />, title: t("items.apiDocs.title"), desc: t("items.apiDocs.desc"), href: "/help/api" },
+          { icon: <Users className="w-5 h-5" />, title: t("items.contact.title"), desc: t("items.contact.desc"), href: "/help/contact" },
+          { icon: <Globe className="w-5 h-5" />, title: t("items.changelog.title"), desc: t("items.changelog.desc"), href: "/help/changelog" },
+        ],
+      },
+    ],
+  };
+}
 
-const navTriggers: { key: MegaMenuKey; label: string }[] = [
-  { key: "products", label: "Products" },
-  { key: "marketplace", label: "Marketplace" },
-  { key: "solutions", label: "Solutions" },
-  { key: "resources", label: "Resources" },
-];
-
-const navLinks: { label: string; href: string }[] = [
-  { label: "Pricing", href: "/pricing" },
-];
+const navTriggerKeys: MegaMenuKey[] = ["products", "marketplace", "solutions", "resources"];
 
 export function Navbar() {
+  const t = useTranslations("nav");
   const [activeMenu, setActiveMenu] = useState<MegaMenuKey>(null);
   const [activeCategory, setActiveCategory] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -125,6 +120,8 @@ export function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const megaMenuData = getMegaMenuData(t);
 
   const openMenu = useCallback((key: MegaMenuKey) => {
     if (hoverTimeoutRef.current) {
@@ -166,6 +163,14 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
+  const triggerLabels: Record<MegaMenuKey, string> = {
+    products: t("triggers.products"),
+    marketplace: t("triggers.marketplace"),
+    solutions: t("triggers.solutions"),
+    resources: t("triggers.resources"),
+    null: "",
+  };
+
   return (
     <>
       <header
@@ -181,7 +186,7 @@ export function Navbar() {
               </a>
 
               <nav className="hidden lg:flex items-center gap-0" ref={navRef}>
-                {navTriggers.map(({ key, label }) => (
+                {navTriggerKeys.map((key) => (
                   <div
                     key={key}
                     onMouseEnter={() => openMenu(key)}
@@ -195,7 +200,7 @@ export function Navbar() {
                           : "text-white/80 hover:text-white"
                       }`}
                     >
-                      {label}
+                      {triggerLabels[key]}
                       <ChevronDown className={`w-3.5 h-3.5 transition-transform ${
                         activeMenu === key ? "rotate-180" : ""
                       }`} />
@@ -205,15 +210,12 @@ export function Navbar() {
                     )}
                   </div>
                 ))}
-                {navLinks.map(({ label, href }) => (
-                  <a
-                    key={href}
-                    href={href}
-                    className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors"
-                  >
-                    {label}
-                  </a>
-                ))}
+                <a
+                  href="/pricing"
+                  className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors"
+                >
+                  {t("links.pricing")}
+                </a>
               </nav>
             </div>
 
@@ -222,10 +224,10 @@ export function Navbar() {
                 <Search className="w-4 h-4" />
               </button>
               <a href="/login" className="hidden md:block text-white/80 hover:text-white text-sm font-medium transition-colors">
-                Log In
+                {t("links.login")}
               </a>
               <a href="/signup" className="cta-button hidden sm:inline-flex">
-                Signup Free
+                {t("links.signup")}
               </a>
               <LanguageSwitcher />
 
@@ -262,10 +264,7 @@ export function Navbar() {
                   {(Object.keys(megaMenuData) as MegaMenuKey[]).map((sectionKey) => (
                     <div key={sectionKey} className="flex-1">
                       <p className="text-white/50 text-sm font-bold uppercase tracking-wider mb-3 px-3">
-                        {sectionKey === "products" && "Products"}
-                        {sectionKey === "marketplace" && "Marketplace"}
-                        {sectionKey === "solutions" && "Solutions"}
-                        {sectionKey === "resources" && "Resources"}
+                        {triggerLabels[sectionKey]}
                       </p>
                       <div className="space-y-1">
                         {megaMenuData[sectionKey]?.map((cat, i) => (
@@ -354,13 +353,13 @@ export function Navbar() {
 
           <div className="px-4 sm:px-6 pb-8">
             <div className="space-y-1">
-              {navTriggers.map(({ key, label }) => (
+              {navTriggerKeys.map((key) => (
                 <div key={key}>
                   <button
                     onClick={() => setMobileExpanded(mobileExpanded === key ? null : key)}
                     className="w-full flex items-center justify-between py-3 text-white/90 hover:text-white text-base font-medium border-b border-white/10"
                   >
-                    {label}
+                    {triggerLabels[key]}
                     <ChevronDown className={`w-4 h-4 transition-transform ${mobileExpanded === key ? "rotate-180" : ""}`} />
                   </button>
                   {mobileExpanded === key && (
@@ -393,16 +392,16 @@ export function Navbar() {
                 </div>
               ))}
               <a href="/pricing" className="flex items-center justify-between py-3 text-white/90 hover:text-white text-base font-medium border-b border-white/10">
-                Pricing
+                {t("links.pricing")}
               </a>
             </div>
 
             <div className="mt-6 pt-6 border-t border-white/10 space-y-3">
               <a href="/login" className="block text-white/80 hover:text-white text-base font-medium">
-                Log In
+                {t("links.login")}
               </a>
               <a href="/signup" className="cta-button block text-center">
-                Signup Free
+                {t("links.signup")}
               </a>
             </div>
           </div>
