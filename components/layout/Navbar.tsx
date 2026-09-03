@@ -219,17 +219,29 @@ export function Navbar() {
               </nav>
             </div>
 
-            <div className="flex items-center gap-3 md:gap-5">
-              <button className="hidden md:flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
-                <Search className="w-4 h-4" />
-              </button>
+            {/* Search Bar - Center */}
+            <div className="hidden lg:flex flex-1 max-w-md mx-6">
+              <form onSubmit={(e) => { e.preventDefault(); const q = (e.target as HTMLFormElement).querySelector('input')?.value; if (q?.trim()) window.location.href = `/search?q=${encodeURIComponent(q.trim())}`; }} className="flex items-center w-full">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
+                  <input
+                    type="text"
+                    placeholder={t("searchPlaceholder") || "Search domains..."}
+                    className="w-full pl-9 pr-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white text-sm placeholder-white/40 outline-none focus:border-white/40 transition-colors"
+                  />
+                </div>
+              </form>
+            </div>
+
+            {/* Right Nav */}
+            <div className="flex items-center gap-3 md:gap-4">
+              <LanguageSwitcher />
               <a href="/login" className="hidden md:block text-white/80 hover:text-white text-sm font-medium transition-colors">
                 {t("links.login")}
               </a>
               <a href="/signup" className="cta-button hidden sm:inline-flex">
                 {t("links.signup")}
               </a>
-              <LanguageSwitcher />
 
               {mounted && (
               <button
