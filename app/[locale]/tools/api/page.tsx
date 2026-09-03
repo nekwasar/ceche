@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Link2, BarChart3, Shield } from "lucide-react";
 
 export default function ApiPage() {
   const [showModal, setShowModal] = useState(false);
@@ -46,15 +47,17 @@ export default function ApiPage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {[
-            { icon: "🔗", title: "Domain Portfolio Tracker", desc: "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.", link: "/tools/domain-lookup", linkText: "Try Domain Lookup" },
-            { icon: "📊", title: "Market Intelligence Dashboard", desc: "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.", link: "/tools/bulk-analyzer", linkText: "Explore Bulk Analyzer" },
-            { icon: "🛡️", title: "Brand Protection System", desc: "Automate trademark monitoring and get instant alerts for potential brand conflicts.", link: "/tools/trademark-monitor", linkText: "See Trademark Monitor" },
+            { icon: Link2, title: "Domain Portfolio Tracker", desc: "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.", link: "/tools/domain-lookup", linkText: "Try Domain Lookup" },
+            { icon: BarChart3, title: "Market Intelligence Dashboard", desc: "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.", link: "/tools/bulk-analyzer", linkText: "Explore Bulk Analyzer" },
+            { icon: Shield, title: "Brand Protection System", desc: "Automate trademark monitoring and get instant alerts for potential brand conflicts.", link: "/tools/trademark-monitor", linkText: "See Trademark Monitor" },
           ].map((item) => (
             <div
               key={item.title}
               className="bg-white rounded-xl p-6 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex flex-col"
             >
-              <div className="text-4xl mb-4">{item.icon}</div>
+              <div className="w-10 h-10 rounded-lg bg-[#9E2A2B]/10 flex items-center justify-center mb-4">
+                <item.icon className="w-5 h-5 text-[#9E2A2B]" />
+              </div>
               <h3 className="text-base md:text-lg font-bold text-[#111] mb-2">{item.title}</h3>
               <p className="text-sm text-[#666] leading-relaxed mb-5 flex-1">{item.desc}</p>
               <Link href={item.link} className="text-[#9E2A2B] font-semibold text-sm no-underline hover:underline">

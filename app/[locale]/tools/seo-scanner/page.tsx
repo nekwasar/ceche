@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import PremiumGateModal from "@/components/layout/PremiumGateModal";
+import { BarChart3, Link2, AlertTriangle, Search, Zap, TrendingUp } from "lucide-react";
 
 export default function SeoScannerPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -114,15 +115,15 @@ export default function SeoScannerPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
             {[
-              { icon: "📊", title: "Domain Authority & Page Authority", desc: "DA and PA metrics with historical trends showing domain strength over time." },
-              { icon: "🔗", title: "Backlink Profile", desc: "Complete backlink analysis with referring domains and anchor text distribution." },
-              { icon: "⚠️", title: "Spam Score", desc: "Machine learning spam detection with penalty risk assessment and recommendations." },
-              { icon: "🔍", title: "Indexation Status", desc: "Search engine indexation checks across Google, Bing, and Yandex." },
-              { icon: "⚡", title: "Technical SEO", desc: "Core Web Vitals, mobile-friendliness, and structured data analysis." },
-              { icon: "📈", title: "Competitor Analysis", desc: "Compare domain metrics against top competitors in your niche." },
+              { icon: BarChart3, title: "Domain Authority & Page Authority", desc: "DA and PA metrics with historical trends showing domain strength over time." },
+              { icon: Link2, title: "Backlink Profile", desc: "Complete backlink analysis with referring domains and anchor text distribution." },
+              { icon: AlertTriangle, title: "Spam Score", desc: "Machine learning spam detection with penalty risk assessment and recommendations." },
+              { icon: Search, title: "Indexation Status", desc: "Search engine indexation checks across Google, Bing, and Yandex." },
+              { icon: Zap, title: "Technical SEO", desc: "Core Web Vitals, mobile-friendliness, and structured data analysis." },
+              { icon: TrendingUp, title: "Competitor Analysis", desc: "Compare domain metrics against top competitors in your niche." },
             ].map((item) => (
               <div key={item.title} className="bg-[#FAF7F2] rounded-xl p-6 md:p-7">
-                <div className="text-3xl mb-3">{item.icon}</div>
+                <div className="mb-3"><item.icon className="w-8 h-8 text-[#9E2A2B]" /></div>
                 <h3 className="text-base font-bold text-[#111] mb-2">{item.title}</h3>
                 <p className="text-sm text-[#666] leading-relaxed">{item.desc}</p>
               </div>

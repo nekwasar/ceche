@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Lock, Package } from "lucide-react";
 
 const tldOptions = [
   { tld: ".com", price: 79 },
@@ -113,7 +114,7 @@ export default function TryYourLuckPage() {
                   {spinning ? (
                     <div className="w-7 h-7 border-2 border-[#999] border-t-transparent rounded-full animate-spin" />
                   ) : (
-                    <>📦</>
+                    <Package className="w-8 h-8 text-[#9E2A2B]" />
                   )}
                   {revealed && (
                     <span className="text-[11px] text-[#999]">Click to reveal</span>
@@ -127,7 +128,7 @@ export default function TryYourLuckPage() {
         {/* Locked Notice */}
         {revealed && (
           <div className="bg-[#EFECE6] rounded-2xl p-6 md:p-8 border border-black/5 max-w-[500px] mx-auto mb-12 md:mb-16 text-center">
-            <div className="text-3xl mb-3">🔒</div>
+            <Lock className="w-8 h-8 text-[#9E2A2B] mx-auto mb-3" />
             <h3 className="text-lg font-bold text-[#111] mb-2">Domain Locked</h3>
             <p className="text-sm text-[#666] m-0">
               Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You&apos;ll be prompted to complete the purchase immediately.

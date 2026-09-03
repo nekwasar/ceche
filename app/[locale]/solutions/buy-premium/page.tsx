@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Gem, Lock } from "lucide-react";
 
 export default function BuyPremiumPage() {
   return (
@@ -6,7 +7,7 @@ export default function BuyPremiumPage() {
       {/* Hero */}
       <section className="max-w-3xl mx-auto px-4 md:px-6 py-16 md:py-20 lg:py-24 text-center">
         <div className="w-16 h-16 rounded-full bg-[#9E2A2B] inline-flex items-center justify-center text-[28px] mb-6">
-          💎
+          <Gem className="w-7 h-7 text-white" />
         </div>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
           Acquire Premium
@@ -48,12 +49,14 @@ export default function BuyPremiumPage() {
       <section className="max-w-5xl mx-auto px-4 md:px-6 pb-16 md:pb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {[
-            { icon: "🔒", title: "Secure Checkout", desc: "Payment processed securely until domain transfer is confirmed and verified by both parties." },
+            { icon: Lock, title: "Secure Checkout", desc: "Payment processed securely until domain transfer is confirmed and verified by both parties." },
             { icon: "⏰", title: "72-Hour Inspection", desc: "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs." },
             { icon: "💳", title: "Multiple Payment Options", desc: "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises." },
           ].map((t) => (
             <div key={t.title} className="bg-white border border-[#E8E5DF] rounded-xl p-6 md:p-8 text-center">
-              <div className="text-4xl mb-4">{t.icon}</div>
+              <div className="w-12 h-12 rounded-xl bg-[#9E2A2B]/10 flex items-center justify-center mx-auto mb-4">
+                <t.icon className="w-6 h-6 text-[#9E2A2B]" />
+              </div>
               <h3 className="text-base font-bold mb-2">{t.title}</h3>
               <p className="text-sm text-[#666] leading-relaxed">{t.desc}</p>
             </div>

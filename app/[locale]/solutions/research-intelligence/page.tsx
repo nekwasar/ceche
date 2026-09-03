@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BarChart3, Link2, TrendingUp, DollarSign, Shield } from "lucide-react";
 
 export default function ResearchIntelligencePage() {
   return (
@@ -25,12 +26,12 @@ export default function ResearchIntelligencePage() {
       {/* 6 Numbered Sections */}
       <section className="max-w-3xl mx-auto px-4 md:px-6 pb-12 md:pb-16">
         {[
-          { num: "01", title: "16-Dimension Scoring", desc: "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains.", icon: "📊" },
-          { num: "02", title: "Ownership History", desc: "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues.", icon: "📜" },
-          { num: "03", title: "Backlink Profile", desc: "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time.", icon: "🔗" },
-          { num: "04", title: "Traffic Estimates", desc: "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest.", icon: "📈" },
-          { num: "05", title: "Valuation Range", desc: "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value.", icon: "💰" },
-          { num: "06", title: "Risk Assessment", desc: "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital.", icon: "🛡️" },
+          { num: "01", title: "16-Dimension Scoring", desc: "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains.", icon: BarChart3 },
+          { num: "02", title: "Ownership History", desc: "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues.", icon: Link2 },
+          { num: "03", title: "Backlink Profile", desc: "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time.", icon: Link2 },
+          { num: "04", title: "Traffic Estimates", desc: "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest.", icon: TrendingUp },
+          { num: "05", title: "Valuation Range", desc: "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value.", icon: DollarSign },
+          { num: "06", title: "Risk Assessment", desc: "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital.", icon: Shield },
         ].map((s) => (
           <div key={s.num} className="flex gap-5 md:gap-6 py-6 md:py-7 border-b border-[#E8E5DF]">
             <div className="w-12 h-12 rounded-[10px] bg-[#9E2A2B] text-white flex items-center justify-center font-extrabold text-sm shrink-0">
@@ -38,7 +39,7 @@ export default function ResearchIntelligencePage() {
             </div>
             <div>
               <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                {s.icon} {s.title}
+                <s.icon className="w-5 h-5 text-[#9E2A2B]" /> {s.title}
               </h3>
               <p className="text-sm text-[#666] leading-relaxed">{s.desc}</p>
             </div>

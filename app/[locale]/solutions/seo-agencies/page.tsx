@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BarChart3, Shield, Zap, FileText } from "lucide-react";
 
 export default function SeoAgenciesPage() {
   return (
@@ -59,14 +60,14 @@ export default function SeoAgenciesPage() {
       {/* Feature Rows */}
       <section className="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-20">
         {[
-          { title: "Expired Domain Authority", desc: "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity.", icon: "📊" },
-          { title: "Spam Recovery Audits", desc: "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health.", icon: "🛡️" },
-          { title: "Bulk Analyzer", desc: "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations.", icon: "⚡" },
-          { title: "Reporting Dashboard", desc: "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects.", icon: "📋" },
+          { title: "Expired Domain Authority", desc: "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity.", icon: BarChart3 },
+          { title: "Spam Recovery Audits", desc: "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health.", icon: Shield },
+          { title: "Bulk Analyzer", desc: "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations.", icon: Zap },
+          { title: "Reporting Dashboard", desc: "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects.", icon: FileText },
         ].map((f, i) => (
           <div key={f.title} className={`flex flex-col md:flex-row gap-5 md:gap-12 items-start md:items-center py-6 md:py-8 ${i < 3 ? "border-b border-[#E8E5DF]" : ""}`}>
-            <div className="w-14 md:w-16 h-14 md:h-16 rounded-xl bg-[#9E2A2B] flex items-center justify-center text-2xl md:text-3xl shrink-0">
-              {f.icon}
+            <div className="w-14 md:w-16 h-14 md:h-16 rounded-xl bg-[#9E2A2B] flex items-center justify-center shrink-0">
+              <f.icon className="w-7 h-7 text-white" />
             </div>
             <div>
               <h3 className="text-lg font-bold mb-2">{f.title}</h3>

@@ -1,5 +1,7 @@
 "use client";
 
+import { BarChart3 } from "lucide-react";
+
 export default function CaseStudiesPage() {
   return (
     <main className="bg-[#FAF7F2] min-h-screen">
@@ -44,7 +46,7 @@ export default function CaseStudiesPage() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-[#EFECE6] rounded-[20px] p-8 md:p-12 lg:p-16 border border-[#E8E5DE]">
             <div className="w-16 h-16 rounded-2xl bg-[#9E2A2B] inline-flex items-center justify-center mb-7">
-              <span className="text-[28px]">📊</span>
+              <BarChart3 className="w-7 h-7 text-white" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#111] m-0 mb-4">Case studies coming soon</h2>
             <p className="text-base text-[#666] leading-relaxed max-w-lg mx-auto mb-8">

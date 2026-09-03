@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Lock, Eye } from "lucide-react";
 
 const mockListings = [
   { id: "1", value: "$15,200", score: "92", health: "85/100", cpc: "$8.50", da: "45", tld: ".com", category: "Tech", intent: "High commercial", listed: "2 days ago" },
@@ -111,7 +112,7 @@ export default function MarketplacePage() {
             >
               {/* Tags */}
               <div className="flex flex-wrap items-center gap-2 mb-3 md:mb-3.5">
-                <span className="text-[11px] font-mono text-[#999] uppercase">🔒 Name Hidden</span>
+                <span className="text-[11px] font-mono text-[#999] uppercase flex items-center gap-1"><Lock className="w-3 h-3" /> Name Hidden</span>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[#E5DFD3] text-[#666]">{listing.tld}</span>
                 <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[#E5DFD3] text-[#666]">{listing.category}</span>
               </div>
@@ -141,7 +142,7 @@ export default function MarketplacePage() {
                   onClick={() => setShowModal(true)}
                   className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 rounded-full font-semibold text-xs md:text-sm border-none cursor-pointer bg-[#9E2A2B] text-white"
                 >
-                  👁 Reveal Name
+                  <Eye className="w-3.5 h-3.5" /> Reveal Name
                 </button>
               </div>
             </div>

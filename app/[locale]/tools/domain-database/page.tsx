@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Search, FileText, Link2 } from "lucide-react";
 
 export default function DomainDatabasePage() {
   return (
@@ -49,12 +50,12 @@ export default function DomainDatabasePage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {[
-            { icon: "🔍", title: "Single Lookup", desc: "Search any domain for instant registration data and availability status." },
-            { icon: "📋", title: "Bulk Check", desc: "Upload up to 5,000 domains at once for batch availability analysis." },
-            { icon: "🔗", title: "API Query", desc: "Programmatic access via RESTful API with up to 10,000 calls per day." },
+            { icon: Search, title: "Single Lookup", desc: "Search any domain for instant registration data and availability status." },
+            { icon: FileText, title: "Bulk Check", desc: "Upload up to 5,000 domains at once for batch availability analysis." },
+            { icon: Link2, title: "API Query", desc: "Programmatic access via RESTful API with up to 10,000 calls per day." },
           ].map((item) => (
-            <div key={item.title} className="bg-white rounded-xl p-6 md:p-8 text-center shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
-              <div className="text-4xl mb-4">{item.icon}</div>
+          <div key={item.title} className="bg-white rounded-xl p-6 md:p-8 text-center shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
+            <div className="mb-4"><item.icon className="w-10 h-10 text-[#9E2A2B] mx-auto" /></div>
               <h3 className="text-base md:text-lg font-bold text-[#111] mb-2">{item.title}</h3>
               <p className="text-sm text-[#666] leading-relaxed">{item.desc}</p>
             </div>

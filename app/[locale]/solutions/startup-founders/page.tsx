@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Tag, MessageCircle, Globe, Smartphone } from "lucide-react";
 
 export default function StartupFoundersPage() {
   return (
@@ -46,10 +47,10 @@ export default function StartupFoundersPage() {
       {/* Alternating Feature Rows */}
       <section className="max-w-5xl mx-auto px-4 md:px-6 pb-12 md:pb-16">
         {[
-          { title: "Brandability Index", desc: "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset.", icon: "🏷️" },
-          { title: "Pronounceability", desc: "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember.", icon: "🗣️" },
-          { title: "Extension Penetration", desc: "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing.", icon: "🌐" },
-          { title: "Social Availability", desc: "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass.", icon: "📱" },
+          { title: "Brandability Index", desc: "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset.", icon: Tag },
+          { title: "Pronounceability", desc: "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember.", icon: MessageCircle },
+          { title: "Extension Penetration", desc: "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing.", icon: Globe },
+          { title: "Social Availability", desc: "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass.", icon: Smartphone },
         ].map((f, i) => (
           <div
             key={f.title}
@@ -59,8 +60,8 @@ export default function StartupFoundersPage() {
               <h3 className="text-xl md:text-2xl font-bold mb-3">{f.title}</h3>
               <p className="text-sm md:text-base text-[#666] leading-relaxed">{f.desc}</p>
             </div>
-            <div className="flex-1 w-full h-40 md:h-48 bg-white border border-[#E8E5DF] rounded-xl flex items-center justify-center text-[40px] md:text-[48px]">
-              {f.icon}
+            <div className="flex-1 w-full h-40 md:h-48 bg-white border border-[#E8E5DF] rounded-xl flex items-center justify-center">
+              <f.icon className="w-10 h-10 text-[#9E2A2B]" />
             </div>
           </div>
         ))}

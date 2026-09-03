@@ -1,3 +1,5 @@
+import { Lock, Timer, DollarSign } from "lucide-react";
+
 const steps = [
   { num: "01", title: "Browse", desc: "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range." },
   { num: "02", title: "Pay to Reveal", desc: "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name." },
@@ -63,12 +65,12 @@ export default function HowUnmaskingWorksPage() {
         {/* Feature Cards */}
         <section className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mb-12 md:mb-16">
           {[
-            { icon: "🔒", title: "Encrypted Vault", desc: "Domain names stored with zero-knowledge encryption." },
-            { icon: "⏱", title: "5-Minute Lock", desc: "After reveal, you have 5 minutes of exclusive access." },
-            { icon: "💰", title: "No Obligation", desc: "Walk away at any point. No commitment required." },
+            { icon: Lock, title: "Encrypted Vault", desc: "Domain names stored with zero-knowledge encryption." },
+            { icon: Timer, title: "5-Minute Lock", desc: "After reveal, you have 5 minutes of exclusive access." },
+            { icon: DollarSign, title: "No Obligation", desc: "Walk away at any point. No commitment required." },
           ].map((item) => (
             <div key={item.title} className="bg-[#EFECE6] rounded-[14px] p-5 md:p-6 border border-black/5 text-center">
-              <div className="text-[28px] mb-3">{item.icon}</div>
+              <div className="mb-3"><item.icon className="w-7 h-7 text-[#9E2A2B] mx-auto" /></div>
               <h4 className="text-sm font-bold text-[#111] mb-1.5">{item.title}</h4>
               <p className="text-xs text-[#666] m-0">{item.desc}</p>
             </div>
