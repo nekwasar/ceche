@@ -77,5 +77,157 @@
     },
     "copyright": "All rights reserved.",
     "platform": "Domain Intelligence Platform"
+  },
+  "home": {
+    "hero": {
+      "title1": "Premium domain names, bought and sold with",
+      "titleHighlight": "intelligence",
+      "subtitle": "Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.",
+      "searchPlaceholder": "Search any domain name, e.g., brand.com",
+      "searchButton": "Search Domain",
+      "badges": {
+        "blindListings": "Blind Listings",
+        "dimensionIntelligence": "16-Dimension Intelligence",
+        "secureTransactions": "Secure Transactions"
+      }
+    },
+    "searchTool": {
+      "badge": "Free Tool",
+      "title": "Search Any Domain Name",
+      "description": "Type any domain into the search bar above. We'll tell you if it's available, what it's worth, and what you could build with it. No signup required.",
+      "taken": {
+        "title": "Domain Taken?",
+        "desc": "We show you the WHOIS details — who owns it, when it expires, which registrar they used, and nameserver info. Useful for outreach or waiting for expiry."
+      },
+      "available": {
+        "title": "Domain Available?",
+        "desc": "We rank it Premium, Mid, or Low — no confusing scores, just a clear label. Plus suggestions for what you could build with the name, and a button to run a full 16-dimension appraisal."
+      },
+      "appraise": {
+        "title": "Deep Appraisal",
+        "desc": "Click \"Appraise this name\" for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range."
+      }
+    },
+    "builtFor": {
+      "badge": "Built For",
+      "title": "Three kinds of people, one platform",
+      "investors": {
+        "title": "Domain Investors",
+        "desc": "Scan thousands of word combinations, appraise shortlists in seconds, and spot undervalued names before the market catches on. The scanner surfaces DA, spam score, and backlink profiles on every available name.",
+        "stat": "200+",
+        "statLabel": "checks per scan"
+      },
+      "founders": {
+        "title": "Startup Founders",
+        "desc": "Find a name that's easy to say, easy to spell, and safe to use. The 16-dimension engine checks pronounceability, trademark conflicts, and brandability before you commit to a brand.",
+        "stat": "16",
+        "statLabel": "dimensions checked"
+      },
+      "agencies": {
+        "title": "SEO Agencies",
+        "desc": "Find expired domains that still carry authority and clean backlinks. The scanner surfaces DA, spam score, and indexation status so you start with existing SEO value, not zero.",
+        "stat": "4",
+        "statLabel": "metrics per domain"
+      }
+    },
+    "marketplace": {
+      "badge": "Marketplace",
+      "title": "Premium names, names hidden",
+      "desc1": "Every listing shows full intelligence — estimated value, health score, CPC, brandability, TLD, and keyword intent — everything except the name itself. No hints. No partial reveals. No asterisks.",
+      "desc2": "Public marketplaces get scraped the moment a premium name appears. Ceche hides the name and shows the intelligence instead — so value, not visibility, drives the transaction. Investors who read the stats well consistently find names before auction fever inflates them.",
+      "cta": "Browse the marketplace",
+      "revealPricingTitle": "Reveal Pricing",
+      "tryYourLuckTitle": "Try Your Luck",
+      "tryYourLuckCta": "Try Your Luck"
+    },
+    "howItWorks": {
+      "badge": "How It Works",
+      "title": "Spin, pick, own",
+      "step1": {
+        "title": "Pick your TLD",
+        "desc": "Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD."
+      },
+      "step2": {
+        "title": "Spin & pick a box",
+        "desc": "Three closed boxes appear with a spinning animation. Each holds a unique premium domain. When it stops, pick one."
+      },
+      "step3": {
+        "title": "Reveal & register",
+        "desc": "Your domain is revealed instantly. It's locked exclusively for you — no one else can buy it. Register immediately at your preferred registrar."
+      },
+      "cta": "Try Your Luck now"
+    },
+    "underTheHood": {
+      "badge": "Under the Hood",
+      "title": "Built for Speed and Trust",
+      "description": "Every domain name is encrypted at rest. Every scan runs on real infrastructure. No shortcuts.",
+      "goroutine": {
+        "title": "50-Worker Goroutine Pool",
+        "desc": "Our scanner runs 50 concurrent goroutines, each checking DNS records with a 5-second timeout. Results batch-insert 100 at a time. We respect per-TLD rate limits."
+      },
+      "encryption": {
+        "title": "AES-256-GCM Encryption",
+        "desc": "Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they'd see garbage — not your search history."
+      },
+      "caching": {
+        "title": "In-Memory Caching",
+        "desc": "Repeat queries hit zero-cost bigcache with a 1-hour TTL. Your appraisal results stay fast without re-running the full 16-dimension analysis."
+      }
+    },
+    "faq": {
+      "badge": "Frequently Asked",
+      "title": "Common Questions",
+      "items": [
+        {
+          "question": "How many free appraisals do I get?",
+          "answer": "If you're not signed up, you get 3 appraisals per day. Sign up for free and you get 12 per day. Premium Startup ($79/mo) gets 30 per day, and Premium Enterprise ($129/mo) gets unlimited."
+        },
+        {
+          "question": "What's the difference between name search and appraisal?",
+          "answer": "Name search is free and instant — it tells you if a domain is available, shows WHOIS if taken, or ranks it Premium/Mid/Low if available. Appraisal is the deep 16-dimension analysis that scores pronounceability, trademark risk, brandability, and estimated value."
+        },
+        {
+          "question": "How does Try Your Luck work?",
+          "answer": "Pick a TLD (.com, .net, .io, or .co) and pay the TLD-specific price. Three closed boxes appear with a spinning animation. Pick one when it stops. You get a unique premium domain revealed instantly. It's locked — no one else can buy it. Or pay a flat $19 without selecting a TLD."
+        },
+        {
+          "question": "What happens after I reveal a domain name?",
+          "answer": "After reveal, the domain is yours to evaluate. We show you direct links to register it at Dynadot, Namecheap, or Porkbun. You choose where to register — we don't lock you into a registrar."
+        },
+        {
+          "question": "What's included in the Premium subscription?",
+          "answer": "Premium Startup ($79/mo) gives you 30 appraisals/day plus access to the Domain Scanner (DA, spam score, backlinks), Extended Insights (USPTO/WIPO, trademark history), and Bulk Domain Audit. Enterprise ($129/mo) adds unlimited appraisals, API access, and priority support."
+        },
+        {
+          "question": "Can I sell my domains on Ceche?",
+          "answer": "Yes. List your premium domain on our marketplace. We appraise it, you set the price. Standard listing is $5, priority placement is $10. We take 8-15% commission on successful sales depending on the sale price."
+        },
+        {
+          "question": "Is my search data private?",
+          "answer": "Yes. Domain names you search are encrypted with AES-256-GCM before storage. We don't sell or share search data. Your competition won't see what you're looking at."
+        }
+      ]
+    },
+    "worldMap": {
+      "title": "Accelerating Domain Liquidity Worldwide",
+      "description": "Real-time intelligence for domain investors, startup founders, and SEO agencies across 9 languages and 4 TLDs.",
+      "cta": "Start Appraising"
+    },
+    "cta": {
+      "title": "Ready to find your next domain?",
+      "description": "Start with 3 free appraisals per day. No credit card required.",
+      "signup": "Signup Free",
+      "pricing": "View Pricing"
+    },
+    "app": {
+      "welcomeBack": "Welcome back, {name}",
+      "plan": "Plan",
+      "quickActions": "Quick Actions",
+      "appraiseDomain": "Appraise a domain →",
+      "startScan": "Start a scan →",
+      "browseMarketplace": "Browse marketplace →",
+      "apiKeys": "API Keys",
+      "manageKeys": "Manage keys →"
+    }
   }
 }

@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { ArrowRight, BarChart3, Globe, Shield, Eye } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+  const t = useTranslations("home.hero");
   const [domain, setDomain] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,12 +23,12 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative">
         <div className="max-w-3xl">
           <h1 className="font-sans font-black text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
-            Premium domain names, bought and sold with{" "}
-            <span className="text-accent">intelligence</span>
+            {t("title1")}{" "}
+            <span className="text-accent">{t("titleHighlight")}</span>
           </h1>
 
           <p className="mt-6 text-lg text-white/70 leading-relaxed max-w-xl">
-            Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.
+            {t("subtitle")}
           </p>
 
           <form onSubmit={handleSubmit} className="mt-8 flex items-stretch gap-3 max-w-lg">
@@ -36,12 +38,12 @@ export function Hero() {
                 type="text"
                 value={domain}
                 onChange={(e) => setDomain(e.target.value)}
-                placeholder="Search any domain name, e.g., brand.com"
+                placeholder={t("searchPlaceholder")}
                 className="input-search pl-12"
               />
             </div>
             <button type="submit" className="cta-button flex items-center gap-2 whitespace-nowrap">
-              Search Domain
+              {t("searchButton")}
               <ArrowRight className="w-4 h-4" />
             </button>
           </form>
@@ -49,15 +51,15 @@ export function Hero() {
           <div className="mt-10 flex items-center gap-8 text-white/50 text-sm">
             <div className="flex items-center gap-2">
               <Eye className="w-4 h-4 text-accent/70" />
-              <span>Blind Listings</span>
+              <span>{t("badges.blindListings")}</span>
             </div>
             <div className="flex items-center gap-2">
               <BarChart3 className="w-4 h-4 text-accent/70" />
-              <span>16-Dimension Intelligence</span>
+              <span>{t("badges.dimensionIntelligence")}</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-accent/70" />
-              <span>Secure Transactions</span>
+              <span>{t("badges.secureTransactions")}</span>
             </div>
           </div>
         </div>
