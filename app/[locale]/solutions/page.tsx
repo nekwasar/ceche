@@ -6,7 +6,7 @@ const personas = [
   { title: "SEO Agencies", desc: "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.", stat: "10K", statLabel: "API Calls/Day", href: "/solutions/seo-agencies", icon: "📊" },
   { title: "Find Available Domains", desc: "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.", stat: "4", statLabel: "TLDs Scanned", href: "/solutions/find-available", icon: "🔍" },
   { title: "Research Intelligence", desc: "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.", stat: "0–100", statLabel: "Buyer Intent Score", href: "/solutions/research-intelligence", icon: "🔬" },
-  { title: "Buy Premium Domains", desc: "Acquire high-value domains through escrow-protected transactions. Secure, transparent, and instant.", stat: "$5–$50", statLabel: "Reveal Fee Range", href: "/solutions/buy-premium", icon: "💎" },
+  { title: "Buy Premium Domains", desc: "Acquire high-value domains with secure, transparent transactions. Fast and reliable.", stat: "$5–$50", statLabel: "Reveal Fee Range", href: "/solutions/buy-premium", icon: "💎" },
 ];
 
 export default function SolutionsPage() {

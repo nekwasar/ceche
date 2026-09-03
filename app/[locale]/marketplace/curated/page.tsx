@@ -4,7 +4,7 @@ const features = [
   "Hand-picked by domain experts",
   "Full intelligence report included",
   "Verified ownership and clean history",
-  "Instant purchase with escrow protection",
+  "Instant purchase with secure checkout",
   "Negotiation tools for making offers",
   "Guided transfer with registrar support",
 ];
@@ -12,7 +12,7 @@ const features = [
 const steps = [
   { num: "1", title: "Browse Listings", desc: "Each curated domain includes valuation, SEO metrics, and commercial intent score." },
   { num: "2", title: "Make an Offer", desc: "Buy outright or submit an offer. Our system handles counter-offers automatically." },
-  { num: "3", title: "Complete Purchase", desc: "Escrow-protected payment. Domain transfers within 24 hours with full support." },
+  { num: "3", title: "Complete Purchase", desc: "Secure payment. Domain transfers within 24 hours with full support." },
 ];
 
 export default function CuratedPage() {

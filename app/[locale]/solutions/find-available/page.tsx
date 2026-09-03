@@ -64,7 +64,7 @@ export default function FindAvailablePage() {
           {[
             { step: "1", title: "Set Your Criteria", desc: "Define keywords, TLDs, price range, and brandability thresholds." },
             { step: "2", title: "Monitor & Alert", desc: "Ceche scans daily and alerts you when matching domains appear." },
-            { step: "3", title: "Acquire Instantly", desc: "One-click registration or marketplace purchase with escrow protection." },
+            { step: "3", title: "Acquire Instantly", desc: "One-click registration or marketplace purchase with secure checkout." },
           ].map((s, i) => (
             <div key={s.step} className="relative flex-1 text-center px-5">
               {i < 2 && (

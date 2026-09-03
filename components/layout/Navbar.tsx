@@ -69,7 +69,7 @@ const megaMenuData: Record<MegaMenuKey, MegaMenuCategory[]> = {
       items: [
         { icon: <Globe className="w-5 h-5" />, title: "Find Available Domains", desc: "Scan millions of combinations for available premium names.", href: "/solutions/find-available" },
         { icon: <Eye className="w-5 h-5" />, title: "Research Intelligence", desc: "Deep domain analysis before acquisition decisions.", href: "/solutions/research-intelligence" },
-        { icon: <ShoppingCart className="w-5 h-5" />, title: "Buy Premium Domains", desc: "Acquire high-value domains through escrow-protected transactions.", href: "/solutions/buy-premium" },
+        { icon: <ShoppingCart className="w-5 h-5" />, title: "Buy Premium Domains", desc: "Acquire high-value domains with secure, transparent transactions.", href: "/solutions/buy-premium" },
       ],
     },
   ],

@@ -57,7 +57,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-accent/70" />
-              <span>Escrow Protected</span>
+              <span>Secure Transactions</span>
             </div>
           </div>
         </div>
