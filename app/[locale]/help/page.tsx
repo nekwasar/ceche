@@ -12,7 +12,7 @@ export default function HelpPage() {
         <div className="flex-1">
           <p className="text-[10px] font-mono tracking-[0.3em] uppercase mb-6" style={{ color: "#999999" }}>{t("badge")}</p>
           <h1 className="font-serif font-bold leading-[0.85] tracking-tight mb-8" style={{ fontSize: "clamp(3rem, 8vw, 7rem)", color: "#111111" }}>
-            How can we<br />help<span style={{ color: "#9E2A2B" }}>.</span>
+            {t("title1")}<br />{t("title2")}<span style={{ color: "#9E2A2B" }}>.</span>
           </h1>
           <div className="h-px mb-8" style={{ backgroundColor: "#9E2A2B" }} />
           <p className="text-lg max-w-2xl leading-relaxed mb-12" style={{ color: "#555555" }}>
