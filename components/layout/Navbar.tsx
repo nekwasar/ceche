@@ -306,10 +306,7 @@ export function Navbar() {
                         {megaMenuData[activeMenu]?.[activeCategory]?.label}
                       </p>
                       <p className="text-white/60 text-base">
-                        {activeMenu === "products" && "Tools and APIs for domain intelligence"}
-                        {activeMenu === "marketplace" && "Buy and sell premium domains"}
-                        {activeMenu === "solutions" && "Built for your role and workflow"}
-                        {activeMenu === "resources" && "Learn and get support"}
+                        {megaMenuData[activeMenu]?.[0]?.label && t(`megaMenu.${activeMenu}`)}
                       </p>
                     </div>
                     <button

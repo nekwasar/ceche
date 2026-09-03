@@ -122,6 +122,20 @@
         "title": "更新日志",
         "desc": "产品更新、新功能和平台改进。"
       }
+    },
+    "sidebar": {
+      "overview": "概览",
+      "documentation": "文档",
+      "apiReference": "API参考",
+      "faq": "常见问题",
+      "contact": "联系我们",
+      "changelog": "更新日志"
+    },
+    "megaMenu": {
+      "products": "域名智能分析的工具和API",
+      "marketplace": "买卖优质域名",
+      "solutions": "为您的角色和工作流量身打造",
+      "resources": "学习和获取支持"
     }
   },
   "footer": {
@@ -2793,5 +2807,26 @@
       "title": "拍卖追踪、移动应用、ML估值",
       "cta": "查看路线图"
     }
+  },
+  "premiumModal": {
+    "title": "高级功能",
+    "description": "{toolName}需要高级账户。注册以解锁此功能及更多。",
+    "redirecting": "正在跳转到注册页面，{count}秒后...",
+    "cta": "创建免费账户",
+    "back": "返回"
+  },
+  "appHeader": {
+    "home": "首页",
+    "appraise": "评估",
+    "scanner": "扫描器",
+    "marketplace": "市场",
+    "apiKeys": "API密钥",
+    "logout": "退出"
+  },
+  "toolTemplate": {
+    "comingSoon": "即将推出",
+    "waitlistDesc": "此功能正在积极开发中。加入等待列表以获取抢先体验。",
+    "emailPlaceholder": "输入您的邮箱",
+    "joinWaitlist": "加入等待列表"
   }
 }

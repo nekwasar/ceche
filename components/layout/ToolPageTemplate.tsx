@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 interface ToolPageProps {
   icon: LucideIcon;
@@ -8,7 +9,9 @@ interface ToolPageProps {
   badge?: string;
 }
 
-export function ToolPageTemplate({ icon: Icon, title, subtitle, features, badge }: ToolPageProps) {
+export async function ToolPageTemplate({ icon: Icon, title, subtitle, features, badge }: ToolPageProps) {
+  const t = await getTranslations("toolTemplate");
+
   return (
     <div className="min-h-screen bg-canvas">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
@@ -39,18 +42,12 @@ export function ToolPageTemplate({ icon: Icon, title, subtitle, features, badge 
         <div className="mt-16 bg-white rounded-2xl border border-slate/5 p-8">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-sm font-medium text-slate">Coming Soon</span>
+            <span className="text-sm font-medium text-slate">{t("comingSoon")}</span>
           </div>
-          <p className="text-slate-muted">
-            This feature is under active development. Join the waitlist to get early access.
-          </p>
+          <p className="text-slate-muted">{t("waitlistDesc")}</p>
           <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 sm:max-w-sm bg-canvas rounded-lg px-4 py-3 text-sm border border-slate/10 focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
-            />
-            <button className="cta-button">Join Waitlist</button>
+            <input type="email" placeholder={t("emailPlaceholder")} className="flex-1 sm:max-w-sm bg-canvas rounded-lg px-4 py-3 text-sm border border-slate/10 focus:ring-2 focus:ring-brand focus:border-transparent outline-none" />
+            <button className="cta-button">{t("joinWaitlist")}</button>
           </div>
         </div>
       </div>

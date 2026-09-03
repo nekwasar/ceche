@@ -122,6 +122,20 @@
         "title": "Changelog",
         "desc": "Product updates and new feature releases."
       }
+    },
+    "sidebar": {
+      "overview": "Overview",
+      "documentation": "Documentation",
+      "apiReference": "API Reference",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "changelog": "Changelog"
+    },
+    "megaMenu": {
+      "products": "Tools and APIs for domain intelligence",
+      "marketplace": "Buy and sell premium domains",
+      "solutions": "Built for your role and workflow",
+      "resources": "Learn and get support"
     }
   },
   "footer": {
@@ -2816,5 +2830,26 @@
       "title": "Auction tracking, mobile app, ML valuation",
       "cta": "View roadmap"
     }
+  },
+  "premiumModal": {
+    "title": "Premium Feature",
+    "description": "{toolName} requires a premium account. Sign up to unlock this feature and many more.",
+    "redirecting": "Redirecting to signup in {count} seconds...",
+    "cta": "Create Free Account",
+    "back": "Go back"
+  },
+  "appHeader": {
+    "home": "Home",
+    "appraise": "Appraise",
+    "scanner": "Scanner",
+    "marketplace": "Marketplace",
+    "apiKeys": "API Keys",
+    "logout": "Logout"
+  },
+  "toolTemplate": {
+    "comingSoon": "Coming Soon",
+    "waitlistDesc": "This feature is under active development. Join the waitlist to get early access.",
+    "emailPlaceholder": "Enter your email",
+    "joinWaitlist": "Join Waitlist"
   }
 }
