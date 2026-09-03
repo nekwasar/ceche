@@ -1,182 +1,257 @@
 {
   "nav": {
     "triggers": {
-      "products": "Products",
-      "marketplace": "Marketplace",
-      "solutions": "Solutions",
-      "resources": "Resources"
+      "products": "产品",
+      "marketplace": "市场",
+      "solutions": "解决方案",
+      "resources": "资源"
     },
     "links": {
-      "pricing": "Pricing",
-      "login": "Log In",
-      "signup": "Signup Free"
+      "pricing": "定价",
+      "login": "登录",
+      "signup": "免费注册"
     },
     "categories": {
-      "intelligence": "Intelligence",
-      "platform": "Platform",
-      "buyDomains": "Buy Domains",
-      "sellDomains": "Sell Domains",
-      "byRole": "By Role",
-      "byNeed": "By Need",
-      "explore": "Explore",
-      "support": "Support"
+      "intelligence": "智能分析",
+      "platform": "平台",
+      "buyDomains": "购买域名",
+      "sellDomains": "出售域名",
+      "byRole": "按角色",
+      "byNeed": "按需求",
+      "explore": "探索",
+      "support": "支持"
     },
     "items": {
-      "domainLookup": { "title": "Domain Lookup", "desc": "Free tool: WHOIS data, DNS records." },
-      "appraisal": { "title": "16-Dimension Appraisal", "desc": "Deep domain valuation with 16 metric breakdowns and market-based pricing." },
-      "domainScanner": { "title": "Domain Scanner", "desc": "Premium tool: DA, spam score, backlink profiles, and indexation status. Requires subscription." },
-      "extendedInsights": { "title": "Extended Insights", "desc": "Premium tool: deep DNS records, USPTO/WIPO trademarks, and WHOIS history." },
-      "bulkAudit": { "title": "Bulk Domain Audit", "desc": "Premium tool: batch process and analyze up to 1000 domains at once." },
-      "apiAccess": { "title": "API Access", "desc": "RESTful API for programmatic domain intelligence at scale." },
-      "trademarkMonitor": { "title": "Trademark Monitor", "desc": "USPTO/WIPO conflict detection and automated alerts." },
-      "domainDatabase": { "title": "Domain Database", "desc": "Comprehensive TLD registry and expiry tracking." },
-      "standardMarketplace": { "title": "Standard Marketplace", "desc": "Browse premium domains with full stats. Name hidden — pay to reveal." },
-      "curatedDomains": { "title": "Curated Domains", "desc": "Hand-picked premium domains verified by our team." },
-      "tryYourLuck": { "title": "Try Your Luck", "desc": "Pick a TLD, spin 3 boxes, reveal a premium domain. Locked exclusively for you." },
-      "listDomain": { "title": "List a Domain", "desc": "Sell your premium domain on Ceche. $5-$10 listing fee, 8-15% commission." },
-      "domainInvestors": { "title": "Domain Investors", "desc": "Portfolio yield tracking, flipper valuation, and drop-catching alerts." },
-      "startupFounders": { "title": "Startup Founders", "desc": "Brandability index, pronounceability, and extension checking." },
-      "seoAgencies": { "title": "SEO Agencies", "desc": "Expired domain backlink authority scoring and spam recovery audits." },
-      "findAvailable": { "title": "Find Available Domains", "desc": "Scan millions of combinations for available premium names." },
-      "researchIntelligence": { "title": "Research Intelligence", "desc": "Deep domain analysis before acquisition decisions." },
-      "buyPremium": { "title": "Buy Premium Domains", "desc": "Acquire high-value domains with secure, transparent transactions." },
-      "blog": { "title": "Blog", "desc": "Domain investing tips, platform updates, and industry insights." },
-      "ebooks": { "title": "Ebooks", "desc": "In-depth guides on domain valuation, SEO, and brand strategy." },
-      "caseStudies": { "title": "Case Studies", "desc": "Real stories from domain investors and startup founders." },
-      "helpCenter": { "title": "Help Center", "desc": "Documentation, FAQs, and getting started guides." },
-      "apiDocs": { "title": "API Docs", "desc": "API reference, authentication, and integration guides." },
-      "contact": { "title": "Contact", "desc": "Reach our team for support or partnerships." },
-      "changelog": { "title": "Changelog", "desc": "Product updates and new feature releases." }
+      "domainLookup": {
+        "title": "Domain Lookup",
+        "desc": "Free tool: WHOIS data, DNS records."
+      },
+      "appraisal": {
+        "title": "16-Dimension Appraisal",
+        "desc": "Deep domain valuation with 16 metric breakdowns and market-based pricing."
+      },
+      "domainScanner": {
+        "title": "Domain Scanner",
+        "desc": "Premium tool: DA, spam score, backlink profiles, and indexation status. Requires subscription."
+      },
+      "extendedInsights": {
+        "title": "Extended Insights",
+        "desc": "Premium tool: deep DNS records, USPTO/WIPO trademarks, and WHOIS history."
+      },
+      "bulkAudit": {
+        "title": "Bulk Domain Audit",
+        "desc": "Premium tool: batch process and analyze up to 1000 domains at once."
+      },
+      "apiAccess": {
+        "title": "API Access",
+        "desc": "RESTful API for programmatic domain intelligence at scale."
+      },
+      "trademarkMonitor": {
+        "title": "Trademark Monitor",
+        "desc": "USPTO/WIPO conflict detection and automated alerts."
+      },
+      "domainDatabase": {
+        "title": "Domain Database",
+        "desc": "Comprehensive TLD registry and expiry tracking."
+      },
+      "standardMarketplace": {
+        "title": "Standard Marketplace",
+        "desc": "Browse premium domains with full stats. Name hidden — pay to reveal."
+      },
+      "curatedDomains": {
+        "title": "Curated Domains",
+        "desc": "Hand-picked premium domains verified by our team."
+      },
+      "tryYourLuck": {
+        "title": "Try Your Luck",
+        "desc": "Pick a TLD, spin 3 boxes, reveal a premium domain. Locked exclusively for you."
+      },
+      "listDomain": {
+        "title": "List a Domain",
+        "desc": "Sell your premium domain on Ceche. $5-$10 listing fee, 8-15% commission."
+      },
+      "domainInvestors": {
+        "title": "Domain Investors",
+        "desc": "Portfolio yield tracking, flipper valuation, and drop-catching alerts."
+      },
+      "startupFounders": {
+        "title": "Startup Founders",
+        "desc": "Brandability index, pronounceability, and extension checking."
+      },
+      "seoAgencies": {
+        "title": "SEO Agencies",
+        "desc": "Expired domain backlink authority scoring and spam recovery audits."
+      },
+      "findAvailable": {
+        "title": "Find Available Domains",
+        "desc": "Scan millions of combinations for available premium names."
+      },
+      "researchIntelligence": {
+        "title": "Research Intelligence",
+        "desc": "Deep domain analysis before acquisition decisions."
+      },
+      "buyPremium": {
+        "title": "Buy Premium Domains",
+        "desc": "Acquire high-value domains with secure, transparent transactions."
+      },
+      "blog": {
+        "title": "Blog",
+        "desc": "Domain investing tips, platform updates, and industry insights."
+      },
+      "ebooks": {
+        "title": "Ebooks",
+        "desc": "In-depth guides on domain valuation, SEO, and brand strategy."
+      },
+      "caseStudies": {
+        "title": "Case Studies",
+        "desc": "Real stories from domain investors and startup founders."
+      },
+      "helpCenter": {
+        "title": "Help Center",
+        "desc": "Documentation, FAQs, and getting started guides."
+      },
+      "apiDocs": {
+        "title": "API Docs",
+        "desc": "API reference, authentication, and integration guides."
+      },
+      "contact": {
+        "title": "Contact",
+        "desc": "Reach our team for support or partnerships."
+      },
+      "changelog": {
+        "title": "Changelog",
+        "desc": "Product updates and new feature releases."
+      }
     }
   },
   "footer": {
-    "tagline": "Enterprise-grade domain intelligence and marketplace platform.",
+    "tagline": "企业级域名智能分析与市场平台。",
     "sections": {
-      "products": "Products",
-      "marketplace": "Marketplace",
-      "company": "Company",
-      "legal": "Legal"
+      "products": "产品",
+      "marketplace": "市场",
+      "company": "公司",
+      "legal": "法律"
     },
     "links": {
-      "domainAppraiser": "Domain Appraiser",
-      "seoScanner": "SEO Scanner",
-      "extendedInsights": "Extended Insights",
-      "bulkAnalyzer": "Bulk Analyzer",
-      "apiAccess": "API Access",
-      "curatedDomains": "Curated Domains",
-      "tryYourLuck": "Try Your Luck",
-      "sellDomains": "Sell Domains",
-      "howUnmaskingWorks": "How Unmasking Works",
-      "about": "About",
-      "affiliates": "Affiliates",
-      "blog": "Blog",
-      "contact": "Contact",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookie Policy"
+      "domainAppraiser": "域名评估器",
+      "seoScanner": "SEO扫描器",
+      "extendedInsights": "深度洞察",
+      "bulkAnalyzer": "批量分析器",
+      "apiAccess": "API接口",
+      "curatedDomains": "精选域名",
+      "tryYourLuck": "试试运气",
+      "sellDomains": "出售域名",
+      "howUnmaskingWorks": "揭示机制",
+      "about": "关于我们",
+      "affiliates": "合作伙伴",
+      "blog": "博客",
+      "contact": "联系我们",
+      "terms": "服务条款",
+      "privacy": "隐私政策",
+      "cookies": "Cookie政策"
     },
-    "copyright": "All rights reserved.",
-    "platform": "Domain Intelligence Platform"
+    "copyright": "版权所有。",
+    "platform": "域名智能平台"
   },
   "home": {
     "hero": {
-      "title1": "Premium domain names, bought and sold with",
-      "titleHighlight": "intelligence",
+      "title1": "优质域名，以",
+      "titleHighlight": "智能",
       "subtitle": "Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.",
-      "searchPlaceholder": "Search any domain name, e.g., brand.com",
-      "searchButton": "Search Domain",
+      "searchPlaceholder": "搜索任意域名，例如 brand.com",
+      "searchButton": "搜索域名",
       "badges": {
-        "blindListings": "Blind Listings",
-        "dimensionIntelligence": "16-Dimension Intelligence",
-        "secureTransactions": "Secure Transactions"
+        "blindListings": "盲选列表",
+        "dimensionIntelligence": "16维智能分析",
+        "secureTransactions": "安全交易"
       }
     },
     "searchTool": {
-      "badge": "Free Tool",
-      "title": "Search Any Domain Name",
+      "badge": "免费工具",
+      "title": "搜索任意域名",
       "description": "Type any domain into the search bar above. We'll tell you if it's available, what it's worth, and what you could build with it. No signup required.",
       "taken": {
-        "title": "Domain Taken?",
+        "title": "域名已被注册？",
         "desc": "We show you the WHOIS details — who owns it, when it expires, which registrar they used, and nameserver info. Useful for outreach or waiting for expiry."
       },
       "available": {
-        "title": "Domain Available?",
+        "title": "域名可用？",
         "desc": "We rank it Premium, Mid, or Low — no confusing scores, just a clear label. Plus suggestions for what you could build with the name, and a button to run a full 16-dimension appraisal."
       },
       "appraise": {
-        "title": "Deep Appraisal",
+        "title": "深度评估",
         "desc": "Click \"Appraise this name\" for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range."
       }
     },
     "builtFor": {
-      "badge": "Built For",
-      "title": "Three kinds of people, one platform",
+      "badge": "适用人群",
+      "title": "三类用户，一个平台",
       "investors": {
-        "title": "Domain Investors",
+        "title": "域名投资者",
         "desc": "Scan thousands of word combinations, appraise shortlists in seconds, and spot undervalued names before the market catches on. The scanner surfaces DA, spam score, and backlink profiles on every available name.",
         "stat": "200+",
-        "statLabel": "checks per scan"
+        "statLabel": "每次扫描检查数"
       },
       "founders": {
-        "title": "Startup Founders",
+        "title": "创业公司创始人",
         "desc": "Find a name that's easy to say, easy to spell, and safe to use. The 16-dimension engine checks pronounceability, trademark conflicts, and brandability before you commit to a brand.",
         "stat": "16",
-        "statLabel": "dimensions checked"
+        "statLabel": "已检查维度"
       },
       "agencies": {
-        "title": "SEO Agencies",
+        "title": "SEO代理机构",
         "desc": "Find expired domains that still carry authority and clean backlinks. The scanner surfaces DA, spam score, and indexation status so you start with existing SEO value, not zero.",
         "stat": "4",
-        "statLabel": "metrics per domain"
+        "statLabel": "每个域名的指标"
       }
     },
     "marketplace": {
-      "badge": "Marketplace",
-      "title": "Premium names, names hidden",
+      "badge": "市场",
+      "title": "优质名称，名称隐藏",
       "desc1": "Every listing shows full intelligence — estimated value, health score, CPC, brandability, TLD, and keyword intent — everything except the name itself. No hints. No partial reveals. No asterisks.",
       "desc2": "Public marketplaces get scraped the moment a premium name appears. Ceche hides the name and shows the intelligence instead — so value, not visibility, drives the transaction. Investors who read the stats well consistently find names before auction fever inflates them.",
-      "cta": "Browse the marketplace",
-      "revealPricingTitle": "Reveal Pricing",
-      "tryYourLuckTitle": "Try Your Luck",
-      "tryYourLuckCta": "Try Your Luck"
+      "cta": "浏览市场",
+      "revealPricingTitle": "揭示定价",
+      "tryYourLuckTitle": "试试运气",
+      "tryYourLuckCta": "试试运气"
     },
     "howItWorks": {
-      "badge": "How It Works",
-      "title": "Spin, pick, own",
+      "badge": "运作方式",
+      "title": "转动、选择、拥有",
       "step1": {
-        "title": "Pick your TLD",
+        "title": "选择您的TLD",
         "desc": "Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD."
       },
       "step2": {
-        "title": "Spin & pick a box",
+        "title": "转动并选择一个盒子",
         "desc": "Three closed boxes appear with a spinning animation. Each holds a unique premium domain. When it stops, pick one."
       },
       "step3": {
-        "title": "Reveal & register",
+        "title": "揭示并注册",
         "desc": "Your domain is revealed instantly. It's locked exclusively for you — no one else can buy it. Register immediately at your preferred registrar."
       },
-      "cta": "Try Your Luck now"
+      "cta": "立即试试运气"
     },
     "underTheHood": {
-      "badge": "Under the Hood",
-      "title": "Built for Speed and Trust",
+      "badge": "技术架构",
+      "title": "为速度和信任而构建",
       "description": "Every domain name is encrypted at rest. Every scan runs on real infrastructure. No shortcuts.",
       "goroutine": {
-        "title": "50-Worker Goroutine Pool",
+        "title": "50工作线程并发池",
         "desc": "Our scanner runs 50 concurrent goroutines, each checking DNS records with a 5-second timeout. Results batch-insert 100 at a time. We respect per-TLD rate limits."
       },
       "encryption": {
-        "title": "AES-256-GCM Encryption",
+        "title": "AES-256-GCM加密",
         "desc": "Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they'd see garbage — not your search history."
       },
       "caching": {
-        "title": "In-Memory Caching",
+        "title": "内存缓存",
         "desc": "Repeat queries hit zero-cost bigcache with a 1-hour TTL. Your appraisal results stay fast without re-running the full 16-dimension analysis."
       }
     },
     "faq": {
-      "badge": "Frequently Asked",
-      "title": "Common Questions",
+      "badge": "常见问题",
+      "title": "常见问题",
       "items": [
         {
           "question": "How many free appraisals do I get?",
@@ -209,43 +284,43 @@
       ]
     },
     "worldMap": {
-      "title": "Accelerating Domain Liquidity Worldwide",
+      "title": "加速全球域名流动性",
       "description": "Real-time intelligence for domain investors, startup founders, and SEO agencies across 9 languages and 4 TLDs.",
-      "cta": "Start Appraising"
+      "cta": "开始评估"
     },
     "cta": {
-      "title": "Ready to find your next domain?",
-      "description": "Start with 3 free appraisals per day. No credit card required.",
-      "signup": "Signup Free",
-      "pricing": "View Pricing"
+      "title": "准备好寻找下一个域名了吗？",
+      "description": "从每天3次免费评估开始。无需信用卡。",
+      "signup": "免费注册",
+      "pricing": "查看定价"
     },
     "app": {
-      "welcomeBack": "Welcome back, {name}",
-      "plan": "Plan",
-      "quickActions": "Quick Actions",
-      "appraiseDomain": "Appraise a domain →",
-      "startScan": "Start a scan →",
-      "browseMarketplace": "Browse marketplace →",
-      "apiKeys": "API Keys",
-      "manageKeys": "Manage keys →"
+      "welcomeBack": "欢迎回来，{name}",
+      "plan": "套餐",
+      "quickActions": "快速操作",
+      "appraiseDomain": "评估域名 →",
+      "startScan": "开始扫描 →",
+      "browseMarketplace": "浏览市场 →",
+      "apiKeys": "API密钥",
+      "manageKeys": "管理密钥 →"
     }
   },
   "pricingPage": {
     "hero": {
-      "badge": "Pricing",
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Start free. Upgrade when you need more power. Cancel anytime."
+      "badge": "定价",
+      "title": "简单透明的定价",
+      "subtitle": "免费开始。需要更多功能时升级。随时取消。"
     },
     "annual": {
-      "banner": "Save up to $260/yr with annual billing",
-      "mostPopular": "Most Popular"
+      "banner": "年付最高节省$260/年",
+      "mostPopular": "最受欢迎"
     },
     "plans": {
       "free": {
-        "name": "Free",
+        "name": "免费版",
         "description": "Get started with basic tools. No credit card required.",
         "annualNote": "",
-        "cta": "Get Started",
+        "cta": "立即开始",
         "features": [
           "3 appraisals/day (unsigned)",
           "12 appraisals/day (signed up)",
@@ -256,13 +331,22 @@
           "Bulk Domain Audit",
           "API access"
         ],
-        "included": [true, true, true, true, false, false, false, false]
+        "included": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
       },
       "startup": {
-        "name": "Premium Startup",
-        "description": "For small teams and serious domain investors.",
-        "annualNote": "saves $160/yr",
-        "cta": "Start Premium",
+        "name": "Premium 创业版",
+        "description": "适合小型团队和认真的域名投资者。",
+        "annualNote": "每年节省$160",
+        "cta": "开始Premium",
         "features": [
           "30 appraisals/day",
           "Name search tool",
@@ -273,13 +357,22 @@
           "API access",
           "Priority support"
         ],
-        "included": [true, true, true, true, true, true, false, false]
+        "included": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
       },
       "enterprise": {
-        "name": "Premium Enterprise",
-        "description": "For agencies, professionals, and power users.",
-        "annualNote": "saves $260/yr",
-        "cta": "Start Enterprise",
+        "name": "Premium 企业版",
+        "description": "适合代理机构、专业人士和高级用户。",
+        "annualNote": "每年节省$260",
+        "cta": "开始企业版",
         "features": [
           "Unlimited appraisals",
           "Name search tool",
@@ -290,51 +383,113 @@
           "Full API access",
           "Priority support"
         ],
-        "included": [true, true, true, true, true, true, true, true]
+        "included": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
       }
     },
     "tryYourLuck": {
-      "badge": "Try Your Luck",
-      "title": "Spin. Reveal. Own.",
+      "badge": "试试运气",
+      "title": "转动。揭示。拥有。",
       "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.",
-      "mostPopular": "Most Popular"
+      "mostPopular": "最受欢迎"
     },
     "fees": {
       "reveal": {
-        "badge": "Marketplace",
-        "title": "Reveal Fees",
+        "badge": "市场",
+        "title": "揭示费用",
         "description": "Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.",
-        "headers": { "tier": "Tier", "valueRange": "Value Range", "fee": "Fee" },
+        "headers": {
+          "tier": "等级",
+          "valueRange": "价值范围",
+          "fee": "费用"
+        },
         "rows": [
-          { "tier": "Low", "range": "Under $500", "fee": "$5" },
-          { "tier": "Mid", "range": "$500 – $5,000", "fee": "$10" },
-          { "tier": "High", "range": "$5,001 – $50,000", "fee": "$25" },
-          { "tier": "Premium", "range": "$50,001+", "fee": "$50" }
+          {
+            "tier": "Low",
+            "range": "Under $500",
+            "fee": "$5"
+          },
+          {
+            "tier": "Mid",
+            "range": "$500 – $5,000",
+            "fee": "$10"
+          },
+          {
+            "tier": "High",
+            "range": "$5,001 – $50,000",
+            "fee": "$25"
+          },
+          {
+            "tier": "Premium",
+            "range": "$50,001+",
+            "fee": "$50"
+          }
         ]
       },
       "listing": {
-        "badge": "For Sellers",
-        "title": "Listing Fees",
-        "standard": { "name": "Standard listing", "desc": "30-day visibility", "price": "$5" },
-        "priority": { "name": "Priority placement", "desc": "72-hour boost + featured", "price": "$10" }
+        "badge": "卖家",
+        "title": "上架费用",
+        "standard": {
+          "name": "标准上架",
+          "desc": "30天展示期",
+          "price": "$5"
+        },
+        "priority": {
+          "name": "优先展示",
+          "desc": "72小时加速+精选",
+          "price": "$10"
+        }
       },
       "commission": {
-        "badge": "Commissions",
-        "title": "Seller Commission Rates",
-        "headers": { "saleAmount": "Sale Amount", "rate": "Rate", "minFee": "Min Fee" },
+        "badge": "佣金",
+        "title": "卖家佣金费率",
+        "headers": {
+          "saleAmount": "成交金额",
+          "rate": "费率",
+          "minFee": "最低费用"
+        },
         "rows": [
-          { "amount": "$0 – $500", "rate": "15%", "min": "$10" },
-          { "amount": "$501 – $5,000", "rate": "12%", "min": "$50" },
-          { "amount": "$5,001 – $50,000", "rate": "10%", "min": "$500" },
-          { "amount": "$50,001+", "rate": "8%", "min": "$4,000" }
+          {
+            "amount": "$0 – $500",
+            "rate": "15%",
+            "min": "$10"
+          },
+          {
+            "amount": "$501 – $5,000",
+            "rate": "12%",
+            "min": "$50"
+          },
+          {
+            "amount": "$5,001 – $50,000",
+            "rate": "10%",
+            "min": "$500"
+          },
+          {
+            "amount": "$50,001+",
+            "rate": "8%",
+            "min": "$4,000"
+          }
         ]
       }
     },
     "compare": {
-      "badge": "Compare",
-      "title": "Ceche vs the Competition",
+      "badge": "对比",
+      "title": "Ceche与竞品对比",
       "subtitle": "See how Ceche stacks up against legacy domain platforms.",
-      "headers": { "feature": "Feature", "ceche": "Ceche", "godaddy": "GoDaddy", "sedo": "Sedo" },
+      "headers": {
+        "feature": "功能",
+        "ceche": "Ceche",
+        "godaddy": "GoDaddy",
+        "sedo": "Sedo"
+      },
       "rows": [
         "AI domain valuation",
         "16-dimension scoring",
@@ -348,47 +503,82 @@
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
+      "title": "准备好了吗？",
       "description": "Create a free account in seconds. No credit card required.",
-      "signup": "Create Free Account",
-      "help": "Visit Help Center",
-      "lookup": "Free Domain Lookup"
+      "signup": "创建免费账户",
+      "help": "访问帮助中心",
+      "lookup": "免费域名查询"
     }
   },
   "tools": {
     "scanner": {
-      "badge": "SEO SCANNER",
-      "title": "SEO Scanner",
+      "badge": "SEO扫描器",
+      "title": "SEO扫描器",
       "description": "Domain and SEO audit with DA, spam score, backlink profiles, and indexation status. Get instant insights into any domain's search engine health.",
-      "placeholder": "Enter domain to scan",
-      "scanButton": "Scan Now",
-      "scanningButton": "Scanning...",
-      "limitsTitle": "Scan Limits",
+      "placeholder": "输入要扫描的域名",
+      "scanButton": "立即扫描",
+      "scanningButton": "扫描中...",
+      "limitsTitle": "扫描限制",
       "limits": [
-        { "plan": "Startup", "scans": "30 per day", "price": "$79/mo" },
-        { "plan": "Enterprise", "scans": "Unlimited", "price": "$129/mo" }
+        {
+          "plan": "Startup",
+          "scans": "30 per day",
+          "price": "$79/mo"
+        },
+        {
+          "plan": "Enterprise",
+          "scans": "Unlimited",
+          "price": "$129/mo"
+        }
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "运作方式",
         "steps": [
-          { "title": "Enter Domain", "desc": "Type any domain name into the search bar above." },
-          { "title": "Run Analysis", "desc": "Our engine scans 16 dimensions of domain health instantly." },
-          { "title": "Get Report", "desc": "View detailed SEO metrics, backlink data, and spam scores." }
+          {
+            "title": "Enter Domain",
+            "desc": "Type any domain name into the search bar above."
+          },
+          {
+            "title": "Run Analysis",
+            "desc": "Our engine scans 16 dimensions of domain health instantly."
+          },
+          {
+            "title": "Get Report",
+            "desc": "View detailed SEO metrics, backlink data, and spam scores."
+          }
         ]
       },
       "features": {
-        "title": "What You Get",
+        "title": "您将获得",
         "items": [
-          { "title": "Domain Authority & Page Authority", "desc": "DA and PA metrics with historical trends showing domain strength over time." },
-          { "title": "Backlink Profile", "desc": "Complete backlink analysis with referring domains and anchor text distribution." },
-          { "title": "Spam Score", "desc": "Machine learning spam detection with penalty risk assessment and recommendations." },
-          { "title": "Indexation Status", "desc": "Search engine indexation checks across Google, Bing, and Yandex." },
-          { "title": "Technical SEO", "desc": "Core Web Vitals, mobile-friendliness, and structured data analysis." },
-          { "title": "Competitor Analysis", "desc": "Compare domain metrics against top competitors in your niche." }
+          {
+            "title": "Domain Authority & Page Authority",
+            "desc": "DA and PA metrics with historical trends showing domain strength over time."
+          },
+          {
+            "title": "Backlink Profile",
+            "desc": "Complete backlink analysis with referring domains and anchor text distribution."
+          },
+          {
+            "title": "Spam Score",
+            "desc": "Machine learning spam detection with penalty risk assessment and recommendations."
+          },
+          {
+            "title": "Indexation Status",
+            "desc": "Search engine indexation checks across Google, Bing, and Yandex."
+          },
+          {
+            "title": "Technical SEO",
+            "desc": "Core Web Vitals, mobile-friendliness, and structured data analysis."
+          },
+          {
+            "title": "Competitor Analysis",
+            "desc": "Compare domain metrics against top competitors in your niche."
+          }
         ]
       },
       "included": {
-        "title": "What's Included",
+        "title": "包含内容",
         "items": [
           "DA and PA metrics with historical trends",
           "Complete backlink analysis with referring domains",
@@ -397,27 +587,42 @@
           "Core Web Vitals, mobile-friendliness, and structured data analysis",
           "Competitor comparison against top domains in your niche"
         ],
-        "cta": "Need deeper analysis? Try Extended Insights →"
+        "cta": "需要更深入的分析？试试深度洞察 →"
       },
       "cta": {
         "title": "Ready for Deeper Analysis?",
         "description": "Upgrade to access historical data, bulk scanning, and API integrations.",
-        "pricing": "View Pricing",
-        "extended": "View Extended Insights"
+        "pricing": "查看定价",
+        "extended": "查看深度洞察"
       }
     },
     "lookup": {
-      "badge": "FREE TOOL",
-      "title": "Domain Lookup",
+      "badge": "免费工具",
+      "title": "域名查询",
       "description": "Instant WHOIS data, DNS records, and registration details for any domain. Get the intelligence you need in seconds.",
       "placeholder": "Enter domain (e.g., example.com)",
-      "lookupButton": "Lookup",
-      "searchingButton": "Searching...",
-      "loading": "Fetching domain data...",
-      "whoisTitle": "WHOIS Information",
-      "dnsTitle": "DNS Records",
-      "dnsHeaders": ["Type", "Name", "Value", "TTL"],
-      "whoisLabels": ["Domain", "Registrar", "Registration Date", "Expiration Date", "Last Updated", "Nameservers", "Status", "Registrant Org", "Country"],
+      "lookupButton": "查询",
+      "searchingButton": "搜索中...",
+      "loading": "正在获取域名数据...",
+      "whoisTitle": "WHOIS信息",
+      "dnsTitle": "DNS记录",
+      "dnsHeaders": [
+        "Type",
+        "Name",
+        "Value",
+        "TTL"
+      ],
+      "whoisLabels": [
+        "Domain",
+        "Registrar",
+        "Registration Date",
+        "Expiration Date",
+        "Last Updated",
+        "Nameservers",
+        "Status",
+        "Registrant Org",
+        "Country"
+      ],
       "needMore": {
         "title": "Need More Details?",
         "description": "Get historical data, trademark checks, and comprehensive domain intelligence with Extended Insights.",
@@ -425,118 +630,268 @@
         "seoScan": "Run SEO Scan"
       },
       "empty": {
-        "title": "Enter a Domain to Get Started",
+        "title": "输入域名开始使用",
         "description": "Search any domain to view WHOIS data, DNS records, and registration details."
       }
     },
     "insights": {
-      "badge": "PREMIUM",
-      "title": "Extended Insights",
+      "badge": "高级版",
+      "title": "深度洞察",
       "description": "Deep historical data, DNS records, USPTO/WIPO trademark checks, and WHOIS/RDAP logs for comprehensive domain research.",
-      "cta": "Get Extended Insights",
-      "revealTitle": "Reveal Pricing",
+      "cta": "获取深度洞察",
+      "revealTitle": "揭示定价",
       "tiers": [
-        { "name": "Basic", "price": "$5", "desc": "Standard domain value" },
-        { "name": "Standard", "price": "$10", "desc": "Moderate domain value" },
-        { "name": "Premium", "price": "$25", "desc": "High-value domain" },
-        { "name": "Enterprise", "price": "$50", "desc": "Ultra-premium domain" }
+        {
+          "name": "Basic",
+          "price": "$5",
+          "desc": "Standard domain value"
+        },
+        {
+          "name": "Standard",
+          "price": "$10",
+          "desc": "Moderate domain value"
+        },
+        {
+          "name": "Premium",
+          "price": "$25",
+          "desc": "High-value domain"
+        },
+        {
+          "name": "Enterprise",
+          "price": "$50",
+          "desc": "Ultra-premium domain"
+        }
       ],
       "pricingNote": "Pricing based on domain value and complexity",
-      "reportTitle": "What's Included in Your Report",
+      "reportTitle": "报告包含内容",
       "sections": [
-        { "title": "Historical Data", "desc": "Wayback Machine snapshots and historical content changes over time." },
-        { "title": "DNS Records", "desc": "Complete DNS record enumeration including A, MX, NS, TXT, and CNAME." },
-        { "title": "WHOIS / RDAP", "desc": "Registration data, domain age, registrar history, and nameserver changes." },
-        { "title": "Trademark Checks", "desc": "USPTO and WIPO trademark database conflict detection." },
-        { "title": "SSL Certificate", "desc": "Certificate authority, expiry dates, and chain verification." },
-        { "title": "Server Intelligence", "desc": "Hosting provider, IP geolocation, and technology stack detection." }
+        {
+          "title": "Historical Data",
+          "desc": "Wayback Machine snapshots and historical content changes over time."
+        },
+        {
+          "title": "DNS Records",
+          "desc": "Complete DNS record enumeration including A, MX, NS, TXT, and CNAME."
+        },
+        {
+          "title": "WHOIS / RDAP",
+          "desc": "Registration data, domain age, registrar history, and nameserver changes."
+        },
+        {
+          "title": "Trademark Checks",
+          "desc": "USPTO and WIPO trademark database conflict detection."
+        },
+        {
+          "title": "SSL Certificate",
+          "desc": "Certificate authority, expiry dates, and chain verification."
+        },
+        {
+          "title": "Server Intelligence",
+          "desc": "Hosting provider, IP geolocation, and technology stack detection."
+        }
       ],
-      "useCasesTitle": "When to Use Extended Insights",
+      "useCasesTitle": "何时使用深度洞察",
       "useCases": [
-        { "title": "Domain Acquisition", "desc": "Research domain history before making an offer." },
-        { "title": "Trademark Clearance", "desc": "Check for conflicts before launching a brand." },
-        { "title": "Competitor Analysis", "desc": "Understand competitor domain strategies and history." },
-        { "title": "Portfolio Due Diligence", "desc": "Audit your portfolio for hidden risks and opportunities." }
+        {
+          "title": "Domain Acquisition",
+          "desc": "Research domain history before making an offer."
+        },
+        {
+          "title": "Trademark Clearance",
+          "desc": "Check for conflicts before launching a brand."
+        },
+        {
+          "title": "Competitor Analysis",
+          "desc": "Understand competitor domain strategies and history."
+        },
+        {
+          "title": "Portfolio Due Diligence",
+          "desc": "Audit your portfolio for hidden risks and opportunities."
+        }
       ],
-      "ctaTitle": "Unlock Domain Intelligence",
+      "ctaTitle": "解锁域名情报",
       "ctaDescription": "Get the complete picture with Extended Insights reports.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup First"
+      "startFreeTrial": "开始免费试用",
+      "tryLookup": "先试试域名查询"
     },
     "bulk": {
-      "badge": "ENTERPRISE",
-      "title": "Bulk Analyzer",
+      "badge": "企业版",
+      "title": "批量分析器",
       "description": "Multi-domain batch evaluation tool for portfolio analysis and large-scale domain research. Process thousands of domains in seconds.",
-      "cta": "Get Bulk Access",
+      "cta": "获取批量访问",
       "statValue": "5,000",
-      "statLabel": "domains per batch",
+      "statLabel": "每批域名数",
       "stats": [
-        { "value": "16", "label": "Dimensions" },
-        { "value": "4", "label": "TLDs" },
-        { "value": "<3s", "label": "Per Domain" }
+        {
+          "value": "16",
+          "label": "Dimensions"
+        },
+        {
+          "value": "4",
+          "label": "TLDs"
+        },
+        {
+          "value": "<3s",
+          "label": "Per Domain"
+        }
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "运作方式",
         "steps": [
-          { "title": "Upload List", "desc": "Paste domains or upload a CSV file with up to 5,000 domains." },
-          { "title": "Configure Scoring", "desc": "Set custom weights for each of the 16 scoring dimensions." },
-          { "title": "Process", "desc": "Our engine evaluates all domains in parallel with priority queuing." },
-          { "title": "Export Results", "desc": "Download CSV with scores, pricing data, and priority rankings." }
+          {
+            "title": "Upload List",
+            "desc": "Paste domains or upload a CSV file with up to 5,000 domains."
+          },
+          {
+            "title": "Configure Scoring",
+            "desc": "Set custom weights for each of the 16 scoring dimensions."
+          },
+          {
+            "title": "Process",
+            "desc": "Our engine evaluates all domains in parallel with priority queuing."
+          },
+          {
+            "title": "Export Results",
+            "desc": "Download CSV with scores, pricing data, and priority rankings."
+          }
         ]
       },
-      "outputTitle": "Output Columns",
-      "outputHeaders": ["Column", "Description", "Example"],
+      "outputTitle": "输出列",
+      "outputHeaders": [
+        "Column",
+        "Description",
+        "Example"
+      ],
       "outputRows": [
-        ["Domain", "The domain name analyzed", "example.com"],
-        ["Domain Rating", "Authority score 0-100", "72"],
-        ["SEO Score", "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)", "68"],
-        ["Buyer Intent", "Score 0-100 indicating purchase likelihood", "45"],
-        ["Priority Score", "Combined ranking across all dimensions", "High"],
-        ["Estimated Value", "Fair market value range", "$2,400 - $3,600"]
+        [
+          "Domain",
+          "The domain name analyzed",
+          "example.com"
+        ],
+        [
+          "Domain Rating",
+          "Authority score 0-100",
+          "72"
+        ],
+        [
+          "SEO Score",
+          "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)",
+          "68"
+        ],
+        [
+          "Buyer Intent",
+          "Score 0-100 indicating purchase likelihood",
+          "45"
+        ],
+        [
+          "Priority Score",
+          "Combined ranking across all dimensions",
+          "High"
+        ],
+        [
+          "Estimated Value",
+          "Fair market value range",
+          "$2,400 - $3,600"
+        ]
       ],
-      "priorityTitle": "Priority Score Breakdown",
+      "priorityTitle": "优先级评分分解",
       "dimensions": [
-        { "name": "Backlink Profile", "weight": "40%", "bar": 40 },
-        { "name": "Traffic Analysis", "weight": "30%", "bar": 30 },
-        { "name": "Keyword Metrics", "weight": "20%", "bar": 20 },
-        { "name": "Technical SEO", "weight": "10%", "bar": 10 }
+        {
+          "name": "Backlink Profile",
+          "weight": "40%",
+          "bar": 40
+        },
+        {
+          "name": "Traffic Analysis",
+          "weight": "30%",
+          "bar": 30
+        },
+        {
+          "name": "Keyword Metrics",
+          "weight": "20%",
+          "bar": 20
+        },
+        {
+          "name": "Technical SEO",
+          "weight": "10%",
+          "bar": 10
+        }
       ],
-      "customTitle": "Custom Scoring",
+      "customTitle": "自定义评分",
       "customDescription": "Weight dimensions based on your specific use case. Whether you prioritize SEO metrics, traffic potential, or buyer intent, adjust the scoring to match your portfolio strategy.",
       "modes": [
-        { "title": "Investor Mode", "desc": "Maximize ROI with traffic and value focus" },
-        { "title": "Developer Mode", "desc": "Prioritize technical metrics and authority" },
-        { "title": "Brand Mode", "desc": "Emphasize trademark safety and memorability" }
+        {
+          "title": "Investor Mode",
+          "desc": "Maximize ROI with traffic and value focus"
+        },
+        {
+          "title": "Developer Mode",
+          "desc": "Prioritize technical metrics and authority"
+        },
+        {
+          "title": "Brand Mode",
+          "desc": "Emphasize trademark safety and memorability"
+        }
       ],
-      "ctaTitle": "Ready to Scale Your Domain Research?",
+      "ctaTitle": "准备好扩展您的域名研究了吗？",
       "ctaDescription": "Process up to 5,000 domains per batch with Enterprise access.",
-      "startTrial": "Start Enterprise Trial",
-      "tryLookup": "Try Single Domain Lookup"
+      "startTrial": "开始企业版试用",
+      "tryLookup": "试试单域名查询"
     },
     "api": {
-      "badge": "DEVELOPER",
-      "title": "API Access",
+      "badge": "开发者",
+      "title": "API接口",
       "description": "RESTful API for programmatic domain intelligence. Build custom integrations, automate workflows, and access all domain data programmatically.",
-      "getKey": "Get API Key",
-      "readDocs": "Read Documentation",
-      "buildTitle": "What You Can Build",
+      "getKey": "获取API密钥",
+      "readDocs": "阅读文档",
+      "buildTitle": "您可以构建什么",
       "buildCards": [
-        { "title": "Domain Portfolio Tracker", "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.", "linkText": "Try Domain Lookup" },
-        { "title": "Market Intelligence Dashboard", "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.", "linkText": "Explore Bulk Analyzer" },
-        { "title": "Brand Protection System", "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.", "linkText": "See Trademark Monitor" }
+        {
+          "title": "Domain Portfolio Tracker",
+          "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.",
+          "linkText": "Try Domain Lookup"
+        },
+        {
+          "title": "Market Intelligence Dashboard",
+          "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.",
+          "linkText": "Explore Bulk Analyzer"
+        },
+        {
+          "title": "Brand Protection System",
+          "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.",
+          "linkText": "See Trademark Monitor"
+        }
       ],
-      "featuresTitle": "API Features",
+      "featuresTitle": "API功能",
       "features": [
-        { "title": "RESTful API", "desc": "Full access to all domain intelligence endpoints with standard HTTP methods." },
-        { "title": "Webhooks", "desc": "Real-time notifications for domain changes and events via webhook callbacks." },
-        { "title": "Rate Limits", "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes." },
-        { "title": "SDKs", "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation." },
-        { "title": "Sandbox", "desc": "Test environment for development and integration testing before going live." },
-        { "title": "Documentation", "desc": "Complete API reference with code examples, tutorials, and best practices." }
+        {
+          "title": "RESTful API",
+          "desc": "Full access to all domain intelligence endpoints with standard HTTP methods."
+        },
+        {
+          "title": "Webhooks",
+          "desc": "Real-time notifications for domain changes and events via webhook callbacks."
+        },
+        {
+          "title": "Rate Limits",
+          "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes."
+        },
+        {
+          "title": "SDKs",
+          "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation."
+        },
+        {
+          "title": "Sandbox",
+          "desc": "Test environment for development and integration testing before going live."
+        },
+        {
+          "title": "Documentation",
+          "desc": "Complete API reference with code examples, tutorials, and best practices."
+        }
       ],
-      "ctaTitle": "Ready to Build?",
+      "ctaTitle": "准备好构建了吗？",
       "ctaDescription": "Get your API key and start integrating domain intelligence today.",
-      "viewDocs": "View API Docs",
+      "viewDocs": "查看API文档",
       "modal": {
         "title": "Get Your API Key",
         "description": "Create a free account to get your API key and start building with domain intelligence data.",
@@ -545,25 +900,37 @@
       }
     },
     "trademark": {
-      "badge": "PREMIUM",
-      "title": "Trademark Monitor",
+      "badge": "高级版",
+      "title": "商标监控",
       "description": "USPTO/WIPO conflict detection and alerts. Protect your brand with proactive trademark monitoring across global databases.",
-      "cta": "Start Monitoring",
-      "severityTitle": "Threat Severity Levels",
+      "cta": "开始监控",
+      "severityTitle": "威胁严重程度",
       "levels": [
-        { "level": "Critical", "desc": "Direct trademark conflict detected" },
-        { "level": "High", "desc": "Similar mark in same industry" },
-        { "level": "Medium", "desc": "Similar name, different class" },
-        { "level": "Low", "desc": "Minor similarity, low risk" }
+        {
+          "level": "Critical",
+          "desc": "Direct trademark conflict detected"
+        },
+        {
+          "level": "High",
+          "desc": "Similar mark in same industry"
+        },
+        {
+          "level": "Medium",
+          "desc": "Similar name, different class"
+        },
+        {
+          "level": "Low",
+          "desc": "Minor similarity, low risk"
+        }
       ],
-      "problemTitle": "The Problem",
+      "problemTitle": "问题所在",
       "problems": [
         "Trademark infringement lawsuits cost $100K+ on average",
         "New domain registrations happen every minute",
         "Manual monitoring is impossible at scale",
         "By the time you notice, damage is done"
       ],
-      "solutionTitle": "Our Solution",
+      "solutionTitle": "我们的解决方案",
       "solutions": [
         "Real-time USPTO and WIPO database monitoring",
         "Scan up to 5,000 domains per list",
@@ -571,158 +938,419 @@
         "Risk scoring with confidence levels"
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "运作方式",
         "steps": [
-          { "title": "Add Domains", "desc": "Upload your brand domains or keywords to monitor." },
-          { "title": "Set Criteria", "desc": "Define industry, geographic scope, and sensitivity." },
-          { "title": "Monitor", "desc": "We scan USPTO, EUIPO, and WIPO databases continuously." },
-          { "title": "Get Alerts", "desc": "Receive instant notifications for potential conflicts." }
+          {
+            "title": "Add Domains",
+            "desc": "Upload your brand domains or keywords to monitor."
+          },
+          {
+            "title": "Set Criteria",
+            "desc": "Define industry, geographic scope, and sensitivity."
+          },
+          {
+            "title": "Monitor",
+            "desc": "We scan USPTO, EUIPO, and WIPO databases continuously."
+          },
+          {
+            "title": "Get Alerts",
+            "desc": "Receive instant notifications for potential conflicts."
+          }
         ]
       },
-      "useCasesTitle": "Use Cases",
+      "useCasesTitle": "应用场景",
       "useCases": [
-        { "title": "Brand Protection", "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs." },
-        { "title": "Product Launch", "content": "Clear trademarks before launching new products or entering new markets." },
-        { "title": "M&A Due Diligence", "content": "Audit trademark risks during mergers, acquisitions, or investment rounds." },
-        { "title": "Portfolio Management", "content": "Protect your domain portfolio from trademark challenges and legal disputes." }
+        {
+          "title": "Brand Protection",
+          "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs."
+        },
+        {
+          "title": "Product Launch",
+          "content": "Clear trademarks before launching new products or entering new markets."
+        },
+        {
+          "title": "M&A Due Diligence",
+          "content": "Audit trademark risks during mergers, acquisitions, or investment rounds."
+        },
+        {
+          "title": "Portfolio Management",
+          "content": "Protect your domain portfolio from trademark challenges and legal disputes."
+        }
       ],
-      "pricingTitle": "Pricing",
+      "pricingTitle": "定价",
       "plans": [
-        { "plan": "Free", "price": "$0", "features": ["3 unsigned scans/day", "12 signed scans/day", "Basic metrics"] },
-        { "plan": "Startup", "price": "$79/mo", "features": ["30 scans/day", "Priority processing", "CSV export", "Email alerts"], "popular": true },
-        { "plan": "Enterprise", "price": "$129/mo", "features": ["Unlimited scans", "API access (10K calls/day)", "Webhook integration", "Dedicated support"] }
+        {
+          "plan": "Free",
+          "price": "$0",
+          "features": [
+            "3 unsigned scans/day",
+            "12 signed scans/day",
+            "Basic metrics"
+          ]
+        },
+        {
+          "plan": "Startup",
+          "price": "$79/mo",
+          "features": [
+            "30 scans/day",
+            "Priority processing",
+            "CSV export",
+            "Email alerts"
+          ],
+          "popular": true
+        },
+        {
+          "plan": "Enterprise",
+          "price": "$129/mo",
+          "features": [
+            "Unlimited scans",
+            "API access (10K calls/day)",
+            "Webhook integration",
+            "Dedicated support"
+          ]
+        }
       ],
-      "popular": "POPULAR",
-      "ctaTitle": "Protect Your Brand Today",
+      "popular": "热门",
+      "ctaTitle": "立即保护您的品牌",
       "ctaDescription": "Don't wait until it's too late. Start monitoring now.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup",
-      "runScan": "Run SEO Scan"
+      "startFreeTrial": "开始免费试用",
+      "tryLookup": "试试域名查询",
+      "runScan": "运行SEO扫描"
     },
     "database": {
-      "badge": "COMPREHENSIVE DATA",
+      "badge": "全面数据",
       "statValue": "2,847",
-      "statLabel": "TLDs tracked across all registries",
+      "statLabel": "跟踪的TLD覆盖所有注册机构",
       "description": "Access the most comprehensive domain database available. Track registrations, expirations, and pricing across every major TLD.",
       "stats": [
-        { "value": "420M+", "label": "Domains Tracked", "desc": "Active registrations across all TLDs" },
-        { "value": "2.1B", "label": "Historical Records", "desc": "Registration and expiration history" },
-        { "value": "50K+", "label": "Daily Updates", "desc": "New registrations processed daily" },
-        { "value": "99.9%", "label": "Uptime", "desc": "Database availability guarantee" }
+        {
+          "value": "420M+",
+          "label": "Domains Tracked",
+          "desc": "Active registrations across all TLDs"
+        },
+        {
+          "value": "2.1B",
+          "label": "Historical Records",
+          "desc": "Registration and expiration history"
+        },
+        {
+          "value": "50K+",
+          "label": "Daily Updates",
+          "desc": "New registrations processed daily"
+        },
+        {
+          "value": "99.9%",
+          "label": "Uptime",
+          "desc": "Database availability guarantee"
+        }
       ],
-      "methodsTitle": "Search Methods",
+      "methodsTitle": "搜索方式",
       "methods": [
-        { "title": "Single Lookup", "desc": "Search any domain for instant registration data and availability status." },
-        { "title": "Bulk Check", "desc": "Upload up to 5,000 domains at once for batch availability analysis." },
-        { "title": "API Query", "desc": "Programmatic access via RESTful API with up to 10,000 calls per day." }
+        {
+          "title": "Single Lookup",
+          "desc": "Search any domain for instant registration data and availability status."
+        },
+        {
+          "title": "Bulk Check",
+          "desc": "Upload up to 5,000 domains at once for batch availability analysis."
+        },
+        {
+          "title": "API Query",
+          "desc": "Programmatic access via RESTful API with up to 10,000 calls per day."
+        }
       ],
-      "sourcesTitle": "Data Sources",
+      "sourcesTitle": "数据来源",
       "sources": [
-        { "source": "ICANN", "desc": "Official domain registration data" },
-        { "source": "Registry Operators", "desc": "Direct TLD zone file access" },
-        { "source": "WHOIS/RDAP", "desc": "Registration and contact information" },
-        { "source": "Wayback Machine", "desc": "Historical content snapshots" },
-        { "source": "Certificate Transparency", "desc": "SSL certificate monitoring" },
-        { "source": "DNS Resolvers", "desc": "Real-time DNS record verification" }
+        {
+          "source": "ICANN",
+          "desc": "Official domain registration data"
+        },
+        {
+          "source": "Registry Operators",
+          "desc": "Direct TLD zone file access"
+        },
+        {
+          "source": "WHOIS/RDAP",
+          "desc": "Registration and contact information"
+        },
+        {
+          "source": "Wayback Machine",
+          "desc": "Historical content snapshots"
+        },
+        {
+          "source": "Certificate Transparency",
+          "desc": "SSL certificate monitoring"
+        },
+        {
+          "source": "DNS Resolvers",
+          "desc": "Real-time DNS record verification"
+        }
       ],
-      "levelsTitle": "Access Levels",
+      "levelsTitle": "访问级别",
       "plans": [
-        { "plan": "Free", "price": "$0", "features": ["Basic lookup", "3 searches/day", "Limited TLDs"] },
-        { "plan": "Startup", "price": "$79/mo", "features": ["Full database", "30 searches/day", "CSV export", "Priority support"], "popular": true },
-        { "plan": "Enterprise", "price": "$129/mo", "features": ["Unlimited access", "API (10K calls/day)", "Webhooks", "Custom data"] }
+        {
+          "plan": "Free",
+          "price": "$0",
+          "features": [
+            "Basic lookup",
+            "3 searches/day",
+            "Limited TLDs"
+          ]
+        },
+        {
+          "plan": "Startup",
+          "price": "$79/mo",
+          "features": [
+            "Full database",
+            "30 searches/day",
+            "CSV export",
+            "Priority support"
+          ],
+          "popular": true
+        },
+        {
+          "plan": "Enterprise",
+          "price": "$129/mo",
+          "features": [
+            "Unlimited access",
+            "API (10K calls/day)",
+            "Webhooks",
+            "Custom data"
+          ]
+        }
       ],
-      "popular": "POPULAR",
-      "ctaTitle": "Access the Complete Domain Database",
+      "popular": "热门",
+      "ctaTitle": "访问完整的域名数据库",
       "ctaDescription": "2,847 TLDs, 420M+ domains, real-time data at your fingertips.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup",
-      "viewDocs": "View API Docs"
+      "startFreeTrial": "开始免费试用",
+      "tryLookup": "试试域名查询",
+      "viewDocs": "查看API文档"
     }
   },
   "mp": {
     "main": {
-      "badge": "Marketplace",
-      "title": "Premium Domains",
+      "badge": "市场",
+      "title": "优质域名",
       "subtitle": "Browse our curated inventory. Full stats shown — name hidden. Pay to reveal.",
       "stats": [
-        { "label": "Listed Domains", "value": "2,847" },
-        { "label": "Revealed Today", "value": "142" },
-        { "label": "Avg. Domain Value", "value": "$12,400" },
-        { "label": "Total Sold", "value": "$3.2M" }
+        {
+          "label": "Listed Domains",
+          "value": "2,847"
+        },
+        {
+          "label": "Revealed Today",
+          "value": "142"
+        },
+        {
+          "label": "Avg. Domain Value",
+          "value": "$12,400"
+        },
+        {
+          "label": "Total Sold",
+          "value": "$3.2M"
+        }
       ],
-      "filters": ["All TLDs", ".com", ".net", ".io", ".co"],
-      "sortBy": ["Sort by Value", "Sort by Score", "Sort by Listed"],
-      "nameHidden": "Name Hidden",
-      "revealName": "Reveal Name",
-      "dataLabels": ["Value", "Score", "Health", "CPC", "DA"],
+      "filters": [
+        "All TLDs",
+        ".com",
+        ".net",
+        ".io",
+        ".co"
+      ],
+      "sortBy": [
+        "Sort by Value",
+        "Sort by Score",
+        "Sort by Listed"
+      ],
+      "nameHidden": "名称隐藏",
+      "revealName": "揭示名称",
+      "dataLabels": [
+        "Value",
+        "Score",
+        "Health",
+        "CPC",
+        "DA"
+      ],
       "features": [
-        { "title": "No Name Hints", "desc": "We show everything except the name. No asterisks, no partial reveals. Just the intelligence." },
-        { "title": "Pay to Reveal", "desc": "Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks." },
-        { "title": "Register Anywhere", "desc": "After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register." }
+        {
+          "title": "No Name Hints",
+          "desc": "We show everything except the name. No asterisks, no partial reveals. Just the intelligence."
+        },
+        {
+          "title": "Pay to Reveal",
+          "desc": "Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks."
+        },
+        {
+          "title": "Register Anywhere",
+          "desc": "After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register."
+        }
       ],
-      "cta": { "curated": "Browse Curated", "luck": "Try Your Luck" },
-      "modal": { "title": "Create an Account", "desc": "Sign up to reveal domain names and make purchases.", "redirecting": "Redirecting to signup in {count} seconds...", "signup": "Sign Up Free", "later": "Maybe later" }
+      "cta": {
+        "curated": "浏览精选",
+        "luck": "试试运气"
+      },
+      "modal": {
+        "title": "创建账户",
+        "desc": "Sign up to reveal domain names and make purchases.",
+        "redirecting": "Redirecting to signup in {count} seconds...",
+        "signup": "免费注册",
+        "later": "稍后再说"
+      }
     },
     "sell": {
-      "badge": "Marketplace",
-      "title": "Sell Your Domains",
+      "badge": "市场",
+      "title": "出售您的域名",
       "subtitle": "List your premium domains on Ceche and reach qualified buyers worldwide.",
-      "steps": ["Submit", "Set Price", "Publish"],
-      "step0": { "title": "Submit Your Domain", "desc": "Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.", "placeholder": "yourdomain.com", "cta": "Continue" },
-      "step1": { "title": "Set Your Price", "desc": "Our AI suggests a price based on domain metrics. You can accept or set your own.", "suggested": "Suggested: $12,500", "cta": "Continue" },
-      "step2": { "title": "Publish Listing", "desc": "Review your listing details and publish. Your domain goes live within 24 hours.", "cta": "Publish Listing" },
-      "fees": {
-        "title": "Fee Structure",
-        "listing": { "title": "Listing Fees", "tiers": [
-          { "tier": "Standard (.com, .net, .org)", "fee": "$5", "min": "—" },
-          { "tier": "Premium (.io, .co, .ai)", "fee": "$10", "min": "—" },
-          { "tier": "Ultra-Premium (1-word, brandable)", "fee": "$25", "min": "—" }
-        ]},
-        "commission": { "title": "Commission Rates", "tiers": [
-          { "tier": "Domains under $5,000", "commission": "8%", "minimum": "$50" },
-          { "tier": "Domains $5,000–$50,000", "commission": "10%", "minimum": "$200" },
-          { "tier": "Domains over $50,000", "commission": "15%", "minimum": "Negotiable" }
-        ]}
+      "steps": [
+        "提交",
+        "设定价格",
+        "发布"
+      ],
+      "step0": {
+        "title": "Submit Your Domain",
+        "desc": "Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.",
+        "placeholder": "yourdomain.com",
+        "cta": "Continue"
       },
-      "eligibility": { "title": "Eligibility Checklist", "items": [
-        "Domain must be registered and active",
-        "You must verify ownership via TXT or CNAME record",
-        "No active UDRP or legal disputes",
-        "Domain must not be blacklisted for spam"
-      ]},
-      "tools": { "title": "Seller Tools", "items": [
-        { "title": "Analytics Dashboard", "desc": "Track views, offers, and conversion rates for every listing in real time." },
-        { "title": "Bulk Listing", "desc": "Import and manage multiple domain listings at once with CSV upload." },
-        { "title": "Automated Pricing", "desc": "AI-powered suggested pricing based on domain metrics and market trends." }
-      ]},
-      "cta": { "title": "Ready to sell?", "desc": "List your first domain in under 5 minutes.", "signup": "Create Account", "pricing": "View Pricing" }
-    },
-    "luck": {
-      "badge": "Marketplace",
-      "title": "Try Your Luck",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.",
-      "step1": "Step 1: Pick Your TLD",
-      "spinning": "Spinning...",
-      "step2": "Step 2: Pick a Box",
-      "clickToReveal": "Click to reveal",
-      "locked": { "title": "Domain Locked", "desc": "Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately." },
-      "howItWorks": {
-        "title": "How It Works",
-        "steps": [
-          { "title": "Pick a TLD", "desc": "Choose .com, .net, .io, .co, or any TLD at a flat rate." },
-          { "title": "Spin & Pick", "desc": "Three closed boxes appear. Pick one when the animation stops." },
-          { "title": "Reveal & Buy", "desc": "Domain revealed and locked. Prompted to register immediately." }
+      "step1": {
+        "title": "Set Your Price",
+        "desc": "Our AI suggests a price based on domain metrics. You can accept or set your own.",
+        "suggested": "Suggested: $12,500",
+        "cta": "Continue"
+      },
+      "step2": {
+        "title": "Publish Listing",
+        "desc": "Review your listing details and publish. Your domain goes live within 24 hours.",
+        "cta": "Publish Listing"
+      },
+      "fees": {
+        "title": "费用结构",
+        "listing": {
+          "title": "上架费用",
+          "tiers": [
+            {
+              "tier": "Standard (.com, .net, .org)",
+              "fee": "$5",
+              "min": "—"
+            },
+            {
+              "tier": "Premium (.io, .co, .ai)",
+              "fee": "$10",
+              "min": "—"
+            },
+            {
+              "tier": "Ultra-Premium (1-word, brandable)",
+              "fee": "$25",
+              "min": "—"
+            }
+          ]
+        },
+        "commission": {
+          "title": "佣金费率",
+          "tiers": [
+            {
+              "tier": "Domains under $5,000",
+              "commission": "8%",
+              "minimum": "$50"
+            },
+            {
+              "tier": "Domains $5,000–$50,000",
+              "commission": "10%",
+              "minimum": "$200"
+            },
+            {
+              "tier": "Domains over $50,000",
+              "commission": "15%",
+              "minimum": "Negotiable"
+            }
+          ]
+        }
+      },
+      "eligibility": {
+        "title": "资格检查清单",
+        "items": [
+          "Domain must be registered and active",
+          "You must verify ownership via TXT or CNAME record",
+          "No active UDRP or legal disputes",
+          "Domain must not be blacklisted for spam"
         ]
       },
-      "cta": { "title": "Prefer browsing?", "desc": "Browse our full marketplace with detailed stats on every listing.", "marketplace": "View Marketplace", "signup": "Sign Up Free" },
-      "modal": { "title": "Create an Account", "desc": "Sign up to lock this domain exclusively for you.", "signup": "Sign Up Free", "later": "Maybe later" }
+      "tools": {
+        "title": "卖家工具",
+        "items": [
+          {
+            "title": "Analytics Dashboard",
+            "desc": "Track views, offers, and conversion rates for every listing in real time."
+          },
+          {
+            "title": "Bulk Listing",
+            "desc": "Import and manage multiple domain listings at once with CSV upload."
+          },
+          {
+            "title": "Automated Pricing",
+            "desc": "AI-powered suggested pricing based on domain metrics and market trends."
+          }
+        ]
+      },
+      "cta": {
+        "title": "准备出售？",
+        "desc": "List your first domain in under 5 minutes.",
+        "signup": "创建账户",
+        "pricing": "查看定价"
+      }
+    },
+    "luck": {
+      "badge": "市场",
+      "title": "试试运气",
+      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.",
+      "step1": "步骤1：选择您的TLD",
+      "spinning": "转动中...",
+      "step2": "步骤2：选择一个盒子",
+      "clickToReveal": "点击揭示",
+      "locked": {
+        "title": "Domain Locked",
+        "desc": "Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately."
+      },
+      "howItWorks": {
+        "title": "运作方式",
+        "steps": [
+          {
+            "title": "Pick a TLD",
+            "desc": "Choose .com, .net, .io, .co, or any TLD at a flat rate."
+          },
+          {
+            "title": "Spin & Pick",
+            "desc": "Three closed boxes appear. Pick one when the animation stops."
+          },
+          {
+            "title": "Reveal & Buy",
+            "desc": "Domain revealed and locked. Prompted to register immediately."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Prefer browsing?",
+        "desc": "Browse our full marketplace with detailed stats on every listing.",
+        "marketplace": "查看市场",
+        "signup": "免费注册"
+      },
+      "modal": {
+        "title": "创建账户",
+        "desc": "Sign up to lock this domain exclusively for you.",
+        "signup": "免费注册",
+        "later": "稍后再说"
+      }
     },
     "curated": {
-      "badge": "Marketplace",
-      "title": "Curated Domains",
+      "badge": "市场",
+      "title": "精选域名",
       "subtitle": "Hand-picked premium domains sorted by commercial intent and SEO authority. Each listing includes a full intelligence report and valuation.",
-      "tryLuck": "Try Your Luck Instead",
-      "featured": { "label": "Featured Domain", "hidden": "Name hidden until purchase", "instant": "Instant Purchase" },
+      "tryLuck": "试试运气",
+      "featured": {
+        "label": "Featured Domain",
+        "hidden": "Name hidden until purchase",
+        "instant": "Instant Purchase"
+      },
       "features": [
         "Hand-picked by domain experts",
         "Full intelligence report included",
@@ -732,315 +1360,819 @@
         "Guided transfer with registrar support"
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "运作方式",
         "steps": [
-          { "title": "Browse Listings", "desc": "Each curated domain includes valuation, SEO metrics, and commercial intent score." },
-          { "title": "Make an Offer", "desc": "Buy outright or submit an offer. Our system handles counter-offers automatically." },
-          { "title": "Complete Purchase", "desc": "Secure payment. Domain transfers within 24 hours with full support." }
+          {
+            "title": "Browse Listings",
+            "desc": "Each curated domain includes valuation, SEO metrics, and commercial intent score."
+          },
+          {
+            "title": "Make an Offer",
+            "desc": "Buy outright or submit an offer. Our system handles counter-offers automatically."
+          },
+          {
+            "title": "Complete Purchase",
+            "desc": "Secure payment. Domain transfers within 24 hours with full support."
+          }
         ]
       },
-      "cta": { "title": "Browse all curated domains", "desc": "Updated weekly with new hand-picked premium domains.", "marketplace": "View Marketplace", "luck": "Try Your Luck" }
+      "cta": {
+        "title": "Browse all curated domains",
+        "desc": "Updated weekly with new hand-picked premium domains.",
+        "marketplace": "查看市场",
+        "luck": "试试运气"
+      }
     },
     "unmasking": {
-      "badge": "Marketplace",
-      "title": "How Unmasking Works",
+      "badge": "市场",
+      "title": "揭示机制如何运作",
       "subtitle": "Our blind marketplace protects domain names from front-running and sniping. Here's the process.",
       "steps": [
-        { "title": "Browse", "desc": "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range." },
-        { "title": "Pay to Reveal", "desc": "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name." },
-        { "title": "Reveal & Inspect", "desc": "The domain name is revealed. You have 5 minutes to inspect and decide. No one else can see or purchase it." },
-        { "title": "Recheck or Walk Away", "desc": "If you pass, the domain goes back to the blind pool. If you proceed, it's locked exclusively for you." },
-        { "title": "Complete or Walk Away", "desc": "Register the domain through our partner registrars (Dynadot, Namecheap, Porkbun) or walk away. No obligation." }
+        {
+          "title": "Browse",
+          "desc": "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range."
+        },
+        {
+          "title": "Pay to Reveal",
+          "desc": "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name."
+        },
+        {
+          "title": "Reveal & Inspect",
+          "desc": "The domain name is revealed. You have 5 minutes to inspect and decide. No one else can see or purchase it."
+        },
+        {
+          "title": "Recheck or Walk Away",
+          "desc": "If you pass, the domain goes back to the blind pool. If you proceed, it's locked exclusively for you."
+        },
+        {
+          "title": "Complete or Walk Away",
+          "desc": "Register the domain through our partner registrars (Dynadot, Namecheap, Porkbun) or walk away. No obligation."
+        }
       ],
-      "vault": { "title": "Vault Protection", "desc": "All unrevealed domain names are stored in an encrypted vault. No partial names, no asterisks, no hints. The only way to see the name is to pay the reveal fee. This eliminates domain front-running and ensures fair pricing for everyone." },
+      "vault": {
+        "title": "保险库保护",
+        "desc": "All unrevealed domain names are stored in an encrypted vault. No partial names, no asterisks, no hints. The only way to see the name is to pay the reveal fee. This eliminates domain front-running and ensures fair pricing for everyone."
+      },
       "features": [
-        { "title": "Encrypted Vault", "desc": "Domain names stored with zero-knowledge encryption." },
-        { "title": "5-Minute Lock", "desc": "After reveal, you have 5 minutes of exclusive access." },
-        { "title": "No Obligation", "desc": "Walk away at any point. No commitment required." }
+        {
+          "title": "Encrypted Vault",
+          "desc": "Domain names stored with zero-knowledge encryption."
+        },
+        {
+          "title": "5-Minute Lock",
+          "desc": "After reveal, you have 5 minutes of exclusive access."
+        },
+        {
+          "title": "No Obligation",
+          "desc": "Walk away at any point. No commitment required."
+        }
       ],
-      "cta": { "title": "Ready to explore?", "desc": "Browse thousands of premium domains with full intelligence data.", "marketplace": "Browse Marketplace", "luck": "Try Your Luck" }
+      "cta": {
+        "title": "Ready to explore?",
+        "desc": "Browse thousands of premium domains with full intelligence data.",
+        "marketplace": "浏览市场",
+        "luck": "试试运气"
+      }
     }
   },
   "sol": {
     "index": {
-      "title": "Solutions for Every Domain Need",
+      "title": "满足每种域名需求的解决方案",
       "subtitle": "Whether you invest, build, or broker — Ceche has the tools, data, and marketplace to power your domain strategy.",
-      "cta": { "ready": "Ready to get started?", "signup": "Create Free Account" },
+      "cta": {
+        "ready": "准备好了吗？",
+        "signup": "创建免费账户"
+      },
       "personas": [
-        { "title": "Domain Investors", "desc": "Portfolio yield analysis, flipper metrics, and drop-catching alerts. Maximize returns on your domain investments.", "stat": "8–15%", "statLabel": "Commission Tiers", "href": "/solutions/domain-investors" },
-        { "title": "Startup Founders", "desc": "Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup.", "stat": "16", "statLabel": "Scoring Dimensions", "href": "/solutions/startup-founders" },
-        { "title": "SEO Agencies", "desc": "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.", "stat": "10K", "statLabel": "API Calls/Day", "href": "/solutions/seo-agencies" },
-        { "title": "Find Available Domains", "desc": "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.", "stat": "4", "statLabel": "TLDs Scanned", "href": "/solutions/find-available" },
-        { "title": "Research Intelligence", "desc": "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.", "stat": "0–100", "statLabel": "Buyer Intent Score", "href": "/solutions/research-intelligence" },
-        { "title": "Buy Premium Domains", "desc": "Acquire high-value domains with secure, transparent transactions. Fast and reliable.", "stat": "$5–$50", "statLabel": "Reveal Fee Range", "href": "/solutions/buy-premium" }
+        {
+          "title": "Domain Investors",
+          "desc": "Portfolio yield analysis, flipper metrics, and drop-catching alerts. Maximize returns on your domain investments.",
+          "stat": "8–15%",
+          "statLabel": "Commission Tiers",
+          "href": "/solutions/domain-investors"
+        },
+        {
+          "title": "Startup Founders",
+          "desc": "Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup.",
+          "stat": "16",
+          "statLabel": "Scoring Dimensions",
+          "href": "/solutions/startup-founders"
+        },
+        {
+          "title": "SEO Agencies",
+          "desc": "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.",
+          "stat": "10K",
+          "statLabel": "API Calls/Day",
+          "href": "/solutions/seo-agencies"
+        },
+        {
+          "title": "Find Available Domains",
+          "desc": "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.",
+          "stat": "4",
+          "statLabel": "TLDs Scanned",
+          "href": "/solutions/find-available"
+        },
+        {
+          "title": "Research Intelligence",
+          "desc": "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.",
+          "stat": "0–100",
+          "statLabel": "Buyer Intent Score",
+          "href": "/solutions/research-intelligence"
+        },
+        {
+          "title": "Buy Premium Domains",
+          "desc": "Acquire high-value domains with secure, transparent transactions. Fast and reliable.",
+          "stat": "$5–$50",
+          "statLabel": "Reveal Fee Range",
+          "href": "/solutions/buy-premium"
+        }
       ],
-      "learnMore": "Learn more →"
+      "learnMore": "了解更多 →"
     },
     "investors": {
-      "badge": "For Investors",
-      "title": "Maximize Domain Investment Returns",
+      "badge": "面向投资者",
+      "title": "最大化域名投资回报",
       "desc": "Portfolio yield analysis, flipper valuation metrics, drop-catching alerts, and commission tiers from 8–15%. Everything you need to outperform the market.",
-      "cta": ["Start Investing", "View Pricing"],
+      "cta": [
+        "Start Investing",
+        "View Pricing"
+      ],
       "stats": [
-        { "value": "16", "label": "Scoring Dimensions" },
-        { "value": "8–15%", "label": "Commission Tiers" },
-        { "value": "4", "label": "TLDs Scanned" },
-        { "value": "$5–$50", "label": "Reveal Fee Range" }
+        {
+          "value": "16",
+          "label": "Scoring Dimensions"
+        },
+        {
+          "value": "8–15%",
+          "label": "Commission Tiers"
+        },
+        {
+          "value": "4",
+          "label": "TLDs Scanned"
+        },
+        {
+          "value": "$5–$50",
+          "label": "Reveal Fee Range"
+        }
       ],
       "problem": {
         "title": "The Investor's Problem",
         "desc": "Traditional domain investing requires juggling multiple tools, paying opaque fees, and guessing at valuations. You lose deals to faster buyers and overpay on commissions.",
-        "items": ["No unified scoring model across TLDs", "Hidden fees erode profit margins", "Manual drop-catching misses opportunities", "Commission structures eat into flips"]
+        "items": [
+          "No unified scoring model across TLDs",
+          "Hidden fees erode profit margins",
+          "Manual drop-catching misses opportunities",
+          "Commission structures eat into flips"
+        ]
       },
       "solution": {
         "title": "The Ceche Solution",
         "desc": "A single platform with 16-dimension scoring, tiered commissions with minimums, real-time alerts, and a marketplace designed for investors — not casual buyers.",
-        "items": ["16-dimension scoring on every domain", "Transparent tiered commission: 15%/12%/10%/8%", "Drop-catching alerts for expiring domains", "Bulk scan up to 5,000 domains at once"]
+        "items": [
+          "16-dimension scoring on every domain",
+          "Transparent tiered commission: 15%/12%/10%/8%",
+          "Drop-catching alerts for expiring domains",
+          "Bulk scan up to 5,000 domains at once"
+        ]
       },
       "commission": {
         "title": "Tiered Commission Structure",
-        "headers": ["Tier", "Commission", "Minimum"],
+        "headers": [
+          "Tier",
+          "Commission",
+          "Minimum"
+        ],
         "rows": [
-          { "tier": "Starter", "commission": "15%", "minimum": "$10" },
-          { "tier": "Growth", "commission": "12%", "minimum": "$50" },
-          { "tier": "Pro", "commission": "10%", "minimum": "$500" },
-          { "tier": "Enterprise", "commission": "8%", "minimum": "$4,000" }
+          {
+            "tier": "Starter",
+            "commission": "15%",
+            "minimum": "$10"
+          },
+          {
+            "tier": "Growth",
+            "commission": "12%",
+            "minimum": "$50"
+          },
+          {
+            "tier": "Pro",
+            "commission": "10%",
+            "minimum": "$500"
+          },
+          {
+            "tier": "Enterprise",
+            "commission": "8%",
+            "minimum": "$4,000"
+          }
         ]
       },
-      "toolsTitle": "Tools Built for Investors",
+      "toolsTitle": "为投资者打造的工具",
       "tools": [
-        { "title": "SEO Scanner", "desc": "Audit backlink profiles and domain authority in seconds." },
-        { "title": "Extended Insights", "desc": "Go beyond the basics with full 16-dimension deep dives." },
-        { "title": "Bulk Analyzer", "desc": "Score up to 5,000 domains in a single batch run." },
-        { "title": "Trademark Monitor", "desc": "Automated alerts for trademark conflicts on your portfolio." }
+        {
+          "title": "SEO Scanner",
+          "desc": "Audit backlink profiles and domain authority in seconds."
+        },
+        {
+          "title": "Extended Insights",
+          "desc": "Go beyond the basics with full 16-dimension deep dives."
+        },
+        {
+          "title": "Bulk Analyzer",
+          "desc": "Score up to 5,000 domains in a single batch run."
+        },
+        {
+          "title": "Trademark Monitor",
+          "desc": "Automated alerts for trademark conflicts on your portfolio."
+        }
       ],
-      "gettingStarted": { "title": "Getting Started", "steps": [
-        { "title": "Create Account", "desc": "Sign up free in 30 seconds" },
-        { "title": "Choose Plan", "desc": "Free, Startup ($79/mo), or Enterprise ($129/mo)" },
-        { "title": "Scan Domains", "desc": "Run SEO Scanner or Bulk Analyzer" },
-        { "title": "Analyze Scores", "desc": "Review 16-dimension reports" },
-        { "title": "Acquire & Flip", "desc": "Buy, hold, or resell with tiered commissions" }
-      ]},
-      "ctaTitle": "Start Flipping Smarter",
+      "gettingStarted": {
+        "title": "开始使用",
+        "steps": [
+          {
+            "title": "Create Account",
+            "desc": "Sign up free in 30 seconds"
+          },
+          {
+            "title": "Choose Plan",
+            "desc": "Free, Startup ($79/mo), or Enterprise ($129/mo)"
+          },
+          {
+            "title": "Scan Domains",
+            "desc": "Run SEO Scanner or Bulk Analyzer"
+          },
+          {
+            "title": "Analyze Scores",
+            "desc": "Review 16-dimension reports"
+          },
+          {
+            "title": "Acquire & Flip",
+            "desc": "Buy, hold, or resell with tiered commissions"
+          }
+        ]
+      },
+      "ctaTitle": "开始更聪明地翻转",
       "ctaDesc": "Join thousands of investors using Ceche to maximize domain ROI.",
-      "ctaSignup": "Create Free Account",
-      "ctaMarketplace": "Browse Marketplace"
+      "ctaSignup": "创建免费账户",
+      "ctaMarketplace": "浏览市场"
     },
     "founders": {
-      "badge": "For Founders",
-      "title": "Build Your Brand on the Right Domain",
+      "badge": "面向创始人",
+      "title": "在正确的域名上建立您的品牌",
       "desc": "AI-powered brandability scoring, pronounceability analysis, and trademark screening — everything you need before you commit to a name.",
       "steps": [
-        { "title": "Describe Your Brand", "desc": "Enter a brief description of your startup, industry, and audience." },
-        { "title": "Score & Compare", "desc": "Get 16-dimension scores across 4 TLDs with brandability ratings." },
-        { "title": "Claim Your Domain", "desc": "Register, buy on marketplace, or set alerts for expiring names." }
+        {
+          "title": "Describe Your Brand",
+          "desc": "Enter a brief description of your startup, industry, and audience."
+        },
+        {
+          "title": "Score & Compare",
+          "desc": "Get 16-dimension scores across 4 TLDs with brandability ratings."
+        },
+        {
+          "title": "Claim Your Domain",
+          "desc": "Register, buy on marketplace, or set alerts for expiring names."
+        }
       ],
       "features": [
-        { "title": "Brandability Index", "desc": "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset." },
-        { "title": "Pronounceability", "desc": "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember." },
-        { "title": "Extension Penetration", "desc": "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing." },
-        { "title": "Social Availability", "desc": "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass." }
+        {
+          "title": "Brandability Index",
+          "desc": "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset."
+        },
+        {
+          "title": "Pronounceability",
+          "desc": "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember."
+        },
+        {
+          "title": "Extension Penetration",
+          "desc": "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing."
+        },
+        {
+          "title": "Social Availability",
+          "desc": "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass."
+        }
       ],
-      "builtForTitle": "Built for Founders",
+      "builtForTitle": "为创始人打造",
       "builtFor": [
-        { "title": "Competitor Naming", "desc": "Analyze naming patterns in your industry for competitive insights." },
-        { "title": "Trademark Risk", "desc": "USPTO and WIPO database screening before brand commitment." },
-        { "title": "Appraisal Tool", "desc": "Get algorithmic valuations with confidence intervals." },
-        { "title": "SEO Scanner", "desc": "Evaluate backlink profiles of potential domains instantly." }
+        {
+          "title": "Competitor Naming",
+          "desc": "Analyze naming patterns in your industry for competitive insights."
+        },
+        {
+          "title": "Trademark Risk",
+          "desc": "USPTO and WIPO database screening before brand commitment."
+        },
+        {
+          "title": "Appraisal Tool",
+          "desc": "Get algorithmic valuations with confidence intervals."
+        },
+        {
+          "title": "SEO Scanner",
+          "desc": "Evaluate backlink profiles of potential domains instantly."
+        }
       ],
-      "ctaTitle": "Find Your Brand Domain",
+      "ctaTitle": "找到您的品牌域名",
       "ctaDesc": "Start with a free account. Score unlimited domains across 4 TLDs.",
-      "ctaSignup": "Create Free Account",
-      "ctaAppraise": "Try Appraisal Tool"
+      "ctaSignup": "创建免费账户",
+      "ctaAppraise": "试试评估工具"
     },
     "agencies": {
-      "badge": "For Agencies",
-      "title": "Scale Domain Acquisition for Clients",
+      "badge": "面向代理机构",
+      "title": "扩展客户的域名收购",
       "desc": "Expired domain backlink authority scoring, spam penalty recovery audits, and bulk tools designed for agency workflows. Handle 5,000+ domains per project.",
       "stats": [
-        { "value": "5K", "label": "Bulk Domains" },
-        { "value": "10K", "label": "API Calls/Day" },
-        { "value": "8–15%", "label": "Commission Tiers" },
-        { "value": "$5–$50", "label": "Reveal Fee" }
+        {
+          "value": "5K",
+          "label": "Bulk Domains"
+        },
+        {
+          "value": "10K",
+          "label": "API Calls/Day"
+        },
+        {
+          "value": "8–15%",
+          "label": "Commission Tiers"
+        },
+        {
+          "value": "$5–$50",
+          "label": "Reveal Fee"
+        }
       ],
-      "whyTitle": "Why Agencies Choose Ceche",
+      "whyTitle": "代理机构选择Ceche的原因",
       "why": [
-        { "title": "Client Results", "desc": "Deliver measurable ROI with data-backed domain acquisitions. Show clients exactly why a domain is worth the investment." },
-        { "title": "Time Savings", "desc": "Bulk scan 5,000 domains at once and score them across 16 dimensions. What used to take days now takes minutes." },
-        { "title": "Revenue Growth", "desc": "Lower commission tiers as volume increases. Earn more per deal with 8–15% tiered commissions and minimum-based pricing." }
+        {
+          "title": "Client Results",
+          "desc": "Deliver measurable ROI with data-backed domain acquisitions. Show clients exactly why a domain is worth the investment."
+        },
+        {
+          "title": "Time Savings",
+          "desc": "Bulk scan 5,000 domains at once and score them across 16 dimensions. What used to take days now takes minutes."
+        },
+        {
+          "title": "Revenue Growth",
+          "desc": "Lower commission tiers as volume increases. Earn more per deal with 8–15% tiered commissions and minimum-based pricing."
+        }
       ],
       "features": [
-        { "title": "Expired Domain Authority", "desc": "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity." },
-        { "title": "Spam Recovery Audits", "desc": "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health." },
-        { "title": "Bulk Analyzer", "desc": "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations." },
-        { "title": "Reporting Dashboard", "desc": "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects." }
+        {
+          "title": "Expired Domain Authority",
+          "desc": "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity."
+        },
+        {
+          "title": "Spam Recovery Audits",
+          "desc": "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health."
+        },
+        {
+          "title": "Bulk Analyzer",
+          "desc": "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations."
+        },
+        {
+          "title": "Reporting Dashboard",
+          "desc": "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects."
+        }
       ],
-      "plansTitle": "Plans for Every Agency",
+      "plansTitle": "适合每个代理机构的套餐",
       "plansDesc": "Scale from solo consultant to full-service agency",
       "plans": [
-        { "name": "Free", "price": "$0", "period": "/3 domains/day", "features": ["16-dimension scoring", "SEO Scanner", "Basic insights"], "cta": "Get Started", "dark": false },
-        { "name": "Startup", "price": "$79", "period": "/mo", "features": ["12 domains/day", "Extended Insights", "Trademark Monitor", "Priority support"], "cta": "Start Trial", "dark": true },
-        { "name": "Enterprise", "price": "$129", "period": "/mo", "features": ["Unlimited scoring", "Bulk Analyzer (5K)", "API (10K calls/day)", "White-label reports"], "cta": "Contact Sales", "dark": false }
+        {
+          "name": "Free",
+          "price": "$0",
+          "period": "/3 domains/day",
+          "features": [
+            "16-dimension scoring",
+            "SEO Scanner",
+            "Basic insights"
+          ],
+          "cta": "Get Started",
+          "dark": false
+        },
+        {
+          "name": "Startup",
+          "price": "$79",
+          "period": "/mo",
+          "features": [
+            "12 domains/day",
+            "Extended Insights",
+            "Trademark Monitor",
+            "Priority support"
+          ],
+          "cta": "Start Trial",
+          "dark": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$129",
+          "period": "/mo",
+          "features": [
+            "Unlimited scoring",
+            "Bulk Analyzer (5K)",
+            "API (10K calls/day)",
+            "White-label reports"
+          ],
+          "cta": "Contact Sales",
+          "dark": false
+        }
       ],
-      "ctaTitle": "Ready to Scale Your Agency?",
+      "ctaTitle": "准备好扩展您的代理机构了吗？",
       "ctaDesc": "Start with a free account or talk to our team about volume pricing.",
-      "ctaSignup": "Create Free Account",
-      "ctaApi": "API Documentation"
+      "ctaSignup": "创建免费账户",
+      "ctaApi": "API文档"
     },
     "available": {
       "statValue": "4",
-      "statLabel": "TLDs Scanned Simultaneously",
+      "statLabel": "同时扫描的TLD",
       "tlds": ".com · .io · .co · .ai",
-      "title": "Find Available Domains in Seconds",
+      "title": "秒级查找可用域名",
       "desc": "Scan millions of combinations for available domain names. Smart suggestions, real-time availability checks, and price comparisons across registrars.",
       "discovery": {
-        "title": "Smart Domain Discovery",
+        "title": "智能域名发现",
         "desc1": "Enter keywords, industry, or a brand concept and Ceche will generate hundreds of available options. Filter by length, TLD, price range, and brandability score.",
         "desc2": "Every result includes a 16-dimension score, so you know which domains have real market potential — not just availability.",
-        "cta": "Start Searching Free"
+        "cta": "免费开始搜索"
       },
-      "filters": { "title": "Filter Options", "items": [
-        { "label": "TLD", "value": ".com, .io, .co, .ai" },
-        { "label": "Max Length", "value": "Up to 15 characters" },
-        { "label": "Price Range", "value": "$8 – $500/yr" },
-        { "label": "Brandability", "value": "High / Medium / Low" },
-        { "label": "Buyer Intent", "value": "Score 0–100" },
-        { "label": "Availability", "value": "Instant check" },
-        { "label": "Price Comparison", "value": "Multi-registrar" }
-      ]},
-      "timeline": {
-        "title": "Never Miss a Domain",
-        "steps": [
-          { "title": "Set Your Criteria", "desc": "Define keywords, TLDs, price range, and brandability thresholds." },
-          { "title": "Monitor & Alert", "desc": "Ceche scans daily and alerts you when matching domains appear." },
-          { "title": "Acquire Instantly", "desc": "One-click registration or marketplace purchase with secure checkout." }
+      "filters": {
+        "title": "筛选选项",
+        "items": [
+          {
+            "label": "TLD",
+            "value": ".com, .io, .co, .ai"
+          },
+          {
+            "label": "Max Length",
+            "value": "Up to 15 characters"
+          },
+          {
+            "label": "Price Range",
+            "value": "$8 – $500/yr"
+          },
+          {
+            "label": "Brandability",
+            "value": "High / Medium / Low"
+          },
+          {
+            "label": "Buyer Intent",
+            "value": "Score 0–100"
+          },
+          {
+            "label": "Availability",
+            "value": "Instant check"
+          },
+          {
+            "label": "Price Comparison",
+            "value": "Multi-registrar"
+          }
         ]
       },
-      "plansTitle": "Choose Your Plan",
+      "timeline": {
+        "title": "永不错过域名",
+        "steps": [
+          {
+            "title": "Set Your Criteria",
+            "desc": "Define keywords, TLDs, price range, and brandability thresholds."
+          },
+          {
+            "title": "Monitor & Alert",
+            "desc": "Ceche scans daily and alerts you when matching domains appear."
+          },
+          {
+            "title": "Acquire Instantly",
+            "desc": "One-click registration or marketplace purchase with secure checkout."
+          }
+        ]
+      },
+      "plansTitle": "选择您的套餐",
       "plans": [
-        { "name": "Free", "price": "$0", "features": ["3 domains/day", "Basic scoring", "1 TLD"], "highlight": false },
-        { "name": "Startup", "price": "$79/mo", "features": ["12 domains/day", "Extended Insights", "4 TLDs"], "highlight": true },
-        { "name": "Enterprise", "price": "$129/mo", "features": ["Unlimited scoring", "Bulk Analyzer", "API access"], "highlight": false }
+        {
+          "name": "Free",
+          "price": "$0",
+          "features": [
+            "3 domains/day",
+            "Basic scoring",
+            "1 TLD"
+          ],
+          "highlight": false
+        },
+        {
+          "name": "Startup",
+          "price": "$79/mo",
+          "features": [
+            "12 domains/day",
+            "Extended Insights",
+            "4 TLDs"
+          ],
+          "highlight": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$129/mo",
+          "features": [
+            "Unlimited scoring",
+            "Bulk Analyzer",
+            "API access"
+          ],
+          "highlight": false
+        }
       ],
-      "popular": "Popular",
-      "getStarted": "Get Started",
-      "bulk": { "badge": "Enterprise Feature", "title": "Bulk Domain Scanner", "desc": "Upload a CSV of up to 5,000 domains and get scored results in minutes. Perfect for portfolio audits and prospecting at scale.", "note": "Available on Enterprise plan ($129/mo). Includes API access with 10,000 calls/day." },
-      "ctaTitle": "Find Your Perfect Domain",
+      "popular": "热门",
+      "getStarted": "立即开始",
+      "bulk": {
+        "badge": "企业版功能",
+        "title": "批量域名扫描器",
+        "desc": "Upload a CSV of up to 5,000 domains and get scored results in minutes. Perfect for portfolio audits and prospecting at scale.",
+        "note": "Available on Enterprise plan ($129/mo). Includes API access with 10,000 calls/day."
+      },
+      "ctaTitle": "找到您的完美域名",
       "ctaDesc": "Start with 3 free domain searches per day.",
-      "ctaSignup": "Create Free Account",
-      "ctaScan": "Try SEO Scanner"
+      "ctaSignup": "创建免费账户",
+      "ctaScan": "试试SEO扫描器"
     },
     "research": {
-      "breadcrumb": ["Solutions", "Research Intelligence"],
-      "title": "Deep Domain Analysis Before Acquisition",
+      "breadcrumb": [
+        "Solutions",
+        "Research Intelligence"
+      ],
+      "title": "收购前的深度域名分析",
       "desc": "Make informed decisions with comprehensive intelligence reports. 16-dimension scoring, ownership history, backlink profiles, and risk assessment — all in one document.",
       "sections": [
-        { "title": "16-Dimension Scoring", "desc": "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains." },
-        { "title": "Ownership History", "desc": "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues." },
-        { "title": "Backlink Profile", "desc": "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time." },
-        { "title": "Traffic Estimates", "desc": "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest." },
-        { "title": "Valuation Range", "desc": "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value." },
-        { "title": "Risk Assessment", "desc": "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital." }
+        {
+          "title": "16-Dimension Scoring",
+          "desc": "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains."
+        },
+        {
+          "title": "Ownership History",
+          "desc": "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues."
+        },
+        {
+          "title": "Backlink Profile",
+          "desc": "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time."
+        },
+        {
+          "title": "Traffic Estimates",
+          "desc": "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest."
+        },
+        {
+          "title": "Valuation Range",
+          "desc": "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value."
+        },
+        {
+          "title": "Risk Assessment",
+          "desc": "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital."
+        }
       ],
-      "compareTitle": "How Ceche Compares",
-      "compareHeaders": ["Feature", "Ceche", "Dynadot", "GoDaddy"],
+      "compareTitle": "Ceche对比",
+      "compareHeaders": [
+        "Feature",
+        "Ceche",
+        "Dynadot",
+        "GoDaddy"
+      ],
       "compareRows": [
-        { "feature": "16-Dimension Scoring", "ceche": "✓", "dynadot": "✗", "godaddy": "✗" },
-        { "feature": "Buyer Intent Score", "ceche": "0–100", "dynadot": "✗", "godaddy": "✗" },
-        { "feature": "Bulk Analysis (5K+)", "ceche": "✓", "dynadot": "Limited", "godaddy": "✗" },
-        { "feature": "API Access", "ceche": "10K/day", "dynadot": "Basic", "godaddy": "Paid add-on" },
-        { "feature": "Trademark Monitor", "ceche": "✓", "dynadot": "✗", "godaddy": "Paid" },
-        { "feature": "Tiered Commission", "ceche": "8–15%", "dynadot": "Flat", "godaddy": "Flat 20%+" },
-        { "feature": "TLDs Analyzed", "ceche": "4", "dynadot": "10+", "godaddy": "10+" }
+        {
+          "feature": "16-Dimension Scoring",
+          "ceche": "✓",
+          "dynadot": "✗",
+          "godaddy": "✗"
+        },
+        {
+          "feature": "Buyer Intent Score",
+          "ceche": "0–100",
+          "dynadot": "✗",
+          "godaddy": "✗"
+        },
+        {
+          "feature": "Bulk Analysis (5K+)",
+          "ceche": "✓",
+          "dynadot": "Limited",
+          "godaddy": "✗"
+        },
+        {
+          "feature": "API Access",
+          "ceche": "10K/day",
+          "dynadot": "Basic",
+          "godaddy": "Paid add-on"
+        },
+        {
+          "feature": "Trademark Monitor",
+          "ceche": "✓",
+          "dynadot": "✗",
+          "godaddy": "Paid"
+        },
+        {
+          "feature": "Tiered Commission",
+          "ceche": "8–15%",
+          "dynadot": "Flat",
+          "godaddy": "Flat 20%+"
+        },
+        {
+          "feature": "TLDs Analyzed",
+          "ceche": "4",
+          "dynadot": "10+",
+          "godaddy": "10+"
+        }
       ],
-      "ctaTitle": "Research Smarter",
+      "ctaTitle": "更聪明地研究",
       "ctaDesc": "Get deep intelligence on any domain. Start with a free account.",
-      "ctaSignup": "Create Free Account",
-      "ctaAppraise": "Try Appraisal Tool"
+      "ctaSignup": "创建免费账户",
+      "ctaAppraise": "试试评估工具"
     },
     "premium": {
-      "heroTitle": "Acquire Premium Domains with Confidence",
+      "heroTitle": "自信地收购优质域名",
       "heroDesc": "Secure checkout, transparent pricing, and a 72-hour inspection period. Buy premium domains the way they should be — safely and fairly.",
       "steps": [
-        { "title": "Discover & Evaluate", "desc": "Browse curated premium domains with full 16-dimension intelligence reports. See ownership history, backlink profiles, and fair market valuation before you make an offer." },
-        { "title": "Negotiate & Transact", "desc": "Make offers, counter-offers, and close deals securely. Payment is processed safely until domain transfer is confirmed and verified." },
-        { "title": "Inspect & Confirm", "desc": "72-hour inspection period after transfer. Verify the domain meets all expectations before the seller receives payment. Full refund if unsatisfied." }
+        {
+          "title": "Discover & Evaluate",
+          "desc": "Browse curated premium domains with full 16-dimension intelligence reports. See ownership history, backlink profiles, and fair market valuation before you make an offer."
+        },
+        {
+          "title": "Negotiate & Transact",
+          "desc": "Make offers, counter-offers, and close deals securely. Payment is processed safely until domain transfer is confirmed and verified."
+        },
+        {
+          "title": "Inspect & Confirm",
+          "desc": "72-hour inspection period after transfer. Verify the domain meets all expectations before the seller receives payment. Full refund if unsatisfied."
+        }
       ],
       "trust": [
-        { "title": "Secure Checkout", "desc": "Payment processed securely until domain transfer is confirmed and verified by both parties." },
-        { "title": "72-Hour Inspection", "desc": "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs." },
-        { "title": "Multiple Payment Options", "desc": "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises." }
+        {
+          "title": "Secure Checkout",
+          "desc": "Payment processed securely until domain transfer is confirmed and verified by both parties."
+        },
+        {
+          "title": "72-Hour Inspection",
+          "desc": "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs."
+        },
+        {
+          "title": "Multiple Payment Options",
+          "desc": "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises."
+        }
       ],
-      "pricingTitle": "Transparent Pricing",
-      "pricingDesc": "No hidden fees. You see the price — you pay the price.",
-      "pricingHeaders": ["Fee Type", "Amount", "Notes"],
+      "pricingTitle": "透明定价",
+      "pricingDesc": "无隐藏费用。您看到的价格——就是您支付的价格。",
+      "pricingHeaders": [
+        "Fee Type",
+        "Amount",
+        "Notes"
+      ],
       "pricingRows": [
-        { "type": "Reveal Fee (Standard)", "amount": "$5", "notes": "One-time per domain reveal" },
-        { "type": "Reveal Fee (Priority)", "amount": "$10", "notes": "Expedited reveal with full report" },
-        { "type": "Buyer Commission", "amount": "0%", "notes": "Buyers pay zero commission on Ceche" },
-        { "type": "Transaction Fee", "amount": "Included", "notes": "No extra charge for secure checkout" }
+        {
+          "type": "Reveal Fee (Standard)",
+          "amount": "$5",
+          "notes": "One-time per domain reveal"
+        },
+        {
+          "type": "Reveal Fee (Priority)",
+          "amount": "$10",
+          "notes": "Expedited reveal with full report"
+        },
+        {
+          "type": "Buyer Commission",
+          "amount": "0%",
+          "notes": "Buyers pay zero commission on Ceche"
+        },
+        {
+          "type": "Transaction Fee",
+          "amount": "Included",
+          "notes": "No extra charge for secure checkout"
+        }
       ],
-      "ctaTitle": "Buy Premium Domains Today",
+      "ctaTitle": "立即购买优质域名",
       "ctaDesc": "Secure, transparent transactions with secure checkout on every purchase.",
-      "ctaMarketplace": "Browse Marketplace",
-      "ctaPricing": "View Pricing"
+      "ctaMarketplace": "浏览市场",
+      "ctaPricing": "查看定价"
     }
   },
   "res": {
     "index": {
-      "title": "Resources",
-      "subtitle": "Learn and get support"
+      "title": "资源",
+      "subtitle": "学习和获取支持"
     },
     "blog": {
-      "badge": "Ceche Blog",
-      "title": "Domain intelligence, decoded.",
+      "badge": "Ceche博客",
+      "title": "解码域名情报。",
       "subtitle": "Strategy guides, market analysis, and frameworks for domain investors who trade on data—not intuition.",
-      "topicsBadge": "Topics",
-      "categories": ["Strategy", "Market Data", "Tutorials", "Industry News", "Case Studies"],
+      "topicsBadge": "主题",
+      "categories": [
+        "Strategy",
+        "Market Data",
+        "Tutorials",
+        "Industry News",
+        "Case Studies"
+      ],
       "marquee": "Domain Valuations · Market Reports · Portfolio Analytics · Blind Marketplace · 16-Dimension Framework · Health Scores · CPC Data · Brandability Index · Try Your Luck ·",
       "articles": [
-        { "date": "Aug 28, 2026", "title": "Why Premium .com Domains Still Outperform New gTLDs" },
-        { "date": "Aug 21, 2026", "title": "The Hidden ROI of Portfolio Health Scores" },
-        { "date": "Aug 14, 2026", "title": "5 Red Flags in Domain Appraisals You're Ignoring" },
-        { "date": "Aug 07, 2026", "title": "How to Price a Domain Without Guessing" },
-        { "date": "Jul 31, 2026", "title": "Blind Auctions vs. Fixed Listings: A Data Comparison" },
-        { "date": "Jul 24, 2026", "title": "Building a Domain Reselling Workflow from Scratch" }
+        {
+          "date": "Aug 28, 2026",
+          "title": "Why Premium .com Domains Still Outperform New gTLDs"
+        },
+        {
+          "date": "Aug 21, 2026",
+          "title": "The Hidden ROI of Portfolio Health Scores"
+        },
+        {
+          "date": "Aug 14, 2026",
+          "title": "5 Red Flags in Domain Appraisals You're Ignoring"
+        },
+        {
+          "date": "Aug 07, 2026",
+          "title": "How to Price a Domain Without Guessing"
+        },
+        {
+          "date": "Jul 31, 2026",
+          "title": "Blind Auctions vs. Fixed Listings: A Data Comparison"
+        },
+        {
+          "date": "Jul 24, 2026",
+          "title": "Building a Domain Reselling Workflow from Scratch"
+        }
       ],
-      "cta": { "title": "Want the full library?", "desc": "Download our ebooks and go deeper on domain investing.", "ebooks": "Browse Ebooks →", "pricing": "View Pricing" }
+      "cta": {
+        "title": "Want the full library?",
+        "desc": "Download our ebooks and go deeper on domain investing.",
+        "ebooks": "浏览电子书 →",
+        "pricing": "查看定价"
+      }
     },
     "ebooks": {
-      "badge": "Ceche Ebooks",
-      "title": "Go deeper on domain investing",
+      "badge": "Ceche电子书",
+      "title": "深入了解域名投资",
       "subtitle": "Free guides, frameworks, and playbooks for domain investors at every level.",
       "featured": {
         "badge": "Featured",
         "title": "The Domain Investor's Playbook",
         "desc": "The definitive guide to buying, valuing, and selling domain names for profit. 42 pages of actionable frameworks, case studies, and Ceche-specific strategies used by top resellers.",
         "stats": [
-          { "value": "34K+", "label": "Downloads" },
-          { "value": "42", "label": "Pages" },
-          { "value": "4.9", "label": "Rating" }
+          {
+            "value": "34K+",
+            "label": "Downloads"
+          },
+          {
+            "value": "42",
+            "label": "Pages"
+          },
+          {
+            "value": "4.9",
+            "label": "Rating"
+          }
         ],
         "cta": "Get Free Copy →"
       },
       "catalogTitle": "More from Ceche",
       "catalog": [
-        { "title": "The Domain Appraiser's Toolkit", "pages": 32, "date": "Apr 2026", "downloads": "12K+", "desc": "A step-by-step guide to valuing domains using data, not guesswork. Covers the 16-Dimension Framework, health scoring, and comparative market analysis." },
-        { "title": "Blind Marketplace Playbook", "pages": 28, "date": "Mar 2026", "downloads": "8K+", "desc": "How Ceche's blind bidding system eliminates price inflation and gives buyers an edge. Includes negotiation templates and bid strategy frameworks." },
-        { "title": "Portfolio Health Audit Guide", "pages": 24, "date": "Feb 2026", "downloads": "6K+", "desc": "Run a full health check on your domain portfolio. Identify underperformers, renewal traps, and hidden gems with Ceche's scoring system." },
-        { "title": "Domain Reselling 101", "pages": 36, "date": "Jan 2026", "downloads": "15K+", "desc": "From acquisition to close—everything a new domain reseller needs. Pricing strategies, buyer outreach, and closing techniques backed by real data." }
+        {
+          "title": "The Domain Appraiser's Toolkit",
+          "pages": 32,
+          "date": "Apr 2026",
+          "downloads": "12K+",
+          "desc": "A step-by-step guide to valuing domains using data, not guesswork. Covers the 16-Dimension Framework, health scoring, and comparative market analysis."
+        },
+        {
+          "title": "Blind Marketplace Playbook",
+          "pages": 28,
+          "date": "Mar 2026",
+          "downloads": "8K+",
+          "desc": "How Ceche's blind bidding system eliminates price inflation and gives buyers an edge. Includes negotiation templates and bid strategy frameworks."
+        },
+        {
+          "title": "Portfolio Health Audit Guide",
+          "pages": 24,
+          "date": "Feb 2026",
+          "downloads": "6K+",
+          "desc": "Run a full health check on your domain portfolio. Identify underperformers, renewal traps, and hidden gems with Ceche's scoring system."
+        },
+        {
+          "title": "Domain Reselling 101",
+          "pages": 36,
+          "date": "Jan 2026",
+          "downloads": "15K+",
+          "desc": "From acquisition to close—everything a new domain reseller needs. Pricing strategies, buyer outreach, and closing techniques backed by real data."
+        }
       ],
-      "getCopy": "Get Digital Copy",
-      "cta": { "title": "Want more articles and market insights?", "desc": "Our blog covers domain strategy, pricing models, and industry analysis.", "blog": "Read the Blog →", "pricing": "View Pricing" },
-      "modal": { "title": "Create an account to download", "desc": "All Ceche ebooks and guides are free for registered users.", "redirecting": "Redirecting to signup in {count} seconds...", "cta": "Create free account", "back": "Go back" }
+      "getCopy": "获取数字副本",
+      "cta": {
+        "title": "Want more articles and market insights?",
+        "desc": "Our blog covers domain strategy, pricing models, and industry analysis.",
+        "blog": "阅读博客",
+        "pricing": "查看定价"
+      },
+      "modal": {
+        "title": "Create an account to download",
+        "desc": "All Ceche ebooks and guides are free for registered users.",
+        "redirecting": "Redirecting to signup in {count} seconds...",
+        "cta": "Create free account",
+        "back": "Go back"
+      }
     },
     "cases": {
-      "badge": "Case Studies",
-      "title": "Real investors. Real outcomes.",
+      "badge": "案例研究",
+      "title": "真实投资者。真实成果。",
       "desc": "See how domain investors, startups, and portfolio managers use Ceche to make faster, smarter decisions. Every case study is backed by real numbers—no cherry-picked success stories.",
       "stats": [
-        { "value": "4.2K+", "label": "Active Users" },
-        { "value": "98%", "label": "Accuracy Rate" }
+        {
+          "value": "4.2K+",
+          "label": "Active Users"
+        },
+        {
+          "value": "98%",
+          "label": "Accuracy Rate"
+        }
       ],
       "comingSoon": {
         "title": "Case studies coming soon",
@@ -1049,303 +2181,617 @@
         "marketplace": "Explore Marketplace",
         "pricing": "View Pricing"
       },
-      "cta": { "title": "Have a story to share?", "desc": "We'd love to feature your experience with Ceche.", "contact": "Get in Touch →" }
+      "cta": {
+        "title": "Have a story to share?",
+        "desc": "We'd love to feature your experience with Ceche.",
+        "contact": "联系我们 →"
+      }
     }
   },
   "company": {
     "about": {
-      "badge": "About Ceche",
-      "title": "Built for investors who trade on data",
+      "badge": "关于Ceche",
+      "title": "为数据驱动的投资者打造",
       "desc": "The domain marketplace where premium names are bought and sold—powered by real intelligence, not guesswork.",
-      "cta": ["Try Appraisal →", "Browse Marketplace"],
+      "cta": {
+        "title": "准备好寻找下一个域名了吗？",
+        "desc": "Every name is backed by data. The marketplace is open.",
+        "marketplace": "浏览市场 →",
+        "pricing": "查看定价",
+        "0": "试试评估 →",
+        "1": "浏览市场"
+      },
       "origin": {
-        "badge": "Our Origin",
-        "title": "Founded by a domain investor who saw the market needed better data",
+        "badge": "我们的起源",
+        "title": "由一位看到市场需要更好数据的域名投资者创立",
         "p1": "The domain aftermarket generates over $3 billion in annual transactions, yet most marketplaces are opaque, inflated by scrapers, and built on intuition rather than data. Ceche was created to fix that.",
         "p2": "We combined the intelligence of a research platform with the transaction mechanics of a marketplace. You evaluate the numbers first—estimated value, health score, CPC, brandability—and the name only appears when you pay to reveal it. Every valuation is backed by a published methodology and a verifiable dataset."
       },
       "founder": {
-        "label": "Founder",
+        "label": "创始人",
         "name": "Nekwasachukwu Ucheokoye",
         "bio": "Domain name investor & reseller managing 100+ domains. Agentic & systems engineer building intelligent infrastructure for the domain industry. Based in Awka, Nigeria."
       },
       "values": {
-        "badge": "What We Believe",
-        "title": "Three principles that drive every decision",
+        "badge": "我们的信念",
+        "title": "驱动每个决策的三个原则",
         "items": [
-          { "title": "Transparency", "desc": "We publish our methodology, data sources, and accuracy metrics. Users who understand how we work trust us more than users who are asked to take our word for it." },
-          { "title": "Data Rigor", "desc": "Every claim we make is backed by data. Every tool produces measurable outputs. We do not rely on intuition when data is available." },
-          { "title": "Speed", "desc": "We ship fast and iterate. Perfection is the enemy of progress—we aim for good enough to ship and improve from there." }
+          {
+            "title": "透明度",
+            "desc": "We publish our methodology, data sources, and accuracy metrics. Users who understand how we work trust us more than users who are asked to take our word for it."
+          },
+          {
+            "title": "数据严谨",
+            "desc": "Every claim we make is backed by data. Every tool produces measurable outputs. We do not rely on intuition when data is available."
+          },
+          {
+            "title": "速度",
+            "desc": "We ship fast and iterate. Perfection is the enemy of progress—we aim for good enough to ship and improve from there."
+          }
         ]
-      },
-      "cta": { "title": "Ready to find your next domain?", "desc": "Every name is backed by data. The marketplace is open.", "marketplace": "Browse Marketplace →", "pricing": "View Pricing" }
+      }
     },
     "affiliates": {
-      "badge": "Ceche Affiliates",
-      "title": "Earn by referring domain investors",
+      "badge": "Ceche合作伙伴",
+      "title": "通过推荐域名投资者赚钱",
       "desc": "Join our affiliate program, share Ceche with your network, and earn recurring commissions on every customer you refer.",
-      "timeline": ["Sign up", "Share link", "Earn 30%"],
-      "benefits": [
-        { "title": "30% Recurring Commission", "desc": "Earn on every paying customer you refer—for as long as they stay subscribed. No caps, no limits." },
-        { "title": "90-Day Cookie Window", "desc": "Your referral link tracks visitors for 90 days. Even if they come back weeks later, you still get credit." },
-        { "title": "Real-Time Dashboard", "desc": "Track clicks, signups, and earnings in real time. No guessing, no waiting for monthly reports." },
-        { "title": "Dedicated Affiliate Support", "desc": "Get priority access to our affiliate team. Custom landing pages, promo assets, and campaign guidance." },
-        { "title": "Instant Payouts", "desc": "Get paid monthly via bank transfer or PayPal. No minimum threshold. No delays." },
-        { "title": "Free Premium Access", "desc": "Active affiliates get a free Ceche Pro account. Use the product, sell the product, believe in the product." }
+      "timeline": [
+        "注册",
+        "分享链接",
+        "赚取30%"
       ],
-      "cta": { "title": "Start earning today", "desc": "Sign up for the affiliate program and start referring in minutes.", "join": "Join Affiliate Program →", "pricing": "View Pricing", "support": "Contact Support" }
+      "benefits": [
+        {
+          "title": "30% Recurring Commission",
+          "desc": "Earn on every paying customer you refer—for as long as they stay subscribed. No caps, no limits."
+        },
+        {
+          "title": "90-Day Cookie Window",
+          "desc": "Your referral link tracks visitors for 90 days. Even if they come back weeks later, you still get credit."
+        },
+        {
+          "title": "Real-Time Dashboard",
+          "desc": "Track clicks, signups, and earnings in real time. No guessing, no waiting for monthly reports."
+        },
+        {
+          "title": "Dedicated Affiliate Support",
+          "desc": "Get priority access to our affiliate team. Custom landing pages, promo assets, and campaign guidance."
+        },
+        {
+          "title": "Instant Payouts",
+          "desc": "Get paid monthly via bank transfer or PayPal. No minimum threshold. No delays."
+        },
+        {
+          "title": "Free Premium Access",
+          "desc": "Active affiliates get a free Ceche Pro account. Use the product, sell the product, believe in the product."
+        }
+      ],
+      "cta": {
+        "title": "立即开始赚钱",
+        "desc": "Sign up for the affiliate program and start referring in minutes.",
+        "join": "加入合作伙伴计划 →",
+        "pricing": "查看定价",
+        "support": "联系支持"
+      }
     }
   },
   "helpOverview": {
-    "badge": "Help Center",
-    "title": "How can we help.",
-    "desc": "Find documentation, FAQs, and support for all Ceche tools. Use the sidebar to navigate between sections.",
+    "badge": "帮助中心",
+    "title": "我们如何帮助您。",
+    "desc": "查找所有Ceche工具的文档、常见问题和支持。使用侧边栏在各部分之间导航。",
     "sections": [
-      { "title": "Documentation", "desc": "Comprehensive guides for every Ceche tool, from domain lookup to bulk analysis.", "href": "/help/docs" },
-      { "title": "API Reference", "desc": "RESTful API endpoints for programmatic domain intelligence at scale.", "href": "/help/api" },
-      { "title": "FAQ", "desc": "Answers to common questions about pricing, tools, accounts, and more.", "href": "/help/faq" },
-      { "title": "Contact", "desc": "Reach our support team for help, feedback, or partnership inquiries.", "href": "/help/contact" },
-      { "title": "Changelog", "desc": "Product updates, new features, and platform improvements.", "href": "/help/changelog" }
+      {
+        "title": "文档",
+        "desc": "每个Ceche工具的综合指南，从域名查询到批量分析。",
+        "href": "/help/docs"
+      },
+      {
+        "title": "API参考",
+        "desc": "用于大规模程序化域名情报的RESTful API端点。",
+        "href": "/help/api"
+      },
+      {
+        "title": "常见问题",
+        "desc": "关于定价、工具、账户等常见问题的答案。",
+        "href": "/help/faq"
+      },
+      {
+        "title": "联系我们",
+        "desc": "联系我们的支持团队获取帮助、反馈或合作咨询。",
+        "href": "/help/contact"
+      },
+      {
+        "title": "更新日志",
+        "desc": "产品更新、新功能和平台改进。",
+        "href": "/help/changelog"
+      }
     ]
   },
   "auth": {
     "login": {
-      "title": "Login",
-      "email": "Email",
-      "password": "Password",
-      "button": "Login",
-      "loading": "Logging in...",
-      "noAccount": "Don't have an account?",
-      "signup": "Sign up"
+      "title": "登录",
+      "email": "邮箱",
+      "password": "密码",
+      "button": "登录",
+      "loading": "登录中...",
+      "noAccount": "还没有账户？",
+      "signup": "注册"
     },
     "signup": {
-      "title": "Sign Up",
-      "name": "Name",
-      "email": "Email",
-      "password": "Password",
-      "button": "Sign Up",
-      "loading": "Creating account...",
-      "hasAccount": "Already have an account?",
-      "login": "Login"
+      "title": "注册",
+      "name": "姓名",
+      "email": "邮箱",
+      "password": "密码",
+      "button": "注册",
+      "loading": "创建账户中...",
+      "hasAccount": "已有账户？",
+      "login": "登录"
     }
   },
   "dashboard": {
-    "welcome": "Welcome back, {name}",
-    "plan": "Plan",
-    "apiKeys": "API Keys",
-    "manageKeys": "Manage keys →",
-    "quickActions": "Quick Actions",
-    "appraise": "Appraise a domain →",
-    "scan": "Start a scan →"
+    "welcome": "欢迎回来，{name}",
+    "plan": "套餐",
+    "apiKeys": "API密钥",
+    "manageKeys": "管理密钥 →",
+    "quickActions": "快速操作",
+    "appraise": "评估域名 →",
+    "scan": "开始扫描 →"
   },
   "limit": {
-    "title": "Rate Limit Reached",
+    "title": "达到速率限制",
     "desc": "This request didn't go through. You've used all your free appraisals for today. Sign up to increase your rate limit and appraise more domains.",
     "currentLimits": "Your current limits",
     "limits": [
-      { "tier": "Not signed up", "value": "3/day" },
-      { "tier": "Signed up (free)", "value": "12/day" },
-      { "tier": "Premium Startup ($79/mo)", "value": "30/day" },
-      { "tier": "Premium Enterprise ($129/mo)", "value": "Unlimited" }
+      {
+        "tier": "Not signed up",
+        "value": "3/day"
+      },
+      {
+        "tier": "Signed up (free)",
+        "value": "12/day"
+      },
+      {
+        "tier": "Premium Startup ($79/mo)",
+        "value": "30/day"
+      },
+      {
+        "tier": "Premium Enterprise ($129/mo)",
+        "value": "Unlimited"
+      }
     ],
-    "signup": "Sign Up Free",
-    "home": "Go Back Home"
+    "signup": "免费注册",
+    "home": "返回首页"
   },
   "search": {
-    "placeholder": "Enter any domain name, e.g., brand.com",
-    "button": "Search",
-    "loading": "Checking {domain}...",
-    "available": "Available for registration",
-    "taken": "Taken",
-    "rating": "Rating",
+    "placeholder": "输入任意域名，例如 brand.com",
+    "button": "搜索",
+    "loading": "正在检查 {domain}...",
+    "available": "可注册",
+    "taken": "已注册",
+    "rating": "评级",
     "buildWith": "What you could build with this",
-    "appraise": "Appraise this name",
+    "appraise": "评估此名称",
     "whoisTitle": "WHOIS Details",
-    "whoisLabels": ["Registrar", "Expires", "Registrant", "Nameservers"],
-    "fullAppraisal": "Full Appraisal",
-    "copyDomain": "Copy Domain",
-    "empty": "Enter a domain name above to check availability"
+    "whoisLabels": [
+      "Registrar",
+      "Expires",
+      "Registrant",
+      "Nameservers"
+    ],
+    "fullAppraisal": "完整评估",
+    "copyDomain": "复制域名",
+    "empty": "在上方输入域名以检查可用性"
   },
   "apikeys": {
-    "title": "API Keys",
-    "loading": "Loading...",
-    "createTitle": "Create New Key",
-    "placeholder": "Key name (e.g., production)",
-    "create": "Create",
-    "creating": "Creating...",
-    "yourKeys": "Your Keys",
-    "noKeys": "No API keys yet. Create one above.",
-    "created": "Created:",
-    "lastUsed": "Last used:",
-    "delete": "Delete",
-    "newKey": "Your new API key (copy it now, it won't be shown again):",
-    "dismiss": "Dismiss"
+    "title": "API密钥",
+    "loading": "加载中...",
+    "createTitle": "创建新密钥",
+    "placeholder": "密钥名称（例如 production）",
+    "create": "创建",
+    "creating": "创建中...",
+    "yourKeys": "您的密钥",
+    "noKeys": "暂无API密钥。在上方创建一个。",
+    "created": "创建于：",
+    "lastUsed": "最后使用：",
+    "delete": "删除",
+    "newKey": "您的新API密钥（请立即复制，之后将不再显示）：",
+    "dismiss": "关闭"
   },
   "scanPage": {
-    "title": "Domain Scanner",
-    "desc": "Find available domains matching your criteria",
-    "config": "Scan Configuration",
-    "wordList": "Word List",
-    "customWords": "Custom words",
-    "customPlaceholder": "Enter one word per line...",
-    "tlds": "TLDs",
-    "startScan": "Start Scan",
-    "scanning": "Scanning...",
-    "progress": "Scan Progress",
-    "status": "Status",
-    "progressLabel": "Progress",
-    "available": "Available",
-    "results": "Results ({count} domains)",
-    "availableOnly": "Available only",
-    "sortByDomain": "Sort by domain",
-    "sortByPrice": "Sort by price",
-    "exportCsv": "Export CSV",
-    "domain": "Domain",
-    "statusHeader": "Status",
-    "price": "Price",
-    "actions": "Actions",
-    "availableBadge": "Available",
-    "errorBadge": "Error",
-    "takenBadge": "Taken",
-    "appraise": "Appraise",
-    "noResults": "No scan results yet",
+    "title": "域名扫描器",
+    "desc": "查找符合您条件的可用域名",
+    "config": "扫描配置",
+    "wordList": "词表",
+    "customWords": "自定义词汇",
+    "customPlaceholder": "每行输入一个词...",
+    "tlds": "TLD",
+    "startScan": "开始扫描",
+    "scanning": "扫描中...",
+    "progress": "扫描进度",
+    "status": "状态",
+    "progressLabel": "进度",
+    "available": "可用",
+    "results": "结果（{count}个域名）",
+    "availableOnly": "仅显示可用",
+    "sortByDomain": "按域名排序",
+    "sortByPrice": "按价格排序",
+    "exportCsv": "导出CSV",
+    "domain": "域名",
+    "statusHeader": "状态",
+    "price": "价格",
+    "actions": "操作",
+    "availableBadge": "可用",
+    "errorBadge": "错误",
+    "takenBadge": "已注册",
+    "appraise": "评估",
+    "noResults": "暂无扫描结果",
     "noResultsDesc": "Configure your scan settings and click \"Start Scan\" to find available domains.",
-    "recentScans": "Recent Scans",
-    "scan": "scan"
+    "recentScans": "最近的扫描",
+    "scan": "扫描"
   },
   "appraisePage": {
-    "badge": "16-DIMENSION ENGINE",
-    "title": "Domain Appraisal",
+    "badge": "16维引擎",
+    "title": "域名评估",
     "desc": "Comprehensive valuation across RDAP data, TLD scoring, brandability, commercial intent, and 12 more dimensions.",
-    "placeholder": "Enter domain (e.g. techstart.com)",
-    "analyzing": "Analyzing...",
-    "button": "Appraise",
-    "devMode": "Dev mode — unlimited",
+    "placeholder": "输入域名（例如 techstart.com）",
+    "analyzing": "分析中...",
+    "button": "评估",
+    "devMode": "开发模式 — 无限制",
     "appraisalsLeft": "{count} appraisal{plural} left today",
     "devBypass": "Dev bypass",
     "activate": "Activate",
-    "loading": "Loading...",
-    "error": "Error",
-    "estimatedValue": "Estimated Value",
-    "analysis": "16-Dimension Analysis",
-    "fullAccess": "FULL ACCESS",
-    "unlocked": "3 OF 16 UNLOCKED",
-    "aboveAvg": "Above average",
-    "belowAvg": "Below average",
-    "avg": "Average",
+    "loading": "加载中...",
+    "error": "错误",
+    "estimatedValue": "估价",
+    "analysis": "16维分析",
+    "fullAccess": "完全访问",
+    "unlocked": "已解锁 3/16",
+    "aboveAvg": "高于平均",
+    "belowAvg": "低于平均",
+    "avg": "平均",
     "unlockPrompt": "Unlock all 13 remaining dimensions with a premium plan",
-    "viewPricing": "View pricing",
+    "viewPricing": "查看定价",
     "whoisHint": "Want WHOIS + DNS data?",
     "domainLookup": "Try Domain Lookup — no account required",
     "domainLookupCta": "Domain Lookup",
     "deeperHint": "Want deeper analysis?",
     "extendedInsights": "Extended Insights — backlinks, trademarks, comparables",
     "extendedInsightsCta": "Extended Insights",
-    "recentAppraisals": "Recent Appraisals",
-    "limitTitle": "Daily limit reached",
+    "recentAppraisals": "最近的评估",
+    "limitTitle": "每日限额已达",
     "limitDesc": "You've used all {limit} appraisals today. Create an account to get {signed} per day.",
-    "createAccount": "Create account",
-    "goBack": "Go back",
-    "redirecting": "Redirecting...",
-    "redirectDesc": "Taking you to account creation.",
-    "modules": ["Registration Data (RDAP)", "TLD Premium Tier", "Domain Length", "Word Count", "Pronounceability", "Word Segmentation", "Keyword Popularity", "Commercial Intent (CPC)", "Search Results", "Cross-TLD Registration", "Trademark Check", "Domain Authority", "Brandability Score"]
+    "createAccount": "创建账户",
+    "goBack": "返回",
+    "redirecting": "正在跳转...",
+    "redirectDesc": "正在带您去创建账户。",
+    "modules": [
+      "Registration Data (RDAP)",
+      "TLD Premium Tier",
+      "Domain Length",
+      "Word Count",
+      "Pronounceability",
+      "Word Segmentation",
+      "Keyword Popularity",
+      "Commercial Intent (CPC)",
+      "Search Results",
+      "Cross-TLD Registration",
+      "Trademark Check",
+      "Domain Authority",
+      "Brandability Score"
+    ]
   },
   "helpDocs": {
-    "badge": "Documentation",
-    "title1": "Every tool,",
-    "title2": "documented.",
+    "badge": "文档",
+    "title1": "每个工具，",
+    "title2": "都有文档。",
     "desc": "The Ceche Help Center covers the SEO Scanner, Extended Insights, Bulk Analyzer, Trademark Monitor, Domain Database, and API. Over 320 articles organized by tool, topic, and difficulty level.",
     "tools": [
-      { "name": "Domain Lookup", "desc": "Free tool. WHOIS data, DNS records, and registrar information for any domain.", "pricing": "Free", "features": ["WHOIS lookup", "DNS record export (A, AAAA, MX, TXT, CNAME)", "Registrar detection", "Expiration tracking"] },
-      { "name": "16-Dimension Appraisal", "desc": "Deep domain valuation using 16 analysis dimensions — RDAP, TLD scoring, brandability, commercial intent, and more.", "pricing": "Free (3 unsigned / 12 signed per day)", "features": ["16 scoring dimensions", "Market-based pricing", "Comparable analysis", "Confidence intervals"] },
-      { "name": "SEO Scanner", "desc": "Evaluate search visibility, backlink quality, organic traffic, and SEO authority in 3-5 seconds.", "pricing": "Premium", "features": ["Domain Rating 0-100", "Organic traffic estimates", "Keyword rankings", "SEO Score composite"] },
-      { "name": "Extended Insights", "desc": "Deep due diligence — 16-dimension valuation, trademark screening, comparable sales, and buyer intent scoring.", "pricing": "$5-$50 per report", "features": ["6 report sections", "Trademark conflict check", "Buyer Intent Score 0-100", "PDF/JSON export"] },
-      { "name": "Bulk Domain Audit", "desc": "Upload a CSV of up to 5,000 domains. Get valuations, SEO scores, priority rankings, and recommended actions.", "pricing": "Premium ($79+/mo)", "features": ["5,000 domains/batch", "Priority Score 1-100", "Custom scoring profiles", "CSV export"] },
-      { "name": "Trademark Monitor", "desc": "Automated USPTO and WIPO screening. Get alerts before a trademark conflict becomes a legal problem.", "pricing": "Premium ($79+/mo)", "features": ["Daily USPTO/WIPO scanning", "4 severity levels", "Email + SMS alerts", "5,000 domains per list"] },
-      { "name": "Domain Database", "desc": "Registration statistics, pricing history, and renewal costs for 2,847 TLDs. Updated daily from ICANN zone files.", "pricing": "Free (current pricing)", "features": ["2,847 TLDs tracked", "24-month pricing history", "420+ registrar feeds", "Search by TLD, keyword, or price"] }
+      {
+        "name": "Domain Lookup",
+        "desc": "Free tool. WHOIS data, DNS records, and registrar information for any domain.",
+        "pricing": "Free",
+        "features": [
+          "WHOIS lookup",
+          "DNS record export (A, AAAA, MX, TXT, CNAME)",
+          "Registrar detection",
+          "Expiration tracking"
+        ]
+      },
+      {
+        "name": "16-Dimension Appraisal",
+        "desc": "Deep domain valuation using 16 analysis dimensions — RDAP, TLD scoring, brandability, commercial intent, and more.",
+        "pricing": "Free (3 unsigned / 12 signed per day)",
+        "features": [
+          "16 scoring dimensions",
+          "Market-based pricing",
+          "Comparable analysis",
+          "Confidence intervals"
+        ]
+      },
+      {
+        "name": "SEO Scanner",
+        "desc": "Evaluate search visibility, backlink quality, organic traffic, and SEO authority in 3-5 seconds.",
+        "pricing": "Premium",
+        "features": [
+          "Domain Rating 0-100",
+          "Organic traffic estimates",
+          "Keyword rankings",
+          "SEO Score composite"
+        ]
+      },
+      {
+        "name": "Extended Insights",
+        "desc": "Deep due diligence — 16-dimension valuation, trademark screening, comparable sales, and buyer intent scoring.",
+        "pricing": "$5-$50 per report",
+        "features": [
+          "6 report sections",
+          "Trademark conflict check",
+          "Buyer Intent Score 0-100",
+          "PDF/JSON export"
+        ]
+      },
+      {
+        "name": "Bulk Domain Audit",
+        "desc": "Upload a CSV of up to 5,000 domains. Get valuations, SEO scores, priority rankings, and recommended actions.",
+        "pricing": "Premium ($79+/mo)",
+        "features": [
+          "5,000 domains/batch",
+          "Priority Score 1-100",
+          "Custom scoring profiles",
+          "CSV export"
+        ]
+      },
+      {
+        "name": "Trademark Monitor",
+        "desc": "Automated USPTO and WIPO screening. Get alerts before a trademark conflict becomes a legal problem.",
+        "pricing": "Premium ($79+/mo)",
+        "features": [
+          "Daily USPTO/WIPO scanning",
+          "4 severity levels",
+          "Email + SMS alerts",
+          "5,000 domains per list"
+        ]
+      },
+      {
+        "name": "Domain Database",
+        "desc": "Registration statistics, pricing history, and renewal costs for 2,847 TLDs. Updated daily from ICANN zone files.",
+        "pricing": "Free (current pricing)",
+        "features": [
+          "2,847 TLDs tracked",
+          "24-month pricing history",
+          "420+ registrar feeds",
+          "Search by TLD, keyword, or price"
+        ]
+      }
     ],
-    "tiersTitle": "Subscription tiers",
+    "tiersTitle": "订阅层级",
     "tiers": [
-      { "tier": "Free", "price": "$0", "features": "12 appraisals/day, basic SEO Scanner, Help Center access", "color": "#888888" },
-      { "tier": "Startup", "price": "$79/mo", "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor", "color": "#F4A261" },
-      { "tier": "Enterprise", "price": "$129/mo", "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support", "color": "#9E2A2B" }
+      {
+        "tier": "Free",
+        "price": "$0",
+        "features": "12 appraisals/day, basic SEO Scanner, Help Center access",
+        "color": "#888888"
+      },
+      {
+        "tier": "Startup",
+        "price": "$79/mo",
+        "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor",
+        "color": "#F4A261"
+      },
+      {
+        "tier": "Enterprise",
+        "price": "$129/mo",
+        "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support",
+        "color": "#9E2A2B"
+      }
     ],
-    "needHelp": { "badge": "Need help?", "title": "Premium subscribers get 4-hour support", "cta": "Contact support" },
-    "openTool": "Open tool"
+    "needHelp": {
+      "badge": "需要帮助？",
+      "title": "Premium订阅者享有4小时支持",
+      "cta": "联系支持"
+    },
+    "openTool": "打开工具"
   },
   "helpFaq": {
-    "badge": "FAQ",
-    "title1": "Frequently",
-    "title2": "asked.",
+    "badge": "常见问题",
+    "title1": "常见",
+    "title2": "问题。",
     "desc": "Answers to the most common questions about Ceche — pricing, tools, API, marketplace, and account management.",
     "sections": [
-      { "title": "Getting started", "items": [
-        { "q": "What is Ceche?", "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace." },
-        { "q": "How does the appraisal engine work?", "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights." },
-        { "q": "What TLDs does Ceche support?", "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions." },
-        { "q": "How do I create an account?", "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required." }
-      ]},
-      { "title": "Pricing & billing", "items": [
-        { "q": "What are the subscription tiers?", "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting." },
-        { "q": "How does Try Your Luck pricing work?", "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring." },
-        { "q": "What are the marketplace fees?", "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000." },
-        { "q": "Do you offer refunds?", "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable." }
-      ]},
-      { "title": "Tools", "items": [
-        { "q": "What's the difference between SEO Scanner and Extended Insights?", "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring." },
-        { "q": "How does the Bulk Analyzer work?", "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds." },
-        { "q": "How does the Trademark Monitor work?", "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)." }
-      ]},
-      { "title": "API & integrations", "items": [
-        { "q": "How do I authenticate API requests?", "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys." },
-        { "q": "What are the API rate limits?", "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC." },
-        { "q": "What SDKs are available?", "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff." }
-      ]},
-      { "title": "Account & support", "items": [
-        { "q": "How do I contact support?", "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel." },
-        { "q": "Can I cancel my subscription?", "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable." }
-      ]}
+      {
+        "title": "Getting started",
+        "items": [
+          {
+            "q": "What is Ceche?",
+            "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace."
+          },
+          {
+            "q": "How does the appraisal engine work?",
+            "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights."
+          },
+          {
+            "q": "What TLDs does Ceche support?",
+            "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions."
+          },
+          {
+            "q": "How do I create an account?",
+            "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required."
+          }
+        ]
+      },
+      {
+        "title": "Pricing & billing",
+        "items": [
+          {
+            "q": "What are the subscription tiers?",
+            "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting."
+          },
+          {
+            "q": "How does Try Your Luck pricing work?",
+            "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring."
+          },
+          {
+            "q": "What are the marketplace fees?",
+            "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000."
+          },
+          {
+            "q": "Do you offer refunds?",
+            "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable."
+          }
+        ]
+      },
+      {
+        "title": "Tools",
+        "items": [
+          {
+            "q": "What's the difference between SEO Scanner and Extended Insights?",
+            "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring."
+          },
+          {
+            "q": "How does the Bulk Analyzer work?",
+            "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds."
+          },
+          {
+            "q": "How does the Trademark Monitor work?",
+            "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)."
+          }
+        ]
+      },
+      {
+        "title": "API & integrations",
+        "items": [
+          {
+            "q": "How do I authenticate API requests?",
+            "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys."
+          },
+          {
+            "q": "What are the API rate limits?",
+            "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC."
+          },
+          {
+            "q": "What SDKs are available?",
+            "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff."
+          }
+        ]
+      },
+      {
+        "title": "Account & support",
+        "items": [
+          {
+            "q": "How do I contact support?",
+            "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel."
+          },
+          {
+            "q": "Can I cancel my subscription?",
+            "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable."
+          }
+        ]
+      }
     ],
-    "stillQuestions": "Still have questions?",
-    "supportTeam": "Our support team is here to help",
-    "contactSupport": "Contact support"
+    "stillQuestions": "还有问题？",
+    "supportTeam": "我们的支持团队随时为您提供帮助",
+    "contactSupport": "联系支持"
   },
   "helpApi": {
-    "badge": "API Reference",
-    "title1": "Build with",
-    "title2": "Ceche.",
+    "badge": "API文档",
+    "title1": "构建与",
+    "title2": "Ceche。",
     "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
-    "baseUrl": "Base URL",
-    "auth": "Authentication",
-    "endpoints": "Endpoints",
-    "rateLimits": "Rate limits",
+    "baseUrl": "基础URL",
+    "auth": "身份验证",
+    "endpoints": "端点",
+    "rateLimits": "速率限制",
     "limits": [
-      { "tier": "Free", "limit": "100 calls/day", "color": "#888888" },
-      { "tier": "Startup", "limit": "500 calls/day", "color": "#F4A261" },
-      { "tier": "Enterprise", "limit": "10,000 calls/day", "color": "#9E2A2B" }
+      {
+        "tier": "Free",
+        "limit": "100 calls/day",
+        "color": "#888888"
+      },
+      {
+        "tier": "Startup",
+        "limit": "500 calls/day",
+        "color": "#F4A261"
+      },
+      {
+        "tier": "Enterprise",
+        "limit": "10,000 calls/day",
+        "color": "#9E2A2B"
+      }
     ],
-    "enterprise": { "badge": "Enterprise", "title": "10,000 API calls per day", "cta": "Get API key" },
+    "enterprise": {
+      "badge": "企业版",
+      "title": "每天10,000次API调用",
+      "cta": "获取API密钥"
+    },
     "openTool": "Open tool"
   },
   "helpContact": {
-    "badge": "Contact",
-    "title1": "Get in",
-    "title2": "touch.",
+    "badge": "联系我们",
+    "title1": "联系",
+    "title2": "我们。",
     "desc": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours.",
-    "form": { "name": "Name", "namePlaceholder": "Your name", "email": "Email", "emailPlaceholder": "you@company.com", "subject": "Subject", "subjects": ["General inquiry", "Technical support", "Billing question", "Partnership", "Press / Media"], "message": "Message", "messagePlaceholder": "How can we help?", "send": "Send message" },
-    "channels": { "title": "Support channels", "email": { "title": "Email", "value": "support@ceche.net" }, "slack": { "title": "Enterprise Slack", "value": "Private channel for Enterprise subscribers" } },
-    "responseTimes": { "title": "Response times", "times": [
-      { "tier": "Enterprise", "time": "4 hours", "color": "#9E2A2B" },
-      { "tier": "Startup", "time": "4 hours", "color": "#F4A261" },
-      { "tier": "Free", "time": "24 hours", "color": "#888888" }
-    ]},
-    "businessHours": { "title": "Business hours", "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers." }
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "email": "电子邮件",
+      "emailPlaceholder": "your@company.com",
+      "subject": "主题",
+      "subjects": [
+        "General inquiry",
+        "Technical support",
+        "Billing question",
+        "Partnership",
+        "Press / Media"
+      ],
+      "message": "消息",
+      "messagePlaceholder": "我们如何帮助您？",
+      "send": "发送消息"
+    },
+    "channels": {
+      "title": "其他联系方式",
+      "email": {
+        "title": "Email",
+        "value": "support@ceche.net"
+      },
+      "slack": {
+        "title": "Enterprise Slack",
+        "value": "Private channel for Enterprise subscribers"
+      }
+    },
+    "responseTimes": {
+      "title": "响应时间",
+      "times": [
+        {
+          "tier": "Enterprise",
+          "time": "4 hours",
+          "color": "#9E2A2B"
+        },
+        {
+          "tier": "Startup",
+          "time": "4 hours",
+          "color": "#F4A261"
+        },
+        {
+          "tier": "Free",
+          "time": "24 hours",
+          "color": "#888888"
+        }
+      ]
+    },
+    "businessHours": {
+      "title": "营业时间",
+      "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers."
+    }
   },
   "helpChangelog": {
-    "badge": "Changelog",
-    "title1": "Every commit,",
-    "title2": "documented.",
-    "desc": "Every update sourced directly from our git history. Real commits, real dates, real descriptions.",
-    "comingSoon": { "badge": "Coming soon", "title": "Auction tracking, mobile app, ML valuation", "cta": "View roadmap" }
+    "badge": "更新日志",
+    "title1": "每次提交，",
+    "title2": "都有记录。",
+    "desc": "所有更新直接来自我们的git历史。真实的提交、真实的日期、真实的描述。",
+    "comingSoon": {
+      "badge": "即将推出",
+      "title": "拍卖追踪、移动应用、ML估值",
+      "cta": "查看路线图"
+    }
   }
 }
