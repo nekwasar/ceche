@@ -985,5 +985,127 @@
       "ctaMarketplace": "Browse Marketplace",
       "ctaPricing": "View Pricing"
     }
+  },
+  "res": {
+    "index": {
+      "title": "Resources",
+      "subtitle": "Learn and get support"
+    },
+    "blog": {
+      "badge": "Ceche Blog",
+      "title": "Domain intelligence, decoded.",
+      "subtitle": "Strategy guides, market analysis, and frameworks for domain investors who trade on data—not intuition.",
+      "topicsBadge": "Topics",
+      "categories": ["Strategy", "Market Data", "Tutorials", "Industry News", "Case Studies"],
+      "marquee": "Domain Valuations · Market Reports · Portfolio Analytics · Blind Marketplace · 16-Dimension Framework · Health Scores · CPC Data · Brandability Index · Try Your Luck ·",
+      "articles": [
+        { "date": "Aug 28, 2026", "title": "Why Premium .com Domains Still Outperform New gTLDs" },
+        { "date": "Aug 21, 2026", "title": "The Hidden ROI of Portfolio Health Scores" },
+        { "date": "Aug 14, 2026", "title": "5 Red Flags in Domain Appraisals You're Ignoring" },
+        { "date": "Aug 07, 2026", "title": "How to Price a Domain Without Guessing" },
+        { "date": "Jul 31, 2026", "title": "Blind Auctions vs. Fixed Listings: A Data Comparison" },
+        { "date": "Jul 24, 2026", "title": "Building a Domain Reselling Workflow from Scratch" }
+      ],
+      "cta": { "title": "Want the full library?", "desc": "Download our ebooks and go deeper on domain investing.", "ebooks": "Browse Ebooks →", "pricing": "View Pricing" }
+    },
+    "ebooks": {
+      "badge": "Ceche Ebooks",
+      "title": "Go deeper on domain investing",
+      "subtitle": "Free guides, frameworks, and playbooks for domain investors at every level.",
+      "featured": {
+        "badge": "Featured",
+        "title": "The Domain Investor's Playbook",
+        "desc": "The definitive guide to buying, valuing, and selling domain names for profit. 42 pages of actionable frameworks, case studies, and Ceche-specific strategies used by top resellers.",
+        "stats": [
+          { "value": "34K+", "label": "Downloads" },
+          { "value": "42", "label": "Pages" },
+          { "value": "4.9", "label": "Rating" }
+        ],
+        "cta": "Get Free Copy →"
+      },
+      "catalogTitle": "More from Ceche",
+      "catalog": [
+        { "title": "The Domain Appraiser's Toolkit", "pages": 32, "date": "Apr 2026", "downloads": "12K+", "desc": "A step-by-step guide to valuing domains using data, not guesswork. Covers the 16-Dimension Framework, health scoring, and comparative market analysis." },
+        { "title": "Blind Marketplace Playbook", "pages": 28, "date": "Mar 2026", "downloads": "8K+", "desc": "How Ceche's blind bidding system eliminates price inflation and gives buyers an edge. Includes negotiation templates and bid strategy frameworks." },
+        { "title": "Portfolio Health Audit Guide", "pages": 24, "date": "Feb 2026", "downloads": "6K+", "desc": "Run a full health check on your domain portfolio. Identify underperformers, renewal traps, and hidden gems with Ceche's scoring system." },
+        { "title": "Domain Reselling 101", "pages": 36, "date": "Jan 2026", "downloads": "15K+", "desc": "From acquisition to close—everything a new domain reseller needs. Pricing strategies, buyer outreach, and closing techniques backed by real data." }
+      ],
+      "getCopy": "Get Digital Copy",
+      "cta": { "title": "Want more articles and market insights?", "desc": "Our blog covers domain strategy, pricing models, and industry analysis.", "blog": "Read the Blog →", "pricing": "View Pricing" },
+      "modal": { "title": "Create an account to download", "desc": "All Ceche ebooks and guides are free for registered users.", "redirecting": "Redirecting to signup in {count} seconds...", "cta": "Create free account", "back": "Go back" }
+    },
+    "cases": {
+      "badge": "Case Studies",
+      "title": "Real investors. Real outcomes.",
+      "desc": "See how domain investors, startups, and portfolio managers use Ceche to make faster, smarter decisions. Every case study is backed by real numbers—no cherry-picked success stories.",
+      "stats": [
+        { "value": "4.2K+", "label": "Active Users" },
+        { "value": "98%", "label": "Accuracy Rate" }
+      ],
+      "comingSoon": {
+        "title": "Case studies coming soon",
+        "desc": "We're documenting how investors are using Ceche's tools to find undervalued domains, negotiate smarter, and close deals faster. Check back soon for in-depth breakdowns.",
+        "appraisal": "Try Appraisal Tool →",
+        "marketplace": "Explore Marketplace",
+        "pricing": "View Pricing"
+      },
+      "cta": { "title": "Have a story to share?", "desc": "We'd love to feature your experience with Ceche.", "contact": "Get in Touch →" }
+    }
+  },
+  "company": {
+    "about": {
+      "badge": "About Ceche",
+      "title": "Built for investors who trade on data",
+      "desc": "The domain marketplace where premium names are bought and sold—powered by real intelligence, not guesswork.",
+      "cta": ["Try Appraisal →", "Browse Marketplace"],
+      "origin": {
+        "badge": "Our Origin",
+        "title": "Founded by a domain investor who saw the market needed better data",
+        "p1": "The domain aftermarket generates over $3 billion in annual transactions, yet most marketplaces are opaque, inflated by scrapers, and built on intuition rather than data. Ceche was created to fix that.",
+        "p2": "We combined the intelligence of a research platform with the transaction mechanics of a marketplace. You evaluate the numbers first—estimated value, health score, CPC, brandability—and the name only appears when you pay to reveal it. Every valuation is backed by a published methodology and a verifiable dataset."
+      },
+      "founder": {
+        "label": "Founder",
+        "name": "Nekwasachukwu Ucheokoye",
+        "bio": "Domain name investor & reseller managing 100+ domains. Agentic & systems engineer building intelligent infrastructure for the domain industry. Based in Awka, Nigeria."
+      },
+      "values": {
+        "badge": "What We Believe",
+        "title": "Three principles that drive every decision",
+        "items": [
+          { "title": "Transparency", "desc": "We publish our methodology, data sources, and accuracy metrics. Users who understand how we work trust us more than users who are asked to take our word for it." },
+          { "title": "Data Rigor", "desc": "Every claim we make is backed by data. Every tool produces measurable outputs. We do not rely on intuition when data is available." },
+          { "title": "Speed", "desc": "We ship fast and iterate. Perfection is the enemy of progress—we aim for good enough to ship and improve from there." }
+        ]
+      },
+      "cta": { "title": "Ready to find your next domain?", "desc": "Every name is backed by data. The marketplace is open.", "marketplace": "Browse Marketplace →", "pricing": "View Pricing" }
+    },
+    "affiliates": {
+      "badge": "Ceche Affiliates",
+      "title": "Earn by referring domain investors",
+      "desc": "Join our affiliate program, share Ceche with your network, and earn recurring commissions on every customer you refer.",
+      "timeline": ["Sign up", "Share link", "Earn 30%"],
+      "benefits": [
+        { "title": "30% Recurring Commission", "desc": "Earn on every paying customer you refer—for as long as they stay subscribed. No caps, no limits." },
+        { "title": "90-Day Cookie Window", "desc": "Your referral link tracks visitors for 90 days. Even if they come back weeks later, you still get credit." },
+        { "title": "Real-Time Dashboard", "desc": "Track clicks, signups, and earnings in real time. No guessing, no waiting for monthly reports." },
+        { "title": "Dedicated Affiliate Support", "desc": "Get priority access to our affiliate team. Custom landing pages, promo assets, and campaign guidance." },
+        { "title": "Instant Payouts", "desc": "Get paid monthly via bank transfer or PayPal. No minimum threshold. No delays." },
+        { "title": "Free Premium Access", "desc": "Active affiliates get a free Ceche Pro account. Use the product, sell the product, believe in the product." }
+      ],
+      "cta": { "title": "Start earning today", "desc": "Sign up for the affiliate program and start referring in minutes.", "join": "Join Affiliate Program →", "pricing": "View Pricing", "support": "Contact Support" }
+    }
+  },
+  "helpOverview": {
+    "badge": "Help Center",
+    "title": "How can we help.",
+    "desc": "Find documentation, FAQs, and support for all Ceche tools. Use the sidebar to navigate between sections.",
+    "sections": [
+      { "title": "Documentation", "desc": "Comprehensive guides for every Ceche tool, from domain lookup to bulk analysis.", "href": "/help/docs" },
+      { "title": "API Reference", "desc": "RESTful API endpoints for programmatic domain intelligence at scale.", "href": "/help/api" },
+      { "title": "FAQ", "desc": "Answers to common questions about pricing, tools, accounts, and more.", "href": "/help/faq" },
+      { "title": "Contact", "desc": "Reach our support team for help, feedback, or partnership inquiries.", "href": "/help/contact" },
+      { "title": "Changelog", "desc": "Product updates, new features, and platform improvements.", "href": "/help/changelog" }
+    ]
   }
 }
