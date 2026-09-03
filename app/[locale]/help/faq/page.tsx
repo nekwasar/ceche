@@ -28,11 +28,11 @@ export default function HelpFaqPage() {
                 <div className="h-px flex-1" style={{ backgroundColor: "#111111", opacity: 0.06 }} />
               </div>
               <div className="space-y-0">
-                {[0, 1, 2, 3].map((ii) => {
+                {(t.raw(`sections.${si}.items`) as any[] || []).map((item: any, ii: number) => {
                   const key = `${si}-${ii}`;
                   const isExpanded = expandedQ === key;
-                  const q = t(`sections.${si}.items.${ii}.q`);
-                  if (!q || q.startsWith("sections.")) return null;
+                  const q = item?.q;
+                  if (!q) return null;
                   return (
                     <div key={ii} className="cursor-pointer" style={{ borderBottom: "1px solid rgba(17,17,17,0.06)" }} onClick={() => setExpandedQ(isExpanded ? null : key)}>
                       <div className="py-5 md:grid md:grid-cols-12 md:gap-8">
@@ -44,7 +44,7 @@ export default function HelpFaqPage() {
                             <h3 className="text-base font-bold" style={{ color: "#111111" }}>{q}</h3>
                             <ChevronDown className="w-4 h-4 shrink-0" style={{ color: "#CCCCCC", transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
                           </div>
-                          {isExpanded && <p className="text-sm leading-relaxed mt-3 pt-3 max-w-2xl" style={{ borderTop: "1px solid rgba(0,0,0,0.06)", color: "#666666" }}>{t(`sections.${si}.items.${ii}.a`)}</p>}
+                          {isExpanded && <p className="text-sm leading-relaxed mt-3 pt-3 max-w-2xl" style={{ borderTop: "1px solid rgba(0,0,0,0.06)", color: "#666666" }}>{item?.a}</p>}
                         </div>
                       </div>
                     </div>
