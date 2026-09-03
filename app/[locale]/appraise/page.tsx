@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useAuth } from "@/lib/auth-context";
 import { useRouter, useSearchParams } from "next/navigation";
-import { ArrowRight, BarChart3, Globe, Lock, Clock, Shield, Zap, TrendingUp, Eye } from "lucide-react";
+import { ArrowRight, BarChart3, Globe, Lock, Clock, Shield, Ruler, TrendingUp, Eye } from "lucide-react";
 
 interface ModuleData {
   value: number | null;
@@ -278,7 +278,7 @@ export default function AppraisePage() {
   const allModules = [
     { name: "m1_rdap", label: "Registration Data (RDAP)", icon: <Shield className="w-4 h-4" /> },
     { name: "m2_tld_table", label: "TLD Premium Tier", icon: <Globe className="w-4 h-4" /> },
-    { name: "m3_length", label: "Domain Length", icon: <Zap className="w-4 h-4" /> },
+    { name: "m3_length", label: "Domain Length", icon: <Ruler className="w-4 h-4" /> },
     { name: "m4_word_count", label: "Word Count", icon: <BarChart3 className="w-4 h-4" /> },
     { name: "m5_pronounceability", label: "Pronounceability", icon: <TrendingUp className="w-4 h-4" /> },
     { name: "m6_segmenter", label: "Word Segmentation", icon: <Eye className="w-4 h-4" /> },

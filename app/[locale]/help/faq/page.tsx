@@ -53,7 +53,7 @@ export default function HelpFaqPage() {
 
   return (
     <main style={{ backgroundColor: "#FAF7F2", minHeight: "100vh" }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex gap-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row gap-6 md:gap-16">
         <DocsMiniNav />
         <div className="flex-1">
           <p className="text-[10px] font-mono tracking-[0.3em] uppercase mb-6" style={{ color: "#999999" }}>FAQ</p>

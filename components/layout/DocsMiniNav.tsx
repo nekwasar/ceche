@@ -20,39 +20,50 @@ export function DocsMiniNav() {
   };
 
   return (
-    <nav
-      style={{
-        position: "sticky",
-        top: 144,
-        minWidth: 180,
-        alignSelf: "flex-start",
-        background: "transparent",
-        padding: "24px 0",
-      }}
-    >
-      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-        {navLinks.map((link) => {
-          const active = isActive(link.href);
-          return (
-            <a
-              key={link.href}
-              href={link.href}
-              style={{
-                display: "block",
-                padding: "8px 12px",
-                fontSize: 14,
-                fontWeight: active ? 700 : 400,
-                color: active ? "#9E2A2B" : "#666666",
-                textDecoration: "none",
-                borderBottom: active ? "2px solid #9E2A2B" : "2px solid transparent",
-                transition: "all 0.15s ease",
-              }}
-            >
-              {link.label}
-            </a>
-          );
-        })}
-      </div>
-    </nav>
+    <>
+      {/* Desktop sidebar */}
+      <nav className="hidden md:block sticky top-36 min-w-[180px] self-start py-6">
+        <div className="flex flex-col gap-3">
+          {navLinks.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`block px-3 py-2 text-sm transition-all no-underline ${
+                  active
+                    ? "font-bold text-[#9E2A2B] border-b-2 border-[#9E2A2B]"
+                    : "font-normal text-[#666] border-b-2 border-transparent hover:text-[#111]"
+                }`}
+              >
+                {link.label}
+              </a>
+            );
+          })}
+        </div>
+      </nav>
+
+      {/* Mobile horizontal nav */}
+      <nav className="md:hidden overflow-x-auto py-4 -mx-4 px-4">
+        <div className="flex gap-2 min-w-max">
+          {navLinks.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap no-underline transition-all ${
+                  active
+                    ? "bg-[#9E2A2B] text-white"
+                    : "bg-[#EFECE6] text-[#666] hover:bg-[#E5DFD3]"
+                }`}
+              >
+                {link.label}
+              </a>
+            );
+          })}
+        </div>
+      </nav>
+    </>
   );
 }

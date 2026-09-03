@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BarChart3, Shield, Zap, FileText } from "lucide-react";
+import { BarChart3, Shield, Layers, FileText } from "lucide-react";
 
 export default function SeoAgenciesPage() {
   return (
@@ -62,7 +62,7 @@ export default function SeoAgenciesPage() {
         {[
           { title: "Expired Domain Authority", desc: "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity.", icon: BarChart3 },
           { title: "Spam Recovery Audits", desc: "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health.", icon: Shield },
-          { title: "Bulk Analyzer", desc: "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations.", icon: Zap },
+          { title: "Bulk Analyzer", desc: "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations.", icon: Layers },
           { title: "Reporting Dashboard", desc: "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects.", icon: FileText },
         ].map((f, i) => (
           <div key={f.title} className={`flex flex-col md:flex-row gap-5 md:gap-12 items-start md:items-center py-6 md:py-8 ${i < 3 ? "border-b border-[#E8E5DF]" : ""}`}>

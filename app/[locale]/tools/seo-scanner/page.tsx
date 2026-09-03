@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import PremiumGateModal from "@/components/layout/PremiumGateModal";
-import { BarChart3, Link2, AlertTriangle, Search, Zap, TrendingUp } from "lucide-react";
+import { BarChart3, Link2, AlertTriangle, Search, Wrench, TrendingUp } from "lucide-react";
 
 export default function SeoScannerPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -119,7 +119,7 @@ export default function SeoScannerPage() {
               { icon: Link2, title: "Backlink Profile", desc: "Complete backlink analysis with referring domains and anchor text distribution." },
               { icon: AlertTriangle, title: "Spam Score", desc: "Machine learning spam detection with penalty risk assessment and recommendations." },
               { icon: Search, title: "Indexation Status", desc: "Search engine indexation checks across Google, Bing, and Yandex." },
-              { icon: Zap, title: "Technical SEO", desc: "Core Web Vitals, mobile-friendliness, and structured data analysis." },
+              { icon: Wrench, title: "Technical SEO", desc: "Core Web Vitals, mobile-friendliness, and structured data analysis." },
               { icon: TrendingUp, title: "Competitor Analysis", desc: "Compare domain metrics against top competitors in your niche." },
             ].map((item) => (
               <div key={item.title} className="bg-[#FAF7F2] rounded-xl p-6 md:p-7">
