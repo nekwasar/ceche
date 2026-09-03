@@ -217,17 +217,17 @@ export function Navbar() {
               </nav>
             </div>
 
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-3 md:gap-5">
               <button className="hidden md:flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
                 <Search className="w-4 h-4" />
               </button>
-              <LanguageSwitcher />
               <a href="/login" className="hidden md:block text-white/80 hover:text-white text-sm font-medium transition-colors">
                 Log In
               </a>
               <a href="/signup" className="cta-button hidden sm:inline-flex">
                 Signup Free
               </a>
+              <LanguageSwitcher />
 
               {mounted && (
               <button

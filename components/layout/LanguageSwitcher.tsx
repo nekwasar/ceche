@@ -31,7 +31,7 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <div ref={ref} className="relative hidden md:block">
+    <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1 px-2 py-2 text-white/80 hover:text-white transition-colors"
