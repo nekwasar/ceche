@@ -7,87 +7,31 @@ export default function ApiPage() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#FAF7F2" }}>
+    <div className="min-h-screen bg-[#FAF7F2]">
       {/* Simple CTA Hero */}
-      <section
-        style={{
-          background: "linear-gradient(135deg, #9E2A2B 0%, #7A1F1F 100%)",
-          padding: "80px 24px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <span
-            style={{
-              display: "inline-block",
-              backgroundColor: "rgba(255,255,255,0.15)",
-              color: "#FFFFFF",
-              padding: "6px 16px",
-              borderRadius: "20px",
-              fontSize: "13px",
-              fontWeight: 600,
-              letterSpacing: "0.5px",
-              marginBottom: "20px",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+      <section className="bg-gradient-to-br from-[#9E2A2B] to-[#7A1F1F] py-16 md:py-20 px-4 md:px-6 text-center">
+        <div className="max-w-3xl mx-auto">
+          <span className="inline-block bg-white/15 text-white px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider mb-5">
             DEVELOPER
           </span>
-          <h1
-            style={{
-              fontSize: "48px",
-              fontWeight: 800,
-              color: "#FFFFFF",
-              marginBottom: "16px",
-              lineHeight: 1.1,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
             API Access
           </h1>
-          <p
-            style={{
-              fontSize: "18px",
-              color: "rgba(255,255,255,0.85)",
-              marginBottom: "32px",
-              lineHeight: 1.6,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <p className="text-base md:text-lg text-white/85 mb-8 leading-relaxed">
             RESTful API for programmatic domain intelligence. Build custom
             integrations, automate workflows, and access all domain data
             programmatically.
           </p>
-          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button
               onClick={() => setShowModal(true)}
-              style={{
-                backgroundColor: "#F4A261",
-                color: "#111111",
-                padding: "14px 32px",
-                borderRadius: "8px",
-                fontSize: "16px",
-                fontWeight: 700,
-                border: "none",
-                cursor: "pointer",
-                fontFamily: "Inter, sans-serif",
-              }}
+              className="bg-[#F4A261] text-[#111] px-8 py-3.5 rounded-lg text-base font-bold border-none cursor-pointer"
             >
               Get API Key
             </button>
             <Link
               href="/help/api"
-              style={{
-                backgroundColor: "transparent",
-                color: "#FFFFFF",
-                padding: "14px 32px",
-                borderRadius: "8px",
-                fontSize: "16px",
-                fontWeight: 600,
-                border: "2px solid rgba(255,255,255,0.3)",
-                textDecoration: "none",
-                fontFamily: "Inter, sans-serif",
-              }}
+              className="bg-transparent text-white px-8 py-3.5 rounded-lg text-base font-semibold border-2 border-white/30 no-underline text-center"
             >
               Read Documentation
             </Link>
@@ -96,88 +40,24 @@ export default function ApiPage() {
       </section>
 
       {/* 3 "What You Can Build" Cards */}
-      <section style={{ maxWidth: "1000px", margin: "-40px auto 0", padding: "0 24px", position: "relative", zIndex: 1 }}>
-        <h2
-          style={{
-            fontSize: "28px",
-            fontWeight: 700,
-            color: "#111111",
-            textAlign: "center",
-            marginBottom: "40px",
-            fontFamily: "Inter, sans-serif",
-          }}
-        >
+      <section className="max-w-5xl mx-auto -mt-10 px-4 md:px-6 relative z-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#111] text-center mb-8 md:mb-10">
           What You Can Build
         </h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {[
-            {
-              icon: "🔗",
-              title: "Domain Portfolio Tracker",
-              desc: "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.",
-              link: "/tools/domain-lookup",
-              linkText: "Try Domain Lookup",
-            },
-            {
-              icon: "📊",
-              title: "Market Intelligence Dashboard",
-              desc: "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.",
-              link: "/tools/bulk-analyzer",
-              linkText: "Explore Bulk Analyzer",
-            },
-            {
-              icon: "🛡️",
-              title: "Brand Protection System",
-              desc: "Automate trademark monitoring and get instant alerts for potential brand conflicts.",
-              link: "/tools/trademark-monitor",
-              linkText: "See Trademark Monitor",
-            },
+            { icon: "🔗", title: "Domain Portfolio Tracker", desc: "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.", link: "/tools/domain-lookup", linkText: "Try Domain Lookup" },
+            { icon: "📊", title: "Market Intelligence Dashboard", desc: "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.", link: "/tools/bulk-analyzer", linkText: "Explore Bulk Analyzer" },
+            { icon: "🛡️", title: "Brand Protection System", desc: "Automate trademark monitoring and get instant alerts for potential brand conflicts.", link: "/tools/trademark-monitor", linkText: "See Trademark Monitor" },
           ].map((item) => (
             <div
               key={item.title}
-              style={{
-                backgroundColor: "#FFFFFF",
-                borderRadius: "12px",
-                padding: "32px",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
-                display: "flex",
-                flexDirection: "column",
-              }}
+              className="bg-white rounded-xl p-6 md:p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex flex-col"
             >
-              <div style={{ fontSize: "40px", marginBottom: "16px" }}>{item.icon}</div>
-              <h3
-                style={{
-                  fontSize: "18px",
-                  fontWeight: 700,
-                  color: "#111111",
-                  marginBottom: "10px",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
-                {item.title}
-              </h3>
-              <p
-                style={{
-                  fontSize: "14px",
-                  color: "#666666",
-                  lineHeight: 1.6,
-                  marginBottom: "20px",
-                  flex: 1,
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
-                {item.desc}
-              </p>
-              <Link
-                href={item.link}
-                style={{
-                  color: "#9E2A2B",
-                  fontWeight: 600,
-                  fontSize: "14px",
-                  textDecoration: "none",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+              <div className="text-4xl mb-4">{item.icon}</div>
+              <h3 className="text-base md:text-lg font-bold text-[#111] mb-2">{item.title}</h3>
+              <p className="text-sm text-[#666] leading-relaxed mb-5 flex-1">{item.desc}</p>
+              <Link href={item.link} className="text-[#9E2A2B] font-semibold text-sm no-underline hover:underline">
                 {item.linkText} →
               </Link>
             </div>
@@ -186,76 +66,23 @@ export default function ApiPage() {
       </section>
 
       {/* API Features */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "60px 24px", marginTop: "60px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "28px",
-              fontWeight: 700,
-              color: "#111111",
-              textAlign: "center",
-              marginBottom: "40px",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+      <section className="bg-white py-12 md:py-16 px-4 md:px-6 mt-12 md:mt-16">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#111] text-center mb-8 md:mb-10">
             API Features
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "20px" }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
             {[
-              {
-                title: "RESTful API",
-                desc: "Full access to all domain intelligence endpoints with standard HTTP methods.",
-              },
-              {
-                title: "Webhooks",
-                desc: "Real-time notifications for domain changes and events via webhook callbacks.",
-              },
-              {
-                title: "Rate Limits",
-                desc: "10,000 calls per day with Enterprise plan and burst capacity for spikes.",
-              },
-              {
-                title: "SDKs",
-                desc: "Official libraries for Python, Node.js, Go, and Ruby with full documentation.",
-              },
-              {
-                title: "Sandbox",
-                desc: "Test environment for development and integration testing before going live.",
-              },
-              {
-                title: "Documentation",
-                desc: "Complete API reference with code examples, tutorials, and best practices.",
-              },
+              { title: "RESTful API", desc: "Full access to all domain intelligence endpoints with standard HTTP methods." },
+              { title: "Webhooks", desc: "Real-time notifications for domain changes and events via webhook callbacks." },
+              { title: "Rate Limits", desc: "10,000 calls per day with Enterprise plan and burst capacity for spikes." },
+              { title: "SDKs", desc: "Official libraries for Python, Node.js, Go, and Ruby with full documentation." },
+              { title: "Sandbox", desc: "Test environment for development and integration testing before going live." },
+              { title: "Documentation", desc: "Complete API reference with code examples, tutorials, and best practices." },
             ].map((item) => (
-              <div
-                key={item.title}
-                style={{
-                  backgroundColor: "#FAF7F2",
-                  borderRadius: "12px",
-                  padding: "24px",
-                }}
-              >
-                <h3
-                  style={{
-                    fontSize: "16px",
-                    fontWeight: 700,
-                    color: "#111111",
-                    marginBottom: "6px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.title}
-                </h3>
-                <p
-                  style={{
-                    fontSize: "14px",
-                    color: "#666666",
-                    lineHeight: 1.6,
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.desc}
-                </p>
+              <div key={item.title} className="bg-[#FAF7F2] rounded-xl p-5 md:p-6">
+                <h3 className="text-base font-bold text-[#111] mb-1.5">{item.title}</h3>
+                <p className="text-sm text-[#666] leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -263,64 +90,23 @@ export default function ApiPage() {
       </section>
 
       {/* CTA */}
-      <section
-        style={{
-          background: "linear-gradient(135deg, #111111 0%, #2A2A2A 100%)",
-          padding: "60px 24px",
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "28px",
-            fontWeight: 700,
-            color: "#FFFFFF",
-            marginBottom: "16px",
-            fontFamily: "Inter, sans-serif",
-          }}
-        >
+      <section className="bg-gradient-to-br from-[#111] to-[#2A2A2A] py-12 md:py-16 px-4 md:px-6 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
           Ready to Build?
         </h2>
-        <p
-          style={{
-            fontSize: "16px",
-            color: "rgba(255,255,255,0.7)",
-            marginBottom: "32px",
-            fontFamily: "Inter, sans-serif",
-          }}
-        >
+        <p className="text-base text-white/70 mb-8">
           Get your API key and start integrating domain intelligence today.
         </p>
-        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={() => setShowModal(true)}
-            style={{
-              backgroundColor: "#F4A261",
-              color: "#111111",
-              padding: "14px 32px",
-              borderRadius: "8px",
-              fontSize: "16px",
-              fontWeight: 700,
-              border: "none",
-              cursor: "pointer",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="bg-[#F4A261] text-[#111] px-8 py-3.5 rounded-lg text-base font-bold border-none cursor-pointer"
           >
-            Create Free Account
+            Get API Key
           </button>
           <Link
             href="/help/api"
-            style={{
-              backgroundColor: "transparent",
-              color: "#FFFFFF",
-              padding: "14px 32px",
-              borderRadius: "8px",
-              fontSize: "16px",
-              fontWeight: 600,
-              border: "2px solid rgba(255,255,255,0.3)",
-              textDecoration: "none",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="bg-transparent text-white px-8 py-3.5 rounded-lg text-base font-semibold border-2 border-white/30 no-underline text-center"
           >
             View API Docs
           </Link>
@@ -330,111 +116,35 @@ export default function ApiPage() {
       {/* Create Account Modal */}
       {showModal && (
         <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 9999,
-          }}
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999] px-4"
           onClick={() => setShowModal(false)}
         >
           <div
-            style={{
-              backgroundColor: "#FFFFFF",
-              borderRadius: "12px",
-              padding: "40px",
-              maxWidth: "480px",
-              width: "90%",
-              textAlign: "center",
-              boxShadow: "0 20px 60px rgba(0, 0, 0, 0.3)",
-            }}
+            className="bg-white rounded-xl p-8 md:p-10 max-w-md w-full text-center shadow-[0_20px_60px_rgba(0,0,0,0.3)]"
             onClick={(e) => e.stopPropagation()}
           >
-            <div
-              style={{
-                width: "64px",
-                height: "64px",
-                backgroundColor: "#9E2A2B",
-                borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "0 auto 24px",
-              }}
-            >
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#FFFFFF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
+            <div className="w-16 h-16 bg-[#9E2A2B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
                 <polyline points="10 17 15 12 10 7" />
                 <line x1="15" y1="12" x2="3" y2="12" />
               </svg>
             </div>
-            <h2
-              style={{
-                fontSize: "24px",
-                fontWeight: 700,
-                color: "#111111",
-                marginBottom: "12px",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              Get Your API Key
-            </h2>
-            <p
-              style={{
-                fontSize: "16px",
-                color: "#666666",
-                marginBottom: "24px",
-                lineHeight: 1.6,
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
+            <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-3">Get Your API Key</h2>
+            <p className="text-base text-[#666] mb-6 leading-relaxed">
               Create a free account to get your API key and start building with
               domain intelligence data.
             </p>
             <Link
               href="/signup"
-              style={{
-                display: "inline-block",
-                backgroundColor: "#9E2A2B",
-                color: "#FFFFFF",
-                padding: "14px 32px",
-                borderRadius: "8px",
-                fontSize: "16px",
-                fontWeight: 600,
-                textDecoration: "none",
-                marginBottom: "16px",
-                fontFamily: "Inter, sans-serif",
-              }}
+              className="inline-block bg-[#9E2A2B] text-white px-8 py-3.5 rounded-lg text-base font-semibold no-underline mb-4"
             >
               Create Free Account
             </Link>
             <div>
               <button
                 onClick={() => setShowModal(false)}
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "#999999",
-                  fontSize: "14px",
-                  cursor: "pointer",
-                  textDecoration: "underline",
-                  fontFamily: "Inter, sans-serif",
-                }}
+                className="bg-transparent border-none text-[#999] text-sm cursor-pointer underline"
               >
                 Go back
               </button>

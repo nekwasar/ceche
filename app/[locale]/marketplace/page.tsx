@@ -51,91 +51,49 @@ export default function MarketplacePage() {
   );
 
   return (
-    <main style={{ backgroundColor: "#FAF7F2", minHeight: "100vh" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "80px 24px 120px" }}>
-        <div style={{ marginBottom: 48 }}>
-          <span
-            style={{
-              fontSize: 10,
-              fontFamily: "monospace",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "#999999",
-              display: "block",
-              marginBottom: 12,
-            }}
-          >
+    <main className="bg-[#FAF7F2] min-h-screen">
+      <div className="max-w-[1100px] mx-auto px-4 md:px-6 py-12 md:py-16 lg:py-20 pb-20 md:pb-24 lg:pb-32">
+        {/* Header */}
+        <div className="mb-8 md:mb-12">
+          <span className="text-[10px] font-mono tracking-[0.15em] uppercase text-[#999] block mb-3">
             Marketplace
           </span>
-          <h1 style={{ fontSize: 40, fontWeight: 700, color: "#111111", marginBottom: 16 }}>
-            Premium Domains
-          </h1>
-          <p style={{ fontSize: 18, color: "#666666", maxWidth: 560 }}>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#111] mb-4">Premium Domains</h1>
+          <p className="text-base md:text-lg text-[#666] max-w-md">
             Browse our curated inventory. Full stats shown — name hidden. Pay to reveal.
           </p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gap: 16,
-            marginBottom: 40,
-          }}
-        >
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-10">
           {stats.map((s) => (
-            <div
-              key={s.label}
-              style={{
-                backgroundColor: "#EFECE6",
-                borderRadius: 14,
-                padding: "20px 24px",
-                border: "1px solid rgba(0,0,0,0.05)",
-              }}
-            >
-              <div style={{ fontSize: 11, fontFamily: "monospace", color: "#999999", textTransform: "uppercase", marginBottom: 6 }}>
-                {s.label}
-              </div>
-              <div style={{ fontSize: 24, fontWeight: 700, color: "#111111" }}>
-                {s.value}
-              </div>
+            <div key={s.label} className="bg-[#EFECE6] rounded-[14px] px-5 py-4 md:py-5 border border-black/5">
+              <div className="text-[11px] font-mono text-[#999] uppercase mb-1.5">{s.label}</div>
+              <div className="text-xl md:text-2xl font-bold text-[#111]">{s.value}</div>
             </div>
           ))}
         </div>
 
-        <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 12, marginBottom: 24 }}>
+        {/* Filters */}
+        <div className="flex flex-wrap items-center gap-2.5 md:gap-3 mb-5 md:mb-6">
           {filters.map((filter) => (
             <button
               key={filter.value}
               onClick={() => setActiveFilter(filter.value)}
-              style={{
-                padding: "8px 20px",
-                borderRadius: 24,
-                fontSize: 13,
-                fontWeight: 600,
-                border: "none",
-                cursor: "pointer",
-                backgroundColor: activeFilter === filter.value ? "#9E2A2B" : "#EFECE6",
-                color: activeFilter === filter.value ? "white" : "#666666",
-              }}
+              className={`px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold border-none cursor-pointer transition-colors ${
+                activeFilter === filter.value
+                  ? "bg-[#9E2A2B] text-white"
+                  : "bg-[#EFECE6] text-[#666]"
+              }`}
             >
               {filter.label}
             </button>
           ))}
-          <div style={{ marginLeft: "auto" }}>
+          <div className="ml-auto">
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              style={{
-                padding: "8px 20px",
-                borderRadius: 24,
-                fontSize: 13,
-                fontWeight: 600,
-                backgroundColor: "#EFECE6",
-                border: "1px solid rgba(0,0,0,0.1)",
-                color: "#666666",
-                cursor: "pointer",
-              }}
+              className="px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold bg-[#EFECE6] border border-black/10 text-[#666] cursor-pointer"
             >
               <option value="value">Sort by Value</option>
               <option value="score">Sort by Score</option>
@@ -144,29 +102,22 @@ export default function MarketplacePage() {
           </div>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Listings */}
+        <div className="flex flex-col gap-3">
           {filteredListings.map((listing) => (
             <div
               key={listing.id}
-              style={{
-                backgroundColor: "#EFECE6",
-                borderRadius: 16,
-                padding: "24px 28px",
-                border: "1px solid rgba(0,0,0,0.05)",
-              }}
+              className="bg-[#EFECE6] rounded-2xl p-5 md:p-6 md:px-7 border border-black/5"
             >
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-                <span style={{ fontSize: 11, fontFamily: "monospace", color: "#999999", textTransform: "uppercase" }}>
-                  🔒 Name Hidden
-                </span>
-                <span style={{ fontSize: 11, fontFamily: "monospace", padding: "2px 8px", borderRadius: 20, backgroundColor: "#E5DFD3", color: "#666666" }}>
-                  {listing.tld}
-                </span>
-                <span style={{ fontSize: 11, fontFamily: "monospace", padding: "2px 8px", borderRadius: 20, backgroundColor: "#E5DFD3", color: "#666666" }}>
-                  {listing.category}
-                </span>
+              {/* Tags */}
+              <div className="flex flex-wrap items-center gap-2 mb-3 md:mb-3.5">
+                <span className="text-[11px] font-mono text-[#999] uppercase">🔒 Name Hidden</span>
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[#E5DFD3] text-[#666]">{listing.tld}</span>
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded-full bg-[#E5DFD3] text-[#666]">{listing.category}</span>
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 16 }}>
+
+              {/* Data Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 mb-3 md:mb-3.5">
                 {[
                   { label: "Value", val: listing.value },
                   { label: "Score", val: listing.score },
@@ -175,34 +126,20 @@ export default function MarketplacePage() {
                   { label: "DA", val: listing.da },
                 ].map((item) => (
                   <div key={item.label}>
-                    <div style={{ fontSize: 10, fontFamily: "monospace", color: "#999999", textTransform: "uppercase", marginBottom: 2 }}>
-                      {item.label}
-                    </div>
-                    <div style={{ fontSize: 18, fontWeight: 700, color: "#111111" }}>
-                      {item.val}
-                    </div>
+                    <div className="text-[10px] font-mono text-[#999] uppercase mb-0.5">{item.label}</div>
+                    <div className="text-base md:text-lg font-bold text-[#111]">{item.val}</div>
                   </div>
                 ))}
               </div>
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 14 }}>
-                <span style={{ fontSize: 12, color: "#999999" }}>
+
+              {/* Bottom Row */}
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <span className="text-xs text-[#999]">
                   {listing.intent} • Listed {listing.listed}
                 </span>
                 <button
                   onClick={() => setShowModal(true)}
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 8,
-                    padding: "10px 24px",
-                    borderRadius: 24,
-                    fontWeight: 600,
-                    fontSize: 13,
-                    border: "none",
-                    cursor: "pointer",
-                    backgroundColor: "#9E2A2B",
-                    color: "white",
-                  }}
+                  className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 rounded-full font-semibold text-xs md:text-sm border-none cursor-pointer bg-[#9E2A2B] text-white"
                 >
                   👁 Reveal Name
                 </button>
@@ -211,133 +148,63 @@ export default function MarketplacePage() {
           ))}
         </div>
 
-        <div
-          style={{
-            marginTop: 48,
-            backgroundColor: "#EFECE6",
-            borderRadius: 16,
-            padding: 32,
-            border: "1px solid rgba(0,0,0,0.05)",
-          }}
-        >
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0 }}>
-            <div style={{ paddingRight: 32, borderRight: "1px solid rgba(0,0,0,0.08)", paddingBottom: 24 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#111111", marginBottom: 6 }}>No Name Hints</h3>
-              <p style={{ fontSize: 13, color: "#666666", margin: 0 }}>
+        {/* Features */}
+        <div className="mt-10 md:mt-12 bg-[#EFECE6] rounded-2xl p-6 md:p-8 border border-black/5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="md:pr-8 md:border-r md:border-black/10">
+              <h3 className="text-sm font-bold text-[#111] mb-1.5">No Name Hints</h3>
+              <p className="text-xs text-[#666] leading-relaxed m-0">
                 We show everything except the name. No asterisks, no partial reveals. Just the intelligence.
               </p>
             </div>
-            <div style={{ padding: "0 32px", borderRight: "1px solid rgba(0,0,0,0.08)", paddingBottom: 24 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#111111", marginBottom: 6 }}>Pay to Reveal</h3>
-              <p style={{ fontSize: 13, color: "#666666", margin: 0 }}>
+            <div className="md:px-8 md:border-r md:border-black/10">
+              <h3 className="text-sm font-bold text-[#111] mb-1.5">Pay to Reveal</h3>
+              <p className="text-xs text-[#666] leading-relaxed m-0">
                 Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks.
               </p>
             </div>
-            <div style={{ paddingLeft: 32, paddingBottom: 24 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#111111", marginBottom: 6 }}>Register Anywhere</h3>
-              <p style={{ fontSize: 13, color: "#666666", margin: 0 }}>
+            <div className="md:pl-8">
+              <h3 className="text-sm font-bold text-[#111] mb-1.5">Register Anywhere</h3>
+              <p className="text-xs text-[#666] leading-relaxed m-0">
                 After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register.
               </p>
             </div>
           </div>
         </div>
 
-        <div style={{ marginTop: 32, display: "flex", justifyContent: "center", gap: 16 }}>
-          <a
-            href="/marketplace/curated"
-            style={{
-              display: "inline-block",
-              padding: "12px 28px",
-              backgroundColor: "#9E2A2B",
-              color: "white",
-              borderRadius: 8,
-              fontWeight: 600,
-              fontSize: 14,
-              textDecoration: "none",
-            }}
-          >
+        {/* CTA */}
+        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+          <a href="/marketplace/curated" className="inline-block px-7 py-3 bg-[#9E2A2B] text-white rounded-lg font-semibold text-sm no-underline text-center">
             Browse Curated
           </a>
-          <a
-            href="/marketplace/try-your-luck"
-            style={{
-              display: "inline-block",
-              padding: "12px 28px",
-              border: "1px solid rgba(0,0,0,0.15)",
-              color: "#111111",
-              borderRadius: 8,
-              fontWeight: 600,
-              fontSize: 14,
-              textDecoration: "none",
-            }}
-          >
+          <a href="/marketplace/try-your-luck" className="inline-block px-7 py-3 border border-black/15 text-[#111] rounded-lg font-semibold text-sm no-underline text-center">
             Try Your Luck
           </a>
         </div>
       </div>
 
+      {/* Modal */}
       {showModal && (
         <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 100,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "rgba(0,0,0,0.5)",
-          }}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4"
           onClick={() => setShowModal(false)}
         >
           <div
-            style={{
-              backgroundColor: "white",
-              borderRadius: 20,
-              padding: 40,
-              maxWidth: 420,
-              width: "90%",
-              textAlign: "center",
-            }}
+            className="bg-white rounded-[20px] p-8 md:p-10 max-w-[420px] w-full text-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 style={{ fontSize: 22, fontWeight: 700, color: "#111111", marginBottom: 8 }}>
-              Create an Account
-            </h2>
-            <p style={{ fontSize: 14, color: "#666666", marginBottom: 16 }}>
-              Sign up to reveal domain names and make purchases.
-            </p>
-            <div style={{ backgroundColor: "#FAF7F2", borderRadius: 8, padding: 12, marginBottom: 16 }}>
-              <p style={{ fontSize: 12, color: "#999999" }}>
-                Redirecting to signup in {modalCountdown} seconds...
-              </p>
+            <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-2">Create an Account</h2>
+            <p className="text-sm text-[#666] mb-4">Sign up to reveal domain names and make purchases.</p>
+            <div className="bg-[#FAF7F2] rounded-lg p-3 mb-4">
+              <p className="text-xs text-[#999]">Redirecting to signup in {modalCountdown} seconds...</p>
             </div>
-            <a
-              href="/signup"
-              style={{
-                display: "inline-block",
-                padding: "14px 32px",
-                backgroundColor: "#9E2A2B",
-                color: "white",
-                borderRadius: 10,
-                fontWeight: 600,
-                fontSize: 14,
-                textDecoration: "none",
-                marginBottom: 12,
-              }}
-            >
+            <a href="/signup" className="inline-block px-8 py-3.5 bg-[#9E2A2B] text-white rounded-[10px] font-semibold text-sm no-underline mb-3">
               Sign Up Free
             </a>
             <div>
               <button
                 onClick={() => setShowModal(false)}
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "#999999",
-                  fontSize: 13,
-                  cursor: "pointer",
-                  marginTop: 8,
-                }}
+                className="bg-transparent border-none text-[#999] text-xs cursor-pointer mt-2"
               >
                 Maybe later
               </button>

@@ -5,7 +5,7 @@ export default function ResourcesPricingPage() {
 
   return (
     <main className="min-h-screen" style={{ backgroundColor: "#FAF7F2" }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <h1 className="text-4xl font-bold mb-12 text-center">{t("title")}</h1>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="border border-black/10 rounded-lg p-6 bg-white">

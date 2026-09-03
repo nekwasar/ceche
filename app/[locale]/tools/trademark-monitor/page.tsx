@@ -7,104 +7,32 @@ export default function TrademarkMonitorPage() {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#FAF7F2" }}>
+    <div className="min-h-screen bg-[#FAF7F2]">
       {/* Split Hero */}
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          minHeight: "480px",
-        }}
-      >
+      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[auto] md:min-h-[480px]">
         {/* Left - Content */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            padding: "60px 48px",
-            backgroundColor: "#FFFFFF",
-          }}
-        >
-          <span
-            style={{
-              display: "inline-block",
-              backgroundColor: "#9E2A2B",
-              color: "#FFFFFF",
-              padding: "6px 14px",
-              borderRadius: "20px",
-              fontSize: "12px",
-              fontWeight: 700,
-              letterSpacing: "0.5px",
-              marginBottom: "20px",
-              width: "fit-content",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+        <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16 bg-white">
+          <span className="inline-block bg-[#9E2A2B] text-white px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider mb-5 w-fit">
             PREMIUM
           </span>
-          <h1
-            style={{
-              fontSize: "42px",
-              fontWeight: 800,
-              color: "#111111",
-              marginBottom: "16px",
-              lineHeight: 1.15,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#111] mb-4 leading-tight">
             Trademark Monitor
           </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              color: "#666666",
-              marginBottom: "32px",
-              lineHeight: 1.7,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <p className="text-base md:text-lg text-[#666] mb-8 leading-relaxed">
             USPTO/WIPO conflict detection and alerts. Protect your brand with
             proactive trademark monitoring across global databases.
           </p>
           <Link
             href="/signup"
-            style={{
-              display: "inline-block",
-              backgroundColor: "#9E2A2B",
-              color: "#FFFFFF",
-              padding: "14px 28px",
-              borderRadius: "8px",
-              fontSize: "15px",
-              fontWeight: 700,
-              textDecoration: "none",
-              width: "fit-content",
-              fontFamily: "Inter, sans-serif",
-            }}
+            className="inline-block bg-[#9E2A2B] text-white px-7 py-3.5 rounded-lg text-sm font-bold no-underline w-fit"
           >
             Start Monitoring
           </Link>
         </div>
 
         {/* Right - Severity Bar */}
-        <div
-          style={{
-            background: "linear-gradient(135deg, #111111 0%, #2A2A2A 100%)",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            padding: "48px 36px",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "20px",
-              fontWeight: 700,
-              color: "#FFFFFF",
-              marginBottom: "28px",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+        <div className="flex flex-col justify-center p-8 md:p-10 bg-gradient-to-br from-[#111] to-[#2A2A2A]">
+          <h2 className="text-lg md:text-xl font-bold text-white mb-6 md:mb-7">
             Threat Severity Levels
           </h2>
           {[
@@ -113,46 +41,11 @@ export default function TrademarkMonitorPage() {
             { level: "Medium", color: "#F39C12", desc: "Similar name, different class" },
             { level: "Low", color: "#27AE60", desc: "Minor similarity, low risk" },
           ].map((item) => (
-            <div
-              key={item.level}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "16px",
-                padding: "14px 0",
-                borderBottom: "1px solid rgba(255,255,255,0.1)",
-              }}
-            >
-              <div
-                style={{
-                  width: "12px",
-                  height: "12px",
-                  borderRadius: "50%",
-                  backgroundColor: item.color,
-                  flexShrink: 0,
-                }}
-              />
+            <div key={item.level} className="flex items-center gap-4 py-3.5 border-b border-white/10">
+              <div className="w-3 h-3 rounded-full shrink-0" style={{ backgroundColor: item.color }} />
               <div>
-                <span
-                  style={{
-                    color: "#FFFFFF",
-                    fontWeight: 600,
-                    fontSize: "15px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.level}
-                </span>
-                <p
-                  style={{
-                    color: "rgba(255,255,255,0.5)",
-                    fontSize: "12px",
-                    marginTop: "2px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.desc}
-                </p>
+                <span className="text-white font-semibold text-sm">{item.level}</span>
+                <p className="text-white/50 text-xs mt-0.5">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -160,97 +53,37 @@ export default function TrademarkMonitorPage() {
       </section>
 
       {/* Problem / Solution 2-Column */}
-      <section style={{ maxWidth: "1000px", margin: "0 auto", padding: "60px 24px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px" }}>
+      <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Problem */}
-          <div
-            style={{
-              backgroundColor: "#FFFFFF",
-              borderRadius: "12px",
-              padding: "36px",
-              boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-              borderTop: "4px solid #E74C3C",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "22px",
-                fontWeight: 700,
-                color: "#E74C3C",
-                marginBottom: "20px",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              The Problem
-            </h2>
-            <ul style={{ listStyle: "none", padding: 0 }}>
+          <div className="bg-white rounded-xl p-6 md:p-9 shadow-[0_2px_12px_rgba(0,0,0,0.06)] border-t-4 border-[#E74C3C]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#E74C3C] mb-5">The Problem</h2>
+            <ul className="list-none p-0">
               {[
                 "Trademark infringement lawsuits cost $100K+ on average",
                 "New domain registrations happen every minute",
                 "Manual monitoring is impossible at scale",
                 "By the time you notice, damage is done",
               ].map((item, i) => (
-                <li
-                  key={i}
-                  style={{
-                    padding: "10px 0",
-                    borderBottom: "1px solid #F0F0F0",
-                    color: "#666666",
-                    fontSize: "15px",
-                    display: "flex",
-                    gap: "10px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  <span style={{ color: "#E74C3C" }}>✕</span>
-                  {item}
+                <li key={i} className="py-2.5 border-b border-gray-100 text-[#666] text-sm flex gap-2.5">
+                  <span className="text-[#E74C3C]">✕</span>{item}
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Solution */}
-          <div
-            style={{
-              backgroundColor: "#FFFFFF",
-              borderRadius: "12px",
-              padding: "36px",
-              boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-              borderTop: "4px solid #27AE60",
-            }}
-          >
-            <h2
-              style={{
-                fontSize: "22px",
-                fontWeight: 700,
-                color: "#27AE60",
-                marginBottom: "20px",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              Our Solution
-            </h2>
-            <ul style={{ listStyle: "none", padding: 0 }}>
+          <div className="bg-white rounded-xl p-6 md:p-9 shadow-[0_2px_12px_rgba(0,0,0,0.06)] border-t-4 border-[#27AE60]">
+            <h2 className="text-xl md:text-2xl font-bold text-[#27AE60] mb-5">Our Solution</h2>
+            <ul className="list-none p-0">
               {[
                 "Real-time USPTO and WIPO database monitoring",
                 "Scan up to 5,000 domains per list",
                 "Instant conflict alerts via email and webhook",
                 "Risk scoring with confidence levels",
               ].map((item, i) => (
-                <li
-                  key={i}
-                  style={{
-                    padding: "10px 0",
-                    borderBottom: "1px solid #F0F0F0",
-                    color: "#666666",
-                    fontSize: "15px",
-                    display: "flex",
-                    gap: "10px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  <span style={{ color: "#27AE60" }}>✓</span>
-                  {item}
+                <li key={i} className="py-2.5 border-b border-gray-100 text-[#666] text-sm flex gap-2.5">
+                  <span className="text-[#27AE60]">✓</span>{item}
                 </li>
               ))}
             </ul>
@@ -259,91 +92,24 @@ export default function TrademarkMonitorPage() {
       </section>
 
       {/* 4-Step Flow */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "28px",
-              fontWeight: 700,
-              color: "#111111",
-              textAlign: "center",
-              marginBottom: "48px",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+      <section className="bg-white py-12 md:py-16 px-4 md:px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#111] text-center mb-10 md:mb-12">
             How It Works
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "24px" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 md:gap-6">
             {[
-              {
-                step: "1",
-                title: "Add Domains",
-                desc: "Upload your brand domains or keywords to monitor.",
-              },
-              {
-                step: "2",
-                title: "Set Criteria",
-                desc: "Define industry, geographic scope, and sensitivity.",
-              },
-              {
-                step: "3",
-                title: "Monitor",
-                desc: "We scan USPTO, EUIPO, and WIPO databases continuously.",
-              },
-              {
-                step: "4",
-                title: "Get Alerts",
-                desc: "Receive instant notifications for potential conflicts.",
-              },
+              { step: "1", title: "Add Domains", desc: "Upload your brand domains or keywords to monitor." },
+              { step: "2", title: "Set Criteria", desc: "Define industry, geographic scope, and sensitivity." },
+              { step: "3", title: "Monitor", desc: "We scan USPTO, EUIPO, and WIPO databases continuously." },
+              { step: "4", title: "Get Alerts", desc: "Receive instant notifications for potential conflicts." },
             ].map((item) => (
-              <div
-                key={item.step}
-                style={{
-                  backgroundColor: "#FAF7F2",
-                  borderRadius: "12px",
-                  padding: "28px",
-                  textAlign: "center",
-                }}
-              >
-                <div
-                  style={{
-                    width: "40px",
-                    height: "40px",
-                    backgroundColor: "#9E2A2B",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "0 auto 16px",
-                    color: "#FFFFFF",
-                    fontWeight: 800,
-                    fontSize: "16px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
+              <div key={item.step} className="bg-[#FAF7F2] rounded-xl p-5 md:p-7 text-center">
+                <div className="w-10 h-10 bg-[#9E2A2B] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-extrabold text-base">
                   {item.step}
                 </div>
-                <h3
-                  style={{
-                    fontSize: "16px",
-                    fontWeight: 700,
-                    color: "#111111",
-                    marginBottom: "8px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.title}
-                </h3>
-                <p
-                  style={{
-                    fontSize: "13px",
-                    color: "#666666",
-                    lineHeight: 1.6,
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.desc}
-                </p>
+                <h3 className="text-sm md:text-base font-bold text-[#111] mb-2">{item.title}</h3>
+                <p className="text-xs md:text-sm text-[#666] leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -351,97 +117,26 @@ export default function TrademarkMonitorPage() {
       </section>
 
       {/* Use Cases Accordion */}
-      <section style={{ maxWidth: "800px", margin: "0 auto", padding: "60px 24px" }}>
-        <h2
-          style={{
-            fontSize: "28px",
-            fontWeight: 700,
-            color: "#111111",
-            textAlign: "center",
-            marginBottom: "32px",
-            fontFamily: "Inter, sans-serif",
-          }}
-        >
+      <section className="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-[#111] text-center mb-8">
           Use Cases
         </h2>
         {[
-          {
-            title: "Brand Protection",
-            content:
-              "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs.",
-          },
-          {
-            title: "Product Launch",
-            content:
-              "Clear trademarks before launching new products or entering new markets.",
-          },
-          {
-            title: "M&A Due Diligence",
-            content:
-              "Audit trademark risks during mergers, acquisitions, or investment rounds.",
-          },
-          {
-            title: "Portfolio Management",
-            content:
-              "Protect your domain portfolio from trademark challenges and legal disputes.",
-          },
+          { title: "Brand Protection", content: "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs." },
+          { title: "Product Launch", content: "Clear trademarks before launching new products or entering new markets." },
+          { title: "M&A Due Diligence", content: "Audit trademark risks during mergers, acquisitions, or investment rounds." },
+          { title: "Portfolio Management", content: "Protect your domain portfolio from trademark challenges and legal disputes." },
         ].map((item, i) => (
-          <div
-            key={item.title}
-            style={{
-              backgroundColor: "#FFFFFF",
-              borderRadius: "12px",
-              marginBottom: "12px",
-              boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
-              overflow: "hidden",
-            }}
-          >
+          <div key={item.title} className="bg-white rounded-xl mb-3 shadow-[0_1px_4px_rgba(0,0,0,0.04)] overflow-hidden">
             <button
               onClick={() => setOpenAccordion(openAccordion === i ? null : i)}
-              style={{
-                width: "100%",
-                padding: "20px 24px",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                backgroundColor: "transparent",
-                border: "none",
-                cursor: "pointer",
-                textAlign: "left",
-                fontFamily: "Inter, sans-serif",
-              }}
+              className="w-full py-5 px-6 flex justify-between items-center bg-transparent border-none cursor-pointer text-left"
             >
-              <span
-                style={{
-                  fontSize: "16px",
-                  fontWeight: 700,
-                  color: "#111111",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
-                {item.title}
-              </span>
-              <span
-                style={{
-                  fontSize: "20px",
-                  color: "#9E2A2B",
-                  transform: openAccordion === i ? "rotate(45deg)" : "none",
-                  transition: "transform 0.2s",
-                }}
-              >
-                +
-              </span>
+              <span className="text-base font-bold text-[#111]">{item.title}</span>
+              <span className="text-xl text-[#9E2A2B] transition-transform" style={{ transform: openAccordion === i ? "rotate(45deg)" : "none" }}>+</span>
             </button>
             {openAccordion === i && (
-              <div
-                style={{
-                  padding: "0 24px 20px",
-                  color: "#666666",
-                  fontSize: "15px",
-                  lineHeight: 1.7,
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+              <div className="px-6 pb-5 text-[#666] text-sm leading-relaxed">
                 {item.content}
               </div>
             )}
@@ -450,113 +145,32 @@ export default function TrademarkMonitorPage() {
       </section>
 
       {/* Pricing Tiers */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "28px",
-              fontWeight: 700,
-              color: "#111111",
-              textAlign: "center",
-              marginBottom: "40px",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+      <section className="bg-white py-12 md:py-16 px-4 md:px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#111] text-center mb-8 md:mb-10">
             Pricing
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
             {[
-              {
-                plan: "Free",
-                price: "$0",
-                features: ["3 unsigned scans/day", "12 signed scans/day", "Basic metrics"],
-              },
-              {
-                plan: "Startup",
-                price: "$79/mo",
-                features: ["30 scans/day", "Priority processing", "CSV export", "Email alerts"],
-                popular: true,
-              },
-              {
-                plan: "Enterprise",
-                price: "$129/mo",
-                features: [
-                  "Unlimited scans",
-                  "API access (10K calls/day)",
-                  "Webhook integration",
-                  "Dedicated support",
-                ],
-              },
+              { plan: "Free", price: "$0", features: ["3 unsigned scans/day", "12 signed scans/day", "Basic metrics"] },
+              { plan: "Startup", price: "$79/mo", features: ["30 scans/day", "Priority processing", "CSV export", "Email alerts"], popular: true },
+              { plan: "Enterprise", price: "$129/mo", features: ["Unlimited scans", "API access (10K calls/day)", "Webhook integration", "Dedicated support"] },
             ].map((item) => (
               <div
                 key={item.plan}
-                style={{
-                  backgroundColor: "#FAF7F2",
-                  borderRadius: "12px",
-                  padding: "32px",
-                  textAlign: "center",
-                  border: item.popular ? "2px solid #9E2A2B" : "2px solid transparent",
-                  position: "relative",
-                }}
+                className={`bg-[#FAF7F2] rounded-xl p-6 md:p-8 text-center relative ${item.popular ? "border-2 border-[#9E2A2B]" : "border-2 border-transparent"}`}
               >
                 {item.popular && (
-                  <span
-                    style={{
-                      position: "absolute",
-                      top: "-12px",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      backgroundColor: "#9E2A2B",
-                      color: "#FFFFFF",
-                      padding: "4px 16px",
-                      borderRadius: "12px",
-                      fontSize: "12px",
-                      fontWeight: 700,
-                      fontFamily: "Inter, sans-serif",
-                    }}
-                  >
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#9E2A2B] text-white px-4 py-1 rounded-xl text-xs font-bold">
                     POPULAR
                   </span>
                 )}
-                <h3
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: 700,
-                    color: "#111111",
-                    marginBottom: "8px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.plan}
-                </h3>
-                <div
-                  style={{
-                    fontSize: "32px",
-                    fontWeight: 800,
-                    color: "#9E2A2B",
-                    marginBottom: "20px",
-                    fontFamily: "Inter, sans-serif",
-                  }}
-                >
-                  {item.price}
-                </div>
-                <ul style={{ listStyle: "none", padding: 0, textAlign: "left" }}>
+                <h3 className="text-lg font-bold text-[#111] mb-2">{item.plan}</h3>
+                <div className="text-3xl font-extrabold text-[#9E2A2B] mb-5">{item.price}</div>
+                <ul className="list-none p-0 text-left">
                   {item.features.map((f) => (
-                    <li
-                      key={f}
-                      style={{
-                        padding: "8px 0",
-                        borderBottom: "1px solid #E8E8E8",
-                        color: "#666666",
-                        fontSize: "14px",
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px",
-                        fontFamily: "Inter, sans-serif",
-                      }}
-                    >
-                      <span style={{ color: "#27AE60" }}>✓</span>
-                      {f}
+                    <li key={f} className="py-2 border-b border-gray-200 text-[#666] text-sm flex items-center gap-2">
+                      <span className="text-[#27AE60]">✓</span>{f}
                     </li>
                   ))}
                 </ul>
@@ -567,80 +181,21 @@ export default function TrademarkMonitorPage() {
       </section>
 
       {/* CTA */}
-      <section
-        style={{
-          background: "linear-gradient(135deg, #9E2A2B 0%, #7A1F1F 100%)",
-          padding: "60px 24px",
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "28px",
-            fontWeight: 700,
-            color: "#FFFFFF",
-            marginBottom: "16px",
-            fontFamily: "Inter, sans-serif",
-          }}
-        >
+      <section className="bg-gradient-to-br from-[#9E2A2B] to-[#7A1F1F] py-12 md:py-16 px-4 md:px-6 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
           Protect Your Brand Today
         </h2>
-        <p
-          style={{
-            fontSize: "16px",
-            color: "rgba(255,255,255,0.8)",
-            marginBottom: "32px",
-            fontFamily: "Inter, sans-serif",
-          }}
-        >
+        <p className="text-base text-white/80 mb-8">
           Don&apos;t wait until it&apos;s too late. Start monitoring now.
         </p>
-        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
-          <Link
-            href="/signup"
-            style={{
-              backgroundColor: "#F4A261",
-              color: "#111111",
-              padding: "14px 32px",
-              borderRadius: "8px",
-              fontSize: "16px",
-              fontWeight: 700,
-              textDecoration: "none",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Link href="/signup" className="bg-[#F4A261] text-[#111] px-8 py-3.5 rounded-lg text-base font-bold no-underline text-center">
             Start Free Trial
           </Link>
-          <Link
-            href="/tools/domain-lookup"
-            style={{
-              backgroundColor: "transparent",
-              color: "#FFFFFF",
-              padding: "14px 32px",
-              borderRadius: "8px",
-              fontSize: "16px",
-              fontWeight: 600,
-              border: "2px solid rgba(255,255,255,0.3)",
-              textDecoration: "none",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <Link href="/tools/domain-lookup" className="bg-transparent text-white px-8 py-3.5 rounded-lg text-base font-semibold border-2 border-white/30 no-underline text-center">
             Try Domain Lookup
           </Link>
-          <Link
-            href="/tools/seo-scanner"
-            style={{
-              backgroundColor: "transparent",
-              color: "#FFFFFF",
-              padding: "14px 32px",
-              borderRadius: "8px",
-              fontSize: "16px",
-              fontWeight: 600,
-              border: "2px solid rgba(255,255,255,0.3)",
-              textDecoration: "none",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <Link href="/tools/seo-scanner" className="bg-transparent text-white px-8 py-3.5 rounded-lg text-base font-semibold border-2 border-white/30 no-underline text-center">
             Run SEO Scan
           </Link>
         </div>

@@ -13,31 +13,29 @@ export default function BlogPage() {
   const categories = ["Strategy", "Market Data", "Tutorials", "Industry News", "Case Studies"];
 
   return (
-    <main style={{ backgroundColor: "#FAF7F2", minHeight: "100vh" }}>
-      {/* Hero — 5/7 Split */}
-      <section style={{ padding: "80px 0 40px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", display: "flex", gap: 40, alignItems: "flex-start", flexWrap: "wrap" }}>
-          {/* Left — 5/7 */}
-          <div style={{ flex: "5 1 0", minWidth: 300 }}>
-            <span style={{ display: "block", fontSize: 10, fontFamily: "monospace", letterSpacing: 3, textTransform: "uppercase", color: "#9E2A2B", marginBottom: 16 }}>
+    <main className="bg-[#FAF7F2] min-h-screen">
+      {/* Hero */}
+      <section className="py-12 md:py-20 px-4 md:px-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 md:gap-10 items-start">
+          <div className="flex-[5] min-w-0">
+            <span className="block text-[10px] font-mono tracking-[3px] uppercase text-[#9E2A2B] mb-4">
               Ceche Blog
             </span>
-            <h1 style={{ fontSize: 48, fontWeight: 700, color: "#111111", lineHeight: 1.1, fontFamily: "Georgia, serif", margin: 0 }}>
+            <h1 className="text-3xl md:text-4xl lg:text-[48px] font-bold text-[#111] leading-tight font-[Georgia,serif] m-0">
               Domain intelligence, decoded.
             </h1>
-            <p style={{ fontSize: 18, color: "#666", lineHeight: 1.6, marginTop: 20, maxWidth: 520 }}>
+            <p className="text-base md:text-lg text-[#666] leading-relaxed mt-5 max-w-md">
               Strategy guides, market analysis, and frameworks for domain investors who trade on data—not intuition.
             </p>
           </div>
 
-          {/* Right — 2/7 */}
-          <div style={{ flex: "2 1 0", minWidth: 180, paddingTop: 8 }}>
-            <span style={{ display: "block", fontSize: 10, fontFamily: "monospace", letterSpacing: 3, textTransform: "uppercase", color: "#999", marginBottom: 12 }}>
+          <div className="flex-[2] min-w-[180px] pt-2">
+            <span className="block text-[10px] font-mono tracking-[3px] uppercase text-[#999] mb-3">
               Topics
             </span>
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <div className="flex flex-col gap-2.5">
               {categories.map((cat) => (
-                <span key={cat} style={{ fontSize: 14, color: "#9E2A2B", cursor: "pointer", fontWeight: 500, borderBottom: "1px solid transparent" }}>
+                <span key={cat} className="text-sm text-[#9E2A2B] cursor-pointer font-medium border-b border-transparent hover:border-[#9E2A2B] transition-colors">
                   {cat} →
                 </span>
               ))}
@@ -46,11 +44,11 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Marquee Strip */}
-      <div style={{ overflow: "hidden", backgroundColor: "#EFECE6", padding: "14px 0", marginBottom: 60, borderTop: "1px solid #E8E5DE", borderBottom: "1px solid #E8E5DE" }}>
-        <div style={{ display: "flex", gap: 60, whiteSpace: "nowrap", animation: "marquee 30s linear infinite" }}>
+      {/* Marquee */}
+      <div className="overflow-hidden bg-[#EFECE6] py-3.5 mb-12 md:mb-15 border-y border-[#E8E5DE]">
+        <div className="flex gap-[60px] whitespace-nowrap animate-[marquee_30s_linear_infinite]">
           {[...Array(2)].map((_, i) => (
-            <span key={i} style={{ fontSize: 13, color: "#999", letterSpacing: 2, textTransform: "uppercase", fontFamily: "monospace" }}>
+            <span key={i} className="text-xs text-[#999] tracking-[2px] uppercase font-mono">
               Domain Valuations · Market Reports · Portfolio Analytics · Blind Marketplace · 16-Dimension Framework · Health Scores · CPC Data · Brandability Index · Try Your Luck ·
             </span>
           ))}
@@ -63,18 +61,14 @@ export default function BlogPage() {
         `}</style>
       </div>
 
-      {/* 3-Column Article Grid */}
-      <section style={{ padding: "0 0 100px" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 32 }}>
+      {/* Article Grid */}
+      <section className="pb-16 md:pb-24 px-4 md:px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {articles.map((a, i) => (
-              <a key={i} href="#" style={{ display: "block", padding: "32px 0", borderTop: "1px solid #E8E5DE", textDecoration: "none", color: "#111111" }}>
-                <span style={{ display: "block", fontSize: 12, color: "#999", fontFamily: "monospace", marginBottom: 12 }}>
-                  {a.date}
-                </span>
-                <h2 style={{ fontSize: 26, fontWeight: 700, lineHeight: 1.25, margin: 0, color: "#111111" }}>
-                  {a.title}
-                </h2>
+              <a key={i} href="#" className="block py-7 md:py-8 border-t border-[#E8E5DE] no-underline text-[#111]">
+                <span className="block text-xs text-[#999] font-mono mb-3">{a.date}</span>
+                <h2 className="text-xl md:text-[26px] font-bold leading-snug m-0 text-[#111]">{a.title}</h2>
               </a>
             ))}
           </div>
@@ -82,19 +76,15 @@ export default function BlogPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "80px 0", backgroundColor: "#111111" }}>
-        <div style={{ maxWidth: 640, margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: "#FFF", marginBottom: 12 }}>
-            Want the full library?
-          </h2>
-          <p style={{ fontSize: 16, color: "#999", marginBottom: 32 }}>
-            Download our ebooks and go deeper on domain investing.
-          </p>
-          <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap" }}>
-            <a href="/resources/ebooks" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 28px", borderRadius: 999, backgroundColor: "#F4A261", color: "#111111", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+      <section className="bg-[#111] py-12 md:py-20 px-4 md:px-6">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-white mb-3">Want the full library?</h2>
+          <p className="text-base text-[#999] mb-8">Download our ebooks and go deeper on domain investing.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <a href="/resources/ebooks" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#F4A261] text-[#111] font-semibold text-sm no-underline">
               Browse Ebooks →
             </a>
-            <a href="/pricing" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 28px", borderRadius: 999, border: "1px solid rgba(255,255,255,0.25)", color: "#FFF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+            <a href="/pricing" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-white/25 text-white font-semibold text-sm no-underline">
               View Pricing
             </a>
           </div>

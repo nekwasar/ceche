@@ -2,67 +2,62 @@
 
 export default function CaseStudiesPage() {
   return (
-    <main style={{ backgroundColor: "#FAF7F2", minHeight: "100vh" }}>
-      {/* Hero — Editorial Magazine Style */}
-      <section style={{ padding: "100px 0 80px", position: "relative", overflow: "hidden" }}>
-        {/* Giant watermark */}
-        <div style={{ position: "absolute", top: -40, right: -60, fontSize: 280, fontWeight: 900, color: "rgba(158,42,43,0.05)", lineHeight: 1, fontFamily: "Georgia, serif", pointerEvents: "none", userSelect: "none" }}>
+    <main className="bg-[#FAF7F2] min-h-screen">
+      {/* Hero */}
+      <section className="py-16 md:py-20 lg:py-24 px-4 md:px-6 relative overflow-hidden">
+        <div className="absolute -top-10 -right-10 md:-right-16 text-[200px] md:text-[280px] font-black text-[rgba(158,42,43,0.05)] leading-none font-[Georgia,serif] pointer-events-none select-none">
           CS
         </div>
 
-        <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 24px", position: "relative", zIndex: 1 }}>
-          <span style={{ display: "block", fontSize: 10, fontFamily: "monospace", letterSpacing: 3, textTransform: "uppercase", color: "#9E2A2B", marginBottom: 20 }}>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <span className="block text-[10px] font-mono tracking-[3px] uppercase text-[#9E2A2B] mb-5">
             Case Studies
           </span>
-          <h1 style={{ fontSize: 64, fontWeight: 900, color: "#111111", lineHeight: 1.05, fontFamily: "Georgia, serif", margin: "0 0 24px" }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[64px] font-black text-[#111] leading-[1.05] font-[Georgia,serif] m-0 mb-6">
             Real investors.<br />Real outcomes.
           </h1>
 
-          {/* Thin accent divider */}
-          <div style={{ width: 64, height: 3, backgroundColor: "#F4A261", marginBottom: 32 }} />
+          <div className="w-16 h-[3px] bg-[#F4A261] mb-8" />
 
-          {/* Two-column bottom: tagline + stats */}
-          <div style={{ display: "flex", gap: 48, flexWrap: "wrap" }}>
-            <div style={{ flex: "1 1 300px" }}>
-              <p style={{ fontSize: 18, color: "#666", lineHeight: 1.7, margin: 0 }}>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+            <div className="flex-[1] min-w-[300px]">
+              <p className="text-base md:text-lg text-[#666] leading-relaxed m-0">
                 See how domain investors, startups, and portfolio managers use Ceche to make faster, smarter decisions. Every case study is backed by real numbers—no cherry-picked success stories.
               </p>
             </div>
-            <div style={{ flex: "1 1 200px", display: "flex", gap: 40, alignItems: "flex-start" }}>
+            <div className="flex-[1] min-w-[200px] flex gap-8 md:gap-10 items-start">
               <div>
-                <span style={{ display: "block", fontSize: 36, fontWeight: 700, color: "#9E2A2B", lineHeight: 1 }}>4.2K+</span>
-                <span style={{ fontSize: 13, color: "#999" }}>Active Users</span>
+                <span className="block text-3xl font-bold text-[#9E2A2B] leading-none">4.2K+</span>
+                <span className="text-xs text-[#999]">Active Users</span>
               </div>
               <div>
-                <span style={{ display: "block", fontSize: 36, fontWeight: 700, color: "#9E2A2B", lineHeight: 1 }}>98%</span>
-                <span style={{ fontSize: 13, color: "#999" }}>Accuracy Rate</span>
+                <span className="block text-3xl font-bold text-[#9E2A2B] leading-none">98%</span>
+                <span className="text-xs text-[#999]">Accuracy Rate</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Coming Soon Section */}
-      <section style={{ padding: "80px 0" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
-          <div style={{ backgroundColor: "#EFECE6", borderRadius: 20, padding: "64px 40px", border: "1px solid #E8E5DE" }}>
-            <div style={{ width: 64, height: 64, borderRadius: 16, backgroundColor: "#9E2A2B", display: "inline-flex", alignItems: "center", justifyContent: "center", marginBottom: 28 }}>
-              <span style={{ fontSize: 28 }}>📊</span>
+      {/* Coming Soon */}
+      <section className="py-12 md:py-16 lg:py-20 px-4 md:px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="bg-[#EFECE6] rounded-[20px] p-8 md:p-12 lg:p-16 border border-[#E8E5DE]">
+            <div className="w-16 h-16 rounded-2xl bg-[#9E2A2B] inline-flex items-center justify-center mb-7">
+              <span className="text-[28px]">📊</span>
             </div>
-            <h2 style={{ fontSize: 32, fontWeight: 700, color: "#111111", margin: "0 0 16px" }}>
-              Case studies coming soon
-            </h2>
-            <p style={{ fontSize: 16, color: "#666", lineHeight: 1.7, maxWidth: 480, margin: "0 auto 32px" }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#111] m-0 mb-4">Case studies coming soon</h2>
+            <p className="text-base text-[#666] leading-relaxed max-w-lg mx-auto mb-8">
               We&apos;re documenting how investors are using Ceche&apos;s tools to find undervalued domains, negotiate smarter, and close deals faster. Check back soon for in-depth breakdowns.
             </p>
-            <div style={{ display: "flex", justifyContent: "center", gap: 16, flexWrap: "wrap" }}>
-              <a href="/tools/appraisal" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 28px", borderRadius: 999, backgroundColor: "#9E2A2B", color: "#FFF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
+              <a href="/tools/appraisal" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#9E2A2B] text-white font-semibold text-sm no-underline">
                 Try Appraisal Tool →
               </a>
-              <a href="/marketplace" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 28px", borderRadius: 999, backgroundColor: "#111111", color: "#FFF", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+              <a href="/marketplace" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#111] text-white font-semibold text-sm no-underline">
                 Explore Marketplace
               </a>
-              <a href="/pricing" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 28px", borderRadius: 999, border: "1px solid #9E2A2B", color: "#9E2A2B", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+              <a href="/pricing" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border border-[#9E2A2B] text-[#9E2A2B] font-semibold text-sm no-underline">
                 View Pricing
               </a>
             </div>
@@ -71,15 +66,11 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: "60px 0 100px", backgroundColor: "#111111" }}>
-        <div style={{ maxWidth: 640, margin: "0 auto", padding: "0 24px", textAlign: "center" }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: "#FFF", marginBottom: 12 }}>
-            Have a story to share?
-          </h2>
-          <p style={{ fontSize: 15, color: "#999", marginBottom: 28 }}>
-            We&apos;d love to feature your experience with Ceche.
-          </p>
-          <a href="/resources/contact" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 28px", borderRadius: 999, backgroundColor: "#F4A261", color: "#111111", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+      <section className="bg-[#111] py-12 md:py-16 px-4 md:px-6 pb-16 md:pb-24">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-3">Have a story to share?</h2>
+          <p className="text-sm text-[#999] mb-7">We&apos;d love to feature your experience with Ceche.</p>
+          <a href="/resources/contact" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#F4A261] text-[#111] font-semibold text-sm no-underline">
             Get in Touch →
           </a>
         </div>

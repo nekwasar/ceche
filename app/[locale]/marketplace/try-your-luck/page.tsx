@@ -37,89 +37,56 @@ export default function TryYourLuckPage() {
   };
 
   return (
-    <main style={{ backgroundColor: "#FAF7F2", minHeight: "100vh" }}>
-      <div style={{ maxWidth: 900, margin: "0 auto", padding: "80px 24px 120px" }}>
-        <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <span
-            style={{
-              fontSize: 10,
-              fontFamily: "monospace",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "#999999",
-              display: "block",
-              marginBottom: 12,
-            }}
-          >
+    <main className="bg-[#FAF7F2] min-h-screen">
+      <div className="max-w-[900px] mx-auto px-4 md:px-6 py-12 md:py-16 lg:py-20 pb-20 md:pb-24 lg:pb-32">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="text-[10px] font-mono tracking-[0.15em] uppercase text-[#999] block mb-3">
             Marketplace
           </span>
-          <h1 style={{ fontSize: 44, fontWeight: 700, color: "#111111", marginBottom: 16 }}>
-            Try Your Luck
-          </h1>
-          <p style={{ fontSize: 18, color: "#666666", maxWidth: 480, margin: "0 auto" }}>
-            Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.
+          <h1 className="text-3xl md:text-4xl lg:text-[44px] font-bold text-[#111] mb-4">Try Your Luck</h1>
+          <p className="text-base md:text-lg text-[#666] max-w-md mx-auto">
+            Pick a TLD, spin 3 boxes, reveal a premium domain. It&apos;s locked exclusively for you.
           </p>
         </div>
 
+        {/* TLD Selection */}
         {!revealed && (
-          <section style={{ marginBottom: 48, textAlign: "center" }}>
-            <h2 style={{ fontSize: 20, fontWeight: 700, color: "#111111", marginBottom: 24 }}>
+          <section className="mb-8 md:mb-12 text-center">
+            <h2 className="text-lg md:text-xl font-bold text-[#111] mb-5 md:mb-6">
               Step 1: Pick Your TLD
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 14, maxWidth: 600, margin: "0 auto" }}>
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 md:gap-3.5 max-w-[600px] mx-auto">
               {tldOptions.map((option) => (
                 <button
                   key={option.tld}
                   onClick={() => setSelectedTld(option.tld)}
-                  style={{
-                    padding: "28px 16px",
-                    borderRadius: 16,
-                    border: `2px solid ${selectedTld === option.tld ? "#9E2A2B" : "rgba(0,0,0,0.08)"}`,
-                    backgroundColor: selectedTld === option.tld ? "#EFECE6" : "#EFECE6",
-                    cursor: "pointer",
-                    textAlign: "center",
-                    boxShadow: selectedTld === option.tld ? "0 4px 12px rgba(158,42,43,0.15)" : "none",
-                  }}
+                  className={`py-5 md:py-7 px-3 md:px-4 rounded-2xl border-2 cursor-pointer text-center transition-all ${
+                    selectedTld === option.tld
+                      ? "border-[#9E2A2B] bg-[#EFECE6] shadow-[0_4px_12px_rgba(158,42,43,0.15)]"
+                      : "border-black/8 bg-[#EFECE6] shadow-none"
+                  }`}
                 >
-                  <div style={{ fontSize: 28, fontWeight: 700, color: "#111111", marginBottom: 4 }}>
-                    ${option.price}
-                  </div>
-                  <div style={{ fontSize: 14, fontFamily: "monospace", color: "#666666" }}>
-                    {option.tld}
-                  </div>
-                  {option.sub && (
-                    <div style={{ fontSize: 11, color: "#999999", marginTop: 4 }}>
-                      {option.sub}
-                    </div>
-                  )}
+                  <div className="text-2xl md:text-[28px] font-bold text-[#111] mb-1">${option.price}</div>
+                  <div className="text-sm font-mono text-[#666]">{option.tld}</div>
+                  {option.sub && <div className="text-[11px] text-[#999] mt-1">{option.sub}</div>}
                 </button>
               ))}
             </div>
           </section>
         )}
 
+        {/* Spin Button */}
         {!revealed && selectedTld && (
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
+          <div className="text-center mb-8 md:mb-12">
             <button
               onClick={handleSpin}
               disabled={spinning}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 10,
-                padding: "16px 36px",
-                borderRadius: 28,
-                fontWeight: 600,
-                fontSize: 16,
-                border: "none",
-                cursor: spinning ? "not-allowed" : "pointer",
-                backgroundColor: spinning ? "#EFECE6" : "#9E2A2B",
-                color: spinning ? "#999999" : "white",
-              }}
+              className="inline-flex items-center gap-2.5 px-8 md:px-9 py-4 rounded-full font-semibold text-base border-none transition-colors disabled:cursor-not-allowed disabled:opacity-60 bg-[#9E2A2B] text-white"
             >
               {spinning ? (
                 <>
-                  <div style={{ width: 18, height: 18, border: "2px solid #999999", borderTopColor: "transparent", borderRadius: "50%", animation: "spin 1s linear infinite" }} />
+                  <div className="w-[18px] h-[18px] border-2 border-[#999] border-t-transparent rounded-full animate-spin" />
                   Spinning...
                 </>
               ) : (
@@ -129,42 +96,27 @@ export default function TryYourLuckPage() {
           </div>
         )}
 
+        {/* Mystery Boxes */}
         {(spinning || revealed) && (
-          <section style={{ marginBottom: 48, textAlign: "center" }}>
-            <h2 style={{ fontSize: 20, fontWeight: 700, color: "#111111", marginBottom: 24 }}>
+          <section className="mb-8 md:mb-12 text-center">
+            <h2 className="text-lg md:text-xl font-bold text-[#111] mb-5 md:mb-6">
               {spinning ? "Spinning..." : "Step 2: Pick a Box"}
             </h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20, maxWidth: 500, margin: "0 auto" }}>
+            <div className="grid grid-cols-3 gap-4 md:gap-5 max-w-[500px] mx-auto">
               {boxes.map((box, i) => (
                 <button
                   key={i}
                   onClick={() => revealed && handlePickBox(i)}
                   disabled={!revealed}
-                  style={{
-                    aspectRatio: "1",
-                    borderRadius: 16,
-                    border: `2px solid ${revealed ? "#9E2A2B" : "rgba(0,0,0,0.08)"}`,
-                    backgroundColor: "#EFECE6",
-                    cursor: revealed ? "pointer" : "default",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: 8,
-                    fontSize: 13,
-                    color: "#111111",
-                    transition: "all 0.2s",
-                  }}
+                  className="aspect-square rounded-2xl border-2 border-black/8 bg-[#EFECE6] cursor-default flex flex-col items-center justify-center gap-2 text-sm text-[#111] transition-all enabled:cursor-pointer enabled:border-[#9E2A2B]"
                 >
                   {spinning ? (
-                    <div style={{ width: 28, height: 28, border: "2px solid #999999", borderTopColor: "transparent", borderRadius: "50%", animation: "spin 1s linear infinite" }} />
-                  ) : revealed ? (
-                    <>📦</>
+                    <div className="w-7 h-7 border-2 border-[#999] border-t-transparent rounded-full animate-spin" />
                   ) : (
                     <>📦</>
                   )}
                   {revealed && (
-                    <span style={{ fontSize: 11, color: "#999999" }}>Click to reveal</span>
+                    <span className="text-[11px] text-[#999]">Click to reveal</span>
                   )}
                 </button>
               ))}
@@ -172,33 +124,23 @@ export default function TryYourLuckPage() {
           </section>
         )}
 
+        {/* Locked Notice */}
         {revealed && (
-          <div
-            style={{
-              backgroundColor: "#EFECE6",
-              borderRadius: 16,
-              padding: 32,
-              border: "1px solid rgba(0,0,0,0.05)",
-              maxWidth: 500,
-              margin: "0 auto 64px",
-              textAlign: "center",
-            }}
-          >
-            <div style={{ fontSize: 32, marginBottom: 12 }}>🔒</div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: "#111111", marginBottom: 8 }}>
-              Domain Locked
-            </h3>
-            <p style={{ fontSize: 14, color: "#666666", margin: 0 }}>
-              Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately.
+          <div className="bg-[#EFECE6] rounded-2xl p-6 md:p-8 border border-black/5 max-w-[500px] mx-auto mb-12 md:mb-16 text-center">
+            <div className="text-3xl mb-3">🔒</div>
+            <h3 className="text-lg font-bold text-[#111] mb-2">Domain Locked</h3>
+            <p className="text-sm text-[#666] m-0">
+              Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You&apos;ll be prompted to complete the purchase immediately.
             </p>
           </div>
         )}
 
+        {/* How It Works */}
         <section>
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: "#111111", marginBottom: 32, textAlign: "center" }}>
+          <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-6 md:mb-8 text-center">
             How It Works
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0, backgroundColor: "#EFECE6", borderRadius: 16, padding: 32, border: "1px solid rgba(0,0,0,0.05)" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 bg-[#EFECE6] rounded-2xl p-6 md:p-8 border border-black/5">
             {[
               { num: "1", title: "Pick a TLD", desc: "Choose .com, .net, .io, .co, or any TLD at a flat rate." },
               { num: "2", title: "Spin & Pick", desc: "Three closed boxes appear. Pick one when the animation stops." },
@@ -206,127 +148,52 @@ export default function TryYourLuckPage() {
             ].map((step, i) => (
               <div
                 key={step.num}
-                style={{
-                  padding: "16px 24px",
-                  borderRight: i < 2 ? "1px solid rgba(0,0,0,0.08)" : "none",
-                  textAlign: "center",
-                }}
+                className={`py-4 md:py-4 text-center ${i < 2 ? "sm:border-r sm:border-black/8" : ""} ${i < 2 ? "border-b sm:border-b-0 border-black/8 pb-6 sm:pb-4 mb-4 sm:mb-0" : ""}`}
               >
-                <div style={{ fontSize: 28, fontWeight: 700, color: "#9E2A2B", marginBottom: 8 }}>{step.num}</div>
-                <h3 style={{ fontSize: 15, fontWeight: 700, color: "#111111", marginBottom: 6 }}>{step.title}</h3>
-                <p style={{ fontSize: 13, color: "#666666", margin: 0 }}>{step.desc}</p>
+                <div className="text-[28px] font-bold text-[#9E2A2B] mb-2">{step.num}</div>
+                <h3 className="text-sm font-bold text-[#111] mb-1.5">{step.title}</h3>
+                <p className="text-xs text-[#666] m-0">{step.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section
-          style={{
-            marginTop: 64,
-            backgroundColor: "#111111",
-            borderRadius: 16,
-            padding: 48,
-            textAlign: "center",
-          }}
-        >
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: "white", marginBottom: 12 }}>
-            Prefer browsing?
-          </h2>
-          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", marginBottom: 28 }}>
+        {/* CTA */}
+        <section className="mt-12 md:mt-16 bg-[#111] rounded-2xl p-8 md:p-12 text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-3">Prefer browsing?</h2>
+          <p className="text-base text-white/60 mb-7">
             Browse our full marketplace with detailed stats on every listing.
           </p>
-          <div style={{ display: "flex", justifyContent: "center", gap: 16 }}>
-            <a
-              href="/marketplace"
-              style={{
-                display: "inline-block",
-                padding: "14px 32px",
-                backgroundColor: "#F4A261",
-                color: "#111111",
-                borderRadius: 10,
-                fontWeight: 600,
-                fontSize: 14,
-                textDecoration: "none",
-              }}
-            >
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <a href="/marketplace" className="inline-block px-8 py-3.5 bg-[#F4A261] text-[#111] rounded-[10px] font-semibold text-sm no-underline text-center">
               View Marketplace
             </a>
-            <a
-              href="/signup"
-              style={{
-                display: "inline-block",
-                padding: "14px 32px",
-                border: "1px solid rgba(255,255,255,0.3)",
-                color: "white",
-                borderRadius: 10,
-                fontWeight: 600,
-                fontSize: 14,
-                textDecoration: "none",
-              }}
-            >
+            <a href="/signup" className="inline-block px-8 py-3.5 border border-white/30 text-white rounded-[10px] font-semibold text-sm no-underline text-center">
               Sign Up Free
             </a>
           </div>
         </section>
       </div>
 
+      {/* Modal */}
       {showModal && (
         <div
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 100,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "rgba(0,0,0,0.5)",
-          }}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 px-4"
           onClick={() => setShowModal(false)}
         >
           <div
-            style={{
-              backgroundColor: "white",
-              borderRadius: 20,
-              padding: 40,
-              maxWidth: 420,
-              width: "90%",
-              textAlign: "center",
-            }}
+            className="bg-white rounded-[20px] p-8 md:p-10 max-w-[420px] w-full text-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 style={{ fontSize: 22, fontWeight: 700, color: "#111111", marginBottom: 8 }}>
-              Create an Account
-            </h2>
-            <p style={{ fontSize: 14, color: "#666666", marginBottom: 24 }}>
-              Sign up to lock this domain exclusively for you.
-            </p>
-            <a
-              href="/signup"
-              style={{
-                display: "inline-block",
-                padding: "14px 32px",
-                backgroundColor: "#9E2A2B",
-                color: "white",
-                borderRadius: 10,
-                fontWeight: 600,
-                fontSize: 14,
-                textDecoration: "none",
-                marginBottom: 12,
-              }}
-            >
+            <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-2">Create an Account</h2>
+            <p className="text-sm text-[#666] mb-6">Sign up to lock this domain exclusively for you.</p>
+            <a href="/signup" className="inline-block px-8 py-3.5 bg-[#9E2A2B] text-white rounded-[10px] font-semibold text-sm no-underline mb-3">
               Sign Up Free
             </a>
             <div>
               <button
                 onClick={() => setShowModal(false)}
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "#999999",
-                  fontSize: 13,
-                  cursor: "pointer",
-                  marginTop: 8,
-                }}
+                className="bg-transparent border-none text-[#999] text-xs cursor-pointer mt-2"
               >
                 Maybe later
               </button>

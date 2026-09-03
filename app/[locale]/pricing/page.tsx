@@ -1,16 +1,5 @@
 import { Check, X, ArrowRight, Star, Shield, Crown } from "lucide-react";
 
-const brand = {
-  brand: "#9E2A2B",
-  accent: "#F4A261",
-  canvas: "#FAF7F2",
-  dark: "#111111",
-  muted: "#999999",
-  body: "#666666",
-  subtle: "#EFECE6",
-  subtleAlt: "#E5DFD3",
-};
-
 const plans = [
   {
     name: "Free",
@@ -106,90 +95,68 @@ const competitors = [
 
 export default function PricingPage() {
   return (
-    <main style={{ backgroundColor: brand.canvas, minHeight: "100vh", color: brand.dark }}>
-      {/* Hero band */}
-      <section style={{ background: `linear-gradient(135deg, ${brand.dark} 0%, ${brand.brand} 100%)`, padding: "80px 24px 64px", textAlign: "center" }}>
-        <p style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: brand.accent, fontFamily: "monospace", marginBottom: 12 }}>Pricing</p>
-        <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900, color: "#fff", marginBottom: 16, lineHeight: 1.1 }}>Simple, Transparent Pricing</h1>
-        <p style={{ fontSize: 18, color: "rgba(255,255,255,0.7)", maxWidth: 520, margin: "0 auto" }}>Start free. Upgrade when you need more power. Cancel anytime.</p>
+    <main className="min-h-screen text-[#111]" style={{ backgroundColor: "#FAF7F2" }}>
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-[#111] to-[#9E2A2B] py-12 md:py-16 lg:py-20 px-4 md:px-6 text-center">
+        <p className="text-[11px] tracking-[3px] uppercase text-[#F4A261] font-mono mb-3">Pricing</p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">Simple, Transparent Pricing</h1>
+        <p className="text-base md:text-lg text-white/70 max-w-md mx-auto">Start free. Upgrade when you need more power. Cancel anytime.</p>
       </section>
 
-      {/* Toggle + Cards */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-        {/* Annual banner */}
-        <div style={{ textAlign: "center", marginTop: -28, marginBottom: 48 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: brand.accent, color: brand.dark, fontWeight: 700, fontSize: 13, padding: "8px 20px", borderRadius: 999 }}>
+      {/* Plans */}
+      <section className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="text-center -mt-7 mb-10 md:mb-12">
+          <div className="inline-flex items-center gap-2 bg-[#F4A261] text-[#111] font-bold text-xs px-5 py-2 rounded-full">
             Save up to $260/yr with annual billing
           </div>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 32, marginBottom: 96 }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-24">
           {plans.map((plan) => {
             const Icon = plan.icon;
             return (
-              <div key={plan.name} style={{
-                background: plan.accent ? "#fff" : "#fff",
-                border: plan.accent ? `3px solid ${brand.brand}` : `1px solid rgba(0,0,0,0.08)`,
-                borderRadius: 24,
-                padding: 40,
-                position: "relative",
-                boxShadow: plan.accent ? "0 20px 60px rgba(158,42,43,0.12)" : "0 4px 20px rgba(0,0,0,0.04)",
-                display: "flex",
-                flexDirection: "column",
-              }}>
+              <div key={plan.name} className={`rounded-3xl p-6 md:p-8 lg:p-10 relative flex flex-col ${plan.accent ? "border-[3px] border-[#9E2A2B] shadow-[0_20px_60px_rgba(158,42,43,0.12)]" : "border border-black/8 shadow-[0_4px_20px_rgba(0,0,0,0.04)]"} bg-white`}>
                 {plan.accent && (
-                  <span style={{
-                    position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)",
-                    background: brand.brand, color: "#fff", fontSize: 11, fontWeight: 700, letterSpacing: 1,
-                    textTransform: "uppercase", padding: "6px 18px", borderRadius: 999,
-                  }}>Most Popular</span>
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#9E2A2B] text-white text-[11px] font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+                    Most Popular
+                  </span>
                 )}
 
-                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: plan.accent ? brand.brand : brand.subtle, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Icon size={22} color={plan.accent ? "#fff" : brand.dark} />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center ${plan.accent ? "bg-[#9E2A2B]" : "bg-[#EFECE6]"}`}>
+                    <Icon size={22} color={plan.accent ? "#fff" : "#111"} />
                   </div>
-                  <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0 }}>{plan.name}</h3>
+                  <h3 className="text-lg font-bold m-0">{plan.name}</h3>
                 </div>
 
-                {/* Price */}
-                <div style={{ marginBottom: 8 }}>
+                <div className="mb-2">
                   {plan.monthlyPrice === 0 ? (
-                    <span style={{ fontSize: 48, fontWeight: 900, lineHeight: 1 }}>$0</span>
+                    <span className="text-4xl md:text-5xl font-black leading-none">$0</span>
                   ) : (
                     <div>
-                      <span style={{ fontSize: 48, fontWeight: 900, lineHeight: 1 }}>${plan.annualPrice}</span>
-                      <span style={{ fontSize: 15, color: brand.muted, marginLeft: 4 }}>/yr</span>
-                      <div style={{ fontSize: 13, color: brand.brand, fontWeight: 600, marginTop: 4 }}>=${Math.round(plan.annualPrice / 12)}/mo &middot; {plan.annualNote}</div>
+                      <span className="text-4xl md:text-5xl font-black leading-none">${plan.annualPrice}</span>
+                      <span className="text-sm text-[#999] ml-1">/yr</span>
+                      <div className="text-xs text-[#9E2A2B] font-semibold mt-1">=${Math.round(plan.annualPrice / 12)}/mo · {plan.annualNote}</div>
                     </div>
                   )}
                 </div>
 
-                <p style={{ fontSize: 14, color: brand.body, marginBottom: 32, lineHeight: 1.5 }}>{plan.description}</p>
+                <p className="text-sm text-[#666] mb-6 md:mb-8 leading-relaxed">{plan.description}</p>
 
-                {/* Features */}
-                <div style={{ flex: 1 }}>
+                <div className="flex-1">
                   {plan.features.map((f) => (
-                    <div key={f.text} style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 12 }}>
+                    <div key={f.text} className="flex items-start gap-2.5 mb-3">
                       {f.included ? (
-                        <Check size={16} color={brand.brand} style={{ marginTop: 2, flexShrink: 0 }} />
+                        <Check size={16} color="#9E2A2B" className="mt-0.5 shrink-0" />
                       ) : (
-                        <X size={16} color={brand.muted} style={{ marginTop: 2, flexShrink: 0 }} />
+                        <X size={16} color="#999" className="mt-0.5 shrink-0" />
                       )}
-                      <span style={{ fontSize: 14, color: f.included ? brand.dark : brand.muted, textDecoration: f.included ? "none" : "line-through" }}>{f.text}</span>
+                      <span className={`text-sm ${f.included ? "text-[#111]" : "text-[#999] line-through"}`}>{f.text}</span>
                     </div>
                   ))}
                 </div>
 
-                {/* CTA */}
-                <a href={plan.href} style={{
-                  display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
-                  width: "100%", padding: "14px 0", borderRadius: 999, fontWeight: 600, fontSize: 14,
-                  textDecoration: "none", marginTop: 32, transition: "all 0.2s",
-                  background: plan.accent ? brand.brand : "transparent",
-                  color: plan.accent ? "#fff" : brand.dark,
-                  border: plan.accent ? "none" : `2px solid ${brand.dark}`,
-                }}>
+                <a href={plan.href} className={`flex items-center justify-center gap-2 w-full py-3.5 rounded-full font-semibold text-sm no-underline mt-8 transition-all ${plan.accent ? "bg-[#9E2A2B] text-white" : "bg-transparent text-[#111] border-2 border-[#111] hover:bg-[#111] hover:text-white"}`}>
                   {plan.cta} <ArrowRight size={16} />
                 </a>
               </div>
@@ -199,178 +166,166 @@ export default function PricingPage() {
       </section>
 
       {/* Try Your Luck */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px 96px" }}>
-        <div style={{ background: `linear-gradient(135deg, ${brand.dark} 0%, #2a1520 100%)`, borderRadius: 24, padding: "clamp(32px, 5vw, 64px)" }}>
-          <div style={{ textAlign: "center", marginBottom: 48 }}>
-            <p style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: brand.accent, fontFamily: "monospace", marginBottom: 12 }}>Try Your Luck</p>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, color: "#fff", marginBottom: 12 }}>Spin. Reveal. Own.</h2>
-            <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", maxWidth: 480, margin: "0 auto" }}>Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.</p>
+      <section className="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24">
+        <div className="bg-gradient-to-br from-[#111] to-[#2a1520] rounded-3xl p-6 md:p-10 lg:p-16">
+          <div className="text-center mb-8 md:mb-10">
+            <p className="text-[11px] tracking-[3px] uppercase text-[#F4A261] font-mono mb-3">Try Your Luck</p>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-white mb-3">Spin. Reveal. Own.</h2>
+            <p className="text-base text-white/60 max-w-md mx-auto">Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.</p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 16, maxWidth: 900, margin: "0 auto" }}>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4 max-w-4xl mx-auto">
             {tryYourLuck.map((item) => (
-              <a key={item.tld} href="/marketplace/try-your-luck" style={{
-                display: "block", textAlign: "center", padding: "28px 16px",
-                borderRadius: 16, textDecoration: "none", transition: "all 0.2s",
-                background: item.popular ? brand.accent : "rgba(255,255,255,0.06)",
-                border: item.popular ? `2px solid ${brand.accent}` : "1px solid rgba(255,255,255,0.1)",
-              }}>
-                <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginBottom: 4, fontFamily: "monospace" }}>{item.tld}</div>
-                <div style={{ fontSize: 32, fontWeight: 900, color: item.popular ? brand.dark : "#fff" }}>${item.price}</div>
-                {item.popular && <div style={{ fontSize: 11, fontWeight: 700, color: brand.dark, marginTop: 4, textTransform: "uppercase", letterSpacing: 1 }}>Most Popular</div>}
+              <a key={item.tld} href="/marketplace/try-your-luck" className={`block text-center py-6 md:py-7 px-3 md:px-4 rounded-2xl no-underline transition-all ${item.popular ? "bg-[#F4A261] border-2 border-[#F4A261]" : "bg-white/6 border border-white/10 hover:bg-white/10"}`}>
+                <div className="text-xs text-white/50 font-mono mb-1">{item.tld}</div>
+                <div className={`text-2xl md:text-3xl font-black ${item.popular ? "text-[#111]" : "text-white"}`}>${item.price}</div>
+                {item.popular && <div className="text-[11px] font-bold text-[#111] mt-1 uppercase tracking-wider">Most Popular</div>}
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Reveal Pricing + Seller Fees + Commission */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px 96px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 32 }}>
+      {/* Fees Grid */}
+      <section className="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 md:grid-cols-3">
           {/* Reveal Pricing */}
-          <div style={{ background: "#fff", borderRadius: 20, padding: 36, border: `1px solid rgba(0,0,0,0.06)` }}>
-            <p style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: brand.muted, fontFamily: "monospace", marginBottom: 8 }}>Marketplace</p>
-            <h3 style={{ fontSize: 24, fontWeight: 900, marginBottom: 24 }}>Reveal Fees</h3>
-            <p style={{ fontSize: 13, color: brand.body, marginBottom: 20, lineHeight: 1.6 }}>Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.</p>
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
-              <thead>
-                <tr style={{ borderBottom: `2px solid ${brand.subtle}` }}>
-                  <th style={{ textAlign: "left", padding: "10px 0", fontSize: 12, fontWeight: 700, color: brand.muted }}>Tier</th>
-                  <th style={{ textAlign: "left", padding: "10px 0", fontSize: 12, fontWeight: 700, color: brand.muted }}>Value Range</th>
-                  <th style={{ textAlign: "right", padding: "10px 0", fontSize: 12, fontWeight: 700, color: brand.muted }}>Fee</th>
-                </tr>
-              </thead>
-              <tbody>
-                {revealPricing.map((r) => (
-                  <tr key={r.tier} style={{ borderBottom: `1px solid rgba(0,0,0,0.04)` }}>
-                    <td style={{ padding: "12px 0", fontSize: 14, fontWeight: 600 }}>{r.tier}</td>
-                    <td style={{ padding: "12px 0", fontSize: 14, color: brand.body }}>{r.range}</td>
-                    <td style={{ padding: "12px 0", fontSize: 14, fontWeight: 700, textAlign: "right", fontFamily: "monospace" }}>{r.fee}</td>
+          <div className="bg-white rounded-[20px] p-6 md:p-8 lg:p-9 border border-black/6">
+            <p className="text-[11px] tracking-[3px] uppercase text-[#999] font-mono mb-2">Marketplace</p>
+            <h3 className="text-xl md:text-2xl font-black mb-5 md:mb-6">Reveal Fees</h3>
+            <p className="text-xs text-[#666] mb-5 leading-relaxed">Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.</p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm min-w-[280px]">
+                <thead>
+                  <tr className="border-b-2 border-[#EFECE6]">
+                    <th className="py-2.5 text-left text-[11px] font-bold text-[#999]">Tier</th>
+                    <th className="py-2.5 text-left text-[11px] font-bold text-[#999]">Value Range</th>
+                    <th className="py-2.5 text-right text-[11px] font-bold text-[#999]">Fee</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {revealPricing.map((r) => (
+                    <tr key={r.tier} className="border-b border-black/4">
+                      <td className="py-3 font-semibold">{r.tier}</td>
+                      <td className="py-3 text-[#666]">{r.range}</td>
+                      <td className="py-3 font-bold text-right font-mono">{r.fee}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
 
           {/* Listing Fees */}
-          <div style={{ background: "#fff", borderRadius: 20, padding: 36, border: `1px solid rgba(0,0,0,0.06)` }}>
-            <p style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: brand.muted, fontFamily: "monospace", marginBottom: 8 }}>For Sellers</p>
-            <h3 style={{ fontSize: 24, fontWeight: 900, marginBottom: 24 }}>Listing Fees</h3>
-            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "16px 20px", background: brand.subtle, borderRadius: 12 }}>
+          <div className="bg-white rounded-[20px] p-6 md:p-8 lg:p-9 border border-black/6">
+            <p className="text-[11px] tracking-[3px] uppercase text-[#999] font-mono mb-2">For Sellers</p>
+            <h3 className="text-xl md:text-2xl font-black mb-5 md:mb-6">Listing Fees</h3>
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-wrap justify-between items-center gap-3 p-4 bg-[#EFECE6] rounded-xl">
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700 }}>Standard listing</div>
-                  <div style={{ fontSize: 12, color: brand.body }}>30-day visibility</div>
+                  <div className="text-sm font-bold">Standard listing</div>
+                  <div className="text-xs text-[#666]">30-day visibility</div>
                 </div>
-                <div style={{ fontSize: 24, fontWeight: 900, fontFamily: "monospace" }}>$5</div>
+                <div className="text-xl font-black font-mono">$5</div>
               </div>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "16px 20px", background: brand.subtle, borderRadius: 12, border: `2px solid ${brand.accent}` }}>
+              <div className="flex flex-wrap justify-between items-center gap-3 p-4 bg-[#EFECE6] rounded-xl border-2 border-[#F4A261]">
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700 }}>Priority placement</div>
-                  <div style={{ fontSize: 12, color: brand.body }}>72-hour boost + featured</div>
+                  <div className="text-sm font-bold">Priority placement</div>
+                  <div className="text-xs text-[#666]">72-hour boost + featured</div>
                 </div>
-                <div style={{ fontSize: 24, fontWeight: 900, fontFamily: "monospace" }}>$10</div>
+                <div className="text-xl font-black font-mono">$10</div>
               </div>
             </div>
           </div>
 
-          {/* Commission Tiers */}
-          <div style={{ background: "#fff", borderRadius: 20, padding: 36, border: `1px solid rgba(0,0,0,0.06)` }}>
-            <p style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: brand.muted, fontFamily: "monospace", marginBottom: 8 }}>Commissions</p>
-            <h3 style={{ fontSize: 24, fontWeight: 900, marginBottom: 24 }}>Seller Commission Rates</h3>
-            <table style={{ width: "100%", borderCollapse: "collapse" }}>
-              <thead>
-                <tr style={{ borderBottom: `2px solid ${brand.subtle}` }}>
-                  <th style={{ textAlign: "left", padding: "10px 0", fontSize: 12, fontWeight: 700, color: brand.muted }}>Sale Amount</th>
-                  <th style={{ textAlign: "right", padding: "10px 0", fontSize: 12, fontWeight: 700, color: brand.muted }}>Rate</th>
-                  <th style={{ textAlign: "right", padding: "10px 0", fontSize: 12, fontWeight: 700, color: brand.muted }}>Min Fee</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: `1px solid rgba(0,0,0,0.04)` }}>
-                  <td style={{ padding: "12px 0", fontSize: 14 }}>$0 – $500</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, fontWeight: 700, textAlign: "right", fontFamily: "monospace" }}>15%</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, textAlign: "right", fontFamily: "monospace", color: brand.body }}>$10</td>
-                </tr>
-                <tr style={{ borderBottom: `1px solid rgba(0,0,0,0.04)` }}>
-                  <td style={{ padding: "12px 0", fontSize: 14 }}>$501 – $5,000</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, fontWeight: 700, textAlign: "right", fontFamily: "monospace" }}>12%</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, textAlign: "right", fontFamily: "monospace", color: brand.body }}>$50</td>
-                </tr>
-                <tr style={{ borderBottom: `1px solid rgba(0,0,0,0.04)` }}>
-                  <td style={{ padding: "12px 0", fontSize: 14 }}>$5,001 – $50,000</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, fontWeight: 700, textAlign: "right", fontFamily: "monospace" }}>10%</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, textAlign: "right", fontFamily: "monospace", color: brand.body }}>$500</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: "12px 0", fontSize: 14 }}>$50,001+</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, fontWeight: 700, textAlign: "right", fontFamily: "monospace" }}>8%</td>
-                  <td style={{ padding: "12px 0", fontSize: 14, textAlign: "right", fontFamily: "monospace", color: brand.body }}>$4,000</td>
-                </tr>
-              </tbody>
-            </table>
+          {/* Commission */}
+          <div className="bg-white rounded-[20px] p-6 md:p-8 lg:p-9 border border-black/6">
+            <p className="text-[11px] tracking-[3px] uppercase text-[#999] font-mono mb-2">Commissions</p>
+            <h3 className="text-xl md:text-2xl font-black mb-5 md:mb-6">Seller Commission Rates</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm min-w-[260px]">
+                <thead>
+                  <tr className="border-b-2 border-[#EFECE6]">
+                    <th className="py-2.5 text-left text-[11px] font-bold text-[#999]">Sale Amount</th>
+                    <th className="py-2.5 text-right text-[11px] font-bold text-[#999]">Rate</th>
+                    <th className="py-2.5 text-right text-[11px] font-bold text-[#999]">Min Fee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { amount: "$0 – $500", rate: "15%", min: "$10" },
+                    { amount: "$501 – $5,000", rate: "12%", min: "$50" },
+                    { amount: "$5,001 – $50,000", rate: "10%", min: "$500" },
+                    { amount: "$50,001+", rate: "8%", min: "$4,000" },
+                  ].map((r) => (
+                    <tr key={r.amount} className="border-b border-black/4">
+                      <td className="py-3">{r.amount}</td>
+                      <td className="py-3 font-bold text-right font-mono">{r.rate}</td>
+                      <td className="py-3 text-right font-mono text-[#666]">{r.min}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Competitor Comparison */}
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px 96px" }}>
-        <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <p style={{ fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: brand.muted, fontFamily: "monospace", marginBottom: 12 }}>Compare</p>
-          <h2 style={{ fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 900, marginBottom: 12 }}>Ceche vs the Competition</h2>
-          <p style={{ fontSize: 16, color: brand.body, maxWidth: 480, margin: "0 auto" }}>See how Ceche stacks up against legacy domain platforms.</p>
+      <section className="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24">
+        <div className="text-center mb-8 md:mb-10">
+          <p className="text-[11px] tracking-[3px] uppercase text-[#999] font-mono mb-3">Compare</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black mb-3">Ceche vs the Competition</h2>
+          <p className="text-base text-[#666] max-w-md mx-auto">See how Ceche stacks up against legacy domain platforms.</p>
         </div>
 
-        <div style={{ background: "#fff", borderRadius: 20, overflow: "hidden", border: `1px solid rgba(0,0,0,0.06)`, maxWidth: 800, margin: "0 auto" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
-            <thead>
-              <tr style={{ background: brand.dark }}>
-                <th style={{ textAlign: "left", padding: "16px 24px", fontSize: 14, fontWeight: 700, color: "#fff", width: "40%" }}>Feature</th>
-                <th style={{ textAlign: "center", padding: "16px 16px", fontSize: 14, fontWeight: 700, color: brand.accent }}>Ceche</th>
-                <th style={{ textAlign: "center", padding: "16px 16px", fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.6)" }}>GoDaddy</th>
-                <th style={{ textAlign: "center", padding: "16px 16px", fontSize: 14, fontWeight: 700, color: "rgba(255,255,255,0.6)" }}>Sedo</th>
-              </tr>
-            </thead>
-            <tbody>
-              {competitors.map((c, i) => (
-                <tr key={c.feature} style={{ background: i % 2 === 0 ? "#fff" : brand.subtle }}>
-                  <td style={{ padding: "14px 24px", fontSize: 14 }}>{c.feature}</td>
-                  <td style={{ padding: "14px 16px", textAlign: "center" }}>
-                    {c.ceche ? <Check size={18} color={brand.brand} style={{ margin: "0 auto" }} /> : <X size={18} color={brand.muted} style={{ margin: "0 auto" }} />}
-                  </td>
-                  <td style={{ padding: "14px 16px", textAlign: "center" }}>
-                    {c.godaddy ? <Check size={18} color="#888" style={{ margin: "0 auto" }} /> : <X size={18} color={brand.muted} style={{ margin: "0 auto" }} />}
-                  </td>
-                  <td style={{ padding: "14px 16px", textAlign: "center" }}>
-                    {c.sedo ? <Check size={18} color="#888" style={{ margin: "0 auto" }} /> : <X size={18} color={brand.muted} style={{ margin: "0 auto" }} />}
-                  </td>
+        <div className="bg-white rounded-[20px] overflow-hidden border border-black/6 max-w-3xl mx-auto">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-sm min-w-[500px]">
+              <thead>
+                <tr className="bg-[#111]">
+                  <th className="py-4 px-5 text-left text-sm font-bold text-white w-[40%]">Feature</th>
+                  <th className="py-4 px-4 text-center text-sm font-bold text-[#F4A261]">Ceche</th>
+                  <th className="py-4 px-4 text-center text-sm font-bold text-white/60">GoDaddy</th>
+                  <th className="py-4 px-4 text-center text-sm font-bold text-white/60">Sedo</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {competitors.map((c, i) => (
+                  <tr key={c.feature} className={i % 2 === 0 ? "bg-white" : "bg-[#EFECE6]"}>
+                    <td className="py-3.5 px-5">{c.feature}</td>
+                    <td className="py-3.5 px-4 text-center">
+                      {c.ceche ? <Check size={18} color="#9E2A2B" className="mx-auto" /> : <X size={18} color="#999" className="mx-auto" />}
+                    </td>
+                    <td className="py-3.5 px-4 text-center">
+                      {c.godaddy ? <Check size={18} color="#888" className="mx-auto" /> : <X size={18} color="#999" className="mx-auto" />}
+                    </td>
+                    <td className="py-3.5 px-4 text-center">
+                      {c.sedo ? <Check size={18} color="#888" className="mx-auto" /> : <X size={18} color="#999" className="mx-auto" />}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 96px", textAlign: "center" }}>
-        <div style={{ background: brand.dark, borderRadius: 24, padding: "clamp(40px, 6vw, 72px) clamp(24px, 4vw, 48px)" }}>
-          <h2 style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 900, color: "#fff", marginBottom: 16 }}>Ready to Get Started?</h2>
-          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", marginBottom: 32, maxWidth: 420, margin: "0 auto 32px" }}>Create a free account in seconds. No credit card required.</p>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/signup" style={{
-              display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 32px", borderRadius: 999,
-              background: brand.accent, color: brand.dark, fontWeight: 700, fontSize: 15, textDecoration: "none",
-            }}>Create Free Account <ArrowRight size={16} /></a>
-            <a href="/help" style={{
-              display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 32px", borderRadius: 999,
-              background: "transparent", color: "#fff", fontWeight: 600, fontSize: 15, textDecoration: "none",
-              border: "1px solid rgba(255,255,255,0.2)",
-            }}>Visit Help Center</a>
-            <a href="/tools/domain-lookup" style={{
-              display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 32px", borderRadius: 999,
-              background: "transparent", color: "#fff", fontWeight: 600, fontSize: 15, textDecoration: "none",
-              border: "1px solid rgba(255,255,255,0.2)",
-            }}>Free Domain Lookup</a>
+      <section className="max-w-3xl mx-auto px-4 md:px-6 pb-16 md:pb-24">
+        <div className="bg-[#111] rounded-3xl p-8 md:p-12 lg:p-16 text-center">
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-4">Ready to Get Started?</h2>
+          <p className="text-base text-white/60 max-w-sm mx-auto mb-8">Create a free account in seconds. No credit card required.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <a href="/signup" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#F4A261] text-[#111] font-bold text-sm no-underline">
+              Create Free Account <ArrowRight size={16} />
+            </a>
+            <a href="/help" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-transparent text-white font-semibold text-sm no-underline border border-white/20">
+              Visit Help Center
+            </a>
+            <a href="/tools/domain-lookup" className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-transparent text-white font-semibold text-sm no-underline border border-white/20">
+              Free Domain Lookup
+            </a>
           </div>
         </div>
       </section>

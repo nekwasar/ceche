@@ -33,96 +33,58 @@ export default function SellPage() {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <main style={{ backgroundColor: "#FAF7F2", minHeight: "100vh" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "80px 24px 120px" }}>
-        <div style={{ marginBottom: 48 }}>
-          <span
-            style={{
-              fontSize: 10,
-              fontFamily: "monospace",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "#999999",
-              display: "block",
-              marginBottom: 12,
-            }}
-          >
+    <main className="bg-[#FAF7F2] min-h-screen">
+      <div className="max-w-[1100px] mx-auto px-4 md:px-6 py-12 md:py-16 lg:py-20 pb-20 md:pb-24 lg:pb-32">
+        {/* Header */}
+        <div className="mb-8 md:mb-12">
+          <span className="text-[10px] font-mono tracking-[0.15em] uppercase text-[#999] block mb-3">
             Marketplace
           </span>
-          <h1 style={{ fontSize: 40, fontWeight: 700, color: "#111111", marginBottom: 16 }}>
-            Sell Your Domains
-          </h1>
-          <p style={{ fontSize: 18, color: "#666666", maxWidth: 560 }}>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#111] mb-4">Sell Your Domains</h1>
+          <p className="text-base md:text-lg text-[#666] max-w-md">
             List your premium domains on Ceche and reach qualified buyers worldwide.
           </p>
         </div>
 
-        <section style={{ marginBottom: 64 }}>
-          <div style={{ display: "flex", gap: 0, marginBottom: 40 }}>
+        {/* Step Tabs + Content */}
+        <section className="mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-0 mb-8 md:mb-10">
             {steps.map((step, i) => (
               <div
                 key={step}
                 onClick={() => setActiveStep(i)}
-                style={{
-                  flex: 1,
-                  padding: "16px 24px",
-                  backgroundColor: i === activeStep ? "#9E2A2B" : i < activeStep ? "#7A1F21" : "#EFECE6",
-                  color: i <= activeStep ? "white" : "#666666",
-                  cursor: "pointer",
-                  textAlign: "center",
-                  fontWeight: 600,
-                  fontSize: 14,
-                  borderRadius: i === 0 ? "10px 0 0 10px" : i === steps.length - 1 ? "0 10px 10px 0" : 0,
-                }}
+                className={`flex-1 py-3.5 px-5 cursor-pointer text-center font-semibold text-sm transition-colors ${
+                  i === activeStep
+                    ? "bg-[#9E2A2B] text-white"
+                    : i < activeStep
+                    ? "bg-[#7A1F21] text-white"
+                    : "bg-[#EFECE6] text-[#666]"
+                } ${i === 0 ? "rounded-t-xl sm:rounded-t-none sm:rounded-l-xl" : ""} ${
+                  i === steps.length - 1 ? "rounded-b-xl sm:rounded-b-none sm:rounded-r-xl" : ""
+                }`}
               >
-                <span style={{ fontFamily: "monospace", marginRight: 8, opacity: 0.6 }}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+                <span className="font-mono mr-2 opacity-60">{String(i + 1).padStart(2, "0")}</span>
                 {step}
               </div>
             ))}
           </div>
 
-          <div
-            style={{
-              backgroundColor: "#EFECE6",
-              borderRadius: 16,
-              padding: 32,
-              border: "1px solid rgba(0,0,0,0.05)",
-            }}
-          >
+          <div className="bg-[#EFECE6] rounded-2xl p-6 md:p-8 border border-black/5">
             {activeStep === 0 && (
               <div>
-                <h3 style={{ fontSize: 18, fontWeight: 700, color: "#111111", marginBottom: 8 }}>Submit Your Domain</h3>
-                <p style={{ fontSize: 14, color: "#666666", marginBottom: 16 }}>
-                  Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.
+                <h3 className="text-lg font-bold text-[#111] mb-2">Submit Your Domain</h3>
+                <p className="text-sm text-[#666] mb-4">
+                  Enter your domain name. We&apos;ll run an automatic appraisal and verify ownership via TXT/CNAME record.
                 </p>
-                <div style={{ display: "flex", gap: 12 }}>
+                <div className="flex flex-col sm:flex-row gap-3">
                   <input
                     type="text"
                     placeholder="yourdomain.com"
-                    style={{
-                      flex: 1,
-                      padding: "12px 16px",
-                      borderRadius: 10,
-                      border: "1px solid rgba(0,0,0,0.1)",
-                      backgroundColor: "white",
-                      fontSize: 14,
-                      outline: "none",
-                    }}
+                    className="flex-1 px-4 py-3 rounded-[10px] border border-black/10 bg-white text-sm outline-none"
                   />
                   <button
                     onClick={() => setActiveStep(1)}
-                    style={{
-                      padding: "12px 28px",
-                      backgroundColor: "#9E2A2B",
-                      color: "white",
-                      borderRadius: 10,
-                      fontWeight: 600,
-                      fontSize: 14,
-                      border: "none",
-                      cursor: "pointer",
-                    }}
+                    className="px-7 py-3 bg-[#9E2A2B] text-white rounded-[10px] font-semibold text-sm border-none cursor-pointer"
                   >
                     Continue
                   </button>
@@ -131,40 +93,23 @@ export default function SellPage() {
             )}
             {activeStep === 1 && (
               <div>
-                <h3 style={{ fontSize: 18, fontWeight: 700, color: "#111111", marginBottom: 8 }}>Set Your Price</h3>
-                <p style={{ fontSize: 14, color: "#666666", marginBottom: 16 }}>
+                <h3 className="text-lg font-bold text-[#111] mb-2">Set Your Price</h3>
+                <p className="text-sm text-[#666] mb-4">
                   Our AI suggests a price based on domain metrics. You can accept or set your own.
                 </p>
-                <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-                  <span style={{ fontSize: 14, fontWeight: 600, color: "#111111" }}>$</span>
-                  <input
-                    type="text"
-                    defaultValue="12,500"
-                    style={{
-                      width: 160,
-                      padding: "12px 16px",
-                      borderRadius: 10,
-                      border: "1px solid rgba(0,0,0,0.1)",
-                      backgroundColor: "white",
-                      fontSize: 14,
-                      fontWeight: 600,
-                      outline: "none",
-                    }}
-                  />
-                  <span style={{ fontSize: 13, color: "#999999" }}>Suggested: $12,500</span>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-semibold text-[#111]">$</span>
+                    <input
+                      type="text"
+                      defaultValue="12,500"
+                      className="w-full sm:w-40 px-4 py-3 rounded-[10px] border border-black/10 bg-white text-sm font-semibold outline-none"
+                    />
+                  </div>
+                  <span className="text-xs text-[#999]">Suggested: $12,500</span>
                   <button
                     onClick={() => setActiveStep(2)}
-                    style={{
-                      marginLeft: "auto",
-                      padding: "12px 28px",
-                      backgroundColor: "#9E2A2B",
-                      color: "white",
-                      borderRadius: 10,
-                      fontWeight: 600,
-                      fontSize: 14,
-                      border: "none",
-                      cursor: "pointer",
-                    }}
+                    className="sm:ml-auto px-7 py-3 bg-[#9E2A2B] text-white rounded-[10px] font-semibold text-sm border-none cursor-pointer"
                   >
                     Continue
                   </button>
@@ -173,22 +118,11 @@ export default function SellPage() {
             )}
             {activeStep === 2 && (
               <div>
-                <h3 style={{ fontSize: 18, fontWeight: 700, color: "#111111", marginBottom: 8 }}>Publish Listing</h3>
-                <p style={{ fontSize: 14, color: "#666666", marginBottom: 16 }}>
+                <h3 className="text-lg font-bold text-[#111] mb-2">Publish Listing</h3>
+                <p className="text-sm text-[#666] mb-4">
                   Review your listing details and publish. Your domain goes live within 24 hours.
                 </p>
-                <button
-                  style={{
-                    padding: "14px 32px",
-                    backgroundColor: "#047857",
-                    color: "white",
-                    borderRadius: 10,
-                    fontWeight: 600,
-                    fontSize: 14,
-                    border: "none",
-                    cursor: "pointer",
-                  }}
-                >
+                <button className="px-8 py-3.5 bg-[#047857] text-white rounded-[10px] font-semibold text-sm border-none cursor-pointer">
                   Publish Listing
                 </button>
               </div>
@@ -196,45 +130,40 @@ export default function SellPage() {
           </div>
         </section>
 
-        <section style={{ marginBottom: 64 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: "#111111", marginBottom: 24 }}>Fee Structure</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+        {/* Fee Structure */}
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-5 md:mb-6">Fee Structure</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
             <div>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: "#111111", marginBottom: 12 }}>Listing Fees</h3>
-              <div style={{ backgroundColor: "#EFECE6", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(0,0,0,0.05)" }}>
+              <h3 className="text-base font-bold text-[#111] mb-3">Listing Fees</h3>
+              <div className="bg-[#EFECE6] rounded-[14px] overflow-hidden border border-black/5">
                 {listingFees.map((f, i) => (
                   <div
                     key={f.tier}
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "1fr 80px 80px",
-                      padding: "14px 20px",
-                      borderBottom: i < listingFees.length - 1 ? "1px solid rgba(0,0,0,0.06)" : "none",
-                    }}
+                    className={`flex items-center justify-between px-5 py-3.5 ${i < listingFees.length - 1 ? "border-b border-black/6" : ""}`}
                   >
-                    <span style={{ fontSize: 13, color: "#111111" }}>{f.tier}</span>
-                    <span style={{ fontSize: 13, fontWeight: 700, color: "#9E2A2B", textAlign: "right" }}>{f.fee}</span>
-                    <span style={{ fontSize: 12, color: "#999999", textAlign: "right" }}>{f.min}</span>
+                    <span className="text-sm text-[#111]">{f.tier}</span>
+                    <div className="flex items-center gap-4 shrink-0 ml-4">
+                      <span className="text-sm font-bold text-[#9E2A2B]">{f.fee}</span>
+                      <span className="text-xs text-[#999] w-8 text-right">{f.min}</span>
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
             <div>
-              <h3 style={{ fontSize: 16, fontWeight: 700, color: "#111111", marginBottom: 12 }}>Commission Rates</h3>
-              <div style={{ backgroundColor: "#EFECE6", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(0,0,0,0.05)" }}>
+              <h3 className="text-base font-bold text-[#111] mb-3">Commission Rates</h3>
+              <div className="bg-[#EFECE6] rounded-[14px] overflow-hidden border border-black/5">
                 {commissions.map((c, i) => (
                   <div
                     key={c.tier}
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "1fr 80px 100px",
-                      padding: "14px 20px",
-                      borderBottom: i < commissions.length - 1 ? "1px solid rgba(0,0,0,0.06)" : "none",
-                    }}
+                    className={`flex items-center justify-between px-5 py-3.5 ${i < commissions.length - 1 ? "border-b border-black/6" : ""}`}
                   >
-                    <span style={{ fontSize: 13, color: "#111111" }}>{c.tier}</span>
-                    <span style={{ fontSize: 13, fontWeight: 700, color: "#9E2A2B", textAlign: "right" }}>{c.commission}</span>
-                    <span style={{ fontSize: 12, color: "#999999", textAlign: "right" }}>Min: {c.minimum}</span>
+                    <span className="text-sm text-[#111]">{c.tier}</span>
+                    <div className="flex items-center gap-4 shrink-0 ml-4">
+                      <span className="text-sm font-bold text-[#9E2A2B]">{c.commission}</span>
+                      <span className="text-xs text-[#999]">Min: {c.minimum}</span>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -242,90 +171,42 @@ export default function SellPage() {
           </div>
         </section>
 
-        <section style={{ marginBottom: 64 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: "#111111", marginBottom: 24 }}>Eligibility Checklist</h2>
-          <div
-            style={{
-              backgroundColor: "#EFECE6",
-              borderRadius: 16,
-              padding: 28,
-              border: "1px solid rgba(0,0,0,0.05)",
-            }}
-          >
-            <ul style={{ margin: 0, paddingLeft: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Eligibility */}
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-5 md:mb-6">Eligibility Checklist</h2>
+          <div className="bg-[#EFECE6] rounded-2xl p-6 md:p-7 border border-black/5">
+            <ul className="m-0 p-0 list-none flex flex-col gap-3">
               {eligibility.map((item) => (
-                <li key={item} style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 14, color: "#111111" }}>
-                  <span style={{ color: "#047857", fontWeight: 700 }}>✓</span>
-                  {item}
+                <li key={item} className="flex items-center gap-3 text-sm text-[#111]">
+                  <span className="text-[#047857] font-bold">✓</span>{item}
                 </li>
               ))}
             </ul>
           </div>
         </section>
 
-        <section style={{ marginBottom: 64 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, color: "#111111", marginBottom: 24 }}>Seller Tools</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
+        {/* Seller Tools */}
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-5 md:mb-6">Seller Tools</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {sellerTools.map((tool) => (
-              <div
-                key={tool.title}
-                style={{
-                  backgroundColor: "#EFECE6",
-                  borderRadius: 16,
-                  padding: 28,
-                  border: "1px solid rgba(0,0,0,0.05)",
-                }}
-              >
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: "#111111", marginBottom: 8 }}>{tool.title}</h3>
-                <p style={{ fontSize: 13, color: "#666666", margin: 0 }}>{tool.desc}</p>
+              <div key={tool.title} className="bg-[#EFECE6] rounded-2xl p-6 md:p-7 border border-black/5">
+                <h3 className="text-base font-bold text-[#111] mb-2">{tool.title}</h3>
+                <p className="text-xs text-[#666] m-0">{tool.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section
-          style={{
-            backgroundColor: "#111111",
-            borderRadius: 16,
-            padding: 48,
-            textAlign: "center",
-          }}
-        >
-          <h2 style={{ fontSize: 28, fontWeight: 700, color: "white", marginBottom: 12 }}>
-            Ready to sell?
-          </h2>
-          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.6)", marginBottom: 28 }}>
-            List your first domain in under 5 minutes.
-          </p>
-          <div style={{ display: "flex", justifyContent: "center", gap: 16 }}>
-            <a
-              href="/signup"
-              style={{
-                display: "inline-block",
-                padding: "14px 32px",
-                backgroundColor: "#F4A261",
-                color: "#111111",
-                borderRadius: 10,
-                fontWeight: 600,
-                fontSize: 14,
-                textDecoration: "none",
-              }}
-            >
+        {/* CTA */}
+        <section className="bg-[#111] rounded-2xl p-8 md:p-12 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Ready to sell?</h2>
+          <p className="text-base text-white/60 mb-7">List your first domain in under 5 minutes.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <a href="/signup" className="inline-block px-8 py-3.5 bg-[#F4A261] text-[#111] rounded-[10px] font-semibold text-sm no-underline text-center">
               Create Account
             </a>
-            <a
-              href="/pricing"
-              style={{
-                display: "inline-block",
-                padding: "14px 32px",
-                border: "1px solid rgba(255,255,255,0.3)",
-                color: "white",
-                borderRadius: 10,
-                fontWeight: 600,
-                fontSize: 14,
-                textDecoration: "none",
-              }}
-            >
+            <a href="/pricing" className="inline-block px-8 py-3.5 border border-white/30 text-white rounded-[10px] font-semibold text-sm no-underline text-center">
               View Pricing
             </a>
           </div>

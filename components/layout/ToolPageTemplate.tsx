@@ -11,7 +11,7 @@ interface ToolPageProps {
 export function ToolPageTemplate({ icon: Icon, title, subtitle, features, badge }: ToolPageProps) {
   return (
     <div className="min-h-screen bg-canvas">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="max-w-3xl">
           {badge && (
             <div className="inline-flex items-center gap-2 bg-brand/10 rounded-full px-4 py-1.5 mb-6 border border-brand/20">
@@ -44,11 +44,11 @@ export function ToolPageTemplate({ icon: Icon, title, subtitle, features, badge 
           <p className="text-slate-muted">
             This feature is under active development. Join the waitlist to get early access.
           </p>
-          <div className="mt-6 flex items-center gap-4">
+          <div className="mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 max-w-sm bg-canvas rounded-lg px-4 py-3 text-sm border border-slate/10 focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
+              className="flex-1 sm:max-w-sm bg-canvas rounded-lg px-4 py-3 text-sm border border-slate/10 focus:ring-2 focus:ring-brand focus:border-transparent outline-none"
             />
             <button className="cta-button">Join Waitlist</button>
           </div>

@@ -27,14 +27,12 @@ export default function DomainLookupPage() {
   const [whoisData, setWhoisData] = useState<WhoisData | null>(null);
   const [dnsRecords, setDnsRecords] = useState<DnsRecord[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [showExtendedModal, setShowExtendedModal] = useState(false);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!searchQuery.trim()) return;
 
     setIsLoading(true);
-    // Simulated data - in production this would call the API
     setTimeout(() => {
       setWhoisData({
         domain: searchQuery,
@@ -59,97 +57,34 @@ export default function DomainLookupPage() {
   };
 
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#FAF7F2" }}>
+    <div className="min-h-screen bg-[#FAF7F2]">
       {/* Hero Section */}
-      <section
-        style={{
-          background: "linear-gradient(135deg, #9E2A2B 0%, #7A1F1F 100%)",
-          padding: "80px 24px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <span
-            style={{
-              display: "inline-block",
-              backgroundColor: "rgba(255,255,255,0.15)",
-              color: "#FFFFFF",
-              padding: "6px 16px",
-              borderRadius: "20px",
-              fontSize: "13px",
-              fontWeight: 600,
-              letterSpacing: "0.5px",
-              marginBottom: "20px",
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+      <section className="bg-gradient-to-br from-[#9E2A2B] to-[#7A1F1F] py-16 md:py-20 px-4 md:px-6 text-center">
+        <div className="max-w-3xl mx-auto">
+          <span className="inline-block bg-white/15 text-white px-4 py-1.5 rounded-full text-sm font-semibold tracking-wider mb-5">
             FREE TOOL
           </span>
-          <h1
-            style={{
-              fontSize: "48px",
-              fontWeight: 800,
-              color: "#FFFFFF",
-              marginBottom: "16px",
-              lineHeight: 1.1,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
             Domain Lookup
           </h1>
-          <p
-            style={{
-              fontSize: "18px",
-              color: "rgba(255,255,255,0.85)",
-              marginBottom: "40px",
-              lineHeight: 1.6,
-              fontFamily: "Inter, sans-serif",
-            }}
-          >
+          <p className="text-base md:text-lg text-white/85 mb-8 md:mb-10 leading-relaxed">
             Instant WHOIS data, DNS records, and registration details for any
             domain. Get the intelligence you need in seconds.
           </p>
 
           {/* Search Form */}
-          <form
-            onSubmit={handleSearch}
-            style={{
-              display: "flex",
-              gap: "12px",
-              maxWidth: "600px",
-              margin: "0 auto",
-            }}
-          >
+          <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Enter domain name (e.g., example.com)"
-              style={{
-                flex: 1,
-                padding: "16px 20px",
-                fontSize: "16px",
-                borderRadius: "8px",
-                border: "2px solid transparent",
-                outline: "none",
-                fontFamily: "Inter, sans-serif",
-              }}
+              placeholder="Enter domain (e.g., example.com)"
+              className="flex-1 px-5 py-4 text-base rounded-lg border-2 border-transparent outline-none"
             />
             <button
               type="submit"
               disabled={isLoading}
-              style={{
-                backgroundColor: "#F4A261",
-                color: "#111111",
-                padding: "16px 32px",
-                fontSize: "16px",
-                fontWeight: 700,
-                borderRadius: "8px",
-                border: "none",
-                cursor: isLoading ? "not-allowed" : "pointer",
-                opacity: isLoading ? 0.7 : 1,
-                fontFamily: "Inter, sans-serif",
-              }}
+              className="px-8 py-4 text-base font-bold rounded-lg border-none cursor-pointer disabled:cursor-not-allowed disabled:opacity-70 bg-[#F4A261] text-[#111] whitespace-nowrap"
             >
               {isLoading ? "Searching..." : "Lookup"}
             </button>
@@ -158,236 +93,102 @@ export default function DomainLookupPage() {
       </section>
 
       {/* Results Section */}
-      <section style={{ maxWidth: "1000px", margin: "0 auto", padding: "60px 24px" }}>
+      <section className="max-w-5xl mx-auto px-4 md:px-6 py-12 md:py-16">
         {isLoading && (
-          <div style={{ textAlign: "center", padding: "60px 0" }}>
-            <div
-              style={{
-                width: "48px",
-                height: "48px",
-                border: "4px solid #E0E0E0",
-                borderTopColor: "#9E2A2B",
-                borderRadius: "50%",
-                margin: "0 auto 16px",
-                animation: "spin 1s linear infinite",
-              }}
-            />
-            <p style={{ color: "#666666", fontFamily: "Inter, sans-serif" }}>
-              Fetching domain data...
-            </p>
+          <div className="text-center py-12 md:py-16">
+            <div className="w-12 h-12 border-4 border-gray-200 border-t-[#9E2A2B] rounded-full mx-auto mb-4 animate-spin" />
+            <p className="text-[#666]">Fetching domain data...</p>
           </div>
         )}
 
         {whoisData && !isLoading && (
           <>
             {/* WHOIS Table */}
-            <div
-              style={{
-                backgroundColor: "#FFFFFF",
-                borderRadius: "12px",
-                padding: "32px",
-                marginBottom: "32px",
-                boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-              }}
-            >
-              <h2
-                style={{
-                  fontSize: "24px",
-                  fontWeight: 700,
-                  color: "#111111",
-                  marginBottom: "24px",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+            <div className="bg-white rounded-xl p-5 md:p-8 mb-6 md:mb-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-5 md:mb-6">
                 WHOIS Information
               </h2>
-              <table
-                style={{
-                  width: "100%",
-                  borderCollapse: "collapse",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
-                <tbody>
-                  {[
-                    ["Domain", whoisData.domain],
-                    ["Registrar", whoisData.registrar],
-                    ["Registration Date", whoisData.registrationDate],
-                    ["Expiration Date", whoisData.expirationDate],
-                    ["Last Updated", whoisData.updatedDate],
-                    ["Nameservers", whoisData.nameservers.join(", ")],
-                    ["Status", whoisData.status.join(", ")],
-                    ["Registrant Org", whoisData.registrantOrg],
-                    ["Country", whoisData.registrantCountry],
-                  ].map(([label, value], i) => (
-                    <tr
-                      key={label}
-                      style={{
-                        borderBottom: "1px solid #F0F0F0",
-                      }}
-                    >
-                      <td
-                        style={{
-                          padding: "14px 0",
-                          fontWeight: 600,
-                          color: "#111111",
-                          width: "180px",
-                          verticalAlign: "top",
-                        }}
-                      >
-                        {label}
-                      </td>
-                      <td style={{ padding: "14px 0", color: "#666666" }}>
-                        {value}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse min-w-[400px]">
+                  <tbody>
+                    {[
+                      ["Domain", whoisData.domain],
+                      ["Registrar", whoisData.registrar],
+                      ["Registration Date", whoisData.registrationDate],
+                      ["Expiration Date", whoisData.expirationDate],
+                      ["Last Updated", whoisData.updatedDate],
+                      ["Nameservers", whoisData.nameservers.join(", ")],
+                      ["Status", whoisData.status.join(", ")],
+                      ["Registrant Org", whoisData.registrantOrg],
+                      ["Country", whoisData.registrantCountry],
+                    ].map(([label, value]) => (
+                      <tr key={label} className="border-b border-gray-100">
+                        <td className="py-3.5 pr-4 font-semibold text-[#111] whitespace-nowrap align-top text-sm">
+                          {label}
+                        </td>
+                        <td className="py-3.5 text-[#666] text-sm">{value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             {/* DNS Records Table */}
-            <div
-              style={{
-                backgroundColor: "#FFFFFF",
-                borderRadius: "12px",
-                padding: "32px",
-                marginBottom: "32px",
-                boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-              }}
-            >
-              <h2
-                style={{
-                  fontSize: "24px",
-                  fontWeight: 700,
-                  color: "#111111",
-                  marginBottom: "24px",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+            <div className="bg-white rounded-xl p-5 md:p-8 mb-6 md:mb-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#111] mb-5 md:mb-6">
                 DNS Records
               </h2>
-              <table
-                style={{
-                  width: "100%",
-                  borderCollapse: "collapse",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
-                <thead>
-                  <tr style={{ borderBottom: "2px solid #E0E0E0" }}>
-                    {["Type", "Name", "Value", "TTL"].map((header) => (
-                      <th
-                        key={header}
-                        style={{
-                          padding: "12px 16px",
-                          textAlign: "left",
-                          fontWeight: 700,
-                          color: "#111111",
-                          fontSize: "13px",
-                          textTransform: "uppercase",
-                          letterSpacing: "0.5px",
-                        }}
-                      >
-                        {header}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {dnsRecords.map((record, i) => (
-                    <tr
-                      key={i}
-                      style={{
-                        borderBottom: "1px solid #F0F0F0",
-                        backgroundColor: i % 2 === 0 ? "#FAFAFA" : "#FFFFFF",
-                      }}
-                    >
-                      <td style={{ padding: "12px 16px", fontWeight: 600, color: "#9E2A2B" }}>
-                        {record.type}
-                      </td>
-                      <td style={{ padding: "12px 16px", color: "#111111" }}>
-                        {record.name}
-                      </td>
-                      <td
-                        style={{
-                          padding: "12px 16px",
-                          color: "#666666",
-                          fontFamily: "monospace",
-                          fontSize: "14px",
-                        }}
-                      >
-                        {record.value}
-                      </td>
-                      <td style={{ padding: "12px 16px", color: "#999999" }}>
-                        {record.ttl}
-                      </td>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse min-w-[500px]">
+                  <thead>
+                    <tr className="border-b-2 border-gray-200">
+                      {["Type", "Name", "Value", "TTL"].map((header) => (
+                        <th
+                          key={header}
+                          className="py-3 px-4 text-left font-bold text-[#111] text-xs uppercase tracking-wider"
+                        >
+                          {header}
+                        </th>
+                      ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {dnsRecords.map((record, i) => (
+                      <tr
+                        key={i}
+                        className={`border-b border-gray-100 ${i % 2 === 0 ? "bg-gray-50" : "bg-white"}`}
+                      >
+                        <td className="py-3 px-4 font-semibold text-[#9E2A2B] text-sm">{record.type}</td>
+                        <td className="py-3 px-4 text-[#111] text-sm">{record.name}</td>
+                        <td className="py-3 px-4 text-[#666] font-mono text-sm break-all">{record.value}</td>
+                        <td className="py-3 px-4 text-[#999] text-sm">{record.ttl}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             {/* Extended Insights CTA */}
-            <div
-              style={{
-                background: "linear-gradient(135deg, #F4A261 0%, #E8944D 100%)",
-                borderRadius: "12px",
-                padding: "40px",
-                textAlign: "center",
-              }}
-            >
-              <h3
-                style={{
-                  fontSize: "22px",
-                  fontWeight: 700,
-                  color: "#111111",
-                  marginBottom: "12px",
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+            <div className="bg-gradient-to-br from-[#F4A261] to-[#E8944D] rounded-xl p-8 md:p-10 text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-[#111] mb-3">
                 Need More Details?
               </h3>
-              <p
-                style={{
-                  fontSize: "16px",
-                  color: "#111111",
-                  marginBottom: "24px",
-                  opacity: 0.8,
-                  fontFamily: "Inter, sans-serif",
-                }}
-              >
+              <p className="text-base text-[#111]/80 mb-6">
                 Get historical data, trademark checks, and comprehensive domain
                 intelligence with Extended Insights.
               </p>
-              <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link
                   href="/signup"
-                  style={{
-                    backgroundColor: "#9E2A2B",
-                    color: "#FFFFFF",
-                    padding: "14px 28px",
-                    borderRadius: "8px",
-                    fontSize: "15px",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                    fontFamily: "Inter, sans-serif",
-                  }}
+                  className="bg-[#9E2A2B] text-white px-7 py-3.5 rounded-lg text-sm font-semibold no-underline text-center"
                 >
                   Signup Free
                 </Link>
                 <Link
                   href="/tools/seo-scanner"
-                  style={{
-                    backgroundColor: "#FFFFFF",
-                    color: "#111111",
-                    padding: "14px 28px",
-                    borderRadius: "8px",
-                    fontSize: "15px",
-                    fontWeight: 600,
-                    textDecoration: "none",
-                    fontFamily: "Inter, sans-serif",
-                  }}
+                  className="bg-white text-[#111] px-7 py-3.5 rounded-lg text-sm font-semibold no-underline text-center"
                 >
                   Run SEO Scan
                 </Link>
@@ -397,66 +198,22 @@ export default function DomainLookupPage() {
         )}
 
         {!whoisData && !isLoading && (
-          <div style={{ textAlign: "center", padding: "80px 0" }}>
-            <div
-              style={{
-                width: "80px",
-                height: "80px",
-                backgroundColor: "#FFFFFF",
-                borderRadius: "50%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "0 auto 24px",
-                boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-              }}
-            >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#9E2A2B"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
+          <div className="text-center py-16 md:py-20">
+            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.35-4.35" />
               </svg>
             </div>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: 700,
-                color: "#111111",
-                marginBottom: "8px",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
+            <h3 className="text-lg md:text-xl font-bold text-[#111] mb-2">
               Enter a Domain to Get Started
             </h3>
-            <p
-              style={{
-                fontSize: "16px",
-                color: "#666666",
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              Search any domain to view WHOIS data, DNS records, and registration
-              details.
+            <p className="text-base text-[#666]">
+              Search any domain to view WHOIS data, DNS records, and registration details.
             </p>
           </div>
         )}
       </section>
-
-      <style jsx>{`
-        @keyframes spin {
-          to {
-            transform: rotate(360deg);
-          }
-        }
-      `}</style>
     </div>
   );
 }
