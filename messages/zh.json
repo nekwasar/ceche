@@ -638,5 +638,352 @@
       "tryLookup": "Try Domain Lookup",
       "viewDocs": "View API Docs"
     }
+  },
+  "mp": {
+    "main": {
+      "badge": "Marketplace",
+      "title": "Premium Domains",
+      "subtitle": "Browse our curated inventory. Full stats shown — name hidden. Pay to reveal.",
+      "stats": [
+        { "label": "Listed Domains", "value": "2,847" },
+        { "label": "Revealed Today", "value": "142" },
+        { "label": "Avg. Domain Value", "value": "$12,400" },
+        { "label": "Total Sold", "value": "$3.2M" }
+      ],
+      "filters": ["All TLDs", ".com", ".net", ".io", ".co"],
+      "sortBy": ["Sort by Value", "Sort by Score", "Sort by Listed"],
+      "nameHidden": "Name Hidden",
+      "revealName": "Reveal Name",
+      "dataLabels": ["Value", "Score", "Health", "CPC", "DA"],
+      "features": [
+        { "title": "No Name Hints", "desc": "We show everything except the name. No asterisks, no partial reveals. Just the intelligence." },
+        { "title": "Pay to Reveal", "desc": "Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks." },
+        { "title": "Register Anywhere", "desc": "After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register." }
+      ],
+      "cta": { "curated": "Browse Curated", "luck": "Try Your Luck" },
+      "modal": { "title": "Create an Account", "desc": "Sign up to reveal domain names and make purchases.", "redirecting": "Redirecting to signup in {count} seconds...", "signup": "Sign Up Free", "later": "Maybe later" }
+    },
+    "sell": {
+      "badge": "Marketplace",
+      "title": "Sell Your Domains",
+      "subtitle": "List your premium domains on Ceche and reach qualified buyers worldwide.",
+      "steps": ["Submit", "Set Price", "Publish"],
+      "step0": { "title": "Submit Your Domain", "desc": "Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.", "placeholder": "yourdomain.com", "cta": "Continue" },
+      "step1": { "title": "Set Your Price", "desc": "Our AI suggests a price based on domain metrics. You can accept or set your own.", "suggested": "Suggested: $12,500", "cta": "Continue" },
+      "step2": { "title": "Publish Listing", "desc": "Review your listing details and publish. Your domain goes live within 24 hours.", "cta": "Publish Listing" },
+      "fees": {
+        "title": "Fee Structure",
+        "listing": { "title": "Listing Fees", "tiers": [
+          { "tier": "Standard (.com, .net, .org)", "fee": "$5", "min": "—" },
+          { "tier": "Premium (.io, .co, .ai)", "fee": "$10", "min": "—" },
+          { "tier": "Ultra-Premium (1-word, brandable)", "fee": "$25", "min": "—" }
+        ]},
+        "commission": { "title": "Commission Rates", "tiers": [
+          { "tier": "Domains under $5,000", "commission": "8%", "minimum": "$50" },
+          { "tier": "Domains $5,000–$50,000", "commission": "10%", "minimum": "$200" },
+          { "tier": "Domains over $50,000", "commission": "15%", "minimum": "Negotiable" }
+        ]}
+      },
+      "eligibility": { "title": "Eligibility Checklist", "items": [
+        "Domain must be registered and active",
+        "You must verify ownership via TXT or CNAME record",
+        "No active UDRP or legal disputes",
+        "Domain must not be blacklisted for spam"
+      ]},
+      "tools": { "title": "Seller Tools", "items": [
+        { "title": "Analytics Dashboard", "desc": "Track views, offers, and conversion rates for every listing in real time." },
+        { "title": "Bulk Listing", "desc": "Import and manage multiple domain listings at once with CSV upload." },
+        { "title": "Automated Pricing", "desc": "AI-powered suggested pricing based on domain metrics and market trends." }
+      ]},
+      "cta": { "title": "Ready to sell?", "desc": "List your first domain in under 5 minutes.", "signup": "Create Account", "pricing": "View Pricing" }
+    },
+    "luck": {
+      "badge": "Marketplace",
+      "title": "Try Your Luck",
+      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.",
+      "step1": "Step 1: Pick Your TLD",
+      "spinning": "Spinning...",
+      "step2": "Step 2: Pick a Box",
+      "clickToReveal": "Click to reveal",
+      "locked": { "title": "Domain Locked", "desc": "Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately." },
+      "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+          { "title": "Pick a TLD", "desc": "Choose .com, .net, .io, .co, or any TLD at a flat rate." },
+          { "title": "Spin & Pick", "desc": "Three closed boxes appear. Pick one when the animation stops." },
+          { "title": "Reveal & Buy", "desc": "Domain revealed and locked. Prompted to register immediately." }
+        ]
+      },
+      "cta": { "title": "Prefer browsing?", "desc": "Browse our full marketplace with detailed stats on every listing.", "marketplace": "View Marketplace", "signup": "Sign Up Free" },
+      "modal": { "title": "Create an Account", "desc": "Sign up to lock this domain exclusively for you.", "signup": "Sign Up Free", "later": "Maybe later" }
+    },
+    "curated": {
+      "badge": "Marketplace",
+      "title": "Curated Domains",
+      "subtitle": "Hand-picked premium domains sorted by commercial intent and SEO authority. Each listing includes a full intelligence report and valuation.",
+      "tryLuck": "Try Your Luck Instead",
+      "featured": { "label": "Featured Domain", "hidden": "Name hidden until purchase", "instant": "Instant Purchase" },
+      "features": [
+        "Hand-picked by domain experts",
+        "Full intelligence report included",
+        "Verified ownership and clean history",
+        "Instant purchase with secure checkout",
+        "Negotiation tools for making offers",
+        "Guided transfer with registrar support"
+      ],
+      "howItWorks": {
+        "title": "How It Works",
+        "steps": [
+          { "title": "Browse Listings", "desc": "Each curated domain includes valuation, SEO metrics, and commercial intent score." },
+          { "title": "Make an Offer", "desc": "Buy outright or submit an offer. Our system handles counter-offers automatically." },
+          { "title": "Complete Purchase", "desc": "Secure payment. Domain transfers within 24 hours with full support." }
+        ]
+      },
+      "cta": { "title": "Browse all curated domains", "desc": "Updated weekly with new hand-picked premium domains.", "marketplace": "View Marketplace", "luck": "Try Your Luck" }
+    },
+    "unmasking": {
+      "badge": "Marketplace",
+      "title": "How Unmasking Works",
+      "subtitle": "Our blind marketplace protects domain names from front-running and sniping. Here's the process.",
+      "steps": [
+        { "title": "Browse", "desc": "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range." },
+        { "title": "Pay to Reveal", "desc": "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name." },
+        { "title": "Reveal & Inspect", "desc": "The domain name is revealed. You have 5 minutes to inspect and decide. No one else can see or purchase it." },
+        { "title": "Recheck or Walk Away", "desc": "If you pass, the domain goes back to the blind pool. If you proceed, it's locked exclusively for you." },
+        { "title": "Complete or Walk Away", "desc": "Register the domain through our partner registrars (Dynadot, Namecheap, Porkbun) or walk away. No obligation." }
+      ],
+      "vault": { "title": "Vault Protection", "desc": "All unrevealed domain names are stored in an encrypted vault. No partial names, no asterisks, no hints. The only way to see the name is to pay the reveal fee. This eliminates domain front-running and ensures fair pricing for everyone." },
+      "features": [
+        { "title": "Encrypted Vault", "desc": "Domain names stored with zero-knowledge encryption." },
+        { "title": "5-Minute Lock", "desc": "After reveal, you have 5 minutes of exclusive access." },
+        { "title": "No Obligation", "desc": "Walk away at any point. No commitment required." }
+      ],
+      "cta": { "title": "Ready to explore?", "desc": "Browse thousands of premium domains with full intelligence data.", "marketplace": "Browse Marketplace", "luck": "Try Your Luck" }
+    }
+  },
+  "sol": {
+    "index": {
+      "title": "Solutions for Every Domain Need",
+      "subtitle": "Whether you invest, build, or broker — Ceche has the tools, data, and marketplace to power your domain strategy.",
+      "cta": { "ready": "Ready to get started?", "signup": "Create Free Account" },
+      "personas": [
+        { "title": "Domain Investors", "desc": "Portfolio yield analysis, flipper metrics, and drop-catching alerts. Maximize returns on your domain investments.", "stat": "8–15%", "statLabel": "Commission Tiers", "href": "/solutions/domain-investors" },
+        { "title": "Startup Founders", "desc": "Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup.", "stat": "16", "statLabel": "Scoring Dimensions", "href": "/solutions/startup-founders" },
+        { "title": "SEO Agencies", "desc": "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.", "stat": "10K", "statLabel": "API Calls/Day", "href": "/solutions/seo-agencies" },
+        { "title": "Find Available Domains", "desc": "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.", "stat": "4", "statLabel": "TLDs Scanned", "href": "/solutions/find-available" },
+        { "title": "Research Intelligence", "desc": "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.", "stat": "0–100", "statLabel": "Buyer Intent Score", "href": "/solutions/research-intelligence" },
+        { "title": "Buy Premium Domains", "desc": "Acquire high-value domains with secure, transparent transactions. Fast and reliable.", "stat": "$5–$50", "statLabel": "Reveal Fee Range", "href": "/solutions/buy-premium" }
+      ],
+      "learnMore": "Learn more →"
+    },
+    "investors": {
+      "badge": "For Investors",
+      "title": "Maximize Domain Investment Returns",
+      "desc": "Portfolio yield analysis, flipper valuation metrics, drop-catching alerts, and commission tiers from 8–15%. Everything you need to outperform the market.",
+      "cta": ["Start Investing", "View Pricing"],
+      "stats": [
+        { "value": "16", "label": "Scoring Dimensions" },
+        { "value": "8–15%", "label": "Commission Tiers" },
+        { "value": "4", "label": "TLDs Scanned" },
+        { "value": "$5–$50", "label": "Reveal Fee Range" }
+      ],
+      "problem": {
+        "title": "The Investor's Problem",
+        "desc": "Traditional domain investing requires juggling multiple tools, paying opaque fees, and guessing at valuations. You lose deals to faster buyers and overpay on commissions.",
+        "items": ["No unified scoring model across TLDs", "Hidden fees erode profit margins", "Manual drop-catching misses opportunities", "Commission structures eat into flips"]
+      },
+      "solution": {
+        "title": "The Ceche Solution",
+        "desc": "A single platform with 16-dimension scoring, tiered commissions with minimums, real-time alerts, and a marketplace designed for investors — not casual buyers.",
+        "items": ["16-dimension scoring on every domain", "Transparent tiered commission: 15%/12%/10%/8%", "Drop-catching alerts for expiring domains", "Bulk scan up to 5,000 domains at once"]
+      },
+      "commission": {
+        "title": "Tiered Commission Structure",
+        "headers": ["Tier", "Commission", "Minimum"],
+        "rows": [
+          { "tier": "Starter", "commission": "15%", "minimum": "$10" },
+          { "tier": "Growth", "commission": "12%", "minimum": "$50" },
+          { "tier": "Pro", "commission": "10%", "minimum": "$500" },
+          { "tier": "Enterprise", "commission": "8%", "minimum": "$4,000" }
+        ]
+      },
+      "toolsTitle": "Tools Built for Investors",
+      "tools": [
+        { "title": "SEO Scanner", "desc": "Audit backlink profiles and domain authority in seconds." },
+        { "title": "Extended Insights", "desc": "Go beyond the basics with full 16-dimension deep dives." },
+        { "title": "Bulk Analyzer", "desc": "Score up to 5,000 domains in a single batch run." },
+        { "title": "Trademark Monitor", "desc": "Automated alerts for trademark conflicts on your portfolio." }
+      ],
+      "gettingStarted": { "title": "Getting Started", "steps": [
+        { "title": "Create Account", "desc": "Sign up free in 30 seconds" },
+        { "title": "Choose Plan", "desc": "Free, Startup ($79/mo), or Enterprise ($129/mo)" },
+        { "title": "Scan Domains", "desc": "Run SEO Scanner or Bulk Analyzer" },
+        { "title": "Analyze Scores", "desc": "Review 16-dimension reports" },
+        { "title": "Acquire & Flip", "desc": "Buy, hold, or resell with tiered commissions" }
+      ]},
+      "ctaTitle": "Start Flipping Smarter",
+      "ctaDesc": "Join thousands of investors using Ceche to maximize domain ROI.",
+      "ctaSignup": "Create Free Account",
+      "ctaMarketplace": "Browse Marketplace"
+    },
+    "founders": {
+      "badge": "For Founders",
+      "title": "Build Your Brand on the Right Domain",
+      "desc": "AI-powered brandability scoring, pronounceability analysis, and trademark screening — everything you need before you commit to a name.",
+      "steps": [
+        { "title": "Describe Your Brand", "desc": "Enter a brief description of your startup, industry, and audience." },
+        { "title": "Score & Compare", "desc": "Get 16-dimension scores across 4 TLDs with brandability ratings." },
+        { "title": "Claim Your Domain", "desc": "Register, buy on marketplace, or set alerts for expiring names." }
+      ],
+      "features": [
+        { "title": "Brandability Index", "desc": "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset." },
+        { "title": "Pronounceability", "desc": "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember." },
+        { "title": "Extension Penetration", "desc": "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing." },
+        { "title": "Social Availability", "desc": "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass." }
+      ],
+      "builtForTitle": "Built for Founders",
+      "builtFor": [
+        { "title": "Competitor Naming", "desc": "Analyze naming patterns in your industry for competitive insights." },
+        { "title": "Trademark Risk", "desc": "USPTO and WIPO database screening before brand commitment." },
+        { "title": "Appraisal Tool", "desc": "Get algorithmic valuations with confidence intervals." },
+        { "title": "SEO Scanner", "desc": "Evaluate backlink profiles of potential domains instantly." }
+      ],
+      "ctaTitle": "Find Your Brand Domain",
+      "ctaDesc": "Start with a free account. Score unlimited domains across 4 TLDs.",
+      "ctaSignup": "Create Free Account",
+      "ctaAppraise": "Try Appraisal Tool"
+    },
+    "agencies": {
+      "badge": "For Agencies",
+      "title": "Scale Domain Acquisition for Clients",
+      "desc": "Expired domain backlink authority scoring, spam penalty recovery audits, and bulk tools designed for agency workflows. Handle 5,000+ domains per project.",
+      "stats": [
+        { "value": "5K", "label": "Bulk Domains" },
+        { "value": "10K", "label": "API Calls/Day" },
+        { "value": "8–15%", "label": "Commission Tiers" },
+        { "value": "$5–$50", "label": "Reveal Fee" }
+      ],
+      "whyTitle": "Why Agencies Choose Ceche",
+      "why": [
+        { "title": "Client Results", "desc": "Deliver measurable ROI with data-backed domain acquisitions. Show clients exactly why a domain is worth the investment." },
+        { "title": "Time Savings", "desc": "Bulk scan 5,000 domains at once and score them across 16 dimensions. What used to take days now takes minutes." },
+        { "title": "Revenue Growth", "desc": "Lower commission tiers as volume increases. Earn more per deal with 8–15% tiered commissions and minimum-based pricing." }
+      ],
+      "features": [
+        { "title": "Expired Domain Authority", "desc": "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity." },
+        { "title": "Spam Recovery Audits", "desc": "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health." },
+        { "title": "Bulk Analyzer", "desc": "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations." },
+        { "title": "Reporting Dashboard", "desc": "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects." }
+      ],
+      "plansTitle": "Plans for Every Agency",
+      "plansDesc": "Scale from solo consultant to full-service agency",
+      "plans": [
+        { "name": "Free", "price": "$0", "period": "/3 domains/day", "features": ["16-dimension scoring", "SEO Scanner", "Basic insights"], "cta": "Get Started", "dark": false },
+        { "name": "Startup", "price": "$79", "period": "/mo", "features": ["12 domains/day", "Extended Insights", "Trademark Monitor", "Priority support"], "cta": "Start Trial", "dark": true },
+        { "name": "Enterprise", "price": "$129", "period": "/mo", "features": ["Unlimited scoring", "Bulk Analyzer (5K)", "API (10K calls/day)", "White-label reports"], "cta": "Contact Sales", "dark": false }
+      ],
+      "ctaTitle": "Ready to Scale Your Agency?",
+      "ctaDesc": "Start with a free account or talk to our team about volume pricing.",
+      "ctaSignup": "Create Free Account",
+      "ctaApi": "API Documentation"
+    },
+    "available": {
+      "statValue": "4",
+      "statLabel": "TLDs Scanned Simultaneously",
+      "tlds": ".com · .io · .co · .ai",
+      "title": "Find Available Domains in Seconds",
+      "desc": "Scan millions of combinations for available domain names. Smart suggestions, real-time availability checks, and price comparisons across registrars.",
+      "discovery": {
+        "title": "Smart Domain Discovery",
+        "desc1": "Enter keywords, industry, or a brand concept and Ceche will generate hundreds of available options. Filter by length, TLD, price range, and brandability score.",
+        "desc2": "Every result includes a 16-dimension score, so you know which domains have real market potential — not just availability.",
+        "cta": "Start Searching Free"
+      },
+      "filters": { "title": "Filter Options", "items": [
+        { "label": "TLD", "value": ".com, .io, .co, .ai" },
+        { "label": "Max Length", "value": "Up to 15 characters" },
+        { "label": "Price Range", "value": "$8 – $500/yr" },
+        { "label": "Brandability", "value": "High / Medium / Low" },
+        { "label": "Buyer Intent", "value": "Score 0–100" },
+        { "label": "Availability", "value": "Instant check" },
+        { "label": "Price Comparison", "value": "Multi-registrar" }
+      ]},
+      "timeline": {
+        "title": "Never Miss a Domain",
+        "steps": [
+          { "title": "Set Your Criteria", "desc": "Define keywords, TLDs, price range, and brandability thresholds." },
+          { "title": "Monitor & Alert", "desc": "Ceche scans daily and alerts you when matching domains appear." },
+          { "title": "Acquire Instantly", "desc": "One-click registration or marketplace purchase with secure checkout." }
+        ]
+      },
+      "plansTitle": "Choose Your Plan",
+      "plans": [
+        { "name": "Free", "price": "$0", "features": ["3 domains/day", "Basic scoring", "1 TLD"], "highlight": false },
+        { "name": "Startup", "price": "$79/mo", "features": ["12 domains/day", "Extended Insights", "4 TLDs"], "highlight": true },
+        { "name": "Enterprise", "price": "$129/mo", "features": ["Unlimited scoring", "Bulk Analyzer", "API access"], "highlight": false }
+      ],
+      "popular": "Popular",
+      "getStarted": "Get Started",
+      "bulk": { "badge": "Enterprise Feature", "title": "Bulk Domain Scanner", "desc": "Upload a CSV of up to 5,000 domains and get scored results in minutes. Perfect for portfolio audits and prospecting at scale.", "note": "Available on Enterprise plan ($129/mo). Includes API access with 10,000 calls/day." },
+      "ctaTitle": "Find Your Perfect Domain",
+      "ctaDesc": "Start with 3 free domain searches per day.",
+      "ctaSignup": "Create Free Account",
+      "ctaScan": "Try SEO Scanner"
+    },
+    "research": {
+      "breadcrumb": ["Solutions", "Research Intelligence"],
+      "title": "Deep Domain Analysis Before Acquisition",
+      "desc": "Make informed decisions with comprehensive intelligence reports. 16-dimension scoring, ownership history, backlink profiles, and risk assessment — all in one document.",
+      "sections": [
+        { "title": "16-Dimension Scoring", "desc": "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains." },
+        { "title": "Ownership History", "desc": "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues." },
+        { "title": "Backlink Profile", "desc": "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time." },
+        { "title": "Traffic Estimates", "desc": "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest." },
+        { "title": "Valuation Range", "desc": "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value." },
+        { "title": "Risk Assessment", "desc": "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital." }
+      ],
+      "compareTitle": "How Ceche Compares",
+      "compareHeaders": ["Feature", "Ceche", "Dynadot", "GoDaddy"],
+      "compareRows": [
+        { "feature": "16-Dimension Scoring", "ceche": "✓", "dynadot": "✗", "godaddy": "✗" },
+        { "feature": "Buyer Intent Score", "ceche": "0–100", "dynadot": "✗", "godaddy": "✗" },
+        { "feature": "Bulk Analysis (5K+)", "ceche": "✓", "dynadot": "Limited", "godaddy": "✗" },
+        { "feature": "API Access", "ceche": "10K/day", "dynadot": "Basic", "godaddy": "Paid add-on" },
+        { "feature": "Trademark Monitor", "ceche": "✓", "dynadot": "✗", "godaddy": "Paid" },
+        { "feature": "Tiered Commission", "ceche": "8–15%", "dynadot": "Flat", "godaddy": "Flat 20%+" },
+        { "feature": "TLDs Analyzed", "ceche": "4", "dynadot": "10+", "godaddy": "10+" }
+      ],
+      "ctaTitle": "Research Smarter",
+      "ctaDesc": "Get deep intelligence on any domain. Start with a free account.",
+      "ctaSignup": "Create Free Account",
+      "ctaAppraise": "Try Appraisal Tool"
+    },
+    "premium": {
+      "heroTitle": "Acquire Premium Domains with Confidence",
+      "heroDesc": "Secure checkout, transparent pricing, and a 72-hour inspection period. Buy premium domains the way they should be — safely and fairly.",
+      "steps": [
+        { "title": "Discover & Evaluate", "desc": "Browse curated premium domains with full 16-dimension intelligence reports. See ownership history, backlink profiles, and fair market valuation before you make an offer." },
+        { "title": "Negotiate & Transact", "desc": "Make offers, counter-offers, and close deals securely. Payment is processed safely until domain transfer is confirmed and verified." },
+        { "title": "Inspect & Confirm", "desc": "72-hour inspection period after transfer. Verify the domain meets all expectations before the seller receives payment. Full refund if unsatisfied." }
+      ],
+      "trust": [
+        { "title": "Secure Checkout", "desc": "Payment processed securely until domain transfer is confirmed and verified by both parties." },
+        { "title": "72-Hour Inspection", "desc": "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs." },
+        { "title": "Multiple Payment Options", "desc": "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises." }
+      ],
+      "pricingTitle": "Transparent Pricing",
+      "pricingDesc": "No hidden fees. You see the price — you pay the price.",
+      "pricingHeaders": ["Fee Type", "Amount", "Notes"],
+      "pricingRows": [
+        { "type": "Reveal Fee (Standard)", "amount": "$5", "notes": "One-time per domain reveal" },
+        { "type": "Reveal Fee (Priority)", "amount": "$10", "notes": "Expedited reveal with full report" },
+        { "type": "Buyer Commission", "amount": "0%", "notes": "Buyers pay zero commission on Ceche" },
+        { "type": "Transaction Fee", "amount": "Included", "notes": "No extra charge for secure checkout" }
+      ],
+      "ctaTitle": "Buy Premium Domains Today",
+      "ctaDesc": "Secure, transparent transactions with secure checkout on every purchase.",
+      "ctaMarketplace": "Browse Marketplace",
+      "ctaPricing": "View Pricing"
+    }
   }
 }
