@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { DocsMiniNav } from "@/components/layout/DocsMiniNav";
 
@@ -56,14 +57,10 @@ const months = [
   },
 ];
 
-const typeColors: Record<string, string> = {
-  Feature: "#9E2A2B",
-  Fix: "#2D6A4F",
-  Documentation: "#F4A261",
-  Infrastructure: "#888888",
-};
+const typeColors: Record<string, string> = { Feature: "#9E2A2B", Fix: "#2D6A4F", Documentation: "#F4A261", Infrastructure: "#888888" };
 
 export default function HelpChangelogPage() {
+  const t = useTranslations("helpChangelog");
   const [expandedEntry, setExpandedEntry] = useState<string | null>(null);
 
   return (
@@ -71,14 +68,12 @@ export default function HelpChangelogPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row gap-6 md:gap-16">
         <DocsMiniNav />
         <div className="flex-1">
-          <p className="text-[10px] font-mono tracking-[0.3em] uppercase mb-6" style={{ color: "#999999" }}>Changelog</p>
+          <p className="text-[10px] font-mono tracking-[0.3em] uppercase mb-6" style={{ color: "#999999" }}>{t("badge")}</p>
           <h1 className="font-serif font-bold leading-[0.85] tracking-tight mb-8" style={{ fontSize: "clamp(3rem, 8vw, 7rem)", color: "#111111" }}>
-            Every commit,<br />documented<span style={{ color: "#9E2A2B" }}>.</span>
+            {t("title1")}<br />{t("title2")}<span style={{ color: "#9E2A2B" }}>.</span>
           </h1>
           <div className="h-px mb-8" style={{ backgroundColor: "#9E2A2B" }} />
-          <p className="text-lg max-w-2xl leading-relaxed mb-12" style={{ color: "#555555" }}>
-            Every update sourced directly from our git history. Real commits, real dates, real descriptions.
-          </p>
+          <p className="text-lg max-w-2xl leading-relaxed mb-12" style={{ color: "#555555" }}>{t("desc")}</p>
 
           {months.map((month, mi) => (
             <div key={mi} className="mb-12 last:mb-0">
@@ -86,7 +81,6 @@ export default function HelpChangelogPage() {
                 <span className="text-xs font-mono tracking-widest uppercase shrink-0" style={{ color: "#999999" }}>{month.label}</span>
                 <div className="h-px flex-1" style={{ backgroundColor: "#111111", opacity: 0.06 }} />
               </div>
-
               <div className="space-y-0">
                 {month.entries.map((entry) => {
                   const isExpanded = expandedEntry === entry.hash;
@@ -103,12 +97,7 @@ export default function HelpChangelogPage() {
                             <span className="text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded" style={{ backgroundColor: `${color}11`, color }}>{entry.type}</span>
                           </div>
                           <h3 className="text-base font-bold" style={{ color: "#111111" }}>{entry.title}</h3>
-                          {isExpanded && (
-                            <p className="text-xs leading-relaxed mt-2 pt-2" style={{ borderTop: "1px solid rgba(0,0,0,0.06)", color: "#888888" }}>
-                              Committed on {month.label}. View on{' '}
-                              <a href={`https://github.com/nekwasar/ceche/commit/${entry.hash}`} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#9E2A2B" }}>GitHub</a>.
-                            </p>
-                          )}
+                          {isExpanded && <p className="text-xs leading-relaxed mt-2 pt-2" style={{ borderTop: "1px solid rgba(0,0,0,0.06)", color: "#888888" }}>Committed on {month.label}. View on <a href={`https://github.com/nekwasar/ceche/commit/${entry.hash}`} target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "#9E2A2B" }}>GitHub</a>.</p>}
                         </div>
                       </div>
                     </div>
@@ -118,15 +107,14 @@ export default function HelpChangelogPage() {
             </div>
           ))}
 
-          {/* CTA */}
           <div className="rounded-xl p-6 mt-12" style={{ backgroundColor: "#111111" }}>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div>
-                <p className="text-xs font-mono tracking-wider uppercase mb-1" style={{ color: "#F4A261" }}>Coming soon</p>
-                <h3 className="text-lg font-bold" style={{ color: "#FFFFFF" }}>Auction tracking, mobile app, ML valuation</h3>
+                <p className="text-xs font-mono tracking-wider uppercase mb-1" style={{ color: "#F4A261" }}>{t("comingSoon.badge")}</p>
+                <h3 className="text-lg font-bold" style={{ color: "#FFFFFF" }}>{t("comingSoon.title")}</h3>
               </div>
               <a href="/pricing" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold shrink-0" style={{ backgroundColor: "#F4A261", color: "#111111" }}>
-                View roadmap <ArrowRight className="w-4 h-4" />
+                {t("comingSoon.cta")} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>

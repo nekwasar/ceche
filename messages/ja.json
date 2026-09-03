@@ -1249,5 +1249,103 @@
     "redirecting": "Redirecting...",
     "redirectDesc": "Taking you to account creation.",
     "modules": ["Registration Data (RDAP)", "TLD Premium Tier", "Domain Length", "Word Count", "Pronounceability", "Word Segmentation", "Keyword Popularity", "Commercial Intent (CPC)", "Search Results", "Cross-TLD Registration", "Trademark Check", "Domain Authority", "Brandability Score"]
+  },
+  "helpDocs": {
+    "badge": "Documentation",
+    "title1": "Every tool,",
+    "title2": "documented.",
+    "desc": "The Ceche Help Center covers the SEO Scanner, Extended Insights, Bulk Analyzer, Trademark Monitor, Domain Database, and API. Over 320 articles organized by tool, topic, and difficulty level.",
+    "tools": [
+      { "name": "Domain Lookup", "desc": "Free tool. WHOIS data, DNS records, and registrar information for any domain.", "pricing": "Free", "features": ["WHOIS lookup", "DNS record export (A, AAAA, MX, TXT, CNAME)", "Registrar detection", "Expiration tracking"] },
+      { "name": "16-Dimension Appraisal", "desc": "Deep domain valuation using 16 analysis dimensions — RDAP, TLD scoring, brandability, commercial intent, and more.", "pricing": "Free (3 unsigned / 12 signed per day)", "features": ["16 scoring dimensions", "Market-based pricing", "Comparable analysis", "Confidence intervals"] },
+      { "name": "SEO Scanner", "desc": "Evaluate search visibility, backlink quality, organic traffic, and SEO authority in 3-5 seconds.", "pricing": "Premium", "features": ["Domain Rating 0-100", "Organic traffic estimates", "Keyword rankings", "SEO Score composite"] },
+      { "name": "Extended Insights", "desc": "Deep due diligence — 16-dimension valuation, trademark screening, comparable sales, and buyer intent scoring.", "pricing": "$5-$50 per report", "features": ["6 report sections", "Trademark conflict check", "Buyer Intent Score 0-100", "PDF/JSON export"] },
+      { "name": "Bulk Domain Audit", "desc": "Upload a CSV of up to 5,000 domains. Get valuations, SEO scores, priority rankings, and recommended actions.", "pricing": "Premium ($79+/mo)", "features": ["5,000 domains/batch", "Priority Score 1-100", "Custom scoring profiles", "CSV export"] },
+      { "name": "Trademark Monitor", "desc": "Automated USPTO and WIPO screening. Get alerts before a trademark conflict becomes a legal problem.", "pricing": "Premium ($79+/mo)", "features": ["Daily USPTO/WIPO scanning", "4 severity levels", "Email + SMS alerts", "5,000 domains per list"] },
+      { "name": "Domain Database", "desc": "Registration statistics, pricing history, and renewal costs for 2,847 TLDs. Updated daily from ICANN zone files.", "pricing": "Free (current pricing)", "features": ["2,847 TLDs tracked", "24-month pricing history", "420+ registrar feeds", "Search by TLD, keyword, or price"] }
+    ],
+    "tiersTitle": "Subscription tiers",
+    "tiers": [
+      { "tier": "Free", "price": "$0", "features": "12 appraisals/day, basic SEO Scanner, Help Center access", "color": "#888888" },
+      { "tier": "Startup", "price": "$79/mo", "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor", "color": "#F4A261" },
+      { "tier": "Enterprise", "price": "$129/mo", "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support", "color": "#9E2A2B" }
+    ],
+    "needHelp": { "badge": "Need help?", "title": "Premium subscribers get 4-hour support", "cta": "Contact support" },
+    "openTool": "Open tool"
+  },
+  "helpFaq": {
+    "badge": "FAQ",
+    "title1": "Frequently",
+    "title2": "asked.",
+    "desc": "Answers to the most common questions about Ceche — pricing, tools, API, marketplace, and account management.",
+    "sections": [
+      { "title": "Getting started", "items": [
+        { "q": "What is Ceche?", "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace." },
+        { "q": "How does the appraisal engine work?", "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights." },
+        { "q": "What TLDs does Ceche support?", "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions." },
+        { "q": "How do I create an account?", "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required." }
+      ]},
+      { "title": "Pricing & billing", "items": [
+        { "q": "What are the subscription tiers?", "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting." },
+        { "q": "How does Try Your Luck pricing work?", "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring." },
+        { "q": "What are the marketplace fees?", "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000." },
+        { "q": "Do you offer refunds?", "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable." }
+      ]},
+      { "title": "Tools", "items": [
+        { "q": "What's the difference between SEO Scanner and Extended Insights?", "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring." },
+        { "q": "How does the Bulk Analyzer work?", "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds." },
+        { "q": "How does the Trademark Monitor work?", "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)." }
+      ]},
+      { "title": "API & integrations", "items": [
+        { "q": "How do I authenticate API requests?", "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys." },
+        { "q": "What are the API rate limits?", "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC." },
+        { "q": "What SDKs are available?", "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff." }
+      ]},
+      { "title": "Account & support", "items": [
+        { "q": "How do I contact support?", "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel." },
+        { "q": "Can I cancel my subscription?", "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable." }
+      ]}
+    ],
+    "stillQuestions": "Still have questions?",
+    "supportTeam": "Our support team is here to help",
+    "contactSupport": "Contact support"
+  },
+  "helpApi": {
+    "badge": "API Reference",
+    "title1": "Build with",
+    "title2": "Ceche.",
+    "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
+    "baseUrl": "Base URL",
+    "auth": "Authentication",
+    "endpoints": "Endpoints",
+    "rateLimits": "Rate limits",
+    "limits": [
+      { "tier": "Free", "limit": "100 calls/day", "color": "#888888" },
+      { "tier": "Startup", "limit": "500 calls/day", "color": "#F4A261" },
+      { "tier": "Enterprise", "limit": "10,000 calls/day", "color": "#9E2A2B" }
+    ],
+    "enterprise": { "badge": "Enterprise", "title": "10,000 API calls per day", "cta": "Get API key" },
+    "openTool": "Open tool"
+  },
+  "helpContact": {
+    "badge": "Contact",
+    "title1": "Get in",
+    "title2": "touch.",
+    "desc": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours.",
+    "form": { "name": "Name", "namePlaceholder": "Your name", "email": "Email", "emailPlaceholder": "you@company.com", "subject": "Subject", "subjects": ["General inquiry", "Technical support", "Billing question", "Partnership", "Press / Media"], "message": "Message", "messagePlaceholder": "How can we help?", "send": "Send message" },
+    "channels": { "title": "Support channels", "email": { "title": "Email", "value": "support@ceche.net" }, "slack": { "title": "Enterprise Slack", "value": "Private channel for Enterprise subscribers" } },
+    "responseTimes": { "title": "Response times", "times": [
+      { "tier": "Enterprise", "time": "4 hours", "color": "#9E2A2B" },
+      { "tier": "Startup", "time": "4 hours", "color": "#F4A261" },
+      { "tier": "Free", "time": "24 hours", "color": "#888888" }
+    ]},
+    "businessHours": { "title": "Business hours", "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers." }
+  },
+  "helpChangelog": {
+    "badge": "Changelog",
+    "title1": "Every commit,",
+    "title2": "documented.",
+    "desc": "Every update sourced directly from our git history. Real commits, real dates, real descriptions.",
+    "comingSoon": { "badge": "Coming soon", "title": "Auction tracking, mobile app, ML valuation", "cta": "View roadmap" }
   }
 }
