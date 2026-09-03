@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Gem, Lock } from "lucide-react";
+import { Gem, Lock, Clock, CreditCard } from "lucide-react";
 
 export default function BuyPremiumPage() {
   return (
@@ -50,8 +50,8 @@ export default function BuyPremiumPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
           {[
             { icon: Lock, title: "Secure Checkout", desc: "Payment processed securely until domain transfer is confirmed and verified by both parties." },
-            { icon: "⏰", title: "72-Hour Inspection", desc: "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs." },
-            { icon: "💳", title: "Multiple Payment Options", desc: "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises." },
+            { icon: Clock, title: "72-Hour Inspection", desc: "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs." },
+            { icon: CreditCard, title: "Multiple Payment Options", desc: "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises." },
           ].map((t) => (
             <div key={t.title} className="bg-white border border-[#E8E5DF] rounded-xl p-6 md:p-8 text-center">
               <div className="w-12 h-12 rounded-xl bg-[#9E2A2B]/10 flex items-center justify-center mx-auto mb-4">

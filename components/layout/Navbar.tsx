@@ -88,7 +88,7 @@ const megaMenuData: Record<MegaMenuKey, MegaMenuCategory[]> = {
         { icon: <FileSearch className="w-5 h-5" />, title: "Help Center", desc: "Documentation, FAQs, and getting started guides.", href: "/help" },
         { icon: <BookOpen className="w-5 h-5" />, title: "API Docs", desc: "API reference, authentication, and integration guides.", href: "/help/api" },
         { icon: <Users className="w-5 h-5" />, title: "Contact", desc: "Reach our team for support or partnerships.", href: "/help/contact" },
-        { icon: <Globe className="w-5 h-5" />, title: "Changelog", desc: "Product updates and new feature releases.", href: "/changelog" },
+        { icon: <Globe className="w-5 h-5" />, title: "Changelog", desc: "Product updates and new feature releases.", href: "/help/changelog" },
       ],
     },
   ],

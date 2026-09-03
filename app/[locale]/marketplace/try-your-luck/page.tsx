@@ -91,7 +91,7 @@ export default function TryYourLuckPage() {
                   Spinning...
                 </>
               ) : (
-                <>✨ Spin for ${selectedOption?.price}</>
+                <>Spin for ${selectedOption?.price}</>
               )}
             </button>
           </div>
