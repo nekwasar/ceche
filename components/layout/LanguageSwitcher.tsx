@@ -34,10 +34,11 @@ export function LanguageSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1 px-2 py-2 text-white/80 hover:text-white transition-colors"
+        className="flex items-center gap-1 px-2.5 py-1.5 rounded-md text-white/80 hover:text-white hover:bg-white/10 transition-colors text-xs font-bold uppercase tracking-wide"
         aria-label="Select language"
       >
-        <Globe className="w-4 h-4" />
+        <Globe className="w-3.5 h-3.5 hidden md:block" />
+        <span className="md:hidden">{currentLocale}</span>
       </button>
       {open && (
         <div className="absolute right-0 top-full mt-1 bg-white rounded-lg shadow-lg border border-black/10 py-1 min-w-[120px] z-50">
