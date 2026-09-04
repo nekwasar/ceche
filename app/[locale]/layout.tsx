@@ -21,7 +21,7 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
@@ -35,7 +35,11 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <Providers>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider messages={messages} onError={(error) => {
+            if (error.code === 'MISSING_MESSAGE') {
+              console.error(`[i18n] Missing key: ${error.message}`);
+            }
+          }}>
             <SubdomainLayout>{children}</SubdomainLayout>
           </NextIntlClientProvider>
         </Providers>

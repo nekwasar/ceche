@@ -19,7 +19,7 @@ interface MegaMenuCategory {
   items: MegaMenuItem[];
 }
 
-function getMegaMenuData(t: any): Record<MegaMenuKey, MegaMenuCategory[]> {
+function getMegaMenuData(t: any): Record<Exclude<MegaMenuKey, null>, MegaMenuCategory[]> {
   return {
     products: [
       {
@@ -97,7 +97,7 @@ function getMegaMenuData(t: any): Record<MegaMenuKey, MegaMenuCategory[]> {
   };
 }
 
-const navTriggerKeys: MegaMenuKey[] = ["products", "marketplace", "solutions", "resources"];
+const navTriggerKeys: Exclude<MegaMenuKey, null>[] = ["products", "marketplace", "solutions", "resources"];
 
 export function Navbar() {
   const t = useTranslations("nav");
@@ -163,12 +163,11 @@ export function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
-  const triggerLabels: Record<MegaMenuKey, string> = {
+  const triggerLabels: Record<Exclude<MegaMenuKey, null>, string> = {
     products: t("triggers.products"),
     marketplace: t("triggers.marketplace"),
     solutions: t("triggers.solutions"),
     resources: t("triggers.resources"),
-    null: "",
   };
 
   return (
@@ -273,7 +272,7 @@ export function Navbar() {
                   className="w-64 flex-shrink-0 pr-6 pt-8 pb-8 overflow-y-auto flex flex-col justify-between"
                   style={{ backgroundColor: "#7A1F21" }}
                 >
-                  {(Object.keys(megaMenuData) as MegaMenuKey[]).map((sectionKey) => (
+                  {(Object.keys(megaMenuData) as Exclude<MegaMenuKey, null>[]).map((sectionKey) => (
                     <div key={sectionKey} className="flex-1">
                       <p className="text-white/50 text-sm font-bold uppercase tracking-wider mb-3 px-3">
                         {triggerLabels[sectionKey]}

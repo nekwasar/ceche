@@ -91,7 +91,7 @@ export default function SearchPage() {
                   <span className="text-xs font-mono uppercase tracking-wider block mb-4" style={{ color: "#999999" }}>{t("whoisTitle")}</span>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     {[t("whoisLabels.0"), t("whoisLabels.1"), t("whoisLabels.2"), t("whoisLabels.3")].map((label, i) => {
-                      const values = [result.whois.registrar, result.whois.expiry, result.whois.registrant, result.whois.nameservers.join(", ")];
+                      const values = [result.whois?.registrar, result.whois?.expiry, result.whois?.registrant, result.whois?.nameservers?.join(", ")];
                       return <div key={i}><div className="font-mono text-xs uppercase" style={{ color: "#999999" }}>{label}</div><div style={{ color: "#111111" }}>{values[i]}</div></div>;
                     })}
                   </div>
