@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
+import { IntlProvider } from "@/components/IntlProvider";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n/config";
@@ -35,9 +35,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <Providers>
-          <NextIntlClientProvider messages={messages}>
+          <IntlProvider messages={messages} locale={locale}>
             <SubdomainLayout>{children}</SubdomainLayout>
-          </NextIntlClientProvider>
+          </IntlProvider>
         </Providers>
       </body>
     </html>
