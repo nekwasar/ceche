@@ -35,11 +35,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <Providers>
-          <NextIntlClientProvider messages={messages} onError={(error) => {
-            if (error.code === 'MISSING_MESSAGE') {
-              console.error(`[i18n] Missing key: ${error.message}`);
-            }
-          }}>
+          <NextIntlClientProvider messages={messages}>
             <SubdomainLayout>{children}</SubdomainLayout>
           </NextIntlClientProvider>
         </Providers>
