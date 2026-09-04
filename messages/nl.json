@@ -1,0 +1,2857 @@
+{
+  "nav": {
+    "triggers": {
+      "products": "Producten",
+      "marketplace": "Marktplaats",
+      "solutions": "Oplossingen",
+      "resources": "Hulpbronnen"
+    },
+    "links": {
+      "pricing": "Prijzen",
+      "login": "Inloggen",
+      "signup": "Gratis aanmelden"
+    },
+    "categories": {
+      "intelligence": "Intelligentie",
+      "platform": "Platform",
+      "buyDomains": "Domeinen kopen",
+      "sellDomains": "Domeinen verkopen",
+      "byRole": "Op rol",
+      "byNeed": "Op behoefte",
+      "explore": "Verkennen",
+      "support": "Ondersteuning"
+    },
+    "items": {
+      "domainLookup": {
+        "title": "Domein opzoeken",
+        "desc": "Gratis tool: WHOIS-gegevens, DNS-records."
+      },
+      "appraisal": {
+        "title": "16-dimension taxatie",
+        "desc": "Diepgaande domeinwaardering met 16 metrische uitsplitsingen en marktgebaseerde prijzen."
+      },
+      "domainScanner": {
+        "title": "Domeinscanner",
+        "desc": "Premium tool: DA, spamscore, backlinkprofielen en indexatiestatus. Abonnement vereist."
+      },
+      "extendedInsights": {
+        "title": "Uitgebreide inzichten",
+        "desc": "Premium tool: diepgaande DNS-records, USPTO/WIPO-merken en WHOIS-geschiedenis."
+      },
+      "bulkAudit": {
+        "title": "Bulk domeinaudit",
+        "desc": "Premium tool: batchverwerking en analyse van maximaal 1000 domeinen tegelijk."
+      },
+      "apiAccess": {
+        "title": "API-toegang",
+        "desc": "RESTful API voor programmatische domeinintelligentie op schaal."
+      },
+      "trademarkMonitor": {
+        "title": "Merkmonitor",
+        "desc": "USPTO/WIPO-conflictdetectie en geautomatiseerde waarschuwingen."
+      },
+      "domainDatabase": {
+        "title": "Domeindatabase",
+        "desc": "Uitgebreid TLD-register en verloop tracking."
+      },
+      "standardMarketplace": {
+        "title": "Standaard marktplaats",
+        "desc": "Blader door premium domeinen met volledige statistieken. Naam verborgen — betaal om te onthullen."
+      },
+      "curatedDomains": {
+        "title": "Gecureerde domeinen",
+        "desc": "Handgekozen premium domeinen geverifieerd door ons team."
+      },
+      "tryYourLuck": {
+        "title": "Probeer je geluk",
+        "desc": "Kies een TLD, draai 3 dozen, onthul een premium domein. Exclusief voor jou vergrendeld."
+      },
+      "listDomain": {
+        "title": "Domein aanbieden",
+        "desc": "Verkoop je premium domein op Ceche. $5-$10 aanbiedingskosten, 8-15% commissie."
+      },
+      "domainInvestors": {
+        "title": "Domeinbeleggers",
+        "desc": "Portefeuille-opbrengstanalyse, flipper waardering en drop-catching waarschuwingen."
+      },
+      "startupFounders": {
+        "title": "Startup-oprichters",
+        "desc": "Merkbaarheidsindex, uitspreekbaarheid en extensiecontrole."
+      },
+      "seoAgencies": {
+        "title": "SEO-bureaus",
+        "desc": "Verlopen domein backlink-authoriteitsscores en spamherstel audits."
+      },
+      "findAvailable": {
+        "title": "Beschikbare domeinen vinden",
+        "desc": "Scan miljoenen combinaties voor beschikbare premium namen."
+      },
+      "researchIntelligence": {
+        "title": "Onderzoeksintelligentie",
+        "desc": "Diepgaande domeinanalyse vóór acquisitiebesluiten."
+      },
+      "buyPremium": {
+        "title": "Premium domeinen kopen",
+        "desc": "Verwerf hoogwaardige domeinen met veilige, transparante transacties."
+      },
+      "blog": {
+        "title": "Blog",
+        "desc": "Domeinbeleggingstips, platformupdates en branche-inzichten."
+      },
+      "ebooks": {
+        "title": "E-boeken",
+        "desc": "Diepgaande gidsen over domeinwaardering, SEO en merkstrategie."
+      },
+      "caseStudies": {
+        "title": "Casestudies",
+        "desc": "Echte verhalen van domeinbeleggers en startup-oprichters."
+      },
+      "helpCenter": {
+        "title": "Helpcentrum",
+        "desc": "Documentatie, FAQ's en startersgidsen."
+      },
+      "apiDocs": {
+        "title": "API-documentatie",
+        "desc": "API-referentie, authenticatie en integratiegidsen."
+      },
+      "contact": {
+        "title": "Contact",
+        "desc": "Neem contact op met ons team voor ondersteuning of partnerschappen."
+      },
+      "changelog": {
+        "title": "Changelog",
+        "desc": "Productupdates en nieuwe functies."
+      }
+    },
+    "sidebar": {
+      "overview": "Overzicht",
+      "documentation": "Documentatie",
+      "apiReference": "API-referentie",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "changelog": "Changelog"
+    },
+    "megaMenu": {
+      "products": "Tools en API's voor domeinintelligentie",
+      "marketplace": "Premium domeinen kopen en verkopen",
+      "solutions": "Gebouwd voor je rol en workflow",
+      "resources": "Leer en krijg ondersteuning"
+    }
+  },
+  "footer": {
+    "tagline": "Enterprise-grade domeinintelligentie en marktplaatsplatform.",
+    "sections": {
+      "products": "Producten",
+      "marketplace": "Marktplaats",
+      "company": "Bedrijf",
+      "legal": "Juridisch"
+    },
+    "links": {
+      "domainAppraiser": "Domeintaxateur",
+      "seoScanner": "SEO-scanner",
+      "extendedInsights": "Uitgebreide inzichten",
+      "bulkAnalyzer": "Bulk-analyseur",
+      "apiAccess": "API-toegang",
+      "curatedDomains": "Gecureerde domeinen",
+      "tryYourLuck": "Probeer je geluk",
+      "sellDomains": "Domeinen verkopen",
+      "howUnmaskingWorks": "Hoe onthulling werkt",
+      "about": "Over ons",
+      "affiliates": "Partners",
+      "blog": "Blog",
+      "contact": "Contact",
+      "terms": "Gebruiksvoorwaarden",
+      "privacy": "Privacybeleid",
+      "cookies": "Cookiebeleid"
+    },
+    "copyright": "Alle rechten voorbehouden.",
+    "platform": "Domeinintelligentieplatform"
+  },
+  "home": {
+    "hero": {
+      "title1": "Premium domeinnamen, gekocht en verkocht met",
+      "titleHighlight": "intelligentie",
+      "subtitle": "Elke advertentie toont volledige statistieken — geschatte waarde, gezondheidsscore, CPC, merkbaarheid — maar de naam blijft verborgen totdat je betaalt om deze te onthullen. Geen veilingopblazing. Geen sniping.",
+      "searchPlaceholder": "Zoek elk domein, bijv. brand.com",
+      "searchButton": "Domein zoeken",
+      "badges": {
+        "blindListings": "Blinde advertenties",
+        "dimensionIntelligence": "16-dimension intelligentie",
+        "secureTransactions": "Veilige transacties"
+      }
+    },
+    "searchTool": {
+      "badge": "Gratis tool",
+      "title": "Zoek elk domein",
+      "description": "Typ elk domein in de bovenstaande zoekbalk. We vertellen je of het beschikbaar is, wat het waard is en wat je ermee kunt bouwen. Geen aanmelding vereist.",
+      "taken": {
+        "title": "Domein bezet?",
+        "desc": "We tonen de WHOIS-details — wie het bezit, wanneer het verloopt, welke registrar ze gebruikten en nameserver-informatie."
+      },
+      "available": {
+        "title": "Domein beschikbaar?",
+        "desc": "We rangschikken het als Premium, Mid of Laag — geen verwarrende scores, gewoon een duidelijk label. Plus suggesties voor wat je ermee kunt bouwen."
+      },
+      "appraise": {
+        "title": "Diepgaande taxatie",
+        "desc": "Klik op 'Taxeer deze naam' voor de volledige 16-dimension analyse — uitspreekbaarheid, merkrisico, historische DNS, merkbaarheidsscore en geschatte waarde."
+      }
+    },
+    "builtFor": {
+      "badge": "Gebouwd voor",
+      "title": "Drie soorten mensen, één platform",
+      "investors": {
+        "title": "Domeinbeleggers",
+        "desc": "Scan duizenden woordcombinaties, taxeer shortlists in seconden en spot ondergewaardeerde namen voordat de markt het opmerkt.",
+        "stat": "200+",
+        "statLabel": "checks per scan"
+      },
+      "founders": {
+        "title": "Startup-oprichters",
+        "desc": "Vind een naam die gemakkelijk uit te spreken, gemakkelijk te spellen en veilig te gebruiken is. De 16-dimension engine controleert uitspreekbaarheid, merkconflicten en merkbaarheid.",
+        "stat": "16",
+        "statLabel": "dimensies gecontroleerd"
+      },
+      "agencies": {
+        "title": "SEO-bureaus",
+        "desc": "Vind verlopen domeinen die nog autoriteit en schone backlinks hebben. De scanner toont DA, spamscore en indexatiestatus.",
+        "stat": "4",
+        "statLabel": "metrieken per domein"
+      }
+    },
+    "marketplace": {
+      "badge": "Marktplaats",
+      "title": "Premium namen, namen verborgen",
+      "desc1": "Elke advertentie toont volledige intelligentie — geschatte waarde, gezondheidsscore, CPC, merkbaarheid, TLD en trefwoordintentie — alles behalve de naam zelf.",
+      "desc2": "Openbare marktplaatsen worden gescraped zodra een premium naam verschijnt. Ceche verbergt de naam en toont in plaats daarvan de intelligentie.",
+      "cta": "Blader door de marktplaats",
+      "revealPricingTitle": "Onthullingsprijzen",
+      "tryYourLuckTitle": "Probeer je geluk",
+      "tryYourLuckCta": "Probeer je geluk"
+    },
+    "howItWorks": {
+      "badge": "Hoe het werkt",
+      "title": "Draai, kies, bezit",
+      "step1": {
+        "title": "Kies je TLD",
+        "desc": "Kies .com ($79), .net ($39), .io ($29) of .co ($9). Of sla de selectie over en betaal een vast tarief van $19 voor elke TLD."
+      },
+      "step2": {
+        "title": "Draai en kies een doos",
+        "desc": "Drie gesloten dozen verschijnen met een draaiende animatie. Elke bevat een uniek premium domein."
+      },
+      "step3": {
+        "title": "Onthul en registreer",
+        "desc": "Je domein wordt onmiddellijk onthuld. Het is exclusief voor jou vergrendeld — niemand anders kan het kopen."
+      },
+      "cta": "Probeer je geluk nu"
+    },
+    "underTheHood": {
+      "badge": "Onder de motorkap",
+      "title": "Gebouwd voor snelheid en vertrouwen",
+      "description": "Elke domeinnaam wordt gecodeerd op rust. Elke scan draait op echte infrastructuur. Geen shortcuts.",
+      "goroutine": {
+        "title": "50-worker goroutine pool",
+        "desc": "Onze scanner draait 50 gelijktijdige goroutines, elk met een 5 seconden time-out voor DNS-records."
+      },
+      "encryption": {
+        "title": "AES-256-GCM-codering",
+        "desc": "Elke domeinnaam in onze database is gecodeerd met AES-256-GCM."
+      },
+      "caching": {
+        "title": "In-geheugen caching",
+        "desc": "Herhaalde query's raken zero-cost bigcache met een 1 uur TTL."
+      }
+    },
+    "faq": {
+      "badge": "Veelgestelde vragen",
+      "title": "Veelgestelde vragen",
+      "items": [
+        {
+          "question": "Hoeveel gratis taxaties krijg ik?",
+          "answer": "Als je niet aangemeld bent, krijg je 3 taxaties per dag. Meld je gratis aan en je krijgt 12 per dag."
+        },
+        {
+          "question": "Wat is het verschil tussen naamzoeken en taxatie?",
+          "answer": "Naamzoeken is gratis en direct — het vertelt je of een domein beschikbaar is. Taxatie is de diepgaande 16-dimension analyse."
+        },
+        {
+          "question": "Hoe werkt Probeer je geluk?",
+          "answer": "Kies een TLD en betaal de TLD-specifieke prijs. Drie gesloten dozen verschijnen. Kies er een als het stopt."
+        },
+        {
+          "question": "Wat gebeurt er nadat ik een domeinnaam onthul?",
+          "answer": "Na onthulling is het domein van jou om te evalueren. We tonen directe links om het te registreren."
+        },
+        {
+          "question": "Wat is inbegrepen in het Premium-abonnement?",
+          "answer": "Premium Startup geeft je 30 taxaties/dag plus toegang tot de Domeinscanner, Uitgebreide inzichten en Bulk domeinaudit."
+        },
+        {
+          "question": "Kan ik mijn domeinen verkopen op Ceche?",
+          "answer": "Ja. Bied je premium domein aan op onze marktplaats."
+        },
+        {
+          "question": "Zijn mijn zoekgegevens privé?",
+          "answer": "Ja. Domeinnamen die je zoekt worden gecodeerd met AES-256-GCM vóór opslag."
+        }
+      ]
+    },
+    "worldMap": {
+      "title": "Domeinliquiditeit wereldwijd versnellen",
+      "description": "Realtime intelligentie voor domeinbeleggers, startup-oprichters en SEO-bureaus in 9 talen.",
+      "cta": "Begin met taxeren"
+    },
+    "cta": {
+      "title": "Klaar om je volgende domein te vinden?",
+      "description": "Begin met 3 gratis taxaties per dag. Geen creditcard vereist.",
+      "signup": "Gratis aanmelden",
+      "pricing": "Bekijk prijzen"
+    },
+    "app": {
+      "welcomeBack": "Welkom terug, {name}",
+      "plan": "Plan",
+      "quickActions": "Snelle acties",
+      "appraiseDomain": "Domein taxeren →",
+      "startScan": "Scan starten →",
+      "browseMarketplace": "Marktplaats bekijken →",
+      "apiKeys": "API-sleutels",
+      "manageKeys": "Sleutels beheren →"
+    }
+  },
+  "pricingPage": {
+    "hero": {
+      "badge": "Prijzen",
+      "title": "Eenvoudige, transparante prijzen",
+      "subtitle": "Begin gratis. Upgrade wanneer je meer power nodig hebt. Annuleer op elk moment."
+    },
+    "annual": {
+      "banner": "Bespaar tot $260/jaar met jaarlijkse facturering",
+      "mostPopular": "Meest populair"
+    },
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "description": "Begin met basis tools. Geen creditcard vereist.",
+        "annualNote": "",
+        "cta": "Aan de slag",
+        "features": [
+          "3 taxaties/dag (niet-aangemeld)",
+          "12 taxaties/dag (aangemeld)",
+          "Naamzoek tool",
+          "Basis WHOIS-opzoeking",
+          "Domeinscanner (DA, spam, backlinks)",
+          "Uitgebreide inzichten (USPTO/WIPO)",
+          "Bulk domeinaudit",
+          "API-toegang"
+        ],
+        "included": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "startup": {
+        "name": "Premium Startup",
+        "description": "Voor kleine teams en serieuze domeinbeleggers.",
+        "annualNote": "bespaart $160/jaar",
+        "cta": "Premium starten",
+        "features": [
+          "30 taxaties/dag",
+          "Naamzoek tool",
+          "Domeinscanner (DA, spam, backlinks)",
+          "Uitgebreide inzichten (USPTO/WIPO)",
+          "Bulk domeinaudit",
+          "Prioriteitsmarktplaatsvermelding",
+          "API-toegang",
+          "Prioriteitsondersteuning"
+        ],
+        "included": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false
+        ]
+      },
+      "enterprise": {
+        "name": "Premium Enterprise",
+        "description": "Voor bureaus, professionals en power users.",
+        "annualNote": "bespaart $260/jaar",
+        "cta": "Enterprise starten",
+        "features": [
+          "Onbeperkte taxaties",
+          "Naamzoek tool",
+          "Domeinscanner (DA, spam, backlinks)",
+          "Uitgebreide inzichten (USPTO/WIPO)",
+          "Bulk domeinaudit",
+          "Prioriteitsmarktplaatsvermelding",
+          "Volledige API-toegang",
+          "Prioriteitsondersteuning"
+        ],
+        "included": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "tryYourLuck": {
+      "badge": "Probeer je geluk",
+      "title": "Draai. Onthul. Bezit.",
+      "subtitle": "Kies een TLD, draai 3 dozen, onthul een premium domein exclusief voor jou vergrendeld.",
+      "mostPopular": "Meest populair"
+    },
+    "fees": {
+      "reveal": {
+        "badge": "Marktplaats",
+        "title": "Onthullingskosten",
+        "description": "Standaard advertenties tonen statistieken met de naam verborgen. Betaal een eenmalige onthullingsfee om de domeinnaam te zien.",
+        "headers": {
+          "tier": "Niveau",
+          "valueRange": "Waarderingsbereik",
+          "fee": "Fee"
+        },
+        "rows": [
+          {
+            "tier": "Laag",
+            "range": "Onder $500",
+            "fee": "$5"
+          },
+          {
+            "tier": "Middel",
+            "range": "$500 – $5.000",
+            "fee": "$10"
+          },
+          {
+            "tier": "Hoog",
+            "range": "$5.001 – $50.000",
+            "fee": "$25"
+          },
+          {
+            "tier": "Premium",
+            "range": "$50.001+",
+            "fee": "$50"
+          }
+        ]
+      },
+      "listing": {
+        "badge": "Voor verkopers",
+        "title": "Aanbiedingskosten",
+        "standard": {
+          "name": "Standaard aanbieding",
+          "desc": "30 dagen zichtbaarheid",
+          "price": "$5"
+        },
+        "priority": {
+          "name": "Prioriteitsplaatsing",
+          "desc": "72-uur boost + uitgelicht",
+          "price": "$10"
+        }
+      },
+      "commission": {
+        "badge": "Commissies",
+        "title": "Verkoperscommissietarieven",
+        "headers": {
+          "saleAmount": "Verkoopbedrag",
+          "rate": "Tarief",
+          "minFee": "Min. fee"
+        },
+        "rows": [
+          {
+            "amount": "$0 – $500",
+            "rate": "15%",
+            "min": "$10"
+          },
+          {
+            "amount": "$501 – $5.000",
+            "rate": "12%",
+            "min": "$50"
+          },
+          {
+            "amount": "$5.001 – $50.000",
+            "rate": "10%",
+            "min": "$500"
+          },
+          {
+            "amount": "$50.001+",
+            "rate": "8%",
+            "min": "$4.000"
+          }
+        ]
+      }
+    },
+    "compare": {
+      "badge": "Vergelijken",
+      "title": "Ceche vs de concurrentie",
+      "subtitle": "Zie hoe Ceche het opneemt tegen traditionele domeinplatforms.",
+      "headers": {
+        "feature": "Functie",
+        "ceche": "Ceche",
+        "godaddy": "GoDaddy",
+        "sedo": "Sedo"
+      },
+      "rows": [
+        "AI-domeinwaardering",
+        "16-dimension scoring",
+        "WHOIS + DNS-inlichtingen",
+        "SEO/DA/spam-scan",
+        "Bulk domeinaudit",
+        "Merkmmonitoring",
+        "Marktplaats onthullingsmodel",
+        "API-toegang",
+        "Gratis niveau beschikbaar"
+      ]
+    },
+    "cta": {
+      "title": "Klaar om te beginnen?",
+      "description": "Maak een gratis account in seconden. Geen creditcard vereist.",
+      "signup": "Gratis account aanmaken",
+      "help": "Bezoek het helpcentrum",
+      "lookup": "Gratis domeinopzoeking"
+    }
+  },
+  "tools": {
+    "scanner": {
+      "badge": "SEO-SCANNER",
+      "title": "SEO-scanner",
+      "description": "Domein- en SEO-audit met DA, spamscore, backlinkprofielen en indexatiestatus. Krijg direct inzicht in de zoekmachinegezondheid van elk domein.",
+      "placeholder": "Voer domein in om te scannen",
+      "scanButton": "Nu scannen",
+      "scanningButton": "Scannen...",
+      "limitsTitle": "Scanlimieten",
+      "limits": [
+        {
+          "plan": "Startup",
+          "scans": "30 per dag",
+          "price": "$79/maand"
+        },
+        {
+          "plan": "Enterprise",
+          "scans": "Onbeperkt",
+          "price": "$129/maand"
+        }
+      ],
+      "howItWorks": {
+        "title": "Hoe het werkt",
+        "steps": [
+          {
+            "title": "Voer domein in",
+            "desc": "Typ elk domein in de bovenstaande zoekbalk."
+          },
+          {
+            "title": "Analyse uitvoeren",
+            "desc": "Onze engine scant direct 16 dimensies van domeingezondheid."
+          },
+          {
+            "title": "Rapport ophalen",
+            "desc": "Bekijk gedetailleerde SEO-metrieken, backlinkgegevens en spamscores."
+          }
+        ]
+      },
+      "features": {
+        "title": "Wat je krijgt",
+        "items": [
+          {
+            "title": "Domeinautoriteit en pagina-autoriteit",
+            "desc": "DA- en PA-metrieken met historische trends."
+          },
+          {
+            "title": "Backlinkprofiel",
+            "desc": "Volledige backlinkanalyse met verwijzende domeinen."
+          },
+          {
+            "title": "Spamscore",
+            "desc": "Machine learning spamdetectie met pénalisatierisico."
+          },
+          {
+            "title": "Indexatiestatus",
+            "desc": "Zoekmachine-indexatiechecks op Google, Bing en Yandex."
+          },
+          {
+            "title": "Technische SEO",
+            "desc": "Core Web Vitals, mobielvriendelijkheid en gestructureerde data-analyse."
+          },
+          {
+            "title": "Concurrentieanalyse",
+            "desc": "Vergelijk domeinmetrieken met topconcurrenten."
+          }
+        ]
+      },
+      "included": {
+        "title": "Wat is inbegrepen",
+        "items": [
+          "DA- en PA-metrieken met historische trends",
+          "Volledige backlinkanalyse met verwijzende domeinen",
+          "Machine learning spamdetectie met pénalisatierisico",
+          "Zoekmachine-indexatiechecks op Google, Bing en Yandex",
+          "Core Web Vitals, mobielvriendelijkheid en gestructureerde data-analyse",
+          "Concurrentievergelijking met topdomeinen"
+        ],
+        "cta": "Meer diepgaande analyse nodig? Probeer Uitgebreide inzichten →"
+      },
+      "cta": {
+        "title": "Klaar voor meer diepgaande analyse?",
+        "description": "Upgrade voor toegang tot historische gegevens en API-integraties.",
+        "pricing": "Bekijk prijzen",
+        "extended": "Bekijk Uitgebreide inzichten"
+      }
+    },
+    "lookup": {
+      "badge": "GRATIS TOOL",
+      "title": "Domein opzoeken",
+      "description": "Directe WHOIS-gegevens, DNS-records en registratiedetails voor elk domein.",
+      "placeholder": "Voer domein in (bijv. example.com)",
+      "lookupButton": "Opzoeken",
+      "searchingButton": "Zoeken...",
+      "loading": "Domeingegevens ophalen...",
+      "whoisTitle": "WHOIS-informatie",
+      "dnsTitle": "DNS-records",
+      "dnsHeaders": [
+        "Type",
+        "Naam",
+        "Waarde",
+        "TTL"
+      ],
+      "whoisLabels": [
+        "Domein",
+        "Registrar",
+        "Registratiedatum",
+        "Vervaldatum",
+        "Laatst bijgewerkt",
+        "Nameservers",
+        "Status",
+        "Registrant-org",
+        "Land"
+      ],
+      "needMore": {
+        "title": "Meer details nodig?",
+        "description": "Krijg historische gegevens en uitgebreide domeinintelligentie met Uitgebreide inzichten.",
+        "signup": "Gratis aanmelden",
+        "seoScan": "SEO-scan uitvoeren"
+      },
+      "empty": {
+        "title": "Voer een domein in om te beginnen",
+        "description": "Zoek elk domein om WHOIS-gegevens en DNS-records te bekijken."
+      }
+    },
+    "insights": {
+      "badge": "PREMIUM",
+      "title": "Uitgebreide inzichten",
+      "description": "Diepgaande historische gegevens, DNS-records, USPTO/WIPO-merkcontroles en WHOIS/RDAP-logs.",
+      "cta": "Uitgebreide inzichten ophalen",
+      "revealTitle": "Onthullingsprijzen",
+      "tiers": [
+        {
+          "name": "Basis",
+          "price": "$5",
+          "desc": "Standaard domeinwaarde"
+        },
+        {
+          "name": "Standaard",
+          "price": "$10",
+          "desc": "Gemiddelde domeinwaarde"
+        },
+        {
+          "name": "Premium",
+          "price": "$25",
+          "desc": "Hoogwaardig domein"
+        },
+        {
+          "name": "Enterprise",
+          "price": "$50",
+          "desc": "Ultra-premium domein"
+        }
+      ],
+      "pricingNote": "Prijzen gebaseerd op domeinwaarde en complexiteit",
+      "reportTitle": "Wat is inbegrepen in je rapport",
+      "sections": [
+        {
+          "title": "Historische gegevens",
+          "desc": "Wayback Machine-snapshots en historische inhoudswijzigingen."
+        },
+        {
+          "title": "DNS-records",
+          "desc": "Volledige DNS-recordopsomming inclusief A, MX, NS, TXT en CNAME."
+        },
+        {
+          "title": "WHOIS / RDAP",
+          "desc": "Registratiegegevens, domeinleeftijd, registrar-geschiedenis."
+        },
+        {
+          "title": "Merkcontroles",
+          "desc": "Conflict detectie in USPTO- en WIPO-merkdatabanken."
+        },
+        {
+          "title": "SSL-certificaat",
+          "desc": "Certificaatautoriteit, vervaldatums en ketenverificatie."
+        },
+        {
+          "title": "Server-intelligentie",
+          "desc": "Hostingprovider, IP-geolocatie en technologiestack."
+        }
+      ],
+      "useCasesTitle": "Wanneer Uitgebreide inzichten gebruiken",
+      "useCases": [
+        {
+          "title": "Domeinacquisitie",
+          "desc": "Onderzoek de domeingeschiedenis voordat je een bod doet."
+        },
+        {
+          "title": "Merkvrijgave",
+          "desc": "Controleer op conflicten voordat je een merk lanceert."
+        },
+        {
+          "title": "Concurrentieanalyse",
+          "desc": "Begrijp de domeinstrategieën van concurrenten."
+        },
+        {
+          "title": "Portefeuille-diligentie",
+          "desc": "Auditeer je portefeuille op verborgen risico's."
+        }
+      ],
+      "ctaTitle": "Ontgrendel domeinintelligentie",
+      "ctaDescription": "Krijg het volledige beeld met Uitgebreide inzichtsrapporten.",
+      "startFreeTrial": "Gratis proefperiode starten",
+      "tryLookup": "Probeer eerst Domein opzoeken"
+    },
+    "bulk": {
+      "badge": "ENTERPRISE",
+      "title": "Bulk-analyseur",
+      "description": "Meerderedomein batchevaluatietool voor portefeuilleanalyse en grootschalig domeinonderzoek.",
+      "cta": "Bulk-toegang krijgen",
+      "statValue": "5.000",
+      "statLabel": "domeinen per batch",
+      "stats": [
+        {
+          "value": "16",
+          "label": "Dimensies"
+        },
+        {
+          "value": "4",
+          "label": "TLD's"
+        },
+        {
+          "value": "<3s",
+          "label": "Per domein"
+        }
+      ],
+      "howItWorks": {
+        "title": "Hoe het werkt",
+        "steps": [
+          {
+            "title": "Lijst uploaden",
+            "desc": "Plak domeinen of upload een CSV-bestand met maximaal 5.000 domeinen."
+          },
+          {
+            "title": "Scoring configureren",
+            "desc": "Stel aangepaste gewichten in voor elke van de 16 scoringdimensies."
+          },
+          {
+            "title": "Verwerken",
+            "desc": "Onze engine evalueert alle domeinen parallel."
+          },
+          {
+            "title": "Resultaten exporteren",
+            "desc": "Download CSV met scores en prijsgegevens."
+          }
+        ]
+      },
+      "outputTitle": "Uitvoerkolommen",
+      "outputHeaders": [
+        "Kolom",
+        "Beschrijving",
+        "Voorbeeld"
+      ],
+      "outputRows": [
+        [
+          "Domein",
+          "Het geanalyseerde domein",
+          "example.com"
+        ],
+        [
+          "Domeinrating",
+          "Autoriteitsscore 0-100",
+          "72"
+        ],
+        [
+          "SEO-score",
+          "Samengesteld (backlink 40%, verkeer 30%, trefwoord 20%, technisch 10%)",
+          "68"
+        ],
+        [
+          "Koopintentie",
+          "Score 0-100 die aankoopwaarschijnlijkheid aangeeft",
+          "45"
+        ],
+        [
+          "Prioriteitsscore",
+          "Gecombineerde rangschikking over alle dimensies",
+          "Hoog"
+        ],
+        [
+          "Geschatte waarde",
+          "Billijke marktwaarde bereik",
+          "$2,400 - $3,600"
+        ]
+      ],
+      "priorityTitle": "Prioriteitsscore uiteenzetting",
+      "dimensions": [
+        {
+          "name": "Backlinkprofiel",
+          "weight": "40%",
+          "bar": 40
+        },
+        {
+          "name": "Verkeersanalyse",
+          "weight": "30%",
+          "bar": 30
+        },
+        {
+          "name": "Trefwoordmetrieken",
+          "weight": "20%",
+          "bar": 20
+        },
+        {
+          "name": "Technische SEO",
+          "weight": "10%",
+          "bar": 10
+        }
+      ],
+      "customTitle": "Aangepaste scoring",
+      "customDescription": "Weg dimensies op basis van je specifieke gebruiksscenario.",
+      "modes": [
+        {
+          "title": "Beleggingsmodus",
+          "desc": "Maximaliseer ROI met verkeer- en waardenfocus"
+        },
+        {
+          "title": "Ontwikkelmodus",
+          "desc": "Prioriteit voor technische metrieken en autoriteit"
+        },
+        {
+          "title": "Merkmodus",
+          "desc": "Benadruk merkveiligheid en onthoudbaarheid"
+        }
+      ],
+      "ctaTitle": "Klaar om je domeinonderzoek uit te breiden?",
+      "ctaDescription": "Verwerk tot 5.000 domeinen per batch met Enterprise-toegang.",
+      "startTrial": "Enterprise-proef starten",
+      "tryLookup": "Enkele domeinopzoeking proberen"
+    },
+    "api": {
+      "badge": "ONTWIKKELAAR",
+      "title": "API-toegang",
+      "description": "RESTful API voor programmatische domeinintelligentie.",
+      "getKey": "API-sleutel ophalen",
+      "readDocs": "Documentatie lezen",
+      "buildTitle": "Wat je kunt bouwen",
+      "buildCards": [
+        {
+          "title": "Domeinportefeuille-tracker",
+          "desc": "Automatisch je portefeuille bewaken voor waardeveranderingen.",
+          "linkText": "Probeer Domein opzoeken"
+        },
+        {
+          "title": "Marktintelligentie-dashboard",
+          "desc": "Bouw aangepaste dashboards met realtime prijzen.",
+          "linkText": "Bulk-analyseur verkennen"
+        },
+        {
+          "title": "Merkbeschermingssysteem",
+          "desc": "Automatiseer merkmonitoring en ontvang waarschuwingen.",
+          "linkText": "Bekijk Merkmonitor"
+        }
+      ],
+      "featuresTitle": "API-functies",
+      "features": [
+        {
+          "title": "RESTful API",
+          "desc": "Volledige toegang tot alle domeinintelligentie-eindpunten."
+        },
+        {
+          "title": "Webhooks",
+          "desc": "Realtime meldingen voor domeinwijzigingen."
+        },
+        {
+          "title": "Snelheidslimieten",
+          "desc": "10.000 oproepen per dag met Enterprise."
+        },
+        {
+          "title": "SDK's",
+          "desc": "Officiële bibliotheken voor Python, Node.js, Go en Ruby."
+        },
+        {
+          "title": "Sandbox",
+          "desc": "Testomgeving voor ontwikkeling."
+        },
+        {
+          "title": "Documentatie",
+          "desc": "Volledige API-referentie met codevoorbeelden."
+        }
+      ],
+      "ctaTitle": "Klaar om te bouwen?",
+      "ctaDescription": "Haal je API-sleutel op en begin vandaag nog.",
+      "viewDocs": "API-documentatie bekijken",
+      "modal": {
+        "title": "Haal je API-sleutel op",
+        "description": "Maak een gratis account om je API-sleutel te ontvangen.",
+        "cta": "Gratis account aanmaken",
+        "back": "Terug"
+      }
+    },
+    "trademark": {
+      "badge": "PREMIUM",
+      "title": "Merkmonitor",
+      "description": "USPTO/WIPO-conflictdetectie en waarschuwingen.",
+      "cta": "Monitoring starten",
+      "severityTitle": "Bedreigingsernstniveaus",
+      "levels": [
+        {
+          "level": "Kritiek",
+          "desc": "Direct merkconflict gedetecteerd"
+        },
+        {
+          "level": "Hoog",
+          "desc": "Vergelijkbaar merk in dezelfde industrie"
+        },
+        {
+          "level": "Gemiddeld",
+          "desc": "Vergelijkbare naam, andere klasse"
+        },
+        {
+          "level": "Laag",
+          "desc": "Kleine gelijkenis, laag risico"
+        }
+      ],
+      "problemTitle": "Het probleem",
+      "problems": [
+        "Merkinbreukrechtszaken kosten gemiddeld $100K of meer",
+        "Nieuwe domeinregistraties vinden elke minuut plaats",
+        "Handmatige monitoring is onmogelijk op schaal",
+        "Tegen de tijd dat je het opmerkt, is de schade al aangericht"
+      ],
+      "solutionTitle": "Onze oplossing",
+      "solutions": [
+        "Realtime USPTO- en WIPO-databankmonitoring",
+        "Scan tot 5.000 domeinen per lijst",
+        "Directe conflictwaarschuwingen via e-mail en webhook",
+        "Risicoscoring met vertrouwensniveaus"
+      ],
+      "howItWorks": {
+        "title": "Hoe het werkt",
+        "steps": [
+          {
+            "title": "Domeinen toevoegen",
+            "desc": "Upload je merkdomeinen of trefwoorden om te monitoren."
+          },
+          {
+            "title": "Criteria instellen",
+            "desc": "Definieer industrie, geografisch bereik en gevoeligheid."
+          },
+          {
+            "title": "Monitoren",
+            "desc": "We scannen continu USPTO-, EUIPO- en WIPO-databanken."
+          },
+          {
+            "title": "Waarschuwingen ontvangen",
+            "desc": "Ontvang directe meldingen voor potentiële conflicten."
+          }
+        ]
+      },
+      "useCasesTitle": "Gebruiksscenario's",
+      "useCases": [
+        {
+          "title": "Merkbescherming",
+          "content": "Monitor cybersquatting, typosquatting en merkimitatie."
+        },
+        {
+          "title": "Productlancering",
+          "content": "Ruil merken voordat je nieuwe producten lanceert."
+        },
+        {
+          "title": "M&A-diligentie",
+          "content": "Auditeer merkrisico's bij fusies en overnames."
+        },
+        {
+          "title": "Portefeuillebeheer",
+          "content": "Bescherm je domeinportefeuille tegen merkuitdagingen."
+        }
+      ],
+      "pricingTitle": "Prijzen",
+      "plans": [
+        {
+          "plan": "Gratis",
+          "price": "$0",
+          "features": [
+            "3 ongetekende scans/dag",
+            "12 getekende scans/dag",
+            "Basis metrieken"
+          ]
+        },
+        {
+          "plan": "Startup",
+          "price": "$79/mo",
+          "features": [
+            "30 scans/dag",
+            "Prioriteitsverwerking",
+            "CSV-export",
+            "E-mailwaarschuwingen"
+          ],
+          "popular": true
+        },
+        {
+          "plan": "Enterprise",
+          "price": "$129/mo",
+          "features": [
+            "Onbeperkte scans",
+            "API-toegang (10K oproepen/dag)",
+            "Webhook-integratie",
+            "Toegewijde ondersteuning"
+          ]
+        }
+      ],
+      "popular": "POPULAIR",
+      "ctaTitle": "Bescherm je merk vandaag",
+      "ctaDescription": "Wacht niet tot het te laat is. Begin nu met monitoren.",
+      "startFreeTrial": "Gratis proefperiode starten",
+      "tryLookup": "Probeer Domein opzoeken",
+      "runScan": "SEO-scan uitvoeren"
+    },
+    "database": {
+      "badge": "VOLLEDIGE GEGEVENS",
+      "statValue": "2.847",
+      "statLabel": "TLD's gevolgd in alle registers",
+      "description": "Toegang tot de meest uitgebreide domeindatabase.",
+      "stats": [
+        {
+          "value": "420M+",
+          "label": "Domeinen gevolgd",
+          "desc": "Actieve registraties over alle TLD's"
+        },
+        {
+          "value": "2,1B",
+          "label": "Historische records",
+          "desc": "Registratie- en vervaldatumgeschiedenis"
+        },
+        {
+          "value": "50K+",
+          "label": "Dagelijkse updates",
+          "desc": "Nieuwe registraties dagelijks verwerkt"
+        },
+        {
+          "value": "99,9%",
+          "label": "Beschikbaarheid",
+          "desc": "Databasebeschikbaarheidsgarantie"
+        }
+      ],
+      "methodsTitle": "Zoekmethoden",
+      "methods": [
+        {
+          "title": "Enkele opzoeking",
+          "desc": "Zoek elk domein voor directe registratiegegevens."
+        },
+        {
+          "title": "Bulkcontrole",
+          "desc": "Upload tot 5.000 domeinen tegelijk."
+        },
+        {
+          "title": "API-query",
+          "desc": "Programmatische toegang via RESTful API met tot 10.000 oproepen/dag."
+        }
+      ],
+      "sourcesTitle": "Gegevensbronnen",
+      "sources": [
+        {
+          "source": "ICANN",
+          "desc": "Officiële domeinregistratiegegevens"
+        },
+        {
+          "source": "Registeroperators",
+          "desc": "Directe TLD-zonetoegang"
+        },
+        {
+          "source": "WHOIS/RDAP",
+          "desc": "Registratie- en contactgegevens"
+        },
+        {
+          "source": "Wayback Machine",
+          "desc": "Historische inhoudssnapshots"
+        },
+        {
+          "source": "Certificaattransparantie",
+          "desc": "SSL-certificaatmonitoring"
+        },
+        {
+          "source": "DNS-resolvers",
+          "desc": "Realtime DNS-recordverificatie"
+        }
+      ],
+      "levelsTitle": "Toegangsniveaus",
+      "plans": [
+        {
+          "plan": "Gratis",
+          "price": "$0",
+          "features": [
+            "Basisopzoeking",
+            "3 zoekacties/dag",
+            "Beperkte TLD's"
+          ]
+        },
+        {
+          "plan": "Startup",
+          "price": "$79/mo",
+          "features": [
+            "Volledige database",
+            "30 zoekacties/dag",
+            "CSV-export",
+            "Prioriteitsondersteuning"
+          ],
+          "popular": true
+        },
+        {
+          "plan": "Enterprise",
+          "price": "$129/mo",
+          "features": [
+            "Onbeperkte toegang",
+            "API (10K oproepen/dag)",
+            "Webhooks",
+            "Aangepaste gegevens"
+          ]
+        }
+      ],
+      "popular": "POPULAIR",
+      "ctaTitle": "Toegang tot de volledige domeindatabase",
+      "ctaDescription": "2.847 TLD's, 420M+ domeinen, realtime gegevens.",
+      "startFreeTrial": "Gratis proefperiode starten",
+      "tryLookup": "Probeer Domein opzoeken",
+      "viewDocs": "API-documentatie bekijken"
+    }
+  },
+  "mp": {
+    "main": {
+      "badge": "Marktplaats",
+      "title": "Premium domeinen",
+      "subtitle": "Blader door onze gecureerde inventaris. Volledige statistieken getoond — naam verborgen. Betaal om te onthullen.",
+      "stats": [
+        {
+          "label": "Vermelde domeinen",
+          "value": "2.847"
+        },
+        {
+          "label": "Vandaag onthuld",
+          "value": "142"
+        },
+        {
+          "label": "Gem. domeinwaarde",
+          "value": "$12.400"
+        },
+        {
+          "label": "Totaal verkocht",
+          "value": "$3,2M"
+        }
+      ],
+      "filters": [
+        "Alle TLD's",
+        ".com",
+        ".net",
+        ".io",
+        ".co"
+      ],
+      "sortBy": [
+        "Sorteren op waarde",
+        "Sorteren op score",
+        "Sorteren op vermelding"
+      ],
+      "nameHidden": "Naam verborgen",
+      "revealName": "Naam onthullen",
+      "dataLabels": [
+        "Waarde",
+        "Score",
+        "Gezondheid",
+        "CPC",
+        "DA"
+      ],
+      "features": [
+        {
+          "title": "Geen naamhinten",
+          "desc": "We tonen alles behalve de naam. Geen sterretjes, geen gedeeltelijke onthullingen."
+        },
+        {
+          "title": "Betaal om te onthullen",
+          "desc": "Onthullingsprijs varieert op basis van domeinwaarde — van $5 tot $50."
+        },
+        {
+          "title": "Overal registreren",
+          "desc": "Na onthulling linken we je naar Dynadot, Namecheap of Porkbun."
+        }
+      ],
+      "cta": {
+        "curated": "Bekijk selectie",
+        "luck": "Probeer je geluk"
+      },
+      "modal": {
+        "title": "Account aanmaken",
+        "desc": "Meld je aan om domeinnamen te onthullen en aankopen te doen.",
+        "redirecting": "Doorverwijzen naar aanmelding over {count} seconden...",
+        "signup": "Gratis aanmelden",
+        "later": "Misschien later"
+      }
+    },
+    "sell": {
+      "badge": "Marktplaats",
+      "title": "Verkoop je domeinen",
+      "subtitle": "Bied je premium domeinen aan op Ceche en bereik gekwalificeerde kopers wereldwijd.",
+      "steps": [
+        "Indienen",
+        "Prijs instellen",
+        "Publiceren"
+      ],
+      "step0": {
+        "title": "Domein indienen",
+        "desc": "Voer je domein in. We voeren automatische taxatie uit.",
+        "placeholder": "jouwdomein.com",
+        "cta": "Doorgaan"
+      },
+      "step1": {
+        "title": "Prijs instellen",
+        "desc": "Onze AI suggereert een prijs op basis van domeinmetrieken.",
+        "suggested": "Voorgesteld: $12.500",
+        "cta": "Doorgaan"
+      },
+      "step2": {
+        "title": "Vermelding publiceren",
+        "desc": "Controleer de details en publiceer. Je domein is binnen 24 uur live.",
+        "cta": "Vermelding publiceren"
+      },
+      "fees": {
+        "title": "Feestructuur",
+        "listing": {
+          "title": "Aanbiedingskosten",
+          "tiers": [
+            {
+              "tier": "Standaard (.com, .net, .org)",
+              "fee": "$5",
+              "min": "—"
+            },
+            {
+              "tier": "Premium (.io, .co, .ai)",
+              "fee": "$10",
+              "min": "—"
+            },
+            {
+              "tier": "Ultra-premium (1 woord, merkbaar)",
+              "fee": "$25",
+              "min": "—"
+            }
+          ]
+        },
+        "commission": {
+          "title": "Commissietarieven",
+          "tiers": [
+            {
+              "tier": "Domeinen onder $5.000",
+              "commission": "8%",
+              "minimum": "$50"
+            },
+            {
+              "tier": "Domeinen $5.000–$50.000",
+              "commission": "10%",
+              "minimum": "$200"
+            },
+            {
+              "tier": "Domeinen boven $50.000",
+              "commission": "15%",
+              "minimum": "Onderhandelbaar"
+            }
+          ]
+        }
+      },
+      "eligibility": {
+        "title": "Geschiktheid checklist",
+        "items": [
+          "Domein moet geregistreerd en actief zijn",
+          "Je moet eigendom verifiëren via TXT- of CNAME-record",
+          "Geen actieve UDRP of juridische geschillen",
+          "Domein mag niet op spam-lijst staan"
+        ]
+      },
+      "tools": {
+        "title": "Verkoperstools",
+        "items": [
+          {
+            "title": "Analytisch dashboard",
+            "desc": "Volg weergaven, aanbiedingen en conversieratio's in realtime."
+          },
+          {
+            "title": "Bulkvermelding",
+            "desc": "Importeer en beheer meerdere domeinvermeldingen met CSV-upload."
+          },
+          {
+            "title": "Geautomatiseerde prijzen",
+            "desc": "AI-gestuurde prijssuggesties op basis van domeinmetrieken."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Klaar om te verkopen?",
+        "desc": "Bied je eerste domein aan in minder dan 5 minuten.",
+        "signup": "Account aanmaken",
+        "pricing": "Bekijk prijzen"
+      }
+    },
+    "luck": {
+      "badge": "Marktplaats",
+      "title": "Probeer je geluk",
+      "subtitle": "Kies een TLD, draai 3 dozen, onthul een premium domein. Exclusief voor jou vergrendeld.",
+      "step1": "Stap 1: Kies je TLD",
+      "spinning": "Aan het draaien...",
+      "step2": "Stap 2: Kies een doos",
+      "clickToReveal": "Klik om te onthullen",
+      "locked": {
+        "title": "Domein vergrendeld",
+        "desc": "Zodra je een doos kiest, is het domein exclusief voor jou vergrendeld."
+      },
+      "howItWorks": {
+        "title": "Hoe het werkt",
+        "steps": [
+          {
+            "title": "Kies een TLD",
+            "desc": "Kies .com, .net, .io, .co of elke TLD tegen een vast tarief."
+          },
+          {
+            "title": "Draai en kies",
+            "desc": "Drie gesloten dozen verschijnen. Kies er een als de animatie stopt."
+          },
+          {
+            "title": "Onthul en koop",
+            "desc": "Domein onthuld en vergrendeld. Onmiddellijk aanmelden."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Liever bladeren?",
+        "desc": "Blader door onze volledige marktplaats.",
+        "marketplace": "Bekijk marktplaats",
+        "signup": "Gratis aanmelden"
+      },
+      "modal": {
+        "title": "Account aanmaken",
+        "desc": "Meld je aan om dit domein exclusief voor jou te vergrendelen.",
+        "signup": "Gratis aanmelden",
+        "later": "Misschien later"
+      }
+    },
+    "curated": {
+      "badge": "Marktplaats",
+      "title": "Gecureerde domeinen",
+      "subtitle": "Handgekozen premium domeinen gesorteerd op commerciële intentie en SEO-autoriteit.",
+      "tryLuck": "Probeer liever je geluk",
+      "featured": {
+        "label": "Uitgelicht domein",
+        "hidden": "Naam verborgen tot aankoop",
+        "instant": "Directe aankoop"
+      },
+      "features": [
+        "Handgekozen door domeinexperts",
+        "Volledig intelligentierapport inbegrepen",
+        "Geverifieerd eigendom en schone geschiedenis",
+        "Directe aankoop met veilige checkout",
+        "Onderhandelingstools voor het doen van biedingen",
+        "Begeleide overdracht met registrar-ondersteuning"
+      ],
+      "howItWorks": {
+        "title": "Hoe het werkt",
+        "steps": [
+          {
+            "title": "Blader door vermeldingen",
+            "desc": "Elk gecureerd domein bevat waardering, SEO-metrieken en commerciële intentie-score."
+          },
+          {
+            "title": "Doe een bod",
+            "desc": "Koop direct of dien een bod in. Ons systeem verwerkt automatisch tegenbiedingen."
+          },
+          {
+            "title": "Aankoop voltooien",
+            "desc": "Veilige betaling. Domeinoverdracht binnen 24 uur."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Bekijk alle gecureerde domeinen",
+        "desc": "Wekelijks bijgewerkt met nieuwe handgekozen premium domeinen.",
+        "marketplace": "Bekijk marktplaats",
+        "luck": "Probeer je geluk"
+      }
+    },
+    "unmasking": {
+      "badge": "Marktplaats",
+      "title": "Hoe onthulling werkt",
+      "subtitle": "Onze blinde marktplaats beschermt domeinnamen tegen front-running en sniping.",
+      "steps": [
+        {
+          "title": "Blader",
+          "desc": "Verken onze blinde marktplaats. Volledige statistieken getoond — domeinnaam verborgen."
+        },
+        {
+          "title": "Betaal om te onthullen",
+          "desc": "Betaal de onthullingsfee om de naam te ontgrendelen."
+        },
+        {
+          "title": "Onthul en inspecteer",
+          "desc": "De domeinnaam wordt onthuld. Je hebt 5 minuten om te beslissen."
+        },
+        {
+          "title": "Hercontroleer of loop weg",
+          "desc": "Als je past, keert het domein terug naar de blinde pool."
+        },
+        {
+          "title": "Voltooi of loop weg",
+          "desc": "Registreer het domein via onze partner-registrars of loop weg."
+        }
+      ],
+      "vault": {
+        "title": "Kluisbescherming",
+        "desc": "Alle niet-onthulde domeinnamen worden opgeslagen in een gecodeerde kluis."
+      },
+      "features": [
+        {
+          "title": "Gecodeerde kluis",
+          "desc": "Domeinnamen opgeslagen met zero-kennis-codering."
+        },
+        {
+          "title": "5-minuten vergrendeling",
+          "desc": "Na onthulling heb je 5 minuten exclusieve toegang."
+        },
+        {
+          "title": "Geen verplichting",
+          "desc": "Loop op elk moment weg. Geen verbintenis vereist."
+        }
+      ],
+      "cta": {
+        "title": "Klaar om te verkennen?",
+        "desc": "Blader door duizenden premium domeinen.",
+        "marketplace": "Blader door marktplaats",
+        "luck": "Probeer je geluk"
+      }
+    }
+  },
+  "sol": {
+    "index": {
+      "title": "Oplossingen voor elke domeinbehoefte",
+      "subtitle": "Of je nu investeert, bouwt of bemiddelt — Ceche heeft de tools, gegevens en marktplaats om je domeinstrategie te ondersteunen.",
+      "cta": {
+        "ready": "Klaar om te beginnen?",
+        "signup": "Gratis account aanmaken"
+      },
+      "personas": [
+        {
+          "title": "Domeinbeleggers",
+          "desc": "Portefeuille-opbrengstanalyse, flippermetrieken en drop-catching waarschuwingen.",
+          "stat": "8–15%",
+          "statLabel": "Commissieniveaus",
+          "href": "/solutions/domain-investors"
+        },
+        {
+          "title": "Startup-oprichters",
+          "desc": "Merkbaarheidsindex, uitspreekbaarheid van trefwoorden en extensiepenetratietools.",
+          "stat": "16",
+          "statLabel": "Scoringdimensies",
+          "href": "/solutions/startup-founders"
+        },
+        {
+          "title": "SEO-bureaus",
+          "desc": "Verlopen domein backlink-autoriteitsscores en spamherstel-audits.",
+          "stat": "10K",
+          "statLabel": "API-aanroepen/dag",
+          "href": "/solutions/seo-agencies"
+        },
+        {
+          "title": "Beschikbare domeinen vinden",
+          "desc": "Scan miljoenen combinaties voor beschikbare domeinnamen.",
+          "stat": "4",
+          "statLabel": "TLD's gescand",
+          "href": "/solutions/find-available"
+        },
+        {
+          "title": "Onderzoeksintelligentie",
+          "desc": "Diepgaande domeinanalyse vóór acquisitie.",
+          "stat": "0–100",
+          "statLabel": "Koopintentie-score",
+          "href": "/solutions/research-intelligence"
+        },
+        {
+          "title": "Premium domeinen kopen",
+          "desc": "Verwerf hoogwaardige domeinen met veilige, transparante transacties.",
+          "stat": "$5–$50",
+          "statLabel": "Onthullingsfee bereik",
+          "href": "/solutions/buy-premium"
+        }
+      ],
+      "learnMore": "Meer informatie →"
+    },
+    "investors": {
+      "badge": "Voor beleggers",
+      "title": "Maximaliseer domeinbeleggingsopbrengsten",
+      "desc": "Portefeuille-opbrengstanalyse, flipper-waarderingsmetrieken, drop-catching waarschuwingen en commissieniveaus van 8–15%.",
+      "cta": [
+        "Begin met beleggen",
+        "Bekijk prijzen"
+      ],
+      "stats": [
+        {
+          "value": "16",
+          "label": "Scoringdimensies"
+        },
+        {
+          "value": "8–15%",
+          "label": "Commissieniveaus"
+        },
+        {
+          "value": "4",
+          "label": "TLD's gescand"
+        },
+        {
+          "value": "$5–$50",
+          "label": "Onthullingsfee bereik"
+        }
+      ],
+      "problem": {
+        "title": "Het probleem van de belegger",
+        "desc": "Traditioneel domeinbeleggen vereist meerdere tools en ondoorzichtige kosten.",
+        "items": [
+          "Geen uniform scoringmodel over TLD's",
+          "Verborgen kosten eten winstmarges op",
+          "Handmatig drop-catching mist kansen",
+          "Commissiestructures eten in flips"
+        ]
+      },
+      "solution": {
+        "title": "De Ceche-oplossing",
+        "desc": "Eén platform met 16-dimension scoring, gelaagde commissies en realtime waarschuwingen.",
+        "items": [
+          "16-dimension scoring op elk domein",
+          "Transparante gelaagde commissie: 15%/12%/10%/8%",
+          "Drop-catching waarschuwingen voor vervallende domeinen",
+          "Bulk scan tot 5.000 domeinen tegelijk"
+        ]
+      },
+      "commission": {
+        "title": "Gelaagde commissiestructuur",
+        "headers": [
+          "Niveau",
+          "Commissie",
+          "Minimum"
+        ],
+        "rows": [
+          {
+            "tier": "Starter",
+            "commission": "15%",
+            "minimum": "$10"
+          },
+          {
+            "tier": "Groei",
+            "commission": "12%",
+            "minimum": "$50"
+          },
+          {
+            "tier": "Pro",
+            "commission": "10%",
+            "minimum": "$500"
+          },
+          {
+            "tier": "Enterprise",
+            "commission": "8%",
+            "minimum": "$4.000"
+          }
+        ]
+      },
+      "toolsTitle": "Tools gebouwd voor beleggers",
+      "tools": [
+        {
+          "title": "SEO-scanner",
+          "desc": "Audite backlinkprofielen en domeinautoriteit in seconden."
+        },
+        {
+          "title": "Uitgebreide inzichten",
+          "desc": "Ga verder dan de basis met volledige 16-dimension deep dives."
+        },
+        {
+          "title": "Bulk-analyseur",
+          "desc": "Score tot 5.000 domeinen in één batch."
+        },
+        {
+          "title": "Merkmonitor",
+          "desc": "Geautomatiseerde waarschuwingen voor merkconflicten."
+        }
+      ],
+      "gettingStarted": {
+        "title": "Aan de slag",
+        "steps": [
+          {
+            "title": "Account aanmaken",
+            "desc": "Meld je gratis aan in 30 seconden"
+          },
+          {
+            "title": "Kies plan",
+            "desc": "Gratis, Startup ($79/mnd) of Enterprise ($129/mnd)"
+          },
+          {
+            "title": "Domeinen scannen",
+            "desc": "Voer SEO-scanner of Bulk-analyseur uit"
+          },
+          {
+            "title": "Scores analyseren",
+            "desc": "Bekijk 16-dimension rapporten"
+          },
+          {
+            "title": "Verwerven & flippen",
+            "desc": "Koop, bewaar of verkoop met gelaagde commissies"
+          }
+        ]
+      },
+      "ctaTitle": "Begin slimmer te flippen",
+      "ctaDesc": "Sluit je aan bij duizenden beleggers die Ceche gebruiken.",
+      "ctaSignup": "Gratis account aanmaken",
+      "ctaMarketplace": "Blader door marktplaats"
+    },
+    "founders": {
+      "badge": "Voor oprichters",
+      "title": "Bouw je merk op het juiste domein",
+      "desc": "AI-gestuurde merkbaarheidsscore, uitspreekbaarheidsanalyse en merkscreening.",
+      "steps": [
+        {
+          "title": "Beschrijf je merk",
+          "desc": "Voer een korte beschrijving van je startup in."
+        },
+        {
+          "title": "Score & vergelijk",
+          "desc": "Ontvang 16-dimension scores over 4 TLD's."
+        },
+        {
+          "title": "Claim je domein",
+          "desc": "Registreer, koop op marktplaats of stel waarschuwingen in."
+        }
+      ],
+      "features": [
+        {
+          "title": "Merkbaarheidsindex",
+          "desc": "AI-gestuurde scoring die merkbaarheid, onthoudbaarheid en marktpotentieel evalueert."
+        },
+        {
+          "title": "Uitspreekbaarheid",
+          "desc": "Klinkerbalans, medeklinkerclusters en bigram-frequentieanalyse."
+        },
+        {
+          "title": "Extensiepenetratie",
+          "desc": "Vergelijk .com, .io, .co en .ai met marktpenetratiepercentages."
+        },
+        {
+          "title": "Sociale beschikbaarheid",
+          "desc": "Controleer gebruikersnaambeschikbaarheid op grote platforms."
+        }
+      ],
+      "builtForTitle": "Gebouwd voor oprichters",
+      "builtFor": [
+        {
+          "title": "Concurrentienaamgeving",
+          "desc": "Analyseer naamgevingspatronen in je industrie."
+        },
+        {
+          "title": "Merkrisico",
+          "desc": "USPTO- en WIPO-databankscreening vóór merkcommitment."
+        },
+        {
+          "title": "Taxatietool",
+          "desc": "Ontvang algoritmische waarderingen met betrouwbaarheidsintervallen."
+        },
+        {
+          "title": "SEO-scanner",
+          "desc": "Evalueer backlinkprofielen van potentiële domeinen direct."
+        }
+      ],
+      "ctaTitle": "Vind je merkdomein",
+      "ctaDesc": "Begin met een gratis account. Score onbeperkte domeinen over 4 TLD's.",
+      "ctaSignup": "Gratis account aanmaken",
+      "ctaAppraise": "Probeer taxatietool"
+    },
+    "agencies": {
+      "badge": "Voor bureaus",
+      "title": "Schaal domeinacquisitie voor klanten",
+      "desc": "Verlopen domein backlink-autoriteitsscores, spamherstel-audits en bulktools voor bureauworkflows.",
+      "stats": [
+        {
+          "value": "5K",
+          "label": "Bulk domeinen"
+        },
+        {
+          "value": "10K",
+          "label": "API-aanroepen/dag"
+        },
+        {
+          "value": "8–15%",
+          "label": "Commissieniveaus"
+        },
+        {
+          "value": "$5–$50",
+          "label": "Onthullingsfee"
+        }
+      ],
+      "whyTitle": "Waarom bureaus Ceche kiezen",
+      "why": [
+        {
+          "title": "Klantresultaten",
+          "desc": "Lever meetbare ROI met datagestuurde domeinacquisities."
+        },
+        {
+          "title": "Tijdbesparing",
+          "desc": "Bulk scan 5.000 domeinen tegelijk over 16 dimensies."
+        },
+        {
+          "title": "Omzetgroei",
+          "desc": "Lagere commissieniveaus naarmate het volume toeneemt."
+        }
+      ],
+      "features": [
+        {
+          "title": "Verlopen domeinautoriteit",
+          "desc": "Evalueer backlinkprofielen van verlopen domeinen voor acquisitie."
+        },
+        {
+          "title": "Spamherstel-audits",
+          "desc": "Identificeer en herstel van Google-straffen."
+        },
+        {
+          "title": "Bulk-analyseur",
+          "desc": "Verwerkt tot 5.000 domeinen per batch."
+        },
+        {
+          "title": "Rapportage-dashboard",
+          "desc": "White-label rapporten voor klantpresentaties."
+        }
+      ],
+      "plansTitle": "Plannen voor elk bureau",
+      "plansDesc": "Schaal van solo-consultant tot full-service bureau",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "period": "/3 domeinen/dag",
+          "features": [
+            "16-dimension scoring",
+            "SEO-scanner",
+            "Basis inzichten"
+          ],
+          "cta": "Aan de slag",
+          "dark": false
+        },
+        {
+          "name": "Startup",
+          "price": "$79",
+          "period": "/maand",
+          "features": [
+            "12 domeinen/dag",
+            "Uitgebreide inzichten",
+            "Merkmonitor",
+            "Prioriteitsondersteuning"
+          ],
+          "cta": "Proef starten",
+          "dark": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$129",
+          "period": "/maand",
+          "features": [
+            "Onbeperkte scoring",
+            "Bulk-analyseur (5K)",
+            "API (10K oproepen/dag)",
+            "White-label rapporten"
+          ],
+          "cta": "Neem contact op met verkoop",
+          "dark": false
+        }
+      ],
+      "ctaTitle": "Klaar om je bureau te schalen?",
+      "ctaDesc": "Begin met een gratis account of praat met ons team.",
+      "ctaSignup": "Gratis account aanmaken",
+      "ctaApi": "API-documentatie"
+    },
+    "available": {
+      "statValue": "4",
+      "statLabel": "TLD's gelijktijdig gescand",
+      "tlds": ".com · .io · .co · .ai",
+      "title": "Vind beschikbare domeinen in seconden",
+      "desc": "Scan miljoenen combinaties voor beschikbare domeinnamen.",
+      "discovery": {
+        "title": "Slimme domeinontdekking",
+        "desc1": "Voer trefwoorden in en Ceche genereert honderden beschikbare opties.",
+        "desc2": "Elk resultaat bevat een 16-dimension score.",
+        "cta": "Gratis zoeken"
+      },
+      "filters": {
+        "title": "Filteropties",
+        "items": [
+          {
+            "label": "TLD",
+            "value": ".com, .io, .co, .ai"
+          },
+          {
+            "label": "Max lengte",
+            "value": "Tot 15 tekens"
+          },
+          {
+            "label": "Prijsbereik",
+            "value": "$8 – $500/jaar"
+          },
+          {
+            "label": "Merkbaarheid",
+            "value": "Hoog / Gemiddeld / Laag"
+          },
+          {
+            "label": "Koopintentie",
+            "value": "Score 0–100"
+          },
+          {
+            "label": "Beschikbaarheid",
+            "value": "Directe controle"
+          },
+          {
+            "label": "Prijsvergelijking",
+            "value": "Multi-registrar"
+          }
+        ]
+      },
+      "timeline": {
+        "title": "Mis nooit een domein",
+        "steps": [
+          {
+            "title": "Stel je criteria in",
+            "desc": "Definieer trefwoorden, TLD's en prijsbereik."
+          },
+          {
+            "title": "Monitor & waarschuw",
+            "desc": "Ceche scant dagelijks en waarschuwt je."
+          },
+          {
+            "title": "Verwerven direct",
+            "desc": "Klik-registratie of marktplaatsaankoop."
+          }
+        ]
+      },
+      "plansTitle": "Kies je plan",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "$0",
+          "features": [
+            "3 domeinen/dag",
+            "Basis scoring",
+            "1 TLD"
+          ],
+          "highlight": false
+        },
+        {
+          "name": "Startup",
+          "price": "$79/maand",
+          "features": [
+            "12 domeinen/dag",
+            "Uitgebreide inzichten",
+            "4 TLD's"
+          ],
+          "highlight": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$129/maand",
+          "features": [
+            "Onbeperkte scoring",
+            "Bulk-analyseur",
+            "API-toegang"
+          ],
+          "highlight": false
+        }
+      ],
+      "popular": "Populair",
+      "getStarted": "Aan de slag",
+      "bulk": {
+        "badge": "Enterprise-functie",
+        "title": "Bulk domeinscanner",
+        "desc": "Upload een CSV van tot 5.000 domeinen en krijg scores in minuten.",
+        "note": "Beschikbaar op Enterprise-plan ($129/mnd)."
+      },
+      "ctaTitle": "Vind je perfecte domein",
+      "ctaDesc": "Begin met 3 gratis domeinzoekacties per dag.",
+      "ctaSignup": "Gratis account aanmaken",
+      "ctaScan": "Probeer SEO-scanner"
+    },
+    "research": {
+      "breadcrumb": [
+        "Oplossingen",
+        "Onderzoeksintelligentie"
+      ],
+      "title": "Diepgaande domeinanalyse vóór acquisitie",
+      "desc": "Neem geïnformeerde beslissingen met uitgebreide intelligentierapporten.",
+      "sections": [
+        {
+          "title": "16-dimension scoring",
+          "desc": "Elk domein wordt geevalueerd over 16 dimensies."
+        },
+        {
+          "title": "Eigendomsgeschiedenis",
+          "desc": "Volledige WHOIS-geschiedenis en eigendomsovergangen."
+        },
+        {
+          "title": "Backlinkprofiel",
+          "desc": "Gedetailleerde backlinkanalyse met kwaliteitsscore."
+        },
+        {
+          "title": "Verkeerschattingen",
+          "desc": "Maandelijkse verkeersvoorspellingen op basis van SEO-metrieken."
+        },
+        {
+          "title": "Waarderingsbereik",
+          "desc": "Algoritmische prijzen met betrouwbaarheidsintervallen."
+        },
+        {
+          "title": "Risico-evaluatie",
+          "desc": "Merkconflicten, spamgeschiedenis en risicoanalyse."
+        }
+      ],
+      "compareTitle": "Hoe Ceche vergelijkt",
+      "compareHeaders": [
+        "Functie",
+        "Ceche",
+        "Dynadot",
+        "GoDaddy"
+      ],
+      "compareRows": [
+        {
+          "feature": "16-dimension scoring",
+          "ceche": "✓",
+          "dynadot": "✗",
+          "godaddy": "✗"
+        },
+        {
+          "feature": "Koopintentie-score",
+          "ceche": "0–100",
+          "dynadot": "✗",
+          "godaddy": "✗"
+        },
+        {
+          "feature": "Bulk-analyse (5K+)",
+          "ceche": "✓",
+          "dynadot": "Beperkt",
+          "godaddy": "✗"
+        },
+        {
+          "feature": "API-toegang",
+          "ceche": "10K/dag",
+          "dynadot": "Basis",
+          "godaddy": "Betaalde add-on"
+        },
+        {
+          "feature": "Merkmonitor",
+          "ceche": "✓",
+          "dynadot": "✗",
+          "godaddy": "Betaald"
+        },
+        {
+          "feature": "Gelaagde commissie",
+          "ceche": "8–15%",
+          "dynadot": "Vast",
+          "godaddy": "Vast 20%+"
+        },
+        {
+          "feature": "TLD's geanalyseerd",
+          "ceche": "4",
+          "dynadot": "10+",
+          "godaddy": "10+"
+        }
+      ],
+      "ctaTitle": "Slimmer onderzoeken",
+      "ctaDesc": "Krijg diepgaande intelligentie over elk domein.",
+      "ctaSignup": "Gratis account aanmaken",
+      "ctaAppraise": "Probeer taxatietool"
+    },
+    "premium": {
+      "heroTitle": "Verwerf premium domeinen met vertrouwen",
+      "heroDesc": "Veilige checkout, transparante prijzen en 72-uur inspectieperiode.",
+      "steps": [
+        {
+          "title": "Ontdek & evalueer",
+          "desc": "Blader door gecureerde premium domeinen met volledige rapporten."
+        },
+        {
+          "title": "Onderhandel & transigeer",
+          "desc": "Doe biedingen en sluit deals veilig af."
+        },
+        {
+          "title": "Inspecteer & bevestig",
+          "desc": "72-uur inspectieperiode na overdracht."
+        }
+      ],
+      "trust": [
+        {
+          "title": "Veilige checkout",
+          "desc": "Betaling veilig verwerkt tot overdracht bevestigd is."
+        },
+        {
+          "title": "72-uur inspectie",
+          "desc": "Volledige inspectieperiode na overdracht."
+        },
+        {
+          "title": "Meerdere betaalopties",
+          "desc": "Creditcard, bankoverschrijving en crypto geaccepteerd."
+        }
+      ],
+      "pricingTitle": "Transparante prijzen",
+      "pricingDesc": "Geen verborgen kosten. De getoonde prijs is de betaalde prijs.",
+      "pricingHeaders": [
+        "Feetype",
+        "Bedrag",
+        "Notities"
+      ],
+      "pricingRows": [
+        {
+          "type": "Onthullingsfee (Standaard)",
+          "amount": "$5",
+          "notes": "Eenmalig per domeinonthulling"
+        },
+        {
+          "type": "Onthullingsfee (Prioriteit)",
+          "amount": "$10",
+          "notes": "Versnelde onthulling met volledig rapport"
+        },
+        {
+          "type": "Koperscommissie",
+          "amount": "0%",
+          "notes": "Kopers betalen geen commissie op Ceche"
+        },
+        {
+          "type": "Transactiekosten",
+          "amount": "Inbegrepen",
+          "notes": "Geen extra kosten voor veilige checkout"
+        }
+      ],
+      "ctaTitle": "Koop premium domeinen vandaag",
+      "ctaDesc": "Veilige, transparante transacties bij elke aankoop.",
+      "ctaMarketplace": "Blader door marktplaats",
+      "ctaPricing": "Bekijk prijzen"
+    }
+  },
+  "res": {
+    "index": {
+      "title": "Hulpbronnen",
+      "subtitle": "Leer en krijg ondersteuning"
+    },
+    "blog": {
+      "badge": "Ceche-blog",
+      "title": "Domeinintelligentie, ontcijferd.",
+      "subtitle": "Strategiegidsen, marktanalyses en kaders voor domeinbeleggers.",
+      "topicsBadge": "Onderwerpen",
+      "categories": [
+        "Strategie",
+        "Marktgegevens",
+        "Tutorials",
+        "Branche nieuws",
+        "Casestudies"
+      ],
+      "marquee": "Domeinwaardering · Marktrapporten · Portefeuille-analyse ·",
+      "articles": [
+        {
+          "date": "28 aug 2026",
+          "title": "Waarom premium .com-domeinen nog steeds beter presteren dan nieuwe gTLD's"
+        },
+        {
+          "date": "21 aug 2026",
+          "title": "De verborgen ROI van portefeuille-gezondheidsscores"
+        },
+        {
+          "date": "14 aug 2026",
+          "title": "5 waarschuwingssignalen bij domeintaxaties die je negeert"
+        },
+        {
+          "date": "7 aug 2026",
+          "title": "Hoe je een domein prijst zonder te gokken"
+        },
+        {
+          "date": "31 jul 2026",
+          "title": "Blinde veilingen vs. vaste vermeldingen: een datavergelijking"
+        },
+        {
+          "date": "24 jul 2026",
+          "title": "Een domein-verkoopworkflow vanaf nul opbouwen"
+        }
+      ],
+      "cta": {
+        "title": "De volledige bibliotheek?",
+        "desc": "Download onze e-boeken en ga dieper op domeinbelegging.",
+        "ebooks": "Blader door e-boeken →",
+        "pricing": "Bekijk prijzen"
+      }
+    },
+    "ebooks": {
+      "badge": "Ceche e-boeken",
+      "title": "Dieper op domeinbelegging",
+      "subtitle": "Gratis gidsen, kaders en playbooks voor domeinbeleggers.",
+      "featured": {
+        "badge": "Uitgelicht",
+        "title": "Het playbook van de domeinbelegger",
+        "desc": "De definitieve gids voor het kopen, waarderen en verkopen van domeinnamen.",
+        "stats": [
+          {
+            "value": "34K+",
+            "label": "Downloads"
+          },
+          {
+            "value": "42",
+            "label": "Pagina's"
+          },
+          {
+            "value": "4,9",
+            "label": "Beoordeling"
+          }
+        ],
+        "cta": "Gratis exemplaar →"
+      },
+      "catalogTitle": "Meer van Ceche",
+      "catalog": [
+        {
+          "title": "De toolkit van de domeintaxateur",
+          "pages": 32,
+          "date": "Apr 2026",
+          "downloads": "12K+",
+          "desc": "Stap-voor-stap gids voor het waarderen van domeinen met gegevens."
+        },
+        {
+          "title": "Het blinde marktplaats-playbook",
+          "pages": 28,
+          "date": "Mrt 2026",
+          "downloads": "8K+",
+          "desc": "Hoe het blinde biedsysteem van Ceche prijsopblazing elimineert."
+        },
+        {
+          "title": "Gids voor portefeuille-gezondheidsaudit",
+          "pages": 24,
+          "date": "Feb 2026",
+          "downloads": "6K+",
+          "desc": "Voer een volledige gezondheidscontrole uit op je domeinportefeuille."
+        },
+        {
+          "title": "Domein-verkoop 101",
+          "pages": 36,
+          "date": "Jan 2026",
+          "downloads": "15K+",
+          "desc": "Van acquisitie tot afsluiting — alles wat een nieuwe domeinverkoper nodig heeft."
+        }
+      ],
+      "getCopy": "Digitaal exemplaar ophalen",
+      "cta": {
+        "title": "Meer artikelen en marktinzichten?",
+        "desc": "Ons blog behandelt domeinstrategie en brancheanalyse.",
+        "blog": "Lees het blog",
+        "pricing": "Bekijk prijzen"
+      },
+      "modal": {
+        "title": "Account aanmaken om te downloaden",
+        "desc": "Alle Ceche e-boeken en gidsen zijn gratis voor geregistreerde gebruikers.",
+        "redirecting": "Doorverwijzen naar aanmelding over {count} seconden...",
+        "cta": "Gratis account aanmaken",
+        "back": "Terug"
+      }
+    },
+    "cases": {
+      "badge": "Casestudies",
+      "title": "Echte beleggers. Echte resultaten.",
+      "desc": "Zie hoe domeinbeleggers Ceche gebruiken om snellere, slimmere beslissingen te nemen.",
+      "stats": [
+        {
+          "value": "4,2K+",
+          "label": "Actieve gebruikers"
+        },
+        {
+          "value": "98%",
+          "label": "Nauwkeurigheidsgraad"
+        }
+      ],
+      "comingSoon": {
+        "title": "Casestudies binnenkort",
+        "desc": "We documenteren hoe beleggers Ceche-tools gebruiken.",
+        "appraisal": "Probeer taxatietool →",
+        "marketplace": "Verken marktplaats",
+        "pricing": "Bekijk prijzen"
+      },
+      "cta": {
+        "title": "Een verhaal om te delen?",
+        "desc": "We zouden je ervaring met Ceche graag onder de aandacht brengen.",
+        "contact": "Neem contact op →"
+      }
+    }
+  },
+  "company": {
+    "about": {
+      "badge": "Over Ceche",
+      "title": "Gebouwd voor beleggers die op gegevens handelen",
+      "desc": "De domeinmarktplaats waar premium namen worden gekocht en verkocht.",
+      "cta": {
+        "title": "Klaar om je volgende domein te vinden?",
+        "desc": "Elke naam wordt ondersteund door gegevens. De marktplaats is open.",
+        "marketplace": "Blader door marktplaats →",
+        "pricing": "Bekijk prijzen",
+        "0": "Probeer taxatie →",
+        "1": "Blader door marktplaats"
+      },
+      "origin": {
+        "badge": "Onze oorsprong",
+        "title": "Opgestart door een domeinbelegger die zag dat de markt betere gegevens nodig had",
+        "p1": "De domeinwederverkoop genereert meer dan $3 miljard aan jaarlijkse transacties.",
+        "p2": "We hebben de intelligentie van een onderzoeksplatform gecombineerd met de transactiemechanica van een marktplaats."
+      },
+      "founder": {
+        "label": "Oprichter",
+        "name": "Nekwasachukwu Ucheokoye",
+        "bio": "Domeinbelegger en wederverkoper die 100+ domeinen beheert."
+      },
+      "values": {
+        "badge": "Waar we in geloven",
+        "title": "Drie principes die elke beslissing sturen",
+        "items": [
+          {
+            "title": "Transparantie",
+            "desc": "We publiceren onze methodologie en gegevensbronnen."
+          },
+          {
+            "title": "Gegevensnauwkeurigheid",
+            "desc": "Elke bewering wordt ondersteund door gegevens."
+          },
+          {
+            "title": "Snelheid",
+            "desc": "We leveren snel en itereren."
+          }
+        ]
+      }
+    },
+    "affiliates": {
+      "badge": "Ceche-partners",
+      "title": "Verdien door domeinbeleggers te verwijzen",
+      "desc": "Word lid van ons partnerprogramma en verdien terugkerende commissies.",
+      "timeline": [
+        "Aanmelden",
+        "Link delen",
+        "30% verdienen"
+      ],
+      "benefits": [
+        {
+          "title": "30% terugkerende commissie",
+          "desc": "Verdien op elke betalende klant die je verwijst."
+        },
+        {
+          "title": "90-dagen cookievenster",
+          "desc": "Je verwijzingslink volgt bezoekers 90 dagen."
+        },
+        {
+          "title": "Realtime dashboard",
+          "desc": "Volg kliks, aanmeldingen en inkomsten in realtime."
+        },
+        {
+          "title": "Toegewijde partnerondersteuning",
+          "desc": "Prioriteitstoegang tot ons partnerteam."
+        },
+        {
+          "title": "Directe uitbetalingen",
+          "desc": "Maandelijks betaald via bankoverschrijving of PayPal."
+        },
+        {
+          "title": "Gratis Premium-toegang",
+          "desc": "Actieve partners krijgen een gratis Ceche Pro-account."
+        }
+      ],
+      "cta": {
+        "title": "Begin vandaag met verdienen",
+        "desc": "Meld je aan voor het partnerprogramma.",
+        "join": "Word partner →",
+        "pricing": "Bekijk prijzen",
+        "support": "Ondersteuning"
+      }
+    }
+  },
+  "helpOverview": {
+    "badge": "Helpcentrum",
+    "title": "Hoe kunnen we helpen.",
+    "desc": "Vind documentatie, FAQ's en ondersteuning voor alle Ceche-tools.",
+    "sections": [
+      {
+        "title": "Documentatie",
+        "desc": "Uitgebreide gidsen voor elke Ceche-tool.",
+        "href": "/help/docs"
+      },
+      {
+        "title": "API-referentie",
+        "desc": "RESTful API-eindpunten voor domeinintelligentie.",
+        "href": "/help/api"
+      },
+      {
+        "title": "FAQ",
+        "desc": "Antwoorden op veelgestelde vragen.",
+        "href": "/help/faq"
+      },
+      {
+        "title": "Contact",
+        "desc": "Neem contact op met ons supportteam.",
+        "href": "/help/contact"
+      },
+      {
+        "title": "Changelog",
+        "desc": "Productupdates en nieuwe functies.",
+        "href": "/help/changelog"
+      }
+    ]
+  },
+  "auth": {
+    "login": {
+      "title": "Inloggen",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "button": "Inloggen",
+      "loading": "Inloggen...",
+      "noAccount": "Nog geen account?",
+      "signup": "Aanmelden"
+    },
+    "signup": {
+      "title": "Aanmelden",
+      "name": "Naam",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "button": "Aanmelden",
+      "loading": "Account aanmaken...",
+      "hasAccount": "Al een account?",
+      "login": "Inloggen"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welkom terug, {name}",
+    "plan": "Plan",
+    "apiKeys": "API-sleutels",
+    "manageKeys": "Sleutels beheren →",
+    "quickActions": "Snelle acties",
+    "appraise": "Domein taxeren →",
+    "scan": "Scan starten →"
+  },
+  "limit": {
+    "title": "Snelheidslimiet bereikt",
+    "desc": "Dit verzoek is niet doorgegaan. Je hebt al je gratis taxaties voor vandaag gebruikt.",
+    "currentLimits": "Je huidige limieten",
+    "limits": [
+      {
+        "tier": "Niet aangemeld",
+        "value": "3/dag"
+      },
+      {
+        "tier": "Aangemeld (gratis)",
+        "value": "12/dag"
+      },
+      {
+        "tier": "Premium Startup ($79/mnd)",
+        "value": "30/dag"
+      },
+      {
+        "tier": "Premium Enterprise ($129/mnd)",
+        "value": "Onbeperkt"
+      }
+    ],
+    "signup": "Gratis aanmelden",
+    "home": "Terug naar home"
+  },
+  "search": {
+    "placeholder": "Voer elk domein in, bijv. brand.com",
+    "button": "Zoeken",
+    "loading": "{domain} controleren...",
+    "available": "Beschikbaar voor registratie",
+    "taken": "Bezet",
+    "rating": "Beoordeling",
+    "buildWith": "Wat je ermee kunt bouwen",
+    "appraise": "Deze naam taxeren",
+    "whoisTitle": "WHOIS-details",
+    "whoisLabels": [
+      "Registrar",
+      "Verloopt op",
+      "Registrant",
+      "Nameservers"
+    ],
+    "fullAppraisal": "Volledige taxatie",
+    "copyDomain": "Domein kopiëren",
+    "empty": "Voer een domein in om beschikbaarheid te controleren"
+  },
+  "apikeys": {
+    "title": "API-sleutels",
+    "loading": "Laden...",
+    "createTitle": "Nieuwe sleutel aanmaken",
+    "placeholder": "Sleutelnaam (bijv. productie)",
+    "create": "Aanmaken",
+    "creating": "Aanmaken...",
+    "yourKeys": "Je sleutels",
+    "noKeys": "Nog geen API-sleutels. Maak er hierboven een aan.",
+    "created": "Aangemaakt:",
+    "lastUsed": "Laatst gebruikt:",
+    "delete": "Verwijderen",
+    "newKey": "Je nieuwe API-sleutel (kopieer nu, wordt niet opnieuw getoond):",
+    "dismiss": "Sluiten"
+  },
+  "scanPage": {
+    "title": "Domeinscanner",
+    "desc": "Vind beschikbare domeinen die aan je criteria voldoen",
+    "config": "Scanconfiguratie",
+    "wordList": "Woordenlijst",
+    "customWords": "Aangepaste woorden",
+    "customPlaceholder": "Voer één woord per regel in...",
+    "tlds": "TLD's",
+    "startScan": "Scan starten",
+    "scanning": "Scannen...",
+    "progress": "Scanvoortgang",
+    "status": "Status",
+    "progressLabel": "Voortgang",
+    "available": "Beschikbaar",
+    "results": "Resultaten ({count} domeinen)",
+    "availableOnly": "Alleen beschikbare",
+    "sortByDomain": "Sorteren op domein",
+    "sortByPrice": "Sorteren op prijs",
+    "exportCsv": "CSV exporteren",
+    "domain": "Domein",
+    "statusHeader": "Status",
+    "price": "Prijs",
+    "actions": "Acties",
+    "availableBadge": "Beschikbaar",
+    "errorBadge": "Fout",
+    "takenBadge": "Bezet",
+    "appraise": "Taxeren",
+    "noResults": "Nog geen scanresultaten",
+    "noResultsDesc": "Configureer je scaninstellingen en klik op 'Scan starten'.",
+    "recentScans": "Recente scans",
+    "scan": "scan"
+  },
+  "appraisePage": {
+    "badge": "16-DIMENSION ENGINE",
+    "title": "Domeintaxatie",
+    "desc": "Volledige waardering over RDAP-gegevens, TLD-scoring, merkbaarheid en 12 andere dimensies.",
+    "placeholder": "Voer domein in (bijv. techstart.com)",
+    "analyzing": "Analyseren...",
+    "button": "Taxeren",
+    "devMode": "Dev-modus — onbeperkt",
+    "appraisalsLeft": "{count} taxatie{plural} vandaag nog",
+    "devBypass": "Dev-overslaan",
+    "activate": "Activeren",
+    "loading": "Laden...",
+    "error": "Fout",
+    "estimatedValue": "Geschatte waarde",
+    "analysis": "16-dimension analyse",
+    "fullAccess": "VOLLEDIGE TOEGANG",
+    "unlocked": "3 VAN 16 ONTGRENDELD",
+    "aboveAvg": "Boven gemiddelde",
+    "belowAvg": "Onder gemiddelde",
+    "avg": "Gemiddelde",
+    "unlockPrompt": "Ontgrendel de 13 resterende dimensies met een premium plan",
+    "viewPricing": "Bekijk prijzen",
+    "whoisHint": "WHOIS + DNS-gegevens nodig?",
+    "domainLookup": "Probeer Domein opzoeken — geen account vereist",
+    "domainLookupCta": "Domein opzoeken",
+    "deeperHint": "Meer diepgaande analyse nodig?",
+    "extendedInsights": "Uitgebreide inzichten — backlinks, merken, vergelijkingsgegevens",
+    "extendedInsightsCta": "Uitgebreide inzichten",
+    "recentAppraisals": "Recente taxaties",
+    "limitTitle": "Dagelijkse limiet bereikt",
+    "limitDesc": "Je hebt alle {limit} taxaties voor vandaag gebruikt.",
+    "createAccount": "Account aanmaken",
+    "goBack": "Terug",
+    "redirecting": "Doorverwijzen...",
+    "redirectDesc": "Je wordt naar de accountaanmaakpagina gebracht.",
+    "modules": [
+      "Registratiegegevens (RDAP)",
+      "TLD-premiumniveau",
+      "Domeinlengte",
+      "Aantal woorden",
+      "Uitspreekbaarheid",
+      "Woordsegmentatie",
+      "Trefwoordpopulariteit",
+      "Commerciële intentie (CPC)",
+      "Zoekresultaten",
+      "Multi-TLD registratie",
+      "Merkcontrole",
+      "Domeinautoriteit",
+      "Merkbaarheidsscore"
+    ]
+  },
+  "helpDocs": {
+    "badge": "Documentatie",
+    "title1": "Elke tool,",
+    "title2": "gedocumenteerd.",
+    "desc": "Het Ceche Helpcentrum behandelt de SEO-scanner, Uitgebreide inzichten, Bulk-analyseur, Merkmonitor, Domeindatabase en API.",
+    "tools": [
+      {
+        "name": "Domain Lookup",
+        "desc": "Free tool. WHOIS data, DNS records, and registrar information for any domain.",
+        "pricing": "Free",
+        "features": [
+          "WHOIS lookup",
+          "DNS record export (A, AAAA, MX, TXT, CNAME)",
+          "Registrar detection",
+          "Expiration tracking"
+        ]
+      },
+      {
+        "name": "16-Dimension Appraisal",
+        "desc": "Deep domain valuation using 16 analysis dimensions — RDAP, TLD scoring, brandability, commercial intent, and more.",
+        "pricing": "Free (3 unsigned / 12 signed per day)",
+        "features": [
+          "16 scoring dimensions",
+          "Market-based pricing",
+          "Comparable analysis",
+          "Confidence intervals"
+        ]
+      },
+      {
+        "name": "SEO Scanner",
+        "desc": "Evaluate search visibility, backlink quality, organic traffic, and SEO authority in 3-5 seconds.",
+        "pricing": "Premium",
+        "features": [
+          "Domain Rating 0-100",
+          "Organic traffic estimates",
+          "Keyword rankings",
+          "SEO Score composite"
+        ]
+      },
+      {
+        "name": "Extended Insights",
+        "desc": "Deep due diligence — 16-dimension valuation, trademark screening, comparable sales, and buyer intent scoring.",
+        "pricing": "$5-$50 per report",
+        "features": [
+          "6 report sections",
+          "Trademark conflict check",
+          "Buyer Intent Score 0-100",
+          "PDF/JSON export"
+        ]
+      },
+      {
+        "name": "Bulk Domain Audit",
+        "desc": "Upload a CSV of up to 5,000 domains. Get valuations, SEO scores, priority rankings, and recommended actions.",
+        "pricing": "Premium ($79+/mo)",
+        "features": [
+          "5,000 domains/batch",
+          "Priority Score 1-100",
+          "Custom scoring profiles",
+          "CSV export"
+        ]
+      },
+      {
+        "name": "Trademark Monitor",
+        "desc": "Automated USPTO and WIPO screening. Get alerts before a trademark conflict becomes a legal problem.",
+        "pricing": "Premium ($79+/mo)",
+        "features": [
+          "Daily USPTO/WIPO scanning",
+          "4 severity levels",
+          "Email + SMS alerts",
+          "5,000 domains per list"
+        ]
+      },
+      {
+        "name": "Domain Database",
+        "desc": "Registration statistics, pricing history, and renewal costs for 2,847 TLDs. Updated daily from ICANN zone files.",
+        "pricing": "Free (current pricing)",
+        "features": [
+          "2,847 TLDs tracked",
+          "24-month pricing history",
+          "420+ registrar feeds",
+          "Search by TLD, keyword, or price"
+        ]
+      }
+    ],
+    "tiersTitle": "Abonnementsniveaus",
+    "tiers": [
+      {
+        "tier": "Gratis",
+        "price": "$0",
+        "features": "12 taxaties/dag, basis SEO-scanner, helpcentrumtoegang",
+        "color": "#888888"
+      },
+      {
+        "tier": "Startup",
+        "price": "$79/mnd",
+        "features": "30 taxaties/dag, volledige scanner, uitgebreide inzichten, bulk-analyseur, merkmonitor",
+        "color": "#F4A261"
+      },
+      {
+        "tier": "Enterprise",
+        "price": "$129/mnd",
+        "features": "Onbeperkte taxaties, alle Startup-functies, API (10K oproepen/dag), toegewijde ondersteuning",
+        "color": "#9E2A2B"
+      }
+    ],
+    "needHelp": {
+      "badge": "Hulp nodig?",
+      "title": "Premium-abonnees krijgen 4-uur ondersteuning",
+      "cta": "Contact opnemen"
+    },
+    "openTool": "Tool openen"
+  },
+  "helpFaq": {
+    "badge": "FAQ",
+    "title1": "Veelgestelde",
+    "title2": "vragen.",
+    "desc": "Antwoorden op de meest gestelde vragen over Ceche.",
+    "sections": [
+      {
+        "title": "Aan de slag",
+        "items": [
+          {
+            "q": "Wat is Ceche?",
+            "a": "Ceche is een domeinmarktplaats waar premium namen worden gekocht en verkocht."
+          },
+          {
+            "q": "Hoe werkt de taxatie-engine?",
+            "a": "De taxatie-engine gebruikt het 16-dimension kader om domeinen te evalueren."
+          },
+          {
+            "q": "Welke TLD's ondersteunt Ceche?",
+            "a": "Ceche ondersteunt .com, .net, .io en .co domeinen."
+          },
+          {
+            "q": "Hoe maak ik een account aan?",
+            "a": "Klik op 'Gratis aanmelden' in de navigatie."
+          }
+        ]
+      },
+      {
+        "title": "Prijzen & facturering",
+        "items": [
+          {
+            "q": "Wat zijn de abonnementsniveaus?",
+            "a": "Gratis: 12 taxaties/dag. Startup: 30 taxaties/dag. Enterprise: onbeperkt."
+          },
+          {
+            "q": "Hoe werken de Probeer-je-geluk-prijzen?",
+            "a": "Probeer je geluk biedt mysterieuze domeinacquisities tegen vaste tarieven."
+          },
+          {
+            "q": "Wat zijn de marktplaatskosten?",
+            "a": "Standaard vermelding: $5 per domein. Commissie: 8-15%."
+          },
+          {
+            "q": "Bieden jullie refunds?",
+            "a": "Nee. Alle kosten voor digitale goederen zijn niet-restitueerbaar."
+          }
+        ]
+      },
+      {
+        "title": "Tools",
+        "items": [
+          {
+            "q": "Wat is het verschil tussen SEO-scanner en Uitgebreide inzichten?",
+            "a": "De SEO-scanner evalueert zichtbaarheid en backlinks. Uitgebreide inzichten biedt diepgaantere diligence."
+          },
+          {
+            "q": "Hoe werkt de Bulk-analyseur?",
+            "a": "Upload een CSV met één kolom 'domein' en één domein per rij."
+          },
+          {
+            "q": "Hoe werkt de Merkmonitor?",
+            "a": "Voeg domeinen toe aan je monitoorlijst vanaf het dashboard."
+          }
+        ]
+      },
+      {
+        "title": "API & integraties",
+        "items": [
+          {
+            "q": "Hoe authenticeer ik API-verzoeken?",
+            "a": "Voeg je API-sleutel toe in de Authorization-header als Bearer-token."
+          },
+          {
+            "q": "Wat zijn de API-snelheidslimieten?",
+            "a": "Gratis: 100 oproepen/dag. Startup: 500. Enterprise: 10.000."
+          },
+          {
+            "q": "Welke SDK's zijn beschikbaar?",
+            "a": "Officiële SDK's voor Python, JavaScript/Node.js, Go en Ruby."
+          }
+        ]
+      },
+      {
+        "title": "Account & ondersteuning",
+        "items": [
+          {
+            "q": "Hoe neem ik contact op met ondersteuning?",
+            "a": "Premium-abonnees ontvangen binnen 4 werkuur antwoord."
+          },
+          {
+            "q": "Kan ik mijn abonnement annuleren?",
+            "a": "Ja. Annuleer op elk moment via Accountinstellingen."
+          }
+        ]
+      }
+    ],
+    "stillQuestions": "Nog vragen?",
+    "supportTeam": "Ons supportteam staat klaar om te helpen",
+    "contactSupport": "Contact opnemen"
+  },
+  "helpApi": {
+    "badge": "API-referentie",
+    "title1": "Bouw met",
+    "title2": "Ceche.",
+    "desc": "Een unified REST API voor het taxeren van domeinen, scoren van merkbaarheid en monitoren van merken.",
+    "baseUrl": "Basis-URL",
+    "auth": "Authenticatie",
+    "endpoints": [
+      {
+        "title": "Domein taxeren",
+        "desc": "Retourneert een volledige 16-dimension waardering."
+      },
+      {
+        "title": "Bulk-taxatie",
+        "desc": "Taxeer tot 5.000 domeinen in één verzoek."
+      },
+      {
+        "title": "Domeinprofiel",
+        "desc": "Haal het volledige intelligentieprofiel op."
+      },
+      {
+        "title": "Merkcontrole",
+        "desc": "Filter een domeinnaam against USPTO- en WIPO-merkdatabanken."
+      },
+      {
+        "title": "Domein aanbieden",
+        "desc": "Bied een domein aan op de Ceche-marktplaats."
+      },
+      {
+        "title": "Webhook registreren",
+        "desc": "Registreer een webhook-URL voor realtime meldingen."
+      }
+    ],
+    "rateLimits": "Snelheidslimieten",
+    "limits": [
+      {
+        "tier": "Gratis",
+        "limit": "100 oproepen/dag",
+        "color": "#888888"
+      },
+      {
+        "tier": "Startup",
+        "limit": "500 oproepen/dag",
+        "color": "#F4A261"
+      },
+      {
+        "tier": "Enterprise",
+        "limit": "10.000 oproepen/dag",
+        "color": "#9E2A2B"
+      }
+    ],
+    "enterprise": {
+      "badge": "Enterprise",
+      "title": "10.000 API-aanroepen per dag",
+      "cta": "API-sleutel ophalen"
+    },
+    "openTool": "Tool openen"
+  },
+  "helpContact": {
+    "badge": "Contact",
+    "title1": "Neem",
+    "title2": "contact op.",
+    "desc": "Premium-abonnees ontvangen binnen 4 werkuur antwoord.",
+    "form": {
+      "name": "Naam",
+      "namePlaceholder": "Je naam",
+      "email": "E-mail",
+      "emailPlaceholder": "je@bedrijf.com",
+      "subject": "Onderwerp",
+      "subjects": [
+        "Algemene vraag",
+        "Technische ondersteuning",
+        "Factuurvraag",
+        "Partnerschap",
+        "Pers / Media"
+      ],
+      "message": "Bericht",
+      "messagePlaceholder": "Hoe kunnen we helpen?",
+      "send": "Bericht versturen"
+    },
+    "channels": {
+      "title": "Ondersteuningskanalen",
+      "email": {
+        "title": "E-mail",
+        "value": "support@ceche.net"
+      },
+      "slack": {
+        "title": "Enterprise Slack",
+        "value": "Privékanaal voor Enterprise-abonnees"
+      }
+    },
+    "responseTimes": {
+      "title": "Responstijden",
+      "times": [
+        {
+          "tier": "Enterprise",
+          "time": "4 uur",
+          "color": "#9E2A2B"
+        },
+        {
+          "tier": "Startup",
+          "time": "4 uur",
+          "color": "#F4A261"
+        },
+        {
+          "tier": "Gratis",
+          "time": "24 uur",
+          "color": "#888888"
+        }
+      ]
+    },
+    "businessHours": {
+      "title": "Openingstijden",
+      "desc": "Maandag-vrijdag, 9:00 - 18:00 ET. Premium Enterprise: 24/7 Slack-ondersteuning."
+    }
+  },
+  "helpChangelog": {
+    "badge": "Changelog",
+    "title1": "Elke commit,",
+    "title2": "gedocumenteerd.",
+    "desc": "Elke update direct uit onze git-geschiedenis.",
+    "comingSoon": {
+      "badge": "Binnenkort",
+      "title": "Veilingtracking, mobiele app, ML-waardering",
+      "cta": "Bekijk roadmap"
+    }
+  },
+  "premiumModal": {
+    "title": "Premium-functie",
+    "description": "{toolName} vereist een premium-account. Meld je aan om deze functie te ontgrendelen.",
+    "redirecting": "Doorverwijzen naar aanmelding over {count} seconden...",
+    "cta": "Gratis account aanmaken",
+    "back": "Terug"
+  },
+  "appHeader": {
+    "home": "Home",
+    "appraise": "Taxeren",
+    "scanner": "Scanner",
+    "marketplace": "Marktplaats",
+    "apiKeys": "API-sleutels",
+    "logout": "Uitloggen"
+  },
+  "toolTemplate": {
+    "comingSoon": "Binnenkort",
+    "waitlistDesc": "Deze functie is in actieve ontwikkeling. Word lid van de wachtlijst.",
+    "emailPlaceholder": "Voer je e-mail in",
+    "joinWaitlist": "Wachtlijst"
+  }
+}
