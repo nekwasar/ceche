@@ -33,7 +33,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body suppressHydrationWarning>
         <Providers>
           <IntlProvider messages={messages} locale={locale}>
             <SubdomainLayout>{children}</SubdomainLayout>
