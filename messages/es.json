@@ -1,349 +1,349 @@
 {
   "nav": {
     "triggers": {
-      "products": "Products",
-      "marketplace": "Marketplace",
-      "solutions": "Solutions",
-      "resources": "Resources"
+      "products": "Productos",
+      "marketplace": "Mercado",
+      "solutions": "Soluciones",
+      "resources": "Recursos"
     },
     "links": {
-      "pricing": "Pricing",
-      "login": "Log In",
-      "signup": "Signup Free"
+      "pricing": "Precios",
+      "login": "Iniciar sesión",
+      "signup": "Registrarse gratis"
     },
     "categories": {
-      "intelligence": "Intelligence",
-      "platform": "Platform",
-      "buyDomains": "Buy Domains",
-      "sellDomains": "Sell Domains",
-      "byRole": "By Role",
-      "byNeed": "By Need",
-      "explore": "Explore",
-      "support": "Support"
+      "intelligence": "Inteligencia",
+      "platform": "Plataforma",
+      "buyDomains": "Comprar dominios",
+      "sellDomains": "Vender dominios",
+      "byRole": "Por rol",
+      "byNeed": "Por necesidad",
+      "explore": "Explorar",
+      "support": "Soporte"
     },
     "items": {
       "domainLookup": {
-        "title": "Domain Lookup",
-        "desc": "Free tool: WHOIS data, DNS records."
+        "title": "Consulta de dominio",
+        "desc": "Herramienta gratuita: datos WHOIS, registros DNS."
       },
       "appraisal": {
-        "title": "16-Dimension Appraisal",
-        "desc": "Deep domain valuation with 16 metric breakdowns and market-based pricing."
+        "title": "Tasación de 16 dimensiones",
+        "desc": "Valoración profunda del dominio con 16 desgloses de métricas y precios basados en el mercado."
       },
       "domainScanner": {
-        "title": "Domain Scanner",
-        "desc": "Premium tool: DA, spam score, backlink profiles, and indexation status. Requires subscription."
+        "title": "Escáner de dominios",
+        "desc": "Herramienta premium: DA, puntuación de spam, perfiles de backlinks y estado de indexación."
       },
       "extendedInsights": {
-        "title": "Extended Insights",
-        "desc": "Premium tool: deep DNS records, USPTO/WIPO trademarks, and WHOIS history."
+        "title": "Información extendida",
+        "desc": "Herramienta premium: registros DNS profundos, marcas USPTO/WIPO e historial WHOIS."
       },
       "bulkAudit": {
-        "title": "Bulk Domain Audit",
-        "desc": "Premium tool: batch process and analyze up to 1000 domains at once."
+        "title": "Auditoría masiva de dominios",
+        "desc": "Herramienta premium: procesamiento por lotes y análisis de hasta 1000 dominios a la vez."
       },
       "apiAccess": {
-        "title": "API Access",
-        "desc": "RESTful API for programmatic domain intelligence at scale."
+        "title": "Acceso API",
+        "desc": "API RESTful para inteligencia de dominios programática a escala."
       },
       "trademarkMonitor": {
-        "title": "Trademark Monitor",
-        "desc": "USPTO/WIPO conflict detection and automated alerts."
+        "title": "Monitor de marcas",
+        "desc": "Detección de conflictos USPTO/WIPO y alertas automatizadas."
       },
       "domainDatabase": {
-        "title": "Domain Database",
-        "desc": "Comprehensive TLD registry and expiry tracking."
+        "title": "Base de datos de dominios",
+        "desc": "Registro TLD completo y seguimiento de vencimientos."
       },
       "standardMarketplace": {
-        "title": "Standard Marketplace",
-        "desc": "Browse premium domains with full stats. Name hidden — pay to reveal."
+        "title": "Mercado estándar",
+        "desc": "Explora dominios premium con estadísticas completas. Nombre oculto — paga para revelar."
       },
       "curatedDomains": {
-        "title": "Curated Domains",
-        "desc": "Hand-picked premium domains verified by our team."
+        "title": "Dominios curados",
+        "desc": "Dominios premium seleccionados y verificados por nuestro equipo."
       },
       "tryYourLuck": {
-        "title": "Try Your Luck",
-        "desc": "Pick a TLD, spin 3 boxes, reveal a premium domain. Locked exclusively for you."
+        "title": "Prueba tu suerte",
+        "desc": "Elige un TLD, gira 3 cajas, revela un dominio premium. Bloqueado exclusivamente para ti."
       },
       "listDomain": {
-        "title": "List a Domain",
-        "desc": "Sell your premium domain on Ceche. $5-$10 listing fee, 8-15% commission."
+        "title": "Listar un dominio",
+        "desc": "Vende tu dominio premium en Ceche. $5-$10 de tarifa de listado, 8-15% de comisión."
       },
       "domainInvestors": {
-        "title": "Domain Investors",
-        "desc": "Portfolio yield tracking, flipper valuation, and drop-catching alerts."
+        "title": "Inversores de dominios",
+        "desc": "Análisis de rendimiento de cartera, métricas de flipper y alertas de captura."
       },
       "startupFounders": {
-        "title": "Startup Founders",
-        "desc": "Brandability index, pronounceability, and extension checking."
+        "title": "Fundadores de startups",
+        "desc": "Índice de marca, pronunciabilidad y verificación de extensiones."
       },
       "seoAgencies": {
-        "title": "SEO Agencies",
-        "desc": "Expired domain backlink authority scoring and spam recovery audits."
+        "title": "Agencias SEO",
+        "desc": "Puntuación de autoridad de backlinks de dominios vencidos y auditorías de recuperación de spam."
       },
       "findAvailable": {
-        "title": "Find Available Domains",
-        "desc": "Scan millions of combinations for available premium names."
+        "title": "Encontrar dominios disponibles",
+        "desc": "Escanea millones de combinaciones para nombres premium disponibles."
       },
       "researchIntelligence": {
-        "title": "Research Intelligence",
-        "desc": "Deep domain analysis before acquisition decisions."
+        "title": "Inteligencia de investigación",
+        "desc": "Análisis profundo de dominios antes de decisiones de adquisición."
       },
       "buyPremium": {
-        "title": "Buy Premium Domains",
-        "desc": "Acquire high-value domains with secure, transparent transactions."
+        "title": "Comprar dominios premium",
+        "desc": "Adquiere dominios de alto valor con transacciones seguras y transparentes."
       },
       "blog": {
         "title": "Blog",
-        "desc": "Domain investing tips, platform updates, and industry insights."
+        "desc": "Consejos de inversión en dominios, actualizaciones de plataforma e información del sector."
       },
       "ebooks": {
-        "title": "Ebooks",
-        "desc": "In-depth guides on domain valuation, SEO, and brand strategy."
+        "title": "E-books",
+        "desc": "Guías profundas sobre tasación de dominios, SEO y estrategia de marca."
       },
       "caseStudies": {
-        "title": "Case Studies",
-        "desc": "Real stories from domain investors and startup founders."
+        "title": "Casos de estudio",
+        "desc": "Historias reales de inversores de dominios y fundadores de startups."
       },
       "helpCenter": {
-        "title": "Help Center",
-        "desc": "Documentation, FAQs, and getting started guides."
+        "title": "Centro de ayuda",
+        "desc": "Documentación, FAQ y guías de inicio."
       },
       "apiDocs": {
-        "title": "API Docs",
-        "desc": "API reference, authentication, and integration guides."
+        "title": "Documentación API",
+        "desc": "Referencia API, autenticación y guías de integración."
       },
       "contact": {
-        "title": "Contact",
-        "desc": "Reach our team for support or partnerships."
+        "title": "Contacto",
+        "desc": "Contacta con nuestro equipo para soporte o asociaciones."
       },
       "changelog": {
-        "title": "Changelog",
-        "desc": "Product updates and new feature releases."
+        "title": "Registro de cambios",
+        "desc": "Actualizaciones de producto y nuevas funcionalidades."
       }
     },
     "sidebar": {
-      "overview": "Overview",
-      "documentation": "Documentation",
-      "apiReference": "API Reference",
+      "overview": "Resumen",
+      "documentation": "Documentación",
+      "apiReference": "Referencia API",
       "faq": "FAQ",
-      "contact": "Contact",
-      "changelog": "Changelog"
+      "contact": "Contacto",
+      "changelog": "Registro de cambios"
     },
     "megaMenu": {
-      "products": "Tools and APIs for domain intelligence",
-      "marketplace": "Buy and sell premium domains",
-      "solutions": "Built for your role and workflow",
-      "resources": "Learn and get support"
+      "products": "Herramientas e API para inteligencia de dominios",
+      "marketplace": "Comprar y vender dominios premium",
+      "solutions": "Diseñado para tu rol y flujo de trabajo",
+      "resources": "Aprende y obtén soporte"
     }
   },
   "footer": {
-    "tagline": "Enterprise-grade domain intelligence and marketplace platform.",
+    "tagline": "Plataforma de inteligencia de dominios y mercado de nivel empresarial.",
     "sections": {
-      "products": "Products",
-      "marketplace": "Marketplace",
-      "company": "Company",
+      "products": "Productos",
+      "marketplace": "Mercado",
+      "company": "Empresa",
       "legal": "Legal"
     },
     "links": {
-      "domainAppraiser": "Domain Appraiser",
-      "seoScanner": "SEO Scanner",
-      "extendedInsights": "Extended Insights",
-      "bulkAnalyzer": "Bulk Analyzer",
-      "apiAccess": "API Access",
-      "curatedDomains": "Curated Domains",
-      "tryYourLuck": "Try Your Luck",
-      "sellDomains": "Sell Domains",
-      "howUnmaskingWorks": "How Unmasking Works",
-      "about": "About",
-      "affiliates": "Affiliates",
+      "domainAppraiser": "Tasador de dominios",
+      "seoScanner": "Escáner SEO",
+      "extendedInsights": "Información extendida",
+      "bulkAnalyzer": "Analizador masivo",
+      "apiAccess": "Acceso API",
+      "curatedDomains": "Dominios curados",
+      "tryYourLuck": "Prueba tu suerte",
+      "sellDomains": "Vender dominios",
+      "howUnmaskingWorks": "Cómo funciona la revelación",
+      "about": "Acerca de",
+      "affiliates": "Afiliados",
       "blog": "Blog",
-      "contact": "Contact",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookie Policy"
+      "contact": "Contacto",
+      "terms": "Términos de servicio",
+      "privacy": "Política de privacidad",
+      "cookies": "Política de cookies"
     },
-    "copyright": "All rights reserved.",
-    "platform": "Domain Intelligence Platform"
+    "copyright": "Todos los derechos reservados.",
+    "platform": "Plataforma de inteligencia de dominios"
   },
   "home": {
     "hero": {
-      "title1": "Premium domain names, bought and sold with",
-      "titleHighlight": "intelligence",
-      "subtitle": "Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.",
-      "searchPlaceholder": "Search any domain name, e.g., brand.com",
-      "searchButton": "Search Domain",
+      "title1": "Nombres de dominio premium, comprados y vendidos con",
+      "titleHighlight": "inteligencia",
+      "subtitle": "Cada anuncio muestra estadísticas completas — valor estimado, puntuación de salud, CPC, marca — pero el nombre permanece oculto hasta que pagues para revelarlo. Sin inflación de subastas. Sin sniping.",
+      "searchPlaceholder": "Busca cualquier dominio, ej. brand.com",
+      "searchButton": "Buscar dominio",
       "badges": {
-        "blindListings": "Blind Listings",
-        "dimensionIntelligence": "16-Dimension Intelligence",
-        "secureTransactions": "Secure Transactions"
+        "blindListings": "Anuncios ciegos",
+        "dimensionIntelligence": "Inteligencia de 16 dimensiones",
+        "secureTransactions": "Transacciones seguras"
       }
     },
     "searchTool": {
-      "badge": "Free Tool",
-      "title": "Search Any Domain Name",
-      "description": "Type any domain into the search bar above. We'll tell you if it's available, what it's worth, and what you could build with it. No signup required.",
+      "badge": "Herramienta gratuita",
+      "title": "Busca cualquier nombre de dominio",
+      "description": "Escribe cualquier dominio en la barra de búsqueda. Te diremos si está disponible, cuánto vale y qué podrías construir con él.",
       "taken": {
-        "title": "Domain Taken?",
-        "desc": "We show you the WHOIS details — who owns it, when it expires, which registrar they used, and nameserver info. Useful for outreach or waiting for expiry."
+        "title": "¿Dominio ocupado?",
+        "desc": "Mostramos los detalles WHOIS — quién lo posee, cuándo vence, qué registrador usaron e información de nameservers."
       },
       "available": {
-        "title": "Domain Available?",
-        "desc": "We rank it Premium, Mid, or Low — no confusing scores, just a clear label. Plus suggestions for what you could build with the name, and a button to run a full 16-dimension appraisal."
+        "title": "¿Dominio disponible?",
+        "desc": "Lo clasificamos como Premium, Medio o Bajo — sin puntuaciones confusas, solo una etiqueta clara. Más sugerencias para lo que podrías construir."
       },
       "appraise": {
-        "title": "Deep Appraisal",
-        "desc": "Click \"Appraise this name\" for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range."
+        "title": "Tasación profunda",
+        "desc": "Haz clic en \"Tasar este nombre\" para el análisis completo de 16 dimensiones — pronunciabilidad, riesgo de marca, DNS histórico, puntuación de marca y rango de valor estimado."
       }
     },
     "builtFor": {
-      "badge": "Built For",
-      "title": "Three kinds of people, one platform",
+      "badge": "Diseñado para",
+      "title": "Tres tipos de personas, una plataforma",
       "investors": {
-        "title": "Domain Investors",
-        "desc": "Scan thousands of word combinations, appraise shortlists in seconds, and spot undervalued names before the market catches on. The scanner surfaces DA, spam score, and backlink profiles on every available name.",
+        "title": "Inversores de dominios",
+        "desc": "Escanea miles de combinaciones de palabras, tasa listas cortas en segundos y detecta nombres subvalorados antes de que el mercado lo note.",
         "stat": "200+",
-        "statLabel": "checks per scan"
+        "statLabel": "verificaciones por escaneo"
       },
       "founders": {
-        "title": "Startup Founders",
-        "desc": "Find a name that's easy to say, easy to spell, and safe to use. The 16-dimension engine checks pronounceability, trademark conflicts, and brandability before you commit to a brand.",
+        "title": "Fundadores de startups",
+        "desc": "Encuentra un nombre fácil de decir, fácil de escribir y seguro de usar. El motor de 16 dimensiones verifica pronunciabilidad, conflictos de marca y marca.",
         "stat": "16",
-        "statLabel": "dimensions checked"
+        "statLabel": "dimensiones verificadas"
       },
       "agencies": {
-        "title": "SEO Agencies",
-        "desc": "Find expired domains that still carry authority and clean backlinks. The scanner surfaces DA, spam score, and indexation status so you start with existing SEO value, not zero.",
+        "title": "Agencias SEO",
+        "desc": "Encuentra dominios vencidos que aún tienen autoridad y backlinks limpios. El escáner muestra DA, puntuación de spam y estado de indexación.",
         "stat": "4",
-        "statLabel": "metrics per domain"
+        "statLabel": "métricas por dominio"
       }
     },
     "marketplace": {
-      "badge": "Marketplace",
-      "title": "Premium names, names hidden",
-      "desc1": "Every listing shows full intelligence — estimated value, health score, CPC, brandability, TLD, and keyword intent — everything except the name itself. No hints. No partial reveals. No asterisks.",
-      "desc2": "Public marketplaces get scraped the moment a premium name appears. Ceche hides the name and shows the intelligence instead — so value, not visibility, drives the transaction. Investors who read the stats well consistently find names before auction fever inflates them.",
-      "cta": "Browse the marketplace",
-      "revealPricingTitle": "Reveal Pricing",
-      "tryYourLuckTitle": "Try Your Luck",
-      "tryYourLuckCta": "Try Your Luck"
+      "badge": "Mercado",
+      "title": "Nombres premium, nombres ocultos",
+      "desc1": "Cada anuncio muestra inteligencia completa — valor estimado, puntuación de salud, CPC, marca, TLD e intención de palabras clave — todo excepto el nombre.",
+      "desc2": "Los mercados públicos se scrapean en cuanto aparece un nombre premium. Ceche oculta el nombre y muestra la inteligencia en su lugar.",
+      "cta": "Explorar el mercado",
+      "revealPricingTitle": "Precios de revelación",
+      "tryYourLuckTitle": "Prueba tu suerte",
+      "tryYourLuckCta": "Prueba tu suerte"
     },
     "howItWorks": {
-      "badge": "How It Works",
-      "title": "Spin, pick, own",
+      "badge": "Cómo funciona",
+      "title": "Gira, elige, posee",
       "step1": {
-        "title": "Pick your TLD",
-        "desc": "Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD."
+        "title": "Elige tu TLD",
+        "desc": "Elige .com ($79), .net ($39), .io ($29) o .co ($9). O salta la selección y paga una tarifa fija de $19 por cualquier TLD."
       },
       "step2": {
-        "title": "Spin & pick a box",
-        "desc": "Three closed boxes appear with a spinning animation. Each holds a unique premium domain. When it stops, pick one."
+        "title": "Gira y elige una caja",
+        "desc": "Tres cajas cerradas aparecen con una animación de giro. Cada una contiene un dominio premium único."
       },
       "step3": {
-        "title": "Reveal & register",
-        "desc": "Your domain is revealed instantly. It's locked exclusively for you — no one else can buy it. Register immediately at your preferred registrar."
+        "title": "Revela y registra",
+        "desc": "Tu dominio se revela instantáneamente. Está bloqueado exclusivamente para ti — nadie más puede comprarlo."
       },
-      "cta": "Try Your Luck now"
+      "cta": "Prueba tu suerte ahora"
     },
     "underTheHood": {
-      "badge": "Under the Hood",
-      "title": "Built for Speed and Trust",
-      "description": "Every domain name is encrypted at rest. Every scan runs on real infrastructure. No shortcuts.",
+      "badge": "Bajo el capó",
+      "title": "Diseñado para velocidad y confianza",
+      "description": "Cada nombre de dominio está encriptado en reposo. Cada escaneo se ejecuta en infraestructura real. Sin atajos.",
       "goroutine": {
-        "title": "50-Worker Goroutine Pool",
-        "desc": "Our scanner runs 50 concurrent goroutines, each checking DNS records with a 5-second timeout. Results batch-insert 100 at a time. We respect per-TLD rate limits."
+        "title": "Pool de 50 goroutines",
+        "desc": "Nuestro escáner ejecuta 50 goroutines concurrentes, cada una verificando registros DNS con timeout de 5 segundos."
       },
       "encryption": {
-        "title": "AES-256-GCM Encryption",
-        "desc": "Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they'd see garbage — not your search history."
+        "title": "Encriptación AES-256-GCM",
+        "desc": "Cada nombre de dominio en nuestra base de datos está encriptado con AES-256-GCM."
       },
       "caching": {
-        "title": "In-Memory Caching",
-        "desc": "Repeat queries hit zero-cost bigcache with a 1-hour TTL. Your appraisal results stay fast without re-running the full 16-dimension analysis."
+        "title": "Caché en memoria",
+        "desc": "Las consultas repetidas acceden a caché bigcache sin costo con TTL de 1 hora."
       }
     },
     "faq": {
-      "badge": "Frequently Asked",
-      "title": "Common Questions",
+      "badge": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes",
       "items": [
         {
-          "question": "How many free appraisals do I get?",
-          "answer": "If you're not signed up, you get 3 appraisals per day. Sign up for free and you get 12 per day. Premium Startup ($79/mo) gets 30 per day, and Premium Enterprise ($129/mo) gets unlimited."
+          "question": "¿Cuántas tasaciones gratuitas recibo?",
+          "answer": "Si no estás registrado, recibes 3 tasaciones al día. Regístrate gratis y obtienes 12 al día."
         },
         {
-          "question": "What's the difference between name search and appraisal?",
-          "answer": "Name search is free and instant — it tells you if a domain is available, shows WHOIS if taken, or ranks it Premium/Mid/Low if available. Appraisal is the deep 16-dimension analysis that scores pronounceability, trademark risk, brandability, and estimated value."
+          "question": "¿Cuál es la diferencia entre buscar nombre y tasación?",
+          "answer": "La búsqueda de nombre es gratuita e instantánea — te dice si un dominio está disponible. La tasación es el análisis profundo de 16 dimensiones."
         },
         {
-          "question": "How does Try Your Luck work?",
-          "answer": "Pick a TLD (.com, .net, .io, or .co) and pay the TLD-specific price. Three closed boxes appear with a spinning animation. Pick one when it stops. You get a unique premium domain revealed instantly. It's locked — no one else can buy it. Or pay a flat $19 without selecting a TLD."
+          "question": "¿Cómo funciona Prueba tu suerte?",
+          "answer": "Elige un TLD y paga el precio específico del TLD. Tres cajas cerradas aparecen. Elige una cuando se detenga."
         },
         {
-          "question": "What happens after I reveal a domain name?",
-          "answer": "After reveal, the domain is yours to evaluate. We show you direct links to register it at Dynadot, Namecheap, or Porkbun. You choose where to register — we don't lock you into a registrar."
+          "question": "¿Qué sucede después de revelar un nombre de dominio?",
+          "answer": "Después de la revelación, el dominio es tuyo para evaluar. Te mostramos enlaces directos para registrarlo."
         },
         {
-          "question": "What's included in the Premium subscription?",
-          "answer": "Premium Startup ($79/mo) gives you 30 appraisals/day plus access to the Domain Scanner (DA, spam score, backlinks), Extended Insights (USPTO/WIPO, trademark history), and Bulk Domain Audit. Enterprise ($129/mo) adds unlimited appraisals, API access, and priority support."
+          "question": "¿Qué incluye la suscripción Premium?",
+          "answer": "Premium Startup te da 30 tasaciones/día más acceso al Escáner de dominios, Información extendida y Auditoría masiva."
         },
         {
-          "question": "Can I sell my domains on Ceche?",
-          "answer": "Yes. List your premium domain on our marketplace. We appraise it, you set the price. Standard listing is $5, priority placement is $10. We take 8-15% commission on successful sales depending on the sale price."
+          "question": "¿Puedo vender mis dominios en Ceche?",
+          "answer": "Sí. Ofrece tu dominio premium en nuestro mercado. Nosotros lo tasamos, tú pones el precio."
         },
         {
-          "question": "Is my search data private?",
-          "answer": "Yes. Domain names you search are encrypted with AES-256-GCM before storage. We don't sell or share search data. Your competition won't see what you're looking at."
+          "question": "¿Mis datos de búsqueda son privados?",
+          "answer": "Sí. Los nombres de dominio que buscas se encriptan con AES-256-GCM antes del almacenamiento."
         }
       ]
     },
     "worldMap": {
-      "title": "Accelerating Domain Liquidity Worldwide",
-      "description": "Real-time intelligence for domain investors, startup founders, and SEO agencies across 9 languages and 4 TLDs.",
-      "cta": "Start Appraising"
+      "title": "Acelerando la liquidez de dominios en todo el mundo",
+      "description": "Inteligencia en tiempo real para inversores de dominios, fundadores de startups y agencias SEO en 9 idiomas.",
+      "cta": "Empezar a tasar"
     },
     "cta": {
-      "title": "Ready to find your next domain?",
-      "description": "Start with 3 free appraisals per day. No credit card required.",
-      "signup": "Signup Free",
-      "pricing": "View Pricing"
+      "title": "¿Listo para encontrar tu próximo dominio?",
+      "description": "Empieza con 3 tasaciones gratuitas al día. Sin tarjeta de crédito.",
+      "signup": "Registrarse gratis",
+      "pricing": "Ver precios"
     },
     "app": {
-      "welcomeBack": "Welcome back, {name}",
+      "welcomeBack": "Bienvenido de nuevo, {name}",
       "plan": "Plan",
-      "quickActions": "Quick Actions",
-      "appraiseDomain": "Appraise a domain →",
-      "startScan": "Start a scan →",
-      "browseMarketplace": "Browse marketplace →",
-      "apiKeys": "API Keys",
-      "manageKeys": "Manage keys →"
+      "quickActions": "Acciones rápidas",
+      "appraiseDomain": "Tasar un dominio →",
+      "startScan": "Iniciar escaneo →",
+      "browseMarketplace": "Explorar mercado →",
+      "apiKeys": "Claves API",
+      "manageKeys": "Gestionar claves →"
     }
   },
   "pricingPage": {
     "hero": {
-      "badge": "Pricing",
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Start free. Upgrade when you need more power. Cancel anytime."
+      "badge": "Precios",
+      "title": "Precios simples y transparentes",
+      "subtitle": "Empieza gratis. Actualiza cuando necesites más potencia. Cancela en cualquier momento."
     },
     "annual": {
-      "banner": "Save up to $260/yr with annual billing",
-      "mostPopular": "Most Popular"
+      "banner": "Ahorra hasta $260/año con facturación anual",
+      "mostPopular": "Más popular"
     },
     "plans": {
       "free": {
-        "name": "Free",
-        "description": "Get started with basic tools. No credit card required.",
+        "name": "Gratis",
+        "description": "Empieza con herramientas básicas. Sin tarjeta de crédito.",
         "annualNote": "",
-        "cta": "Get Started",
+        "cta": "Empezar",
         "features": [
-          "3 appraisals/day (unsigned)",
-          "12 appraisals/day (signed up)",
-          "Name search tool",
-          "Basic WHOIS lookup",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "API access"
+          "3 tasaciones/día (sin registro)",
+          "12 tasaciones/día (registrado)",
+          "Herramienta de búsqueda de nombre",
+          "Consulta WHOIS básica",
+          "Escáner de dominios (DA, spam, backlinks)",
+          "Información extendida (USPTO/WIPO)",
+          "Auditoría masiva de dominios",
+          "Acceso API"
         ],
         "included": [
           true,
@@ -358,18 +358,18 @@
       },
       "startup": {
         "name": "Premium Startup",
-        "description": "For small teams and serious domain investors.",
-        "annualNote": "saves $160/yr",
-        "cta": "Start Premium",
+        "description": "Para equipos pequeños e inversores serios de dominios.",
+        "annualNote": "ahorra $160/año",
+        "cta": "Iniciar Premium",
         "features": [
-          "30 appraisals/day",
-          "Name search tool",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "Priority marketplace listing",
-          "API access",
-          "Priority support"
+          "30 tasaciones/día",
+          "Herramienta de búsqueda de nombre",
+          "Escáner de dominios (DA, spam, backlinks)",
+          "Información extendida (USPTO/WIPO)",
+          "Auditoría masiva de dominios",
+          "Listado prioritario en el mercado",
+          "Acceso API",
+          "Soporte prioritario"
         ],
         "included": [
           true,
@@ -384,18 +384,18 @@
       },
       "enterprise": {
         "name": "Premium Enterprise",
-        "description": "For agencies, professionals, and power users.",
-        "annualNote": "saves $260/yr",
-        "cta": "Start Enterprise",
+        "description": "Para agencias, profesionales y usuarios avanzados.",
+        "annualNote": "ahorra $260/año",
+        "cta": "Iniciar Enterprise",
         "features": [
-          "Unlimited appraisals",
-          "Name search tool",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "Priority marketplace listing",
-          "Full API access",
-          "Priority support"
+          "Tasaciones ilimitadas",
+          "Herramienta de búsqueda de nombre",
+          "Escáner de dominios (DA, spam, backlinks)",
+          "Información extendida (USPTO/WIPO)",
+          "Auditoría masiva de dominios",
+          "Listado prioritario en el mercado",
+          "Acceso API completo",
+          "Soporte prioritario"
         ],
         "included": [
           true,
@@ -410,34 +410,34 @@
       }
     },
     "tryYourLuck": {
-      "badge": "Try Your Luck",
-      "title": "Spin. Reveal. Own.",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.",
-      "mostPopular": "Most Popular"
+      "badge": "Prueba tu suerte",
+      "title": "Gira. Revela. Posee.",
+      "subtitle": "Elige un TLD, gira 3 cajas, revela un dominio premium bloqueado exclusivamente para ti.",
+      "mostPopular": "Más popular"
     },
     "fees": {
       "reveal": {
-        "badge": "Marketplace",
-        "title": "Reveal Fees",
-        "description": "Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.",
+        "badge": "Mercado",
+        "title": "Tarifas de revelación",
+        "description": "Los anuncios estándar muestran estadísticas con el nombre oculto. Paga una tarifa única de revelación para ver el nombre.",
         "headers": {
-          "tier": "Tier",
-          "valueRange": "Value Range",
-          "fee": "Fee"
+          "tier": "Nivel",
+          "valueRange": "Rango de valor",
+          "fee": "Tarifa"
         },
         "rows": [
           {
-            "tier": "Low",
-            "range": "Under $500",
+            "tier": "Bajo",
+            "range": "Menos de $500",
             "fee": "$5"
           },
           {
-            "tier": "Mid",
+            "tier": "Medio",
             "range": "$500 – $5,000",
             "fee": "$10"
           },
           {
-            "tier": "High",
+            "tier": "Alto",
             "range": "$5,001 – $50,000",
             "fee": "$25"
           },
@@ -449,26 +449,26 @@
         ]
       },
       "listing": {
-        "badge": "For Sellers",
-        "title": "Listing Fees",
+        "badge": "Para vendedores",
+        "title": "Tarifas de listado",
         "standard": {
-          "name": "Standard listing",
-          "desc": "30-day visibility",
+          "name": "Listado estándar",
+          "desc": "30 días de visibilidad",
           "price": "$5"
         },
         "priority": {
-          "name": "Priority placement",
-          "desc": "72-hour boost + featured",
+          "name": "Ubicación prioritaria",
+          "desc": "Impulso de 72 horas + destacado",
           "price": "$10"
         }
       },
       "commission": {
-        "badge": "Commissions",
-        "title": "Seller Commission Rates",
+        "badge": "Comisiones",
+        "title": "Tarifas de comisión del vendedor",
         "headers": {
-          "saleAmount": "Sale Amount",
-          "rate": "Rate",
-          "minFee": "Min Fee"
+          "saleAmount": "Monto de venta",
+          "rate": "Tarifa",
+          "minFee": "Tarifa mín."
         },
         "rows": [
           {
@@ -495,250 +495,250 @@
       }
     },
     "compare": {
-      "badge": "Compare",
-      "title": "Ceche vs the Competition",
-      "subtitle": "See how Ceche stacks up against legacy domain platforms.",
+      "badge": "Comparar",
+      "title": "Ceche vs la competencia",
+      "subtitle": "Mira cómo Ceche se compara con las plataformas de dominios tradicionales.",
       "headers": {
-        "feature": "Feature",
+        "feature": "Función",
         "ceche": "Ceche",
         "godaddy": "GoDaddy",
         "sedo": "Sedo"
       },
       "rows": [
-        "AI domain valuation",
-        "16-dimension scoring",
-        "WHOIS + DNS intel",
-        "SEO/DA/spam scan",
-        "Bulk domain audit",
-        "Trademark monitoring",
-        "Marketplace reveal model",
-        "API access",
-        "Free tier available"
+        "Tasación de dominios por IA",
+        "Puntuación de 16 dimensiones",
+        "WHOIS + inteligencia DNS",
+        "Escaneo SEO/DA/spam",
+        "Auditoría masiva de dominios",
+        "Monitoreo de marcas",
+        "Modelo de revelación del mercado",
+        "Acceso API",
+        "Nivel gratuito disponible"
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "description": "Create a free account in seconds. No credit card required.",
-      "signup": "Create Free Account",
-      "help": "Visit Help Center",
-      "lookup": "Free Domain Lookup"
+      "title": "¿Listo para empezar?",
+      "description": "Crea una cuenta gratuita en segundos. Sin tarjeta de crédito.",
+      "signup": "Crear cuenta gratuita",
+      "help": "Visitar centro de ayuda",
+      "lookup": "Consulta gratuita de dominios"
     }
   },
   "tools": {
     "scanner": {
-      "badge": "SEO SCANNER",
-      "title": "SEO Scanner",
-      "description": "Domain and SEO audit with DA, spam score, backlink profiles, and indexation status. Get instant insights into any domain's search engine health.",
-      "placeholder": "Enter domain to scan",
-      "scanButton": "Scan Now",
-      "scanningButton": "Scanning...",
-      "limitsTitle": "Scan Limits",
+      "badge": "ESCÁNER SEO",
+      "title": "Escáner SEO",
+      "description": "Auditoría de dominio y SEO con DA, puntuación de spam, perfiles de backlinks y estado de indexación.",
+      "placeholder": "Ingresa dominio a escanear",
+      "scanButton": "Escanear ahora",
+      "scanningButton": "Escaneando...",
+      "limitsTitle": "Límites de escaneo",
       "limits": [
         {
           "plan": "Startup",
-          "scans": "30 per day",
-          "price": "$79/mo"
+          "scans": "30 por día",
+          "price": "$79/mes"
         },
         {
           "plan": "Enterprise",
-          "scans": "Unlimited",
-          "price": "$129/mo"
+          "scans": "Ilimitado",
+          "price": "$129/mes"
         }
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "Cómo funciona",
         "steps": [
           {
-            "title": "Enter Domain",
-            "desc": "Type any domain name into the search bar above."
+            "title": "Ingresa dominio",
+            "desc": "Escribe cualquier nombre de dominio en la barra de búsqueda."
           },
           {
-            "title": "Run Analysis",
-            "desc": "Our engine scans 16 dimensions of domain health instantly."
+            "title": "Ejecutar análisis",
+            "desc": "Nuestro motor escanea instantáneamente 16 dimensiones de salud del dominio."
           },
           {
-            "title": "Get Report",
-            "desc": "View detailed SEO metrics, backlink data, and spam scores."
+            "title": "Obtener reporte",
+            "desc": "Consulta métricas SEO detalladas, datos de backlinks y puntuaciones de spam."
           }
         ]
       },
       "features": {
-        "title": "What You Get",
+        "title": "Lo que obtienes",
         "items": [
           {
-            "title": "Domain Authority & Page Authority",
-            "desc": "DA and PA metrics with historical trends showing domain strength over time."
+            "title": "Autoridad de dominio y autoridad de página",
+            "desc": "Métricas DA y PA con tendencias históricas."
           },
           {
-            "title": "Backlink Profile",
-            "desc": "Complete backlink analysis with referring domains and anchor text distribution."
+            "title": "Perfil de backlinks",
+            "desc": "Análisis completo de backlinks con dominios referentes."
           },
           {
-            "title": "Spam Score",
-            "desc": "Machine learning spam detection with penalty risk assessment and recommendations."
+            "title": "Puntuación de spam",
+            "desc": "Detección de spam por aprendizaje automático con evaluación de riesgo de penalización."
           },
           {
-            "title": "Indexation Status",
-            "desc": "Search engine indexation checks across Google, Bing, and Yandex."
+            "title": "Estado de indexación",
+            "desc": "Verificaciones de indexación en Google, Bing y Yandex."
           },
           {
-            "title": "Technical SEO",
-            "desc": "Core Web Vitals, mobile-friendliness, and structured data analysis."
+            "title": "SEO técnico",
+            "desc": "Core Web Vitals, compatibilidad móvil y análisis de datos estructurados."
           },
           {
-            "title": "Competitor Analysis",
-            "desc": "Compare domain metrics against top competitors in your niche."
+            "title": "Análisis competitivo",
+            "desc": "Compara métricas de dominio con los mejores competidores."
           }
         ]
       },
       "included": {
-        "title": "What's Included",
+        "title": "Qué está incluido",
         "items": [
-          "DA and PA metrics with historical trends",
-          "Complete backlink analysis with referring domains",
-          "Machine learning spam detection with penalty risk assessment",
-          "Search engine indexation checks across Google, Bing, and Yandex",
-          "Core Web Vitals, mobile-friendliness, and structured data analysis",
-          "Competitor comparison against top domains in your niche"
+          "Métricas DA y PA con tendencias históricas",
+          "Análisis completo de backlinks con dominios referentes",
+          "Detección de spam por aprendizaje automático",
+          "Verificaciones de indexación en Google, Bing y Yandex",
+          "Core Web Vitals y datos estructurados",
+          "Comparación competitiva con los mejores dominios"
         ],
-        "cta": "Need deeper analysis? Try Extended Insights →"
+        "cta": "¿Necesitas análisis más profundo? Prueba Información extendida →"
       },
       "cta": {
-        "title": "Ready for Deeper Analysis?",
-        "description": "Upgrade to access historical data, bulk scanning, and API integrations.",
-        "pricing": "View Pricing",
-        "extended": "View Extended Insights"
+        "title": "¿Listo para análisis más profundo?",
+        "description": "Actualiza para acceder a datos históricos e integraciones API.",
+        "pricing": "Ver precios",
+        "extended": "Ver Información extendida"
       }
     },
     "lookup": {
-      "badge": "FREE TOOL",
-      "title": "Domain Lookup",
-      "description": "Instant WHOIS data, DNS records, and registration details for any domain. Get the intelligence you need in seconds.",
-      "placeholder": "Enter domain (e.g., example.com)",
-      "lookupButton": "Lookup",
-      "searchingButton": "Searching...",
-      "loading": "Fetching domain data...",
-      "whoisTitle": "WHOIS Information",
-      "dnsTitle": "DNS Records",
+      "badge": "HERRAMIENTA GRATUITA",
+      "title": "Consulta de dominio",
+      "description": "Datos WHOIS instantáneos, registros DNS y detalles de registro para cualquier dominio.",
+      "placeholder": "Ingresa dominio (ej. example.com)",
+      "lookupButton": "Consultar",
+      "searchingButton": "Buscando...",
+      "loading": "Obteniendo datos del dominio...",
+      "whoisTitle": "Información WHOIS",
+      "dnsTitle": "Registros DNS",
       "dnsHeaders": [
-        "Type",
-        "Name",
-        "Value",
+        "Tipo",
+        "Nombre",
+        "Valor",
         "TTL"
       ],
       "whoisLabels": [
-        "Domain",
-        "Registrar",
-        "Registration Date",
-        "Expiration Date",
-        "Last Updated",
+        "Dominio",
+        "Registrador",
+        "Fecha de registro",
+        "Fecha de vencimiento",
+        "Última actualización",
         "Nameservers",
-        "Status",
-        "Registrant Org",
-        "Country"
+        "Estado",
+        "Organización del titular",
+        "País"
       ],
       "needMore": {
-        "title": "Need More Details?",
-        "description": "Get historical data, trademark checks, and comprehensive domain intelligence with Extended Insights.",
-        "signup": "Signup Free",
-        "seoScan": "Run SEO Scan"
+        "title": "¿Necesitas más detalles?",
+        "description": "Obtén datos históricos e información completa con Información extendida.",
+        "signup": "Registrarse gratis",
+        "seoScan": "Ejecutar escaneo SEO"
       },
       "empty": {
-        "title": "Enter a Domain to Get Started",
-        "description": "Search any domain to view WHOIS data, DNS records, and registration details."
+        "title": "Ingresa un dominio para comenzar",
+        "description": "Busca cualquier dominio para ver datos WHOIS y registros DNS."
       }
     },
     "insights": {
       "badge": "PREMIUM",
-      "title": "Extended Insights",
-      "description": "Deep historical data, DNS records, USPTO/WIPO trademark checks, and WHOIS/RDAP logs for comprehensive domain research.",
-      "cta": "Get Extended Insights",
-      "revealTitle": "Reveal Pricing",
+      "title": "Información extendida",
+      "description": "Datos históricos profundos, registros DNS, verificaciones de marcas USPTO/WIPO y registros WHOIS/RDAP.",
+      "cta": "Obtener información extendida",
+      "revealTitle": "Precios de revelación",
       "tiers": [
         {
-          "name": "Basic",
+          "name": "Básico",
           "price": "$5",
-          "desc": "Standard domain value"
+          "desc": "Valor estándar del dominio"
         },
         {
-          "name": "Standard",
+          "name": "Estándar",
           "price": "$10",
-          "desc": "Moderate domain value"
+          "desc": "Valor moderado del dominio"
         },
         {
           "name": "Premium",
           "price": "$25",
-          "desc": "High-value domain"
+          "desc": "Dominio de alto valor"
         },
         {
           "name": "Enterprise",
           "price": "$50",
-          "desc": "Ultra-premium domain"
+          "desc": "Dominio ultra-premium"
         }
       ],
-      "pricingNote": "Pricing based on domain value and complexity",
-      "reportTitle": "What's Included in Your Report",
+      "pricingNote": "Precios basados en valor y complejidad del dominio",
+      "reportTitle": "Qué incluye tu reporte",
       "sections": [
         {
-          "title": "Historical Data",
-          "desc": "Wayback Machine snapshots and historical content changes over time."
+          "title": "Datos históricos",
+          "desc": "Instantáneas de Wayback Machine y cambios de contenido históricos."
         },
         {
-          "title": "DNS Records",
-          "desc": "Complete DNS record enumeration including A, MX, NS, TXT, and CNAME."
+          "title": "Registros DNS",
+          "desc": "Enumeración completa de registros DNS incluyendo A, MX, NS, TXT y CNAME."
         },
         {
           "title": "WHOIS / RDAP",
-          "desc": "Registration data, domain age, registrar history, and nameserver changes."
+          "desc": "Datos de registro, antigüedad del dominio, historial del registrador."
         },
         {
-          "title": "Trademark Checks",
-          "desc": "USPTO and WIPO trademark database conflict detection."
+          "title": "Verificaciones de marcas",
+          "desc": "Detección de conflictos en bases de datos USPTO y WIPO."
         },
         {
-          "title": "SSL Certificate",
-          "desc": "Certificate authority, expiry dates, and chain verification."
+          "title": "Certificado SSL",
+          "desc": "Autoridad de certificación, fechas de vencimiento y verificación de cadena."
         },
         {
-          "title": "Server Intelligence",
-          "desc": "Hosting provider, IP geolocation, and technology stack detection."
+          "title": "Inteligencia de servidor",
+          "desc": "Proveedor de hosting, geolocalización IP y stack tecnológico."
         }
       ],
-      "useCasesTitle": "When to Use Extended Insights",
+      "useCasesTitle": "Cuándo usar Información extendida",
       "useCases": [
         {
-          "title": "Domain Acquisition",
-          "desc": "Research domain history before making an offer."
+          "title": "Adquisición de dominios",
+          "desc": "Investiga el historial del dominio antes de hacer una oferta."
         },
         {
-          "title": "Trademark Clearance",
-          "desc": "Check for conflicts before launching a brand."
+          "title": "Clarificación de marca",
+          "desc": "Verifica conflictos antes de lanzar una marca."
         },
         {
-          "title": "Competitor Analysis",
-          "desc": "Understand competitor domain strategies and history."
+          "title": "Análisis competitivo",
+          "desc": "Comprende las estrategias de dominios de tus competidores."
         },
         {
-          "title": "Portfolio Due Diligence",
-          "desc": "Audit your portfolio for hidden risks and opportunities."
+          "title": "Diligencia de cartera",
+          "desc": "Audita tu cartera en busca de riesgos ocultos."
         }
       ],
-      "ctaTitle": "Unlock Domain Intelligence",
-      "ctaDescription": "Get the complete picture with Extended Insights reports.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup First"
+      "ctaTitle": "Desbloquea inteligencia de dominios",
+      "ctaDescription": "Obtén el panorama completo con reportes de Información extendida.",
+      "startFreeTrial": "Iniciar prueba gratuita",
+      "tryLookup": "Prueba primero Consulta de dominio"
     },
     "bulk": {
       "badge": "ENTERPRISE",
-      "title": "Bulk Analyzer",
-      "description": "Multi-domain batch evaluation tool for portfolio analysis and large-scale domain research. Process thousands of domains in seconds.",
-      "cta": "Get Bulk Access",
+      "title": "Analizador masivo",
+      "description": "Herramienta de evaluación por lotes para análisis de cartera e investigación de dominios a gran escala.",
+      "cta": "Obtener acceso masivo",
       "statValue": "5,000",
-      "statLabel": "domains per batch",
+      "statLabel": "dominios por lote",
       "stats": [
         {
           "value": "16",
-          "label": "Dimensions"
+          "label": "Dimensiones"
         },
         {
           "value": "4",
@@ -746,270 +746,270 @@
         },
         {
           "value": "<3s",
-          "label": "Per Domain"
+          "label": "Por dominio"
         }
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "Cómo funciona",
         "steps": [
           {
-            "title": "Upload List",
-            "desc": "Paste domains or upload a CSV file with up to 5,000 domains."
+            "title": "Subir lista",
+            "desc": "Pega dominios o sube un archivo CSV con hasta 5,000 dominios."
           },
           {
-            "title": "Configure Scoring",
-            "desc": "Set custom weights for each of the 16 scoring dimensions."
+            "title": "Configurar puntuación",
+            "desc": "Establece pesos personalizados para cada una de las 16 dimensiones."
           },
           {
-            "title": "Process",
-            "desc": "Our engine evaluates all domains in parallel with priority queuing."
+            "title": "Procesar",
+            "desc": "Nuestro motor evalúa todos los dominios en paralelo."
           },
           {
-            "title": "Export Results",
-            "desc": "Download CSV with scores, pricing data, and priority rankings."
+            "title": "Exportar resultados",
+            "desc": "Descarga CSV con scores y datos de precios."
           }
         ]
       },
-      "outputTitle": "Output Columns",
+      "outputTitle": "Columnas de salida",
       "outputHeaders": [
-        "Column",
-        "Description",
-        "Example"
+        "Columna",
+        "Descripción",
+        "Ejemplo"
       ],
       "outputRows": [
         [
-          "Domain",
-          "The domain name analyzed",
+          "Dominio",
+          "El nombre de dominio analizado",
           "example.com"
         ],
         [
-          "Domain Rating",
-          "Authority score 0-100",
+          "Calificación de dominio",
+          "Puntuación de autoridad 0-100",
           "72"
         ],
         [
-          "SEO Score",
-          "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)",
+          "Puntuación SEO",
+          "Compuesta (backlink 40%, tráfico 30%, palabra clave 20%, técnico 10%)",
           "68"
         ],
         [
-          "Buyer Intent",
-          "Score 0-100 indicating purchase likelihood",
+          "Intención de compra",
+          "Puntuación 0-100 indicando probabilidad de compra",
           "45"
         ],
         [
-          "Priority Score",
-          "Combined ranking across all dimensions",
-          "High"
+          "Puntuación de prioridad",
+          "Ranking combinado en todas las dimensiones",
+          "Alto"
         ],
         [
-          "Estimated Value",
-          "Fair market value range",
+          "Valor estimado",
+          "Rango de valor de mercado",
           "$2,400 - $3,600"
         ]
       ],
-      "priorityTitle": "Priority Score Breakdown",
+      "priorityTitle": "Desglose de puntuación de prioridad",
       "dimensions": [
         {
-          "name": "Backlink Profile",
+          "name": "Perfil de backlinks",
           "weight": "40%",
           "bar": 40
         },
         {
-          "name": "Traffic Analysis",
+          "name": "Análisis de tráfico",
           "weight": "30%",
           "bar": 30
         },
         {
-          "name": "Keyword Metrics",
+          "name": "Métricas de palabras clave",
           "weight": "20%",
           "bar": 20
         },
         {
-          "name": "Technical SEO",
+          "name": "SEO técnico",
           "weight": "10%",
           "bar": 10
         }
       ],
-      "customTitle": "Custom Scoring",
-      "customDescription": "Weight dimensions based on your specific use case. Whether you prioritize SEO metrics, traffic potential, or buyer intent, adjust the scoring to match your portfolio strategy.",
+      "customTitle": "Puntuación personalizada",
+      "customDescription": "Pondera dimensiones según tu caso de uso específico.",
       "modes": [
         {
-          "title": "Investor Mode",
-          "desc": "Maximize ROI with traffic and value focus"
+          "title": "Modo inversor",
+          "desc": "Maximiza ROI con enfoque en tráfico y valor"
         },
         {
-          "title": "Developer Mode",
-          "desc": "Prioritize technical metrics and authority"
+          "title": "Modo desarrollador",
+          "desc": "Prioriza métricas técnicas y autoridad"
         },
         {
-          "title": "Brand Mode",
-          "desc": "Emphasize trademark safety and memorability"
+          "title": "Modo marca",
+          "desc": "Enfatiza seguridad de marca y memorabilidad"
         }
       ],
-      "ctaTitle": "Ready to Scale Your Domain Research?",
-      "ctaDescription": "Process up to 5,000 domains per batch with Enterprise access.",
-      "startTrial": "Start Enterprise Trial",
-      "tryLookup": "Try Single Domain Lookup"
+      "ctaTitle": "¿Listo para escalar tu investigación de dominios?",
+      "ctaDescription": "Procesa hasta 5,000 dominios por lote con acceso Enterprise.",
+      "startTrial": "Iniciar prueba Enterprise",
+      "tryLookup": "Probar consulta de dominio único"
     },
     "api": {
-      "badge": "DEVELOPER",
-      "title": "API Access",
-      "description": "RESTful API for programmatic domain intelligence. Build custom integrations, automate workflows, and access all domain data programmatically.",
-      "getKey": "Get API Key",
-      "readDocs": "Read Documentation",
-      "buildTitle": "What You Can Build",
+      "badge": "DESARROLLADOR",
+      "title": "Acceso API",
+      "description": "API RESTful para inteligencia de dominios programática.",
+      "getKey": "Obtener clave API",
+      "readDocs": "Leer documentación",
+      "buildTitle": "Qué puedes construir",
       "buildCards": [
         {
-          "title": "Domain Portfolio Tracker",
-          "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.",
-          "linkText": "Try Domain Lookup"
+          "title": "Rastreador de cartera de dominios",
+          "desc": "Monitorea automáticamente tu cartera para cambios de valor y alertas de vencimiento.",
+          "linkText": "Probar Consulta de dominio"
         },
         {
-          "title": "Market Intelligence Dashboard",
-          "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.",
-          "linkText": "Explore Bulk Analyzer"
+          "title": "Dashboard de inteligencia de mercado",
+          "desc": "Construye dashboards personalizados con precios en tiempo real.",
+          "linkText": "Explorar Analizador masivo"
         },
         {
-          "title": "Brand Protection System",
-          "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.",
-          "linkText": "See Trademark Monitor"
+          "title": "Sistema de protección de marca",
+          "desc": "Automatiza el monitoreo de marcas y recibe alertas de conflictos.",
+          "linkText": "Ver Monitor de marcas"
         }
       ],
-      "featuresTitle": "API Features",
+      "featuresTitle": "Funcionalidades API",
       "features": [
         {
-          "title": "RESTful API",
-          "desc": "Full access to all domain intelligence endpoints with standard HTTP methods."
+          "title": "API RESTful",
+          "desc": "Acceso completo a todos los endpoints de inteligencia de dominios."
         },
         {
           "title": "Webhooks",
-          "desc": "Real-time notifications for domain changes and events via webhook callbacks."
+          "desc": "Notificaciones en tiempo real para cambios de dominio."
         },
         {
-          "title": "Rate Limits",
-          "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes."
+          "title": "Límites de velocidad",
+          "desc": "10,000 llamadas por día con plan Enterprise."
         },
         {
           "title": "SDKs",
-          "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation."
+          "desc": "Bibliotecas oficiales para Python, Node.js, Go y Ruby."
         },
         {
           "title": "Sandbox",
-          "desc": "Test environment for development and integration testing before going live."
+          "desc": "Entorno de prueba para desarrollo e integración."
         },
         {
-          "title": "Documentation",
-          "desc": "Complete API reference with code examples, tutorials, and best practices."
+          "title": "Documentación",
+          "desc": "Referencia API completa con ejemplos de código."
         }
       ],
-      "ctaTitle": "Ready to Build?",
-      "ctaDescription": "Get your API key and start integrating domain intelligence today.",
-      "viewDocs": "View API Docs",
+      "ctaTitle": "¿Listo para construir?",
+      "ctaDescription": "Obtén tu clave API y empieza a integrar inteligencia de dominios.",
+      "viewDocs": "Ver documentación API",
       "modal": {
-        "title": "Get Your API Key",
-        "description": "Create a free account to get your API key and start building with domain intelligence data.",
-        "cta": "Create Free Account",
-        "back": "Go back"
+        "title": "Obtén tu clave API",
+        "description": "Crea una cuenta gratuita para obtener tu clave API.",
+        "cta": "Crear cuenta gratuita",
+        "back": "Volver"
       }
     },
     "trademark": {
       "badge": "PREMIUM",
-      "title": "Trademark Monitor",
-      "description": "USPTO/WIPO conflict detection and alerts. Protect your brand with proactive trademark monitoring across global databases.",
-      "cta": "Start Monitoring",
-      "severityTitle": "Threat Severity Levels",
+      "title": "Monitor de marcas",
+      "description": "Detección y alertas de conflictos USPTO/WIPO.",
+      "cta": "Iniciar monitoreo",
+      "severityTitle": "Niveles de severidad de amenazas",
       "levels": [
         {
-          "level": "Critical",
-          "desc": "Direct trademark conflict detected"
+          "level": "Crítico",
+          "desc": "Conflicto directo de marca detectado"
         },
         {
-          "level": "High",
-          "desc": "Similar mark in same industry"
+          "level": "Alto",
+          "desc": "Marca similar en la misma industria"
         },
         {
-          "level": "Medium",
-          "desc": "Similar name, different class"
+          "level": "Medio",
+          "desc": "Nombre similar, clase diferente"
         },
         {
-          "level": "Low",
-          "desc": "Minor similarity, low risk"
+          "level": "Bajo",
+          "desc": "Similitud menor, bajo riesgo"
         }
       ],
-      "problemTitle": "The Problem",
+      "problemTitle": "El problema",
       "problems": [
-        "Trademark infringement lawsuits cost $100K+ on average",
-        "New domain registrations happen every minute",
-        "Manual monitoring is impossible at scale",
-        "By the time you notice, damage is done"
+        "Las demandas de infracción de marca cuestan $100K+ en promedio",
+        "Nuevos registros de dominio ocurren cada minuto",
+        "El monitoreo manual es imposible a escala",
+        "Cuando lo notas, el daño ya está hecho"
       ],
-      "solutionTitle": "Our Solution",
+      "solutionTitle": "Nuestra solución",
       "solutions": [
-        "Real-time USPTO and WIPO database monitoring",
-        "Scan up to 5,000 domains per list",
-        "Instant conflict alerts via email and webhook",
-        "Risk scoring with confidence levels"
+        "Monitoreo en tiempo real de bases de datos USPTO y WIPO",
+        "Escanea hasta 5,000 dominios por lista",
+        "Alertas instantáneas de conflicto por email y webhook",
+        "Puntuación de riesgo con niveles de confianza"
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "Cómo funciona",
         "steps": [
           {
-            "title": "Add Domains",
-            "desc": "Upload your brand domains or keywords to monitor."
+            "title": "Agregar dominios",
+            "desc": "Sube tus dominios de marca o palabras clave a monitorear."
           },
           {
-            "title": "Set Criteria",
-            "desc": "Define industry, geographic scope, and sensitivity."
+            "title": "Establecer criterios",
+            "desc": "Define industria, alcance geográfico y sensibilidad."
           },
           {
-            "title": "Monitor",
-            "desc": "We scan USPTO, EUIPO, and WIPO databases continuously."
+            "title": "Monitorear",
+            "desc": "Escaneamos continuamente bases de datos USPTO, EUIPO y WIPO."
           },
           {
-            "title": "Get Alerts",
-            "desc": "Receive instant notifications for potential conflicts."
+            "title": "Recibir alertas",
+            "desc": "Recibe notificaciones instantáneas de conflictos potenciales."
           }
         ]
       },
-      "useCasesTitle": "Use Cases",
+      "useCasesTitle": "Casos de uso",
       "useCases": [
         {
-          "title": "Brand Protection",
-          "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs."
+          "title": "Protección de marca",
+          "content": "Monitorea ciber squatting, typo squatting e usurpación de marca."
         },
         {
-          "title": "Product Launch",
-          "content": "Clear trademarks before launching new products or entering new markets."
+          "title": "Lanzamiento de producto",
+          "content": "Despeja marcas antes de lanzar nuevos productos."
         },
         {
-          "title": "M&A Due Diligence",
-          "content": "Audit trademark risks during mergers, acquisitions, or investment rounds."
+          "title": "Diligencia de M&A",
+          "content": "Audita riesgos de marca durante fusiones o adquisiciones."
         },
         {
-          "title": "Portfolio Management",
-          "content": "Protect your domain portfolio from trademark challenges and legal disputes."
+          "title": "Gestión de cartera",
+          "content": "Protege tu cartera de dominios de desafíos de marca."
         }
       ],
-      "pricingTitle": "Pricing",
+      "pricingTitle": "Precios",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "Gratis",
           "price": "$0",
           "features": [
-            "3 unsigned scans/day",
-            "12 signed scans/day",
-            "Basic metrics"
+            "3 escaneos sin firmar/día",
+            "12 escaneos firmados/día",
+            "Métricas básicas"
           ]
         },
         {
           "plan": "Startup",
           "price": "$79/mo",
           "features": [
-            "30 scans/day",
-            "Priority processing",
-            "CSV export",
-            "Email alerts"
+            "30 escaneos/día",
+            "Procesamiento prioritario",
+            "Exportación CSV",
+            "Alertas por email"
           ],
           "popular": true
         },
@@ -1017,108 +1017,108 @@
           "plan": "Enterprise",
           "price": "$129/mo",
           "features": [
-            "Unlimited scans",
-            "API access (10K calls/day)",
-            "Webhook integration",
-            "Dedicated support"
+            "Escaneos ilimitados",
+            "Acceso API (10K llamadas/día)",
+            "Integración Webhook",
+            "Soporte dedicado"
           ]
         }
       ],
       "popular": "POPULAR",
-      "ctaTitle": "Protect Your Brand Today",
-      "ctaDescription": "Don't wait until it's too late. Start monitoring now.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup",
-      "runScan": "Run SEO Scan"
+      "ctaTitle": "Protege tu marca hoy",
+      "ctaDescription": "No esperes hasta que sea tarde. Empieza a monitorear ahora.",
+      "startFreeTrial": "Iniciar prueba gratuita",
+      "tryLookup": "Probar Consulta de dominio",
+      "runScan": "Ejecutar escaneo SEO"
     },
     "database": {
-      "badge": "COMPREHENSIVE DATA",
+      "badge": "DATOS COMPLETOS",
       "statValue": "2,847",
-      "statLabel": "TLDs tracked across all registries",
-      "description": "Access the most comprehensive domain database available. Track registrations, expirations, and pricing across every major TLD.",
+      "statLabel": "TLDs rastreados en todos los registros",
+      "description": "Accede a la base de datos de dominios más completa disponible.",
       "stats": [
         {
           "value": "420M+",
-          "label": "Domains Tracked",
-          "desc": "Active registrations across all TLDs"
+          "label": "Dominios rastreados",
+          "desc": "Registros activos en todos los TLDs"
         },
         {
           "value": "2.1B",
-          "label": "Historical Records",
-          "desc": "Registration and expiration history"
+          "label": "Registros históricos",
+          "desc": "Historial de registros y vencimientos"
         },
         {
           "value": "50K+",
-          "label": "Daily Updates",
-          "desc": "New registrations processed daily"
+          "label": "Actualizaciones diarias",
+          "desc": "Nuevos registros procesados diariamente"
         },
         {
           "value": "99.9%",
-          "label": "Uptime",
-          "desc": "Database availability guarantee"
+          "label": "Disponibilidad",
+          "desc": "Garantía de disponibilidad de base de datos"
         }
       ],
-      "methodsTitle": "Search Methods",
+      "methodsTitle": "Métodos de búsqueda",
       "methods": [
         {
-          "title": "Single Lookup",
-          "desc": "Search any domain for instant registration data and availability status."
+          "title": "Consulta individual",
+          "desc": "Busca cualquier dominio para datos de registro instantáneos."
         },
         {
-          "title": "Bulk Check",
-          "desc": "Upload up to 5,000 domains at once for batch availability analysis."
+          "title": "Verificación masiva",
+          "desc": "Sube hasta 5,000 dominios a la vez."
         },
         {
-          "title": "API Query",
-          "desc": "Programmatic access via RESTful API with up to 10,000 calls per day."
+          "title": "Consulta API",
+          "desc": "Acceso programático vía API RESTful con hasta 10,000 llamadas/día."
         }
       ],
-      "sourcesTitle": "Data Sources",
+      "sourcesTitle": "Fuentes de datos",
       "sources": [
         {
           "source": "ICANN",
-          "desc": "Official domain registration data"
+          "desc": "Datos oficiales de registro de dominio"
         },
         {
-          "source": "Registry Operators",
-          "desc": "Direct TLD zone file access"
+          "source": "Operadores de registro",
+          "desc": "Acceso directo a archivos de zona TLD"
         },
         {
           "source": "WHOIS/RDAP",
-          "desc": "Registration and contact information"
+          "desc": "Información de registro y contacto"
         },
         {
           "source": "Wayback Machine",
-          "desc": "Historical content snapshots"
+          "desc": "Instantáneas de contenido histórico"
         },
         {
-          "source": "Certificate Transparency",
-          "desc": "SSL certificate monitoring"
+          "source": "Transparencia de certificados",
+          "desc": "Monitoreo de certificados SSL"
         },
         {
-          "source": "DNS Resolvers",
-          "desc": "Real-time DNS record verification"
+          "source": "Resolutores DNS",
+          "desc": "Verificación de registros DNS en tiempo real"
         }
       ],
-      "levelsTitle": "Access Levels",
+      "levelsTitle": "Niveles de acceso",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "Gratis",
           "price": "$0",
           "features": [
-            "Basic lookup",
-            "3 searches/day",
-            "Limited TLDs"
+            "Consulta básica",
+            "3 búsquedas/día",
+            "TLDs limitados"
           ]
         },
         {
           "plan": "Startup",
           "price": "$79/mo",
           "features": [
-            "Full database",
-            "30 searches/day",
-            "CSV export",
-            "Priority support"
+            "Base de datos completa",
+            "30 búsquedas/día",
+            "Exportación CSV",
+            "Soporte prioritario"
           ],
           "popular": true
         },
@@ -1126,124 +1126,124 @@
           "plan": "Enterprise",
           "price": "$129/mo",
           "features": [
-            "Unlimited access",
-            "API (10K calls/day)",
+            "Acceso ilimitado",
+            "API (10K llamadas/día)",
             "Webhooks",
-            "Custom data"
+            "Datos personalizados"
           ]
         }
       ],
       "popular": "POPULAR",
-      "ctaTitle": "Access the Complete Domain Database",
-      "ctaDescription": "2,847 TLDs, 420M+ domains, real-time data at your fingertips.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup",
-      "viewDocs": "View API Docs"
+      "ctaTitle": "Accede a la base de datos completa de dominios",
+      "ctaDescription": "2,847 TLDs, 420M+ dominios, datos en tiempo real al alcance de tu mano.",
+      "startFreeTrial": "Iniciar prueba gratuita",
+      "tryLookup": "Probar Consulta de dominio",
+      "viewDocs": "Ver documentación API"
     }
   },
   "mp": {
     "main": {
-      "badge": "Marketplace",
-      "title": "Premium Domains",
-      "subtitle": "Browse our curated inventory. Full stats shown — name hidden. Pay to reveal.",
+      "badge": "Mercado",
+      "title": "Dominios premium",
+      "subtitle": "Explora nuestro inventario curado. Estadísticas completas mostradas — nombre oculto. Paga para revelar.",
       "stats": [
         {
-          "label": "Listed Domains",
+          "label": "Dominios listados",
           "value": "2,847"
         },
         {
-          "label": "Revealed Today",
+          "label": "Revelados hoy",
           "value": "142"
         },
         {
-          "label": "Avg. Domain Value",
+          "label": "Valor promedio",
           "value": "$12,400"
         },
         {
-          "label": "Total Sold",
+          "label": "Total vendido",
           "value": "$3.2M"
         }
       ],
       "filters": [
-        "All TLDs",
+        "Todos los TLDs",
         ".com",
         ".net",
         ".io",
         ".co"
       ],
       "sortBy": [
-        "Sort by Value",
-        "Sort by Score",
-        "Sort by Listed"
+        "Ordenar por valor",
+        "Ordenar por puntuación",
+        "Ordenar por fecha"
       ],
-      "nameHidden": "Name Hidden",
-      "revealName": "Reveal Name",
+      "nameHidden": "Nombre oculto",
+      "revealName": "Revelar nombre",
       "dataLabels": [
-        "Value",
-        "Score",
-        "Health",
+        "Valor",
+        "Puntuación",
+        "Salud",
         "CPC",
         "DA"
       ],
       "features": [
         {
-          "title": "No Name Hints",
-          "desc": "We show everything except the name. No asterisks, no partial reveals. Just the intelligence."
+          "title": "Sin pistas de nombre",
+          "desc": "Mostramos todo excepto el nombre. Sin asteriscos, sin revelaciones parciales."
         },
         {
-          "title": "Pay to Reveal",
-          "desc": "Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks."
+          "title": "Paga para revelar",
+          "desc": "El precio varía según el valor del dominio — desde $5 hasta $50."
         },
         {
-          "title": "Register Anywhere",
-          "desc": "After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register."
+          "title": "Regístrate en cualquier lugar",
+          "desc": "Después de la revelación, te enlazamos a Dynadot, Namecheap o Porkbun."
         }
       ],
       "cta": {
-        "curated": "Browse Curated",
-        "luck": "Try Your Luck"
+        "curated": "Explorar selección",
+        "luck": "Prueba tu suerte"
       },
       "modal": {
-        "title": "Create an Account",
-        "desc": "Sign up to reveal domain names and make purchases.",
-        "redirecting": "Redirecting to signup in {count} seconds...",
-        "signup": "Sign Up Free",
-        "later": "Maybe later"
+        "title": "Crear cuenta",
+        "desc": "Regístrate para revelar nombres de dominio y hacer compras.",
+        "redirecting": "Redirigiendo al registro en {count} segundos...",
+        "signup": "Registrarse gratis",
+        "later": "Quizás después"
       }
     },
     "sell": {
-      "badge": "Marketplace",
-      "title": "Sell Your Domains",
-      "subtitle": "List your premium domains on Ceche and reach qualified buyers worldwide.",
+      "badge": "Mercado",
+      "title": "Vende tus dominios",
+      "subtitle": "Ofrece tus dominios premium en Ceche y alcanza compradores calificados en todo el mundo.",
       "steps": [
-        "Submit",
-        "Set Price",
-        "Publish"
+        "Enviar",
+        "Establecer precio",
+        "Publicar"
       ],
       "step0": {
-        "title": "Submit Your Domain",
-        "desc": "Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.",
-        "placeholder": "yourdomain.com",
-        "cta": "Continue"
+        "title": "Envía tu dominio",
+        "desc": "Ingresa tu dominio. Realizaremos una tasación automática.",
+        "placeholder": "tudominio.com",
+        "cta": "Continuar"
       },
       "step1": {
-        "title": "Set Your Price",
-        "desc": "Our AI suggests a price based on domain metrics. You can accept or set your own.",
-        "suggested": "Suggested: $12,500",
-        "cta": "Continue"
+        "title": "Establece tu precio",
+        "desc": "Nuestra IA sugiere un precio basado en métricas del dominio.",
+        "suggested": "Sugerido: $12,500",
+        "cta": "Continuar"
       },
       "step2": {
-        "title": "Publish Listing",
-        "desc": "Review your listing details and publish. Your domain goes live within 24 hours.",
-        "cta": "Publish Listing"
+        "title": "Publicar listado",
+        "desc": "Revisa los detalles y publica. Tu dominio estará en línea en 24 horas.",
+        "cta": "Publicar listado"
       },
       "fees": {
-        "title": "Fee Structure",
+        "title": "Estructura de tarifas",
         "listing": {
-          "title": "Listing Fees",
+          "title": "Tarifas de listado",
           "tiers": [
             {
-              "tier": "Standard (.com, .net, .org)",
+              "tier": "Estándar (.com, .net, .org)",
               "fee": "$5",
               "min": "—"
             },
@@ -1253,317 +1253,317 @@
               "min": "—"
             },
             {
-              "tier": "Ultra-Premium (1-word, brandable)",
+              "tier": "Ultra-premium (1 palabra, brandable)",
               "fee": "$25",
               "min": "—"
             }
           ]
         },
         "commission": {
-          "title": "Commission Rates",
+          "title": "Tarifas de comisión",
           "tiers": [
             {
-              "tier": "Domains under $5,000",
+              "tier": "Dominios bajo $5,000",
               "commission": "8%",
               "minimum": "$50"
             },
             {
-              "tier": "Domains $5,000–$50,000",
+              "tier": "Dominios $5,000–$50,000",
               "commission": "10%",
               "minimum": "$200"
             },
             {
-              "tier": "Domains over $50,000",
+              "tier": "Dominios sobre $50,000",
               "commission": "15%",
-              "minimum": "Negotiable"
+              "minimum": "Negociable"
             }
           ]
         }
       },
       "eligibility": {
-        "title": "Eligibility Checklist",
+        "title": "Lista de verificación de elegibilidad",
         "items": [
-          "Domain must be registered and active",
-          "You must verify ownership via TXT or CNAME record",
-          "No active UDRP or legal disputes",
-          "Domain must not be blacklisted for spam"
+          "El dominio debe estar registrado y activo",
+          "Debes verificar propiedad vía registro TXT o CNAME",
+          "Sin UDRP activo o disputas legales",
+          "El dominio no debe estar en lista negra de spam"
         ]
       },
       "tools": {
-        "title": "Seller Tools",
+        "title": "Herramientas de vendedor",
         "items": [
           {
-            "title": "Analytics Dashboard",
-            "desc": "Track views, offers, and conversion rates for every listing in real time."
+            "title": "Dashboard analítico",
+            "desc": "Rastrea vistas, ofertas y tasas de conversión en tiempo real."
           },
           {
-            "title": "Bulk Listing",
-            "desc": "Import and manage multiple domain listings at once with CSV upload."
+            "title": "Listado masivo",
+            "desc": "Importa y gestiona múltiples listados con carga CSV."
           },
           {
-            "title": "Automated Pricing",
-            "desc": "AI-powered suggested pricing based on domain metrics and market trends."
+            "title": "Precios automatizados",
+            "desc": "Sugerencias de precios por IA basadas en métricas del dominio."
           }
         ]
       },
       "cta": {
-        "title": "Ready to sell?",
-        "desc": "List your first domain in under 5 minutes.",
-        "signup": "Create Account",
-        "pricing": "View Pricing"
+        "title": "¿Listo para vender?",
+        "desc": "Ofrece tu primer dominio en menos de 5 minutos.",
+        "signup": "Crear cuenta",
+        "pricing": "Ver precios"
       }
     },
     "luck": {
-      "badge": "Marketplace",
-      "title": "Try Your Luck",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.",
-      "step1": "Step 1: Pick Your TLD",
-      "spinning": "Spinning...",
-      "step2": "Step 2: Pick a Box",
-      "clickToReveal": "Click to reveal",
+      "badge": "Mercado",
+      "title": "Prueba tu suerte",
+      "subtitle": "Elige un TLD, gira 3 cajas, revela un dominio premium. Bloqueado exclusivamente para ti.",
+      "step1": "Paso 1: Elige tu TLD",
+      "spinning": "Girando...",
+      "step2": "Paso 2: Elige una caja",
+      "clickToReveal": "Clic para revelar",
       "locked": {
-        "title": "Domain Locked",
-        "desc": "Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately."
+        "title": "Dominio bloqueado",
+        "desc": "Una vez que eliges una caja, el dominio queda bloqueado exclusivamente para ti."
       },
       "howItWorks": {
-        "title": "How It Works",
+        "title": "Cómo funciona",
         "steps": [
           {
-            "title": "Pick a TLD",
-            "desc": "Choose .com, .net, .io, .co, or any TLD at a flat rate."
+            "title": "Elige un TLD",
+            "desc": "Elige .com, .net, .io, .co o cualquier TLD a tarifa fija."
           },
           {
-            "title": "Spin & Pick",
-            "desc": "Three closed boxes appear. Pick one when the animation stops."
+            "title": "Gira y elige",
+            "desc": "Tres cajas cerradas aparecen. Elige una cuando la animación se detenga."
           },
           {
-            "title": "Reveal & Buy",
-            "desc": "Domain revealed and locked. Prompted to register immediately."
+            "title": "Revela y compra",
+            "desc": "Dominio revelado y bloqueado. Se te pide registrarte inmediatamente."
           }
         ]
       },
       "cta": {
-        "title": "Prefer browsing?",
-        "desc": "Browse our full marketplace with detailed stats on every listing.",
-        "marketplace": "View Marketplace",
-        "signup": "Sign Up Free"
+        "title": "¿Prefieres explorar?",
+        "desc": "Explora nuestro mercado completo con estadísticas detalladas.",
+        "marketplace": "Ver mercado",
+        "signup": "Registrarse gratis"
       },
       "modal": {
-        "title": "Create an Account",
-        "desc": "Sign up to lock this domain exclusively for you.",
-        "signup": "Sign Up Free",
-        "later": "Maybe later"
+        "title": "Crear cuenta",
+        "desc": "Regístrate para bloquear este dominio exclusivamente para ti.",
+        "signup": "Registrarse gratis",
+        "later": "Quizás después"
       }
     },
     "curated": {
-      "badge": "Marketplace",
-      "title": "Curated Domains",
-      "subtitle": "Hand-picked premium domains sorted by commercial intent and SEO authority. Each listing includes a full intelligence report and valuation.",
-      "tryLuck": "Try Your Luck Instead",
+      "badge": "Mercado",
+      "title": "Dominios curados",
+      "subtitle": "Dominios premium seleccionados por intención comercial y autoridad SEO.",
+      "tryLuck": "Prueba tu suerte mejor",
       "featured": {
-        "label": "Featured Domain",
-        "hidden": "Name hidden until purchase",
-        "instant": "Instant Purchase"
+        "label": "Dominio destacado",
+        "hidden": "Nombre oculto hasta compra",
+        "instant": "Compra instantánea"
       },
       "features": [
-        "Hand-picked by domain experts",
-        "Full intelligence report included",
-        "Verified ownership and clean history",
-        "Instant purchase with secure checkout",
-        "Negotiation tools for making offers",
-        "Guided transfer with registrar support"
+        "Seleccionados manualmente por expertos en dominios",
+        "Reporte de inteligencia completo incluido",
+        "Propiedad verificada e historial limpio",
+        "Compra instantánea con checkout seguro",
+        "Herramientas de negociación para ofertas",
+        "Transferencia guiada con soporte del registrador"
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "Cómo funciona",
         "steps": [
           {
-            "title": "Browse Listings",
-            "desc": "Each curated domain includes valuation, SEO metrics, and commercial intent score."
+            "title": "Explora listados",
+            "desc": "Cada dominio curado incluye tasación, métricas SEO y puntuación de intención."
           },
           {
-            "title": "Make an Offer",
-            "desc": "Buy outright or submit an offer. Our system handles counter-offers automatically."
+            "title": "Haz una oferta",
+            "desc": "Compra directamente o envía una oferta. Nuestro sistema maneja contraofertas automáticamente."
           },
           {
-            "title": "Complete Purchase",
-            "desc": "Secure payment. Domain transfers within 24 hours with full support."
+            "title": "Completa la compra",
+            "desc": "Pago seguro. Transferencia de dominio en 24 horas."
           }
         ]
       },
       "cta": {
-        "title": "Browse all curated domains",
-        "desc": "Updated weekly with new hand-picked premium domains.",
-        "marketplace": "View Marketplace",
-        "luck": "Try Your Luck"
+        "title": "Explora todos los dominios curados",
+        "desc": "Actualizado semanalmente con nuevos dominios premium.",
+        "marketplace": "Ver mercado",
+        "luck": "Prueba tu suerte"
       }
     },
     "unmasking": {
-      "badge": "Marketplace",
-      "title": "How Unmasking Works",
-      "subtitle": "Our blind marketplace protects domain names from front-running and sniping. Here's the process.",
+      "badge": "Mercado",
+      "title": "Cómo funciona la revelación",
+      "subtitle": "Nuestro mercado ciego protege nombres de dominio del front-running y sniping.",
       "steps": [
         {
-          "title": "Browse",
-          "desc": "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range."
+          "title": "Explora",
+          "desc": "Explora nuestro mercado ciego. Estadísticas completas mostradas — nombre oculto."
         },
         {
-          "title": "Pay to Reveal",
-          "desc": "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name."
+          "title": "Paga para revelar",
+          "desc": "Paga la tarifa de revelación para desbloquear el nombre."
         },
         {
-          "title": "Reveal & Inspect",
-          "desc": "The domain name is revealed. You have 5 minutes to inspect and decide. No one else can see or purchase it."
+          "title": "Revela e inspecciona",
+          "desc": "El nombre se revela. Tienes 5 minutos para decidir."
         },
         {
-          "title": "Recheck or Walk Away",
-          "desc": "If you pass, the domain goes back to the blind pool. If you proceed, it's locked exclusively for you."
+          "title": "Revisa o retírate",
+          "desc": "Si pasas, el dominio vuelve al pool ciego."
         },
         {
-          "title": "Complete or Walk Away",
-          "desc": "Register the domain through our partner registrars (Dynadot, Namecheap, Porkbun) or walk away. No obligation."
+          "title": "Completa o retírate",
+          "desc": "Registra el dominio vía nuestros registradores parceados o retírate."
         }
       ],
       "vault": {
-        "title": "Vault Protection",
-        "desc": "All unrevealed domain names are stored in an encrypted vault. No partial names, no asterisks, no hints. The only way to see the name is to pay the reveal fee. This eliminates domain front-running and ensures fair pricing for everyone."
+        "title": "Protección de bóveda",
+        "desc": "Todos los nombres no revelados se almacenan en una bóveda encriptada."
       },
       "features": [
         {
-          "title": "Encrypted Vault",
-          "desc": "Domain names stored with zero-knowledge encryption."
+          "title": "Bóveda encriptada",
+          "desc": "Nombres de dominio almacenados con encriptación de conocimiento cero."
         },
         {
-          "title": "5-Minute Lock",
-          "desc": "After reveal, you have 5 minutes of exclusive access."
+          "title": "Bloqueo de 5 minutos",
+          "desc": "Después de la revelación, tienes 5 minutos de acceso exclusivo."
         },
         {
-          "title": "No Obligation",
-          "desc": "Walk away at any point. No commitment required."
+          "title": "Sin obligación",
+          "desc": "Retírate en cualquier momento. Sin compromiso."
         }
       ],
       "cta": {
-        "title": "Ready to explore?",
-        "desc": "Browse thousands of premium domains with full intelligence data.",
-        "marketplace": "Browse Marketplace",
-        "luck": "Try Your Luck"
+        "title": "¿Listo para explorar?",
+        "desc": "Explora miles de dominios premium con datos completos.",
+        "marketplace": "Explorar mercado",
+        "luck": "Prueba tu suerte"
       }
     }
   },
   "sol": {
     "index": {
-      "title": "Solutions for Every Domain Need",
-      "subtitle": "Whether you invest, build, or broker — Ceche has the tools, data, and marketplace to power your domain strategy.",
+      "title": "Soluciones para cada necesidad de dominio",
+      "subtitle": "Ya sea que inviertas, construyas o intermediemos — Ceche tiene las herramientas, datos y mercado para impulsar tu estrategia.",
       "cta": {
-        "ready": "Ready to get started?",
-        "signup": "Create Free Account"
+        "ready": "¿Listo para empezar?",
+        "signup": "Crear cuenta gratuita"
       },
       "personas": [
         {
-          "title": "Domain Investors",
-          "desc": "Portfolio yield analysis, flipper metrics, and drop-catching alerts. Maximize returns on your domain investments.",
+          "title": "Inversores de dominios",
+          "desc": "Análisis de rendimiento de cartera, métricas de flipper y alertas de captura.",
           "stat": "8–15%",
-          "statLabel": "Commission Tiers",
+          "statLabel": "Niveles de comisión",
           "href": "/solutions/domain-investors"
         },
         {
-          "title": "Startup Founders",
-          "desc": "Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup.",
+          "title": "Fundadores de startups",
+          "desc": "Índice de marca, pronunciabilidad de palabras clave y herramientas de penetración.",
           "stat": "16",
-          "statLabel": "Scoring Dimensions",
+          "statLabel": "Dimensiones de puntuación",
           "href": "/solutions/startup-founders"
         },
         {
-          "title": "SEO Agencies",
-          "desc": "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.",
+          "title": "Agencias SEO",
+          "desc": "Puntuación de autoridad de backlinks de dominios vencidos y auditorías de recuperación.",
           "stat": "10K",
-          "statLabel": "API Calls/Day",
+          "statLabel": "Llamadas API/día",
           "href": "/solutions/seo-agencies"
         },
         {
-          "title": "Find Available Domains",
-          "desc": "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.",
+          "title": "Encontrar dominios disponibles",
+          "desc": "Escanea millones de combinaciones para nombres disponibles.",
           "stat": "4",
-          "statLabel": "TLDs Scanned",
+          "statLabel": "TLDs escaneados",
           "href": "/solutions/find-available"
         },
         {
-          "title": "Research Intelligence",
-          "desc": "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.",
+          "title": "Inteligencia de investigación",
+          "desc": "Análisis profundo de dominios antes de la adquisición.",
           "stat": "0–100",
-          "statLabel": "Buyer Intent Score",
+          "statLabel": "Puntuación de intención",
           "href": "/solutions/research-intelligence"
         },
         {
-          "title": "Buy Premium Domains",
-          "desc": "Acquire high-value domains with secure, transparent transactions. Fast and reliable.",
+          "title": "Comprar dominios premium",
+          "desc": "Adquiere dominios de alto valor con transacciones seguras.",
           "stat": "$5–$50",
-          "statLabel": "Reveal Fee Range",
+          "statLabel": "Rango de tarifa de revelación",
           "href": "/solutions/buy-premium"
         }
       ],
-      "learnMore": "Learn more →"
+      "learnMore": "Más información →"
     },
     "investors": {
-      "badge": "For Investors",
-      "title": "Maximize Domain Investment Returns",
-      "desc": "Portfolio yield analysis, flipper valuation metrics, drop-catching alerts, and commission tiers from 8–15%. Everything you need to outperform the market.",
+      "badge": "Para inversores",
+      "title": "Maximiza los rendimientos de inversión en dominios",
+      "desc": "Análisis de rendimiento, métricas de flipper, alertas de captura y comisiones del 8–15%.",
       "cta": [
-        "Start Investing",
-        "View Pricing"
+        "Empezar a invertir",
+        "Ver precios"
       ],
       "stats": [
         {
           "value": "16",
-          "label": "Scoring Dimensions"
+          "label": "Dimensiones de puntuación"
         },
         {
           "value": "8–15%",
-          "label": "Commission Tiers"
+          "label": "Niveles de comisión"
         },
         {
           "value": "4",
-          "label": "TLDs Scanned"
+          "label": "TLDs escaneados"
         },
         {
           "value": "$5–$50",
-          "label": "Reveal Fee Range"
+          "label": "Rango de tarifa de revelación"
         }
       ],
       "problem": {
-        "title": "The Investor's Problem",
-        "desc": "Traditional domain investing requires juggling multiple tools, paying opaque fees, and guessing at valuations. You lose deals to faster buyers and overpay on commissions.",
+        "title": "El problema del inversor",
+        "desc": "La inversión tradicional requiere múltiples herramientas y costos opacos.",
         "items": [
-          "No unified scoring model across TLDs",
-          "Hidden fees erode profit margins",
-          "Manual drop-catching misses opportunities",
-          "Commission structures eat into flips"
+          "Sin modelo de puntuación unificado entre TLDs",
+          "Costos ocultos erosionan márgenes de beneficio",
+          "La captura manual pierde oportunidades",
+          "Las estructuras de comisión comen las ganancias"
         ]
       },
       "solution": {
-        "title": "The Ceche Solution",
-        "desc": "A single platform with 16-dimension scoring, tiered commissions with minimums, real-time alerts, and a marketplace designed for investors — not casual buyers.",
+        "title": "La solución Ceche",
+        "desc": "Una plataforma con puntuación de 16 dimensiones, comisiones escalonadas y alertas en tiempo real.",
         "items": [
-          "16-dimension scoring on every domain",
-          "Transparent tiered commission: 15%/12%/10%/8%",
-          "Drop-catching alerts for expiring domains",
-          "Bulk scan up to 5,000 domains at once"
+          "Puntuación de 16 dimensiones en cada dominio",
+          "Comisión escalonada transparente: 15%/12%/10%/8%",
+          "Alertas de captura para dominios vencientes",
+          "Escaneo masivo de hasta 5,000 dominios"
         ]
       },
       "commission": {
-        "title": "Tiered Commission Structure",
+        "title": "Estructura de comisión escalonada",
         "headers": [
-          "Tier",
-          "Commission",
-          "Minimum"
+          "Nivel",
+          "Comisión",
+          "Mínimo"
         ],
         "rows": [
           {
-            "tier": "Starter",
+            "tier": "Inicial",
             "commission": "15%",
             "minimum": "$10"
           },
           {
-            "tier": "Growth",
+            "tier": "Crecimiento",
             "commission": "12%",
             "minimum": "$50"
           },
@@ -1579,924 +1579,926 @@
           }
         ]
       },
-      "toolsTitle": "Tools Built for Investors",
+      "toolsTitle": "Herramientas diseñadas para inversores",
       "tools": [
         {
-          "title": "SEO Scanner",
-          "desc": "Audit backlink profiles and domain authority in seconds."
+          "title": "Escáner SEO",
+          "desc": "Audita perfiles de backlinks y autoridad de dominio en segundos."
         },
         {
-          "title": "Extended Insights",
-          "desc": "Go beyond the basics with full 16-dimension deep dives."
+          "title": "Información extendida",
+          "desc": "Ve más allá de lo básico con inmersiones completas de 16 dimensiones."
         },
         {
-          "title": "Bulk Analyzer",
-          "desc": "Score up to 5,000 domains in a single batch run."
+          "title": "Analizador masivo",
+          "desc": "Puntúa hasta 5,000 dominios en un solo lote."
         },
         {
-          "title": "Trademark Monitor",
-          "desc": "Automated alerts for trademark conflicts on your portfolio."
+          "title": "Monitor de marcas",
+          "desc": "Alertas automatizadas para conflictos de marca."
         }
       ],
       "gettingStarted": {
-        "title": "Getting Started",
+        "title": "Para empezar",
         "steps": [
           {
-            "title": "Create Account",
-            "desc": "Sign up free in 30 seconds"
+            "title": "Crear cuenta",
+            "desc": "Regístrate gratis en 30 segundos"
           },
           {
-            "title": "Choose Plan",
-            "desc": "Free, Startup ($79/mo), or Enterprise ($129/mo)"
+            "title": "Elegir plan",
+            "desc": "Gratis, Startup ($79/mes) o Enterprise ($129/mes)"
           },
           {
-            "title": "Scan Domains",
-            "desc": "Run SEO Scanner or Bulk Analyzer"
+            "title": "Escanear dominios",
+            "desc": "Ejecuta Escáner SEO o Analizador masivo"
           },
           {
-            "title": "Analyze Scores",
-            "desc": "Review 16-dimension reports"
+            "title": "Analizar scores",
+            "desc": "Consulta reportes de 16 dimensiones"
           },
           {
-            "title": "Acquire & Flip",
-            "desc": "Buy, hold, or resell with tiered commissions"
+            "title": "Adquirir y revender",
+            "desc": "Compra, mantén o revende con comisiones escalonadas"
           }
         ]
       },
-      "ctaTitle": "Start Flipping Smarter",
-      "ctaDesc": "Join thousands of investors using Ceche to maximize domain ROI.",
-      "ctaSignup": "Create Free Account",
-      "ctaMarketplace": "Browse Marketplace"
+      "ctaTitle": "Empieza a flippear más inteligentemente",
+      "ctaDesc": "Únete a miles de inversores usando Ceche para maximizar el ROI.",
+      "ctaSignup": "Crear cuenta gratuita",
+      "ctaMarketplace": "Explorar mercado"
     },
     "founders": {
-      "badge": "For Founders",
-      "title": "Build Your Brand on the Right Domain",
-      "desc": "AI-powered brandability scoring, pronounceability analysis, and trademark screening — everything you need before you commit to a name.",
+      "badge": "Para fundadores",
+      "title": "Construye tu marca en el dominio correcto",
+      "desc": "Puntuación de marca por IA, análisis de pronunciabilidad y filtrado de marcas.",
       "steps": [
         {
-          "title": "Describe Your Brand",
-          "desc": "Enter a brief description of your startup, industry, and audience."
+          "title": "Describe tu marca",
+          "desc": "Ingresa una breve descripción de tu startup."
         },
         {
-          "title": "Score & Compare",
-          "desc": "Get 16-dimension scores across 4 TLDs with brandability ratings."
+          "title": "Puntúa y compara",
+          "desc": "Obtén puntuaciones de 16 dimensiones en 4 TLDs."
         },
         {
-          "title": "Claim Your Domain",
-          "desc": "Register, buy on marketplace, or set alerts for expiring names."
+          "title": "Reclama tu dominio",
+          "desc": "Registra, compra en el mercado o establece alertas."
         }
       ],
       "features": [
         {
-          "title": "Brandability Index",
-          "desc": "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset."
+          "title": "Índice de marca",
+          "desc": "Puntuación por IA que evalúa marca, memorabilidad y potencial de mercado."
         },
         {
-          "title": "Pronounceability",
-          "desc": "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember."
+          "title": "Pronunciabilidad",
+          "desc": "Equilibrio vocálico, clústeres de consonantes y análisis de frecuencia."
         },
         {
-          "title": "Extension Penetration",
-          "desc": "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing."
+          "title": "Penetración de extensiones",
+          "desc": "Compara .com, .io, .co y .ai con tasas de penetración."
         },
         {
-          "title": "Social Availability",
-          "desc": "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass."
+          "title": "Disponibilidad social",
+          "desc": "Verifica disponibilidad de nombres de usuario en plataformas principales."
         }
       ],
-      "builtForTitle": "Built for Founders",
+      "builtForTitle": "Diseñado para fundadores",
       "builtFor": [
         {
-          "title": "Competitor Naming",
-          "desc": "Analyze naming patterns in your industry for competitive insights."
+          "title": "Nomenclatura competitiva",
+          "desc": "Analiza patrones de nombrado en tu industria."
         },
         {
-          "title": "Trademark Risk",
-          "desc": "USPTO and WIPO database screening before brand commitment."
+          "title": "Riesgo de marca",
+          "desc": "Filtrado de bases de datos USPTO y WIPO antes del compromiso."
         },
         {
-          "title": "Appraisal Tool",
-          "desc": "Get algorithmic valuations with confidence intervals."
+          "title": "Herramienta de tasación",
+          "desc": "Obtén valoraciones algorítmicas con intervalos de confianza."
         },
         {
-          "title": "SEO Scanner",
-          "desc": "Evaluate backlink profiles of potential domains instantly."
+          "title": "Escáner SEO",
+          "desc": "Evalúa perfiles de backlinks de dominios potenciales instantáneamente."
         }
       ],
-      "ctaTitle": "Find Your Brand Domain",
-      "ctaDesc": "Start with a free account. Score unlimited domains across 4 TLDs.",
-      "ctaSignup": "Create Free Account",
-      "ctaAppraise": "Try Appraisal Tool"
+      "ctaTitle": "Encuentra tu dominio de marca",
+      "ctaDesc": "Empieza con una cuenta gratuita. Puntúa dominios ilimitados en 4 TLDs.",
+      "ctaSignup": "Crear cuenta gratuita",
+      "ctaAppraise": "Probar herramienta de tasación"
     },
     "agencies": {
-      "badge": "For Agencies",
-      "title": "Scale Domain Acquisition for Clients",
-      "desc": "Expired domain backlink authority scoring, spam penalty recovery audits, and bulk tools designed for agency workflows. Handle 5,000+ domains per project.",
+      "badge": "Para agencias",
+      "title": "Escala la adquisición de dominios para clientes",
+      "desc": "Puntuación de backlinks, auditorías de recuperación y herramientas masivas para flujos de trabajo de agencias.",
       "stats": [
         {
           "value": "5K",
-          "label": "Bulk Domains"
+          "label": "Dominios masivos"
         },
         {
           "value": "10K",
-          "label": "API Calls/Day"
+          "label": "Llamadas API/día"
         },
         {
           "value": "8–15%",
-          "label": "Commission Tiers"
+          "label": "Niveles de comisión"
         },
         {
           "value": "$5–$50",
-          "label": "Reveal Fee"
+          "label": "Tarifa de revelación"
         }
       ],
-      "whyTitle": "Why Agencies Choose Ceche",
+      "whyTitle": "Por qué las agencias eligen Ceche",
       "why": [
         {
-          "title": "Client Results",
-          "desc": "Deliver measurable ROI with data-backed domain acquisitions. Show clients exactly why a domain is worth the investment."
+          "title": "Resultados de clientes",
+          "desc": "Entrega ROI medible con adquisiciones respaldadas por datos."
         },
         {
-          "title": "Time Savings",
-          "desc": "Bulk scan 5,000 domains at once and score them across 16 dimensions. What used to take days now takes minutes."
+          "title": "Ahorro de tiempo",
+          "desc": "Escaneo masivo de 5,000 dominios en 16 dimensiones."
         },
         {
-          "title": "Revenue Growth",
-          "desc": "Lower commission tiers as volume increases. Earn more per deal with 8–15% tiered commissions and minimum-based pricing."
+          "title": "Crecimiento de ingresos",
+          "desc": "Niveles de comisión más bajos a medida que aumenta el volumen."
         }
       ],
       "features": [
         {
-          "title": "Expired Domain Authority",
-          "desc": "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity."
+          "title": "Autoridad de dominios vencidos",
+          "desc": "Evalúa perfiles de backlinks de dominios vencidos para adquisición."
         },
         {
-          "title": "Spam Recovery Audits",
-          "desc": "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health."
+          "title": "Auditorías de recuperación de spam",
+          "desc": "Identifica y recupera de penalizaciones de Google."
         },
         {
-          "title": "Bulk Analyzer",
-          "desc": "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations."
+          "title": "Analizador masivo",
+          "desc": "Procesa hasta 5,000 dominios por lote."
         },
         {
-          "title": "Reporting Dashboard",
-          "desc": "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects."
+          "title": "Dashboard de reportes",
+          "desc": "Reportes white-label para presentaciones a clientes."
         }
       ],
-      "plansTitle": "Plans for Every Agency",
-      "plansDesc": "Scale from solo consultant to full-service agency",
+      "plansTitle": "Planes para cada agencia",
+      "plansDesc": "Escala de consultor independiente a agencia completa",
       "plans": [
         {
-          "name": "Free",
+          "name": "Gratis",
           "price": "$0",
-          "period": "/3 domains/day",
+          "period": "/3 dominios/día",
           "features": [
-            "16-dimension scoring",
-            "SEO Scanner",
-            "Basic insights"
+            "Puntuación de 16 dimensiones",
+            "Escáner SEO",
+            "Información básica"
           ],
-          "cta": "Get Started",
+          "cta": "Empezar",
           "dark": false
         },
         {
           "name": "Startup",
           "price": "$79",
-          "period": "/mo",
+          "period": "/mes",
           "features": [
-            "12 domains/day",
-            "Extended Insights",
-            "Trademark Monitor",
-            "Priority support"
+            "12 dominios/día",
+            "Información extendida",
+            "Monitor de marcas",
+            "Soporte prioritario"
           ],
-          "cta": "Start Trial",
+          "cta": "Iniciar prueba",
           "dark": true
         },
         {
           "name": "Enterprise",
           "price": "$129",
-          "period": "/mo",
+          "period": "/mes",
           "features": [
-            "Unlimited scoring",
-            "Bulk Analyzer (5K)",
-            "API (10K calls/day)",
-            "White-label reports"
+            "Puntuación ilimitada",
+            "Analizador masivo (5K)",
+            "API (10K llamadas/día)",
+            "Reportes white-label"
           ],
-          "cta": "Contact Sales",
+          "cta": "Contactar ventas",
           "dark": false
         }
       ],
-      "ctaTitle": "Ready to Scale Your Agency?",
-      "ctaDesc": "Start with a free account or talk to our team about volume pricing.",
-      "ctaSignup": "Create Free Account",
-      "ctaApi": "API Documentation"
+      "ctaTitle": "¿Listo para escalar tu agencia?",
+      "ctaDesc": "Empieza con una cuenta gratuita o habla con nuestro equipo.",
+      "ctaSignup": "Crear cuenta gratuita",
+      "ctaApi": "Documentación API"
     },
     "available": {
       "statValue": "4",
-      "statLabel": "TLDs Scanned Simultaneously",
+      "statLabel": "TLDs escaneados simultáneamente",
       "tlds": ".com · .io · .co · .ai",
-      "title": "Find Available Domains in Seconds",
-      "desc": "Scan millions of combinations for available domain names. Smart suggestions, real-time availability checks, and price comparisons across registrars.",
+      "title": "Encuentra dominios disponibles en segundos",
+      "desc": "Escanea millones de combinaciones para nombres de dominio disponibles.",
       "discovery": {
-        "title": "Smart Domain Discovery",
-        "desc1": "Enter keywords, industry, or a brand concept and Ceche will generate hundreds of available options. Filter by length, TLD, price range, and brandability score.",
-        "desc2": "Every result includes a 16-dimension score, so you know which domains have real market potential — not just availability.",
-        "cta": "Start Searching Free"
+        "title": "Descubrimiento inteligente de dominios",
+        "desc1": "Ingresa palabras clave o conceptos de marca y Ceche generará cientos de opciones.",
+        "desc2": "Cada resultado incluye una puntuación de 16 dimensiones.",
+        "cta": "Buscar gratis"
       },
       "filters": {
-        "title": "Filter Options",
+        "title": "Opciones de filtrado",
         "items": [
           {
             "label": "TLD",
             "value": ".com, .io, .co, .ai"
           },
           {
-            "label": "Max Length",
-            "value": "Up to 15 characters"
+            "label": "Longitud máx",
+            "value": "Hasta 15 caracteres"
           },
           {
-            "label": "Price Range",
-            "value": "$8 – $500/yr"
+            "label": "Rango de precios",
+            "value": "$8 – $500/año"
           },
           {
-            "label": "Brandability",
-            "value": "High / Medium / Low"
+            "label": "Marca",
+            "value": "Alta / Media / Baja"
           },
           {
-            "label": "Buyer Intent",
-            "value": "Score 0–100"
+            "label": "Intención de compra",
+            "value": "Puntuación 0–100"
           },
           {
-            "label": "Availability",
-            "value": "Instant check"
+            "label": "Disponibilidad",
+            "value": "Verificación instantánea"
           },
           {
-            "label": "Price Comparison",
-            "value": "Multi-registrar"
+            "label": "Comparación de precios",
+            "value": "Multi-registrador"
           }
         ]
       },
       "timeline": {
-        "title": "Never Miss a Domain",
+        "title": "Nunca pierdas un dominio",
         "steps": [
           {
-            "title": "Set Your Criteria",
-            "desc": "Define keywords, TLDs, price range, and brandability thresholds."
+            "title": "Establece tus criterios",
+            "desc": "Define palabras clave, TLDs y rango de precios."
           },
           {
-            "title": "Monitor & Alert",
-            "desc": "Ceche scans daily and alerts you when matching domains appear."
+            "title": "Monitorea y alerta",
+            "desc": "Ceche escanea diariamente y te alerta."
           },
           {
-            "title": "Acquire Instantly",
-            "desc": "One-click registration or marketplace purchase with secure checkout."
+            "title": "Adquiere instantáneamente",
+            "desc": "Registro con un clic o compra en el mercado."
           }
         ]
       },
-      "plansTitle": "Choose Your Plan",
+      "plansTitle": "Elige tu plan",
       "plans": [
         {
-          "name": "Free",
+          "name": "Gratis",
           "price": "$0",
           "features": [
-            "3 domains/day",
-            "Basic scoring",
+            "3 dominios/día",
+            "Puntuación básica",
             "1 TLD"
           ],
           "highlight": false
         },
         {
           "name": "Startup",
-          "price": "$79/mo",
+          "price": "$79/mes",
           "features": [
-            "12 domains/day",
-            "Extended Insights",
+            "12 dominios/día",
+            "Información extendida",
             "4 TLDs"
           ],
           "highlight": true
         },
         {
           "name": "Enterprise",
-          "price": "$129/mo",
+          "price": "$129/mes",
           "features": [
-            "Unlimited scoring",
-            "Bulk Analyzer",
-            "API access"
+            "Puntuación ilimitada",
+            "Analizador masivo",
+            "Acceso API"
           ],
           "highlight": false
         }
       ],
       "popular": "Popular",
-      "getStarted": "Get Started",
+      "getStarted": "Empezar",
       "bulk": {
-        "badge": "Enterprise Feature",
-        "title": "Bulk Domain Scanner",
-        "desc": "Upload a CSV of up to 5,000 domains and get scored results in minutes. Perfect for portfolio audits and prospecting at scale.",
-        "note": "Available on Enterprise plan ($129/mo). Includes API access with 10,000 calls/day."
+        "badge": "Función Enterprise",
+        "title": "Escáner masivo de dominios",
+        "desc": "Sube un CSV de hasta 5,000 dominios y obtén resultados puntuados en minutos.",
+        "note": "Disponible en plan Enterprise ($129/mes)."
       },
-      "ctaTitle": "Find Your Perfect Domain",
-      "ctaDesc": "Start with 3 free domain searches per day.",
-      "ctaSignup": "Create Free Account",
-      "ctaScan": "Try SEO Scanner"
+      "ctaTitle": "Encuentra tu dominio perfecto",
+      "ctaDesc": "Empieza con 3 búsquedas de dominio gratuitas al día.",
+      "ctaSignup": "Crear cuenta gratuita",
+      "ctaScan": "Probar Escáner SEO"
     },
     "research": {
       "breadcrumb": [
-        "Solutions",
-        "Research Intelligence"
+        "Soluciones",
+        "Inteligencia de investigación"
       ],
-      "title": "Deep Domain Analysis Before Acquisition",
-      "desc": "Make informed decisions with comprehensive intelligence reports. 16-dimension scoring, ownership history, backlink profiles, and risk assessment — all in one document.",
+      "title": "Análisis profundo de dominios antes de adquisición",
+      "desc": "Toma decisiones informadas con reportes de inteligencia completos.",
       "sections": [
         {
-          "title": "16-Dimension Scoring",
-          "desc": "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains."
+          "title": "Puntuación de 16 dimensiones",
+          "desc": "Cada dominio se evalúa en 16 dimensiones distintas."
         },
         {
-          "title": "Ownership History",
-          "desc": "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues."
+          "title": "Historial de propiedad",
+          "desc": "Historial completo WHOIS y transiciones de propiedad."
         },
         {
-          "title": "Backlink Profile",
-          "desc": "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time."
+          "title": "Perfil de backlinks",
+          "desc": "Análisis detallado de backlinks con puntuación de calidad."
         },
         {
-          "title": "Traffic Estimates",
-          "desc": "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest."
+          "title": "Estimaciones de tráfico",
+          "desc": "Predicciones mensuales de tráfico basadas en métricas SEO."
         },
         {
-          "title": "Valuation Range",
-          "desc": "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value."
+          "title": "Rango de valoración",
+          "desc": "Precios algorítmicos con intervalos de confianza."
         },
         {
-          "title": "Risk Assessment",
-          "desc": "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital."
+          "title": "Evaluación de riesgos",
+          "desc": "Conflictos de marca, historial de spam y análisis de riesgos."
         }
       ],
-      "compareTitle": "How Ceche Compares",
+      "compareTitle": "Cómo se compara Ceche",
       "compareHeaders": [
-        "Feature",
+        "Función",
         "Ceche",
         "Dynadot",
         "GoDaddy"
       ],
       "compareRows": [
         {
-          "feature": "16-Dimension Scoring",
+          "feature": "Puntuación de 16 dimensiones",
           "ceche": "✓",
           "dynadot": "✗",
           "godaddy": "✗"
         },
         {
-          "feature": "Buyer Intent Score",
+          "feature": "Puntuación de intención",
           "ceche": "0–100",
           "dynadot": "✗",
           "godaddy": "✗"
         },
         {
-          "feature": "Bulk Analysis (5K+)",
+          "feature": "Análisis masivo (5K+)",
           "ceche": "✓",
-          "dynadot": "Limited",
+          "dynadot": "Limitado",
           "godaddy": "✗"
         },
         {
-          "feature": "API Access",
-          "ceche": "10K/day",
-          "dynadot": "Basic",
-          "godaddy": "Paid add-on"
+          "feature": "Acceso API",
+          "ceche": "10K/día",
+          "dynadot": "Básico",
+          "godaddy": "Complemento de pago"
         },
         {
-          "feature": "Trademark Monitor",
+          "feature": "Monitor de marcas",
           "ceche": "✓",
           "dynadot": "✗",
-          "godaddy": "Paid"
+          "godaddy": "Pago"
         },
         {
-          "feature": "Tiered Commission",
+          "feature": "Comisión escalonada",
           "ceche": "8–15%",
-          "dynadot": "Flat",
-          "godaddy": "Flat 20%+"
+          "dynadot": "Fijo",
+          "godaddy": "Fijo 20%+"
         },
         {
-          "feature": "TLDs Analyzed",
+          "feature": "TLDs analizados",
           "ceche": "4",
           "dynadot": "10+",
           "godaddy": "10+"
         }
       ],
-      "ctaTitle": "Research Smarter",
-      "ctaDesc": "Get deep intelligence on any domain. Start with a free account.",
-      "ctaSignup": "Create Free Account",
-      "ctaAppraise": "Try Appraisal Tool"
+      "ctaTitle": "Investiga más inteligentemente",
+      "ctaDesc": "Obtén inteligencia profunda sobre cualquier dominio.",
+      "ctaSignup": "Crear cuenta gratuita",
+      "ctaAppraise": "Probar herramienta de tasación"
     },
     "premium": {
-      "heroTitle": "Acquire Premium Domains with Confidence",
-      "heroDesc": "Secure checkout, transparent pricing, and a 72-hour inspection period. Buy premium domains the way they should be — safely and fairly.",
+      "heroTitle": "Adquiere dominios premium con confianza",
+      "heroDesc": "Checkout seguro, precios transparentes y período de inspección de 72 horas.",
       "steps": [
         {
-          "title": "Discover & Evaluate",
-          "desc": "Browse curated premium domains with full 16-dimension intelligence reports. See ownership history, backlink profiles, and fair market valuation before you make an offer."
+          "title": "Descubre y evalúa",
+          "desc": "Explora dominios premium curados con reportes completos."
         },
         {
-          "title": "Negotiate & Transact",
-          "desc": "Make offers, counter-offers, and close deals securely. Payment is processed safely until domain transfer is confirmed and verified."
+          "title": "Negocia y transige",
+          "desc": "Haz ofertas y cierra deals de forma segura."
         },
         {
-          "title": "Inspect & Confirm",
-          "desc": "72-hour inspection period after transfer. Verify the domain meets all expectations before the seller receives payment. Full refund if unsatisfied."
+          "title": "Inspecciona y confirma",
+          "desc": "Período de inspección de 72 horas después de la transferencia."
         }
       ],
       "trust": [
         {
-          "title": "Secure Checkout",
-          "desc": "Payment processed securely until domain transfer is confirmed and verified by both parties."
+          "title": "Checkout seguro",
+          "desc": "Pago procesado de forma segura hasta que la transferencia sea confirmada."
         },
         {
-          "title": "72-Hour Inspection",
-          "desc": "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs."
+          "title": "Inspección de 72 horas",
+          "desc": "Período completo de inspección después de la transferencia."
         },
         {
-          "title": "Multiple Payment Options",
-          "desc": "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises."
+          "title": "Múltiples opciones de pago",
+          "desc": "Tarjeta de crédito, transferencia y criptomonedas aceptadas."
         }
       ],
-      "pricingTitle": "Transparent Pricing",
-      "pricingDesc": "No hidden fees. You see the price — you pay the price.",
+      "pricingTitle": "Precios transparentes",
+      "pricingDesc": "Sin costos ocultos. El precio que ves es el que pagas.",
       "pricingHeaders": [
-        "Fee Type",
-        "Amount",
-        "Notes"
+        "Tipo de tarifa",
+        "Monto",
+        "Notas"
       ],
       "pricingRows": [
         {
-          "type": "Reveal Fee (Standard)",
+          "type": "Tarifa de revelación (Estándar)",
           "amount": "$5",
-          "notes": "One-time per domain reveal"
+          "notes": "Único por revelación de dominio"
         },
         {
-          "type": "Reveal Fee (Priority)",
+          "type": "Tarifa de revelación (Prioritaria)",
           "amount": "$10",
-          "notes": "Expedited reveal with full report"
+          "notes": "Revelación acelerada con reporte completo"
         },
         {
-          "type": "Buyer Commission",
+          "type": "Comisión del comprador",
           "amount": "0%",
-          "notes": "Buyers pay zero commission on Ceche"
+          "notes": "Los compradores no pagan comisión en Ceche"
         },
         {
-          "type": "Transaction Fee",
-          "amount": "Included",
-          "notes": "No extra charge for secure checkout"
+          "type": "Tarifa de transacción",
+          "amount": "Incluido",
+          "notes": "Sin cargo extra por checkout seguro"
         }
       ],
-      "ctaTitle": "Buy Premium Domains Today",
-      "ctaDesc": "Secure, transparent transactions with secure checkout on every purchase.",
-      "ctaMarketplace": "Browse Marketplace",
-      "ctaPricing": "View Pricing"
+      "ctaTitle": "Compra dominios premium hoy",
+      "ctaDesc": "Transacciones seguras y transparentes en cada compra.",
+      "ctaMarketplace": "Explorar mercado",
+      "ctaPricing": "Ver precios"
     }
   },
   "res": {
     "index": {
-      "title": "Resources",
-      "subtitle": "Learn and get support"
+      "title": "Recursos",
+      "subtitle": "Aprende y obtén soporte"
     },
     "blog": {
-      "badge": "Ceche Blog",
-      "title": "Domain intelligence, decoded.",
-      "subtitle": "Strategy guides, market analysis, and frameworks for domain investors who trade on data—not intuition.",
-      "topicsBadge": "Topics",
+      "badge": "Blog de Ceche",
+      "title": "Inteligencia de dominios, descifrada.",
+      "subtitle": "Guías de estrategia, análisis de mercado y marcos para inversores de dominios.",
+      "topicsBadge": "Temas",
       "categories": [
-        "Strategy",
-        "Market Data",
-        "Tutorials",
-        "Industry News",
-        "Case Studies"
+        "Estrategia",
+        "Datos de mercado",
+        "Tutoriales",
+        "Noticias del sector",
+        "Casos de estudio"
       ],
-      "marquee": "Domain Valuations · Market Reports · Portfolio Analytics · Blind Marketplace · 16-Dimension Framework · Health Scores · CPC Data · Brandability Index · Try Your Luck ·",
+      "marquee": "Tasaciones de dominios · Reportes de mercado · Análisis de carteras ·",
       "articles": [
         {
-          "date": "Aug 28, 2026",
-          "title": "Why Premium .com Domains Still Outperform New gTLDs"
+          "date": "28 ago 2026",
+          "title": "Por qué los dominios .com premium siguen superando a los nuevos gTLDs"
         },
         {
-          "date": "Aug 21, 2026",
-          "title": "The Hidden ROI of Portfolio Health Scores"
+          "date": "21 ago 2026",
+          "title": "El ROI oculto de las puntuaciones de salud de cartera"
         },
         {
-          "date": "Aug 14, 2026",
-          "title": "5 Red Flags in Domain Appraisals You're Ignoring"
+          "date": "14 ago 2026",
+          "title": "5 señales de alerta en tasaciones de dominios que estás ignorando"
         },
         {
-          "date": "Aug 07, 2026",
-          "title": "How to Price a Domain Without Guessing"
+          "date": "7 ago 2026",
+          "title": "Cómo poner precio a un dominio sin adivinar"
         },
         {
-          "date": "Jul 31, 2026",
-          "title": "Blind Auctions vs. Fixed Listings: A Data Comparison"
+          "date": "31 jul 2026",
+          "title": "Subastas ciegas vs. listados fijos: una comparación de datos"
         },
         {
-          "date": "Jul 24, 2026",
-          "title": "Building a Domain Reselling Workflow from Scratch"
+          "date": "24 jul 2026",
+          "title": "Construyendo un flujo de reventa de dominios desde cero"
         }
       ],
       "cta": {
-        "title": "Want the full library?",
-        "desc": "Download our ebooks and go deeper on domain investing.",
-        "ebooks": "Browse Ebooks →",
-        "pricing": "View Pricing"
+        "title": "¿Quieres la biblioteca completa?",
+        "desc": "Descarga nuestros e-books y profundiza en la inversión de dominios.",
+        "ebooks": "Explorar e-books →",
+        "pricing": "Ver precios"
       }
     },
     "ebooks": {
-      "badge": "Ceche Ebooks",
-      "title": "Go deeper on domain investing",
-      "subtitle": "Free guides, frameworks, and playbooks for domain investors at every level.",
+      "badge": "E-books de Ceche",
+      "title": "Profundiza en la inversión de dominios",
+      "subtitle": "Guías, marcos y playbooks gratuitos para inversores de dominios.",
       "featured": {
-        "badge": "Featured",
-        "title": "The Domain Investor's Playbook",
-        "desc": "The definitive guide to buying, valuing, and selling domain names for profit. 42 pages of actionable frameworks, case studies, and Ceche-specific strategies used by top resellers.",
+        "badge": "Destacado",
+        "title": "El playbook del inversor de dominios",
+        "desc": "La guía definitiva para comprar, tasar y vender nombres de dominio.",
         "stats": [
           {
             "value": "34K+",
-            "label": "Downloads"
+            "label": "Descargas"
           },
           {
             "value": "42",
-            "label": "Pages"
+            "label": "Páginas"
           },
           {
             "value": "4.9",
-            "label": "Rating"
+            "label": "Calificación"
           }
         ],
-        "cta": "Get Free Copy →"
+        "cta": "Obtener copia gratis →"
       },
-      "catalogTitle": "More from Ceche",
+      "catalogTitle": "Más de Ceche",
       "catalog": [
         {
-          "title": "The Domain Appraiser's Toolkit",
+          "title": "El toolkit del tasador de dominios",
           "pages": 32,
-          "date": "Apr 2026",
+          "date": "Abr 2026",
           "downloads": "12K+",
-          "desc": "A step-by-step guide to valuing domains using data, not guesswork. Covers the 16-Dimension Framework, health scoring, and comparative market analysis."
+          "desc": "Guía paso a paso para tasar dominios usando datos."
         },
         {
-          "title": "Blind Marketplace Playbook",
+          "title": "El playbook del mercado ciego",
           "pages": 28,
           "date": "Mar 2026",
           "downloads": "8K+",
-          "desc": "How Ceche's blind bidding system eliminates price inflation and gives buyers an edge. Includes negotiation templates and bid strategy frameworks."
+          "desc": "Cómo el sistema de subastas ciegas elimina la inflación de precios."
         },
         {
-          "title": "Portfolio Health Audit Guide",
+          "title": "Guía de auditoría de salud de cartera",
           "pages": 24,
           "date": "Feb 2026",
           "downloads": "6K+",
-          "desc": "Run a full health check on your domain portfolio. Identify underperformers, renewal traps, and hidden gems with Ceche's scoring system."
+          "desc": "Realiza un chequeo completo de salud de tu cartera de dominios."
         },
         {
-          "title": "Domain Reselling 101",
+          "title": "Reventa de dominios 101",
           "pages": 36,
-          "date": "Jan 2026",
+          "date": "Ene 2026",
           "downloads": "15K+",
-          "desc": "From acquisition to close—everything a new domain reseller needs. Pricing strategies, buyer outreach, and closing techniques backed by real data."
+          "desc": "De la adquisición al cierre — todo lo que un nuevo revendedor necesita."
         }
       ],
-      "getCopy": "Get Digital Copy",
+      "getCopy": "Obtener copia digital",
       "cta": {
-        "title": "Want more articles and market insights?",
-        "desc": "Our blog covers domain strategy, pricing models, and industry analysis.",
-        "blog": "Read the Blog →",
-        "pricing": "View Pricing"
+        "title": "¿Más artículos e información de mercado?",
+        "desc": "Nuestro blog cubre estrategia de dominios y análisis del sector.",
+        "blog": "Leer el blog",
+        "pricing": "Ver precios"
       },
       "modal": {
-        "title": "Create an account to download",
-        "desc": "All Ceche ebooks and guides are free for registered users.",
-        "redirecting": "Redirecting to signup in {count} seconds...",
-        "cta": "Create free account",
-        "back": "Go back"
+        "title": "Crea una cuenta para descargar",
+        "desc": "Todos los e-books y guías de Ceche son gratuitos para usuarios registrados.",
+        "redirecting": "Redirigiendo al registro en {count} segundos...",
+        "cta": "Crear cuenta gratuita",
+        "back": "Volver"
       }
     },
     "cases": {
-      "badge": "Case Studies",
-      "title": "Real investors. Real outcomes.",
-      "desc": "See how domain investors, startups, and portfolio managers use Ceche to make faster, smarter decisions. Every case study is backed by real numbers—no cherry-picked success stories.",
+      "badge": "Casos de estudio",
+      "title": "Inversores reales. Resultados reales.",
+      "desc": "Mira cómo los inversores de dominios usan Ceche para tomar decisiones más rápidas.",
       "stats": [
         {
           "value": "4.2K+",
-          "label": "Active Users"
+          "label": "Usuarios activos"
         },
         {
           "value": "98%",
-          "label": "Accuracy Rate"
+          "label": "Tasa de precisión"
         }
       ],
       "comingSoon": {
-        "title": "Case studies coming soon",
-        "desc": "We're documenting how investors are using Ceche's tools to find undervalued domains, negotiate smarter, and close deals faster. Check back soon for in-depth breakdowns.",
-        "appraisal": "Try Appraisal Tool →",
-        "marketplace": "Explore Marketplace",
-        "pricing": "View Pricing"
+        "title": "Casos de estudio próximamente",
+        "desc": "Estamos documentando cómo los inversores usan las herramientas de Ceche.",
+        "appraisal": "Probar herramienta de tasación →",
+        "marketplace": "Explorar mercado",
+        "pricing": "Ver precios"
       },
       "cta": {
-        "title": "Have a story to share?",
-        "desc": "We'd love to feature your experience with Ceche.",
-        "contact": "Get in Touch →"
+        "title": "¿Tienes una historia para compartir?",
+        "desc": "Nos encantaría destacar tu experiencia con Ceche.",
+        "contact": "Contactar →"
       }
     }
   },
   "company": {
     "about": {
-      "badge": "About Ceche",
-      "title": "Built for investors who trade on data",
-      "desc": "The domain marketplace where premium names are bought and sold—powered by real intelligence, not guesswork.",
+      "badge": "Acerca de Ceche",
+      "title": "Diseñado para inversores que operan con datos",
+      "desc": "El mercado de dominios donde los nombres premium se compran y venden.",
       "cta": {
-        "title": "Ready to find your next domain?",
-        "desc": "Every name is backed by data. The marketplace is open.",
-        "marketplace": "Browse Marketplace →",
-        "pricing": "View Pricing"
+        "title": "¿Listo para encontrar tu próximo dominio?",
+        "desc": "Cada nombre está respaldado por datos. El mercado está abierto.",
+        "marketplace": "Explorar mercado →",
+        "pricing": "Ver precios",
+        "0": "Probar tasación →",
+        "1": "Explorar mercado"
       },
       "origin": {
-        "badge": "Our Origin",
-        "title": "Founded by a domain investor who saw the market needed better data",
-        "p1": "The domain aftermarket generates over $3 billion in annual transactions, yet most marketplaces are opaque, inflated by scrapers, and built on intuition rather than data. Ceche was created to fix that.",
-        "p2": "We combined the intelligence of a research platform with the transaction mechanics of a marketplace. You evaluate the numbers first—estimated value, health score, CPC, brandability—and the name only appears when you pay to reveal it. Every valuation is backed by a published methodology and a verifiable dataset."
+        "badge": "Nuestro origen",
+        "title": "Fundado por un inversor de dominios que vio que el mercado necesitaba mejores datos",
+        "p1": "El mercado de reventa genera más de $3 mil millones en transacciones anuales.",
+        "p2": "Combinamos la inteligencia de una plataforma de investigación con las mecánicas de un mercado."
       },
       "founder": {
-        "label": "Founder",
+        "label": "Fundador",
         "name": "Nekwasachukwu Ucheokoye",
-        "bio": "Domain name investor & reseller managing 100+ domains. Agentic & systems engineer building intelligent infrastructure for the domain industry. Based in Awka, Nigeria."
+        "bio": "Inversor y revendedor de dominios que gestiona 100+ dominios."
       },
       "values": {
-        "badge": "What We Believe",
-        "title": "Three principles that drive every decision",
+        "badge": "En lo que creemos",
+        "title": "Tres principios que guían cada decisión",
         "items": [
           {
-            "title": "Transparency",
-            "desc": "We publish our methodology, data sources, and accuracy metrics. Users who understand how we work trust us more than users who are asked to take our word for it."
+            "title": "Transparencia",
+            "desc": "Publicamos nuestra metodología y fuentes de datos."
           },
           {
-            "title": "Data Rigor",
-            "desc": "Every claim we make is backed by data. Every tool produces measurable outputs. We do not rely on intuition when data is available."
+            "title": "Rigor de datos",
+            "desc": "Cada afirmación está respaldada por datos."
           },
           {
-            "title": "Speed",
-            "desc": "We ship fast and iterate. Perfection is the enemy of progress—we aim for good enough to ship and improve from there."
+            "title": "Velocidad",
+            "desc": "Entregamos rápido e iteramos."
           }
         ]
       }
     },
     "affiliates": {
-      "badge": "Ceche Affiliates",
-      "title": "Earn by referring domain investors",
-      "desc": "Join our affiliate program, share Ceche with your network, and earn recurring commissions on every customer you refer.",
+      "badge": "Afiliados de Ceche",
+      "title": "Gana refiriendo inversores de dominios",
+      "desc": "Únete a nuestro programa de afiliados y gana comisiones recurrentes.",
       "timeline": [
-        "Sign up",
-        "Share link",
-        "Earn 30%"
+        "Registrarse",
+        "Compartir enlace",
+        "Ganar 30%"
       ],
       "benefits": [
         {
-          "title": "30% Recurring Commission",
-          "desc": "Earn on every paying customer you refer—for as long as they stay subscribed. No caps, no limits."
+          "title": "30% comisión recurrente",
+          "desc": "Gana en cada cliente de pago que refieras."
         },
         {
-          "title": "90-Day Cookie Window",
-          "desc": "Your referral link tracks visitors for 90 days. Even if they come back weeks later, you still get credit."
+          "title": "Ventana de cookie de 90 días",
+          "desc": "Tu enlace de referencia rastrea visitantes 90 días."
         },
         {
-          "title": "Real-Time Dashboard",
-          "desc": "Track clicks, signups, and earnings in real time. No guessing, no waiting for monthly reports."
+          "title": "Dashboard en tiempo real",
+          "desc": "Rastrea clics, registros e ingresos en tiempo real."
         },
         {
-          "title": "Dedicated Affiliate Support",
-          "desc": "Get priority access to our affiliate team. Custom landing pages, promo assets, and campaign guidance."
+          "title": "Soporte dedicado de afiliados",
+          "desc": "Acceso prioritario a nuestro equipo de afiliados."
         },
         {
-          "title": "Instant Payouts",
-          "desc": "Get paid monthly via bank transfer or PayPal. No minimum threshold. No delays."
+          "title": "Pagos instantáneos",
+          "desc": "Pagado mensualmente por transferencia bancaria o PayPal."
         },
         {
-          "title": "Free Premium Access",
-          "desc": "Active affiliates get a free Ceche Pro account. Use the product, sell the product, believe in the product."
+          "title": "Acceso Premium gratuito",
+          "desc": "Los afiliados activos obtienen una cuenta Ceche Pro gratuita."
         }
       ],
       "cta": {
-        "title": "Start earning today",
-        "desc": "Sign up for the affiliate program and start referring in minutes.",
-        "join": "Join Affiliate Program →",
-        "pricing": "View Pricing",
-        "support": "Contact Support"
+        "title": "Empieza a ganar hoy",
+        "desc": "Regístrate en el programa de afiliados.",
+        "join": "Unirse al programa →",
+        "pricing": "Ver precios",
+        "support": "Soporte"
       }
     }
   },
   "helpOverview": {
-    "badge": "Help Center",
-    "title": "How can we help.",
-    "desc": "Find documentation, FAQs, and support for all Ceche tools. Use the sidebar to navigate between sections.",
+    "badge": "Centro de ayuda",
+    "title": "¿Cómo podemos ayudar?",
+    "desc": "Encuentra documentación, FAQ y soporte para todas las herramientas de Ceche.",
     "sections": [
       {
-        "title": "Documentation",
-        "desc": "Comprehensive guides for every Ceche tool, from domain lookup to bulk analysis.",
+        "title": "Documentación",
+        "desc": "Guías completas para cada herramienta de Ceche.",
         "href": "/help/docs"
       },
       {
-        "title": "API Reference",
-        "desc": "RESTful API endpoints for programmatic domain intelligence at scale.",
+        "title": "Referencia API",
+        "desc": "Endpoints API RESTful para inteligencia de dominios.",
         "href": "/help/api"
       },
       {
         "title": "FAQ",
-        "desc": "Answers to common questions about pricing, tools, accounts, and more.",
+        "desc": "Respuestas a preguntas frecuentes.",
         "href": "/help/faq"
       },
       {
-        "title": "Contact",
-        "desc": "Reach our support team for help, feedback, or partnership inquiries.",
+        "title": "Contacto",
+        "desc": "Contacta a nuestro equipo de soporte.",
         "href": "/help/contact"
       },
       {
-        "title": "Changelog",
-        "desc": "Product updates, new features, and platform improvements.",
+        "title": "Registro de cambios",
+        "desc": "Actualizaciones de producto y nuevas funcionalidades.",
         "href": "/help/changelog"
       }
     ]
   },
   "auth": {
     "login": {
-      "title": "Login",
-      "email": "Email",
-      "password": "Password",
-      "button": "Login",
-      "loading": "Logging in...",
-      "noAccount": "Don't have an account?",
-      "signup": "Sign up"
+      "title": "Iniciar sesión",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "button": "Iniciar sesión",
+      "loading": "Iniciando sesión...",
+      "noAccount": "¿No tienes cuenta?",
+      "signup": "Registrarse"
     },
     "signup": {
-      "title": "Sign Up",
-      "name": "Name",
-      "email": "Email",
-      "password": "Password",
-      "button": "Sign Up",
-      "loading": "Creating account...",
-      "hasAccount": "Already have an account?",
-      "login": "Login"
+      "title": "Registrarse",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "button": "Registrarse",
+      "loading": "Creando cuenta...",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "login": "Iniciar sesión"
     }
   },
   "dashboard": {
-    "welcome": "Welcome back, {name}",
+    "welcome": "Bienvenido de nuevo, {name}",
     "plan": "Plan",
-    "apiKeys": "API Keys",
-    "manageKeys": "Manage keys →",
-    "quickActions": "Quick Actions",
-    "appraise": "Appraise a domain →",
-    "scan": "Start a scan →"
+    "apiKeys": "Claves API",
+    "manageKeys": "Gestionar claves →",
+    "quickActions": "Acciones rápidas",
+    "appraise": "Tasar un dominio →",
+    "scan": "Iniciar escaneo →"
   },
   "limit": {
-    "title": "Rate Limit Reached",
-    "desc": "This request didn't go through. You've used all your free appraisals for today. Sign up to increase your rate limit and appraise more domains.",
-    "currentLimits": "Your current limits",
+    "title": "Límite de velocidad alcanzado",
+    "desc": "Esta solicitud no pasó. Has usado todas tus tasaciones gratuitas de hoy.",
+    "currentLimits": "Tus límites actuales",
     "limits": [
       {
-        "tier": "Not signed up",
-        "value": "3/day"
+        "tier": "Sin registro",
+        "value": "3/día"
       },
       {
-        "tier": "Signed up (free)",
-        "value": "12/day"
+        "tier": "Registrado (gratis)",
+        "value": "12/día"
       },
       {
-        "tier": "Premium Startup ($79/mo)",
-        "value": "30/day"
+        "tier": "Premium Startup ($79/mes)",
+        "value": "30/día"
       },
       {
-        "tier": "Premium Enterprise ($129/mo)",
-        "value": "Unlimited"
+        "tier": "Premium Enterprise ($129/mes)",
+        "value": "Ilimitado"
       }
     ],
-    "signup": "Sign Up Free",
-    "home": "Go Back Home"
+    "signup": "Registrarse gratis",
+    "home": "Volver al inicio"
   },
   "search": {
-    "placeholder": "Enter any domain name, e.g., brand.com",
-    "button": "Search",
-    "loading": "Checking {domain}...",
-    "available": "Available for registration",
-    "taken": "Taken",
-    "rating": "Rating",
-    "buildWith": "What you could build with this",
-    "appraise": "Appraise this name",
-    "whoisTitle": "WHOIS Details",
+    "placeholder": "Ingresa cualquier dominio, ej. brand.com",
+    "button": "Buscar",
+    "loading": "Verificando {domain}...",
+    "available": "Disponible para registro",
+    "taken": "Ocupado",
+    "rating": "Clasificación",
+    "buildWith": "Lo que podrías construir con esto",
+    "appraise": "Tasar este nombre",
+    "whoisTitle": "Detalles WHOIS",
     "whoisLabels": [
-      "Registrar",
-      "Expires",
-      "Registrant",
+      "Registrador",
+      "Vence el",
+      "Titular",
       "Nameservers"
     ],
-    "fullAppraisal": "Full Appraisal",
-    "copyDomain": "Copy Domain",
-    "empty": "Enter a domain name above to check availability"
+    "fullAppraisal": "Tasación completa",
+    "copyDomain": "Copiar dominio",
+    "empty": "Ingresa un nombre de dominio para verificar disponibilidad"
   },
   "apikeys": {
-    "title": "API Keys",
-    "loading": "Loading...",
-    "createTitle": "Create New Key",
-    "placeholder": "Key name (e.g., production)",
-    "create": "Create",
-    "creating": "Creating...",
-    "yourKeys": "Your Keys",
-    "noKeys": "No API keys yet. Create one above.",
-    "created": "Created:",
-    "lastUsed": "Last used:",
-    "delete": "Delete",
-    "newKey": "Your new API key (copy it now, it won't be shown again):",
-    "dismiss": "Dismiss"
+    "title": "Claves API",
+    "loading": "Cargando...",
+    "createTitle": "Crear nueva clave",
+    "placeholder": "Nombre de clave (ej. producción)",
+    "create": "Crear",
+    "creating": "Creando...",
+    "yourKeys": "Tus claves",
+    "noKeys": "Aún no hay claves API. Crea una arriba.",
+    "created": "Creada:",
+    "lastUsed": "Último uso:",
+    "delete": "Eliminar",
+    "newKey": "Tu nueva clave API (cópiala ahora, no se mostrará de nuevo):",
+    "dismiss": "Cerrar"
   },
   "scanPage": {
-    "title": "Domain Scanner",
-    "desc": "Find available domains matching your criteria",
-    "config": "Scan Configuration",
-    "wordList": "Word List",
-    "customWords": "Custom words",
-    "customPlaceholder": "Enter one word per line...",
+    "title": "Escáner de dominios",
+    "desc": "Encuentra dominios disponibles que cumplan tus criterios",
+    "config": "Configuración de escaneo",
+    "wordList": "Lista de palabras",
+    "customWords": "Palabras personalizadas",
+    "customPlaceholder": "Ingresa una palabra por línea...",
     "tlds": "TLDs",
-    "startScan": "Start Scan",
-    "scanning": "Scanning...",
-    "progress": "Scan Progress",
-    "status": "Status",
-    "progressLabel": "Progress",
-    "available": "Available",
-    "results": "Results ({count} domains)",
-    "availableOnly": "Available only",
-    "sortByDomain": "Sort by domain",
-    "sortByPrice": "Sort by price",
-    "exportCsv": "Export CSV",
-    "domain": "Domain",
-    "statusHeader": "Status",
-    "price": "Price",
-    "actions": "Actions",
-    "availableBadge": "Available",
+    "startScan": "Iniciar escaneo",
+    "scanning": "Escaneando...",
+    "progress": "Progreso del escaneo",
+    "status": "Estado",
+    "progressLabel": "Progreso",
+    "available": "Disponible",
+    "results": "Resultados ({count} dominios)",
+    "availableOnly": "Solo disponibles",
+    "sortByDomain": "Ordenar por dominio",
+    "sortByPrice": "Ordenar por precio",
+    "exportCsv": "Exportar CSV",
+    "domain": "Dominio",
+    "statusHeader": "Estado",
+    "price": "Precio",
+    "actions": "Acciones",
+    "availableBadge": "Disponible",
     "errorBadge": "Error",
-    "takenBadge": "Taken",
-    "appraise": "Appraise",
-    "noResults": "No scan results yet",
-    "noResultsDesc": "Configure your scan settings and click \"Start Scan\" to find available domains.",
-    "recentScans": "Recent Scans",
-    "scan": "scan"
+    "takenBadge": "Ocupado",
+    "appraise": "Tasar",
+    "noResults": "Aún no hay resultados de escaneo",
+    "noResultsDesc": "Configura tu escaneo y haz clic en 'Iniciar escaneo'.",
+    "recentScans": "Escaneos recientes",
+    "scan": "escaneo"
   },
   "appraisePage": {
-    "badge": "16-DIMENSION ENGINE",
-    "title": "Domain Appraisal",
-    "desc": "Comprehensive valuation across RDAP data, TLD scoring, brandability, commercial intent, and 12 more dimensions.",
-    "placeholder": "Enter domain (e.g. techstart.com)",
-    "analyzing": "Analyzing...",
-    "button": "Appraise",
-    "devMode": "Dev mode — unlimited",
-    "appraisalsLeft": "{count} appraisal{plural} left today",
-    "devBypass": "Dev bypass",
-    "activate": "Activate",
-    "loading": "Loading...",
+    "badge": "MOTOR DE 16 DIMENSIONES",
+    "title": "Tasación de dominio",
+    "desc": "Valoración completa sobre datos RDAP, puntuación TLD, marca y 12 dimensiones más.",
+    "placeholder": "Ingresa dominio (ej. techstart.com)",
+    "analyzing": "Analizando...",
+    "button": "Tasar",
+    "devMode": "Modo dev — ilimitado",
+    "appraisalsLeft": "{count} tasación{plural} restante(s) hoy",
+    "devBypass": "Bypass dev",
+    "activate": "Activar",
+    "loading": "Cargando...",
     "error": "Error",
-    "estimatedValue": "Estimated Value",
-    "analysis": "16-Dimension Analysis",
-    "fullAccess": "FULL ACCESS",
-    "unlocked": "3 OF 16 UNLOCKED",
-    "aboveAvg": "Above average",
-    "belowAvg": "Below average",
-    "avg": "Average",
-    "unlockPrompt": "Unlock all 13 remaining dimensions with a premium plan",
-    "viewPricing": "View pricing",
-    "whoisHint": "Want WHOIS + DNS data?",
-    "domainLookup": "Try Domain Lookup — no account required",
-    "domainLookupCta": "Domain Lookup",
-    "deeperHint": "Want deeper analysis?",
-    "extendedInsights": "Extended Insights — backlinks, trademarks, comparables",
-    "extendedInsightsCta": "Extended Insights",
-    "recentAppraisals": "Recent Appraisals",
-    "limitTitle": "Daily limit reached",
-    "limitDesc": "You've used all {limit} appraisals today. Create an account to get {signed} per day.",
-    "createAccount": "Create account",
-    "goBack": "Go back",
-    "redirecting": "Redirecting...",
-    "redirectDesc": "Taking you to account creation.",
+    "estimatedValue": "Valor estimado",
+    "analysis": "Análisis de 16 dimensiones",
+    "fullAccess": "ACCESO COMPLETO",
+    "unlocked": "3 DE 16 DESBLOQUEADAS",
+    "aboveAvg": "Por encima del promedio",
+    "belowAvg": "Por debajo del promedio",
+    "avg": "Promedio",
+    "unlockPrompt": "Desbloquea las 13 dimensiones restantes con un plan premium",
+    "viewPricing": "Ver precios",
+    "whoisHint": "¿Necesitas datos WHOIS + DNS?",
+    "domainLookup": "Prueba Consulta de dominio — sin cuenta requerida",
+    "domainLookupCta": "Consulta de dominio",
+    "deeperHint": "¿Necesitas análisis más profundo?",
+    "extendedInsights": "Información extendida — backlinks, marcas, comparables",
+    "extendedInsightsCta": "Información extendida",
+    "recentAppraisals": "Tasaciones recientes",
+    "limitTitle": "Límite diario alcanzado",
+    "limitDesc": "Has usado las {limit} tasaciones de hoy.",
+    "createAccount": "Crear cuenta",
+    "goBack": "Volver",
+    "redirecting": "Redirigiendo...",
+    "redirectDesc": "Te llevamos a la página de creación de cuenta.",
     "modules": [
-      "Registration Data (RDAP)",
-      "TLD Premium Tier",
-      "Domain Length",
-      "Word Count",
-      "Pronounceability",
-      "Word Segmentation",
-      "Keyword Popularity",
-      "Commercial Intent (CPC)",
-      "Search Results",
-      "Cross-TLD Registration",
-      "Trademark Check",
-      "Domain Authority",
-      "Brandability Score"
+      "Datos de registro (RDAP)",
+      "Nivel premium TLD",
+      "Longitud del dominio",
+      "Número de palabras",
+      "Pronunciabilidad",
+      "Segmentación de palabras",
+      "Popularidad de palabras clave",
+      "Intención comercial (CPC)",
+      "Resultados de búsqueda",
+      "Registro multi-TLD",
+      "Verificación de marca",
+      "Autoridad de dominio",
+      "Puntuación de marca"
     ]
   },
   "helpDocs": {
-    "badge": "Documentation",
-    "title1": "Every tool,",
-    "title2": "documented.",
-    "desc": "The Ceche Help Center covers the SEO Scanner, Extended Insights, Bulk Analyzer, Trademark Monitor, Domain Database, and API. Over 320 articles organized by tool, topic, and difficulty level.",
+    "badge": "Documentación",
+    "title1": "Cada herramienta,",
+    "title2": "documentada.",
+    "desc": "El Centro de Ayuda de Ceche cubre el Escáner SEO, Información extendida, Analizador masivo, Monitor de marcas, Base de datos de dominios y API.",
     "tools": [
       {
         "name": "Domain Lookup",
@@ -2576,280 +2578,280 @@
         ]
       }
     ],
-    "tiersTitle": "Subscription tiers",
+    "tiersTitle": "Niveles de suscripción",
     "tiers": [
       {
-        "tier": "Free",
+        "tier": "Gratis",
         "price": "$0",
-        "features": "12 appraisals/day, basic SEO Scanner, Help Center access",
+        "features": "12 tasaciones/día, escáner SEO básico, acceso al centro de ayuda",
         "color": "#888888"
       },
       {
         "tier": "Startup",
-        "price": "$79/mo",
-        "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor",
+        "price": "$79/mes",
+        "features": "30 tasaciones/día, escáner completo, información extendida, analizador masivo, monitor de marcas",
         "color": "#F4A261"
       },
       {
         "tier": "Enterprise",
-        "price": "$129/mo",
-        "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support",
+        "price": "$129/mes",
+        "features": "Tasaciones ilimitadas, todas las funciones Startup, API (10K llamadas/día), soporte dedicado",
         "color": "#9E2A2B"
       }
     ],
     "needHelp": {
-      "badge": "Need help?",
-      "title": "Premium subscribers get 4-hour support",
-      "cta": "Contact support"
+      "badge": "¿Necesitas ayuda?",
+      "title": "Los suscriptores Premium reciben soporte en 4 horas",
+      "cta": "Contactar soporte"
     },
-    "openTool": "Open tool"
+    "openTool": "Abrir herramienta"
   },
   "helpFaq": {
     "badge": "FAQ",
-    "title1": "Frequently",
-    "title2": "asked.",
-    "desc": "Answers to the most common questions about Ceche — pricing, tools, API, marketplace, and account management.",
+    "title1": "Preguntas",
+    "title2": "frecuentes.",
+    "desc": "Respuestas a las preguntas más frecuentes sobre Ceche.",
     "sections": [
       {
-        "title": "Getting started",
+        "title": "Para empezar",
         "items": [
           {
-            "q": "What is Ceche?",
-            "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace."
+            "q": "¿Qué es Ceche?",
+            "a": "Ceche es un mercado de dominios donde los nombres premium se compran y venden."
           },
           {
-            "q": "How does the appraisal engine work?",
-            "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights."
+            "q": "¿Cómo funciona el motor de tasación?",
+            "a": "El motor usa el marco de 16 dimensiones para evaluar dominios."
           },
           {
-            "q": "What TLDs does Ceche support?",
-            "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions."
+            "q": "¿Qué TLDs soporta Ceche?",
+            "a": "Ceche soporta dominios .com, .net, .io y .co."
           },
           {
-            "q": "How do I create an account?",
-            "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required."
+            "q": "¿Cómo creo una cuenta?",
+            "a": "Haz clic en 'Registrarse gratis' en la navegación."
           }
         ]
       },
       {
-        "title": "Pricing & billing",
+        "title": "Precios y facturación",
         "items": [
           {
-            "q": "What are the subscription tiers?",
-            "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting."
+            "q": "¿Cuáles son los niveles de suscripción?",
+            "a": "Gratis: 12 tasaciones/día. Startup: 30 tasaciones/día. Enterprise: ilimitadas."
           },
           {
-            "q": "How does Try Your Luck pricing work?",
-            "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring."
+            "q": "¿Cómo funcionan los precios de Prueba tu suerte?",
+            "a": "Prueba tu suerte ofrece adquisiciones misteriosas a tarifas fijas."
           },
           {
-            "q": "What are the marketplace fees?",
-            "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000."
+            "q": "¿Cuáles son las tarifas del mercado?",
+            "a": "Listado estándar: $5 por dominio. Comisión: 8-15%."
           },
           {
-            "q": "Do you offer refunds?",
-            "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable."
+            "q": "¿Ofrecen reembolsos?",
+            "a": "No. Todos los tarifas para bienes digitales son no reembolsables."
           }
         ]
       },
       {
-        "title": "Tools",
+        "title": "Herramientas",
         "items": [
           {
-            "q": "What's the difference between SEO Scanner and Extended Insights?",
-            "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring."
+            "q": "¿Cuál es la diferencia entre Escáner SEO e Información extendida?",
+            "a": "El Escáner SEO evalúa visibilidad y backlinks. Información extendida ofrece due diligence más profundo."
           },
           {
-            "q": "How does the Bulk Analyzer work?",
-            "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds."
+            "q": "¿Cómo funciona el Analizador masivo?",
+            "a": "Sube un CSV con una columna 'dominio' y un dominio por fila."
           },
           {
-            "q": "How does the Trademark Monitor work?",
-            "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)."
+            "q": "¿Cómo funciona el Monitor de marcas?",
+            "a": "Agrega dominios a tu lista de monitoreo desde el dashboard."
           }
         ]
       },
       {
-        "title": "API & integrations",
+        "title": "API e integraciones",
         "items": [
           {
-            "q": "How do I authenticate API requests?",
-            "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys."
+            "q": "¿Cómo autentico las solicitudes API?",
+            "a": "Incluye tu clave API en el encabezado Authorization como token Bearer."
           },
           {
-            "q": "What are the API rate limits?",
-            "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC."
+            "q": "¿Cuáles son los límites de velocidad de API?",
+            "a": "Gratis: 100 llamadas/día. Startup: 500. Enterprise: 10,000."
           },
           {
-            "q": "What SDKs are available?",
-            "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff."
+            "q": "¿Qué SDKs están disponibles?",
+            "a": "SDKs oficiales para Python, JavaScript/Node.js, Go y Ruby."
           }
         ]
       },
       {
-        "title": "Account & support",
+        "title": "Cuenta y soporte",
         "items": [
           {
-            "q": "How do I contact support?",
-            "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel."
+            "q": "¿Cómo contacto soporte?",
+            "a": "Los suscriptores Premium reciben respuesta en 4 horas hábiles."
           },
           {
-            "q": "Can I cancel my subscription?",
-            "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable."
+            "q": "¿Puedo cancelar mi suscripción?",
+            "a": "Sí. Cancela en cualquier momento desde Ajustes de cuenta."
           }
         ]
       }
     ],
-    "stillQuestions": "Still have questions?",
-    "supportTeam": "Our support team is here to help",
-    "contactSupport": "Contact support"
+    "stillQuestions": "¿Todavía tienes preguntas?",
+    "supportTeam": "Nuestro equipo de soporte está aquí para ayudar",
+    "contactSupport": "Contactar soporte"
   },
   "helpApi": {
-    "badge": "API Reference",
-    "title1": "Build with",
+    "badge": "Referencia API",
+    "title1": "Construye con",
     "title2": "Ceche.",
-    "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
-    "baseUrl": "Base URL",
-    "auth": "Authentication",
+    "desc": "API REST unificada para tasar dominios, puntuar marca y monitorear marcas.",
+    "baseUrl": "URL base",
+    "auth": "Autenticación",
     "endpoints": [
       {
-        "title": "Appraise a domain",
-        "desc": "Returns a full 16-Dimension valuation. Includes estimated value, dimension scores, brandability rating, and comparable sales data."
+        "title": "Tasar un dominio",
+        "desc": "Retorna una valoración completa de 16 dimensiones."
       },
       {
-        "title": "Bulk appraisal",
-        "desc": "Appraise up to 5,000 domains in a single request. Returns individual valuations, priority scores, and recommended actions."
+        "title": "Tasación masiva",
+        "desc": "Tasa hasta 5,000 dominios en una sola solicitud."
       },
       {
-        "title": "Domain profile",
-        "desc": "Retrieve the full intelligence profile — valuation, SEO metrics, backlink profile, traffic history, and trademark status."
+        "title": "Perfil de dominio",
+        "desc": "Obtén el perfil completo de inteligencia."
       },
       {
-        "title": "Trademark check",
-        "desc": "Screen a domain name against USPTO and WIPO trademark databases. Returns conflict severity and recommended actions."
+        "title": "Verificación de marca",
+        "desc": "Filtra un nombre de dominio contra bases de datos USPTO y WIPO."
       },
       {
-        "title": "List a domain",
-        "desc": "List a domain on the Ceche marketplace. Standard ($5) or priority ($10) listing."
+        "title": "Listar un dominio",
+        "desc": "Listar un dominio en el mercado Ceche."
       },
       {
-        "title": "Register webhook",
-        "desc": "Register a webhook URL for real-time notifications on valuation changes, trademark alerts, and marketplace events."
+        "title": "Registrar webhook",
+        "desc": "Registra una URL de webhook para notificaciones en tiempo real."
       }
     ],
-    "rateLimits": "Rate limits",
+    "rateLimits": "Límites de velocidad",
     "limits": [
       {
-        "tier": "Free",
-        "limit": "100 calls/day",
+        "tier": "Gratis",
+        "limit": "100 llamadas/día",
         "color": "#888888"
       },
       {
         "tier": "Startup",
-        "limit": "500 calls/day",
+        "limit": "500 llamadas/día",
         "color": "#F4A261"
       },
       {
         "tier": "Enterprise",
-        "limit": "10,000 calls/day",
+        "limit": "10,000 llamadas/día",
         "color": "#9E2A2B"
       }
     ],
     "enterprise": {
       "badge": "Enterprise",
-      "title": "10,000 API calls per day",
-      "cta": "Get API key"
+      "title": "10,000 llamadas API por día",
+      "cta": "Obtener clave API"
     },
-    "openTool": "Open tool"
+    "openTool": "Abrir herramienta"
   },
   "helpContact": {
-    "badge": "Contact",
-    "title1": "Get in",
-    "title2": "touch.",
-    "desc": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours.",
+    "badge": "Contacto",
+    "title1": "Contacta",
+    "title2": "con nosotros.",
+    "desc": "Los suscriptores Premium reciben respuesta en 4 horas hábiles.",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "email": "Email",
-      "emailPlaceholder": "you@company.com",
-      "subject": "Subject",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@empresa.com",
+      "subject": "Asunto",
       "subjects": [
-        "General inquiry",
-        "Technical support",
-        "Billing question",
-        "Partnership",
-        "Press / Media"
+        "Consulta general",
+        "Soporte técnico",
+        "Pregunta de facturación",
+        "Asociación",
+        "Prensa / Medios"
       ],
-      "message": "Message",
-      "messagePlaceholder": "How can we help?",
-      "send": "Send message"
+      "message": "Mensaje",
+      "messagePlaceholder": "¿Cómo podemos ayudar?",
+      "send": "Enviar mensaje"
     },
     "channels": {
-      "title": "Support channels",
+      "title": "Canales de soporte",
       "email": {
-        "title": "Email",
+        "title": "Correo electrónico",
         "value": "support@ceche.net"
       },
       "slack": {
         "title": "Enterprise Slack",
-        "value": "Private channel for Enterprise subscribers"
+        "value": "Canal privado para suscriptores Enterprise"
       }
     },
     "responseTimes": {
-      "title": "Response times",
+      "title": "Tiempos de respuesta",
       "times": [
         {
           "tier": "Enterprise",
-          "time": "4 hours",
+          "time": "4 horas",
           "color": "#9E2A2B"
         },
         {
           "tier": "Startup",
-          "time": "4 hours",
+          "time": "4 horas",
           "color": "#F4A261"
         },
         {
-          "tier": "Free",
-          "time": "24 hours",
+          "tier": "Gratis",
+          "time": "24 horas",
           "color": "#888888"
         }
       ]
     },
     "businessHours": {
-      "title": "Business hours",
-      "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers."
+      "title": "Horario de atención",
+      "desc": "Lunes-viernes, 9:00 AM - 6:00 PM ET. Premium Enterprise: soporte Slack 24/7."
     }
   },
   "helpChangelog": {
-    "badge": "Changelog",
-    "title1": "Every commit,",
-    "title2": "documented.",
-    "desc": "Every update sourced directly from our git history. Real commits, real dates, real descriptions.",
+    "badge": "Registro de cambios",
+    "title1": "Cada commit,",
+    "title2": "documentado.",
+    "desc": "Cada actualización directa de nuestro historial de git.",
     "comingSoon": {
-      "badge": "Coming soon",
-      "title": "Auction tracking, mobile app, ML valuation",
-      "cta": "View roadmap"
+      "badge": "Próximamente",
+      "title": "Seguimiento de subastas, app móvil, tasación ML",
+      "cta": "Ver hoja de ruta"
     }
   },
   "premiumModal": {
-    "title": "Premium Feature",
-    "description": "{toolName} requires a premium account. Sign up to unlock this feature and many more.",
-    "redirecting": "Redirecting to signup in {count} seconds...",
-    "cta": "Create Free Account",
-    "back": "Go back"
+    "title": "Función Premium",
+    "description": "{toolName} requiere una cuenta premium. Regístrate para desbloquear esta función y más.",
+    "redirecting": "Redirigiendo al registro en {count} segundos...",
+    "cta": "Crear cuenta gratuita",
+    "back": "Volver"
   },
   "appHeader": {
-    "home": "Home",
-    "appraise": "Appraise",
-    "scanner": "Scanner",
-    "marketplace": "Marketplace",
-    "apiKeys": "API Keys",
-    "logout": "Logout"
+    "home": "Inicio",
+    "appraise": "Tasar",
+    "scanner": "Escáner",
+    "marketplace": "Mercado",
+    "apiKeys": "Claves API",
+    "logout": "Cerrar sesión"
   },
   "toolTemplate": {
-    "comingSoon": "Coming Soon",
-    "waitlistDesc": "This feature is under active development. Join the waitlist to get early access.",
-    "emailPlaceholder": "Enter your email",
-    "joinWaitlist": "Join Waitlist"
+    "comingSoon": "Próximamente",
+    "waitlistDesc": "Esta función está en desarrollo activo. Únete a la lista de espera.",
+    "emailPlaceholder": "Ingresa tu correo",
+    "joinWaitlist": "Unirse a lista de espera"
   }
 }
