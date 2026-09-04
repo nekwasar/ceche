@@ -45,7 +45,7 @@ export default function HelpApiPage() {
 
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-xs font-mono tracking-widest uppercase" style={{ color: "#999999" }}>{t("endpoints")}</span>
+              <span className="text-xs font-mono tracking-widest uppercase" style={{ color: "#999999" }}>Endpoints</span>
               <div className="h-px flex-1" style={{ backgroundColor: "#111111", opacity: 0.06 }} />
             </div>
             <div className="space-y-0">
