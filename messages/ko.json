@@ -171,7 +171,7 @@
     "hero": {
       "title1": "프리미엄 도메인,",
       "titleHighlight": "인텔리전스로",
-      "subtitle": "Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.",
+      "subtitle": "모든 목록은 전체 통계를 표시합니다 — 추정 가치, 건강 점수, CPC, 브랜더빌리티 — 그러나 이름은 공개 비용을 지불할 때까지 숨겨집니다. 경매 인플레이션 없음. 스나이핑 없음.",
       "searchPlaceholder": "임의의 도메인을 검색하세요, 예: brand.com",
       "searchButton": "도메인 검색",
       "badges": {
@@ -183,18 +183,18 @@
     "searchTool": {
       "badge": "무료 도구",
       "title": "임의의 도메인 검색",
-      "description": "Type any domain into the search bar above. We'll tell you if it's available, what it's worth, and what you could build with it. No signup required.",
+      "description": "위 검색 창에 도메인을 입력하세요. 사용 가능 여부, 가치, 구축할 수 있는 것을 알려드립니다. 가입 불필요.",
       "taken": {
         "title": "도메인 등록됨?",
-        "desc": "We show you the WHOIS details — who owns it, when it expires, which registrar they used, and nameserver info. Useful for outreach or waiting for expiry."
+        "desc": "WHOIS 세부 정보를 표시합니다 — 소유자, 만료일, 등록 기관, 네임서버 정보. 아웃리치 또는 만료 대기에 유용합니다."
       },
       "available": {
         "title": "도메인 사용 가능?",
-        "desc": "We rank it Premium, Mid, or Low — no confusing scores, just a clear label. Plus suggestions for what you could build with the name, and a button to run a full 16-dimension appraisal."
+        "desc": "프리미엄, 중간, 저 등급으로 평가합니다 — 혼란스러운 점수 없이 명확한 레이블. 이름으로 구축할 수 있는 것에 대한 제안과 전체 16차원 평가를 실행하는 버튼도 포함됩니다."
       },
       "appraise": {
         "title": "심층 평가",
-        "desc": "Click \"Appraise this name\" for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range."
+        "desc": "\"이 이름을 평가\"를 클릭하여 전체 16차원 분석을 수행합니다 — 발음 가능성, 상표 위험, 과거 DNS, 브랜더빌리티 점수 및 추정 가치 범위."
       }
     },
     "builtFor": {
@@ -202,19 +202,19 @@
       "title": "세 가지 사용자, 하나의 플랫폼",
       "investors": {
         "title": "도메인 투자자",
-        "desc": "Scan thousands of word combinations, appraise shortlists in seconds, and spot undervalued names before the market catches on. The scanner surfaces DA, spam score, and backlink profiles on every available name.",
+        "desc": "수천 가지 단어 조합을 스캔하고, 초안 목록을 몇 초 만에 평가하며, 시장이 발견하기 전에 저평가된 이름을 발견합니다. 스캐너는 사용 가능한 모든 이름에 DA, 스팸 점수 및 백링크 프로필을 표시합니다.",
         "stat": "200+",
         "statLabel": "스캔당 검사 수"
       },
       "founders": {
         "title": "스타트업 창업자",
-        "desc": "Find a name that's easy to say, easy to spell, and safe to use. The 16-dimension engine checks pronounceability, trademark conflicts, and brandability before you commit to a brand.",
+        "desc": "말하기 쉽고, 철자하기 쉽고, 사용하기 안전한 이름을 찾으세요. 16차원 엔진은 브랜드를 커밋하기 전에 발음 가능성, 상표 충돌 및 브랜더빌리티를 확인합니다.",
         "stat": "16",
         "statLabel": "검사된 차원"
       },
       "agencies": {
         "title": "SEO 대행사",
-        "desc": "Find expired domains that still carry authority and clean backlinks. The scanner surfaces DA, spam score, and indexation status so you start with existing SEO value, not zero.",
+        "desc": "권위와 깨끗한 백링크를 보유한 만료된 도메인을 찾으세요. 스캐너는 DA, 스팸 점수 및 색인 상태를 표시하여 기존 SEO 가치부터 시작할 수 있게 합니다.",
         "stat": "4",
         "statLabel": "도메인당 메트릭"
       }
@@ -222,8 +222,8 @@
     "marketplace": {
       "badge": "마켓플레이스",
       "title": "프리미엄 이름, 이름 숨김",
-      "desc1": "Every listing shows full intelligence — estimated value, health score, CPC, brandability, TLD, and keyword intent — everything except the name itself. No hints. No partial reveals. No asterisks.",
-      "desc2": "Public marketplaces get scraped the moment a premium name appears. Ceche hides the name and shows the intelligence instead — so value, not visibility, drives the transaction. Investors who read the stats well consistently find names before auction fever inflates them.",
+      "desc1": "모든 목록은 전체 인텔리전스를 표시합니다 — 추정 가치, 건강 점수, CPC, 브랜더빌리티, TLD 및 키워드 의도 — 이름 자체를 제외한 모든 것. 힌트 없음. 부분 공개 없음. 별표 없음.",
+      "desc2": "공개 마켓플레이스는 프리미엄 이름이 나타나는 즉시 스크래핑됩니다. Ceche는 이름을 숨기고 대신 인텔리전스를 표시합니다 — 따라서 가치가 아니라 가시성이 거래를 주도합니다. 통계를 잘 읽는 투자자는 경매 열기가 가격을 올리기 전에 항상 이름을 발견합니다.",
       "cta": "마켓플레이스 둘러보기",
       "revealPricingTitle": "공개 가격",
       "tryYourLuckTitle": "행운 시도",
@@ -234,33 +234,33 @@
       "title": "돌리고, 고르고, 소유하세요",
       "step1": {
         "title": "TLD 선택",
-        "desc": "Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD."
+        "desc": ".com($79), .net($39), .io($29), .co($9)를 선택하세요. 또는 선택을 건너뛰고 모든 TLD에 대해 균일 가격 $19를 지불하세요."
       },
       "step2": {
         "title": "돌리고 상자 선택",
-        "desc": "Three closed boxes appear with a spinning animation. Each holds a unique premium domain. When it stops, pick one."
+        "desc": "세 개의 닫힌 상자가 회전하는 애니메이션과 함께 나타납니다. 각각 고유한 프리미엄 도메인을 포함합니다. 멈추면 하나를 선택하세요."
       },
       "step3": {
         "title": "공개 및 등록",
-        "desc": "Your domain is revealed instantly. It's locked exclusively for you — no one else can buy it. Register immediately at your preferred registrar."
+        "desc": "도메인이 즉시 공개됩니다. 귀하에게만 독점적으로 잠깁니다 — 다른 사람은 구매할 수 없습니다. 선호하는 등록 기관에서 즉시 등록하세요."
       },
       "cta": "지금 행운 시도"
     },
     "underTheHood": {
       "badge": "기술 아키텍처",
       "title": "속도와 신뢰를 위해 구축",
-      "description": "Every domain name is encrypted at rest. Every scan runs on real infrastructure. No shortcuts.",
+      "description": "모든 도메인 이름은 저장 시 암호화됩니다. 모든 스캔은 실제 인프라에서 실행됩니다. 지름길 없음.",
       "goroutine": {
         "title": "50 워커 고루틴 풀",
-        "desc": "Our scanner runs 50 concurrent goroutines, each checking DNS records with a 5-second timeout. Results batch-insert 100 at a time. We respect per-TLD rate limits."
+        "desc": "스캐너는 50개의 동시 고루틴을 실행하며, 각각 5초 타임아웃으로 DNS 레코드를 확인합니다. 결과는 한 번에 100개씩 배치 삽입됩니다. TLD별 속도 제한을 준수합니다."
       },
       "encryption": {
         "title": "AES-256-GCM 암호화",
-        "desc": "Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they'd see garbage — not your search history."
+        "desc": "데이터베이스의 모든 도메인 이름은 AES-256-GCM으로 암호화됩니다. 누군가 전체 DB 덤프를 얻더라도 쓰레기만 보게 됩니다 — 검색 기록이 아닙니다."
       },
       "caching": {
         "title": "인메모리 캐싱",
-        "desc": "Repeat queries hit zero-cost bigcache with a 1-hour TTL. Your appraisal results stay fast without re-running the full 16-dimension analysis."
+        "desc": "반복 쿼리는 1시간 TTL의 제로 비용 bigcache에 히트됩니다. 전체 16차원 분석을 다시 실행하지 않고도 평가 결과가 빠르게 유지됩니다."
       }
     },
     "faq": {
@@ -268,43 +268,43 @@
       "title": "자주 묻는 질문",
       "items": [
         {
-          "question": "How many free appraisals do I get?",
-          "answer": "If you're not signed up, you get 3 appraisals per day. Sign up for free and you get 12 per day. Premium Startup ($79/mo) gets 30 per day, and Premium Enterprise ($129/mo) gets unlimited."
+          "question": "무료 평가는 몇 번 받을 수 있나요?",
+          "answer": "가입하지 않으면 하루에 3번의 평가를 받습니다. 무료 가입하면 하루에 12번. Premium 스타트업($79/월)은 하루 30번, Premium 엔터프라이즈($129/월)는 무제한."
         },
         {
-          "question": "What's the difference between name search and appraisal?",
-          "answer": "Name search is free and instant — it tells you if a domain is available, shows WHOIS if taken, or ranks it Premium/Mid/Low if available. Appraisal is the deep 16-dimension analysis that scores pronounceability, trademark risk, brandability, and estimated value."
+          "question": "이름 검색과 평가의 차이점은 무엇인가요?",
+          "answer": "이름 검색은 무료이며 즉시 — 도메인 사용 가능 여부를 알려주고, 등록된 경우 WHOIS를 표시하며, 사용 가능한 경우 프리미엄/중간/저 등급으로 평가합니다. 평가는 발음 가능성, 상표 위험, 브랜더빌리티 및 추정 가치를 점수화하는 심층 16차원 분석입니다."
         },
         {
-          "question": "How does Try Your Luck work?",
-          "answer": "Pick a TLD (.com, .net, .io, or .co) and pay the TLD-specific price. Three closed boxes appear with a spinning animation. Pick one when it stops. You get a unique premium domain revealed instantly. It's locked — no one else can buy it. Or pay a flat $19 without selecting a TLD."
+          "question": "행운 시도는 어떻게 작동하나요?",
+          "answer": "TLD(.com, .net, .io, .co)를 선택하고 TLD별 가격을 지불하세요. 세 개의 닫힌 상자가 회전하는 애니메이션과 함께 나타납니다. 멈추면 하나를 선택하세요. 고유한 프리미엄 도메인이 즉시 공개됩니다. 잠깁니다 — 다른 사람은 구매할 수 없습니다. 또는 TLD 선택 없이 균일 가격 $19를 지불하세요."
         },
         {
-          "question": "What happens after I reveal a domain name?",
-          "answer": "After reveal, the domain is yours to evaluate. We show you direct links to register it at Dynadot, Namecheap, or Porkbun. You choose where to register — we don't lock you into a registrar."
+          "question": "도메인 이름 공개 후에 어떻게 되나요?",
+          "answer": "공개 후 도메인은 평가할 수 있습니다. Dynadot, Namecheap 또는 Porkbun에서 등록하는 직접 링크를 표시합니다. 등록할 위치를 선택합니다 — 특정 등록 기관에 잠그지 않습니다."
         },
         {
-          "question": "What's included in the Premium subscription?",
-          "answer": "Premium Startup ($79/mo) gives you 30 appraisals/day plus access to the Domain Scanner (DA, spam score, backlinks), Extended Insights (USPTO/WIPO, trademark history), and Bulk Domain Audit. Enterprise ($129/mo) adds unlimited appraisals, API access, and priority support."
+          "question": "Premium 구독에 무엇이 포함되나요?",
+          "answer": "Premium 스타트업($79/월)은 하루 30번의 평가와 도메인 스캐너(DA, 스팸, 백링크), 확장 인사이트(USPTO/WIPO, 상표 역사), 대량 도메인 감사를 제공합니다. 엔터프라이즈($129/월)는 무제한 평가, API 접근 및 우선 지원을 추가합니다."
         },
         {
-          "question": "Can I sell my domains on Ceche?",
-          "answer": "Yes. List your premium domain on our marketplace. We appraise it, you set the price. Standard listing is $5, priority placement is $10. We take 8-15% commission on successful sales depending on the sale price."
+          "question": "Ceche에서 도메인을 판매할 수 있나요?",
+          "answer": "네. 마켓플레이스에 프리미엄 도메인을 등록하세요. 평가 후 가격을 설정합니다. 표준 등록 $5, 우선 배치 $10. 성공적인 판매에 대해 판매 가격에 따라 8-15%의 수수료를 부과합니다."
         },
         {
-          "question": "Is my search data private?",
-          "answer": "Yes. Domain names you search are encrypted with AES-256-GCM before storage. We don't sell or share search data. Your competition won't see what you're looking at."
+          "question": "검색 데이터가 안전한가요?",
+          "answer": "네. 검색한 도메인 이름은 저장 전에 AES-256-GCM으로 암호화됩니다. 검색 데이터를 판매하거나 공유하지 않습니다. 경쟁사가 귀하가 보고 있는 것을 보지 못합니다."
         }
       ]
     },
     "worldMap": {
       "title": "전 세계 도메인 유동성 가속화",
-      "description": "Real-time intelligence for domain investors, startup founders, and SEO agencies across 9 languages and 4 TLDs.",
+      "description": "9개 언어와 4개 TLD에 걸친 도메인 투자자, 스타트업 창업자 및 SEO 대행사를 위한 실시간 인텔리전스.",
       "cta": "평가 시작"
     },
     "cta": {
       "title": "다음 도메인을 찾을 준비가 되셨나요?",
-      "description": "Start with 3 free appraisals per day. No credit card required.",
+      "description": "하루 3번의 무료 평가로 시작하세요. 신용 카드 불필요.",
       "signup": "무료 가입",
       "pricing": "가격 보기"
     },
@@ -332,18 +332,18 @@
     "plans": {
       "free": {
         "name": "무료",
-        "description": "Get started with basic tools. No credit card required.",
+        "description": "기본 도구로 시작하세요. 신용 카드 불필요.",
         "annualNote": "",
         "cta": "시작하기",
         "features": [
-          "3 appraisals/day (unsigned)",
-          "12 appraisals/day (signed up)",
-          "Name search tool",
-          "Basic WHOIS lookup",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "API access"
+          "하루 3번의 평가 (미가입)",
+          "하루 12번의 평가 (가입 후)",
+          "이름 검색 도구",
+          "기본 WHOIS 조회",
+          "도메인 스캐너 (DA, 스팸, 백링크)",
+          "확장 인사이트 (USPTO/WIPO)",
+          "대량 도메인 감사",
+          "API 접근"
         ],
         "included": [
           true,
@@ -358,18 +358,18 @@
       },
       "startup": {
         "name": "Premium 스타트업",
-        "description": "For small teams and serious domain investors.",
+        "description": "소규모 팀과 진지한 도메인 투자자를 위한.",
         "annualNote": "연간 $160 절약",
         "cta": "Premium 시작",
         "features": [
-          "30 appraisals/day",
-          "Name search tool",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "Priority marketplace listing",
-          "API access",
-          "Priority support"
+          "하루 30번의 평가",
+          "이름 검색 도구",
+          "도메인 스캐너 (DA, 스팸, 백링크)",
+          "확장 인사이트 (USPTO/WIPO)",
+          "대량 도메인 감사",
+          "우선 마켓플레이스 목록",
+          "API 접근",
+          "우선 지원"
         ],
         "included": [
           true,
@@ -384,18 +384,18 @@
       },
       "enterprise": {
         "name": "Premium 엔터프라이즈",
-        "description": "For agencies, professionals, and power users.",
+        "description": "대행사, 전문가 및 고급 사용자를 위한.",
         "annualNote": "연간 $260 절약",
         "cta": "엔터프라이즈 시작",
         "features": [
-          "Unlimited appraisals",
-          "Name search tool",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "Priority marketplace listing",
-          "Full API access",
-          "Priority support"
+          "무제한 평가",
+          "이름 검색 도구",
+          "도메인 스캐너 (DA, 스팸, 백링크)",
+          "확장 인사이트 (USPTO/WIPO)",
+          "대량 도메인 감사",
+          "우선 마켓플레이스 목록",
+          "전체 API 접근",
+          "우선 지원"
         ],
         "included": [
           true,
@@ -412,14 +412,14 @@
     "tryYourLuck": {
       "badge": "행운 시도",
       "title": "돌리고. 공개하고. 소유하세요.",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.",
+      "subtitle": "TLD를 선택하고, 3개 상자를 돌려, 귀하에게만 독점적으로 잠긴 프리미엄 도메인을 공개하세요.",
       "mostPopular": "가장 인기"
     },
     "fees": {
       "reveal": {
         "badge": "마켓플레이스",
         "title": "공개 수수료",
-        "description": "Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.",
+        "description": "표준 목록은 이름이 숨겨진 상태로 통계를 표시합니다. 도메인 이름을 보려면 일회성 공개 수수료를 지불하세요.",
         "headers": {
           "tier": "등급",
           "valueRange": "가치 범위",
@@ -427,22 +427,22 @@
         },
         "rows": [
           {
-            "tier": "Low",
-            "range": "Under $500",
+            "tier": "저",
+            "range": "$500 미만",
             "fee": "$5"
           },
           {
-            "tier": "Mid",
+            "tier": "중",
             "range": "$500 – $5,000",
             "fee": "$10"
           },
           {
-            "tier": "High",
+            "tier": "고",
             "range": "$5,001 – $50,000",
             "fee": "$25"
           },
           {
-            "tier": "Premium",
+            "tier": "프리미엄",
             "range": "$50,001+",
             "fee": "$50"
           }
@@ -497,7 +497,7 @@
     "compare": {
       "badge": "비교",
       "title": "Ceche vs 경쟁사",
-      "subtitle": "See how Ceche stacks up against legacy domain platforms.",
+      "subtitle": "Ceche가 기존 도메인 플랫폼과 어떻게 비교되는지 알아보세요.",
       "headers": {
         "feature": "기능",
         "ceche": "Ceche",
@@ -507,7 +507,7 @@
       "rows": [
         "AI 도메인 밸류에이션",
         "16차원 스코어링",
-        "WHOIS + DNS 인텔",
+        "WHOIS + DNS 인텔리전스",
         "SEO/DA/스팸 스캔",
         "대량 도메인 감사",
         "상표 모니터링",
@@ -518,7 +518,7 @@
     },
     "cta": {
       "title": "준비되셨나요?",
-      "description": "Create a free account in seconds. No credit card required.",
+      "description": "몇 초 만에 무료 계정을 만드세요. 신용 카드 불필요.",
       "signup": "무료 계정 만들기",
       "help": "도움말 센터 방문",
       "lookup": "무료 도메인 조회"
@@ -528,37 +528,37 @@
     "scanner": {
       "badge": "SEO 스캐너",
       "title": "SEO 스캐너",
-      "description": "Domain and SEO audit with DA, spam score, backlink profiles, and indexation status. Get instant insights into any domain's search engine health.",
+      "description": "DA, 스팸 점수, 백링크 프로필 및 색인 상태를 포함한 도메인 및 SEO 감사. 어떤 도메인의 검색 엔진 건강에 대한 즉각적인 인사이트를 얻으세요.",
       "placeholder": "스캔할 도메인 입력",
       "scanButton": "지금 스캔",
       "scanningButton": "스캔 중...",
       "limitsTitle": "스캔 제한",
       "limits": [
         {
-          "plan": "Startup",
-          "scans": "30 per day",
-          "price": "$79/mo"
+          "plan": "스타트업",
+          "scans": "하루 30번",
+          "price": "$79/월"
         },
         {
-          "plan": "Enterprise",
-          "scans": "Unlimited",
-          "price": "$129/mo"
+          "plan": "엔터프라이즈",
+          "scans": "무제한",
+          "price": "$129/월"
         }
       ],
       "howItWorks": {
         "title": "작동 방식",
         "steps": [
           {
-            "title": "Enter Domain",
-            "desc": "Type any domain name into the search bar above."
+            "title": "도메인 입력",
+            "desc": "위 검색 창에 도메인 이름을 입력하세요."
           },
           {
-            "title": "Run Analysis",
-            "desc": "Our engine scans 16 dimensions of domain health instantly."
+            "title": "분석 실행",
+            "desc": "엔진이 도메인 건강의 16개 차원을 즉시 스캔합니다."
           },
           {
-            "title": "Get Report",
-            "desc": "View detailed SEO metrics, backlink data, and spam scores."
+            "title": "보고서 받기",
+            "desc": "상세한 SEO 지표, 백링크 데이터 및 스팸 점수를 확인하세요."
           }
         ]
       },
@@ -566,46 +566,46 @@
         "title": "얻을 수 있는 것",
         "items": [
           {
-            "title": "Domain Authority & Page Authority",
-            "desc": "DA and PA metrics with historical trends showing domain strength over time."
+            "title": "도메인 권위 및 페이지 권위",
+            "desc": "도메인 강도의 과거 트렌드를 보여주는 DA 및 PA 지표."
           },
           {
-            "title": "Backlink Profile",
-            "desc": "Complete backlink analysis with referring domains and anchor text distribution."
+            "title": "백링크 프로필",
+            "desc": "인용 도메인 및 앵커 텍스트 분포를 포함한 완전한 백링크 분석."
           },
           {
-            "title": "Spam Score",
-            "desc": "Machine learning spam detection with penalty risk assessment and recommendations."
+            "title": "스팸 점수",
+            "desc": "패널티 위험 평가 및 권장 사항을 포함한 머신 러닝 스팸 감지."
           },
           {
-            "title": "Indexation Status",
-            "desc": "Search engine indexation checks across Google, Bing, and Yandex."
+            "title": "색인 상태",
+            "desc": "Google, Bing 및 Yandex에서의 검색 엔진 색인 확인."
           },
           {
-            "title": "Technical SEO",
-            "desc": "Core Web Vitals, mobile-friendliness, and structured data analysis."
+            "title": "기술 SEO",
+            "desc": "Core Web Vitals, 모바일 친화성 및 구조화된 데이터 분석."
           },
           {
-            "title": "Competitor Analysis",
-            "desc": "Compare domain metrics against top competitors in your niche."
+            "title": "경쟁사 분석",
+            "desc": "귀하의 틈새 시장에서 상위 경쟁사와 도메인 지표를 비교하세요."
           }
         ]
       },
       "included": {
         "title": "포함 내용",
         "items": [
-          "DA and PA metrics with historical trends",
-          "Complete backlink analysis with referring domains",
-          "Machine learning spam detection with penalty risk assessment",
-          "Search engine indexation checks across Google, Bing, and Yandex",
-          "Core Web Vitals, mobile-friendliness, and structured data analysis",
-          "Competitor comparison against top domains in your niche"
+          "과거 트렌드가 포함된 DA 및 PA 지표",
+          "인용 도메인이 포함된 완전한 백링크 분석",
+          "패널티 위험 평가가 포함된 머신 러닝 스팸 감지",
+          "Google, Bing 및 Yandex에서의 검색 엔진 색인 확인",
+          "Core Web Vitals, 모바일 친화성 및 구조화된 데이터 분석",
+          "귀하의 틈새 시장에서 상위 도메인과의 경쟁사 비교"
         ],
         "cta": "더 깊은 분석이 필요하세요? 확장 인사이트를 시도해 보세요 →"
       },
       "cta": {
-        "title": "Ready for Deeper Analysis?",
-        "description": "Upgrade to access historical data, bulk scanning, and API integrations.",
+        "title": "더 깊은 분석이 필요하신가요?",
+        "description": "과거 데이터, 대량 스캔 및 API 통합에 접근하려면 업그레이드하세요.",
         "pricing": "가격 보기",
         "extended": "확장 인사이트 보기"
       }
@@ -613,420 +613,420 @@
     "lookup": {
       "badge": "무료 도구",
       "title": "도메인 조회",
-      "description": "Instant WHOIS data, DNS records, and registration details for any domain. Get the intelligence you need in seconds.",
-      "placeholder": "Enter domain (e.g., example.com)",
+      "description": "모든 도메인에 대한 즉각적인 WHOIS 데이터, DNS 레코드 및 등록 세부 정보. 몇 초 만에 필요한 인텔리전스를 얻으세요.",
+      "placeholder": "도메인 입력 (예: example.com)",
       "lookupButton": "조회",
       "searchingButton": "검색 중...",
       "loading": "도메인 데이터 가져오는 중...",
       "whoisTitle": "WHOIS 정보",
       "dnsTitle": "DNS 레코드",
       "dnsHeaders": [
-        "Type",
-        "Name",
-        "Value",
+        "유형",
+        "이름",
+        "값",
         "TTL"
       ],
       "whoisLabels": [
-        "Domain",
-        "Registrar",
-        "Registration Date",
-        "Expiration Date",
-        "Last Updated",
-        "Nameservers",
-        "Status",
-        "Registrant Org",
-        "Country"
+        "도메인",
+        "등록 기관",
+        "등록일",
+        "만료일",
+        "마지막 업데이트",
+        "네임서버",
+        "상태",
+        "등록 조직",
+        "국가"
       ],
       "needMore": {
-        "title": "Need More Details?",
-        "description": "Get historical data, trademark checks, and comprehensive domain intelligence with Extended Insights.",
-        "signup": "Signup Free",
-        "seoScan": "Run SEO Scan"
+        "title": "더 많은 세부 정보가 필요하신가요?",
+        "description": "확장 인사이트로 과거 데이터, 상표 확인 및 포괄적인 도메인 인텔리전스를 얻으세요.",
+        "signup": "무료 가입",
+        "seoScan": "SEO 스캔 실행"
       },
       "empty": {
         "title": "도메인을 입력하여 시작하세요",
-        "description": "Search any domain to view WHOIS data, DNS records, and registration details."
+        "description": "WHOIS 데이터, DNS 레코드 및 등록 세부 정보를 보려면 도메인을 검색하세요."
       }
     },
     "insights": {
       "badge": "프리미엄",
       "title": "확장 인사이트",
-      "description": "Deep historical data, DNS records, USPTO/WIPO trademark checks, and WHOIS/RDAP logs for comprehensive domain research.",
+      "description": "포괄적인 도메인 연구를 위한 심층 과거 데이터, DNS 레코드, USPTO/WIPO 상표 확인 및 WHOIS/RDAP 로그.",
       "cta": "확장 인사이트 받기",
       "revealTitle": "공개 가격",
       "tiers": [
         {
-          "name": "Basic",
+          "name": "기본",
           "price": "$5",
-          "desc": "Standard domain value"
+          "desc": "표준 도메인 가치"
         },
         {
-          "name": "Standard",
+          "name": "표준",
           "price": "$10",
-          "desc": "Moderate domain value"
+          "desc": "중간 도메인 가치"
         },
         {
-          "name": "Premium",
+          "name": "프리미엄",
           "price": "$25",
-          "desc": "High-value domain"
+          "desc": "고가치 도메인"
         },
         {
-          "name": "Enterprise",
+          "name": "엔터프라이즈",
           "price": "$50",
-          "desc": "Ultra-premium domain"
+          "desc": "초프리미엄 도메인"
         }
       ],
-      "pricingNote": "Pricing based on domain value and complexity",
+      "pricingNote": "도메인 가치와 복잡성에 기반한 가격",
       "reportTitle": "리포트에 포함된 내용",
       "sections": [
         {
-          "title": "Historical Data",
-          "desc": "Wayback Machine snapshots and historical content changes over time."
+          "title": "과거 데이터",
+          "desc": "Wayback Machine 스냅샷 및 과거 콘텐츠 변경."
         },
         {
-          "title": "DNS Records",
-          "desc": "Complete DNS record enumeration including A, MX, NS, TXT, and CNAME."
+          "title": "DNS 레코드",
+          "desc": "A, MX, NS, TXT 및 CNAME을 포함한 완전한 DNS 레코드 열거."
         },
         {
           "title": "WHOIS / RDAP",
-          "desc": "Registration data, domain age, registrar history, and nameserver changes."
+          "desc": "등록 데이터, 도메인 연령, 등록 기관 역사 및 네임서버 변경."
         },
         {
-          "title": "Trademark Checks",
-          "desc": "USPTO and WIPO trademark database conflict detection."
+          "title": "상표 확인",
+          "desc": "USPTO 및 WIPO 상표 데이터베이스 충돌 감지."
         },
         {
-          "title": "SSL Certificate",
-          "desc": "Certificate authority, expiry dates, and chain verification."
+          "title": "SSL 인증서",
+          "desc": "인증 기관, 만료일 및 체인 검증."
         },
         {
-          "title": "Server Intelligence",
-          "desc": "Hosting provider, IP geolocation, and technology stack detection."
+          "title": "서버 인텔리전스",
+          "desc": "호스팅 제공업체, IP 지리적 위치 및 기술 스택 감지."
         }
       ],
       "useCasesTitle": "확장 인사이트 사용 시점",
       "useCases": [
         {
-          "title": "Domain Acquisition",
-          "desc": "Research domain history before making an offer."
+          "title": "도메인 인수",
+          "desc": "제안하기 전에 도메인 역사를 연구하세요."
         },
         {
-          "title": "Trademark Clearance",
-          "desc": "Check for conflicts before launching a brand."
+          "title": "상표 클리어런스",
+          "desc": "브랜드 출시 전에 충돌을 확인하세요."
         },
         {
-          "title": "Competitor Analysis",
-          "desc": "Understand competitor domain strategies and history."
+          "title": "경쟁사 분석",
+          "desc": "경쟁사의 도메인 전략과 역사를 이해하세요."
         },
         {
-          "title": "Portfolio Due Diligence",
-          "desc": "Audit your portfolio for hidden risks and opportunities."
+          "title": "포트폴리오 실사",
+          "desc": "숨겨진 위험과 기회를 위해 포트폴리오를 감사하세요."
         }
       ],
       "ctaTitle": "도메인 인텔리전스 잠금 해제",
-      "ctaDescription": "Get the complete picture with Extended Insights reports.",
+      "ctaDescription": "확장 인사이트 보고서로 전체 그림을 얻으세요.",
       "startFreeTrial": "무료 체험 시작",
       "tryLookup": "먼저 도메인 조회 시도"
     },
     "bulk": {
       "badge": "엔터프라이즈",
       "title": "대량 분석기",
-      "description": "Multi-domain batch evaluation tool for portfolio analysis and large-scale domain research. Process thousands of domains in seconds.",
+      "description": "포트폴리오 분석 및 대규모 도메인 연구를 위한 다중 도메인 배치 평가 도구. 몇 초 만에 수천 개의 도메인을 처리합니다.",
       "cta": "대량 접근 받기",
       "statValue": "5,000",
       "statLabel": "배치당 도메인 수",
       "stats": [
         {
           "value": "16",
-          "label": "Dimensions"
+          "label": "차원"
         },
         {
           "value": "4",
-          "label": "TLDs"
+          "label": "TLD"
         },
         {
           "value": "<3s",
-          "label": "Per Domain"
+          "label": "도메인당"
         }
       ],
       "howItWorks": {
         "title": "작동 방식",
         "steps": [
           {
-            "title": "Upload List",
-            "desc": "Paste domains or upload a CSV file with up to 5,000 domains."
+            "title": "목록 업로드",
+            "desc": "도메인을 붙여넣거나 최대 5,000개 도메인이 포함된 CSV 파일을 업로드하세요."
           },
           {
-            "title": "Configure Scoring",
-            "desc": "Set custom weights for each of the 16 scoring dimensions."
+            "title": "스코어링 구성",
+            "desc": "16개 스코어링 차원 각각에 대해 사용자 정의 가중치를 설정하세요."
           },
           {
-            "title": "Process",
-            "desc": "Our engine evaluates all domains in parallel with priority queuing."
+            "title": "처리",
+            "desc": "엔진이 우선순위 큐를 사용하여 모든 도메인을 병렬로 평가합니다."
           },
           {
-            "title": "Export Results",
-            "desc": "Download CSV with scores, pricing data, and priority rankings."
+            "title": "결과 내보내기",
+            "desc": "점수, 가격 데이터 및 우선순위 순위가 포함된 CSV를 다운로드하세요."
           }
         ]
       },
       "outputTitle": "출력 열",
       "outputHeaders": [
-        "Column",
-        "Description",
-        "Example"
+        "열",
+        "설명",
+        "예시"
       ],
       "outputRows": [
         [
-          "Domain",
-          "The domain name analyzed",
+          "도메인",
+          "분석된 도메인 이름",
           "example.com"
         ],
         [
-          "Domain Rating",
-          "Authority score 0-100",
+          "도메인 등급",
+          "권위 점수 0-100",
           "72"
         ],
         [
-          "SEO Score",
-          "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)",
+          "SEO 점수",
+          "종합 (백링크 40%, 트래픽 30%, 키워드 20%, 기술 10%)",
           "68"
         ],
         [
-          "Buyer Intent",
-          "Score 0-100 indicating purchase likelihood",
+          "구매 의도",
+          "구매 가능성 0-100 점수",
           "45"
         ],
         [
-          "Priority Score",
-          "Combined ranking across all dimensions",
+          "우선순위 점수",
+          "모든 차원의 종합 순위",
           "High"
         ],
         [
-          "Estimated Value",
-          "Fair market value range",
+          "추정 가치",
+          "공정 시장 가치 범위",
           "$2,400 - $3,600"
         ]
       ],
       "priorityTitle": "우선순위 점수 분석",
       "dimensions": [
         {
-          "name": "Backlink Profile",
+          "name": "백링크 프로필",
           "weight": "40%",
           "bar": 40
         },
         {
-          "name": "Traffic Analysis",
+          "name": "트래픽 분석",
           "weight": "30%",
           "bar": 30
         },
         {
-          "name": "Keyword Metrics",
+          "name": "키워드 지표",
           "weight": "20%",
           "bar": 20
         },
         {
-          "name": "Technical SEO",
+          "name": "기술 SEO",
           "weight": "10%",
           "bar": 10
         }
       ],
       "customTitle": "사용자 정의 스코어링",
-      "customDescription": "Weight dimensions based on your specific use case. Whether you prioritize SEO metrics, traffic potential, or buyer intent, adjust the scoring to match your portfolio strategy.",
+      "customDescription": "특정 사용 사례에 따라 차원 가중치를 조정하세요. SEO 지표, 트래픽 잠재력 또는 구매 의도를 우선시하든 포트폴리오 전략에 맞게 스코어링을 조정할 수 있습니다.",
       "modes": [
         {
-          "title": "Investor Mode",
-          "desc": "Maximize ROI with traffic and value focus"
+          "title": "투자자 모드",
+          "desc": "트래픽과 가치 중심으로 투자 수익 극대화"
         },
         {
-          "title": "Developer Mode",
-          "desc": "Prioritize technical metrics and authority"
+          "title": "개발자 모드",
+          "desc": "기술 지표와 권위 우선"
         },
         {
-          "title": "Brand Mode",
-          "desc": "Emphasize trademark safety and memorability"
+          "title": "브랜드 모드",
+          "desc": "상표 안전성과 기억 가능성 강조"
         }
       ],
       "ctaTitle": "도메인 연구를 확장할 준비가 되셨나요?",
-      "ctaDescription": "Process up to 5,000 domains per batch with Enterprise access.",
+      "ctaDescription": "엔터프라이즈 접근으로 배치당 최대 5,000개 도메인을 처리하세요.",
       "startTrial": "엔터프라이즈 체험 시작",
       "tryLookup": "단일 도메인 조회 시도"
     },
     "api": {
       "badge": "개발자",
       "title": "API 인터페이스",
-      "description": "RESTful API for programmatic domain intelligence. Build custom integrations, automate workflows, and access all domain data programmatically.",
+      "description": "프로그래밍 방식 도메인 인텔리전스를 위한 RESTful API. 사용자 정의 통합을 구축하고, 워크플로우를 자동화하며, 프로그래밍 방식으로 모든 도메인 데이터에 접근하세요.",
       "getKey": "API 키 받기",
       "readDocs": "문서 읽기",
       "buildTitle": "빌드할 수 있는 것",
       "buildCards": [
         {
-          "title": "Domain Portfolio Tracker",
-          "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.",
-          "linkText": "Try Domain Lookup"
+          "title": "도메인 포트폴리오 트래커",
+          "desc": "가치 변화, 만료 알림 및 SEO 변화에 대해 포트폴리오를 자동으로 모니터링합니다.",
+          "linkText": "도메인 조회 시도"
         },
         {
-          "title": "Market Intelligence Dashboard",
-          "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.",
-          "linkText": "Explore Bulk Analyzer"
+          "title": "시장 인텔리전스 대시보드",
+          "desc": "실시간 도메인 가격, 트렌드 및 경쟁 분석으로 사용자 정의 대시보드를 구축하세요.",
+          "linkText": "대량 분석기 탐색"
         },
         {
-          "title": "Brand Protection System",
-          "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.",
-          "linkText": "See Trademark Monitor"
+          "title": "브랜드 보호 시스템",
+          "desc": "상표 모니터링을 자동화하고 잠재적 브랜드 충돌에 대한 즉각적인 알림을 받으세요.",
+          "linkText": "상표 모니터 보기"
         }
       ],
       "featuresTitle": "API 기능",
       "features": [
         {
           "title": "RESTful API",
-          "desc": "Full access to all domain intelligence endpoints with standard HTTP methods."
+          "desc": "표준 HTTP 메서드로 모든 도메인 인텔리전스 엔드포인트에 완전히 접근."
         },
         {
-          "title": "Webhooks",
-          "desc": "Real-time notifications for domain changes and events via webhook callbacks."
+          "title": "Webhook",
+          "desc": "webhook 콜백을 통한 도메인 변경 및 이벤트에 대한 실시간 알림."
         },
         {
-          "title": "Rate Limits",
-          "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes."
+          "title": "속도 제한",
+          "desc": "엔터프라이즈 플랜에서 매일 10,000번의 호출 및 스파이크용 버스트 용량."
         },
         {
-          "title": "SDKs",
-          "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation."
+          "title": "SDK",
+          "desc": "Python, Node.js, Go 및 Ruby용 공식 라이브러리와 전체 문서."
         },
         {
-          "title": "Sandbox",
-          "desc": "Test environment for development and integration testing before going live."
+          "title": "샌드박스",
+          "desc": "라이브 전환 전 개발 및 통합 테스트를 위한 테스트 환경."
         },
         {
-          "title": "Documentation",
-          "desc": "Complete API reference with code examples, tutorials, and best practices."
+          "title": "문서",
+          "desc": "코드 예제, 튜토리얼 및 모범 사례가 포함된 전체 API 참조."
         }
       ],
       "ctaTitle": "빌드할 준비가 되셨나요?",
-      "ctaDescription": "Get your API key and start integrating domain intelligence today.",
+      "ctaDescription": "API 키를 받고 오늘 도메인 인텔리전스 통합을 시작하세요.",
       "viewDocs": "API 문서 보기",
       "modal": {
-        "title": "Get Your API Key",
-        "description": "Create a free account to get your API key and start building with domain intelligence data.",
-        "cta": "Create Free Account",
-        "back": "Go back"
+        "title": "API 키 받기",
+        "description": "무료 계정을 만들어 API 키를 받고 도메인 인텔리전스 데이터로 구축을 시작하세요.",
+        "cta": "무료 계정 만들기",
+        "back": "돌아가기"
       }
     },
     "trademark": {
       "badge": "프리미엄",
       "title": "상표 모니터",
-      "description": "USPTO/WIPO conflict detection and alerts. Protect your brand with proactive trademark monitoring across global databases.",
+      "description": "USPTO/WIPO 충돌 감지 및 알림. 글로벌 데이터베이스에 대한 능동적 상표 모니터링으로 브랜드를 보호하세요.",
       "cta": "모니터링 시작",
       "severityTitle": "위협 심각도 수준",
       "levels": [
         {
-          "level": "Critical",
-          "desc": "Direct trademark conflict detected"
+          "level": "심각",
+          "desc": "직접 상표 충돌 감지"
         },
         {
-          "level": "High",
-          "desc": "Similar mark in same industry"
+          "level": "높음",
+          "desc": "동일 업계의 유사 상표"
         },
         {
-          "level": "Medium",
-          "desc": "Similar name, different class"
+          "level": "중간",
+          "desc": "다른 클래스의 유사 이름"
         },
         {
-          "level": "Low",
-          "desc": "Minor similarity, low risk"
+          "level": "낮음",
+          "desc": "경미한 유사성, 낮은 위험"
         }
       ],
       "problemTitle": "문제점",
       "problems": [
-        "Trademark infringement lawsuits cost $100K+ on average",
-        "New domain registrations happen every minute",
-        "Manual monitoring is impossible at scale",
-        "By the time you notice, damage is done"
+        "상표 침해 소송 비용은 평균 $100,000 이상",
+        "새 도메인 등록은 매분 발생",
+        "대규모 수동 모니터링은 불가능",
+        "알게 될 때쯤 피해는 이미 발생"
       ],
       "solutionTitle": "우리의 솔루션",
       "solutions": [
-        "Real-time USPTO and WIPO database monitoring",
-        "Scan up to 5,000 domains per list",
-        "Instant conflict alerts via email and webhook",
-        "Risk scoring with confidence levels"
+        "실시간 USPTO 및 WIPO 데이터베이스 모니터링",
+        "목록당 최대 5,000개 도메인 스캔",
+        "이메일 및 webhook을 통한 즉각적인 충돌 알림",
+        "신뢰 수준이 포함된 위험 스코어링"
       ],
       "howItWorks": {
         "title": "작동 방식",
         "steps": [
           {
-            "title": "Add Domains",
-            "desc": "Upload your brand domains or keywords to monitor."
+            "title": "도메인 추가",
+            "desc": "모니터링할 브랜드 도메인 또는 키워드를 업로드하세요."
           },
           {
-            "title": "Set Criteria",
-            "desc": "Define industry, geographic scope, and sensitivity."
+            "title": "기준 설정",
+            "desc": "업계, 지리적 범위 및 민감도를 정의하세요."
           },
           {
-            "title": "Monitor",
-            "desc": "We scan USPTO, EUIPO, and WIPO databases continuously."
+            "title": "모니터링",
+            "desc": "USPTO, EUIPO 및 WIPO 데이터베이스를 지속적으로 스캔합니다."
           },
           {
-            "title": "Get Alerts",
-            "desc": "Receive instant notifications for potential conflicts."
+            "title": "알림 받기",
+            "desc": "잠재적 충돌에 대한 즉각적인 알림을 받으세요."
           }
         ]
       },
       "useCasesTitle": "사용 사례",
       "useCases": [
         {
-          "title": "Brand Protection",
-          "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs."
+          "title": "브랜드 보호",
+          "content": "모든 주요 TLD에서 사이버스쿼팅, 오타스쿼팅 및 브랜드 사칭을 모니터링합니다."
         },
         {
-          "title": "Product Launch",
-          "content": "Clear trademarks before launching new products or entering new markets."
+          "title": "제품 출시",
+          "content": "새 제품 출시 또는 새 시장 진출 전에 상표를 클리어링하세요."
         },
         {
-          "title": "M&A Due Diligence",
-          "content": "Audit trademark risks during mergers, acquisitions, or investment rounds."
+          "title": "M&A 실사",
+          "content": "인수, 합병 또는 투자 라운드 중 상표 위험을 감사하세요."
         },
         {
-          "title": "Portfolio Management",
-          "content": "Protect your domain portfolio from trademark challenges and legal disputes."
+          "title": "포트폴리오 관리",
+          "content": "도메인 포트폴리오를 상표 문제와 법적 분쟁으로부터 보호하세요."
         }
       ],
       "pricingTitle": "가격",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "무료",
           "price": "$0",
           "features": [
-            "3 unsigned scans/day",
-            "12 signed scans/day",
-            "Basic metrics"
+            "하루 3번의 미서명 스캔",
+            "하루 12번의 서명 스캔",
+            "기본 지표"
           ]
         },
         {
-          "plan": "Startup",
+          "plan": "스타트업",
           "price": "$79/mo",
           "features": [
-            "30 scans/day",
-            "Priority processing",
-            "CSV export",
-            "Email alerts"
+            "하루 30번의 스캔",
+            "우선 처리",
+            "CSV 내보내기",
+            "이메일 알림"
           ],
           "popular": true
         },
         {
-          "plan": "Enterprise",
+          "plan": "엔터프라이즈",
           "price": "$129/mo",
           "features": [
-            "Unlimited scans",
-            "API access (10K calls/day)",
-            "Webhook integration",
-            "Dedicated support"
+            "무제한 스캔",
+            "API 접근 (매일 10K 호출)",
+            "Webhook 통합",
+            "전용 지원"
           ]
         }
       ],
       "popular": "인기",
       "ctaTitle": "지금 브랜드를 보호하세요",
-      "ctaDescription": "Don't wait until it's too late. Start monitoring now.",
+      "ctaDescription": "늦기 전에 시작하세요. 지금 모니터링을 시작하세요.",
       "startFreeTrial": "무료 체험 시작",
       "tryLookup": "도메인 조회 시도",
       "runScan": "SEO 스캔 실행"
@@ -1035,107 +1035,107 @@
       "badge": "포괄적 데이터",
       "statValue": "2,847",
       "statLabel": "모든 레지스트리에서 추적되는 TLD",
-      "description": "Access the most comprehensive domain database available. Track registrations, expirations, and pricing across every major TLD.",
+      "description": "가장 포괄적인 도메인 데이터베이스에 접근하세요. 모든 주요 TLD의 등록, 만료 및 가격을 추적합니다.",
       "stats": [
         {
           "value": "420M+",
-          "label": "Domains Tracked",
-          "desc": "Active registrations across all TLDs"
+          "label": "추적 도메인",
+          "desc": "모든 TLD의 활성 등록"
         },
         {
           "value": "2.1B",
-          "label": "Historical Records",
-          "desc": "Registration and expiration history"
+          "label": "과거 기록",
+          "desc": "등록 및 만료 역사"
         },
         {
           "value": "50K+",
-          "label": "Daily Updates",
-          "desc": "New registrations processed daily"
+          "label": "일일 업데이트",
+          "desc": "매일 처리되는 새 등록"
         },
         {
           "value": "99.9%",
-          "label": "Uptime",
-          "desc": "Database availability guarantee"
+          "label": "가동 시간",
+          "desc": "데이터베이스 가용성 보장"
         }
       ],
       "methodsTitle": "검색 방법",
       "methods": [
         {
-          "title": "Single Lookup",
-          "desc": "Search any domain for instant registration data and availability status."
+          "title": "단일 조회",
+          "desc": "즉각적인 등록 데이터와 사용 가능 상태를 위해 도메인을 검색하세요."
         },
         {
-          "title": "Bulk Check",
-          "desc": "Upload up to 5,000 domains at once for batch availability analysis."
+          "title": "대량 확인",
+          "desc": "대량 사용 가능 분석을 위해 최대 5,000개 도메인을 한 번에 업로드하세요."
         },
         {
-          "title": "API Query",
-          "desc": "Programmatic access via RESTful API with up to 10,000 calls per day."
+          "title": "API 쿼리",
+          "desc": "매일 최대 10,000번의 호출로 RESTful API를 통한 프로그래밍 방식 접근."
         }
       ],
       "sourcesTitle": "데이터 소스",
       "sources": [
         {
           "source": "ICANN",
-          "desc": "Official domain registration data"
+          "desc": "공식 도메인 등록 데이터"
         },
         {
-          "source": "Registry Operators",
-          "desc": "Direct TLD zone file access"
+          "source": "레지스트리 운영자",
+          "desc": "직접 TLD 영역 파일 접근"
         },
         {
           "source": "WHOIS/RDAP",
-          "desc": "Registration and contact information"
+          "desc": "등록 및 연락처 정보"
         },
         {
           "source": "Wayback Machine",
-          "desc": "Historical content snapshots"
+          "desc": "과거 콘텐츠 스냅샷"
         },
         {
-          "source": "Certificate Transparency",
-          "desc": "SSL certificate monitoring"
+          "source": "인증서 투명성",
+          "desc": "SSL 인증서 모니터링"
         },
         {
-          "source": "DNS Resolvers",
-          "desc": "Real-time DNS record verification"
+          "source": "DNS 리졸버",
+          "desc": "실시간 DNS 레코드 검증"
         }
       ],
       "levelsTitle": "접근 수준",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "무료",
           "price": "$0",
           "features": [
-            "Basic lookup",
-            "3 searches/day",
-            "Limited TLDs"
+            "기본 조회",
+            "하루 3번의 검색",
+            "제한된 TLD"
           ]
         },
         {
-          "plan": "Startup",
+          "plan": "스타트업",
           "price": "$79/mo",
           "features": [
-            "Full database",
-            "30 searches/day",
-            "CSV export",
-            "Priority support"
+            "전체 데이터베이스",
+            "하루 30번의 검색",
+            "CSV 내보내기",
+            "우선 지원"
           ],
           "popular": true
         },
         {
-          "plan": "Enterprise",
+          "plan": "엔터프라이즈",
           "price": "$129/mo",
           "features": [
-            "Unlimited access",
-            "API (10K calls/day)",
-            "Webhooks",
-            "Custom data"
+            "무제한 접근",
+            "API (매일 10K 호출)",
+            "Webhook",
+            "사용자 정의 데이터"
           ]
         }
       ],
       "popular": "인기",
       "ctaTitle": "완전한 도메인 데이터베이스에 접근",
-      "ctaDescription": "2,847 TLDs, 420M+ domains, real-time data at your fingertips.",
+      "ctaDescription": "2,847개 TLD, 420M+ 도메인, 실시간 데이터를 손쉽게 접근하세요.",
       "startFreeTrial": "무료 체험 시작",
       "tryLookup": "도메인 조회 시도",
       "viewDocs": "API 문서 보기"
@@ -1145,58 +1145,58 @@
     "main": {
       "badge": "마켓플레이스",
       "title": "프리미엄 도메인",
-      "subtitle": "Browse our curated inventory. Full stats shown — name hidden. Pay to reveal.",
+      "subtitle": "큐레이션된 인벤토리를 탐색하세요. 전체 통계 표시 — 이름 숨김. 공개하려면 지불하세요.",
       "stats": [
         {
-          "label": "Listed Domains",
+          "label": "등록된 도메인",
           "value": "2,847"
         },
         {
-          "label": "Revealed Today",
+          "label": "오늘 공개됨",
           "value": "142"
         },
         {
-          "label": "Avg. Domain Value",
+          "label": "평균 도메인 가치",
           "value": "$12,400"
         },
         {
-          "label": "Total Sold",
+          "label": "총 판매액",
           "value": "$3.2M"
         }
       ],
       "filters": [
-        "All TLDs",
+        "모든 TLD",
         ".com",
         ".net",
         ".io",
         ".co"
       ],
       "sortBy": [
-        "Sort by Value",
-        "Sort by Score",
-        "Sort by Listed"
+        "가치순 정렬",
+        "점수순 정렬",
+        "등록일순 정렬"
       ],
       "nameHidden": "이름 숨김",
       "revealName": "이름 공개",
       "dataLabels": [
-        "Value",
-        "Score",
-        "Health",
+        "가치",
+        "점수",
+        "건강도",
         "CPC",
         "DA"
       ],
       "features": [
         {
-          "title": "No Name Hints",
-          "desc": "We show everything except the name. No asterisks, no partial reveals. Just the intelligence."
+          "title": "이름 힌트 없음",
+          "desc": "이름을 제외한 모든 것을 표시합니다. 별표 없음, 부분 공개 없음. 인텔리전스만."
         },
         {
-          "title": "Pay to Reveal",
-          "desc": "Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks."
+          "title": "공개하려면 지불",
+          "desc": "도메인 가치에 따라 공개 가격이 다릅니다 — 저가치 이름 $5부터 프리미엄 이름 $50까지."
         },
         {
-          "title": "Register Anywhere",
-          "desc": "After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register."
+          "title": "어디서든 등록",
+          "desc": "공개 후 Dynadot, Namecheap 또는 Porkbun으로 링크됩니다. 등록할 위치를 선택하세요."
         }
       ],
       "cta": {
@@ -1205,7 +1205,7 @@
       },
       "modal": {
         "title": "계정 만들기",
-        "desc": "Sign up to reveal domain names and make purchases.",
+        "desc": "도메인 이름을 공개하고 구매하려면 가입하세요.",
         "redirecting": "가입 페이지로 리디렉션 중, {count}초 후...",
         "signup": "무료 가입",
         "later": "나중에 하기"
@@ -1214,28 +1214,28 @@
     "sell": {
       "badge": "마켓플레이스",
       "title": "도메인 판매",
-      "subtitle": "List your premium domains on Ceche and reach qualified buyers worldwide.",
+      "subtitle": "Ceche에서 프리미엄 도메인을 등록하여 전 세계 자격을 갖춘 구매자에게 도달하세요.",
       "steps": [
         "제출",
         "가격 설정",
         "게시"
       ],
       "step0": {
-        "title": "Submit Your Domain",
-        "desc": "Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.",
+        "title": "도메인 제출",
+        "desc": "도메인 이름을 입력하세요. 자동 평가를 수행하고 TXT/CNAME 레코드로 소유권을 확인합니다.",
         "placeholder": "yourdomain.com",
-        "cta": "Continue"
+        "cta": "계속"
       },
       "step1": {
-        "title": "Set Your Price",
-        "desc": "Our AI suggests a price based on domain metrics. You can accept or set your own.",
-        "suggested": "Suggested: $12,500",
-        "cta": "Continue"
+        "title": "가격 설정",
+        "desc": "AI가 도메인 지표를 기반으로 가격을 제안합니다. 수락하거나 직접 설정할 수 있습니다.",
+        "suggested": "제안 가격: $12,500",
+        "cta": "계속"
       },
       "step2": {
-        "title": "Publish Listing",
-        "desc": "Review your listing details and publish. Your domain goes live within 24 hours.",
-        "cta": "Publish Listing"
+        "title": "목록 게시",
+        "desc": "목록 세부 정보를 검토하고 게시하세요. 도메인이 24시간 이내에 온라인으로 전환됩니다.",
+        "cta": "목록 게시"
       },
       "fees": {
         "title": "요금 구조",
@@ -1243,17 +1243,17 @@
           "title": "등록 수수료",
           "tiers": [
             {
-              "tier": "Standard (.com, .net, .org)",
+              "tier": "표준 (.com, .net, .org)",
               "fee": "$5",
               "min": "—"
             },
             {
-              "tier": "Premium (.io, .co, .ai)",
+              "tier": "프리미엄 (.io, .co, .ai)",
               "fee": "$10",
               "min": "—"
             },
             {
-              "tier": "Ultra-Premium (1-word, brandable)",
+              "tier": "초프리미엄 (단어, 브랜더블)",
               "fee": "$25",
               "min": "—"
             }
@@ -1263,19 +1263,19 @@
           "title": "수수료 요율",
           "tiers": [
             {
-              "tier": "Domains under $5,000",
+              "tier": "$5,000 미만 도메인",
               "commission": "8%",
               "minimum": "$50"
             },
             {
-              "tier": "Domains $5,000–$50,000",
+              "tier": "$5,000–$50,000 도메인",
               "commission": "10%",
               "minimum": "$200"
             },
             {
-              "tier": "Domains over $50,000",
+              "tier": "$50,000 이상 도메인",
               "commission": "15%",
-              "minimum": "Negotiable"
+              "minimum": "협상 가능"
             }
           ]
         }
@@ -1283,32 +1283,32 @@
       "eligibility": {
         "title": "자격 요건 체크리스트",
         "items": [
-          "Domain must be registered and active",
-          "You must verify ownership via TXT or CNAME record",
-          "No active UDRP or legal disputes",
-          "Domain must not be blacklisted for spam"
+          "도메인이 등록되어 있고 활성 상태여야 합니다",
+          "TXT 또는 CNAME 레코드로 소유권을 확인해야 합니다",
+          "활성 UDRP 또는 법적 분쟁이 없어야 합니다",
+          "도메인이 스팸 블랙리스트에 등록되어 있지 않아야 합니다"
         ]
       },
       "tools": {
         "title": "판매자 도구",
         "items": [
           {
-            "title": "Analytics Dashboard",
-            "desc": "Track views, offers, and conversion rates for every listing in real time."
+            "title": "분석 대시보드",
+            "desc": "실시간으로 각 목록의 조회수, 제안 및 전환율을 추적합니다."
           },
           {
-            "title": "Bulk Listing",
-            "desc": "Import and manage multiple domain listings at once with CSV upload."
+            "title": "대량 등록",
+            "desc": "CSV 업로드로 여러 도메인 목록을 한 번에 가져오고 관리합니다."
           },
           {
-            "title": "Automated Pricing",
-            "desc": "AI-powered suggested pricing based on domain metrics and market trends."
+            "title": "자동 가격 책정",
+            "desc": "도메인 지표와 시장 트렌드를 기반으로 한 AI 기반 제안 가격."
           }
         ]
       },
       "cta": {
         "title": "판매할 준비가 되셨나요?",
-        "desc": "List your first domain in under 5 minutes.",
+        "desc": "5분 이내에 첫 번째 도메인을 등록하세요.",
         "signup": "계정 만들기",
         "pricing": "가격 보기"
       }
@@ -1316,41 +1316,41 @@
     "luck": {
       "badge": "마켓플레이스",
       "title": "행운 시도",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.",
+      "subtitle": "TLD를 선택하고, 3개 상자를 돌려, 프리미엄 도메인을 공개하세요. 귀하에게만 독점적으로 잠깁니다.",
       "step1": "1단계: TLD 선택",
       "spinning": "회전 중...",
       "step2": "2단계: 상자 선택",
       "clickToReveal": "클릭하여 공개",
       "locked": {
-        "title": "Domain Locked",
-        "desc": "Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately."
+        "title": "도메인 잠김",
+        "desc": "상자를 선택하면 도메인이 귀하에게만 독점적으로 잠깁니다. 플랫폼의 다른 사용자는 어떤 방법으로도 구매할 수 없습니다. 즉시 구매를 완료하라는 메시지가 표시됩니다."
       },
       "howItWorks": {
         "title": "작동 방식",
         "steps": [
           {
-            "title": "Pick a TLD",
-            "desc": "Choose .com, .net, .io, .co, or any TLD at a flat rate."
+            "title": "TLD 선택",
+            "desc": ".com, .net, .io, .co 또는 모든 TLD를 균일 가격으로 선택하세요."
           },
           {
-            "title": "Spin & Pick",
-            "desc": "Three closed boxes appear. Pick one when the animation stops."
+            "title": "돌리고 선택",
+            "desc": "세 개의 닫힌 상자가 나타납니다. 애니메이션이 멈추면 하나를 선택하세요."
           },
           {
-            "title": "Reveal & Buy",
-            "desc": "Domain revealed and locked. Prompted to register immediately."
+            "title": "공개 및 구매",
+            "desc": "도메인이 공개되고 잠깁니다. 즉시 등록하라는 메시지가 표시됩니다."
           }
         ]
       },
       "cta": {
-        "title": "Prefer browsing?",
-        "desc": "Browse our full marketplace with detailed stats on every listing.",
+        "title": "탐색을 선호하시나요?",
+        "desc": "모든 목록에 대한 상세한 통계와 함께 전체 마켓플레이스를 탐색하세요.",
         "marketplace": "마켓플레이스 보기",
         "signup": "무료 가입"
       },
       "modal": {
         "title": "계정 만들기",
-        "desc": "Sign up to lock this domain exclusively for you.",
+        "desc": "이 도메인을 귀하에게만 독점적으로 잠그려면 가입하세요.",
         "signup": "무료 가입",
         "later": "나중에 하기"
       }
@@ -1358,41 +1358,41 @@
     "curated": {
       "badge": "마켓플레이스",
       "title": "큐레이션 도메인",
-      "subtitle": "Hand-picked premium domains sorted by commercial intent and SEO authority. Each listing includes a full intelligence report and valuation.",
+      "subtitle": "상업적 의도와 SEO 권위별로 선별된 프리미엄 도메인. 각 목록에는 전체 인텔리전스 보고서와 밸류에이션이 포함됩니다.",
       "tryLuck": "행운 시도",
       "featured": {
-        "label": "Featured Domain",
-        "hidden": "Name hidden until purchase",
-        "instant": "Instant Purchase"
+        "label": "추천 도메인",
+        "hidden": "구매 전 이름 숨김",
+        "instant": "즉시 구매"
       },
       "features": [
-        "Hand-picked by domain experts",
-        "Full intelligence report included",
-        "Verified ownership and clean history",
-        "Instant purchase with secure checkout",
-        "Negotiation tools for making offers",
-        "Guided transfer with registrar support"
+        "도메인 전문가가 수동으로 선별",
+        "전체 인텔리전스 보고서 포함",
+        "소유권 확인 및 깨끗한 이력",
+        "안전한 결제로 즉시 구매",
+        "제안을 위한 협상 도구",
+        "등록 기관 지원으로 안내된 이전"
       ],
       "howItWorks": {
         "title": "작동 방식",
         "steps": [
           {
-            "title": "Browse Listings",
-            "desc": "Each curated domain includes valuation, SEO metrics, and commercial intent score."
+            "title": "목록 탐색",
+            "desc": "각 �레이션 도메인에는 밸류에이션, SEO 지표 및 상업적 의도 점수가 포함됩니다."
           },
           {
-            "title": "Make an Offer",
-            "desc": "Buy outright or submit an offer. Our system handles counter-offers automatically."
+            "title": "제안하기",
+            "desc": "바로 구매하거나 제안을 제출하세요. 시스템이 자동으로 상대 제안을 처리합니다."
           },
           {
-            "title": "Complete Purchase",
-            "desc": "Secure payment. Domain transfers within 24 hours with full support."
+            "title": "구매 완료",
+            "desc": "안전한 결제. 24시간 이내에 전면 지원으로 도메인이 이전됩니다."
           }
         ]
       },
       "cta": {
-        "title": "Browse all curated domains",
-        "desc": "Updated weekly with new hand-picked premium domains.",
+        "title": "모든 큐레이션 도메인 탐색",
+        "desc": "매주 새로운 수동 선별 프리미엄 도메인으로 업데이트됩니다.",
         "marketplace": "마켓플레이스 보기",
         "luck": "행운 시도"
       }
@@ -1400,50 +1400,50 @@
     "unmasking": {
       "badge": "마켓플레이스",
       "title": "공개 메커니즘 작동 방식",
-      "subtitle": "Our blind marketplace protects domain names from front-running and sniping. Here's the process.",
+      "subtitle": "블라인드 마켓플레이스는 도메인 이름을 프론트 러닝과 스나이핑으로부터 보호합니다. 다음은 프로세스입니다.",
       "steps": [
         {
-          "title": "Browse",
-          "desc": "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range."
+          "title": "탐색",
+          "desc": "블라인드 마켓플레이스를 탐색하세요. 전체 통계 표시 — 도메인 이름 숨김. TLD, 카테고리 또는 밸류에이션 범위별로 필터링."
         },
         {
-          "title": "Pay to Reveal",
-          "desc": "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name."
+          "title": "공개하려면 지불",
+          "desc": "마음에 드는 목록을 찾으면 공개 수수료를 지불하세요 (도메인 가치에 따라 $5–$50)."
         },
         {
-          "title": "Reveal & Inspect",
-          "desc": "The domain name is revealed. You have 5 minutes to inspect and decide. No one else can see or purchase it."
+          "title": "공개 및 검사",
+          "desc": "도메인 이름이 공개됩니다. 검사하고 결정할 시간이 5분 있습니다. 다른 사람은 볼 수 없거나 구매할 수 없습니다."
         },
         {
-          "title": "Recheck or Walk Away",
-          "desc": "If you pass, the domain goes back to the blind pool. If you proceed, it's locked exclusively for you."
+          "title": "재검사 또는 포기",
+          "desc": "포기하면 도메인이 블라인드 풀로 돌아갑니다. 진행하면 귀하에게만 독점적으로 잠깁니다."
         },
         {
-          "title": "Complete or Walk Away",
-          "desc": "Register the domain through our partner registrars (Dynadot, Namecheap, Porkbun) or walk away. No obligation."
+          "title": "완료 또는 포기",
+          "desc": "파트너 등록 기관(Dynadot, Namecheap, Porkbun)을 통해 도메인을 등록하거나 포기하세요. 의무 없음."
         }
       ],
       "vault": {
         "title": "볼트 보호",
-        "desc": "All unrevealed domain names are stored in an encrypted vault. No partial names, no asterisks, no hints. The only way to see the name is to pay the reveal fee. This eliminates domain front-running and ensures fair pricing for everyone."
+        "desc": "공개되지 않은 모든 도메인 이름은 암호화된 볼트에 저장됩니다. 부분 이름, 별표, 힌트 없음. 이름을 보는 유일한 방법은 공개 수수료를 지불하는 것입니다. 이를 통해 도메인 프론트 러닝을 제거하고 모든 사람에게 공정한 가격을 보장합니다."
       },
       "features": [
         {
-          "title": "Encrypted Vault",
-          "desc": "Domain names stored with zero-knowledge encryption."
+          "title": "암호화된 볼트",
+          "desc": "제로 널리지 암호화로 저장된 도메인 이름."
         },
         {
-          "title": "5-Minute Lock",
-          "desc": "After reveal, you have 5 minutes of exclusive access."
+          "title": "5분 잠금",
+          "desc": "공개 후 5분간의 독점 접근."
         },
         {
-          "title": "No Obligation",
-          "desc": "Walk away at any point. No commitment required."
+          "title": "의무 없음",
+          "desc": "언제든지 포기 가능. 커밋 불필요."
         }
       ],
       "cta": {
-        "title": "Ready to explore?",
-        "desc": "Browse thousands of premium domains with full intelligence data.",
+        "title": "탐색할 준비가 되셨나요?",
+        "desc": "전체 인텔리전스 데이터가 포함된 수천 개의 프리미엄 도메인을 탐색하세요.",
         "marketplace": "마켓플레이스 둘러보기",
         "luck": "행운 시도"
       }
@@ -1452,52 +1452,52 @@
   "sol": {
     "index": {
       "title": "모든 도메인 필요를 위한 솔루션",
-      "subtitle": "Whether you invest, build, or broker — Ceche has the tools, data, and marketplace to power your domain strategy.",
+      "subtitle": "투자하든, 구축하든, 중개하든 — Ceche에는 도메인 전략을 지원하는 도구, 데이터 및 마켓플레이스가 있습니다.",
       "cta": {
         "ready": "준비되셨나요?",
         "signup": "무료 계정 만들기"
       },
       "personas": [
         {
-          "title": "Domain Investors",
-          "desc": "Portfolio yield analysis, flipper metrics, and drop-catching alerts. Maximize returns on your domain investments.",
+          "title": "도메인 투자자",
+          "desc": "포트폴리오 수익 분석, 플리퍼 메트릭 및 드롭 캡처 알림. 도메인 투자 수익을 극대화하세요.",
           "stat": "8–15%",
-          "statLabel": "Commission Tiers",
+          "statLabel": "수수료 등급",
           "href": "/solutions/domain-investors"
         },
         {
-          "title": "Startup Founders",
-          "desc": "Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup.",
+          "title": "스타트업 창업자",
+          "desc": "브랜더빌리티 인덱스, 키워드 발음 가능성 및 확장 침투 도구. 스타트업에 완벽한 도메인을 찾으세요.",
           "stat": "16",
-          "statLabel": "Scoring Dimensions",
+          "statLabel": "스코어링 차원",
           "href": "/solutions/startup-founders"
         },
         {
-          "title": "SEO Agencies",
-          "desc": "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.",
+          "title": "SEO 대행사",
+          "desc": "만료된 도메인 백링크 권위 스코어링 및 스팸 페널티 복구 감사. 대행사 성장을 위한 데이터 기반 도메인 인수.",
           "stat": "10K",
-          "statLabel": "API Calls/Day",
+          "statLabel": "일일 API 호출",
           "href": "/solutions/seo-agencies"
         },
         {
-          "title": "Find Available Domains",
-          "desc": "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.",
+          "title": "사용 가능한 도메인 찾기",
+          "desc": "사용 가능한 도메인 이름을 위해 수백만 가지 조합을 스캔하세요. 스마트 제안과 실시간 사용 가능 확인.",
           "stat": "4",
-          "statLabel": "TLDs Scanned",
+          "statLabel": "스캔된 TLD",
           "href": "/solutions/find-available"
         },
         {
-          "title": "Research Intelligence",
-          "desc": "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.",
+          "title": "연구 인텔리전스",
+          "desc": "인수 전 심층 도메인 분석. 포괄적인 인텔리전스 보고서로 현명한 결정을 내리세요.",
           "stat": "0–100",
-          "statLabel": "Buyer Intent Score",
+          "statLabel": "구매 의도 점수",
           "href": "/solutions/research-intelligence"
         },
         {
-          "title": "Buy Premium Domains",
-          "desc": "Acquire high-value domains with secure, transparent transactions. Fast and reliable.",
+          "title": "프리미엄 도메인 구매",
+          "desc": "안전하고 투명한 거래를 통해 고가치 도메인을 확보하세요. 빠르고 안정적입니다.",
           "stat": "$5–$50",
-          "statLabel": "Reveal Fee Range",
+          "statLabel": "공개 수수료 범위",
           "href": "/solutions/buy-premium"
         }
       ],
@@ -1506,74 +1506,74 @@
     "investors": {
       "badge": "투자자를 위한",
       "title": "도메인 투자 수익 극대화",
-      "desc": "Portfolio yield analysis, flipper valuation metrics, drop-catching alerts, and commission tiers from 8–15%. Everything you need to outperform the market.",
+      "desc": "포트폴리오 수익 분석, 플리퍼 밸류에이션 메트릭, 드롭 캡처 알림 및 8–15%의 수수료 등급. 시장을 능가하는 데 필요한 모든 것.",
       "cta": [
-        "Start Investing",
-        "View Pricing"
+        "투자 시작",
+        "가격 보기"
       ],
       "stats": [
         {
           "value": "16",
-          "label": "Scoring Dimensions"
+          "label": "스코어링 차원"
         },
         {
           "value": "8–15%",
-          "label": "Commission Tiers"
+          "label": "수수료 등급"
         },
         {
           "value": "4",
-          "label": "TLDs Scanned"
+          "label": "스캔된 TLD"
         },
         {
           "value": "$5–$50",
-          "label": "Reveal Fee Range"
+          "label": "공개 수수료 범위"
         }
       ],
       "problem": {
-        "title": "The Investor's Problem",
-        "desc": "Traditional domain investing requires juggling multiple tools, paying opaque fees, and guessing at valuations. You lose deals to faster buyers and overpay on commissions.",
+        "title": "투자자의 문제",
+        "desc": "전통적인 도메인 투자에는 여러 도구를 동시에 사용하고, 불투명한 수수료를 지불하고, 밸류에이션을 추측해야 합니다. 더 빠른 구매자에게 거래를 놓치고 수수료를 과다 지불합니다.",
         "items": [
-          "No unified scoring model across TLDs",
-          "Hidden fees erode profit margins",
-          "Manual drop-catching misses opportunities",
-          "Commission structures eat into flips"
+          "TLD 전반에 걸친 통일된 스코어링 모델 부재",
+          "숨겨진 수수료가 이익 마진을 잠식",
+          "수동 드롭 캡처로 기회 상실",
+          "수수료 구조가 플리핑 이익을 잠식"
         ]
       },
       "solution": {
-        "title": "The Ceche Solution",
-        "desc": "A single platform with 16-dimension scoring, tiered commissions with minimums, real-time alerts, and a marketplace designed for investors — not casual buyers.",
+        "title": "Ceche 솔루션",
+        "desc": "16차원 스코어링, 최소 금액이 있는 등급 수수료, 실시간 알림, 그리고 캐주얼 구매자가 아닌 투자자를 위해 설계된 마켓플레이스를 갖춘 단일 플랫폼.",
         "items": [
-          "16-dimension scoring on every domain",
-          "Transparent tiered commission: 15%/12%/10%/8%",
-          "Drop-catching alerts for expiring domains",
-          "Bulk scan up to 5,000 domains at once"
+          "모든 도메인에 대한 16차원 스코어링",
+          "투명한 등급 수수료: 15%/12%/10%/8%",
+          "만료 도메인 드롭 캡처 알림",
+          "한 번에 최대 5,000개 도메인 대량 스캔"
         ]
       },
       "commission": {
-        "title": "Tiered Commission Structure",
+        "title": "등급 수수료 구조",
         "headers": [
-          "Tier",
-          "Commission",
-          "Minimum"
+          "등급",
+          "수수료",
+          "최소 금액"
         ],
         "rows": [
           {
-            "tier": "Starter",
+            "tier": "스타터",
             "commission": "15%",
             "minimum": "$10"
           },
           {
-            "tier": "Growth",
+            "tier": "성장",
             "commission": "12%",
             "minimum": "$50"
           },
           {
-            "tier": "Pro",
+            "tier": "프로",
             "commission": "10%",
             "minimum": "$500"
           },
           {
-            "tier": "Enterprise",
+            "tier": "엔터프라이즈",
             "commission": "8%",
             "minimum": "$4,000"
           }
@@ -1582,211 +1582,211 @@
       "toolsTitle": "투자자를 위한 도구",
       "tools": [
         {
-          "title": "SEO Scanner",
-          "desc": "Audit backlink profiles and domain authority in seconds."
+          "title": "SEO 스캐너",
+          "desc": "초 단위로 백링크 프로필과 도메인 권위를 감사합니다."
         },
         {
-          "title": "Extended Insights",
-          "desc": "Go beyond the basics with full 16-dimension deep dives."
+          "title": "확장 인사이트",
+          "desc": "전체 16차원 심층 분석으로 기본을 넘어선 분석."
         },
         {
-          "title": "Bulk Analyzer",
-          "desc": "Score up to 5,000 domains in a single batch run."
+          "title": "대량 분석기",
+          "desc": "단일 배치 실행에서 최대 5,000개 도메인에 점수를 매깁니다."
         },
         {
-          "title": "Trademark Monitor",
-          "desc": "Automated alerts for trademark conflicts on your portfolio."
+          "title": "상표 모니터",
+          "desc": "포트폴리오의 상표 충돌에 대한 자동 알림."
         }
       ],
       "gettingStarted": {
         "title": "시작하기",
         "steps": [
           {
-            "title": "Create Account",
-            "desc": "Sign up free in 30 seconds"
+            "title": "계정 만들기",
+            "desc": "30초 만에 무료 가입"
           },
           {
-            "title": "Choose Plan",
-            "desc": "Free, Startup ($79/mo), or Enterprise ($129/mo)"
+            "title": "플랜 선택",
+            "desc": "무료, 스타트업 ($79/월) 또는 엔터프라이즈 ($129/월)"
           },
           {
-            "title": "Scan Domains",
-            "desc": "Run SEO Scanner or Bulk Analyzer"
+            "title": "도메인 스캔",
+            "desc": "SEO 스캐너 또는 대량 분석기 실행"
           },
           {
-            "title": "Analyze Scores",
-            "desc": "Review 16-dimension reports"
+            "title": "점수 분석",
+            "desc": "16차원 보고서 검토"
           },
           {
-            "title": "Acquire & Flip",
-            "desc": "Buy, hold, or resell with tiered commissions"
+            "title": "인수 및 플리핑",
+            "desc": "등급 수수료로 구매, 보유 또는 재판매"
           }
         ]
       },
       "ctaTitle": "더 스마트하게 플리핑 시작",
-      "ctaDesc": "Join thousands of investors using Ceche to maximize domain ROI.",
+      "ctaDesc": "Ceche를 사용하여 도메인 투자 수익을 극대화하는 수천 명의 투자자에 합류하세요.",
       "ctaSignup": "무료 계정 만들기",
       "ctaMarketplace": "마켓플레이스 둘러보기"
     },
     "founders": {
       "badge": "창업자를 위한",
       "title": "올바른 도메인으로 브랜드 구축",
-      "desc": "AI-powered brandability scoring, pronounceability analysis, and trademark screening — everything you need before you commit to a name.",
+      "desc": "AI 기반 브랜더빌리티 스코어링, 발음 가능성 분석 및 상표 스크리닝 — 이름을 커밋하기 전에 필요한 모든 것.",
       "steps": [
         {
-          "title": "Describe Your Brand",
-          "desc": "Enter a brief description of your startup, industry, and audience."
+          "title": "브랜드 설명",
+          "desc": "스타트업, 업계 및 청중에 대한 간략한 설명을 입력하세요."
         },
         {
-          "title": "Score & Compare",
-          "desc": "Get 16-dimension scores across 4 TLDs with brandability ratings."
+          "title": "점수 비교",
+          "desc": "4개 TLD 전반에 걸친 16차원 점수와 브랜더빌리티 등급을 받으세요."
         },
         {
-          "title": "Claim Your Domain",
-          "desc": "Register, buy on marketplace, or set alerts for expiring names."
+          "title": "도메인 확보",
+          "desc": "등록하거나, 마켓플레이스에서 구매하거나, 만료 이름에 대한 알림을 설정하세요."
         }
       ],
       "features": [
         {
-          "title": "Brandability Index",
-          "desc": "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset."
+          "title": "브랜더빌리티 인덱스",
+          "desc": "브랜더빌리티, 기억 가능성 및 시장 잠재력을 평가하는 AI 기반 스코어링. 이름뿐만 아니라 브랜드 자산."
         },
         {
-          "title": "Pronounceability",
-          "desc": "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember."
+          "title": "발음 가능성",
+          "desc": "모음 균형, 자음 클러스터 및 바이그램 빈도 분석으로 도메인이 말하기, 철자하기 및 기억하기 쉬운지 확인합니다."
         },
         {
-          "title": "Extension Penetration",
-          "desc": "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing."
+          "title": "확장 침투",
+          "desc": ".com, .io, .co 및 .ai의 시장 침투율을 비교하세요. 커밋하기 전에 어떤 TLD가 청중에게 적합한지 알아보세요."
         },
         {
-          "title": "Social Availability",
-          "desc": "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass."
+          "title": "소셜 가용성",
+          "desc": "도메인 검색과 함께 주요 플랫폼에서 사용자 이름 가용성을 확인하세요. 한 번의 패스로 전체 브랜드 자산을 확보하세요."
         }
       ],
       "builtForTitle": "창업자를 위해 구축",
       "builtFor": [
         {
-          "title": "Competitor Naming",
-          "desc": "Analyze naming patterns in your industry for competitive insights."
+          "title": "경쟁사 명명",
+          "desc": "경쟁 인사이트를 위해 업계의 명명 패턴을 분석하세요."
         },
         {
-          "title": "Trademark Risk",
-          "desc": "USPTO and WIPO database screening before brand commitment."
+          "title": "상표 위험",
+          "desc": "브랜드 커밋 전 USPTO 및 WIPO 데이터베이스 스크리닝."
         },
         {
-          "title": "Appraisal Tool",
-          "desc": "Get algorithmic valuations with confidence intervals."
+          "title": "평가 도구",
+          "desc": "신뢰 구간이 포함된 알고리즘 밸류에이션을 받으세요."
         },
         {
-          "title": "SEO Scanner",
-          "desc": "Evaluate backlink profiles of potential domains instantly."
+          "title": "SEO 스캐너",
+          "desc": "잠재 도메인의 백링크 프로필을 즉시 평가합니다."
         }
       ],
       "ctaTitle": "브랜드 도메인 찾기",
-      "ctaDesc": "Start with a free account. Score unlimited domains across 4 TLDs.",
+      "ctaDesc": "무료 계정으로 시작하세요. 4개 TLD에서 무제한 도메인에 점수를 매기세요.",
       "ctaSignup": "무료 계정 만들기",
       "ctaAppraise": "평가 도구 시도"
     },
     "agencies": {
       "badge": "대행사를 위한",
       "title": "고객을 위한 도메인 인수 확장",
-      "desc": "Expired domain backlink authority scoring, spam penalty recovery audits, and bulk tools designed for agency workflows. Handle 5,000+ domains per project.",
+      "desc": "만료된 도메인 백링크 권위 스코어링, 스팸 페널티 복구 감사 및 대행사 워크플로우를 위해 설계된 대량 도구. 프로젝트당 5,000개 이상의 도메인을 처리합니다.",
       "stats": [
         {
           "value": "5K",
-          "label": "Bulk Domains"
+          "label": "대량 도메인"
         },
         {
           "value": "10K",
-          "label": "API Calls/Day"
+          "label": "일일 API 호출"
         },
         {
           "value": "8–15%",
-          "label": "Commission Tiers"
+          "label": "수수료 등급"
         },
         {
           "value": "$5–$50",
-          "label": "Reveal Fee"
+          "label": "공개 수수료"
         }
       ],
       "whyTitle": "대행사가 Ceche를 선택하는 이유",
       "why": [
         {
-          "title": "Client Results",
-          "desc": "Deliver measurable ROI with data-backed domain acquisitions. Show clients exactly why a domain is worth the investment."
+          "title": "고객 성과",
+          "desc": "데이터 기반 도메인 인수로 측정 가능한 투자 수익을 제공합니다. 고객에게 도메인이 왜 투자할 가치가 있는지 정확히 보여주세요."
         },
         {
-          "title": "Time Savings",
-          "desc": "Bulk scan 5,000 domains at once and score them across 16 dimensions. What used to take days now takes minutes."
+          "title": "시간 절약",
+          "desc": "5,000개 도메인을 한 번에 대량 스캔하고 16차원으로 점수를 매깁니다. 며칠이 걸리던 일이 몇 분으로 단축됩니다."
         },
         {
-          "title": "Revenue Growth",
-          "desc": "Lower commission tiers as volume increases. Earn more per deal with 8–15% tiered commissions and minimum-based pricing."
+          "title": "수익 성장",
+          "desc": "거래량이 증가함에 따라 수수료 등급이 낮아집니다. 8–15% 등급 수수료와 최소 기반 가격으로 거래당 더 많이 벌세요."
         }
       ],
       "features": [
         {
-          "title": "Expired Domain Authority",
-          "desc": "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity."
+          "title": "만료된 도메인 권위",
+          "desc": "인수를 위해 만료된 도메인의 백링크 프로필을 평가합니다. dofollow/nofollow 비율, 앵커 텍스트 분포 및 링크 속도를 확인하세요."
         },
         {
-          "title": "Spam Recovery Audits",
-          "desc": "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health."
+          "title": "스팸 복구 감사",
+          "desc": "상세한 분석으로 Google 패널티를 식별하고 복구합니다. 도메인 건강을 복원하기 위한 실행 가능한 권장 사항을 받으세요."
         },
         {
-          "title": "Bulk Analyzer",
-          "desc": "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations."
+          "title": "대량 분석기",
+          "desc": "배치당 최대 5,000개 도메인을 처리합니다. 고객 프레젠테이션용 점수, 지표 및 권장 사항이 포함된 CSV 보고서를 내보냅니다."
         },
         {
-          "title": "Reporting Dashboard",
-          "desc": "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects."
+          "title": "보고 대시보드",
+          "desc": "고객 프레젠테이션용 화이트 레이블 보고서. 자동 보고서를 예약하고 여러 프로젝트의 인수 투자 수익을 추적합니다."
         }
       ],
       "plansTitle": "모든 대행사를 위한 플랜",
       "plansDesc": "독립 컨설턴트부터 풀서비스 대행사까지 확장",
       "plans": [
         {
-          "name": "Free",
+          "name": "무료",
           "price": "$0",
-          "period": "/3 domains/day",
+          "period": "/하루 3개 도메인",
           "features": [
-            "16-dimension scoring",
-            "SEO Scanner",
-            "Basic insights"
+            "16차원 스코어링",
+            "SEO 스캐너",
+            "기본 인사이트"
           ],
-          "cta": "Get Started",
+          "cta": "시작하기",
           "dark": false
         },
         {
-          "name": "Startup",
+          "name": "스타트업",
           "price": "$79",
           "period": "/mo",
           "features": [
-            "12 domains/day",
-            "Extended Insights",
-            "Trademark Monitor",
-            "Priority support"
+            "하루 12개 도메인",
+            "확장 인사이트",
+            "상표 모니터",
+            "우선 지원"
           ],
-          "cta": "Start Trial",
+          "cta": "체험 시작",
           "dark": true
         },
         {
-          "name": "Enterprise",
+          "name": "엔터프라이즈",
           "price": "$129",
           "period": "/mo",
           "features": [
-            "Unlimited scoring",
-            "Bulk Analyzer (5K)",
-            "API (10K calls/day)",
-            "White-label reports"
+            "무제한 스코어링",
+            "대량 분석기 (5K)",
+            "API (매일 10K 호출)",
+            "화이트 레이블 보고서"
           ],
-          "cta": "Contact Sales",
+          "cta": "영업팀 문의",
           "dark": false
         }
       ],
       "ctaTitle": "대행사를 확장할 준비가 되셨나요?",
-      "ctaDesc": "Start with a free account or talk to our team about volume pricing.",
+      "ctaDesc": "무료 계정으로 시작하거나 대량 가격에 대해 팀과 상담하세요.",
       "ctaSignup": "무료 계정 만들기",
       "ctaApi": "API 문서"
     },
@@ -1795,43 +1795,43 @@
       "statLabel": "동시 스캔 TLD",
       "tlds": ".com · .io · .co · .ai",
       "title": "초고속 사용 가능한 도메인 검색",
-      "desc": "Scan millions of combinations for available domain names. Smart suggestions, real-time availability checks, and price comparisons across registrars.",
+      "desc": "사용 가능한 도메인 이름을 위해 수백만 가지 조합을 스캔하세요. 스마트 제안, 실시간 사용 가능 확인 및 등록 기관 전반의 가격 비교.",
       "discovery": {
         "title": "스마트 도메인 발견",
-        "desc1": "Enter keywords, industry, or a brand concept and Ceche will generate hundreds of available options. Filter by length, TLD, price range, and brandability score.",
-        "desc2": "Every result includes a 16-dimension score, so you know which domains have real market potential — not just availability.",
+        "desc1": "키워드, 업계 또는 브랜드 컨셉을 입력하면 Ceche가 수백 가지 사용 가능한 옵션을 생성합니다. 길이, TLD, 가격 범위 및 브랜더빌리티 점수별로 필터링하세요.",
+        "desc2": "모든 결과에는 16차원 점수가 포함되어 있어 진정한 시장 잠재력을 가진 도메인을 알 수 있습니다 — 사용 가능성뿐만 아니라.",
         "cta": "무료 검색 시작"
       },
       "filters": {
-        "title": "Filter Options",
+        "title": "필터 옵션",
         "items": [
           {
             "label": "TLD",
             "value": ".com, .io, .co, .ai"
           },
           {
-            "label": "Max Length",
-            "value": "Up to 15 characters"
+            "label": "최대 길이",
+            "value": "최대 15자"
           },
           {
-            "label": "Price Range",
-            "value": "$8 – $500/yr"
+            "label": "가격 범위",
+            "value": "$8 – $500/년"
           },
           {
-            "label": "Brandability",
-            "value": "High / Medium / Low"
+            "label": "브랜더빌리티",
+            "value": "높음 / 중간 / 낮음"
           },
           {
-            "label": "Buyer Intent",
-            "value": "Score 0–100"
+            "label": "구매 의도",
+            "value": "점수 0–100"
           },
           {
-            "label": "Availability",
-            "value": "Instant check"
+            "label": "사용 가능",
+            "value": "즉시 확인"
           },
           {
-            "label": "Price Comparison",
-            "value": "Multi-registrar"
+            "label": "가격 비교",
+            "value": "다중 등록 기관"
           }
         ]
       },
@@ -1839,48 +1839,48 @@
         "title": "도메인을 놓치지 마세요",
         "steps": [
           {
-            "title": "Set Your Criteria",
-            "desc": "Define keywords, TLDs, price range, and brandability thresholds."
+            "title": "기준 설정",
+            "desc": "키워드, TLD, 가격 범위 및 브랜더빌리티 임계값을 정의하세요."
           },
           {
-            "title": "Monitor & Alert",
-            "desc": "Ceche scans daily and alerts you when matching domains appear."
+            "title": "모니터링 및 알림",
+            "desc": "Ceche는 매일 스캔하고 일치하는 도메인이 나타나면 알림을 보냅니다."
           },
           {
-            "title": "Acquire Instantly",
-            "desc": "One-click registration or marketplace purchase with secure checkout."
+            "title": "즉시 인수",
+            "desc": "원클릭 등록 또는 안전한 결제로 마켓플레이스 구매."
           }
         ]
       },
       "plansTitle": "플랜 선택",
       "plans": [
         {
-          "name": "Free",
+          "name": "무료",
           "price": "$0",
           "features": [
-            "3 domains/day",
-            "Basic scoring",
-            "1 TLD"
+            "하루 3개 도메인",
+            "기본 스코어링",
+            "1개 TLD"
           ],
           "highlight": false
         },
         {
-          "name": "Startup",
+          "name": "스타트업",
           "price": "$79/mo",
           "features": [
-            "12 domains/day",
-            "Extended Insights",
-            "4 TLDs"
+            "하루 12개 도메인",
+            "확장 인사이트",
+            "4개 TLD"
           ],
           "highlight": true
         },
         {
-          "name": "Enterprise",
+          "name": "엔터프라이즈",
           "price": "$129/mo",
           "features": [
-            "Unlimited scoring",
-            "Bulk Analyzer",
-            "API access"
+            "무제한 스코어링",
+            "대량 분석기",
+            "API 접근"
           ],
           "highlight": false
         }
@@ -1890,165 +1890,165 @@
       "bulk": {
         "badge": "엔터프라이즈 기능",
         "title": "대량 도메인 스캐너",
-        "desc": "Upload a CSV of up to 5,000 domains and get scored results in minutes. Perfect for portfolio audits and prospecting at scale.",
-        "note": "Available on Enterprise plan ($129/mo). Includes API access with 10,000 calls/day."
+        "desc": "최대 5,000개 도메인의 CSV를 업로드하고 몇 분 만에 스코어링된 결과를 받으세요. 포트폴리오 감사 및 대규모 탐색에 적합합니다.",
+        "note": "엔터프라이즈 플랜 ($129/월)에서 사용 가능. 매일 10,000번의 API 호출이 포함됩니다."
       },
       "ctaTitle": "완벽한 도메인 찾기",
-      "ctaDesc": "Start with 3 free domain searches per day.",
+      "ctaDesc": "하루 3번의 무료 도메인 검색으로 시작하세요.",
       "ctaSignup": "무료 계정 만들기",
       "ctaScan": "SEO 스캐너 시도"
     },
     "research": {
       "breadcrumb": [
-        "Solutions",
-        "Research Intelligence"
+        "솔루션",
+        "연구 인텔리전스"
       ],
       "title": "인수 전 심층 도메인 분석",
-      "desc": "Make informed decisions with comprehensive intelligence reports. 16-dimension scoring, ownership history, backlink profiles, and risk assessment — all in one document.",
+      "desc": "포괄적인 인텔리전스 보고서로 현명한 결정을 내리세요. 16차원 스코어링, 소유권 역사, 백링크 프로필 및 위험 평가 — 모두 하나의 문서에.",
       "sections": [
         {
-          "title": "16-Dimension Scoring",
-          "desc": "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains."
+          "title": "16차원 스코어링",
+          "desc": "모든 도메인은 브랜더빌리티, SEO 강점, 시장 수요 및 위험 요소를 포함한 16개의 개별 차원에서 평가됩니다. 종합 구매 의도 점수 (0–100)는 도메인을 비교할 수 있는 단일 숫자를 제공합니다."
         },
         {
-          "title": "Ownership History",
-          "desc": "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues."
+          "title": "소유권 역사",
+          "desc": "전체 WHOIS 역사 및 소유권 전환. 도메인이 몇 번이나 손바뀌었는지, 이전 사용 사례 및 관련 평판 문제를 확인하세요."
         },
         {
-          "title": "Backlink Profile",
-          "desc": "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time."
+          "title": "백링크 프로필",
+          "desc": "품질 스코어링이 포함된 상세한 백링크 분석. dofollow/nofollow 비율, 앵커 텍스트 분포, 인용 도메인 및 시간에 따른 링크 속도 추세."
         },
         {
-          "title": "Traffic Estimates",
-          "desc": "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest."
+          "title": "트래픽 추정",
+          "desc": "SEO 지표, 키워드 순위 및 과거 데이터 기반의 월간 트래픽 예측. 투자 전에 유기적 잠재력을 이해하세요."
         },
         {
-          "title": "Valuation Range",
-          "desc": "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value."
+          "title": "밸류에이션 범위",
+          "desc": "신뢰 구간이 있는 알고리즘 가격. .com, .io, .co 및 .ai에서 최근 유사 판매와 비교하여 공정 시장 가치를 이해하세요."
         },
         {
-          "title": "Risk Assessment",
-          "desc": "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital."
+          "title": "위험 평가",
+          "desc": "상표 충돌, 스팸 역사, Google 패널티 상태 및 등록 위험 분석. 자본을 투입하기 전에 전체 그림을 파악하세요."
         }
       ],
       "compareTitle": "Ceche 비교",
       "compareHeaders": [
-        "Feature",
+        "기능",
         "Ceche",
         "Dynadot",
         "GoDaddy"
       ],
       "compareRows": [
         {
-          "feature": "16-Dimension Scoring",
+          "feature": "16차원 스코어링",
           "ceche": "✓",
           "dynadot": "✗",
           "godaddy": "✗"
         },
         {
-          "feature": "Buyer Intent Score",
+          "feature": "구매 의도 점수",
           "ceche": "0–100",
           "dynadot": "✗",
           "godaddy": "✗"
         },
         {
-          "feature": "Bulk Analysis (5K+)",
+          "feature": "대량 분석 (5K+)",
           "ceche": "✓",
-          "dynadot": "Limited",
+          "dynadot": "제한적",
           "godaddy": "✗"
         },
         {
-          "feature": "API Access",
-          "ceche": "10K/day",
-          "dynadot": "Basic",
-          "godaddy": "Paid add-on"
+          "feature": "API 접근",
+          "ceche": "매일 10K",
+          "dynadot": "기본",
+          "godaddy": "유료 추가"
         },
         {
-          "feature": "Trademark Monitor",
+          "feature": "상표 모니터",
           "ceche": "✓",
           "dynadot": "✗",
-          "godaddy": "Paid"
+          "godaddy": "유료"
         },
         {
-          "feature": "Tiered Commission",
+          "feature": "등급 수수료",
           "ceche": "8–15%",
-          "dynadot": "Flat",
-          "godaddy": "Flat 20%+"
+          "dynadot": "고정",
+          "godaddy": "고정 20%+"
         },
         {
-          "feature": "TLDs Analyzed",
+          "feature": "분석된 TLD",
           "ceche": "4",
           "dynadot": "10+",
           "godaddy": "10+"
         }
       ],
       "ctaTitle": "더 스마트하게 리서치",
-      "ctaDesc": "Get deep intelligence on any domain. Start with a free account.",
+      "ctaDesc": "모든 도메인에 대한 심층 인텔리전스를 얻으세요. 무료 계정으로 시작하세요.",
       "ctaSignup": "무료 계정 만들기",
       "ctaAppraise": "평가 도구 시도"
     },
     "premium": {
       "heroTitle": "자신감 있게 프리미엄 도메인 인수",
-      "heroDesc": "Secure checkout, transparent pricing, and a 72-hour inspection period. Buy premium domains the way they should be — safely and fairly.",
+      "heroDesc": "안전한 결제, 투명한 가격 및 72시간 검사 기간. 프리미엄 도메인을 올바르게 구매하세요 — 안전하고 공정하게.",
       "steps": [
         {
-          "title": "Discover & Evaluate",
-          "desc": "Browse curated premium domains with full 16-dimension intelligence reports. See ownership history, backlink profiles, and fair market valuation before you make an offer."
+          "title": "발견 및 평가",
+          "desc": "전체 16차원 인텔리전스 보고서가 포함된 큐레이션된 프리미엄 도메인을 탐색하세요. 제안 전에 소유권 역사, 백링크 프로필 및 공정 시장 밸류에이션을 확인하세요."
         },
         {
-          "title": "Negotiate & Transact",
-          "desc": "Make offers, counter-offers, and close deals securely. Payment is processed safely until domain transfer is confirmed and verified."
+          "title": "협상 및 거래",
+          "desc": "제안, 상대 제안을 하고 안전하게 거래를 성사시키세요. 도메인 이전이 확인되고 검증될 때까지 결제가 안전하게 처리됩니다."
         },
         {
-          "title": "Inspect & Confirm",
-          "desc": "72-hour inspection period after transfer. Verify the domain meets all expectations before the seller receives payment. Full refund if unsatisfied."
+          "title": "검사 및 확인",
+          "desc": "이전 후 72시간 검사 기간. 판매자가 결제를 받기 전에 도메인이 모든 기대를 충족하는지 확인하세요. 불만족 시 전액 환불."
         }
       ],
       "trust": [
         {
-          "title": "Secure Checkout",
-          "desc": "Payment processed securely until domain transfer is confirmed and verified by both parties."
+          "title": "안전한 결제",
+          "desc": "도메인 이전이 양 당사자에 의해 확인되고 검증될 때까지 결제가 안전하게 처리됩니다."
         },
         {
-          "title": "72-Hour Inspection",
-          "desc": "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs."
+          "title": "72시간 검사",
+          "desc": "이전 후 완전한 검사 기간. 도메인을 테스트하고, 레코드를 검증하며, 요구 사항을 충족하는지 확인하세요."
         },
         {
-          "title": "Multiple Payment Options",
-          "desc": "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises."
+          "title": "다중 결제 옵션",
+          "desc": "신용 카드, 송금 및 암호화폐를 받습니다. 숨겨진 비용이나 환전 놀라움 없음."
         }
       ],
       "pricingTitle": "투명한 가격",
-      "pricingDesc": "숨겨진 비용 없음. 표시된 가격이 바로 지불하는 가격입니다.",
+      "pricingDesc": "숨겨진 비용 없음. 표시된 가격이 지불하는 가격입니다.",
       "pricingHeaders": [
-        "Fee Type",
-        "Amount",
-        "Notes"
+        "수수료 유형",
+        "금액",
+        "참고"
       ],
       "pricingRows": [
         {
-          "type": "Reveal Fee (Standard)",
+          "type": "공개 수수료 (표준)",
           "amount": "$5",
-          "notes": "One-time per domain reveal"
+          "notes": "도메인 공개당 일회성"
         },
         {
-          "type": "Reveal Fee (Priority)",
+          "type": "공개 수수료 (우선)",
           "amount": "$10",
-          "notes": "Expedited reveal with full report"
+          "notes": "전체 보고서가 포함된 가속 공개"
         },
         {
-          "type": "Buyer Commission",
+          "type": "구매자 수수료",
           "amount": "0%",
-          "notes": "Buyers pay zero commission on Ceche"
+          "notes": "Ceche에서 구매자는 수수료 0%"
         },
         {
-          "type": "Transaction Fee",
+          "type": "거래 수수료",
           "amount": "Included",
-          "notes": "No extra charge for secure checkout"
+          "notes": "안전한 결제에 추가 요금 없음"
         }
       ],
       "ctaTitle": "지금 프리미엄 도메인 구매",
-      "ctaDesc": "Secure, transparent transactions with secure checkout on every purchase.",
+      "ctaDesc": "모든 구매에 안전하고 투명한 거래와 안전한 결제가 포함됩니다.",
       "ctaMarketplace": "마켓플레이스 둘러보기",
       "ctaPricing": "가격 보기"
     }
@@ -2061,45 +2061,45 @@
     "blog": {
       "badge": "Ceche 블로그",
       "title": "도메인 인텔리전스 디코딩.",
-      "subtitle": "Strategy guides, market analysis, and frameworks for domain investors who trade on data—not intuition.",
+      "subtitle": "데이터가 아닌 직관으로 거래하는 도메인 투자자를 위한 전략 가이드, 시장 분석 및 프레임워크.",
       "topicsBadge": "주제",
       "categories": [
-        "Strategy",
-        "Market Data",
-        "Tutorials",
-        "Industry News",
-        "Case Studies"
+        "전략",
+        "시장 데이터",
+        "튜토리얼",
+        "업계 뉴스",
+        "사례 연구"
       ],
-      "marquee": "Domain Valuations · Market Reports · Portfolio Analytics · Blind Marketplace · 16-Dimension Framework · Health Scores · CPC Data · Brandability Index · Try Your Luck ·",
+      "marquee": "도메인 밸류에이션 · 시장 보고서 · 포트폴리오 분석 · 블라인드 마켓플레이스 · 16차원 프레임워크 · 건강 점수 · CPC 데이터 · 브랜더빌리티 인덱스 · 행운 시도 ·",
       "articles": [
         {
           "date": "Aug 28, 2026",
-          "title": "Why Premium .com Domains Still Outperform New gTLDs"
+          "title": "왜 프리미엄 .com 도메인이 새로운 gTLD를 계속 압도하는가"
         },
         {
           "date": "Aug 21, 2026",
-          "title": "The Hidden ROI of Portfolio Health Scores"
+          "title": "포트폴리오 건강 점수의 숨겨진 투자 수익"
         },
         {
           "date": "Aug 14, 2026",
-          "title": "5 Red Flags in Domain Appraisals You're Ignoring"
+          "title": "간과하는 도메인 평가의 5가지 위험 신호"
         },
         {
           "date": "Aug 07, 2026",
-          "title": "How to Price a Domain Without Guessing"
+          "title": "추측 없이 도메인 가격을 매기는 방법"
         },
         {
           "date": "Jul 31, 2026",
-          "title": "Blind Auctions vs. Fixed Listings: A Data Comparison"
+          "title": "블라인드 경매 vs. 고정 목록: 데이터 비교"
         },
         {
           "date": "Jul 24, 2026",
-          "title": "Building a Domain Reselling Workflow from Scratch"
+          "title": "처음부터 도메인 리셀링 워크플로우 구축"
         }
       ],
       "cta": {
-        "title": "Want the full library?",
-        "desc": "Download our ebooks and go deeper on domain investing.",
+        "title": "전체 라이브러리를 원하시나요?",
+        "desc": "전자책을 다운로드하여 도메인 투자에 대해 더 깊이 파고드세요.",
         "ebooks": "전자책 둘러보기 →",
         "pricing": "가격 보기"
       }
@@ -2107,97 +2107,97 @@
     "ebooks": {
       "badge": "Ceche 전자책",
       "title": "도메인 투자 심층 분석",
-      "subtitle": "Free guides, frameworks, and playbooks for domain investors at every level.",
+      "subtitle": "모든 수준의 도메인 투자자를 위한 무료 가이드, 프레임워크 및 플레이북.",
       "featured": {
-        "badge": "Featured",
-        "title": "The Domain Investor's Playbook",
-        "desc": "The definitive guide to buying, valuing, and selling domain names for profit. 42 pages of actionable frameworks, case studies, and Ceche-specific strategies used by top resellers.",
+        "badge": "추천",
+        "title": "도메인 투자자 플레이북",
+        "desc": "도메인 이름을 구매, 평가 및 판매하여 수익을 올리는 결정적인 가이드. 상위 리셀러가 사용하는 42페이지의 실행 가능한 프레임워크, 사례 연구 및 Ceche 전략.",
         "stats": [
           {
             "value": "34K+",
-            "label": "Downloads"
+            "label": "다운로드"
           },
           {
             "value": "42",
-            "label": "Pages"
+            "label": "페이지"
           },
           {
             "value": "4.9",
-            "label": "Rating"
+            "label": "평점"
           }
         ],
-        "cta": "Get Free Copy →"
+        "cta": "무료 사본 받기 →"
       },
-      "catalogTitle": "More from Ceche",
+      "catalogTitle": "Ceche의 더 많은 자료",
       "catalog": [
         {
-          "title": "The Domain Appraiser's Toolkit",
+          "title": "도메인 평가사 툴킷",
           "pages": 32,
           "date": "Apr 2026",
           "downloads": "12K+",
-          "desc": "A step-by-step guide to valuing domains using data, not guesswork. Covers the 16-Dimension Framework, health scoring, and comparative market analysis."
+          "desc": "추측이 아닌 데이터를 사용하여 도메인에 가치를 매기는 단계별 가이드. 16차원 프레임워크, 건강 스코어링 및 비교 시장 분석을 다룹니다."
         },
         {
-          "title": "Blind Marketplace Playbook",
+          "title": "블라인드 마켓플레이스 플레이북",
           "pages": 28,
           "date": "Mar 2026",
           "downloads": "8K+",
-          "desc": "How Ceche's blind bidding system eliminates price inflation and gives buyers an edge. Includes negotiation templates and bid strategy frameworks."
+          "desc": "Ceche의 블라인드 입찰 시스템이 가격 인플레이션을 어떻게 제거하고 구매자에게 이점을 제공하는지. 협상 템플릿과 입찰 전략 프레임워크가 포함됩니다."
         },
         {
-          "title": "Portfolio Health Audit Guide",
+          "title": "포트폴리오 건강 감사 가이드",
           "pages": 24,
           "date": "Feb 2026",
           "downloads": "6K+",
-          "desc": "Run a full health check on your domain portfolio. Identify underperformers, renewal traps, and hidden gems with Ceche's scoring system."
+          "desc": "도메인 포트폴리오에 대한 전체 건강 검진을 수행하세요. Ceche의 스코어링 시스템으로 저조자, 갱신 함정 및 숨겨진 보물을 식별합니다."
         },
         {
-          "title": "Domain Reselling 101",
+          "title": "도메인 리셀링 101",
           "pages": 36,
           "date": "Jan 2026",
           "downloads": "15K+",
-          "desc": "From acquisition to close—everything a new domain reseller needs. Pricing strategies, buyer outreach, and closing techniques backed by real data."
+          "desc": "인수부터 마감까지 — 새로운 도메인 리셀러가 필요한 모든 것. 실제 데이터로 뒷받침되는 가격 전략, 구매자 아웃리치 및 마감 기법."
         }
       ],
       "getCopy": "무료 사본 받기",
       "cta": {
-        "title": "Want more articles and market insights?",
-        "desc": "Our blog covers domain strategy, pricing models, and industry analysis.",
+        "title": "더 많은 기사와 시장 인사이트를 원하시나요?",
+        "desc": "블로그는 도메인 전략, 가격 모델 및 업계 분석을 다룹니다.",
         "blog": "블로그 읽기",
         "pricing": "가격 보기"
       },
       "modal": {
-        "title": "Create an account to download",
-        "desc": "All Ceche ebooks and guides are free for registered users.",
+        "title": "다운로드하려면 계정을 만드세요",
+        "desc": "모든 Ceche 전자책과 가이드는 등록 사용자에게 무료입니다.",
         "redirecting": "Redirecting to signup in {count} seconds...",
-        "cta": "Create free account",
-        "back": "Go back"
+        "cta": "무료 계정 만들기",
+        "back": "돌아가기"
       }
     },
     "cases": {
       "badge": "사례 연구",
       "title": "실제 투자자. 실제 결과.",
-      "desc": "See how domain investors, startups, and portfolio managers use Ceche to make faster, smarter decisions. Every case study is backed by real numbers—no cherry-picked success stories.",
+      "desc": "도메인 투자자, 스타트업 및 포트폴리오 관리자가 Ceche를 사용하여 더 빠르고 현명한 결정을 내리는 방법을 알아보세요. 모든 사례 연구는 실제 데이터로 뒷받침됩니다 — 선별된 성공 사례가 아닙니다.",
       "stats": [
         {
           "value": "4.2K+",
-          "label": "Active Users"
+          "label": "활성 사용자"
         },
         {
           "value": "98%",
-          "label": "Accuracy Rate"
+          "label": "정확도"
         }
       ],
       "comingSoon": {
-        "title": "Case studies coming soon",
-        "desc": "We're documenting how investors are using Ceche's tools to find undervalued domains, negotiate smarter, and close deals faster. Check back soon for in-depth breakdowns.",
-        "appraisal": "Try Appraisal Tool →",
-        "marketplace": "Explore Marketplace",
-        "pricing": "View Pricing"
+        "title": "사례 연구 곧 출시",
+        "desc": "투자자들이 Ceche 도구를 사용하여 저평가된 도메인을 발견하고, 더 스마트하게 협상하며, 거래를 더 빠르게 성사시키는 방법을 문서화하고 있습니다. 곧 심층 분석을 확인하세요.",
+        "appraisal": "평가 도구 시도 →",
+        "marketplace": "마켓플레이스 탐색",
+        "pricing": "가격 보기"
       },
       "cta": {
-        "title": "Have a story to share?",
-        "desc": "We'd love to feature your experience with Ceche.",
+        "title": "공유할 이야기가 있으신가요?",
+        "desc": "Ceche와의 경험을 소개하고 싶습니다.",
         "contact": "문의하기 →"
       }
     }
@@ -2206,25 +2206,27 @@
     "about": {
       "badge": "Ceche 소개",
       "title": "데이터 기반 투자를 위해 구축",
-      "desc": "The domain marketplace where premium names are bought and sold—powered by real intelligence, not guesswork.",
+      "desc": "프리미엄 이름이 매매되는 도메인 마켓플레이스 — 진정한 인텔리전스가 아닌 추측으로 작동합니다.",
       "cta": {
         "title": "다음 도메인을 찾을 준비가 되셨나요?",
-        "desc": "Every name is backed by data. The marketplace is open.",
+        "desc": "모든 이름은 데이터로 뒷받침됩니다. 마켓플레이스는 열려 있습니다.",
         "marketplace": "마켓플레이스 둘러보기 →",
         "pricing": "가격 보기",
+        "0": "평가 시도 →",
+        "1": "마켓플레이스 둘러보기",
         "0": "평가 시도 →",
         "1": "마켓플레이스 둘러보기"
       },
       "origin": {
         "badge": "우리의 기원",
         "title": "시장에 더 나은 데이터가 필요하다는 것을 발견한 도메인 투자자가 설립",
-        "p1": "The domain aftermarket generates over $3 billion in annual transactions, yet most marketplaces are opaque, inflated by scrapers, and built on intuition rather than data. Ceche was created to fix that.",
-        "p2": "We combined the intelligence of a research platform with the transaction mechanics of a marketplace. You evaluate the numbers first—estimated value, health score, CPC, brandability—and the name only appears when you pay to reveal it. Every valuation is backed by a published methodology and a verifiable dataset."
+        "p1": "도메인 중고 시장은 매년 30억 달러 이상의 거래를 생성하지만, 대부분의 마켓플레이스는 불투명하고, 스크래퍼에 의해 가격이 올라가며, 데이터가 아닌 추측에 기반하여 구축됩니다. Ceche는 이를 해결하기 위해 만들어졌습니다.",
+        "p2": "연구 플랫폼의 인텔리전스와 마켓플레이스의 거래 메커니즘을 결합했습니다. 먼저 숫자를 평가합니다 — 추정 가치, 건강 점수, CPC, 브랜더빌리티 — 이름은 공개 비용을 지불할 때만 나타납니다. 모든 밸류에이션은 공개된 방법론과 검증 가능한 데이터 세트로 뒷받침됩니다."
       },
       "founder": {
         "label": "창립자",
         "name": "Nekwasachukwu Ucheokoye",
-        "bio": "Domain name investor & reseller managing 100+ domains. Agentic & systems engineer building intelligent infrastructure for the domain industry. Based in Awka, Nigeria."
+        "bio": "100개 이상의 도메인을 관리하는 도메인 이름 투자자 및 리셀러. 도메인 업계를 위한 지능형 인프라를 구축하는 에이전트 및 시스템 엔지니어. 나이지리아 아와 거주."
       },
       "values": {
         "badge": "우리의 신념",
@@ -2232,15 +2234,15 @@
         "items": [
           {
             "title": "투명성",
-            "desc": "We publish our methodology, data sources, and accuracy metrics. Users who understand how we work trust us more than users who are asked to take our word for it."
+            "desc": "방법론, 데이터 소스 및 정확도 지표를 공개합니다. 작동 방식을 이해하는 사용자는 우리의 말을 믿도록 요구하는 사용자보다 더 신뢰합니다."
           },
           {
             "title": "데이터 엄격성",
-            "desc": "Every claim we make is backed by data. Every tool produces measurable outputs. We do not rely on intuition when data is available."
+            "desc": "우리가 하는 모든 주장은 데이터로 뒷받침됩니다. 모든 도구는 측정 가능한 출력을 생성합니다. 데이터가 사용 가능할 때 추측에 의존하지 않습니다."
           },
           {
             "title": "속도",
-            "desc": "We ship fast and iterate. Perfection is the enemy of progress—we aim for good enough to ship and improve from there."
+            "desc": "빠르게 출시하고 반복합니다. 완벽은 진보의 적입니다 — 출시할 만큼 충분히 좋게 만든 다음 개선합니다."
           }
         ]
       }
@@ -2248,7 +2250,7 @@
     "affiliates": {
       "badge": "Ceche 파트너",
       "title": "도메인 투자자를 추천하여 수익 창출",
-      "desc": "Join our affiliate program, share Ceche with your network, and earn recurring commissions on every customer you refer.",
+      "desc": "파트너 프로그램에 가입하여 네트워크와 Ceche를 공유하고 추천하는 각 고객으로부터 반복 수수료를 받으세요.",
       "timeline": [
         "가입",
         "링크 공유",
@@ -2256,33 +2258,33 @@
       ],
       "benefits": [
         {
-          "title": "30% Recurring Commission",
-          "desc": "Earn on every paying customer you refer—for as long as they stay subscribed. No caps, no limits."
+          "title": "30% 반복 수수료",
+          "desc": "추천하는 모든 유료 고객으로부터 벌금 — 구독하는 동안. 상한선 없음, 제한 없음."
         },
         {
-          "title": "90-Day Cookie Window",
-          "desc": "Your referral link tracks visitors for 90 days. Even if they come back weeks later, you still get credit."
+          "title": "90일 쿠키 윈도우",
+          "desc": "추천 링크가 방문자를 90일간 추적합니다. 몇 주 후에 돌아오더라도 크레딧을 받습니다."
         },
         {
-          "title": "Real-Time Dashboard",
-          "desc": "Track clicks, signups, and earnings in real time. No guessing, no waiting for monthly reports."
+          "title": "실시간 대시보드",
+          "desc": "클릭, 가입 및 수익을 실시간으로 추적합니다. 추측 없음, 월간 보고서를 기다릴 필요 없음."
         },
         {
-          "title": "Dedicated Affiliate Support",
-          "desc": "Get priority access to our affiliate team. Custom landing pages, promo assets, and campaign guidance."
+          "title": "전용 파트너 지원",
+          "desc": "파트너 팀에 대한 우선 접근. 사용자 정의 랜딩 페이지, 프로모션 자산 및 캠페인 안내."
         },
         {
-          "title": "Instant Payouts",
-          "desc": "Get paid monthly via bank transfer or PayPal. No minimum threshold. No delays."
+          "title": "즉시 지불",
+          "desc": "은행 송금 또는 PayPal로 매월 지불. 최소 임계값 없음. 지연 없음."
         },
         {
-          "title": "Free Premium Access",
-          "desc": "Active affiliates get a free Ceche Pro account. Use the product, sell the product, believe in the product."
+          "title": "무료 Premium 접근",
+          "desc": "활성 파트너는 무료 Ceche Pro 계정을 받습니다. 제품을 사용하고, 제품을 판매하고, 제품을 믿으세요."
         }
       ],
       "cta": {
         "title": "지금 수익 창출 시작",
-        "desc": "Sign up for the affiliate program and start referring in minutes.",
+        "desc": "파트너 프로그램에 가입하고 몇 분 만에 추천을 시작하세요.",
         "join": "파트너 프로그램 참여 →",
         "pricing": "가격 보기",
         "support": "지원 문의"
@@ -2296,27 +2298,27 @@
     "sections": [
       {
         "title": "문서",
-        "desc": "Comprehensive guides for every Ceche tool, from domain lookup to bulk analysis.",
+        "desc": "도메인 조회부터 대량 분석까지 모든 Ceche 도구에 대한 포괄적인 가이드.",
         "href": "/help/docs"
       },
       {
         "title": "API 참조",
-        "desc": "RESTful API endpoints for programmatic domain intelligence at scale.",
+        "desc": "대규모 프로그래밍 방식 도메인 인텔리전스를 위한 RESTful API 엔드포인트.",
         "href": "/help/api"
       },
       {
         "title": "자주 묻는 질문",
-        "desc": "Answers to common questions about pricing, tools, accounts, and more.",
+        "desc": "가격, 도구, 계정 등에 대한 일반적인 질문에 대한 답변.",
         "href": "/help/faq"
       },
       {
         "title": "문의하기",
-        "desc": "Reach our support team for help, feedback, or partnership inquiries.",
+        "desc": "도움말, 피드백 또는 파트너십 문의를 위해 지원팀에 연락하세요.",
         "href": "/help/contact"
       },
       {
         "title": "변경 로그",
-        "desc": "Product updates, new features, and platform improvements.",
+        "desc": "제품 업데이트, 새로운 기능 및 플랫폼 개선.",
         "href": "/help/changelog"
       }
     ]
@@ -2353,24 +2355,24 @@
   },
   "limit": {
     "title": "속도 제한 도달",
-    "desc": "This request didn't go through. You've used all your free appraisals for today. Sign up to increase your rate limit and appraise more domains.",
-    "currentLimits": "Your current limits",
+    "desc": "이 요청이 통과되지 않았습니다. 오늘 무료 평가를 모두 사용했습니다. 속도 제한을 높이고 더 많은 도메인을 평가하려면 가입하세요.",
+    "currentLimits": "현재 제한",
     "limits": [
       {
-        "tier": "Not signed up",
-        "value": "3/day"
+        "tier": "미가입",
+        "value": "하루 3번"
       },
       {
-        "tier": "Signed up (free)",
-        "value": "12/day"
+        "tier": "가입 (무료)",
+        "value": "하루 12번"
       },
       {
-        "tier": "Premium Startup ($79/mo)",
-        "value": "30/day"
+        "tier": "Premium 스타트업 ($79/월)",
+        "value": "하루 30번"
       },
       {
-        "tier": "Premium Enterprise ($129/mo)",
-        "value": "Unlimited"
+        "tier": "Premium 엔터프라이즈 ($129/월)",
+        "value": "무제한"
       }
     ],
     "signup": "무료 가입",
@@ -2383,14 +2385,14 @@
     "available": "등록 가능",
     "taken": "등록됨",
     "rating": "등급",
-    "buildWith": "What you could build with this",
+    "buildWith": "이것으로 구축할 수 있는 것",
     "appraise": "이 이름 평가",
-    "whoisTitle": "WHOIS Details",
+    "whoisTitle": "WHOIS 세부 정보",
     "whoisLabels": [
-      "Registrar",
-      "Expires",
-      "Registrant",
-      "Nameservers"
+      "등록 기관",
+      "만료일",
+      "등록자",
+      "네임서버"
     ],
     "fullAppraisal": "전체 평가",
     "copyDomain": "도메인 복사",
@@ -2415,29 +2417,29 @@
     "title": "도메인 스캐너",
     "desc": "원하는 조건에 맞는 사용 가능한 도메인을 찾으세요",
     "config": "스캔 구성",
-    "wordList": "Word List",
-    "customWords": "Custom words",
-    "customPlaceholder": "Enter one word per line...",
-    "tlds": "TLDs",
+    "wordList": "단어 목록",
+    "customWords": "사용자 정의 단어",
+    "customPlaceholder": "한 줄에 하나씩 단어 입력...",
+    "tlds": "TLD",
     "startScan": "스캔 시작",
     "scanning": "스캔 중...",
     "progress": "스캔 진행 상황",
-    "status": "Status",
-    "progressLabel": "Progress",
-    "available": "Available",
-    "results": "Results ({count} domains)",
-    "availableOnly": "Available only",
-    "sortByDomain": "Sort by domain",
-    "sortByPrice": "Sort by price",
-    "exportCsv": "Export CSV",
-    "domain": "Domain",
-    "statusHeader": "Status",
-    "price": "Price",
-    "actions": "Actions",
-    "availableBadge": "Available",
-    "errorBadge": "Error",
-    "takenBadge": "Taken",
-    "appraise": "Appraise",
+    "status": "상태",
+    "progressLabel": "진행",
+    "available": "사용 가능",
+    "results": "결과 ({count}개 도메인)",
+    "availableOnly": "사용 가능한 것만",
+    "sortByDomain": "도메인별 정렬",
+    "sortByPrice": "가격별 정렬",
+    "exportCsv": "CSV 내보내기",
+    "domain": "도메인",
+    "statusHeader": "상태",
+    "price": "가격",
+    "actions": "작업",
+    "availableBadge": "사용 가능",
+    "errorBadge": "오류",
+    "takenBadge": "등록됨",
+    "appraise": "평가",
     "noResults": "스캔 결과 없음",
     "noResultsDesc": "스캔 설정을 구성하고 \"스캔 시작\"을 클릭하여 사용 가능한 도메인을 찾으세요.",
     "recentScans": "최근 스캔",
@@ -2446,14 +2448,14 @@
   "appraisePage": {
     "badge": "16차원 엔진",
     "title": "도메인 평가",
-    "desc": "Comprehensive valuation across RDAP data, TLD scoring, brandability, commercial intent, and 12 more dimensions.",
+    "desc": "RDAP 데이터, TLD 스코어링, 브랜더빌리티, 상업적 의도 및 나머지 12개 차원에 걸친 포괄적인 밸류에이션.",
     "placeholder": "도메인을 입력하세요 (예: techstart.com)",
     "analyzing": "분석 중...",
     "button": "평가",
     "devMode": "개발 모드 — 무제한",
-    "appraisalsLeft": "{count} appraisal{plural} left today",
-    "devBypass": "Dev bypass",
-    "activate": "Activate",
+    "appraisalsLeft": "오늘 {count}번의 평가 남음",
+    "devBypass": "개발 바이패스",
+    "activate": "활성화",
     "loading": "로딩 중...",
     "error": "오류",
     "estimatedValue": "추정 가치",
@@ -2463,17 +2465,17 @@
     "aboveAvg": "평균 이상",
     "belowAvg": "평균 이하",
     "avg": "평균",
-    "unlockPrompt": "Unlock all 13 remaining dimensions with a premium plan",
+    "unlockPrompt": "Premium 플랜으로 나머지 13개 차원을 잠금 해제하세요",
     "viewPricing": "가격 보기",
-    "whoisHint": "Want WHOIS + DNS data?",
-    "domainLookup": "Try Domain Lookup — no account required",
-    "domainLookupCta": "Domain Lookup",
-    "deeperHint": "Want deeper analysis?",
-    "extendedInsights": "Extended Insights — backlinks, trademarks, comparables",
+    "whoisHint": "WHOIS + DNS 데이터가 필요하신가요?",
+    "domainLookup": "도메인 조회 시도 — 계정 불필요",
+    "domainLookupCta": "도메인 조회",
+    "deeperHint": "더 깊은 분석이 필요하신가요?",
+    "extendedInsights": "확장 인사이트 — 백링크, 상표, 비교 데이터",
     "extendedInsightsCta": "확장 인사이트",
     "recentAppraisals": "최근 평가",
     "limitTitle": "일일 한도 도달",
-    "limitDesc": "You've used all {limit} appraisals today. Create an account to get {signed} per day.",
+    "limitDesc": "오늘 {limit}번의 평가를 모두 사용했습니다. 하루에 {signed}번을 받으려면 계정을 만드세요.",
     "createAccount": "계정 만들기",
     "goBack": "돌아가기",
     "redirecting": "리디렉션 중...",
@@ -2498,104 +2500,104 @@
     "badge": "문서",
     "title1": "모든 도구,",
     "title2": "문서화됨.",
-    "desc": "The Ceche Help Center covers the SEO Scanner, Extended Insights, Bulk Analyzer, Trademark Monitor, Domain Database, and API. Over 320 articles organized by tool, topic, and difficulty level.",
+    "desc": "Ceche 도움말 센터는 SEO 스캐너, 확장 인사이트, 대량 분석기, 상표 모니터, 도메인 데이터베이스 및 API를 다룹니다. 도구, 주제 및 난이도별로 구성된 320개 이상의 기사.",
     "tools": [
       {
-        "name": "Domain Lookup",
-        "desc": "Free tool. WHOIS data, DNS records, and registrar information for any domain.",
-        "pricing": "Free",
+        "name": "도메인 조회",
+        "desc": "무료 도구. 모든 도메인의 WHOIS 데이터, DNS 레코드 및 등록 기관 정보.",
+        "pricing": "무료",
         "features": [
-          "WHOIS lookup",
-          "DNS record export (A, AAAA, MX, TXT, CNAME)",
-          "Registrar detection",
-          "Expiration tracking"
+          "WHOIS 조회",
+          "DNS 레코드 내보내기 (A, AAAA, MX, TXT, CNAME)",
+          "등록 기관 감지",
+          "만료 추적"
         ]
       },
       {
-        "name": "16-Dimension Appraisal",
-        "desc": "Deep domain valuation using 16 analysis dimensions — RDAP, TLD scoring, brandability, commercial intent, and more.",
-        "pricing": "Free (3 unsigned / 12 signed per day)",
+        "name": "16차원 평가",
+        "desc": "16개 분석 차원을 사용한 심층 도메인 밸류에이션 — RDAP, TLD 스코어링, 브랜더빌리티, 상업적 의도 등.",
+        "pricing": "무료 (하루 3번 미서명 / 12번 서명)",
         "features": [
-          "16 scoring dimensions",
-          "Market-based pricing",
-          "Comparable analysis",
-          "Confidence intervals"
+          "16개 스코어링 차원",
+          "시장 기반 가격",
+          "비교 분석",
+          "신뢰 구간"
         ]
       },
       {
-        "name": "SEO Scanner",
-        "desc": "Evaluate search visibility, backlink quality, organic traffic, and SEO authority in 3-5 seconds.",
-        "pricing": "Premium",
+        "name": "SEO 스캐너",
+        "desc": "3-5초 만에 검색 가시성, 백링크 품질, 유기적 트래픽 및 SEO 권위를 평가합니다.",
+        "pricing": "프리미엄",
         "features": [
-          "Domain Rating 0-100",
-          "Organic traffic estimates",
-          "Keyword rankings",
-          "SEO Score composite"
+          "도메인 등급 0-100",
+          "유기적 트래픽 추정",
+          "키워드 순위",
+          "SEO 점수 종합"
         ]
       },
       {
-        "name": "Extended Insights",
-        "desc": "Deep due diligence — 16-dimension valuation, trademark screening, comparable sales, and buyer intent scoring.",
-        "pricing": "$5-$50 per report",
+        "name": "확장 인사이트",
+        "desc": "심층 실사 — 16차원 밸류에이션, 상표 스크리닝, 유사 판매 및 구매 의도 스코어링.",
+        "pricing": "$5-$50/보고서",
         "features": [
-          "6 report sections",
-          "Trademark conflict check",
-          "Buyer Intent Score 0-100",
-          "PDF/JSON export"
+          "6개 보고서 섹션",
+          "상표 충돌 확인",
+          "구매 의도 점수 0-100",
+          "PDF/JSON 내보내기"
         ]
       },
       {
-        "name": "Bulk Domain Audit",
-        "desc": "Upload a CSV of up to 5,000 domains. Get valuations, SEO scores, priority rankings, and recommended actions.",
-        "pricing": "Premium ($79+/mo)",
+        "name": "대량 도메인 감사",
+        "desc": "최대 5,000개 도메인의 CSV를 업로드하세요. 밸류에이션, SEO 점수, 우선순위 순위 및 권장 조치를 받으세요.",
+        "pricing": "프리미엄 ($79+/월)",
         "features": [
-          "5,000 domains/batch",
-          "Priority Score 1-100",
-          "Custom scoring profiles",
-          "CSV export"
+          "배치당 5,000개 도메인",
+          "우선순위 점수 1-100",
+          "사용자 정의 스코어링 프로필",
+          "CSV 내보내기"
         ]
       },
       {
-        "name": "Trademark Monitor",
-        "desc": "Automated USPTO and WIPO screening. Get alerts before a trademark conflict becomes a legal problem.",
-        "pricing": "Premium ($79+/mo)",
+        "name": "상표 모니터",
+        "desc": "자동화된 USPTO 및 WIPO 스크리닝. 상표 충돌이 법적 문제가 되기 전에 알림을 받으세요.",
+        "pricing": "프리미엄 ($79+/월)",
         "features": [
-          "Daily USPTO/WIPO scanning",
-          "4 severity levels",
-          "Email + SMS alerts",
-          "5,000 domains per list"
+          "매일 USPTO/WIPO 스캔",
+          "4개 심각도 수준",
+          "이메일 + SMS 알림",
+          "목록당 5,000개 도메인"
         ]
       },
       {
-        "name": "Domain Database",
-        "desc": "Registration statistics, pricing history, and renewal costs for 2,847 TLDs. Updated daily from ICANN zone files.",
-        "pricing": "Free (current pricing)",
+        "name": "도메인 데이터베이스",
+        "desc": "2,847개 TLD의 등록 통계, 가격 역사 및 갱신 비용. ICANN 영역 파일에서 매일 업데이트.",
+        "pricing": "무료 (현재 가격)",
         "features": [
-          "2,847 TLDs tracked",
-          "24-month pricing history",
-          "420+ registrar feeds",
-          "Search by TLD, keyword, or price"
+          "2,847개 TLD 추적",
+          "24개월 가격 역사",
+          "420개 이상의 등록 기관 피드",
+          "TLD, 키워드 또는 가격으로 검색"
         ]
       }
     ],
     "tiersTitle": "구독 등급",
     "tiers": [
       {
-        "tier": "Free",
+        "tier": "무료",
         "price": "$0",
-        "features": "12 appraisals/day, basic SEO Scanner, Help Center access",
+        "features": "하루 12번의 평가, 기본 SEO 스캐너, 도움말 센터 접근",
         "color": "#888888"
       },
       {
-        "tier": "Startup",
+        "tier": "스타트업",
         "price": "$79/mo",
-        "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor",
+        "features": "하루 30번의 평가, 전체 스캐너, 확장 인사이트, 대량 분석기, 상표 모니터",
         "color": "#F4A261"
       },
       {
-        "tier": "Enterprise",
+        "tier": "엔터프라이즈",
         "price": "$129/mo",
-        "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support",
+        "features": "무제한 평가, 모든 스타트업 기능, API (매일 10K 호출), 전용 지원",
         "color": "#9E2A2B"
       }
     ],
@@ -2610,26 +2612,26 @@
     "badge": "자주 묻는 질문",
     "title1": "자주",
     "title2": "묻는 질문.",
-    "desc": "Answers to the most common questions about Ceche — pricing, tools, API, marketplace, and account management.",
+    "desc": "Ceche에 대한 가장 일반적인 질문에 대한 답변 — 가격, 도구, API, 마켓플레이스 및 계정 관리.",
     "sections": [
       {
         "title": "시작하기",
         "items": [
           {
-            "q": "What is Ceche?",
-            "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace."
+            "q": "Ceche란 무엇인가요?",
+            "a": "Ceche는 프리미엄 이름이 매매되는 도메인 마켓플레이스입니다. 평가 엔진은 16차원 스코어링으로 가치를 증명합니다. 검색 및 스캐너 도구는 이름을 찾는 데 도움이 됩니다. 모든 것이 마켓플레이스와 연결됩니다."
           },
           {
-            "q": "How does the appraisal engine work?",
-            "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights."
+            "q": "평가 엔진은 어떻게 작동하나요?",
+            "a": "평가 엔진은 Ceche의 독점 16차원 프레임워크를 사용하여 네 가지 카테고리에서 도메인을 평가합니다: 어휘 분석 (30%), 기술 권위 (25%), 시장 역학 (25%) 및 브랜더빌리티 (20%). 각 차원은 독립적으로 점수화되고 통계적으로 도출된 가중치를 사용하여 결합됩니다."
           },
           {
-            "q": "What TLDs does Ceche support?",
-            "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions."
+            "q": "Ceche는 어떤 TLD를 지원하나요?",
+            "a": "Ceche는 .com, .net, .io 및 .co 도메인을 지원합니다. 도메인 데이터베이스는 2,847개 TLD의 가격과 등록 데이터를 추적하지만, 평가 및 마켓플레이스 기능은 현재 이 네 가지 확장자로 제한됩니다."
           },
           {
-            "q": "How do I create an account?",
-            "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required."
+            "q": "계정은 어떻게 만드나요?",
+            "a": "탐색 창의 '무료 가입'을 클릭하세요. 무료 계정에는 하루 12번의 평가, 기본 SEO 스캐너 접근 및 전체 도움말 센터 접근이 포함됩니다. 신용 카드 불필요."
           }
         ]
       },
@@ -2637,20 +2639,20 @@
         "title": "가격 및 결제",
         "items": [
           {
-            "q": "What are the subscription tiers?",
-            "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting."
+            "q": "구독 등급은 무엇인가요?",
+            "a": "무료: 하루 12번의 평가, 기본 SEO 스캐너, 도움말 센터. 스타트업 ($79/월): 하루 30번의 평가, 전체 SEO 스캐너, 확장 인사이트 ($5-$50/보고서), 대량 분석기, 상표 모니터, 도메인 데이터베이스, 우선 지원. 엔터프라이즈 ($129/월): 무제한 평가, 모든 스타트업 기능, API 접근 (매일 10,000번의 호출), 전용 계정 관리자, 비공개 Slack 채널, 사용자 정의 보고."
           },
           {
-            "q": "How does Try Your Luck pricing work?",
-            "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring."
+            "q": "행운 시도 가격은 어떻게 작동하나요?",
+            "a": "행운 시도는 균일 가격으로 미스터리 도메인 인수를 제공합니다: .com ($79), .net ($39), .io ($29), .co ($9) 또는 모든 TLD ($19 균일). 각 인수에는 16차원 스코어링이 포함된 Ceche 밸류에이션 보고서가 포함됩니다."
           },
           {
-            "q": "What are the marketplace fees?",
-            "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000."
+            "q": "마켓플레이스 수수료는 얼마인가요?",
+            "a": "표준 등록: 도메인당 $5. 우선 등록: 도메인당 $10 (72시간 가시성 향상 포함). 수수료: 슬라이딩 스케일에 따라 최종 판매 가격의 8-15% — $500 미만 거래 15%, $500-$5,000 12%, $5,000-$50,000 10%, $50,000 이상 8%."
           },
           {
-            "q": "Do you offer refunds?",
-            "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable."
+            "q": "환불을 제공하나요?",
+            "a": "아니요. 디지털 상품(공개, 구독, 마켓플레이스, 행운 시도)에 대한 모든 수수료는 환불 불가능합니다."
           }
         ]
       },
@@ -2658,16 +2660,16 @@
         "title": "도구",
         "items": [
           {
-            "q": "What's the difference between SEO Scanner and Extended Insights?",
-            "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring."
+            "q": "SEO 스캐너와 확장 인사이트의 차이점은 무엇인가요?",
+            "a": "SEO 스캐너는 검색 가시성, 백링크 프로필, 유기적 트래픽 역사 및 키워드 관련성을 평가합니다 — 3-5초 만에 결과를 반환합니다. 확장 인사이트는 상표 스크리닝, 유사 판매 및 구매 의도 스코어링을 포함한 더 깊은 실사를 제공합니다."
           },
           {
-            "q": "How does the Bulk Analyzer work?",
-            "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds."
+            "q": "대량 분석기는 어떻게 작동하나요?",
+            "a": "하나의 열 (헤더: 'domain')과 행당 하나의 도메인이 포함된 CSV를 업로드하세요. 출력에는 도메인 이름, Ceche 밸류에이션, 16차원 점수, 우선순위 점수 (1-100), 권장 조치 및 추정 판매 시간이 포함됩니다. 5,000개 도메인의 처리 시간은 약 2분 28초입니다."
           },
           {
-            "q": "How does the Trademark Monitor work?",
-            "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)."
+            "q": "상표 모니터는 어떻게 작동하나요?",
+            "a": "대시보드에서 모니터링 목록에 도메인을 추가하세요. 이 도구는 매일 새로운 USPTO 및 WIPO 제출물을 스크리닝합니다. 24시간 이내에 이메일 알림을 받습니다. 심각도 수준: 심각 (관련 클래스의 동일 마크), 높음 (다른 클래스의 유사 마크), 중간 (유사 마크, 다른 상품), 낮음 (부분 일치)."
           }
         ]
       },
@@ -2675,16 +2677,16 @@
         "title": "API 및 통합",
         "items": [
           {
-            "q": "How do I authenticate API requests?",
-            "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys."
+            "q": "API 요청은 어떻게 인증하나요?",
+            "a": "Authorization 헤더에 Bearer 토큰으로 API 키를 포함하세요: Authorization: Bearer YOUR_API_KEY. 계정 설정 > API 키에서 키를 생성하세요."
           },
           {
-            "q": "What are the API rate limits?",
-            "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC."
+            "q": "API 속도 제한은 얼마인가요?",
+            "a": "무료: 매일 100번의 호출. 스타트업 ($79/월): 매일 500번의 호출. 엔터프라이즈 ($129/월): 매일 10,000번의 호출. 속도 제한은 매일 00:00 UTC에 리셋됩니다."
           },
           {
-            "q": "What SDKs are available?",
-            "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff."
+            "q": "어떤 SDK를 사용할 수 있나요?",
+            "a": "Python, JavaScript/Node.js, Go 및 Ruby용 공식 SDK를 사용할 수 있습니다. Webhook 구성은 지수 백오프 재시도 로직을 사용하여 자동 알림에 사용할 수 있습니다."
           }
         ]
       },
@@ -2692,12 +2694,12 @@
         "title": "계정 및 지원",
         "items": [
           {
-            "q": "How do I contact support?",
-            "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel."
+            "q": "지원팀에 어떻게 연락하나요?",
+            "a": "Premium 구독자는 4영업시간 이내에 응답을 받습니다. 무료 계정 사용자는 24영업시간 이내. 엔터프라이즈 구독자는 비공개 Slack 채널을 통해 지원팀에 연락할 수도 있습니다."
           },
           {
-            "q": "Can I cancel my subscription?",
-            "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable."
+            "q": "구독을 취소할 수 있나요?",
+            "a": "네. 계정 설정 > 청구에서 언제든지 취소할 수 있습니다. 현재 청구 기간이 끝날 때까지 Premium 접근 권한을 유지합니다. 구독료는 환불 불가능합니다."
           }
         ]
       }
@@ -2710,25 +2712,25 @@
     "badge": "API 문서",
     "title1": "Ceche와 함께",
     "title2": "빌드하기.",
-    "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
+    "desc": "도메인 평가, 브랜더빌리티 스코어링, 상표 모니터링 및 마켓플레이스 목록 관리를 위한 통합 REST API. 모든 요청에는 Bearer 토큰이 필요합니다.",
     "baseUrl": "기본 URL",
     "auth": "인증",
     "endpoints": "엔드포인트",
     "rateLimits": "속도 제한",
     "limits": [
       {
-        "tier": "Free",
-        "limit": "100 calls/day",
+        "tier": "무료",
+        "limit": "매일 100번의 호출",
         "color": "#888888"
       },
       {
-        "tier": "Startup",
-        "limit": "500 calls/day",
+        "tier": "스타트업",
+        "limit": "매일 500번의 호출",
         "color": "#F4A261"
       },
       {
-        "tier": "Enterprise",
-        "limit": "10,000 calls/day",
+        "tier": "엔터프라이즈",
+        "limit": "매일 10,000번의 호출",
         "color": "#9E2A2B"
       }
     ],
@@ -2743,7 +2745,7 @@
     "badge": "문의하기",
     "title1": "연락",
     "title2": "주세요.",
-    "desc": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours.",
+    "desc": "Premium 구독자는 4영업시간 이내에 응답을 받습니다. 무료 계정 사용자는 24영업시간 이내.",
     "form": {
       "name": "이름",
       "namePlaceholder": "귀하의 이름",
@@ -2751,50 +2753,50 @@
       "emailPlaceholder": "you@company.com",
       "subject": "제목",
       "subjects": [
-        "General inquiry",
-        "Technical support",
-        "Billing question",
-        "Partnership",
-        "Press / Media"
+        "일반 문의",
+        "기술 지원",
+        "청구 문제",
+        "파트너십",
+        "언론 / 미디어"
       ],
       "message": "메시지",
-      "messagePlaceholder": "How can we help?",
+      "messagePlaceholder": "어떻게 도와드릴까요?",
       "send": "메시지 보내기"
     },
     "channels": {
       "title": "기타 연락 채널",
       "email": {
-        "title": "Email",
+        "title": "이메일",
         "value": "support@ceche.net"
       },
       "slack": {
-        "title": "Enterprise Slack",
-        "value": "Private channel for Enterprise subscribers"
+        "title": "엔터프라이즈 Slack",
+        "value": "엔터프라이즈 구독자를 위한 비공개 채널"
       }
     },
     "responseTimes": {
       "title": "응답 시간",
       "times": [
         {
-          "tier": "Enterprise",
-          "time": "4 hours",
+          "tier": "엔터프라이즈",
+          "time": "4시간",
           "color": "#9E2A2B"
         },
         {
-          "tier": "Startup",
-          "time": "4 hours",
+          "tier": "스타트업",
+          "time": "4시간",
           "color": "#F4A261"
         },
         {
-          "tier": "Free",
-          "time": "24 hours",
+          "tier": "무료",
+          "time": "24시간",
           "color": "#888888"
         }
       ]
     },
     "businessHours": {
       "title": "영업 시간",
-      "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers."
+      "desc": "월-금, 오전 9:00 - 오후 6:00 ET. Premium 엔터프라이즈: 24/7 Slack 지원. 엔터프라이즈 구독자를 위한 주요 문제는 연중무휴 모니터링됩니다."
     }
   },
   "helpChangelog": {
@@ -2809,24 +2811,24 @@
     }
   },
   "premiumModal": {
-    "title": "Premium Feature",
-    "description": "{toolName} requires a premium account. Sign up to unlock this feature and many more.",
-    "redirecting": "Redirecting to signup in {count} seconds...",
-    "cta": "Create Free Account",
-    "back": "Go back"
+    "title": "Premium 기능",
+    "description": "{toolName}에는 Premium 계정이 필요합니다. 이 기능과 더 많은 것을 잠금 해제하려면 가입하세요.",
+    "redirecting": "가입 페이지로 리디렉션 중, {count}초 후...",
+    "cta": "무료 계정 만들기",
+    "back": "돌아가기"
   },
   "appHeader": {
-    "home": "Home",
-    "appraise": "Appraise",
-    "scanner": "Scanner",
-    "marketplace": "Marketplace",
-    "apiKeys": "API Keys",
-    "logout": "Logout"
+    "home": "홈",
+    "appraise": "평가",
+    "scanner": "스캐너",
+    "marketplace": "마켓플레이스",
+    "apiKeys": "API 키",
+    "logout": "로그아웃"
   },
   "toolTemplate": {
-    "comingSoon": "Coming Soon",
-    "waitlistDesc": "This feature is under active development. Join the waitlist to get early access.",
-    "emailPlaceholder": "Enter your email",
-    "joinWaitlist": "Join Waitlist"
+    "comingSoon": "곧 출시",
+    "waitlistDesc": "이 기능은 적극적으로 개발 중입니다. 우선 접근을 위해 대기 목록에 가입하세요.",
+    "emailPlaceholder": "이메일을 입력하세요",
+    "joinWaitlist": "대기 목록에 가입"
   }
 }
