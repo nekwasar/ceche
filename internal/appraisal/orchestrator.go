@@ -30,6 +30,7 @@ func NewOrchestrator() *Orchestrator {
 	o.Register(&M7Keyword{})
 	o.Register(&M8CPC{})
 	o.Register(&M8SpamCheck{})
+	o.Register(&M9Search{})
 	o.Register(&SearchTool{})
 	o.Register(&M10CrossTLD{})
 	o.Register(&M11Trademark{})
