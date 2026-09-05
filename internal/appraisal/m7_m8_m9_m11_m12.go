@@ -4,28 +4,6 @@ import (
 	"fmt"
 )
 
-// M9Search measures web presence via search results.
-type M9Search struct{}
-
-func (m *M9Search) Name() string { return "m9_search" }
-
-func (m *M9Search) Execute(domain string, ctx *ToolContext) ToolResult {
-	// Search API integration will be added in Phase 2
-	// For now, return placeholder
-	return ToolResult{
-		Tool:       m.Name(),
-		Domain:     domain,
-		Status:     "success",
-		Multiplier: float64Ptr(1.0),
-		Confidence: 0.3,
-		Findings: map[string]interface{}{
-			"result_count": nil,
-			"note":         "Search API integration pending (Phase 2)",
-		},
-		Explanation: "Search results placeholder — API integration pending for competitor identification (common law trademark)",
-	}
-}
-
 // M11Trademark checks for trademark conflicts.
 type M11Trademark struct{}
 
