@@ -6,54 +6,25 @@ import (
 )
 
 // M15Pricing converts module multipliers into a dollar estimate.
-// This is the core money logic with 7 weight profiles based on TLD tier.
+// Core pricing logic adapted from the ceche CLI for .com domains.
+// Non-.com TLDs use a simplified default profile.
 type M15Pricing struct{}
 
 func (m *M15Pricing) Name() string { return "m15_pricing" }
 
-// Weight profiles for different TLD tiers
+// Weight profiles — .com profile from ceche CLI, default for all others
 var weightProfiles = map[string]map[string]float64{
-	"tier_10": { // .com
+	"tier_10": { // .com — original ceche CLI algorithm
 		"m1_rdap": 0.12, "m3_length": 0.08, "m5_pronounce": 0.04,
 		"m7_keyword": 0.08, "m8_cpc": 0.08, "m9_search": 0.04,
 		"m10_cross": 0.0, "m11_trademark": 0.04, "m12_authority": 0.05,
 		"m14_social": 0.03, "m16_brandability": 0.08,
 	},
-	"tier_085": { // .io, .ai
-		"m1_rdap": 0.08, "m3_length": 0.07, "m5_pronounce": 0.08,
-		"m7_keyword": 0.20, "m8_cpc": 0.16, "m9_search": 0.03,
-		"m10_cross": 0.04, "m11_trademark": 0.03, "m12_authority": 0.02,
-		"m14_social": 0.04, "m16_brandability": 0.12,
-	},
-	"tier_08": { // .co, .de, .org
-		"m1_rdap": 0.08, "m3_length": 0.07, "m5_pronounce": 0.08,
-		"m7_keyword": 0.20, "m8_cpc": 0.16, "m9_search": 0.03,
-		"m10_cross": 0.04, "m11_trademark": 0.03, "m12_authority": 0.02,
-		"m14_social": 0.04, "m16_brandability": 0.12,
-	},
-	"tier_06": { // .eu, .ca, .tv
-		"m1_rdap": 0.04, "m3_length": 0.05, "m5_pronounce": 0.12,
-		"m7_keyword": 0.24, "m8_cpc": 0.20, "m9_search": 0.03,
-		"m10_cross": 0.08, "m11_trademark": 0.0, "m12_authority": 0.0,
-		"m14_social": 0.04, "m16_brandability": 0.12,
-	},
-	"tier_04": { // .cloud, .blog
-		"m1_rdap": 0.04, "m3_length": 0.05, "m5_pronounce": 0.08,
-		"m7_keyword": 0.20, "m8_cpc": 0.24, "m9_search": 0.02,
-		"m10_cross": 0.12, "m11_trademark": 0.02, "m12_authority": 0.0,
+	"default": { // non-.com — placeholder, will be built later
+		"m1_rdap": 0.08, "m3_length": 0.06, "m5_pronounce": 0.06,
+		"m7_keyword": 0.15, "m8_cpc": 0.15, "m9_search": 0.03,
+		"m10_cross": 0.05, "m11_trademark": 0.03, "m12_authority": 0.03,
 		"m14_social": 0.03, "m16_brandability": 0.10,
-	},
-	"tier_01": { // .icu, .biz
-		"m1_rdap": 0.03, "m3_length": 0.04, "m5_pronounce": 0.08,
-		"m7_keyword": 0.20, "m8_cpc": 0.28, "m9_search": 0.02,
-		"m10_cross": 0.16, "m11_trademark": 0.0, "m12_authority": 0.0,
-		"m14_social": 0.03, "m16_brandability": 0.06,
-	},
-	"tier_00": { // default
-		"m3_length": 0.04, "m5_pronounce": 0.04,
-		"m7_keyword": 0.24, "m8_cpc": 0.32, "m9_search": 0.02,
-		"m10_cross": 0.16, "m11_trademark": 0.0, "m12_authority": 0.0,
-		"m14_social": 0.03, "m16_brandability": 0.08,
 	},
 }
 
@@ -118,18 +89,25 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 		"base_value":    value,
 	}
 
-	profile := ""
+	// Select weight profile based on M2's weight_profile from M2TLD
+	profile := "default"
 	if ctx.Results != nil {
 		if m2, ok := ctx.Results["m2_tld_table"]; ok {
 			if p, ok := m2.Findings["weight_profile"].(string); ok {
-				profile = p
+				// Map M2's profile names to our weight profiles
+				switch p {
+				case "Premium":
+					profile = "tier_10" // .com only for now
+				default:
+					profile = "default"
+				}
 			}
 		}
 	}
 
 	weights := weightProfiles[profile]
 	if weights == nil {
-		weights = weightProfiles["tier_00"]
+		weights = weightProfiles["default"]
 	}
 
 	// Normalize weights for active modules
@@ -160,8 +138,8 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 
 					value *= contribution
 					breakdown[modName] = map[string]interface{}{
-						"multiplier":  mult,
-						"weight":      weight,
+						"multiplier":   mult,
+						"weight":       weight,
 						"contribution": math.Round(contribution*1000) / 1000,
 					}
 				}
