@@ -29,7 +29,7 @@ func NewOrchestrator() *Orchestrator {
 	o.Register(&M7Keyword{})
 	o.Register(&M8CPC{})
 	o.Register(&M8SpamCheck{})
-	o.Register(&M9Search{})
+	o.Register(&SearchTool{})
 	o.Register(&M10CrossTLD{})
 	o.Register(&M11DNSHistory{})
 	o.Register(&M12Authority{})
@@ -168,10 +168,10 @@ func (o *Orchestrator) runPhase3(domain string, ctx *ToolContext) {
 	o.results["m9_search"] = m9.Execute(domain, ctx)
 }
 
-// Phase 4: Parallel (M8_spam, M9, M10, M11_dns, M12)
+// Phase 4: Parallel (M8_spam, Search, M10, M11_dns, M12)
 func (o *Orchestrator) runPhase4(domain string, ctx *ToolContext) {
 	m8spam := o.tools["m8_spam"]
-	m9 := o.tools["m9_search"]
+	search := o.tools["search_domain"]
 	m10 := o.tools["m10_cross_tld"]
 	m11dns := o.tools["m11_dns_history"]
 	m12 := o.tools["m12_authority"]
@@ -182,9 +182,9 @@ func (o *Orchestrator) runPhase4(domain string, ctx *ToolContext) {
 	// Run DNS history check (real API integration)
 	o.results["m11_dns_history"] = m11dns.Execute(domain, ctx)
 
-	if _, ok := o.results["m9_search"]; !ok {
-		o.results["m9_search"] = m9.Execute(domain, ctx)
-	}
+	// Run search tool (for competitor identification)
+	o.results["search_domain"] = search.Execute(domain, ctx)
+	
 	o.results["m10_cross_tld"] = m10.Execute(domain, ctx)
 	o.results["m12_authority"] = m12.Execute(domain, ctx)
 }
