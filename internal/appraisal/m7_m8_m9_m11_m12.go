@@ -4,29 +4,6 @@ import (
 	"fmt"
 )
 
-// M11Trademark checks for trademark conflicts.
-type M11Trademark struct{}
-
-func (m *M11Trademark) Name() string { return "m11_trademark" }
-
-func (m *M11Trademark) Execute(domain string, ctx *ToolContext) ToolResult {
-	// Trademark API integration will be added in Phase 2
-	// For now, return placeholder
-	return ToolResult{
-		Tool:       m.Name(),
-		Domain:     domain,
-		Status:     "success",
-		Multiplier: float64Ptr(1.0),
-		Confidence: 0.5,
-		Findings: map[string]interface{}{
-			"severity": "none",
-			"marks":    []string{},
-			"note":     "Trademark API integration pending (Phase 2)",
-		},
-		Explanation: "Trademark check placeholder — API integration pending for real-time USPTO/WIPO screening",
-	}
-}
-
 // M7Keyword grades keyword popularity using the curated wordlist.
 type M7Keyword struct{}
 
