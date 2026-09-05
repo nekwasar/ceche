@@ -169,6 +169,18 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 		}
 	}
 
+	// Apply DNS history multiplier (if available)
+	if ctx.Results != nil {
+		if m11dns, ok := ctx.Results["m11_dns_history"]; ok && m11dns.Multiplier != nil {
+			dnsMult := *m11dns.Multiplier
+			value *= dnsMult
+			breakdown["m11_dns_history"] = map[string]interface{}{
+				"multiplier": dnsMult,
+				"effect":     "adjustment",
+			}
+		}
+	}
+
 	// Stage 3: Range calculation
 	completeness := 0.9
 	if ctx.Results != nil {
