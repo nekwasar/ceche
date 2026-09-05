@@ -87,11 +87,17 @@ func (m *M1RDAP) Execute(domain string, ctx *ToolContext) ToolResult {
 	for _, event := range rdap.Events {
 		switch event.EventAction {
 		case "registration":
-			creationDate = event.EventDate[:10]
+			if len(event.EventDate) >= 10 {
+				creationDate = event.EventDate[:10]
+			}
 		case "expiration":
-			expiryDate = event.EventDate[:10]
+			if len(event.EventDate) >= 10 {
+				expiryDate = event.EventDate[:10]
+			}
 		case "last changed":
-			lastChanged = event.EventDate[:10]
+			if len(event.EventDate) >= 10 {
+				lastChanged = event.EventDate[:10]
+			}
 		}
 	}
 

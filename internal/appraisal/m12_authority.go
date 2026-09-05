@@ -90,13 +90,17 @@ func (m *M12Authority) Execute(domain string, ctx *ToolContext) ToolResult {
 		findings["risk_score"] = reputation.RiskScore
 		findings["is_malicious"] = reputation.IsMalicious
 		findings["categories"] = reputation.Categories
-		findings["sources"] = append(findings["sources"].([]string), "domain_reputation")
+		if src, ok := findings["sources"].([]string); ok {
+			findings["sources"] = append(src, "domain_reputation")
+		}
 	}
 
 	if dnsHistory != nil {
 		findings["dns_changes"] = dnsHistory.Changes
 		findings["dns_years"] = dnsHistory.Years
-		findings["sources"] = append(findings["sources"].([]string), "dns_history")
+		if src, ok := findings["sources"].([]string); ok {
+			findings["sources"] = append(src, "dns_history")
+		}
 	}
 
 	return ToolResult{

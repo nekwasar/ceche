@@ -156,10 +156,10 @@ func analyzeHistory(resp whoisHistoryResponse) dnsHistoryAnalysis {
 
 	for _, r := range resp.Records {
 		created := r.CreatedDateISO8601
-		if created != "" && (firstSeen == "" || created < firstSeen) {
+		if created != "" && len(created) >= 10 && (firstSeen == "" || created[:10] < firstSeen) {
 			firstSeen = created[:10]
 		}
-		if created != "" && (lastSeen == "" || created > lastSeen) {
+		if created != "" && len(created) >= 10 && (lastSeen == "" || created[:10] > lastSeen) {
 			lastSeen = created[:10]
 		}
 
@@ -265,11 +265,4 @@ func calculateDNSHistoryMultiplier(analysis dnsHistoryAnalysis) float64 {
 	}
 
 	return mult
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }

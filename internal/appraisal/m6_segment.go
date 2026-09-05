@@ -217,11 +217,6 @@ func generateCandidates(sld string) [][]string {
 	return result
 }
 
-type scoredCandidate struct {
-	words []string
-	score float64
-}
-
 func dictSegment(sld string) [][]string {
 	var results [][]string
 	minWordLen := 2
@@ -261,7 +256,9 @@ func hybridSegment(sld string) [][]string {
 		rightCands := dictSegment(right)
 		for _, lw := range leftCands {
 			for _, rw := range rightCands {
-				combined := append(lw, rw...)
+				combined := make([]string, 0, len(lw)+len(rw))
+				combined = append(combined, lw...)
+				combined = append(combined, rw...)
 				if len(combined) <= 4 {
 					results = append(results, combined)
 				}

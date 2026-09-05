@@ -273,7 +273,7 @@ var highIntentWords = []string{
 	"dating", "cbd", "roofing", "pest", "storage", "locksmith",
 	"bail", "bond", "wrongful", "tax", "accounting",
 	"saas", "consulting", "marketing", "agency", "real", "estate",
-	"cloud", "devops", "fintech", "cyber", "insurance",
+	"cloud", "devops", "fintech", "cyber",
 }
 
 var midIntentWords = []string{
@@ -295,7 +295,7 @@ var lowIntentWords = []string{
 	"game", "play", "player", "video", "music", "audio",
 	"image", "photo", "picture", "movie", "film", "book",
 	"podcast", "radio", "stream", "streaming", "live",
-	"news", "info", "information", "guide", "tutorial",
+	"info", "information", "guide", "tutorial",
 	"howto", "review", "best", "top", "list", "collection",
-	"directory", "index", "archive", "library", "wiki", "blog",
+	"directory", "index", "archive", "library",
 }

@@ -49,7 +49,7 @@ func (m *SearchTool) Execute(domain string, ctx *ToolContext) ToolResult {
 					nameservers = append(nameservers, ns.LDHName)
 				}
 				for _, event := range rdap.Events {
-					if event.EventAction == "expiration" {
+					if event.EventAction == "expiration" && len(event.EventDate) >= 10 {
 						expiryDate = event.EventDate[:10]
 					}
 				}
