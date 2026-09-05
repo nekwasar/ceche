@@ -1,0 +1,92 @@
+{
+  "tools": [
+    {
+      "name": "ceche_m1_rdap",
+      "description": "Look up domain registration data via RDAP. Returns registration status, creation date, expiry date, registrar, and age-based multiplier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to look up" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_m2_tld",
+      "description": "Score the TLD (Top-Level Domain) based on market demand. Returns TLD score (0.2-10) and weight profile.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name (TLD will be extracted)" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_m3_length",
+      "description": "Score the domain based on SLD length. Returns sigmoid-based multiplier with digit penalty.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name (SLD will be extracted)" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_m6_segment",
+      "description": "Segment domain name into words and determine commercial intent (high/mid/low/brandable).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to segment" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_m8_spam",
+      "description": "Check domain against spam blacklists (Spamhaus DBL/ZRD, URIBL, SURBL). Returns spam severity and multiplier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to check" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_search_domain",
+      "description": "Check domain availability and basic info via RDAP. Returns availability status, registrar, expiry, and nameservers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to check" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_m11_dns_history",
+      "description": "Get domain ownership history via WhoisXML API. Returns drops, registrar changes, years active, and registrant info.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to look up" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "ceche_m12_authority",
+      "description": "Measure domain authority using WhoisXML Domain Reputation API. Returns reputation score, risk level, and parked status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to evaluate" }
+        },
+        "required": ["domain"]
+      }
+    }
+  ]
+}

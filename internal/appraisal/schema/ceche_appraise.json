@@ -1,0 +1,60 @@
+{
+  "name": "ceche_appraise",
+  "description": "Appraise a domain name across 16 dimensions. Returns detailed findings, multipliers, and estimated value. Each dimension is an independent tool that can be called separately.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "domain": {
+        "type": "string",
+        "description": "The domain name to appraise (e.g., 'techstart.com')"
+      },
+      "tools": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "m1_rdap",
+            "m2_tld_table",
+            "m3_length",
+            "m4_word_count",
+            "m5_pronounceability",
+            "m6_segmenter",
+            "m7_keyword",
+            "m8_cpc",
+            "m8_spam",
+            "search_domain",
+            "m10_cross_tld",
+            "m11_dns_history",
+            "m12_authority",
+            "m13_confidence",
+            "m15_pricing",
+            "m16_brandability"
+          ]
+        },
+        "description": "Optional: specific tools to run. If empty, runs the full pipeline."
+      }
+    },
+    "required": ["domain"]
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "domain": { "type": "string" },
+      "sld": { "type": "string" },
+      "tld": { "type": "string" },
+      "score": { "type": "integer" },
+      "estimated_value": { "type": "number" },
+      "range_low": { "type": "number" },
+      "range_high": { "type": "number" },
+      "confidence": { "type": "string" },
+      "completeness_ratio": { "type": "number" },
+      "weight_profile": { "type": "string" },
+      "tools": {
+        "type": "object",
+        "description": "Results from each tool with multipliers, findings, and explanations"
+      },
+      "version": { "type": "string" },
+      "generated_at": { "type": "string" }
+    }
+  }
+}
