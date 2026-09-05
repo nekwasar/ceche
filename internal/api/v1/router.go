@@ -10,6 +10,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/nekwasar/ceche/internal/api/middleware"
+	"github.com/nekwasar/ceche/internal/appraisal"
 	"github.com/nekwasar/ceche/internal/config"
 )
 
@@ -51,6 +52,12 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 
 		// Intelligence (public summary, full requires auth)
 		r.Get("/intelligence/{domain}/summary", handleGetIntelligenceSummary(db))
+
+		// Tool endpoints (public - for AI agent integration)
+		r.Post("/tools/run", handleRunTool())
+		r.Post("/tools/appraise", handleToolAppraise())
+		r.Get("/tools/list", handleListTools())
+		r.Get("/tools/schema", handleGetToolSchema())
 
 		// Webhook (no auth — verified by HMAC signature)
 		r.Post("/webhooks/paystack", handlePaystackWebhook(db))
