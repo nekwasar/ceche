@@ -28,6 +28,29 @@ func (m *M4WordCount) Execute(domain string, ctx *ToolContext) ToolResult {
 	score := 100.0 * math.Exp(-0.5*(float64(wordCount)-1))
 	score = clamp(score, 0, 100)
 
+	// Dictionary word bonus — real words score higher
+	isDict := false
+	if ctx.Words != nil {
+		for _, w := range ctx.Words {
+			if isKnownWord(w) {
+				isDict = true
+				break
+			}
+		}
+	}
+
+	// Single-word domains are always premium
+	if wordCount == 1 {
+		if isDict {
+			score = 100.0 // Single dictionary word — ultimate
+		} else {
+			score = math.Max(score, 40.0) // Single non-dictionary word — moderate
+		}
+	} else if !isDict {
+		score = score * 0.3 // 70% penalty for non-dictionary multi-word
+	}
+	score = clamp(score, 0, 100)
+
 	// Multiplier
 	mult := 1.0
 	switch {

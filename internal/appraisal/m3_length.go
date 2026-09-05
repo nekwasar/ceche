@@ -18,6 +18,54 @@ func (m *M3Length) Execute(domain string, ctx *ToolContext) ToolResult {
 	score := 100.0 * (1.0 - 1.0/(1.0+math.Exp(-0.8*(float64(length)-5))))
 	score = clamp(score, 0, 100)
 
+	// Single and double character domains are always premium
+	if length <= 2 {
+		score = 100.0
+	} else if length == 3 {
+		score = math.Max(score, 90.0)
+	} else if length == 4 {
+		score = math.Max(score, 80.0)
+	}
+
+	// Dictionary word bonus — real words get high scores regardless of length
+	isDict := isKnownWord(sld)
+	if isDict {
+		// Commercial keywords get highest scores
+		commercialWords := map[string]bool{
+			"business": true, "market": true, "shop": true, "store": true,
+			"pay": true, "buy": true, "sell": true, "trade": true,
+			"finance": true, "bank": true, "invest": true, "money": true,
+			"health": true, "medical": true, "legal": true, "insurance": true,
+			"real": true, "estate": true, "home": true, "car": true,
+			"auto": true, "tech": true, "digital": true, "cloud": true,
+			"software": true, "app": true, "web": true, "data": true,
+			"ai": true, "crypto": true, "bitcoin": true,
+		}
+		if commercialWords[sld] {
+			score = 100.0 // Premium commercial keyword
+		} else {
+			score = 95.0 // Regular dictionary word
+		}
+	} else {
+		// Non-dictionary — length-based scoring
+		switch {
+		case length <= 2:
+			score = 100.0 // Single/double char — premium
+		case length == 3:
+			score = 90.0
+		case length == 4:
+			score = 80.0
+		case length <= 6:
+			score = 60.0
+		case length <= 8:
+			score = 40.0
+		case length <= 10:
+			score = 25.0
+		default:
+			score = 15.0
+		}
+	}
+
 	// Multiplier from length — premium for ultra-short domains
 	mult := 1.0
 	switch {

@@ -313,7 +313,7 @@ func segmentQuality(words []string, original string) float64 {
 	if len(words) == 0 {
 		return 0.0
 	}
-	quality := 0.5
+	quality := 0.2 // Base quality — lower for non-dictionary
 	dictHits := 0
 	for _, w := range words {
 		if isKnownWord(w) {
@@ -321,15 +321,16 @@ func segmentQuality(words []string, original string) float64 {
 		}
 	}
 	dictRatio := float64(dictHits) / float64(len(words))
-	quality += dictRatio * 0.2
+	quality += dictRatio * 0.4 // Dictionary words get big bonus
 	totalLen := 0
 	for _, w := range words {
 		totalLen += len(w)
 	}
 	coverage := float64(totalLen) / float64(len(original))
-	quality += coverage * 0.15
+	// Coverage bonus only counts for dictionary words
+	quality += coverage * 0.15 * dictRatio
 	if len(words) <= 2 {
-		quality += 0.1
+		quality += 0.05
 	}
 	return math.Min(1.0, quality)
 }

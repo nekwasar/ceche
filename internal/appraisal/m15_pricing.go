@@ -5,14 +5,41 @@ import (
 	"math"
 )
 
-// M15Pricing converts module multipliers into a dollar estimate.
-// Core pricing logic adapted from the ceche CLI for .com domains.
-// Non-.com TLDs use a simplified default profile.
+// M15Pricing is the two-tier pricing engine.
+// Tier 1: Algorithm-only dimensions → base price
+// Tier 2: API-dependent adjustments → bounded multiplier
 type M15Pricing struct{}
 
 func (m *M15Pricing) Name() string { return "m15_pricing" }
 
-// TLD multipliers for scarcity base
+// Tier 1 weights — must sum to 1.0
+var tier1Weights = map[string]float64{
+	"m2_tld_table":    0.15, // TLD market value
+	"m3_length":       0.25, // SLD length
+	"m4_word_count":   0.15, // Word count from segmentation
+	"m5_pronounce":    0.10, // Pronounceability
+	"m6_segmenter":    0.15, // Segmentation quality
+	"m16_brandability": 0.20, // Brand pattern quality
+}
+
+// Tier 2 bounded multipliers — each module has min/max
+type tier2Bounds struct {
+	min float64
+	max float64
+}
+
+var tier2BoundsMap = map[string]tier2Bounds{
+	"m1_rdap":          {0.7, 1.3},  // Domain age
+	"m8_spam":          {0.5, 1.0},  // Reputation
+	"m9_search":        {0.8, 1.5},  // Web presence
+	"m10_cross":        {0.9, 1.2},  // Brand protection
+	"m11_trademark":    {0.5, 1.0},  // Legal risk
+	"m11_dns_history":  {0.7, 1.3},  // Ownership stability
+	"m12_authority":    {0.8, 1.5},  // Domain authority
+	"m14_social":       {0.9, 1.1},  // Social availability
+}
+
+// TLD multipliers — affects the base price
 var tldMultipliers = map[string]float64{
 	"com": 1.0, "net": 0.8, "io": 0.4, "ai": 0.4,
 	"co": 0.3, "de": 0.3, "org": 0.3, "edu": 0.3,
@@ -27,98 +54,21 @@ var tldMultipliers = map[string]float64{
 }
 
 func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
-	sld := ctx.SLD
 	tld := ctx.TLD
-	splitStatus := ctx.SplitStatus
 
-	// Stage 1: Scarcity Base
-	base := m.calculateScarcityBase(sld, splitStatus)
+	// TIER 1: Calculate base price from algorithm dimensions
+	intrinsicScore := m.calculateTier1Score(ctx)
 	tldMult := tldMultipliers[tld]
 	if tldMult == 0 {
-		tldMult = 0.005
+		tldMult = 0.1
 	}
-	value := base * tldMult
+	basePrice := priceCurve(intrinsicScore, tldMult)
 
-	// Brandable adjustments
-	if splitStatus == IntentBrand || splitStatus == "" {
-		// Check CPC tier for brandable domains
-		if ctx.Results != nil {
-			if m6, ok := ctx.Results["m6_segmenter"]; ok {
-				if intent, ok := m6.Findings["intent"].(string); ok {
-					if intent == IntentHigh {
-						value *= 10.0
-					}
-				}
-			}
-		}
-		// Pronounceability penalty
-		if m5, ok := ctx.Results["m5_pronounce"]; ok {
-			if m5.Multiplier != nil && *m5.Multiplier <= 1.0 {
-				value *= 0.5
-			}
-		}
-		// Digit penalty
-		for _, c := range sld {
-			if c >= '0' && c <= '9' {
-				value *= 0.3
-				break
-			}
-		}
-	}
+	// TIER 2: Apply bounded API adjustments
+	apiMultiplier := m.calculateTier2Multiplier(ctx)
+	adjustedPrice := basePrice * apiMultiplier
 
-	// Stage 2: Direct multiplier application (no weighted power compression)
-	breakdown := map[string]interface{}{
-		"scarcity_base": base,
-		"tld_mult":      tldMult,
-		"base_value":    value,
-	}
-
-	// Apply key multipliers directly with diminishing returns
-	keyMultipliers := []struct {
-		name string
-		weight float64
-	}{
-		{"m3_length", 0.25},
-		{"m4_word_count", 0.20},
-		{"m5_pronounce", 0.10},
-		{"m7_keyword", 0.10},
-		{"m8_cpc", 0.10},
-		{"m9_search", 0.10},
-		{"m10_cross", 0.05},
-		{"m12_authority", 0.05},
-		{"m16_brandability", 0.15},
-	}
-
-	for _, km := range keyMultipliers {
-		if ctx.Results != nil {
-			if mod, ok := ctx.Results[km.name]; ok && mod.Multiplier != nil {
-				mult := *mod.Multiplier
-				// Apply with diminishing returns: mult^(weight)
-				// This preserves direction but compresses extremes
-				contribution := math.Pow(mult, km.weight)
-				value *= contribution
-				breakdown[km.name] = map[string]interface{}{
-					"multiplier":   mult,
-					"weight":       km.weight,
-					"contribution": math.Round(contribution*1000) / 1000,
-				}
-			}
-		}
-	}
-
-	// Apply DNS history multiplier (if available)
-	if ctx.Results != nil {
-		if m11dns, ok := ctx.Results["m11_dns_history"]; ok && m11dns.Multiplier != nil {
-			dnsMult := *m11dns.Multiplier
-			value *= dnsMult
-			breakdown["m11_dns_history"] = map[string]interface{}{
-				"multiplier": dnsMult,
-				"effect":     "adjustment",
-			}
-		}
-	}
-
-	// Stage 3: Range calculation
+	// Calculate range based on confidence
 	completeness := 0.9
 	if ctx.Results != nil {
 		if m13, ok := ctx.Results["m13_confidence"]; ok {
@@ -129,102 +79,261 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 	}
 
 	factor := (1.0 - completeness) * 0.5
-	rangeLow := value * (1.0 - factor)
-	rangeHigh := value * (1.0 + factor)
+	rangeLow := adjustedPrice * (1.0 - factor)
+	rangeHigh := adjustedPrice * (1.0 + factor)
 
 	return ToolResult{
 		Tool:       m.Name(),
 		Domain:     domain,
 		Status:     "success",
-		Multiplier: float64Ptr(value),
+		Multiplier: float64Ptr(adjustedPrice),
 		Confidence: completeness,
 		Findings: map[string]interface{}{
-			"estimated_value": math.Round(value),
-			"range_low":       math.Round(rangeLow),
-			"range_high":      math.Round(rangeHigh),
-			"scarcity_base":   base,
-			"tld_mult":        tldMult,
-			"breakdown":       breakdown,
+			"estimated_value":  math.Round(adjustedPrice),
+			"range_low":        math.Round(rangeLow),
+			"range_high":       math.Round(rangeHigh),
+			"intrinsic_score":  math.Round(intrinsicScore*100) / 100,
+			"tld_mult":         tldMult,
+			"base_price":       math.Round(basePrice),
+			"api_multiplier":   math.Round(apiMultiplier*1000) / 1000,
+			"tier1_breakdown":  m.getTier1Breakdown(ctx),
+			"tier2_breakdown":  m.getTier2Breakdown(ctx),
 		},
-		Explanation: fmt.Sprintf("Estimated value: $%s (range: $%s - $%s, confidence: %.0f%%)",
-			formatMoney(value), formatMoney(rangeLow), formatMoney(rangeHigh), completeness*100),
+		Explanation: fmt.Sprintf("Estimated value: $%s (score: %.0f/100, base: $%s, API adj: %.2fx, confidence: %.0f%%)",
+			formatMoney(adjustedPrice), intrinsicScore, formatMoney(basePrice), apiMultiplier, completeness*100),
 	}
 }
 
-func (m *M15Pricing) calculateScarcityBase(sld string, splitStatus string) float64 {
+// calculateTier1Score computes the intrinsic quality score (0-100)
+// Uses a clear hierarchy: dictionary words > length > brandability
+func (m *M15Pricing) calculateTier1Score(ctx *ToolContext) float64 {
+	sld := ctx.SLD
 	length := len(sld)
-	isWord := isKnownWord(sld)
 
-	// Dictionary word domains — shorter words are MORE valuable
-	if isWord {
-		var base float64 = 5000000 // Default dictionary word
+	// Check if dictionary word
+	isDict := isKnownWord(sld)
 
-		// High-value commercial keywords get massive bonus
-		commercialWords := map[string]bool{
-			"business": true, "market": true, "shop": true, "store": true,
-			"pay": true, "buy": true, "sell": true, "trade": true,
-			"finance": true, "bank": true, "invest": true, "money": true,
-			"health": true, "medical": true, "legal": true, "insurance": true,
-			"real": true, "estate": true, "home": true, "car": true,
-			"auto": true, "tech": true, "digital": true, "cloud": true,
-			"software": true, "app": true, "web": true, "data": true,
-			"ai": true, "crypto": true, "bitcoin": true,
-		}
-		if commercialWords[sld] {
-			// Premium commercial keywords — highest value
-			premiumCommercial := map[string]bool{
-				"business": true, "market": true, "finance": true, "insurance": true,
-				"software": true, "digital": true, "crypto": true, "health": true,
-				"medical": true, "legal": true, "real": true, "estate": true,
+	// Check if segmented words are dictionary words
+	hasDictSegment := false
+	if ctx.Words != nil {
+		for _, w := range ctx.Words {
+			if isKnownWord(w) {
+				hasDictSegment = true
+				break
 			}
-			if premiumCommercial[sld] {
-				base = 40000000  // Premium commercial keyword
-			} else {
-				switch {
-				case length <= 3:
-					base = 10000000  // Short commercial keyword (car, ai, etc.)
-				case length <= 5:
-					base = 8000000   // Short-medium
-				default:
-					base = 6000000   // Medium commercial keyword
+		}
+	}
+
+	// Check if commercial keyword
+	commercialWords := map[string]bool{
+		"business": true, "market": true, "shop": true, "store": true,
+		"pay": true, "buy": true, "sell": true, "trade": true,
+		"finance": true, "bank": true, "invest": true, "money": true,
+		"health": true, "medical": true, "legal": true, "insurance": true,
+		"real": true, "estate": true, "home": true, "car": true,
+		"auto": true, "tech": true, "digital": true, "cloud": true,
+		"software": true, "app": true, "web": true, "data": true,
+		"ai": true, "crypto": true, "bitcoin": true,
+	}
+	isCommercial := commercialWords[sld]
+
+	// Score hierarchy
+	var score float64
+
+	if isCommercial {
+		score = 95.0
+	} else if isDict {
+		score = 85.0
+	} else if length <= 2 {
+		score = 90.0
+	} else if length == 3 {
+		score = 70.0
+	} else if length == 4 {
+		score = 60.0
+	} else if length <= 6 {
+		score = 45.0
+	} else if length <= 8 {
+		// For 7-8 char non-dictionary, check if segments are dictionary words
+		if hasDictSegment {
+			score = 50.0 // Has dictionary segments — better
+		} else {
+			score = 35.0 // No dictionary segments — worse
+		}
+	} else if length <= 10 {
+		score = 25.0
+	} else {
+		score = 15.0
+	}
+
+	// Adjustments
+	if ctx.Results != nil {
+		if m5, ok := ctx.Results["m5_pronounce"]; ok && m5.Multiplier != nil {
+			if *m5.Multiplier >= 1.5 {
+				score += 5
+			}
+		}
+		if m16, ok := ctx.Results["m16_brandability"]; ok && m16.Multiplier != nil {
+			if *m16.Multiplier >= 3.0 {
+				score += 5
+			}
+		}
+	}
+
+	return clamp(score, 0, 100)
+}
+
+// extractScore gets the quality score from a module's findings
+func extractScore(mod ToolResult, moduleName string) float64 {
+	if mod.Findings == nil {
+		return 50.0
+	}
+
+	switch moduleName {
+	case "m2_tld_table":
+		// M2 returns tld_score (0-10), normalize to 0-100
+		if score, ok := mod.Findings["tld_score"].(float64); ok {
+			return score * 10.0
+		}
+	case "m3_length":
+		// M3 returns score (0-100) based on sigmoid
+		if score, ok := mod.Findings["score"].(float64); ok {
+			return score
+		}
+	case "m4_word_count":
+		// M4 returns score (0-100) — already has dictionary bonus
+		if score, ok := mod.Findings["score"].(float64); ok {
+			return score
+		}
+	case "m5_pronounce":
+		// M5 returns score (0-100)
+		if score, ok := mod.Findings["score"].(float64); ok {
+			return score
+		}
+	case "m6_segmenter":
+		// M6 returns quality (0-1)
+		if quality, ok := mod.Findings["quality"].(float64); ok {
+			return quality * 100.0
+		}
+	case "m16_brandability":
+		// M16 returns multiplier — map to score
+		if mod.Multiplier != nil {
+			m := *mod.Multiplier
+			switch {
+			case m >= 5.0:
+				return 95.0
+			case m >= 3.0:
+				return 80.0
+			case m >= 2.0:
+				return 65.0
+			case m >= 1.5:
+				return 50.0
+			default:
+				return 30.0
+			}
+		}
+	}
+
+	return 50.0
+}
+
+// calculateTier2Multiplier computes the bounded API adjustment
+func (m *M15Pricing) calculateTier2Multiplier(ctx *ToolContext) float64 {
+	multiplier := 1.0
+
+	for moduleName, bounds := range tier2BoundsMap {
+		if ctx.Results != nil {
+			if mod, ok := ctx.Results[moduleName]; ok && mod.Multiplier != nil {
+				mult := *mod.Multiplier
+				// Clamp to bounds
+				mult = math.Max(bounds.min, math.Min(bounds.max, mult))
+				multiplier *= mult
+			}
+		}
+	}
+
+	// Cap total adjustment at ±50%
+	multiplier = math.Max(0.5, math.Min(1.5, multiplier))
+
+	return multiplier
+}
+
+func (m *M15Pricing) getTier1Breakdown(ctx *ToolContext) map[string]interface{} {
+	breakdown := map[string]interface{}{}
+	for moduleName, weight := range tier1Weights {
+		if ctx.Results != nil {
+			if mod, ok := ctx.Results[moduleName]; ok {
+				score := extractScore(mod, moduleName)
+				breakdown[moduleName] = map[string]interface{}{
+					"score":  math.Round(score*100) / 100,
+					"weight": weight,
+					"contrib": math.Round(score*weight*100) / 100,
 				}
 			}
-		} else {
-			switch {
-			case length <= 2:
-				base = 15000000
-			case length <= 3:
-				base = 12000000
-			case length <= 5:
-				base = 8000000
-			case length <= 8:
-				base = 5000000
-			default:
-				base = 2000000
+		}
+	}
+	return breakdown
+}
+
+func (m *M15Pricing) getTier2Breakdown(ctx *ToolContext) map[string]interface{} {
+	breakdown := map[string]interface{}{}
+	for moduleName, bounds := range tier2BoundsMap {
+		if ctx.Results != nil {
+			if mod, ok := ctx.Results[moduleName]; ok && mod.Multiplier != nil {
+				mult := *mod.Multiplier
+				clamped := math.Max(bounds.min, math.Min(bounds.max, mult))
+				breakdown[moduleName] = map[string]interface{}{
+					"raw":     math.Round(mult*1000) / 1000,
+					"clamped": math.Round(clamped*1000) / 1000,
+					"bounds":  fmt.Sprintf("%.1f-%.1f", bounds.min, bounds.max),
+				}
 			}
 		}
-		return base
+	}
+	return breakdown
+}
+
+// priceCurve maps an intrinsic score (0-100) to a dollar value
+// Calibrated to match expected domain values
+func priceCurve(score float64, tldMult float64) float64 {
+	// Clamp score
+	score = clamp(score, 0, 100)
+
+	// Piecewise linear curve calibrated to expected values
+	var price float64
+	switch {
+	case score <= 30:
+		// Low end: $100 - $6K
+		price = 100 + (score/30.0)*5900
+	case score <= 40:
+		// Mid-low: $6K - $25K
+		price = 6000 + ((score-30)/10.0)*19000
+	case score <= 50:
+		// Mid: $25K - $100K
+		price = 25000 + ((score-40)/10.0)*75000
+	case score <= 60:
+		// Mid-high: $100K - $400K
+		price = 100000 + ((score-50)/10.0)*300000
+	case score <= 70:
+		// High: $400K - $1.5M
+		price = 400000 + ((score-60)/10.0)*1100000
+	case score <= 80:
+		// Very high: $1.5M - $6M
+		price = 1500000 + ((score-70)/10.0)*4500000
+	case score <= 90:
+		// Premium: $6M - $25M
+		price = 6000000 + ((score-80)/10.0)*19000000
+	case score <= 95:
+		// Ultra premium: $25M - $50M
+		price = 25000000 + ((score-90)/5.0)*25000000
+	default:
+		// Ultimate: $50M - $100M
+		price = 50000000 + ((score-95)/5.0)*50000000
 	}
 
-	// Non-dictionary domains — value based on length and brandability
-	switch {
-	case length <= 1:
-		return 50000000  // Single char — ultimate (even if not dictionary)
-	case length <= 2:
-		return 30000000  // Two chars — ultra premium
-	case length <= 3:
-		return 13000000  // Three chars — very premium
-	case length <= 4:
-		return 500000    // Four chars
-	case length <= 5:
-		return 100000    // Five chars
-	case length <= 7:
-		return 10000     // Seven chars
-	case length <= 9:
-		return 2000      // Nine chars
-	default:
-		return 500       // Long
-	}
+	// Apply TLD multiplier
+	price *= tldMult
+
+	return price
 }
 
 func formatMoney(v float64) string {

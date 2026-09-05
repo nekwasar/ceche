@@ -64,6 +64,11 @@ func (m *M5Pronounceability) Execute(domain string, ctx *ToolContext) ToolResult
 		score *= 0.4
 	}
 
+	// Dictionary word bonus — real words are more pronounceable in practice
+	if !isKnownWord(sld) {
+		score = score * 0.5 // 50% penalty for non-dictionary words
+	}
+
 	mult := 1.0
 	switch {
 	case score >= 90:

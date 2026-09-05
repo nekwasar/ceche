@@ -6,6 +6,7 @@ import (
 )
 
 // M16Brandability rates the quality of a brandable domain.
+// Scores 0-100 based on pattern quality, NOT length (M3 handles length).
 type M16Brandability struct{}
 
 func (m *M16Brandability) Name() string { return "m16_brandability" }
@@ -30,16 +31,16 @@ func (m *M16Brandability) Execute(domain string, ctx *ToolContext) ToolResult {
 		"ending_quality": "none",
 	}
 
-	// Syllable flow (40% weight)
+	// Syllable flow (35% weight) — distinct from pronunciation
 	syllableScore := syllableFlowScore(sld)
 
-	// Pattern score (30% weight)
+	// Pattern score (35% weight) — brand patterns, CVC, endings
 	patternScore := brandPatternScore(sld)
 
-	// Length score (30% weight)
-	lengthScore := brandLengthScore(len(sld))
+	// Memorability score (30% weight) — how easy to recall
+	memorabilityScore := memorabilityScore(sld)
 
-	score = syllableScore*0.4 + patternScore*0.3 + lengthScore*0.3
+	score = syllableScore*0.35 + patternScore*0.35 + memorabilityScore*0.30
 	score = clamp(score, 0, 100)
 
 	// Adjustments
@@ -76,33 +77,42 @@ func (m *M16Brandability) Execute(domain string, ctx *ToolContext) ToolResult {
 	if hasDoubleVowel {
 		score = math.Min(score, 40)
 	}
-	if !hasDoubleVowel && maxConsonantRun <= 3 && len(sld) <= 8 && hasVowels {
-		score *= 1.5
+	if !hasDoubleVowel && maxConsonantRun <= 3 && len(sld) <= 12 && hasVowels {
+		score *= 1.2
 	}
 	score = clamp(score, 0, 100)
 
-	// Check for dictionary word
-	if isKnownWord(sld) {
-		data["is_dictionary"] = true
+	// Dictionary word bonus — real words are more brandable
+	isDict := isKnownWord(sld)
+	data["is_dictionary"] = isDict
+
+	// Single/double char domains are always premium brandable
+	if len(sld) <= 2 {
+		score = 100.0 // Ultra short — ultimate brand
+	} else if isDict {
+		score = math.Min(100, score*1.5) // 50% bonus for dictionary words
+	} else {
+		score = score * 0.3 // 70% penalty for non-dictionary words
 	}
+	score = clamp(score, 0, 100)
 
 	data["syllable_count"] = countSyllables(sld)
 	data["pattern_score"] = math.Round(patternScore*100) / 100
-	data["length_score"] = math.Round(lengthScore*100) / 100
+	data["memorability_score"] = math.Round(memorabilityScore*100) / 100
 	data["syllable_score"] = math.Round(syllableScore*100) / 100
 	data["double_vowel"] = hasDoubleVowel
 
-	// Multiplier
+	// Multiplier — capped for pricing use
 	mult := 1.0
 	switch {
 	case score >= 80:
-		mult = 8.0
-	case score >= 60:
 		mult = 5.0
-	case score >= 40:
+	case score >= 60:
 		mult = 3.0
-	case score >= 20:
+	case score >= 40:
 		mult = 2.0
+	case score >= 20:
+		mult = 1.5
 	}
 
 	return ToolResult{
@@ -112,8 +122,8 @@ func (m *M16Brandability) Execute(domain string, ctx *ToolContext) ToolResult {
 		Multiplier: float64Ptr(mult),
 		Confidence: math.Min(1.0, score/100.0),
 		Findings:   data,
-		Explanation: fmt.Sprintf("Brandability score: %.0f/100 (syllable: %.0f, pattern: %.0f, length: %.0f) — multiplier: %.1fx",
-			score, syllableScore, patternScore, lengthScore, mult),
+		Explanation: fmt.Sprintf("Brandability score: %.0f/100 (syllable: %.0f, pattern: %.0f, memorability: %.0f) — multiplier: %.1fx",
+			score, syllableScore, patternScore, memorabilityScore, mult),
 	}
 }
 
@@ -178,24 +188,43 @@ func brandPatternScore(sld string) float64 {
 	return clamp(score, 0, 100)
 }
 
-// brandLengthScore — shorter domains are MORE brandable, not less
-func brandLengthScore(length int) float64 {
+// memorabilityScore — how easy the domain is to remember
+// Distinct from pronunciation (M5) and syllable flow
+func memorabilityScore(sld string) float64 {
+	score := 50.0
+	length := len(sld)
+
+	// Shorter = more memorable (but this is a DIFFERENT factor than M3 length)
+	// This measures cognitive load, not scarcity
 	switch {
-	case length <= 1:
-		return 100.0 // Single char — ultimate brand
-	case length <= 2:
-		return 95.0  // Two chars — ultra premium
 	case length <= 3:
-		return 90.0  // Three chars — very premium
-	case length <= 4:
-		return 85.0  // Four chars — premium
+		score += 30 // Ultra short — extremely memorable
+	case length <= 5:
+		score += 20 // Short — very memorable
 	case length <= 7:
-		return 80.0  // Short — great
+		score += 10 // Medium — memorable
 	case length <= 10:
-		return 60.0  // Medium — good
+		score += 0  // Average
 	default:
-		return math.Max(20, 60-float64(length-10)*5)
+		score -= 10 // Long — harder to remember
 	}
+
+	// Repetition bonus (e.g., "biboo", "meme")
+	sldBytes := []byte(sld)
+	repeatCount := 0
+	for i := 0; i < len(sldBytes)-2; i++ {
+		if sldBytes[i] == sldBytes[i+2] {
+			repeatCount++
+		}
+	}
+	score += float64(repeatCount) * 5
+
+	// Alliteration bonus (repeated starting consonant)
+	if len(sldBytes) >= 3 && !isVowel(sldBytes[0]) && sldBytes[0] == sldBytes[1] {
+		score += 10
+	}
+
+	return clamp(score, 0, 100)
 }
 
 func countSyllables(sld string) int {
