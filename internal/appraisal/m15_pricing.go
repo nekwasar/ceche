@@ -96,7 +96,7 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 			if p, ok := m2.Findings["weight_profile"].(string); ok {
 				// Map M2's profile names to our weight profiles
 				switch p {
-				case "Premium":
+				case "tier_10", "Premium":
 					profile = "tier_10" // .com only for now
 				default:
 					profile = "default"
