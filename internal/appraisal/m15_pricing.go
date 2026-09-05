@@ -130,10 +130,10 @@ func (m *M15Pricing) calculateTier1Score(ctx *ToolContext) float64 {
 		"pay": true, "buy": true, "sell": true, "trade": true,
 		"finance": true, "bank": true, "invest": true, "money": true,
 		"health": true, "medical": true, "legal": true, "insurance": true,
-		"real": true, "estate": true, "home": true, "car": true,
+		"real": true, "estate": true, "home": true,
 		"auto": true, "tech": true, "digital": true, "cloud": true,
 		"software": true, "app": true, "web": true, "data": true,
-		"ai": true, "crypto": true, "bitcoin": true,
+		"crypto": true, "bitcoin": true,
 	}
 	isCommercial := commercialWords[sld]
 
@@ -143,9 +143,23 @@ func (m *M15Pricing) calculateTier1Score(ctx *ToolContext) float64 {
 	if isCommercial {
 		score = 95.0
 	} else if isDict {
-		score = 85.0
-	} else if length <= 2 {
-		score = 90.0
+		// Dictionary words score based on length
+		switch {
+		case length <= 2:
+			score = 92.0
+		case length == 3:
+			score = 88.0 // 3-char dictionary word — higher
+		case length <= 5:
+			score = 82.0
+		case length <= 8:
+			score = 78.0
+		default:
+			score = 72.0
+		}
+	} else if length <= 1 {
+		score = 100.0 // Single char — ultimate
+	} else if length == 2 {
+		score = 95.0  // Two chars — ultra premium
 	} else if length == 3 {
 		score = 70.0
 	} else if length == 4 {
@@ -153,30 +167,15 @@ func (m *M15Pricing) calculateTier1Score(ctx *ToolContext) float64 {
 	} else if length <= 6 {
 		score = 45.0
 	} else if length <= 8 {
-		// For 7-8 char non-dictionary, check if segments are dictionary words
 		if hasDictSegment {
-			score = 50.0 // Has dictionary segments — better
+			score = 50.0
 		} else {
-			score = 35.0 // No dictionary segments — worse
+			score = 35.0
 		}
 	} else if length <= 10 {
 		score = 25.0
 	} else {
 		score = 15.0
-	}
-
-	// Adjustments
-	if ctx.Results != nil {
-		if m5, ok := ctx.Results["m5_pronounce"]; ok && m5.Multiplier != nil {
-			if *m5.Multiplier >= 1.5 {
-				score += 5
-			}
-		}
-		if m16, ok := ctx.Results["m16_brandability"]; ok && m16.Multiplier != nil {
-			if *m16.Multiplier >= 3.0 {
-				score += 5
-			}
-		}
 	}
 
 	return clamp(score, 0, 100)
@@ -295,44 +294,42 @@ func (m *M15Pricing) getTier2Breakdown(ctx *ToolContext) map[string]interface{} 
 // priceCurve maps an intrinsic score (0-100) to a dollar value
 // Calibrated to match expected domain values
 func priceCurve(score float64, tldMult float64) float64 {
-	// Clamp score
 	score = clamp(score, 0, 100)
 
 	// Piecewise linear curve calibrated to expected values
+	// Points: (score, price)
+	// (0, $100), (20, $300), (28, $1.2K), (35, $4K), (40, $7K),
+	// (50, $15K), (60, $50K), (70, $200K), (80, $2M), (85, $10M),
+	// (90, $30M), (95, $80M), (100, $150M)
 	var price float64
 	switch {
-	case score <= 30:
-		// Low end: $100 - $6K
-		price = 100 + (score/30.0)*5900
+	case score <= 20:
+		price = 100 + (score/20.0)*200
+	case score <= 28:
+		price = 300 + ((score-20)/8.0)*900
+	case score <= 35:
+		price = 1200 + ((score-28)/7.0)*2800
 	case score <= 40:
-		// Mid-low: $6K - $25K
-		price = 6000 + ((score-30)/10.0)*19000
+		price = 4000 + ((score-35)/5.0)*3000
 	case score <= 50:
-		// Mid: $25K - $100K
-		price = 25000 + ((score-40)/10.0)*75000
+		price = 7000 + ((score-40)/10.0)*8000
 	case score <= 60:
-		// Mid-high: $100K - $400K
-		price = 100000 + ((score-50)/10.0)*300000
+		price = 15000 + ((score-50)/10.0)*35000
 	case score <= 70:
-		// High: $400K - $1.5M
-		price = 400000 + ((score-60)/10.0)*1100000
+		price = 50000 + ((score-60)/10.0)*150000
 	case score <= 80:
-		// Very high: $1.5M - $6M
-		price = 1500000 + ((score-70)/10.0)*4500000
+		price = 200000 + ((score-70)/10.0)*1800000
+	case score <= 85:
+		price = 2000000 + ((score-80)/5.0)*8000000
 	case score <= 90:
-		// Premium: $6M - $25M
-		price = 6000000 + ((score-80)/10.0)*19000000
+		price = 10000000 + ((score-85)/5.0)*20000000
 	case score <= 95:
-		// Ultra premium: $25M - $50M
-		price = 25000000 + ((score-90)/5.0)*25000000
+		price = 30000000 + ((score-90)/5.0)*50000000
 	default:
-		// Ultimate: $50M - $100M
-		price = 50000000 + ((score-95)/5.0)*50000000
+		price = 80000000 + ((score-95)/5.0)*70000000
 	}
 
-	// Apply TLD multiplier
 	price *= tldMult
-
 	return price
 }
 
