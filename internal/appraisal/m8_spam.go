@@ -5,7 +5,6 @@ import (
 	"net"
 	"os"
 	"strings"
-	"time"
 )
 
 // M8SpamCheck queries Spamhaus DBL/ZRD and URIBL/SURBL for domain reputation.
@@ -117,9 +116,12 @@ func (m *M8SpamCheck) Execute(domain string, ctx *ToolContext) ToolResult {
 	if surblResult.Listed {
 		findings["listed"] = true
 		findings["severity"] = "blacklisted"
-		surblDetails := surblResult
-		surblDetails["lists"] = decodeSURBLBitmask(surblResult["code"].(int))
-		findings["details"].(map[string]interface{})["surbl"] = surblDetails
+		findings["details"].(map[string]interface{})["surbl"] = map[string]interface{}{
+			"listed": surblResult.Listed,
+			"code":   surblResult.Code,
+			"source": surblResult.Source,
+			"lists":  decodeSURBLBitmask(surblResult.Code),
+		}
 	}
 
 	// Calculate multiplier based on severity
@@ -240,10 +242,4 @@ func decodeSURBLBitmask(code int) []string {
 	return lists
 }
 
-func init() {
-	// Ensure DNS resolver is available
-	dialer := &net.Resolver{
-		Timeout: 5 * time.Second,
-	}
-	_ = dialer
-}
+

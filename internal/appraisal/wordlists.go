@@ -3,6 +3,13 @@ package appraisal
 // Word lists for segmentation and grading
 // These are extracted from the graded_wordlist.json and Go embedded lists
 
+func float64Ptr(v float64) *float64 { return &v }
+
+func isCommonWord(word string) bool {
+	_, ok := commonWords[word]
+	return ok
+}
+
 // isKnownWord checks if a word is in any of our dictionaries.
 func isKnownWord(word string) bool {
 	if isCommonWord(word) {
@@ -100,12 +107,12 @@ var builtinWords = map[string]bool{
 	"sport": true, "spot": true, "stage": true, "start": true,
 	"state": true, "stock": true, "stream": true,
 	"studio": true, "style": true, "supply": true, "support": true,
-	"sync": true, "system": true, "tab": true, "talk": true,
+	"system": true, "tab": true, "talk": true,
 	"target": true, "task": true, "tax": true, "team": true,
-	"tech": true, "term": true, "test": true, "text": true,
+	"term": true, "test": true, "text": true,
 	"time": true, "tip": true, "today": true, "tool": true,
-	"top": true, "tour": true, "town": true, "track": true,
-	"trade": true, "train": true, "trend": true, "trip": true,
+	"tour": true, "town": true, "track": true,
+	"train": true, "trend": true, "trip": true,
 	"truck": true, "trust": true, "tube": true, "tune": true,
 	"tv": true, "university": true, "up": true, "us": true,
 	"value": true, "video": true, "view": true, "village": true,
@@ -239,12 +246,12 @@ var commonWords = map[string]bool{
 	"sport": true, "spot": true, "stage": true, "start": true,
 	"state": true, "stock": true, "stream": true,
 	"studio": true, "style": true, "supply": true, "support": true,
-	"sync": true, "system": true, "tab": true, "talk": true,
+	"system": true, "tab": true, "talk": true,
 	"target": true, "task": true, "tax": true, "team": true,
-	"tech": true, "term": true, "test": true, "text": true,
+	"term": true, "test": true, "text": true,
 	"time": true, "tip": true, "today": true, "tool": true,
-	"top": true, "tour": true, "town": true, "track": true,
-	"trade": true, "train": true, "trend": true, "trip": true,
+	"tour": true, "town": true, "track": true,
+	"train": true, "trend": true, "trip": true,
 	"truck": true, "trust": true, "tube": true, "tune": true,
 	"tv": true, "university": true, "up": true, "us": true,
 	"value": true, "video": true, "view": true, "village": true,

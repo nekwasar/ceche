@@ -49,29 +49,6 @@ func (m *M11Trademark) Execute(domain string, ctx *ToolContext) ToolResult {
 	}
 }
 
-// M12Authority measures domain authority signals.
-type M12Authority struct{}
-
-func (m *M12Authority) Name() string { return "m12_authority" }
-
-func (m *M12Authority) Execute(domain string, ctx *ToolContext) ToolResult {
-	// Authority API integration (Deep DNS history, spam check) will be added in Phase 2
-	return ToolResult{
-		Tool:       m.Name(),
-		Domain:     domain,
-		Status:     "success",
-		Multiplier: float64Ptr(1.0),
-		Confidence: 0.3,
-		Findings: map[string]interface{}{
-			"authority":  nil,
-			"snapshots":  0,
-			"parked":     false,
-			"note":       "Authority check pending — Deep DNS history and spam API integration (Phase 2)",
-		},
-		Explanation: "Authority placeholder — Deep DNS history and spam API integration pending (Phase 2)",
-	}
-}
-
 // M7Keyword grades keyword popularity using the curated wordlist.
 type M7Keyword struct{}
 

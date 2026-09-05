@@ -10,7 +10,6 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/nekwasar/ceche/internal/api/middleware"
-	"github.com/nekwasar/ceche/internal/appraisal"
 	"github.com/nekwasar/ceche/internal/config"
 )
 
