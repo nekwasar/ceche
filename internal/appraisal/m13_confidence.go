@@ -16,8 +16,8 @@ func (m *M13Confidence) Execute(domain string, ctx *ToolContext) ToolResult {
 		"m5_pronounce", "m6_segmenter",
 		"m7_keyword", "m8_cpc", "m9_search",
 		"m10_cross", "m11_trademark", "m11_dns_history",
-		"m12_authority", "m13_confidence", "m15_pricing",
-		"m16_brandability", "m8_spam", "search_domain",
+		"m12_authority", "m13_confidence", "m14_social",
+		"m15_pricing", "m16_brandability", "m8_spam", "search_domain",
 	}
 
 	total := 0

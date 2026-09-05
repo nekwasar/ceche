@@ -36,6 +36,7 @@ func NewOrchestrator() *Orchestrator {
 	o.Register(&M11DNSHistory{})
 	o.Register(&M12Authority{})
 	o.Register(&M13Confidence{})
+	o.Register(&M14Social{})
 	o.Register(&M15Pricing{})
 	o.Register(&M16Brandability{})
 

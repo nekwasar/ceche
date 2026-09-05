@@ -166,6 +166,17 @@
       }
     },
     {
+      "name": "m14_social",
+      "description": "Check social media handle availability for the domain name across major platforms.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
       "name": "m15_pricing",
       "description": "Convert all module multipliers into a dollar estimate with range.",
       "inputSchema": {

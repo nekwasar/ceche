@@ -28,6 +28,7 @@
             "m11_dns_history",
             "m12_authority",
             "m13_confidence",
+            "m14_social",
             "m15_pricing",
             "m16_brandability",
             "search_domain"
