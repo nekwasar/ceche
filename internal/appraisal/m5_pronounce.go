@@ -8,7 +8,7 @@ import (
 // M5Pronounceability scores how pronounceable the SLD is.
 type M5Pronounceability struct{}
 
-func (m *M5Pronounceability) Name() string { return "m5_pronounceability" }
+func (m *M5Pronounceability) Name() string { return "m5_pronounce" }
 
 var vowelsMap = map[byte]bool{
 	'a': true, 'e': true, 'i': true, 'o': true, 'u': true,

@@ -69,7 +69,19 @@ func (m *M8SpamCheck) Execute(domain string, ctx *ToolContext) ToolResult {
 	surblHost := os.Getenv("SURBL_HOST")
 
 	if dqsKey == "" {
-		dqsKey = "d7qgw5d3rpmlsfbxeon76ufosu"
+		return ToolResult{
+			Tool:       m.Name(),
+			Domain:     domain,
+			Status:     "skipped",
+			Multiplier: nil,
+			Confidence: 0.0,
+			Findings: map[string]interface{}{
+				"domain":  domain,
+				"listed":  false,
+				"reason":  "SPAMHAUS_DQS_KEY not configured",
+			},
+			Explanation: "Spam check skipped — SPAMHAUS_DQS_KEY not configured",
+		}
 	}
 	if uriblHost == "" {
 		uriblHost = "multi.uribl.com"

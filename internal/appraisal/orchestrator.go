@@ -2,6 +2,7 @@ package appraisal
 
 import (
 	"fmt"
+	"math"
 	"strings"
 	"time"
 )
@@ -31,6 +32,7 @@ func NewOrchestrator() *Orchestrator {
 	o.Register(&M8SpamCheck{})
 	o.Register(&SearchTool{})
 	o.Register(&M10CrossTLD{})
+	o.Register(&M11Trademark{})
 	o.Register(&M11DNSHistory{})
 	o.Register(&M12Authority{})
 	o.Register(&M13Confidence{})
@@ -305,17 +307,7 @@ func logBase10(x float64) float64 {
 	if x <= 0 {
 		return 0
 	}
-	// Simple log10 implementation
-	result := 0.0
-	for x >= 10 {
-		x /= 10
-		result++
-	}
-	for x < 1 {
-		x *= 10
-		result--
-	}
-	return result
+	return math.Log10(x)
 }
 
 func round(x float64) float64 {

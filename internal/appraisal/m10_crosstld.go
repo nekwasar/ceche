@@ -7,7 +7,7 @@ import (
 // M10CrossTLD checks if the SLD is registered in other popular TLDs.
 type M10CrossTLD struct{}
 
-func (m *M10CrossTLD) Name() string { return "m10_cross_tld" }
+func (m *M10CrossTLD) Name() string { return "m10_cross" }
 
 func (m *M10CrossTLD) Execute(domain string, ctx *ToolContext) ToolResult {
 	tld := ctx.TLD

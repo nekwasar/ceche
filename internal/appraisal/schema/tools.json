@@ -1,7 +1,7 @@
 {
   "tools": [
     {
-      "name": "ceche_m1_rdap",
+      "name": "m1_rdap",
       "description": "Look up domain registration data via RDAP. Returns registration status, creation date, expiry date, registrar, and age-based multiplier.",
       "inputSchema": {
         "type": "object",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "name": "ceche_m2_tld",
+      "name": "m2_tld_table",
       "description": "Score the TLD (Top-Level Domain) based on market demand. Returns TLD score (0.2-10) and weight profile.",
       "inputSchema": {
         "type": "object",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "name": "ceche_m3_length",
+      "name": "m3_length",
       "description": "Score the domain based on SLD length. Returns sigmoid-based multiplier with digit penalty.",
       "inputSchema": {
         "type": "object",
@@ -34,7 +34,29 @@
       }
     },
     {
-      "name": "ceche_m6_segment",
+      "name": "m4_word_count",
+      "description": "Score based on word count from segmentation. Single-word gets highest multiplier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m5_pronounce",
+      "description": "Score pronounceability using vowel ratio, consonant clusters, and bigram frequency.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m6_segmenter",
       "description": "Segment domain name into words and determine commercial intent (high/mid/low/brandable).",
       "inputSchema": {
         "type": "object",
@@ -45,7 +67,29 @@
       }
     },
     {
-      "name": "ceche_m8_spam",
+      "name": "m7_keyword",
+      "description": "Grade keyword commercial intent using curated wordlists.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m8_cpc",
+      "description": "Evaluate CPC tier from word lists with substring fallback.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m8_spam",
       "description": "Check domain against spam blacklists (Spamhaus DBL/ZRD, URIBL, SURBL). Returns spam severity and multiplier.",
       "inputSchema": {
         "type": "object",
@@ -56,8 +100,30 @@
       }
     },
     {
-      "name": "ceche_search_domain",
-      "description": "Check domain availability and basic info via RDAP. Returns availability status, registrar, expiry, and nameservers.",
+      "name": "m9_search",
+      "description": "AI agent tool: search the web for domain web presence, competitor count, and common law trademark signals.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to search" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m10_cross",
+      "description": "Check if the SLD is registered in other popular TLDs (.com, .net, .co, .io).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m11_trademark",
+      "description": "Check for trademark conflicts using Signa.so API.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -67,7 +133,7 @@
       }
     },
     {
-      "name": "ceche_m11_dns_history",
+      "name": "m11_dns_history",
       "description": "Get domain ownership history via WhoisXML API. Returns drops, registrar changes, years active, and registrant info.",
       "inputSchema": {
         "type": "object",
@@ -78,12 +144,56 @@
       }
     },
     {
-      "name": "ceche_m12_authority",
+      "name": "m12_authority",
       "description": "Measure domain authority using WhoisXML Domain Reputation API. Returns reputation score, risk level, and parked status.",
       "inputSchema": {
         "type": "object",
         "properties": {
           "domain": { "type": "string", "description": "Domain name to evaluate" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m13_confidence",
+      "description": "Compute overall appraisal confidence from module completeness.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m15_pricing",
+      "description": "Convert all module multipliers into a dollar estimate with range.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "m16_brandability",
+      "description": "Rate brandable domain quality using syllable flow, pattern matching, and length scoring.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name" }
+        },
+        "required": ["domain"]
+      }
+    },
+    {
+      "name": "search_domain",
+      "description": "Check domain availability and basic info via RDAP. Returns availability status, registrar, expiry, and nameservers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "domain": { "type": "string", "description": "Domain name to check" }
         },
         "required": ["domain"]
       }

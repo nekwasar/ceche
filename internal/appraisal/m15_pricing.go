@@ -250,9 +250,9 @@ func (m *M15Pricing) calculateScarcityBase(sld string, splitStatus string) float
 
 func formatMoney(v float64) string {
 	if v >= 1000000 {
-		return fmt.Sprintf("$%.1fM", v/1000000)
+		return fmt.Sprintf("%.1fM", v/1000000)
 	} else if v >= 1000 {
-		return fmt.Sprintf("$%.0fK", v/1000)
+		return fmt.Sprintf("%.0fK", v/1000)
 	}
-	return fmt.Sprintf("$%.0f", v)
+	return fmt.Sprintf("%.0f", v)
 }
