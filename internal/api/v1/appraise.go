@@ -10,6 +10,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"github.com/nekwasar/ceche/internal/appraisal"
 	"github.com/nekwasar/ceche/internal/cache"
 	"github.com/nekwasar/ceche/internal/service"
 )
@@ -104,7 +105,9 @@ func handleAppraise(db *pgxpool.Pool) http.HandlerFunc {
 			}
 		}
 
-		score, metrics := service.CalculateScore(req.Domain, tier)
+		orch := appraisal.NewOrchestrator()
+		metrics := orch.Run(req.Domain)
+		score := metrics.Score
 
 		tld := ""
 		if idx := strings.LastIndex(req.Domain, "."); idx != -1 {
@@ -291,7 +294,9 @@ func handleAppraisePublic(db *pgxpool.Pool) http.HandlerFunc {
 		}
 
 		// Calculate score (free tier)
-		score, metrics := service.CalculateScore(req.Domain, "free")
+		orch := appraisal.NewOrchestrator()
+		metrics := orch.Run(req.Domain)
+		score := metrics.Score
 
 		tld := ""
 		if idx := strings.LastIndex(req.Domain, "."); idx != -1 {
