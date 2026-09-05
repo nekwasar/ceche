@@ -1,349 +1,349 @@
 {
   "nav": {
     "triggers": {
-      "products": "Products",
-      "marketplace": "Marketplace",
-      "solutions": "Solutions",
-      "resources": "Resources"
+      "products": "製品",
+      "marketplace": "マーケットプレース",
+      "solutions": "ソリューション",
+      "resources": "リソース"
     },
     "links": {
-      "pricing": "Pricing",
-      "login": "Log In",
-      "signup": "Signup Free"
+      "pricing": "料金",
+      "login": "ログイン",
+      "signup": "無料登録"
     },
     "categories": {
-      "intelligence": "Intelligence",
-      "platform": "Platform",
-      "buyDomains": "Buy Domains",
-      "sellDomains": "Sell Domains",
-      "byRole": "By Role",
-      "byNeed": "By Need",
-      "explore": "Explore",
-      "support": "Support"
+      "intelligence": "インテリジェンス",
+      "platform": "プラットフォーム",
+      "buyDomains": "ドメイン購入",
+      "sellDomains": "ドメイン販売",
+      "byRole": "役割別",
+      "byNeed": "必要別",
+      "explore": "探索",
+      "support": "サポート"
     },
     "items": {
       "domainLookup": {
-        "title": "Domain Lookup",
-        "desc": "Free tool: WHOIS data, DNS records."
+        "title": "ドメイン検索",
+        "desc": "無料ツール: WHOISデータ、DNSレコード。"
       },
       "appraisal": {
-        "title": "16-Dimension Appraisal",
-        "desc": "Deep domain valuation with 16 metric breakdowns and market-based pricing."
+        "title": "16次元評価",
+        "desc": "16のメトリック分解と市場ベースの価格を使った深いドメイン評価。"
       },
       "domainScanner": {
-        "title": "Domain Scanner",
-        "desc": "Premium tool: DA, spam score, backlink profiles, and indexation status. Requires subscription."
+        "title": "ドメインスキャナー",
+        "desc": "プレミアムツール: DA、スパムスコア、バックリンプロフィールとインデックス状態。アブネススメント必要。"
       },
       "extendedInsights": {
-        "title": "Extended Insights",
-        "desc": "Premium tool: deep DNS records, USPTO/WIPO trademarks, and WHOIS history."
+        "title": "拡張された情報",
+        "desc": "プレミアムツール: DNSレコードの深层、USPTO/WIPOトランジフィールとWHOIS履歴。"
       },
       "bulkAudit": {
-        "title": "Bulk Domain Audit",
-        "desc": "Premium tool: batch process and analyze up to 1000 domains at once."
+        "title": "一括ドメイン监査",
+        "desc": "プレミアムツール: 一度に1000つのドメインをバッチ処理と分析。"
       },
       "apiAccess": {
-        "title": "API Access",
-        "desc": "RESTful API for programmatic domain intelligence at scale."
+        "title": "APIアクセス",
+        "desc": "プログラムジャーなドメインインテリジェンスのためのRESTful API。"
       },
       "trademarkMonitor": {
-        "title": "Trademark Monitor",
-        "desc": "USPTO/WIPO conflict detection and automated alerts."
+        "title": "トランジフィールモニター",
+        "desc": "USPTO/WIPO冲突検出と自動アラート。"
       },
       "domainDatabase": {
-        "title": "Domain Database",
-        "desc": "Comprehensive TLD registry and expiry tracking."
+        "title": "ドメインデータベース",
+        "desc": "包括的なTLDレジストリ、期限トラッキング。"
       },
       "standardMarketplace": {
-        "title": "Standard Marketplace",
-        "desc": "Browse premium domains with full stats. Name hidden — pay to reveal."
+        "title": "標準マーケットプレース",
+        "desc": "完全な統計量を表示するプレミアムドメインをブラウズ。名前隠されている。揭けるには有料。"
       },
       "curatedDomains": {
-        "title": "Curated Domains",
-        "desc": "Hand-picked premium domains verified by our team."
+        "title": "カレーシュラリズされたドメイン",
+        "desc": "ユーズが分かって検証されたプレミアムドメイン。"
       },
       "tryYourLuck": {
-        "title": "Try Your Luck",
-        "desc": "Pick a TLD, spin 3 boxes, reveal a premium domain. Locked exclusively for you."
+        "title": "連遺をたてみる",
+        "desc": "TLDを選び、3つのボックスを回し、プレミアムドメインを揭ける。豊少你のためのまとりブロックされている。"
       },
       "listDomain": {
-        "title": "List a Domain",
-        "desc": "Sell your premium domain on Ceche. $5-$10 listing fee, 8-15% commission."
+        "title": "ドメインを登録する",
+        "desc": "ドメインを売りますが、登録購5-10$、コミッション8-15%。"
       },
       "domainInvestors": {
-        "title": "Domain Investors",
-        "desc": "Portfolio yield tracking, flipper valuation, and drop-catching alerts."
+        "title": "ドメイン投資家",
+        "desc": "ポートフォリオ収益分析、フリッパー評価とドロップカッチングアラート。"
       },
       "startupFounders": {
-        "title": "Startup Founders",
-        "desc": "Brandability index, pronounceability, and extension checking."
+        "title": "スタートアップ創業者",
+        "desc": "ブランドインデックス、発音可能性と拡張子チェック。"
       },
       "seoAgencies": {
-        "title": "SEO Agencies",
-        "desc": "Expired domain backlink authority scoring and spam recovery audits."
+        "title": "SEO代行所",
+        "desc": "期限切れドメインのバックリン権威スコアとスパム復旧监査。"
       },
       "findAvailable": {
-        "title": "Find Available Domains",
-        "desc": "Scan millions of combinations for available premium names."
+        "title": "利用可能なドメインを発見",
+        "desc": "利用可能なプレミアム名前をたくさんの組み合わせをスキャン。"
       },
       "researchIntelligence": {
-        "title": "Research Intelligence",
-        "desc": "Deep domain analysis before acquisition decisions."
+        "title": "調査インテリジェンス",
+        "desc": "取得前の深层なドメイン分析。"
       },
       "buyPremium": {
-        "title": "Buy Premium Domains",
-        "desc": "Acquire high-value domains with secure, transparent transactions."
+        "title": "プレミアムドメインを購入",
+        "desc": "安全で透明な取引で高価値のドメインを取得。"
       },
       "blog": {
-        "title": "Blog",
-        "desc": "Domain investing tips, platform updates, and industry insights."
+        "title": "ブログ",
+        "desc": "ドメイン投資ティプス、プラットフォームの更新と業界の情報。"
       },
       "ebooks": {
-        "title": "Ebooks",
-        "desc": "In-depth guides on domain valuation, SEO, and brand strategy."
+        "title": "Eブック",
+        "desc": "ドメイン評価、SEO、ブランド戦略に関する深层なガイド。"
       },
       "caseStudies": {
-        "title": "Case Studies",
-        "desc": "Real stories from domain investors and startup founders."
+        "title": "ケーススタディ",
+        "desc": "ドメイン投資家やスタートアップ創業者の実の物語。"
       },
       "helpCenter": {
-        "title": "Help Center",
-        "desc": "Documentation, FAQs, and getting started guides."
+        "title": "ヘルプセンター",
+        "desc": "ドキュメント、FAQと始めるガイド。"
       },
       "apiDocs": {
-        "title": "API Docs",
-        "desc": "API reference, authentication, and integration guides."
+        "title": "APIドキュメント",
+        "desc": "APIリファレンス、認証、組込みガイド。"
       },
       "contact": {
-        "title": "Contact",
-        "desc": "Reach our team for support or partnerships."
+        "title": "ご連絡",
+        "desc": "サポートやパーターネッシュプためにテームにご連絡ください。"
       },
       "changelog": {
-        "title": "Changelog",
-        "desc": "Product updates and new feature releases."
+        "title": "変更リジスター",
+        "desc": "製品の更新と新しい機能。"
       }
     },
     "sidebar": {
-      "overview": "Overview",
-      "documentation": "Documentation",
-      "apiReference": "API Reference",
+      "overview": "概要",
+      "documentation": "ドキュメント",
+      "apiReference": "APIリファレンス",
       "faq": "FAQ",
-      "contact": "Contact",
-      "changelog": "Changelog"
+      "contact": "ご連絡",
+      "changelog": "変更リジスター"
     },
     "megaMenu": {
-      "products": "Tools and APIs for domain intelligence",
-      "marketplace": "Buy and sell premium domains",
-      "solutions": "Built for your role and workflow",
-      "resources": "Learn and get support"
+      "products": "ドメインのインテリジェンスのためのツールとAPI",
+      "marketplace": "プレミアムドメインの購入と販売",
+      "solutions": "あなたの役割とワーフローに対して設計",
+      "resources": "学び、サポートを取ります"
     }
   },
   "footer": {
-    "tagline": "Enterprise-grade domain intelligence and marketplace platform.",
+    "tagline": "エンタープライスのドメインインテリジェンスとマーケットプレラットフォーム。",
     "sections": {
-      "products": "Products",
-      "marketplace": "Marketplace",
-      "company": "Company",
-      "legal": "Legal"
+      "products": "製品",
+      "marketplace": "マーケットプレース",
+      "company": "企業",
+      "legal": "法律"
     },
     "links": {
-      "domainAppraiser": "Domain Appraiser",
-      "seoScanner": "SEO Scanner",
-      "extendedInsights": "Extended Insights",
-      "bulkAnalyzer": "Bulk Analyzer",
-      "apiAccess": "API Access",
-      "curatedDomains": "Curated Domains",
-      "tryYourLuck": "Try Your Luck",
-      "sellDomains": "Sell Domains",
-      "howUnmaskingWorks": "How Unmasking Works",
-      "about": "About",
-      "affiliates": "Affiliates",
-      "blog": "Blog",
-      "contact": "Contact",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "cookies": "Cookie Policy"
+      "domainAppraiser": "ドメイン評価器",
+      "seoScanner": "SEOスキャナー",
+      "extendedInsights": "拡張された情報",
+      "bulkAnalyzer": "一括分析器",
+      "apiAccess": "APIアクセス",
+      "curatedDomains": "カレーシュラリズされたドメイン",
+      "tryYourLuck": "連遺をたてみる",
+      "sellDomains": "ドメインを販売",
+      "howUnmaskingWorks": "揭示機能の作り方",
+      "about": "企業概要",
+      "affiliates": "パーター",
+      "blog": "ブログ",
+      "contact": "ご連絡",
+      "terms": "利用規約",
+      "privacy": "個人情報保護方針",
+      "cookies": "Cookie方針"
     },
-    "copyright": "All rights reserved.",
-    "platform": "Domain Intelligence Platform"
+    "copyright": "全ての権利を保留しています。",
+    "platform": "ドメインインテリジェンスプレラットフォーム"
   },
   "home": {
     "hero": {
-      "title1": "Premium domain names, bought and sold with",
-      "titleHighlight": "intelligence",
-      "subtitle": "Every listing shows full stats — estimated value, health score, CPC, brandability — but the name stays hidden until you pay to reveal it. No auction inflation. No sniping.",
-      "searchPlaceholder": "Search any domain name, e.g., brand.com",
-      "searchButton": "Search Domain",
+      "title1": "プレミアムドメイン名、インテリジェンスを使って購入され、販売されています",
+      "titleHighlight": "インテリジェンス",
+      "subtitle": "各アンジメントは完全な統計量を表示します——推定価値、ヒジスコア、CPC、ブランドバリリティ——ただし名前だけが揭けるまで隠されています。アウキション詰広なし。スナイピングなし。",
+      "searchPlaceholder": "何のドメインをお探しください、例 brand.com",
+      "searchButton": "ドメイン検索",
       "badges": {
-        "blindListings": "Blind Listings",
-        "dimensionIntelligence": "16-Dimension Intelligence",
-        "secureTransactions": "Secure Transactions"
+        "blindListings": "ブラインドアンジメント",
+        "dimensionIntelligence": "16次元のインテリジェンス",
+        "secureTransactions": "安全な取引"
       }
     },
     "searchTool": {
-      "badge": "Free Tool",
-      "title": "Search Any Domain Name",
-      "description": "Type any domain into the search bar above. We'll tell you if it's available, what it's worth, and what you could build with it. No signup required.",
+      "badge": "無料ツール",
+      "title": "何のドメイン名をお探しください",
+      "description": "上の検索バーに何のドメインを入力してください。利用可能か、いくらの価値か、何を構築できるかをお知らせします。",
       "taken": {
-        "title": "Domain Taken?",
-        "desc": "We show you the WHOIS details — who owns it, when it expires, which registrar they used, and nameserver info. Useful for outreach or waiting for expiry."
+        "title": "ドメイン使用中？",
+        "desc": "WHOIS詳細を表示します——調査者、有效期間、使用しているラジスターと名前服務の情報。"
       },
       "available": {
-        "title": "Domain Available?",
-        "desc": "We rank it Premium, Mid, or Low — no confusing scores, just a clear label. Plus suggestions for what you could build with the name, and a button to run a full 16-dimension appraisal."
+        "title": "ドメイン利用可能？",
+        "desc": "プレミア、ミッド、低とクラスシフィションします——困慩なスコアはありません。"
       },
       "appraise": {
-        "title": "Deep Appraisal",
-        "desc": "Click \"Appraise this name\" for the full 16-dimension analysis — pronounceability, trademark risk, historical DNS, brandability score, and estimated value range."
+        "title": "深层な評価",
+        "desc": "「この名前を評価」をクリックして16次元分析を行ってください。"
       }
     },
     "builtFor": {
-      "badge": "Built For",
-      "title": "Three kinds of people, one platform",
+      "badge": "対象者",
+      "title": "3つのタイプの人、1つのプラットフォーム",
       "investors": {
-        "title": "Domain Investors",
-        "desc": "Scan thousands of word combinations, appraise shortlists in seconds, and spot undervalued names before the market catches on. The scanner surfaces DA, spam score, and backlink profiles on every available name.",
+        "title": "ドメイン投資家",
+        "desc": "数千の単語組み合わせをスキャンし、短期間で評価し、市場が気づいた前に低予渡した名前を見つけます。",
         "stat": "200+",
-        "statLabel": "checks per scan"
+        "statLabel": "1回のスキャン数"
       },
       "founders": {
-        "title": "Startup Founders",
-        "desc": "Find a name that's easy to say, easy to spell, and safe to use. The 16-dimension engine checks pronounceability, trademark conflicts, and brandability before you commit to a brand.",
+        "title": "スタートアップ創業者",
+        "desc": "話しやすく、書きやすく、使い安全な名前を見つけましょう。16次元エンジンがブランドを確認します。",
         "stat": "16",
-        "statLabel": "dimensions checked"
+        "statLabel": "検証渡次数"
       },
       "agencies": {
-        "title": "SEO Agencies",
-        "desc": "Find expired domains that still carry authority and clean backlinks. The scanner surfaces DA, spam score, and indexation status so you start with existing SEO value, not zero.",
+        "title": "SEO代行所",
+        "desc": "権威と組織されたバックリンを持つ期限切れドメインを発見します。",
         "stat": "4",
-        "statLabel": "metrics per domain"
+        "statLabel": "1ドメインごとのメトリック"
       }
     },
     "marketplace": {
-      "badge": "Marketplace",
-      "title": "Premium names, names hidden",
-      "desc1": "Every listing shows full intelligence — estimated value, health score, CPC, brandability, TLD, and keyword intent — everything except the name itself. No hints. No partial reveals. No asterisks.",
-      "desc2": "Public marketplaces get scraped the moment a premium name appears. Ceche hides the name and shows the intelligence instead — so value, not visibility, drives the transaction. Investors who read the stats well consistently find names before auction fever inflates them.",
-      "cta": "Browse the marketplace",
-      "revealPricingTitle": "Reveal Pricing",
-      "tryYourLuckTitle": "Try Your Luck",
-      "tryYourLuckCta": "Try Your Luck"
+      "badge": "マーケットプレース",
+      "title": "プレミアム名前、名前隠している",
+      "desc1": "各アンジメントは完全な情報を表示します——名前を除くすべて。",
+      "desc2": "公開のマーケットプレースはプレミアム名前が現れたじまでスクラピングされます。",
+      "cta": "マーケットプレースをブラウズ",
+      "revealPricingTitle": "揭けする価格",
+      "tryYourLuckTitle": "連遺をたてみる",
+      "tryYourLuckCta": "連遺をたてみる"
     },
     "howItWorks": {
-      "badge": "How It Works",
-      "title": "Spin, pick, own",
+      "badge": "作り方",
+      "title": "回し、選び、所有",
       "step1": {
-        "title": "Pick your TLD",
-        "desc": "Choose .com ($79), .net ($39), .io ($29), or .co ($9). Or skip the selection and pay a flat $19 for any TLD."
+        "title": "TLDを選ぶ",
+        "desc": ".com ($79)、.net ($39)、.io ($29)、.co ($9)を選ぶ。"
       },
       "step2": {
-        "title": "Spin & pick a box",
-        "desc": "Three closed boxes appear with a spinning animation. Each holds a unique premium domain. When it stops, pick one."
+        "title": "回してボックスを選ぶ",
+        "desc": "3つの閉じたボックスが回転アニメーションで現れます。"
       },
       "step3": {
-        "title": "Reveal & register",
-        "desc": "Your domain is revealed instantly. It's locked exclusively for you — no one else can buy it. Register immediately at your preferred registrar."
+        "title": "揭けて登録",
+        "desc": "ドメインが即座に揭けられます。豊少あなたのためのまとりブロックされています。"
       },
-      "cta": "Try Your Luck now"
+      "cta": "連遺をたてみましょう"
     },
     "underTheHood": {
-      "badge": "Under the Hood",
-      "title": "Built for Speed and Trust",
-      "description": "Every domain name is encrypted at rest. Every scan runs on real infrastructure. No shortcuts.",
+      "badge": "ホッドの下",
+      "title": "速度と信頼のために設計",
+      "description": "各ドメイン名は保存時に分敷化されています。各スキャンは実際のインフラ、で実行されます。",
       "goroutine": {
-        "title": "50-Worker Goroutine Pool",
-        "desc": "Our scanner runs 50 concurrent goroutines, each checking DNS records with a 5-second timeout. Results batch-insert 100 at a time. We respect per-TLD rate limits."
+        "title": "50ワーカーゴルーティンプール",
+        "desc": "スキャナーは50個の並行ゴルーティンを実行します。"
       },
       "encryption": {
-        "title": "AES-256-GCM Encryption",
-        "desc": "Every domain name in our database is encrypted with AES-256-GCM. Even if someone got a full DB dump, they'd see garbage — not your search history."
+        "title": "AES-256-GCM分智化",
+        "desc": "ドメイン名全体がAES-256-GCMで分智化されています。"
       },
       "caching": {
-        "title": "In-Memory Caching",
-        "desc": "Repeat queries hit zero-cost bigcache with a 1-hour TTL. Your appraisal results stay fast without re-running the full 16-dimension analysis."
+        "title": "メモリウキャッシング",
+        "desc": "繋ぎ返しのカフェは電気コストなしにTTL1時間のbigcacheにヒットします。"
       }
     },
     "faq": {
-      "badge": "Frequently Asked",
-      "title": "Common Questions",
+      "badge": "よくある質問",
+      "title": "よくある質問",
       "items": [
         {
-          "question": "How many free appraisals do I get?",
-          "answer": "If you're not signed up, you get 3 appraisals per day. Sign up for free and you get 12 per day. Premium Startup ($79/mo) gets 30 per day, and Premium Enterprise ($129/mo) gets unlimited."
+          "question": "無料の評価はいくらいいただけいいけますか？",
+          "answer": "未登録の場合は毎日3回です。無料登録すると毎日12回です。"
         },
         {
-          "question": "What's the difference between name search and appraisal?",
-          "answer": "Name search is free and instant — it tells you if a domain is available, shows WHOIS if taken, or ranks it Premium/Mid/Low if available. Appraisal is the deep 16-dimension analysis that scores pronounceability, trademark risk, brandability, and estimated value."
+          "question": "名前検索と評価の違いは？",
+          "answer": "名前検索は無料で即座です。評価は16次元の深层分析です。"
         },
         {
-          "question": "How does Try Your Luck work?",
-          "answer": "Pick a TLD (.com, .net, .io, or .co) and pay the TLD-specific price. Three closed boxes appear with a spinning animation. Pick one when it stops. You get a unique premium domain revealed instantly. It's locked — no one else can buy it. Or pay a flat $19 without selecting a TLD."
+          "question": "連遺をたてみるはどう動きますか？",
+          "answer": "TLDを選び、そのTLD専用の価格を支払います。3つの閉じたボックスが現れます。"
         },
         {
-          "question": "What happens after I reveal a domain name?",
-          "answer": "After reveal, the domain is yours to evaluate. We show you direct links to register it at Dynadot, Namecheap, or Porkbun. You choose where to register — we don't lock you into a registrar."
+          "question": "ドメイン名を揭けた後は？",
+          "answer": "揭けた後、ドメインはあなたのものです。登録のレンクを示します。"
         },
         {
-          "question": "What's included in the Premium subscription?",
-          "answer": "Premium Startup ($79/mo) gives you 30 appraisals/day plus access to the Domain Scanner (DA, spam score, backlinks), Extended Insights (USPTO/WIPO, trademark history), and Bulk Domain Audit. Enterprise ($129/mo) adds unlimited appraisals, API access, and priority support."
+          "question": "プレミアムアブネスには何が含まれていますか？",
+          "answer": "プレミアムスタートアップは毎日30回の評価とドメインスキャナーのアクセスを提供します。"
         },
         {
-          "question": "Can I sell my domains on Ceche?",
-          "answer": "Yes. List your premium domain on our marketplace. We appraise it, you set the price. Standard listing is $5, priority placement is $10. We take 8-15% commission on successful sales depending on the sale price."
+          "question": "ドメインを売りますか？",
+          "answer": "はい。マーケットプレースにプレミアムドメインを出してください。"
         },
         {
-          "question": "Is my search data private?",
-          "answer": "Yes. Domain names you search are encrypted with AES-256-GCM before storage. We don't sell or share search data. Your competition won't see what you're looking at."
+          "question": "検索データは私密ですか？",
+          "answer": "はい。検索されたドメイン名はAES-256-GCMで分智化されてから保存されます。"
         }
       ]
     },
     "worldMap": {
-      "title": "Accelerating Domain Liquidity Worldwide",
-      "description": "Real-time intelligence for domain investors, startup founders, and SEO agencies across 9 languages and 4 TLDs.",
-      "cta": "Start Appraising"
+      "title": "世界中のドメインの流動性を加速",
+      "description": "9つの言語でドメイン投資家、スタートアップ創業者、SEO代行所のためのリャルタイムインテリジェンス。",
+      "cta": "評価を始める"
     },
     "cta": {
-      "title": "Ready to find your next domain?",
-      "description": "Start with 3 free appraisals per day. No credit card required.",
-      "signup": "Signup Free",
-      "pricing": "View Pricing"
+      "title": "次のドメインを見つける準備はでした？",
+      "description": "毎日3回の無料評価で開始しましょう。クレジットカードは不要。",
+      "signup": "無料登録",
+      "pricing": "料金を観てみる"
     },
     "app": {
-      "welcomeBack": "Welcome back, {name}",
-      "plan": "Plan",
-      "quickActions": "Quick Actions",
-      "appraiseDomain": "Appraise a domain →",
-      "startScan": "Start a scan →",
-      "browseMarketplace": "Browse marketplace →",
-      "apiKeys": "API Keys",
-      "manageKeys": "Manage keys →"
+      "welcomeBack": "お帰りになさい、{name}",
+      "plan": "プラン",
+      "quickActions": "早いアクション",
+      "appraiseDomain": "ドメインを評価 →",
+      "startScan": "スキャン開始 →",
+      "browseMarketplace": "マーケットプレースをブラウズ →",
+      "apiKeys": "APIキー",
+      "manageKeys": "キー管理 →"
     }
   },
   "pricingPage": {
     "hero": {
-      "badge": "Pricing",
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Start free. Upgrade when you need more power. Cancel anytime."
+      "badge": "料金",
+      "title": "シンプル、透明な料金",
+      "subtitle": "無料で開始しましょう。より多くの力が必要なときにアップグレードしましょう。"
     },
     "annual": {
-      "banner": "Save up to $260/yr with annual billing",
-      "mostPopular": "Most Popular"
+      "banner": "年度計算で最大$260範囲",
+      "mostPopular": "最人気"
     },
     "plans": {
       "free": {
-        "name": "Free",
-        "description": "Get started with basic tools. No credit card required.",
+        "name": "無料",
+        "description": "基本ツールで開始。クレジットカードは不要。",
         "annualNote": "",
-        "cta": "Get Started",
+        "cta": "始める",
         "features": [
-          "3 appraisals/day (unsigned)",
-          "12 appraisals/day (signed up)",
-          "Name search tool",
-          "Basic WHOIS lookup",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "API access"
+          "毎日3回の評価（未登録）",
+          "毎日12回の評価（登録後）",
+          "名前検索ツール",
+          "基本WHOIS検索",
+          "ドメインスキャナー（DA、スパム、バックリン）",
+          "拡張された情報（USPTO/WIPO）",
+          "一括ドメイン监査",
+          "APIアクセス"
         ],
         "included": [
           true,
@@ -357,19 +357,19 @@
         ]
       },
       "startup": {
-        "name": "Premium Startup",
-        "description": "For small teams and serious domain investors.",
-        "annualNote": "saves $160/yr",
-        "cta": "Start Premium",
+        "name": "プレミアムスタートアップ",
+        "description": "小規模ティームと本気のドメイン投資家ざめ。",
+        "annualNote": "年頭$160範囲",
+        "cta": "プレミアム開始",
         "features": [
-          "30 appraisals/day",
-          "Name search tool",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "Priority marketplace listing",
-          "API access",
-          "Priority support"
+          "毎日30回の評価",
+          "名前検索ツール",
+          "ドメインスキャナー（DA、スパム、バックリン）",
+          "拡張された情報（USPTO/WIPO）",
+          "一括ドメイン监査",
+          "優先マーケットプレース登録",
+          "APIアクセス",
+          "優先サポート"
         ],
         "included": [
           true,
@@ -383,19 +383,19 @@
         ]
       },
       "enterprise": {
-        "name": "Premium Enterprise",
-        "description": "For agencies, professionals, and power users.",
-        "annualNote": "saves $260/yr",
-        "cta": "Start Enterprise",
+        "name": "プレミアムエンタープライス",
+        "description": "代行所、プロフェション、パーワーサーブスユーザーざめ。",
+        "annualNote": "年頭$260範囲",
+        "cta": "エンタープライス開始",
         "features": [
-          "Unlimited appraisals",
-          "Name search tool",
-          "Domain Scanner (DA, spam, backlinks)",
-          "Extended Insights (USPTO/WIPO)",
-          "Bulk Domain Audit",
-          "Priority marketplace listing",
-          "Full API access",
-          "Priority support"
+          "無限の評価",
+          "名前検索ツール",
+          "ドメインスキャナー（DA、スパム、バックリン）",
+          "拡張された情報（USPTO/WIPO）",
+          "一括ドメイン监査",
+          "優先マーケットプレース登録",
+          "APIアクセス完全",
+          "優先サポート"
         ],
         "included": [
           true,
@@ -410,65 +410,65 @@
       }
     },
     "tryYourLuck": {
-      "badge": "Try Your Luck",
-      "title": "Spin. Reveal. Own.",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain locked exclusively for you.",
-      "mostPopular": "Most Popular"
+      "badge": "連遺をたてみる",
+      "title": "回し、揭け、所有",
+      "subtitle": "TLDを選び、3つのボックスを回し、豊少あなたのためのまとりのプレミアムドメインを揭けます。",
+      "mostPopular": "最人気"
     },
     "fees": {
       "reveal": {
-        "badge": "Marketplace",
-        "title": "Reveal Fees",
-        "description": "Standard listings show stats with the name hidden. Pay a one-time Reveal Fee to see the domain name.",
+        "badge": "マーケットプレース",
+        "title": "揭けする料金",
+        "description": "標準アンジメントは名前隠して統計量を表示します。ドメイン名を見るには一度の揭け料金を支払いてください。",
         "headers": {
-          "tier": "Tier",
-          "valueRange": "Value Range",
-          "fee": "Fee"
+          "tier": "レベル",
+          "valueRange": "価値範囲",
+          "fee": "料金"
         },
         "rows": [
           {
-            "tier": "Low",
-            "range": "Under $500",
+            "tier": "低",
+            "range": "$500未滢",
             "fee": "$5"
           },
           {
-            "tier": "Mid",
+            "tier": "中",
             "range": "$500 – $5,000",
             "fee": "$10"
           },
           {
-            "tier": "High",
+            "tier": "高",
             "range": "$5,001 – $50,000",
             "fee": "$25"
           },
           {
-            "tier": "Premium",
+            "tier": "プレミアム",
             "range": "$50,001+",
             "fee": "$50"
           }
         ]
       },
       "listing": {
-        "badge": "For Sellers",
-        "title": "Listing Fees",
+        "badge": "販売者向け",
+        "title": "登録料金",
         "standard": {
-          "name": "Standard listing",
-          "desc": "30-day visibility",
+          "name": "標準登録",
+          "desc": "30日間のビジブリティ",
           "price": "$5"
         },
         "priority": {
-          "name": "Priority placement",
-          "desc": "72-hour boost + featured",
+          "name": "優先位置",
+          "desc": "72時間ブスト+バイター",
           "price": "$10"
         }
       },
       "commission": {
-        "badge": "Commissions",
-        "title": "Seller Commission Rates",
+        "badge": "コミッション",
+        "title": "販売者コミッション率",
         "headers": {
-          "saleAmount": "Sale Amount",
-          "rate": "Rate",
-          "minFee": "Min Fee"
+          "saleAmount": "販売額",
+          "rate": "率",
+          "minFee": "最小料金"
         },
         "rows": [
           {
@@ -495,1075 +495,1076 @@
       }
     },
     "compare": {
-      "badge": "Compare",
-      "title": "Ceche vs the Competition",
-      "subtitle": "See how Ceche stacks up against legacy domain platforms.",
+      "badge": "比較",
+      "title": "Ceche vs 競合他社",
+      "subtitle": "Cecheが徶来のドメインプレラットとどう比較されるかをみてみましょう。",
       "headers": {
-        "feature": "Feature",
+        "feature": "機能",
         "ceche": "Ceche",
         "godaddy": "GoDaddy",
         "sedo": "Sedo"
       },
       "rows": [
-        "AI domain valuation",
-        "16-dimension scoring",
-        "WHOIS + DNS intel",
-        "SEO/DA/spam scan",
-        "Bulk domain audit",
-        "Trademark monitoring",
-        "Marketplace reveal model",
-        "API access",
-        "Free tier available"
+        "AIドメイン評価",
+        "16次元スコアリング",
+        "WHOIS + DNSインテリジェンス",
+        "SEO/DA/スパムスキャン",
+        "一括ドメイン监査",
+        "トランジフィール監視",
+        "マーケット揭けモデル",
+        "APIアクセス",
+        "無料レベル利用可能"
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "description": "Create a free account in seconds. No credit card required.",
-      "signup": "Create Free Account",
-      "help": "Visit Help Center",
-      "lookup": "Free Domain Lookup"
+      "title": "開始する準備はでした？",
+      "description": "無料アカウントを少しの間に作りましょう。クレジットカードは不要。",
+      "signup": "無料アカウントを作ります",
+      "help": "ヘルプセンターを見てみる",
+      "lookup": "無料ドメイン検索"
     }
   },
   "tools": {
     "scanner": {
-      "badge": "SEO SCANNER",
-      "title": "SEO Scanner",
-      "description": "Domain and SEO audit with DA, spam score, backlink profiles, and indexation status. Get instant insights into any domain's search engine health.",
-      "placeholder": "Enter domain to scan",
-      "scanButton": "Scan Now",
-      "scanningButton": "Scanning...",
-      "limitsTitle": "Scan Limits",
+      "badge": "SEOスキャナー",
+      "title": "SEOスキャナー",
+      "description": "DA、スパムスコア、バックリンプロフィール、インデックス状態を使ったドメインSEO监査。",
+      "placeholder": "スキャンするドメインを入力",
+      "scanButton": "すぐスキャン",
+      "scanningButton": "スキャン中...",
+      "limitsTitle": "スキャンリミット",
       "limits": [
         {
-          "plan": "Startup",
-          "scans": "30 per day",
-          "price": "$79/mo"
+          "plan": "スタートアップ",
+          "scans": "1日ごと30回",
+          "price": "$79/モース"
         },
         {
-          "plan": "Enterprise",
-          "scans": "Unlimited",
-          "price": "$129/mo"
+          "plan": "エンタープライス",
+          "scans": "無限",
+          "price": "$129/モース"
         }
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "作り方",
         "steps": [
           {
-            "title": "Enter Domain",
-            "desc": "Type any domain name into the search bar above."
+            "title": "ドメインを入力",
+            "desc": "上の検索バーに何のドメイン名を入力してください。"
           },
           {
-            "title": "Run Analysis",
-            "desc": "Our engine scans 16 dimensions of domain health instantly."
+            "title": "分析を実行",
+            "desc": "エンジンが16つのドメイン健康を即座スキャンします。"
           },
           {
-            "title": "Get Report",
-            "desc": "View detailed SEO metrics, backlink data, and spam scores."
+            "title": "レポートを取得",
+            "desc": "詳細なSEOメトリック、バックリンデータ、スパムスコアを確認します。"
           }
         ]
       },
       "features": {
-        "title": "What You Get",
+        "title": "得られるもの",
         "items": [
           {
-            "title": "Domain Authority & Page Authority",
-            "desc": "DA and PA metrics with historical trends showing domain strength over time."
+            "title": "ドメイン権威とページ権威",
+            "desc": "進化判断を表すDAとPAのメトリック。"
           },
           {
-            "title": "Backlink Profile",
-            "desc": "Complete backlink analysis with referring domains and anchor text distribution."
+            "title": "バックリンプロフィール",
+            "desc": "参照ドメインとアンカーテキスト分布を含む完全なバックリン分析。"
           },
           {
-            "title": "Spam Score",
-            "desc": "Machine learning spam detection with penalty risk assessment and recommendations."
+            "title": "スパムスコア",
+            "desc": "パネティビジレンス評価とおすすめでのマシンラーニングによるスパム検出。"
           },
           {
-            "title": "Indexation Status",
-            "desc": "Search engine indexation checks across Google, Bing, and Yandex."
+            "title": "インデックス状態",
+            "desc": "Google、Bing、Yandexでのインデックス検査。"
           },
           {
-            "title": "Technical SEO",
-            "desc": "Core Web Vitals, mobile-friendliness, and structured data analysis."
+            "title": "技術SEO",
+            "desc": "Core Web Vitals、モブライル対応性、構造化データ分析。"
           },
           {
-            "title": "Competitor Analysis",
-            "desc": "Compare domain metrics against top competitors in your niche."
+            "title": "競合他社分析",
+            "desc": "トップ競合他社とドメインメトリックを比較します。"
           }
         ]
       },
       "included": {
-        "title": "What's Included",
+        "title": "含まれているもの",
         "items": [
-          "DA and PA metrics with historical trends",
-          "Complete backlink analysis with referring domains",
-          "Machine learning spam detection with penalty risk assessment",
-          "Search engine indexation checks across Google, Bing, and Yandex",
-          "Core Web Vitals, mobile-friendliness, and structured data analysis",
-          "Competitor comparison against top domains in your niche"
+          "進化判断を表すDAとPAのメトリック",
+          "参照ドメインを含む完全なバックリン分析",
+          "マシンラーニングによるスパム検出",
+          "Google、Bing、Yandexでのインデックス検査。",
+          "Core Web Vitalsと構造化データ分析",
+          "トップドメインとの競合他社比較"
         ],
-        "cta": "Need deeper analysis? Try Extended Insights →"
+        "cta": "もっと深い分析が必要？拡張された情報を試してみましょう →"
       },
       "cta": {
-        "title": "Ready for Deeper Analysis?",
-        "description": "Upgrade to access historical data, bulk scanning, and API integrations.",
-        "pricing": "View Pricing",
-        "extended": "View Extended Insights"
+        "title": "もっと深い分析に準備でした？",
+        "description": "履歴データとAPI組込みにアクセスするにアップグレードしましょう。",
+        "pricing": "料金を観てみる",
+        "extended": "拡張された情報を観てみる"
       }
     },
     "lookup": {
-      "badge": "FREE TOOL",
-      "title": "Domain Lookup",
-      "description": "Instant WHOIS data, DNS records, and registration details for any domain. Get the intelligence you need in seconds.",
-      "placeholder": "Enter domain (e.g., example.com)",
-      "lookupButton": "Lookup",
-      "searchingButton": "Searching...",
-      "loading": "Fetching domain data...",
-      "whoisTitle": "WHOIS Information",
-      "dnsTitle": "DNS Records",
+      "badge": "無料ツール",
+      "title": "ドメイン検索",
+      "description": "いずれのドメインの即座WHOISデータ、DNSレコード、登録詳細。",
+      "placeholder": "ドメインを入力（例 example.com）",
+      "lookupButton": "検索",
+      "searchingButton": "検索中...",
+      "loading": "ドメインデータを取得中...",
+      "whoisTitle": "WHOIS情報",
+      "dnsTitle": "DNSレコード",
       "dnsHeaders": [
-        "Type",
-        "Name",
-        "Value",
+        "タイプ",
+        "名前",
+        "値",
         "TTL"
       ],
       "whoisLabels": [
-        "Domain",
-        "Registrar",
-        "Registration Date",
-        "Expiration Date",
-        "Last Updated",
-        "Nameservers",
-        "Status",
-        "Registrant Org",
-        "Country"
+        "ドメイン",
+        "ラジスター",
+        "登録日",
+        "有效期間",
+        "最終更新",
+        "ネームサーバー",
+        "状態",
+        "所有者組織",
+        "国"
       ],
       "needMore": {
-        "title": "Need More Details?",
-        "description": "Get historical data, trademark checks, and comprehensive domain intelligence with Extended Insights.",
-        "signup": "Signup Free",
-        "seoScan": "Run SEO Scan"
+        "title": "もっと詳細が必要？",
+        "description": "拡張された情報で履歴データと包括的なドメインインテリジェンスを取得しましょう。",
+        "signup": "無料登録",
+        "seoScan": "SEOスキャン実行"
       },
       "empty": {
-        "title": "Enter a Domain to Get Started",
-        "description": "Search any domain to view WHOIS data, DNS records, and registration details."
+        "title": "開始するにはドメインを入力",
+        "description": "何のドメインを検索してWHOISデータとDNSレコードを表示します。"
       }
     },
     "insights": {
-      "badge": "PREMIUM",
-      "title": "Extended Insights",
-      "description": "Deep historical data, DNS records, USPTO/WIPO trademark checks, and WHOIS/RDAP logs for comprehensive domain research.",
-      "cta": "Get Extended Insights",
-      "revealTitle": "Reveal Pricing",
+      "badge": "プレミアム",
+      "title": "拡張された情報",
+      "description": "日時矱履歴データ、DNSレコード、USPTO/WIPOトランジフィール確証、WHOIS/RDAPログ。",
+      "cta": "拡張された情報を取得",
+      "revealTitle": "揭けする価格",
       "tiers": [
         {
-          "name": "Basic",
+          "name": "ベース",
           "price": "$5",
-          "desc": "Standard domain value"
+          "desc": "標準のドメイン価値"
         },
         {
-          "name": "Standard",
+          "name": "標準",
           "price": "$10",
-          "desc": "Moderate domain value"
+          "desc": "中等のドメイン価値"
         },
         {
-          "name": "Premium",
+          "name": "プレミアム",
           "price": "$25",
-          "desc": "High-value domain"
+          "desc": "高価値のドメイン"
         },
         {
-          "name": "Enterprise",
+          "name": "エンタープライス",
           "price": "$50",
-          "desc": "Ultra-premium domain"
+          "desc": "ウルトラプレミアムドメイン"
         }
       ],
-      "pricingNote": "Pricing based on domain value and complexity",
-      "reportTitle": "What's Included in Your Report",
+      "pricingNote": "ドメインの価値と複雑度に基づいた価格",
+      "reportTitle": "レポートに含まれているもの",
       "sections": [
         {
-          "title": "Historical Data",
-          "desc": "Wayback Machine snapshots and historical content changes over time."
+          "title": "日時矱履歴データ",
+          "desc": "Wayback Machineのスナプショットと日時矱履歴のコンテンツ変更。"
         },
         {
-          "title": "DNS Records",
-          "desc": "Complete DNS record enumeration including A, MX, NS, TXT, and CNAME."
+          "title": "DNSレコード",
+          "desc": "A、MX、NS、TXT、CNAMEを含む完全なDNSレコード列挙。"
         },
         {
           "title": "WHOIS / RDAP",
-          "desc": "Registration data, domain age, registrar history, and nameserver changes."
+          "desc": "登録データ、ドメイン年代、ラジスター履歴、ネームサーバー変更。"
         },
         {
-          "title": "Trademark Checks",
-          "desc": "USPTO and WIPO trademark database conflict detection."
+          "title": "トランジフィール確証",
+          "desc": "USPTOとWIPOのトランジフィールデータベースの冲突検出。"
         },
         {
-          "title": "SSL Certificate",
-          "desc": "Certificate authority, expiry dates, and chain verification."
+          "title": "SSLコードレート",
+          "desc": "訽定局、有效期間、チェーン検証。"
         },
         {
-          "title": "Server Intelligence",
-          "desc": "Hosting provider, IP geolocation, and technology stack detection."
+          "title": "サーバーインテリジェンス",
+          "desc": "ホスティング提供者、IP地理位置、テクノロジースタック検出。"
         }
       ],
-      "useCasesTitle": "When to Use Extended Insights",
+      "useCasesTitle": "拡張された情報を使うとき",
       "useCases": [
         {
-          "title": "Domain Acquisition",
-          "desc": "Research domain history before making an offer."
+          "title": "ドメインアクウイジション",
+          "desc": "オファーを出す前にドメインの履歴を調査しましょう。"
         },
         {
-          "title": "Trademark Clearance",
-          "desc": "Check for conflicts before launching a brand."
+          "title": "トランジフィールクリアランス",
+          "desc": "ブランドをラングする前に冲突を確認しましょう。"
         },
         {
-          "title": "Competitor Analysis",
-          "desc": "Understand competitor domain strategies and history."
+          "title": "競合他社分析",
+          "desc": "競合他社のドメイン戦略と履歴を理解しましょう。"
         },
         {
-          "title": "Portfolio Due Diligence",
-          "desc": "Audit your portfolio for hidden risks and opportunities."
+          "title": "ポートフォリアダウジリション",
+          "desc": "隠されたリスクと機会のためにポートフォリアを监査しましょう。"
         }
       ],
-      "ctaTitle": "Unlock Domain Intelligence",
-      "ctaDescription": "Get the complete picture with Extended Insights reports.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup First"
+      "ctaTitle": "ドメインインテリジェンスをブロックする",
+      "ctaDescription": "拡張された情報レポートで全体像を得たしましょう。",
+      "startFreeTrial": "無料トライアル開始",
+      "tryLookup": "まずはドメイン検索を試してみましょう"
     },
     "bulk": {
-      "badge": "ENTERPRISE",
-      "title": "Bulk Analyzer",
-      "description": "Multi-domain batch evaluation tool for portfolio analysis and large-scale domain research. Process thousands of domains in seconds.",
-      "cta": "Get Bulk Access",
+      "badge": "エンタープライス",
+      "title": "一括分析器",
+      "description": "ポートフォリオ分析と大規模ドメイン研究のための多ドメインバッチ評価ツール。",
+      "cta": "一括アクセスを取得",
       "statValue": "5,000",
-      "statLabel": "domains per batch",
+      "statLabel": "1バッチごとのドメイン数",
       "stats": [
         {
           "value": "16",
-          "label": "Dimensions"
+          "label": "次元"
         },
         {
           "value": "4",
-          "label": "TLDs"
+          "label": "TLD"
         },
         {
           "value": "<3s",
-          "label": "Per Domain"
+          "label": "1ドメインごと"
         }
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "作り方",
         "steps": [
           {
-            "title": "Upload List",
-            "desc": "Paste domains or upload a CSV file with up to 5,000 domains."
+            "title": "リストをアップロード",
+            "desc": "ドメインを貼り貼み、最大5,000つのドメインを含むCSVファイルをアップロードしましょう。"
           },
           {
-            "title": "Configure Scoring",
-            "desc": "Set custom weights for each of the 16 scoring dimensions."
+            "title": "スコアリングを設定",
+            "desc": "16つのスコアリング次元ごとにカスタム重みを設定しましょう。"
           },
           {
-            "title": "Process",
-            "desc": "Our engine evaluates all domains in parallel with priority queuing."
+            "title": "処理",
+            "desc": "エンジンが優先キューですべてのドメインを並行評価します。"
           },
           {
-            "title": "Export Results",
-            "desc": "Download CSV with scores, pricing data, and priority rankings."
+            "title": "結果をエスポーート",
+            "desc": "スコアと価格データを含むCSVをダウンロードしましょう。"
           }
         ]
       },
-      "outputTitle": "Output Columns",
+      "outputTitle": "出力カレン",
       "outputHeaders": [
-        "Column",
-        "Description",
-        "Example"
+        "カレン",
+        "説明",
+        "例"
       ],
       "outputRows": [
         [
-          "Domain",
-          "The domain name analyzed",
+          "ドメイン",
+          "分析されたドメイン名",
           "example.com"
         ],
         [
-          "Domain Rating",
-          "Authority score 0-100",
+          "ドメイン評価",
+          "権威スコア 0-100",
           "72"
         ],
         [
-          "SEO Score",
-          "Composite (backlink 40%, traffic 30%, keyword 20%, technical 10%)",
+          "SEOスコア",
+          "組合、バックリン40%、トラフィック30%、キュールワード20%、技術10%",
           "68"
         ],
         [
-          "Buyer Intent",
-          "Score 0-100 indicating purchase likelihood",
+          "購入意固",
+          "購入確率を表す 0-100のスコア",
           "45"
         ],
         [
-          "Priority Score",
-          "Combined ranking across all dimensions",
-          "High"
+          "優先度スコア",
+          "すべての次元を総合したランキング",
+          "高"
         ],
         [
-          "Estimated Value",
-          "Fair market value range",
+          "推定価値",
+          "市場価値範囲",
           "$2,400 - $3,600"
         ]
       ],
-      "priorityTitle": "Priority Score Breakdown",
+      "priorityTitle": "優先度スコアの内訳",
       "dimensions": [
         {
-          "name": "Backlink Profile",
+          "name": "バックリンプロフィール",
           "weight": "40%",
           "bar": 40
         },
         {
-          "name": "Traffic Analysis",
+          "name": "トラフィック分析",
           "weight": "30%",
           "bar": 30
         },
         {
-          "name": "Keyword Metrics",
+          "name": "キュールワードメトリック",
           "weight": "20%",
           "bar": 20
         },
         {
-          "name": "Technical SEO",
+          "name": "技術SEO",
           "weight": "10%",
           "bar": 10
         }
       ],
-      "customTitle": "Custom Scoring",
-      "customDescription": "Weight dimensions based on your specific use case. Whether you prioritize SEO metrics, traffic potential, or buyer intent, adjust the scoring to match your portfolio strategy.",
+      "customTitle": "カスタムスコアリング",
+      "customDescription": "利用シヱュェーションに対して次元を重み付けましょう。",
       "modes": [
         {
-          "title": "Investor Mode",
-          "desc": "Maximize ROI with traffic and value focus"
+          "title": "投資家モード",
+          "desc": "トラフィックと価値にフォーカスしてROIを最大化"
         },
         {
-          "title": "Developer Mode",
-          "desc": "Prioritize technical metrics and authority"
+          "title": "開発者モード",
+          "desc": "技術的なメトリックと権威を優先"
         },
         {
-          "title": "Brand Mode",
-          "desc": "Emphasize trademark safety and memorability"
+          "title": "ブランドモード",
+          "desc": "トランジフィールの安全性と覚えやすさを強調"
         }
       ],
-      "ctaTitle": "Ready to Scale Your Domain Research?",
-      "ctaDescription": "Process up to 5,000 domains per batch with Enterprise access.",
-      "startTrial": "Start Enterprise Trial",
-      "tryLookup": "Try Single Domain Lookup"
+      "ctaTitle": "ドメイン研究をスケールする準備はでした？",
+      "ctaDescription": "Enterpriseアクセスで1バッチごと最大5,000つのドメインを処理。",
+      "startTrial": "Enterpriseトライアル開始",
+      "tryLookup": "個別ドメイン検索を試してみる"
     },
     "api": {
-      "badge": "DEVELOPER",
-      "title": "API Access",
-      "description": "RESTful API for programmatic domain intelligence. Build custom integrations, automate workflows, and access all domain data programmatically.",
-      "getKey": "Get API Key",
-      "readDocs": "Read Documentation",
-      "buildTitle": "What You Can Build",
+      "badge": "開発者",
+      "title": "APIアクセス",
+      "description": "プログラムジャーなドメインインテリジェンスのRESTful API。",
+      "getKey": "APIキーを取得",
+      "readDocs": "ドキュメントを読む",
+      "buildTitle": "何を構築できる",
       "buildCards": [
         {
-          "title": "Domain Portfolio Tracker",
-          "desc": "Automatically monitor your portfolio for value changes, expiration alerts, and SEO shifts.",
-          "linkText": "Try Domain Lookup"
+          "title": "ドメインポートフォリオトラッカー",
+          "desc": "価値変動や期限アラートに対してポートフォリオを自動監視。",
+          "linkText": "ドメイン検索を試してみる"
         },
         {
-          "title": "Market Intelligence Dashboard",
-          "desc": "Build custom dashboards with real-time domain pricing, trends, and competitive analysis.",
-          "linkText": "Explore Bulk Analyzer"
+          "title": "市場インテリジェンスダッシュボード",
+          "desc": "リャルタイムドメイン価格を使ったカスタムダッシュボードを構築。",
+          "linkText": "一括分析器を探す"
         },
         {
-          "title": "Brand Protection System",
-          "desc": "Automate trademark monitoring and get instant alerts for potential brand conflicts.",
-          "linkText": "See Trademark Monitor"
+          "title": "ブランド保護システム",
+          "desc": "トランジフィール監視を自動化し、潜在なブランド冲突の即座アラートを受けます。",
+          "linkText": "トランジフィールモニターを観る"
         }
       ],
-      "featuresTitle": "API Features",
+      "featuresTitle": "API機能",
       "features": [
         {
           "title": "RESTful API",
-          "desc": "Full access to all domain intelligence endpoints with standard HTTP methods."
+          "desc": "すべてのドメインインテリジェンスエンドポイントへの完全のアクセス。"
         },
         {
-          "title": "Webhooks",
-          "desc": "Real-time notifications for domain changes and events via webhook callbacks."
+          "title": "Webhook",
+          "desc": "ドメイン変更に対してリャルタイム通知。"
         },
         {
-          "title": "Rate Limits",
-          "desc": "10,000 calls per day with Enterprise plan and burst capacity for spikes."
+          "title": "速度制限",
+          "desc": "Enterpriseプランで1日10,000回の呼出。"
         },
         {
-          "title": "SDKs",
-          "desc": "Official libraries for Python, Node.js, Go, and Ruby with full documentation."
+          "title": "SDK",
+          "desc": "Python、Node.js、Go、Ruby用の公式ライブラリ。"
         },
         {
-          "title": "Sandbox",
-          "desc": "Test environment for development and integration testing before going live."
+          "title": "サンドバックス",
+          "desc": "開発と組込みテストのためのテスト環境。"
         },
         {
-          "title": "Documentation",
-          "desc": "Complete API reference with code examples, tutorials, and best practices."
+          "title": "ドキュメント",
+          "desc": "コード例を含む完全なAPIリファレンス。"
         }
       ],
-      "ctaTitle": "Ready to Build?",
-      "ctaDescription": "Get your API key and start integrating domain intelligence today.",
-      "viewDocs": "View API Docs",
+      "ctaTitle": "構築する準備はでした？",
+      "ctaDescription": "APIキーを取得し、ドメインインテリジェンスの組込みを開始しましょう。",
+      "viewDocs": "APIドキュメントを観てみる",
       "modal": {
-        "title": "Get Your API Key",
-        "description": "Create a free account to get your API key and start building with domain intelligence data.",
-        "cta": "Create Free Account",
-        "back": "Go back"
+        "title": "APIキーを取得",
+        "description": "無料アカウントを作ってAPIキーを取得しましょう。",
+        "cta": "無料アカウントを作る",
+        "back": "戻る"
       }
     },
     "trademark": {
-      "badge": "PREMIUM",
-      "title": "Trademark Monitor",
-      "description": "USPTO/WIPO conflict detection and alerts. Protect your brand with proactive trademark monitoring across global databases.",
-      "cta": "Start Monitoring",
-      "severityTitle": "Threat Severity Levels",
+      "badge": "プレミアム",
+      "title": "トランジフィールモニター",
+      "description": "USPTO/WIPO冲突検出とアラート。",
+      "cta": "監視を開始",
+      "severityTitle": "威胁の重大度レベル",
       "levels": [
         {
-          "level": "Critical",
-          "desc": "Direct trademark conflict detected"
+          "level": "緊急",
+          "desc": "直接のトランジフィール冲突が検出"
         },
         {
-          "level": "High",
-          "desc": "Similar mark in same industry"
+          "level": "高",
+          "desc": "同の業界の連検トランジフィール"
         },
         {
-          "level": "Medium",
-          "desc": "Similar name, different class"
+          "level": "中",
+          "desc": "連検の名前、別のクラス"
         },
         {
-          "level": "Low",
-          "desc": "Minor similarity, low risk"
+          "level": "低",
+          "desc": "輸の似連性、低リスク"
         }
       ],
-      "problemTitle": "The Problem",
+      "problemTitle": "問題点",
       "problems": [
-        "Trademark infringement lawsuits cost $100K+ on average",
-        "New domain registrations happen every minute",
-        "Manual monitoring is impossible at scale",
-        "By the time you notice, damage is done"
+        "トランジフィール侵害訴訟の平均費用は$100K超",
+        "新しいドメイン登録は每分起きる",
+        "大規模の手動監視は不可能",
+        "気づいた頃には損害はすでに起きている"
       ],
-      "solutionTitle": "Our Solution",
+      "solutionTitle": "私たちの解決策",
       "solutions": [
-        "Real-time USPTO and WIPO database monitoring",
-        "Scan up to 5,000 domains per list",
-        "Instant conflict alerts via email and webhook",
+        "USPTOとWIPOの実時間データベース監視",
+        "1リストごと最大5,000つのドメインをスキャン",
+        "emailやwebhookを通じた即座の冲突アラート",
         "Risk scoring with confidence levels"
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "作り方",
         "steps": [
           {
-            "title": "Add Domains",
-            "desc": "Upload your brand domains or keywords to monitor."
+            "title": "ドメインを追加",
+            "desc": "監視するブランドドメインやキュールワードをアップロードしましょう。"
           },
           {
-            "title": "Set Criteria",
-            "desc": "Define industry, geographic scope, and sensitivity."
+            "title": "基準を設定",
+            "desc": "業界、地理的範囲、感度を定義しましょう。"
           },
           {
-            "title": "Monitor",
-            "desc": "We scan USPTO, EUIPO, and WIPO databases continuously."
+            "title": "監視",
+            "desc": "USPTO、EUIPO、WIPOのデータベースを引续スキャンします。"
           },
           {
-            "title": "Get Alerts",
-            "desc": "Receive instant notifications for potential conflicts."
+            "title": "アラートを受ける",
+            "desc": "潜在の冲突に対して即座通知を受けます。"
           }
         ]
       },
-      "useCasesTitle": "Use Cases",
+      "useCasesTitle": "使用シヱリオン",
       "useCases": [
         {
-          "title": "Brand Protection",
-          "content": "Monitor for cybersquatting, typosquatting, and brand impersonation across all major TLDs."
+          "title": "ブランド保護",
+          "content": "カイバースコィットイング、タイポスコィットイング、ブランド停偽を監視。"
         },
         {
-          "title": "Product Launch",
-          "content": "Clear trademarks before launching new products or entering new markets."
+          "title": "製品ラング",
+          "content": "新しい製品をラングする前にトランジフィールをクリアランスしましょう。"
         },
         {
-          "title": "M&A Due Diligence",
-          "content": "Audit trademark risks during mergers, acquisitions, or investment rounds."
+          "title": "M&Aの對象调査",
+          "content": "合併や貿取時のトランジフィールリスクを监査しましょう。"
         },
         {
-          "title": "Portfolio Management",
-          "content": "Protect your domain portfolio from trademark challenges and legal disputes."
+          "title": "ポートフォリア管理",
+          "content": "トランジフィール問題と法律争議からポートフォリオを保護しましょう。"
         }
       ],
-      "pricingTitle": "Pricing",
+      "pricingTitle": "料金",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "無料",
           "price": "$0",
           "features": [
-            "3 unsigned scans/day",
-            "12 signed scans/day",
-            "Basic metrics"
+            "毎日3回の签名されていないスキャン",
+            "毎日12回の签名されたスキャン",
+            "基本メトリック"
           ]
         },
         {
-          "plan": "Startup",
+          "plan": "スタートアップ",
           "price": "$79/mo",
           "features": [
-            "30 scans/day",
-            "Priority processing",
-            "CSV export",
-            "Email alerts"
+            "毎日30回のスキャン",
+            "優先処理",
+            "CSVエスポーート",
+            "emailアラート"
           ],
           "popular": true
         },
         {
-          "plan": "Enterprise",
+          "plan": "エンタープライス",
           "price": "$129/mo",
           "features": [
-            "Unlimited scans",
-            "API access (10K calls/day)",
-            "Webhook integration",
-            "Dedicated support"
+            "無限スキャン",
+            "APIアクセス（10K回/日）",
+            "Webhook組込み",
+            "专仸サポート"
           ]
         }
       ],
-      "popular": "POPULAR",
-      "ctaTitle": "Protect Your Brand Today",
-      "ctaDescription": "Don't wait until it's too late. Start monitoring now.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup",
-      "runScan": "Run SEO Scan"
+      "popular": "人気",
+      "ctaTitle": "ブランドを今日保護",
+      "ctaDescription": "過ぎにする前に。今じき監視を開始しましょう。",
+      "startFreeTrial": "無料トライアル開始",
+      "tryLookup": "ドメイン検索を試してみる",
+      "runScan": "SEOスキャン実行",
+      "s3": "信頼度を使ったリスクスコアリング"
     },
     "database": {
-      "badge": "COMPREHENSIVE DATA",
+      "badge": "包括的なデータ",
       "statValue": "2,847",
-      "statLabel": "TLDs tracked across all registries",
-      "description": "Access the most comprehensive domain database available. Track registrations, expirations, and pricing across every major TLD.",
+      "statLabel": "全ティジスタリを通じて追跡されているTLD",
+      "description": "最も包括的なドメインデータベースにアクセスしましょう。",
       "stats": [
         {
           "value": "420M+",
-          "label": "Domains Tracked",
-          "desc": "Active registrations across all TLDs"
+          "label": "追跡ドメイン数",
+          "desc": "全TLDのアクティブ登録"
         },
         {
           "value": "2.1B",
-          "label": "Historical Records",
-          "desc": "Registration and expiration history"
+          "label": "日時矱履歴レコード",
+          "desc": "登録と有效期の履歴"
         },
         {
           "value": "50K+",
-          "label": "Daily Updates",
-          "desc": "New registrations processed daily"
+          "label": "日時リャイト更新",
+          "desc": "新しい登録が毎日処理される"
         },
         {
           "value": "99.9%",
-          "label": "Uptime",
-          "desc": "Database availability guarantee"
+          "label": "開設率",
+          "desc": "データベース利用可能性の保証"
         }
       ],
-      "methodsTitle": "Search Methods",
+      "methodsTitle": "検索方法",
       "methods": [
         {
-          "title": "Single Lookup",
-          "desc": "Search any domain for instant registration data and availability status."
+          "title": "単一カウエリジ",
+          "desc": "即座の登録データのために何のドメインを検索。"
         },
         {
-          "title": "Bulk Check",
-          "desc": "Upload up to 5,000 domains at once for batch availability analysis."
+          "title": "一括確認",
+          "desc": "最大5,000つのドメインを一度にアップロード。"
         },
         {
-          "title": "API Query",
-          "desc": "Programmatic access via RESTful API with up to 10,000 calls per day."
+          "title": "APIカウエリジ",
+          "desc": "RESTful APIを通じたプログラムジャーなアクセス。最大10,000回/日。"
         }
       ],
-      "sourcesTitle": "Data Sources",
+      "sourcesTitle": "データソース",
       "sources": [
         {
           "source": "ICANN",
-          "desc": "Official domain registration data"
+          "desc": "公式のドメイン登録データ"
         },
         {
-          "source": "Registry Operators",
-          "desc": "Direct TLD zone file access"
+          "source": "レジスター運営者",
+          "desc": "TLDゾーンファイルへの直接アクセス"
         },
         {
           "source": "WHOIS/RDAP",
-          "desc": "Registration and contact information"
+          "desc": "登録情報と連絡情報"
         },
         {
           "source": "Wayback Machine",
-          "desc": "Historical content snapshots"
+          "desc": "日時矱のコンテンツスナプショット"
         },
         {
-          "source": "Certificate Transparency",
-          "desc": "SSL certificate monitoring"
+          "source": "訽定局の透明性",
+          "desc": "SSLコードレート監視"
         },
         {
-          "source": "DNS Resolvers",
-          "desc": "Real-time DNS record verification"
+          "source": "DNSリゾルーザー",
+          "desc": "DNSレコードの実時間検証"
         }
       ],
-      "levelsTitle": "Access Levels",
+      "levelsTitle": "アクセスレベル",
       "plans": [
         {
-          "plan": "Free",
+          "plan": "無料",
           "price": "$0",
           "features": [
-            "Basic lookup",
-            "3 searches/day",
-            "Limited TLDs"
+            "基本の検索",
+            "日3回の検索",
+            "制限されたTLD"
           ]
         },
         {
-          "plan": "Startup",
+          "plan": "スタートアップ",
           "price": "$79/mo",
           "features": [
-            "Full database",
-            "30 searches/day",
-            "CSV export",
-            "Priority support"
+            "完全なデータベース",
+            "日30回の検索",
+            "CSVエスポーート",
+            "優先サポート"
           ],
           "popular": true
         },
         {
-          "plan": "Enterprise",
+          "plan": "エンタープライス",
           "price": "$129/mo",
           "features": [
-            "Unlimited access",
-            "API (10K calls/day)",
-            "Webhooks",
-            "Custom data"
+            "無限アクセス",
+            "API（10K回/日）",
+            "Webhook",
+            "カスタムデータ"
           ]
         }
       ],
-      "popular": "POPULAR",
-      "ctaTitle": "Access the Complete Domain Database",
-      "ctaDescription": "2,847 TLDs, 420M+ domains, real-time data at your fingertips.",
-      "startFreeTrial": "Start Free Trial",
-      "tryLookup": "Try Domain Lookup",
-      "viewDocs": "View API Docs"
+      "popular": "人気",
+      "ctaTitle": "完全なドメインデータベースにアクセス",
+      "ctaDescription": "2,847TLD、420M+ドメイン、リャルタイムデータが手ゕかりにあります。",
+      "startFreeTrial": "無料トライアル開始",
+      "tryLookup": "ドメイン検索を試してみる",
+      "viewDocs": "APIドキュメントを観てみる"
     }
   },
   "mp": {
     "main": {
-      "badge": "Marketplace",
-      "title": "Premium Domains",
-      "subtitle": "Browse our curated inventory. Full stats shown — name hidden. Pay to reveal.",
+      "badge": "マーケットプレース",
+      "title": "プレミアムドメイン",
+      "subtitle": "カレーシュラリズされた在庫をブラウズしましょう。完全な統計量を表示 — 名前隠している。",
       "stats": [
         {
-          "label": "Listed Domains",
+          "label": "登録されたドメイン数",
           "value": "2,847"
         },
         {
-          "label": "Revealed Today",
+          "label": "今日揭けられた",
           "value": "142"
         },
         {
-          "label": "Avg. Domain Value",
+          "label": "平均ドメイン価値",
           "value": "$12,400"
         },
         {
-          "label": "Total Sold",
+          "label": "売上週合計",
           "value": "$3.2M"
         }
       ],
       "filters": [
-        "All TLDs",
+        "すべてのTLD",
         ".com",
         ".net",
         ".io",
         ".co"
       ],
       "sortBy": [
-        "Sort by Value",
-        "Sort by Score",
-        "Sort by Listed"
+        "価値でソート",
+        "スコアでソート",
+        "日付でソート"
       ],
-      "nameHidden": "Name Hidden",
-      "revealName": "Reveal Name",
+      "nameHidden": "名前隠している",
+      "revealName": "名前を揭ける",
       "dataLabels": [
-        "Value",
-        "Score",
-        "Health",
+        "価値",
+        "スコア",
+        "健康度",
         "CPC",
         "DA"
       ],
       "features": [
         {
-          "title": "No Name Hints",
-          "desc": "We show everything except the name. No asterisks, no partial reveals. Just the intelligence."
+          "title": "名前のヒントなし",
+          "desc": "名前を除いたすべてを表示します。星。およびおきよびなし。"
         },
         {
-          "title": "Pay to Reveal",
-          "desc": "Reveal price varies by domain value — from $5 for lower-value names to $50 for premium picks."
+          "title": "揭けるには支払う",
+          "desc": "揭けする価格はドメインの価値によって異なります — $5から$50まで。"
         },
         {
-          "title": "Register Anywhere",
-          "desc": "After reveal, we link you to Dynadot, Namecheap, or Porkbun. You choose where to register."
+          "title": "すべての場所で登録",
+          "desc": "揭け後、Dynadot、Namecheap、Porkbunへリンクします。"
         }
       ],
       "cta": {
-        "curated": "Browse Curated",
-        "luck": "Try Your Luck"
+        "curated": "選定をブラウズ",
+        "luck": "連遺をたてみる"
       },
       "modal": {
-        "title": "Create an Account",
-        "desc": "Sign up to reveal domain names and make purchases.",
-        "redirecting": "Redirecting to signup in {count} seconds...",
-        "signup": "Sign Up Free",
-        "later": "Maybe later"
+        "title": "アカウントを作る",
+        "desc": "ドメイン名を揭け、購入するために登録しましょう。",
+        "redirecting": "{count}秒後に登録ページへリダイレクトします...",
+        "signup": "無料登録",
+        "later": "後です"
       }
     },
     "sell": {
-      "badge": "Marketplace",
-      "title": "Sell Your Domains",
-      "subtitle": "List your premium domains on Ceche and reach qualified buyers worldwide.",
+      "badge": "マーケットプレース",
+      "title": "ドメインを販売",
+      "subtitle": "ドメインをCecheに登録し、世界中の許可された購入者に達しましょう。",
       "steps": [
-        "Submit",
-        "Set Price",
-        "Publish"
+        "送信",
+        "価格設定",
+        "公開"
       ],
       "step0": {
-        "title": "Submit Your Domain",
-        "desc": "Enter your domain name. We'll run an automatic appraisal and verify ownership via TXT/CNAME record.",
-        "placeholder": "yourdomain.com",
-        "cta": "Continue"
+        "title": "ドメインを送信",
+        "desc": "ドメイン名を入力してください。自動評価を行います。",
+        "placeholder": "あなたのdomain.com",
+        "cta": "続き"
       },
       "step1": {
-        "title": "Set Your Price",
-        "desc": "Our AI suggests a price based on domain metrics. You can accept or set your own.",
-        "suggested": "Suggested: $12,500",
-        "cta": "Continue"
+        "title": "価格を設定",
+        "desc": "AIがドメインのメトリックに基づいて価格を提案します。",
+        "suggested": "提案: $12,500",
+        "cta": "続き"
       },
       "step2": {
-        "title": "Publish Listing",
-        "desc": "Review your listing details and publish. Your domain goes live within 24 hours.",
-        "cta": "Publish Listing"
+        "title": "帱指実行",
+        "desc": "詳細を確認して公開しましょう。24時間以内にオンラインできます。",
+        "cta": "公開"
       },
       "fees": {
-        "title": "Fee Structure",
+        "title": "料金構造",
         "listing": {
-          "title": "Listing Fees",
+          "title": "登録料金",
           "tiers": [
             {
-              "tier": "Standard (.com, .net, .org)",
+              "tier": "標準（.com, .net, .org）",
               "fee": "$5",
               "min": "—"
             },
             {
-              "tier": "Premium (.io, .co, .ai)",
+              "tier": "プレミアム（.io, .co, .ai）",
               "fee": "$10",
               "min": "—"
             },
             {
-              "tier": "Ultra-Premium (1-word, brandable)",
+              "tier": "ウルトラプレミアム（1単語、ブランド可能）",
               "fee": "$25",
               "min": "—"
             }
           ]
         },
         "commission": {
-          "title": "Commission Rates",
+          "title": "コミッション率",
           "tiers": [
             {
-              "tier": "Domains under $5,000",
+              "tier": "$5,000未滢のドメイン",
               "commission": "8%",
               "minimum": "$50"
             },
             {
-              "tier": "Domains $5,000–$50,000",
+              "tier": "$5,000–$50,000のドメイン",
               "commission": "10%",
               "minimum": "$200"
             },
             {
-              "tier": "Domains over $50,000",
+              "tier": "$50,000超のドメイン",
               "commission": "15%",
-              "minimum": "Negotiable"
+              "minimum": "単上対応"
             }
           ]
         }
       },
       "eligibility": {
-        "title": "Eligibility Checklist",
+        "title": "適格性チェックリスト",
         "items": [
-          "Domain must be registered and active",
-          "You must verify ownership via TXT or CNAME record",
-          "No active UDRP or legal disputes",
-          "Domain must not be blacklisted for spam"
+          "ドメインは登録されており、アクティブである必要があります",
+          "TXTまたはCNAMEレコードを通じて所有業を確認する必要があります",
+          "UDRPや法律争議はありません",
+          "スパムブラックリストに輸のいている必要がありません"
         ]
       },
       "tools": {
-        "title": "Seller Tools",
+        "title": "販売者ツール",
         "items": [
           {
-            "title": "Analytics Dashboard",
-            "desc": "Track views, offers, and conversion rates for every listing in real time."
+            "title": "分析ダッシュボード",
+            "desc": "リャルタイムで閳覧しており、オファー、変換率をトラックします。"
           },
           {
-            "title": "Bulk Listing",
-            "desc": "Import and manage multiple domain listings at once with CSV upload."
+            "title": "一括登録",
+            "desc": "CSVアップロードで複数の登録をインポートし、管理します。"
           },
           {
-            "title": "Automated Pricing",
-            "desc": "AI-powered suggested pricing based on domain metrics and market trends."
+            "title": "自動価格設定",
+            "desc": "ドメインのメトリックと市場トレンドに基づいたAIを使った価格提案。"
           }
         ]
       },
       "cta": {
-        "title": "Ready to sell?",
-        "desc": "List your first domain in under 5 minutes.",
-        "signup": "Create Account",
-        "pricing": "View Pricing"
+        "title": "販売する準備はでした？",
+        "desc": "5分鐘以下で初めてのドメインを登録しましょう。",
+        "signup": "アカウントを作る",
+        "pricing": "料金を観てみる"
       }
     },
     "luck": {
-      "badge": "Marketplace",
-      "title": "Try Your Luck",
-      "subtitle": "Pick a TLD, spin 3 boxes, reveal a premium domain. It's locked exclusively for you.",
-      "step1": "Step 1: Pick Your TLD",
-      "spinning": "Spinning...",
-      "step2": "Step 2: Pick a Box",
-      "clickToReveal": "Click to reveal",
+      "badge": "マーケットプレース",
+      "title": "連遺をたてみる",
+      "subtitle": "TLDを選び、3つのボックスを回し、プレミアムドメインを揭けます。豊少あなたのためのまとりブロックされています。",
+      "step1": "スタップ1: TLDを選ぶ",
+      "spinning": "回転中...",
+      "step2": "スタップ2: ボックスを選ぶ",
+      "clickToReveal": "クリックして揭ける",
       "locked": {
-        "title": "Domain Locked",
-        "desc": "Once you pick a box, the domain is locked exclusively for you. No other user on the platform can purchase it through any means. You'll be prompted to complete the purchase immediately."
+        "title": "ドメインブロック",
+        "desc": "ボックスを選ぶとき、ドメインは豊少あなたのためのまとりにブロックされます。"
       },
       "howItWorks": {
-        "title": "How It Works",
+        "title": "作り方",
         "steps": [
           {
-            "title": "Pick a TLD",
-            "desc": "Choose .com, .net, .io, .co, or any TLD at a flat rate."
+            "title": "TLDを選ぶ",
+            "desc": ".com、.net、.io、.coのいずれか、一定額で選ぶことができます。"
           },
           {
-            "title": "Spin & Pick",
-            "desc": "Three closed boxes appear. Pick one when the animation stops."
+            "title": "回して選ぶ",
+            "desc": "三つの閉じたボックスが現れます。アニメーションが止まったら選びましょう。"
           },
           {
-            "title": "Reveal & Buy",
-            "desc": "Domain revealed and locked. Prompted to register immediately."
+            "title": "揭けて購入",
+            "desc": "ドメインが揭けられ、ブロックされます。すぐに登録を促されます。"
           }
         ]
       },
       "cta": {
-        "title": "Prefer browsing?",
-        "desc": "Browse our full marketplace with detailed stats on every listing.",
-        "marketplace": "View Marketplace",
-        "signup": "Sign Up Free"
+        "title": "ブラウズほきが好ぽすか？",
+        "desc": "詳細な統計量を持つ完全なマーケットプレースをブラウズしましょう。",
+        "marketplace": "マーケットプレースを観てみる",
+        "signup": "無料登録"
       },
       "modal": {
-        "title": "Create an Account",
-        "desc": "Sign up to lock this domain exclusively for you.",
-        "signup": "Sign Up Free",
-        "later": "Maybe later"
+        "title": "アカウントを作る",
+        "desc": "ドメインを豊少あなたのためのまとりにブロックするために登録しましょう。",
+        "signup": "無料登録",
+        "later": "後です"
       }
     },
     "curated": {
-      "badge": "Marketplace",
-      "title": "Curated Domains",
-      "subtitle": "Hand-picked premium domains sorted by commercial intent and SEO authority. Each listing includes a full intelligence report and valuation.",
-      "tryLuck": "Try Your Luck Instead",
+      "badge": "マーケットプレース",
+      "title": "カレーシュラリズされたドメイン",
+      "subtitle": "商業的な意固とSEOの権威によってソートされたプレミアムドメイン。",
+      "tryLuck": "連遺をたてみる",
       "featured": {
-        "label": "Featured Domain",
-        "hidden": "Name hidden until purchase",
-        "instant": "Instant Purchase"
+        "label": "バイタードドメイン",
+        "hidden": "購入まで名前隠している",
+        "instant": "即座購入"
       },
       "features": [
-        "Hand-picked by domain experts",
-        "Full intelligence report included",
-        "Verified ownership and clean history",
-        "Instant purchase with secure checkout",
-        "Negotiation tools for making offers",
-        "Guided transfer with registrar support"
+        "ドメインエンジィンが手選び",
+        "完全な情報レポートが含まれている",
+        "所有業の検証と組織された履歴",
+        "安全なチェックアウトで即座購入",
+        "オファーをたての単上バイヨッティジストル",
+        "ラジスターのサポートでガイドされた移転"
       ],
       "howItWorks": {
-        "title": "How It Works",
+        "title": "作り方",
         "steps": [
           {
-            "title": "Browse Listings",
-            "desc": "Each curated domain includes valuation, SEO metrics, and commercial intent score."
+            "title": "帱指をブラウズ",
+            "desc": "各カレーシュラリズされたドメインには評価、SEOメトリック、商業的意固スコアが含まれています。"
           },
           {
-            "title": "Make an Offer",
-            "desc": "Buy outright or submit an offer. Our system handles counter-offers automatically."
+            "title": "オファーをさる",
+            "desc": "ブチょく購入するか、オファーを送信しましょう。システムは対オファーを自動的に処理します。"
           },
           {
-            "title": "Complete Purchase",
-            "desc": "Secure payment. Domain transfers within 24 hours with full support."
+            "title": "購入を完了",
+            "desc": "安全な支払い。24時間以内でドメイン移転。"
           }
         ]
       },
       "cta": {
-        "title": "Browse all curated domains",
-        "desc": "Updated weekly with new hand-picked premium domains.",
-        "marketplace": "View Marketplace",
-        "luck": "Try Your Luck"
+        "title": "すべてのカレーシュラリズされたドメインをブラウズ",
+        "desc": "毎週間、手選びの新しいプレミアムドメインで更新されます。",
+        "marketplace": "マーケットプレースを観てみる",
+        "luck": "連遺をたてみる"
       }
     },
     "unmasking": {
-      "badge": "Marketplace",
-      "title": "How Unmasking Works",
-      "subtitle": "Our blind marketplace protects domain names from front-running and sniping. Here's the process.",
+      "badge": "マーケットプレース",
+      "title": "揭けする機能の作り方",
+      "subtitle": "ブラインドマーケットプレースはフロントランジングとスナイピングからドメイン名を保護します。",
       "steps": [
         {
-          "title": "Browse",
-          "desc": "Explore our blind marketplace. Full stats shown — domain name hidden. Filter by TLD, category, or valuation range."
+          "title": "ブラウズ",
+          "desc": "ブラインドマーケットプレースを探索。完全な統計量を表示 — 名前隠している。"
         },
         {
-          "title": "Pay to Reveal",
-          "desc": "When you find a listing you like, pay the reveal fee ($5–$50 based on domain value) to unlock the name."
+          "title": "揭けるには支払う",
+          "desc": "名前をブロックするために揭け料金を支払いてください。"
         },
         {
-          "title": "Reveal & Inspect",
-          "desc": "The domain name is revealed. You have 5 minutes to inspect and decide. No one else can see or purchase it."
+          "title": "揭けて検査",
+          "desc": "名前が揭けられます。決定するまで5分鐘があります。"
         },
         {
-          "title": "Recheck or Walk Away",
-          "desc": "If you pass, the domain goes back to the blind pool. If you proceed, it's locked exclusively for you."
+          "title": "再検査または新要",
+          "desc": "新要する場合はドメインがブラインドプールに戻ります。"
         },
         {
-          "title": "Complete or Walk Away",
-          "desc": "Register the domain through our partner registrars (Dynadot, Namecheap, Porkbun) or walk away. No obligation."
+          "title": "完了または新要",
+          "desc": "パーターラジスター組織組織で登録するまたは新要しましょう。"
         }
       ],
       "vault": {
-        "title": "Vault Protection",
-        "desc": "All unrevealed domain names are stored in an encrypted vault. No partial names, no asterisks, no hints. The only way to see the name is to pay the reveal fee. This eliminates domain front-running and ensures fair pricing for everyone."
+        "title": "金庫保護",
+        "desc": "揭けられていない全てのドメイン名は分智化された金庫に保管されています。"
       },
       "features": [
         {
-          "title": "Encrypted Vault",
-          "desc": "Domain names stored with zero-knowledge encryption."
+          "title": "分智化金庫",
+          "desc": "カウントセランスを使った分智化で保管されているドメイン名。"
         },
         {
-          "title": "5-Minute Lock",
-          "desc": "After reveal, you have 5 minutes of exclusive access."
+          "title": "5分鐘ブロック",
+          "desc": "揭けた後、5分鐘間の掓展アクセスがあります。"
         },
         {
-          "title": "No Obligation",
-          "desc": "Walk away at any point. No commitment required."
+          "title": "義務なし",
+          "desc": "何時でも新要してよいす。義務はありません。"
         }
       ],
       "cta": {
-        "title": "Ready to explore?",
-        "desc": "Browse thousands of premium domains with full intelligence data.",
-        "marketplace": "Browse Marketplace",
-        "luck": "Try Your Luck"
+        "title": "探索する準備はでした？",
+        "desc": "完全な情報データを持つ数千のプレミアムドメインをブラウズ。",
+        "marketplace": "マーケットプレースをブラウズ",
+        "luck": "連遺をたてみる"
       }
     }
   },
   "sol": {
     "index": {
-      "title": "Solutions for Every Domain Need",
-      "subtitle": "Whether you invest, build, or broker — Ceche has the tools, data, and marketplace to power your domain strategy.",
+      "title": "とてものドメインのためのソリューション",
+      "subtitle": "投資にしても、建設しても、中介しても——Cecheはあなたのドメイン戦略を支援するツール、データ、マーケットプレースを持っています。",
       "cta": {
-        "ready": "Ready to get started?",
-        "signup": "Create Free Account"
+        "ready": "開始する準備はでした？",
+        "signup": "無料アカウントを作る"
       },
       "personas": [
         {
-          "title": "Domain Investors",
-          "desc": "Portfolio yield analysis, flipper metrics, and drop-catching alerts. Maximize returns on your domain investments.",
+          "title": "ドメイン投資家",
+          "desc": "ポートフォリオ収益分析、フリッパーメトリック、ドロップカッチングアラート。",
           "stat": "8–15%",
-          "statLabel": "Commission Tiers",
+          "statLabel": "コミッションレベル",
           "href": "/solutions/domain-investors"
         },
         {
-          "title": "Startup Founders",
-          "desc": "Brandability index, keyword pronounceability, and extension penetration tools. Find the perfect domain for your startup.",
+          "title": "スタートアップ創業者",
+          "desc": "ブランドインデックス、発音可能性、拡張子チェックツール。",
           "stat": "16",
-          "statLabel": "Scoring Dimensions",
+          "statLabel": "スコアリング次元",
           "href": "/solutions/startup-founders"
         },
         {
-          "title": "SEO Agencies",
-          "desc": "Expired domain backlink authority scoring and spam penalty recovery audits. Data-driven domain acquisition for agency growth.",
+          "title": "SEO代行所",
+          "desc": "期限切れドメインのバックリン権威スコアとスパム復旧监査。",
           "stat": "10K",
-          "statLabel": "API Calls/Day",
+          "statLabel": "API呼出/日",
           "href": "/solutions/seo-agencies"
         },
         {
-          "title": "Find Available Domains",
-          "desc": "Scan millions of combinations for available domain names. Smart suggestions and real-time availability checks.",
+          "title": "利用可能なドメインを発見",
+          "desc": "利用可能な名前をたくさんの組み合わせをスキャン。",
           "stat": "4",
-          "statLabel": "TLDs Scanned",
+          "statLabel": "スキャンされたTLD",
           "href": "/solutions/find-available"
         },
         {
-          "title": "Research Intelligence",
-          "desc": "Deep domain analysis before acquisition. Make informed decisions with comprehensive intelligence reports.",
+          "title": "調査インテリジェンス",
+          "desc": "取得前の深层なドメイン分析。",
           "stat": "0–100",
-          "statLabel": "Buyer Intent Score",
+          "statLabel": "購入意固スコア",
           "href": "/solutions/research-intelligence"
         },
         {
-          "title": "Buy Premium Domains",
-          "desc": "Acquire high-value domains with secure, transparent transactions. Fast and reliable.",
+          "title": "プレミアムドメインを購入",
+          "desc": "安全で透明な取引で高価値のドメインを取得。",
           "stat": "$5–$50",
-          "statLabel": "Reveal Fee Range",
+          "statLabel": "揭け料金範囲",
           "href": "/solutions/buy-premium"
         }
       ],
-      "learnMore": "Learn more →"
+      "learnMore": "詳細を見る →"
     },
     "investors": {
-      "badge": "For Investors",
-      "title": "Maximize Domain Investment Returns",
-      "desc": "Portfolio yield analysis, flipper valuation metrics, drop-catching alerts, and commission tiers from 8–15%. Everything you need to outperform the market.",
+      "badge": "投資家のため",
+      "title": "ドメイン投資収益を最大化",
+      "desc": "ポートフォリオ収益分析、フリッパーメトリック、ドロップカッチングアラート、これらの8–15%のコミッション。",
       "cta": [
-        "Start Investing",
-        "View Pricing"
+        "投資を開始",
+        "料金を観てみる"
       ],
       "stats": [
         {
           "value": "16",
-          "label": "Scoring Dimensions"
+          "label": "スコアリング次元"
         },
         {
           "value": "8–15%",
-          "label": "Commission Tiers"
+          "label": "コミッションレベル"
         },
         {
           "value": "4",
-          "label": "TLDs Scanned"
+          "label": "スキャンされたTLD"
         },
         {
           "value": "$5–$50",
-          "label": "Reveal Fee Range"
+          "label": "揭け料金範囲"
         }
       ],
       "problem": {
-        "title": "The Investor's Problem",
-        "desc": "Traditional domain investing requires juggling multiple tools, paying opaque fees, and guessing at valuations. You lose deals to faster buyers and overpay on commissions.",
+        "title": "投資家の問題点",
+        "desc": "徶来のドメイン投資は複数のツールと個値の不透明な費用を要求します。",
         "items": [
-          "No unified scoring model across TLDs",
-          "Hidden fees erode profit margins",
-          "Manual drop-catching misses opportunities",
-          "Commission structures eat into flips"
+          "TLD間で統一されたスコアリングモデルがない",
+          "隠された費用が利益まげを食みます",
+          "手動のドロップカッチングは機会を見ています",
+          "コミッション構造がフリップの利益を食みます"
         ]
       },
       "solution": {
-        "title": "The Ceche Solution",
-        "desc": "A single platform with 16-dimension scoring, tiered commissions with minimums, real-time alerts, and a marketplace designed for investors — not casual buyers.",
+        "title": "Cecheの解決策",
+        "desc": "16次元スコアリング、階段のコミッション、実時間アラートを备えた一つのプラットフォーム。",
         "items": [
-          "16-dimension scoring on every domain",
-          "Transparent tiered commission: 15%/12%/10%/8%",
-          "Drop-catching alerts for expiring domains",
-          "Bulk scan up to 5,000 domains at once"
+          "すべてのドメインに16次元スコアリング",
+          "透明な階段のコミッション: 15%/12%/10%/8%",
+          "期限切れドメインのドロップカッチングアラート",
+          "一度に最大5,000ドメインのバックスキャン"
         ]
       },
       "commission": {
-        "title": "Tiered Commission Structure",
+        "title": "階段のコミッション構造",
         "headers": [
-          "Tier",
-          "Commission",
-          "Minimum"
+          "レベル",
+          "コミッション",
+          "最小"
         ],
         "rows": [
           {
-            "tier": "Starter",
+            "tier": "初心者",
             "commission": "15%",
             "minimum": "$10"
           },
           {
-            "tier": "Growth",
+            "tier": "成長",
             "commission": "12%",
             "minimum": "$50"
           },
@@ -1573,930 +1574,932 @@
             "minimum": "$500"
           },
           {
-            "tier": "Enterprise",
+            "tier": "エンタープライス",
             "commission": "8%",
             "minimum": "$4,000"
           }
         ]
       },
-      "toolsTitle": "Tools Built for Investors",
+      "toolsTitle": "投資家向けのツール",
       "tools": [
         {
-          "title": "SEO Scanner",
-          "desc": "Audit backlink profiles and domain authority in seconds."
+          "title": "SEOスキャナー",
+          "desc": "バックリンプロフィールとドメイン権威を秒単位で监査。"
         },
         {
-          "title": "Extended Insights",
-          "desc": "Go beyond the basics with full 16-dimension deep dives."
+          "title": "拡張された情報",
+          "desc": "16次元の深层分析で基本を超えましょう。"
         },
         {
-          "title": "Bulk Analyzer",
-          "desc": "Score up to 5,000 domains in a single batch run."
+          "title": "一括分析器",
+          "desc": "1バッチで最大5,000ドメインをスコアリング。"
         },
         {
-          "title": "Trademark Monitor",
-          "desc": "Automated alerts for trademark conflicts on your portfolio."
+          "title": "トランジフィールモニター",
+          "desc": "ブランド冲突の自動アラート。"
         }
       ],
       "gettingStarted": {
-        "title": "Getting Started",
+        "title": "始める方",
         "steps": [
           {
-            "title": "Create Account",
-            "desc": "Sign up free in 30 seconds"
+            "title": "アカウント作成",
+            "desc": "30秒で無料登録"
           },
           {
-            "title": "Choose Plan",
-            "desc": "Free, Startup ($79/mo), or Enterprise ($129/mo)"
+            "title": "プラン選択",
+            "desc": "無料、スタートアップ($79/モース)、エンタープライス($129/モース)"
           },
           {
-            "title": "Scan Domains",
-            "desc": "Run SEO Scanner or Bulk Analyzer"
+            "title": "ドメインスキャン",
+            "desc": "SEOスキャナーまたは一括分析器を実行"
           },
           {
-            "title": "Analyze Scores",
-            "desc": "Review 16-dimension reports"
+            "title": "スコアを分析",
+            "desc": "16次元レポートを確認"
           },
           {
-            "title": "Acquire & Flip",
-            "desc": "Buy, hold, or resell with tiered commissions"
+            "title": "取得して転売",
+            "desc": "購入、保持してたにとも、階段のコミッションで転売"
           }
         ]
       },
-      "ctaTitle": "Start Flipping Smarter",
-      "ctaDesc": "Join thousands of investors using Ceche to maximize domain ROI.",
-      "ctaSignup": "Create Free Account",
-      "ctaMarketplace": "Browse Marketplace"
+      "ctaTitle": "もっとインテリジェントにフリップする",
+      "ctaDesc": "収業の数千の投資家がCecheを使ってROIを最大化しています。",
+      "ctaSignup": "無料アカウントを作る",
+      "ctaMarketplace": "マーケットプレースをブラウズ"
     },
     "founders": {
-      "badge": "For Founders",
-      "title": "Build Your Brand on the Right Domain",
-      "desc": "AI-powered brandability scoring, pronounceability analysis, and trademark screening — everything you need before you commit to a name.",
+      "badge": "創業者のため",
+      "title": "正しいドメインにブランドを築く",
+      "desc": "AIを使ったブランドスコアリング、発音可能性分析、トランジフィールフィルタリング。",
       "steps": [
         {
-          "title": "Describe Your Brand",
-          "desc": "Enter a brief description of your startup, industry, and audience."
+          "title": "ブランドを説明",
+          "desc": "スタートアップの簡本な説明を入力してください。"
         },
         {
-          "title": "Score & Compare",
-          "desc": "Get 16-dimension scores across 4 TLDs with brandability ratings."
+          "title": "スコアと比較",
+          "desc": "4つのTLDで16次元スコアを取得しましょう。"
         },
         {
-          "title": "Claim Your Domain",
-          "desc": "Register, buy on marketplace, or set alerts for expiring names."
+          "title": "ドメインを主張",
+          "desc": "登録してから、マーケットプレースで購入してから、アラートを設定しましょう。"
         }
       ],
       "features": [
         {
-          "title": "Brandability Index",
-          "desc": "AI-powered scoring that evaluates brandability, memorability, and market potential. Not just a name — a brand asset."
+          "title": "ブランドインデックス",
+          "desc": "AIを使ったスコアリングで、ブランドバリリティ、覚えやすさ、市場潜在力を評価します。"
         },
         {
-          "title": "Pronounceability",
-          "desc": "Vowel balance, consonant clusters, and bigram frequency analysis ensure your domain is easy to say, spell, and remember."
+          "title": "発音可能性",
+          "desc": "母音のバランス、子音クラスター、ビグラム頻度分析で、ドメインが話しやすく、書きやすく、覚えやすくすることを保証します。"
         },
         {
-          "title": "Extension Penetration",
-          "desc": "Compare .com, .io, .co, and .ai with market penetration rates. Know which TLD fits your audience before committing."
+          "title": "拡張子プネッシュール",
+          "desc": ".com、.io、.co、.aiの市場プネッシュールを比較します。"
         },
         {
-          "title": "Social Availability",
-          "desc": "Check username availability across major platforms alongside your domain search. Secure the full brand identity in one pass."
+          "title": "ソーシャル利用可能性",
+          "desc": "メインプラットフォームのユーザー名利用可能性を確認します。"
         }
       ],
-      "builtForTitle": "Built for Founders",
+      "builtForTitle": "創業者向けに設計",
       "builtFor": [
         {
-          "title": "Competitor Naming",
-          "desc": "Analyze naming patterns in your industry for competitive insights."
+          "title": "競合他名呼すべ",
+          "desc": "業界の呼すべパターンを分析しましょう。"
         },
         {
-          "title": "Trademark Risk",
-          "desc": "USPTO and WIPO database screening before brand commitment."
+          "title": "トランジフィールリスク",
+          "desc": "ブランド決定前のUSPTOとWIPOデータベースフィルタリング。"
         },
         {
-          "title": "Appraisal Tool",
-          "desc": "Get algorithmic valuations with confidence intervals."
+          "title": "評価ツール",
+          "desc": "信頼区間を持つアリゴリズム評価を取得しましょう。"
         },
         {
-          "title": "SEO Scanner",
-          "desc": "Evaluate backlink profiles of potential domains instantly."
+          "title": "SEOスキャナー",
+          "desc": "潜在ドメインのバックリンプロフィールを即座に評価します。"
         }
       ],
-      "ctaTitle": "Find Your Brand Domain",
-      "ctaDesc": "Start with a free account. Score unlimited domains across 4 TLDs.",
-      "ctaSignup": "Create Free Account",
-      "ctaAppraise": "Try Appraisal Tool"
+      "ctaTitle": "ブランドドメインを見つける",
+      "ctaDesc": "無料アカウントで開始。4つのTLDで無限のドメインのスコアを下げましょう。",
+      "ctaSignup": "無料アカウントを作る",
+      "ctaAppraise": "評価ツールを試してみる"
     },
     "agencies": {
-      "badge": "For Agencies",
-      "title": "Scale Domain Acquisition for Clients",
-      "desc": "Expired domain backlink authority scoring, spam penalty recovery audits, and bulk tools designed for agency workflows. Handle 5,000+ domains per project.",
+      "badge": "代行所のため",
+      "title": "カーターのドメイン取得をスケール",
+      "desc": "バックリン権威スコアリング、スパム復旧监査、代行所ワーフローのためのバックツール。",
       "stats": [
         {
           "value": "5K",
-          "label": "Bulk Domains"
+          "label": "一括ドメイン数"
         },
         {
           "value": "10K",
-          "label": "API Calls/Day"
+          "label": "API呼出/日"
         },
         {
           "value": "8–15%",
-          "label": "Commission Tiers"
+          "label": "コミッションレベル"
         },
         {
           "value": "$5–$50",
-          "label": "Reveal Fee"
+          "label": "揭け料金"
         }
       ],
-      "whyTitle": "Why Agencies Choose Ceche",
+      "whyTitle": "代行所がCecheを選ぶ理由",
       "why": [
         {
-          "title": "Client Results",
-          "desc": "Deliver measurable ROI with data-backed domain acquisitions. Show clients exactly why a domain is worth the investment."
+          "title": "カーターの結果",
+          "desc": "データに支持された戦略的なドメイン取得で渡可能なROIを提供します。"
         },
         {
-          "title": "Time Savings",
-          "desc": "Bulk scan 5,000 domains at once and score them across 16 dimensions. What used to take days now takes minutes."
+          "title": "時間の範囲",
+          "desc": "16次元で最大5,000ドメインを一括スキャン。"
         },
         {
-          "title": "Revenue Growth",
-          "desc": "Lower commission tiers as volume increases. Earn more per deal with 8–15% tiered commissions and minimum-based pricing."
+          "title": "売上高ごと",
+          "desc": "量が増えるほどコミッションレベルが下がります。"
         }
       ],
       "features": [
         {
-          "title": "Expired Domain Authority",
-          "desc": "Evaluate backlink profiles of expired domains for acquisition. See dofollow/nofollow ratios, anchor text distribution, and link velocity."
+          "title": "期限切れドメイン権威",
+          "desc": "取得のために期限切れドメインのバックリンプロフィールを評価します。"
         },
         {
-          "title": "Spam Recovery Audits",
-          "desc": "Identify and recover from Google penalties with detailed analysis. Get actionable recommendations to restore domain health."
+          "title": "スパム復旧监査",
+          "desc": "Googleのペネティから識別し、復旧しましょう。"
         },
         {
-          "title": "Bulk Analyzer",
-          "desc": "Process up to 5,000 domains per batch. Export CSV reports with scores, metrics, and recommendations for client presentations."
+          "title": "一括分析器",
+          "desc": "1バッチごと最大5,000ドメインを処理。"
         },
         {
-          "title": "Reporting Dashboard",
-          "desc": "White-label reports for client presentations. Schedule automated reports and track acquisition ROI across multiple projects."
+          "title": "レポートダッシュボード",
+          "desc": "カータープレセンテーション向けのワイトレーベルレポート。"
         }
       ],
-      "plansTitle": "Plans for Every Agency",
-      "plansDesc": "Scale from solo consultant to full-service agency",
+      "plansTitle": "すべての代行所のためのプラン",
+      "plansDesc": "個別コンサルタントからフールサービス代行所までスケール",
       "plans": [
         {
-          "name": "Free",
+          "name": "無料",
           "price": "$0",
-          "period": "/3 domains/day",
+          "period": "/日3ドメイン",
           "features": [
-            "16-dimension scoring",
-            "SEO Scanner",
-            "Basic insights"
+            "16次元スコアリング",
+            "SEOスキャナー",
+            "基本の情報"
           ],
-          "cta": "Get Started",
+          "cta": "始める",
           "dark": false
         },
         {
-          "name": "Startup",
+          "name": "スタートアップ",
           "price": "$79",
-          "period": "/mo",
+          "period": "/モース",
           "features": [
-            "12 domains/day",
-            "Extended Insights",
-            "Trademark Monitor",
-            "Priority support"
+            "日12ドメイン",
+            "拡張された情報",
+            "トランジフィールモニター",
+            "優先サポート"
           ],
-          "cta": "Start Trial",
+          "cta": "トライアル開始",
           "dark": true
         },
         {
-          "name": "Enterprise",
+          "name": "エンタープライス",
           "price": "$129",
-          "period": "/mo",
+          "period": "/モース",
           "features": [
-            "Unlimited scoring",
-            "Bulk Analyzer (5K)",
-            "API (10K calls/day)",
-            "White-label reports"
+            "無限スコアリング",
+            "一括分析器 (5K)",
+            "API (10K回/日)",
+            "ワイトレーベルレポート"
           ],
-          "cta": "Contact Sales",
+          "cta": "営業部に連絡",
           "dark": false
         }
       ],
-      "ctaTitle": "Ready to Scale Your Agency?",
-      "ctaDesc": "Start with a free account or talk to our team about volume pricing.",
-      "ctaSignup": "Create Free Account",
-      "ctaApi": "API Documentation"
+      "ctaTitle": "代行所をスケールする準備はでした？",
+      "ctaDesc": "無料アカウントで開始してから、テームに話してみましょう。",
+      "ctaSignup": "無料アカウントを作る",
+      "ctaApi": "APIドキュメント"
     },
     "available": {
       "statValue": "4",
-      "statLabel": "TLDs Scanned Simultaneously",
+      "statLabel": "同時スキャンされているTLD",
       "tlds": ".com · .io · .co · .ai",
-      "title": "Find Available Domains in Seconds",
-      "desc": "Scan millions of combinations for available domain names. Smart suggestions, real-time availability checks, and price comparisons across registrars.",
+      "title": "毎分の利用可能なドメインを発見",
+      "desc": "利用可能なドメイン名をたくさんの組み合わせをスキャン。",
       "discovery": {
-        "title": "Smart Domain Discovery",
-        "desc1": "Enter keywords, industry, or a brand concept and Ceche will generate hundreds of available options. Filter by length, TLD, price range, and brandability score.",
-        "desc2": "Every result includes a 16-dimension score, so you know which domains have real market potential — not just availability.",
-        "cta": "Start Searching Free"
+        "title": "インテリジェントなドメイン発見",
+        "desc1": "キュールワードやブランドコンセプトを入力するとCecheが数百つのオプションを生成します。",
+        "desc2": "各結果には16次元スコアが含まれています。",
+        "cta": "無料で検索"
       },
       "filters": {
-        "title": "Filter Options",
+        "title": "フィルターオプション",
         "items": [
           {
             "label": "TLD",
             "value": ".com, .io, .co, .ai"
           },
           {
-            "label": "Max Length",
-            "value": "Up to 15 characters"
+            "label": "最大長さ",
+            "value": "15文字まで"
           },
           {
-            "label": "Price Range",
-            "value": "$8 – $500/yr"
+            "label": "価格範囲",
+            "value": "$8 – $500/年"
           },
           {
-            "label": "Brandability",
-            "value": "High / Medium / Low"
+            "label": "ブランドバリリティ",
+            "value": "高 / 中 / 低"
           },
           {
-            "label": "Buyer Intent",
-            "value": "Score 0–100"
+            "label": "購入意固",
+            "value": "スコア 0–100"
           },
           {
-            "label": "Availability",
-            "value": "Instant check"
+            "label": "利用可能性",
+            "value": "即座確認"
           },
           {
-            "label": "Price Comparison",
-            "value": "Multi-registrar"
+            "label": "価格比較",
+            "value": "マルチレジスター"
           }
         ]
       },
       "timeline": {
-        "title": "Never Miss a Domain",
+        "title": "ドメインを決しても失わない",
         "steps": [
           {
-            "title": "Set Your Criteria",
-            "desc": "Define keywords, TLDs, price range, and brandability thresholds."
+            "title": "キリタリアルを設定",
+            "desc": "キュールワード、TLD、価格範囲を定義しましょう。"
           },
           {
-            "title": "Monitor & Alert",
-            "desc": "Ceche scans daily and alerts you when matching domains appear."
+            "title": "盨視してアラート",
+            "desc": "Cecheは毎日スキャンし、マッチするドメインが現れたらアラートします。"
           },
           {
-            "title": "Acquire Instantly",
-            "desc": "One-click registration or marketplace purchase with secure checkout."
+            "title": "即座取得",
+            "desc": "一ディック登録またはマーケット購入。"
           }
         ]
       },
-      "plansTitle": "Choose Your Plan",
+      "plansTitle": "プランを選ぶ",
       "plans": [
         {
-          "name": "Free",
+          "name": "無料",
           "price": "$0",
           "features": [
-            "3 domains/day",
-            "Basic scoring",
+            "日3ドメイン",
+            "基本スコアリング",
             "1 TLD"
           ],
           "highlight": false
         },
         {
-          "name": "Startup",
-          "price": "$79/mo",
+          "name": "スタートアップ",
+          "price": "$79/モース",
           "features": [
-            "12 domains/day",
-            "Extended Insights",
-            "4 TLDs"
+            "日12ドメイン",
+            "拡張された情報",
+            "4 TLD"
           ],
           "highlight": true
         },
         {
-          "name": "Enterprise",
-          "price": "$129/mo",
+          "name": "エンタープライス",
+          "price": "$129/モース",
           "features": [
-            "Unlimited scoring",
-            "Bulk Analyzer",
-            "API access"
+            "無限スコアリング",
+            "一括分析器",
+            "APIアクセス"
           ],
           "highlight": false
         }
       ],
-      "popular": "Popular",
-      "getStarted": "Get Started",
+      "popular": "人気",
+      "getStarted": "始める",
       "bulk": {
-        "badge": "Enterprise Feature",
-        "title": "Bulk Domain Scanner",
-        "desc": "Upload a CSV of up to 5,000 domains and get scored results in minutes. Perfect for portfolio audits and prospecting at scale.",
-        "note": "Available on Enterprise plan ($129/mo). Includes API access with 10,000 calls/day."
+        "badge": "エンタープライス機能",
+        "title": "一括ドメインスキャナー",
+        "desc": "最大5,000つのドメインのCSVをアップロードし、分析結果を分鐘で取得。",
+        "note": "エンタープライスプラン($129/モース)で利用可能。"
       },
-      "ctaTitle": "Find Your Perfect Domain",
-      "ctaDesc": "Start with 3 free domain searches per day.",
-      "ctaSignup": "Create Free Account",
-      "ctaScan": "Try SEO Scanner"
+      "ctaTitle": "完璧なドメインを見つける",
+      "ctaDesc": "毎日3つの無料ドメイン検索で開始。",
+      "ctaSignup": "無料アカウントを作る",
+      "ctaScan": "SEOスキャナーを試してみる"
     },
     "research": {
       "breadcrumb": [
-        "Solutions",
-        "Research Intelligence"
+        "ソリューション",
+        "調査インテリジェンス"
       ],
-      "title": "Deep Domain Analysis Before Acquisition",
-      "desc": "Make informed decisions with comprehensive intelligence reports. 16-dimension scoring, ownership history, backlink profiles, and risk assessment — all in one document.",
+      "title": "取得前の深层なドメイン分析",
+      "desc": "包括的な情報レポートで情報に基づいた決定を下しましょう。",
       "sections": [
         {
-          "title": "16-Dimension Scoring",
-          "desc": "Every domain is evaluated across 16 distinct dimensions including brandability, SEO strength, market demand, and risk factors. The composite Buyer Intent Score (0–100) gives you a single number to compare domains."
+          "title": "16次元スコアリング",
+          "desc": "各ドメインは16つの別次元で評価されます。"
         },
         {
-          "title": "Ownership History",
-          "desc": "Complete WHOIS history and ownership transitions. See how many times a domain has changed hands, previous use cases, and any associated reputation issues."
+          "title": "所有者履歴",
+          "desc": "完全なWHOIS履歴と所有者の変通。"
         },
         {
-          "title": "Backlink Profile",
-          "desc": "Detailed backlink analysis with quality scoring. Dofollow/nofollow ratios, anchor text distribution, referring domains, and link velocity trends over time."
+          "title": "バックリンプロフィール",
+          "desc": "品質スコアリング付きの詳細なバックリン分析。"
         },
         {
-          "title": "Traffic Estimates",
-          "desc": "Monthly traffic predictions based on SEO metrics, keyword rankings, and historical data. Understand the organic potential before you invest."
+          "title": "トラフィック推定",
+          "desc": "SEOメトリックと履歴データに基づく月間トラフィック予想。"
         },
         {
-          "title": "Valuation Range",
-          "desc": "Algorithmic pricing with confidence intervals. Compare against recent comparable sales across .com, .io, .co, and .ai to understand fair market value."
+          "title": "評価範囲",
+          "desc": "信頼区間を持つアリゴリズム価格。"
         },
         {
-          "title": "Risk Assessment",
-          "desc": "Trademark conflicts, spam history, Google penalty status, and registration risk analysis. Know the full picture before committing capital."
+          "title": "リスク評価",
+          "desc": "トランジフィール冲突、スパム履歴、リスク分析。"
         }
       ],
-      "compareTitle": "How Ceche Compares",
+      "compareTitle": "Cecheの比較",
       "compareHeaders": [
-        "Feature",
+        "機能",
         "Ceche",
         "Dynadot",
         "GoDaddy"
       ],
       "compareRows": [
         {
-          "feature": "16-Dimension Scoring",
+          "feature": "16次元スコアリング",
           "ceche": "✓",
           "dynadot": "✗",
           "godaddy": "✗"
         },
         {
-          "feature": "Buyer Intent Score",
+          "feature": "購入意固スコア",
           "ceche": "0–100",
           "dynadot": "✗",
           "godaddy": "✗"
         },
         {
-          "feature": "Bulk Analysis (5K+)",
+          "feature": "一括分析 (5K+)",
           "ceche": "✓",
-          "dynadot": "Limited",
+          "dynadot": "制限されている",
           "godaddy": "✗"
         },
         {
-          "feature": "API Access",
-          "ceche": "10K/day",
-          "dynadot": "Basic",
-          "godaddy": "Paid add-on"
+          "feature": "APIアクセス",
+          "ceche": "10K/日",
+          "dynadot": "基本",
+          "godaddy": "有料アドオン"
         },
         {
-          "feature": "Trademark Monitor",
+          "feature": "トランジフィールモニター",
           "ceche": "✓",
           "dynadot": "✗",
-          "godaddy": "Paid"
+          "godaddy": "有料"
         },
         {
-          "feature": "Tiered Commission",
+          "feature": "階段のコミッション",
           "ceche": "8–15%",
-          "dynadot": "Flat",
-          "godaddy": "Flat 20%+"
+          "dynadot": "固定",
+          "godaddy": "固定20%+"
         },
         {
-          "feature": "TLDs Analyzed",
+          "feature": "分析されたTLD",
           "ceche": "4",
           "dynadot": "10+",
           "godaddy": "10+"
         }
       ],
-      "ctaTitle": "Research Smarter",
-      "ctaDesc": "Get deep intelligence on any domain. Start with a free account.",
-      "ctaSignup": "Create Free Account",
-      "ctaAppraise": "Try Appraisal Tool"
+      "ctaTitle": "よりインテリジェントに調査",
+      "ctaDesc": "いずれのドメインについて深层な情報を取得しましょう。",
+      "ctaSignup": "無料アカウントを作る",
+      "ctaAppraise": "評価ツールを試してみる"
     },
     "premium": {
-      "heroTitle": "Acquire Premium Domains with Confidence",
-      "heroDesc": "Secure checkout, transparent pricing, and a 72-hour inspection period. Buy premium domains the way they should be — safely and fairly.",
+      "heroTitle": "インテリジェンを持ってプレミアムドメインを取得",
+      "heroDesc": "安全なチェックアウト、透明な価格、72時間の検査期間。",
       "steps": [
         {
-          "title": "Discover & Evaluate",
-          "desc": "Browse curated premium domains with full 16-dimension intelligence reports. See ownership history, backlink profiles, and fair market valuation before you make an offer."
+          "title": "発見して評価",
+          "desc": "完全なレポートと一つのカレーシュラリズされたプレミアムドメインをブラウズしましょう。"
         },
         {
-          "title": "Negotiate & Transact",
-          "desc": "Make offers, counter-offers, and close deals securely. Payment is processed safely until domain transfer is confirmed and verified."
+          "title": "亦極課して取引",
+          "desc": "オファーをされて安全に取引を終了しましょう。"
         },
         {
-          "title": "Inspect & Confirm",
-          "desc": "72-hour inspection period after transfer. Verify the domain meets all expectations before the seller receives payment. Full refund if unsatisfied."
+          "title": "検査して確認",
+          "desc": "移転後72時間の検査期間。"
         }
       ],
       "trust": [
         {
-          "title": "Secure Checkout",
-          "desc": "Payment processed securely until domain transfer is confirmed and verified by both parties."
+          "title": "安全なチェックアウト",
+          "desc": "移転が確認されるまで安全に処理される支払い。"
         },
         {
-          "title": "72-Hour Inspection",
-          "desc": "Full inspection period after transfer. Test the domain, verify records, and ensure it meets your needs."
+          "title": "72時間の検査",
+          "desc": "移転後の完全な検査期間。"
         },
         {
-          "title": "Multiple Payment Options",
-          "desc": "Credit card, wire transfer, and cryptocurrency accepted. No hidden fees or conversion surprises."
+          "title": "多数の支払い方法",
+          "desc": "クレジットカード、銀行金躍、クリプト通貨を承認。"
         }
       ],
-      "pricingTitle": "Transparent Pricing",
-      "pricingDesc": "No hidden fees. You see the price — you pay the price.",
+      "pricingTitle": "透明な価格",
+      "pricingDesc": "隠された費用はありません。表示された価格が支払いている価格です。",
       "pricingHeaders": [
-        "Fee Type",
-        "Amount",
-        "Notes"
+        "費用タイプ",
+        "金額",
+        "メモ"
       ],
       "pricingRows": [
         {
-          "type": "Reveal Fee (Standard)",
+          "type": "揭け料金（標準）",
           "amount": "$5",
-          "notes": "One-time per domain reveal"
+          "notes": "1ドメインごとの一度"
         },
         {
-          "type": "Reveal Fee (Priority)",
+          "type": "揭け料金（優先）",
           "amount": "$10",
-          "notes": "Expedited reveal with full report"
+          "notes": "完全なレポート伴の加速揭け"
         },
         {
-          "type": "Buyer Commission",
+          "type": "購入者コミッション",
           "amount": "0%",
-          "notes": "Buyers pay zero commission on Ceche"
+          "notes": "Cecheでは購入者コミッションは無料"
         },
         {
-          "type": "Transaction Fee",
-          "amount": "Included",
-          "notes": "No extra charge for secure checkout"
+          "type": "取引費用",
+          "amount": "含まれている",
+          "notes": "安全なチェックアウトの追加費用なし"
         }
       ],
-      "ctaTitle": "Buy Premium Domains Today",
-      "ctaDesc": "Secure, transparent transactions with secure checkout on every purchase.",
-      "ctaMarketplace": "Browse Marketplace",
-      "ctaPricing": "View Pricing"
+      "ctaTitle": "今日プレミアムドメインを購入",
+      "ctaDesc": "各購入で安全で透明な取引。",
+      "ctaMarketplace": "マーケットプレースをブラウズ",
+      "ctaPricing": "料金を観てみる"
     }
   },
   "res": {
     "index": {
-      "title": "Resources",
-      "subtitle": "Learn and get support"
+      "title": "リソース",
+      "subtitle": "学び、サポートを取ります"
     },
     "blog": {
-      "badge": "Ceche Blog",
-      "title": "Domain intelligence, decoded.",
-      "subtitle": "Strategy guides, market analysis, and frameworks for domain investors who trade on data—not intuition.",
-      "topicsBadge": "Topics",
+      "badge": "Cecheブログ",
+      "title": "ドメインインテリジェンス、解析された。",
+      "subtitle": "投資家向けの戦略ガイド、市場分析、フレームワーク。",
+      "topicsBadge": "トピック",
       "categories": [
-        "Strategy",
-        "Market Data",
-        "Tutorials",
-        "Industry News",
-        "Case Studies"
+        "戦略",
+        "市場データ",
+        "チュートリアル",
+        "業界ニュース",
+        "ケーススタディ"
       ],
-      "marquee": "Domain Valuations · Market Reports · Portfolio Analytics · Blind Marketplace · 16-Dimension Framework · Health Scores · CPC Data · Brandability Index · Try Your Luck ·",
+      "marquee": "ドメイン評価 · 市場レポート · ポートフォリオ分析 ·",
       "articles": [
         {
-          "date": "Aug 28, 2026",
-          "title": "Why Premium .com Domains Still Outperform New gTLDs"
+          "date": "2026年8月28日",
+          "title": "プレミアム.comドメインが新しいgTLDをまたする理由"
         },
         {
-          "date": "Aug 21, 2026",
-          "title": "The Hidden ROI of Portfolio Health Scores"
+          "date": "2026年8月21日",
+          "title": "ポートフォリオのヒジスコアのROI"
         },
         {
-          "date": "Aug 14, 2026",
-          "title": "5 Red Flags in Domain Appraisals You're Ignoring"
+          "date": "2026年8月14日",
+          "title": "詰いている5つの警告シグナル"
         },
         {
-          "date": "Aug 07, 2026",
-          "title": "How to Price a Domain Without Guessing"
+          "date": "2026年8月7日",
+          "title": "推渡せずにドメインの値付けする方法"
         },
         {
-          "date": "Jul 31, 2026",
-          "title": "Blind Auctions vs. Fixed Listings: A Data Comparison"
+          "date": "2026年7月31日",
+          "title": "ブラインドオンション vs 固定アンジメント: データ比較"
         },
         {
-          "date": "Jul 24, 2026",
-          "title": "Building a Domain Reselling Workflow from Scratch"
+          "date": "2026年7月24日",
+          "title": "ザロのコードからのドメイン転売ワーフローの構築"
         }
       ],
       "cta": {
-        "title": "Want the full library?",
-        "desc": "Download our ebooks and go deeper on domain investing.",
-        "ebooks": "Browse Ebooks →",
-        "pricing": "View Pricing"
+        "title": "完全なバイブラリを好んでいるか？",
+        "desc": "Eブックをダウンロードしてドメイン投資を深くしましょう。",
+        "ebooks": "Eブックをブラウズ →",
+        "pricing": "料金を観てみる"
       }
     },
     "ebooks": {
-      "badge": "Ceche Ebooks",
-      "title": "Go deeper on domain investing",
-      "subtitle": "Free guides, frameworks, and playbooks for domain investors at every level.",
+      "badge": "CecheEブック",
+      "title": "ドメイン投資を深く知る",
+      "subtitle": "すべてのレベルのドメイン投資家向けの無料ガイド、フレームワーク、プレイブック。",
       "featured": {
-        "badge": "Featured",
-        "title": "The Domain Investor's Playbook",
-        "desc": "The definitive guide to buying, valuing, and selling domain names for profit. 42 pages of actionable frameworks, case studies, and Ceche-specific strategies used by top resellers.",
+        "badge": "バイター",
+        "title": "ドメイン投資家のプレイブック",
+        "desc": "ドメイン名の購入、評価、販売の終極ガイド。",
         "stats": [
           {
             "value": "34K+",
-            "label": "Downloads"
+            "label": "ダウンロード"
           },
           {
             "value": "42",
-            "label": "Pages"
+            "label": "ページ"
           },
           {
             "value": "4.9",
-            "label": "Rating"
+            "label": "評価"
           }
         ],
-        "cta": "Get Free Copy →"
+        "cta": "無料コピーを取得 →"
       },
-      "catalogTitle": "More from Ceche",
+      "catalogTitle": "Cecheのさらなライブラリ",
       "catalog": [
         {
-          "title": "The Domain Appraiser's Toolkit",
+          "title": "ドメイン評価者のツールキット",
           "pages": 32,
-          "date": "Apr 2026",
+          "date": "2026年4月",
           "downloads": "12K+",
-          "desc": "A step-by-step guide to valuing domains using data, not guesswork. Covers the 16-Dimension Framework, health scoring, and comparative market analysis."
+          "desc": "データを使ってドメインを評価するステップバイスのガイド。"
         },
         {
-          "title": "Blind Marketplace Playbook",
+          "title": "ブラインドマーケットプレイブック",
           "pages": 28,
-          "date": "Mar 2026",
+          "date": "2026年3月",
           "downloads": "8K+",
-          "desc": "How Ceche's blind bidding system eliminates price inflation and gives buyers an edge. Includes negotiation templates and bid strategy frameworks."
+          "desc": "Cecheのブラインドバイディングシステムがなぜ価格インフレーションを消すのか。"
         },
         {
-          "title": "Portfolio Health Audit Guide",
+          "title": "ポートフォリオ健康监査ガイド",
           "pages": 24,
-          "date": "Feb 2026",
+          "date": "2026年2月",
           "downloads": "6K+",
-          "desc": "Run a full health check on your domain portfolio. Identify underperformers, renewal traps, and hidden gems with Ceche's scoring system."
+          "desc": "ドメインポートフォリオの完全な健康チェックを実行しましょう。"
         },
         {
-          "title": "Domain Reselling 101",
+          "title": "ドメイン転売101",
           "pages": 36,
-          "date": "Jan 2026",
+          "date": "2026年1月",
           "downloads": "15K+",
-          "desc": "From acquisition to close—everything a new domain reseller needs. Pricing strategies, buyer outreach, and closing techniques backed by real data."
+          "desc": "取得から終了まで——新しいリリスカーが必要とすべて。"
         }
       ],
-      "getCopy": "Get Digital Copy",
+      "getCopy": "デジタルコピーを取得",
       "cta": {
-        "title": "Want more articles and market insights?",
-        "desc": "Our blog covers domain strategy, pricing models, and industry analysis.",
-        "blog": "Read the Blog →",
-        "pricing": "View Pricing"
+        "title": "さらな記事と市場情報を好んでいるか？",
+        "desc": "ブログでドメイン戦略と業界分析を取り上げましょう。",
+        "blog": "ブログを読む",
+        "pricing": "料金を観てみる"
       },
       "modal": {
-        "title": "Create an account to download",
-        "desc": "All Ceche ebooks and guides are free for registered users.",
-        "redirecting": "Redirecting to signup in {count} seconds...",
-        "cta": "Create free account",
-        "back": "Go back"
+        "title": "ダウンロードのためにアカウントを作る",
+        "desc": "登録されたユーザーにはCecheの全てのEブックとガイドが無料です。",
+        "redirecting": "{count}秒後に登録ページへリダイレクトします...",
+        "cta": "無料アカウントを作る",
+        "back": "戻る"
       }
     },
     "cases": {
-      "badge": "Case Studies",
-      "title": "Real investors. Real outcomes.",
-      "desc": "See how domain investors, startups, and portfolio managers use Ceche to make faster, smarter decisions. Every case study is backed by real numbers—no cherry-picked success stories.",
+      "badge": "ケーススタディ",
+      "title": "実在の投資家。実在の結果。",
+      "desc": "ドメイン投資家がCecheを使ってより速く、よりインテリジェントな決定を下す方法を見てみましょう。",
       "stats": [
         {
-          "value": "4.2K+",
-          "label": "Active Users"
+          "value": "4,200+",
+          "label": "アクティブユーザー数"
         },
         {
           "value": "98%",
-          "label": "Accuracy Rate"
+          "label": "精度"
         }
       ],
       "comingSoon": {
-        "title": "Case studies coming soon",
-        "desc": "We're documenting how investors are using Ceche's tools to find undervalued domains, negotiate smarter, and close deals faster. Check back soon for in-depth breakdowns.",
-        "appraisal": "Try Appraisal Tool →",
-        "marketplace": "Explore Marketplace",
-        "pricing": "View Pricing"
+        "title": "ケーススタディは即座公開",
+        "desc": "投資家がCecheのツールを使っている方法を文書きしています。",
+        "appraisal": "評価ツールを試してみる →",
+        "marketplace": "マーケットプレースを探索",
+        "pricing": "料金を観てみる"
       },
       "cta": {
-        "title": "Have a story to share?",
-        "desc": "We'd love to feature your experience with Ceche.",
-        "contact": "Get in Touch →"
+        "title": "分かりたい物語がありますか？",
+        "desc": "Cecheとの経験を特載させてきたいと思います。",
+        "contact": "ご連絡ください →"
       }
     }
   },
   "company": {
     "about": {
-      "badge": "About Ceche",
-      "title": "Built for investors who trade on data",
-      "desc": "The domain marketplace where premium names are bought and sold—powered by real intelligence, not guesswork.",
+      "badge": "Cecheについて",
+      "title": "データを使って取引する投資家ために設計",
+      "desc": "プレミアム名前が購入され、販売されるドメインマーケットプレース。",
       "cta": {
-        "title": "Ready to find your next domain?",
-        "desc": "Every name is backed by data. The marketplace is open.",
-        "marketplace": "Browse Marketplace →",
-        "pricing": "View Pricing"
+        "title": "次のドメインを見つける準備はでした？",
+        "desc": "各名前はデータに支持されています。マーケットプレースは開いています。",
+        "marketplace": "マーケットプレースをブラウズ →",
+        "pricing": "料金を観てみる",
+        "0": "評価を試してみる →",
+        "1": "マーケットプレースをブラウズ"
       },
       "origin": {
-        "badge": "Our Origin",
-        "title": "Founded by a domain investor who saw the market needed better data",
-        "p1": "The domain aftermarket generates over $3 billion in annual transactions, yet most marketplaces are opaque, inflated by scrapers, and built on intuition rather than data. Ceche was created to fix that.",
-        "p2": "We combined the intelligence of a research platform with the transaction mechanics of a marketplace. You evaluate the numbers first—estimated value, health score, CPC, brandability—and the name only appears when you pay to reveal it. Every valuation is backed by a published methodology and a verifiable dataset."
+        "badge": "たった起源",
+        "title": "市場により良いデータが必要だと見たドメイン投資家が創設",
+        "p1": "ドメイン二手市場は年間の取引額3儅エンド以上を生ましています。",
+        "p2": "調査プレラットの情報とマーケットプレースの取引機械を組み合わせました。"
       },
       "founder": {
-        "label": "Founder",
+        "label": "創業者",
         "name": "Nekwasachukwu Ucheokoye",
-        "bio": "Domain name investor & reseller managing 100+ domains. Agentic & systems engineer building intelligent infrastructure for the domain industry. Based in Awka, Nigeria."
+        "bio": "在来100+のドメインを管理するドメイン投資家とリリスカー。"
       },
       "values": {
-        "badge": "What We Believe",
-        "title": "Three principles that drive every decision",
+        "badge": "私たちが信じていること",
+        "title": "各決定を支える3つの原則",
         "items": [
           {
-            "title": "Transparency",
-            "desc": "We publish our methodology, data sources, and accuracy metrics. Users who understand how we work trust us more than users who are asked to take our word for it."
+            "title": "透明性",
+            "desc": "方法論とデータソースを公開しています。"
           },
           {
-            "title": "Data Rigor",
-            "desc": "Every claim we make is backed by data. Every tool produces measurable outputs. We do not rely on intuition when data is available."
+            "title": "データの公引性",
+            "desc": "提言すべてがデータで支持されています。"
           },
           {
-            "title": "Speed",
-            "desc": "We ship fast and iterate. Perfection is the enemy of progress—we aim for good enough to ship and improve from there."
+            "title": "速度",
+            "desc": "紒め、速く配送しています。"
           }
         ]
       }
     },
     "affiliates": {
-      "badge": "Ceche Affiliates",
-      "title": "Earn by referring domain investors",
-      "desc": "Join our affiliate program, share Ceche with your network, and earn recurring commissions on every customer you refer.",
+      "badge": "Cecheパーター",
+      "title": "組織を通じてドメイン投資家を組織",
+      "desc": "アフィリエートプログラムに加入して続きのコミッションを取得しましょう。",
       "timeline": [
-        "Sign up",
-        "Share link",
-        "Earn 30%"
+        "登録",
+        "リンク共有",
+        "30%組織"
       ],
       "benefits": [
         {
-          "title": "30% Recurring Commission",
-          "desc": "Earn on every paying customer you refer—for as long as they stay subscribed. No caps, no limits."
+          "title": "30%続行コミッション",
+          "desc": "組織した全ての有料カウントにおけて組織続きのコミッション。"
         },
         {
-          "title": "90-Day Cookie Window",
-          "desc": "Your referral link tracks visitors for 90 days. Even if they come back weeks later, you still get credit."
+          "title": "90日間のクッキー窓",
+          "desc": "組織リンクは90日間ビジターをトラックします。"
         },
         {
-          "title": "Real-Time Dashboard",
-          "desc": "Track clicks, signups, and earnings in real time. No guessing, no waiting for monthly reports."
+          "title": "リャルタイムダッシュボード",
+          "desc": "クリック、登録、収益をリャルタイムでトラックします。"
         },
         {
-          "title": "Dedicated Affiliate Support",
-          "desc": "Get priority access to our affiliate team. Custom landing pages, promo assets, and campaign guidance."
+          "title": "専門のアフィリエートサポート",
+          "desc": "アフィリエートテームへの優先アクセス。"
         },
         {
-          "title": "Instant Payouts",
-          "desc": "Get paid monthly via bank transfer or PayPal. No minimum threshold. No delays."
+          "title": "即座支払い",
+          "desc": "銀行振込みまたはPayPalで毎月支払い。"
         },
         {
-          "title": "Free Premium Access",
-          "desc": "Active affiliates get a free Ceche Pro account. Use the product, sell the product, believe in the product."
+          "title": "無料のプレミアムアクセス",
+          "desc": "活動しているアフィリエートはcCecheProアカウントを無料で取得できます。"
         }
       ],
       "cta": {
-        "title": "Start earning today",
-        "desc": "Sign up for the affiliate program and start referring in minutes.",
-        "join": "Join Affiliate Program →",
-        "pricing": "View Pricing",
-        "support": "Contact Support"
+        "title": "今日から組織を始める",
+        "desc": "アフィリエートプログラムに登録してみましょう。",
+        "join": "アフィリエートプログラムに参加 →",
+        "pricing": "料金を観てみる",
+        "support": "サポート"
       }
     }
   },
   "helpOverview": {
-    "badge": "Help Center",
-    "title": "How can we help.",
-    "desc": "Find documentation, FAQs, and support for all Ceche tools. Use the sidebar to navigate between sections.",
+    "badge": "ヘルプセンター",
+    "title": "どうするとお手会いできますか。",
+    "desc": "Cecheのすべてのツールのドキュメント、FAQ、サポートを探すことができます。",
     "sections": [
       {
-        "title": "Documentation",
-        "desc": "Comprehensive guides for every Ceche tool, from domain lookup to bulk analysis.",
+        "title": "ドキュメント",
+        "desc": "Cecheのすべてのツールの包括的なガイド。",
         "href": "/help/docs"
       },
       {
-        "title": "API Reference",
-        "desc": "RESTful API endpoints for programmatic domain intelligence at scale.",
+        "title": "API参照",
+        "desc": "ドメインインテリジェンスのためのRESTful APIエンドポイント。",
         "href": "/help/api"
       },
       {
         "title": "FAQ",
-        "desc": "Answers to common questions about pricing, tools, accounts, and more.",
+        "desc": "頻出される質問の答え。",
         "href": "/help/faq"
       },
       {
-        "title": "Contact",
-        "desc": "Reach our support team for help, feedback, or partnership inquiries.",
+        "title": "ご連絡",
+        "desc": "サポートテームに連絡しましょう。",
         "href": "/help/contact"
       },
       {
-        "title": "Changelog",
-        "desc": "Product updates, new features, and platform improvements.",
+        "title": "変更リジスター",
+        "desc": "製品の更新と新しい機能。",
         "href": "/help/changelog"
       }
     ]
   },
   "auth": {
     "login": {
-      "title": "Login",
-      "email": "Email",
-      "password": "Password",
-      "button": "Login",
-      "loading": "Logging in...",
-      "noAccount": "Don't have an account?",
-      "signup": "Sign up"
+      "title": "ログイン",
+      "email": "メール",
+      "password": "パスワード",
+      "button": "ログイン",
+      "loading": "ログイン中...",
+      "noAccount": "アカウントをお持ちでないですか？",
+      "signup": "登録"
     },
     "signup": {
-      "title": "Sign Up",
-      "name": "Name",
-      "email": "Email",
-      "password": "Password",
-      "button": "Sign Up",
-      "loading": "Creating account...",
-      "hasAccount": "Already have an account?",
-      "login": "Login"
+      "title": "登録",
+      "name": "氏名",
+      "email": "メール",
+      "password": "パスワード",
+      "button": "登録",
+      "loading": "アカウントを作成中...",
+      "hasAccount": "アカウントをお持ちでありますか？",
+      "login": "ログイン"
     }
   },
   "dashboard": {
-    "welcome": "Welcome back, {name}",
-    "plan": "Plan",
-    "apiKeys": "API Keys",
-    "manageKeys": "Manage keys →",
-    "quickActions": "Quick Actions",
-    "appraise": "Appraise a domain →",
-    "scan": "Start a scan →"
+    "welcome": "お帰りになさい、{name}",
+    "plan": "プラン",
+    "apiKeys": "APIキー",
+    "manageKeys": "キー管理 →",
+    "quickActions": "早いアクション",
+    "appraise": "ドメインを評価 →",
+    "scan": "スキャン開始 →"
   },
   "limit": {
-    "title": "Rate Limit Reached",
-    "desc": "This request didn't go through. You've used all your free appraisals for today. Sign up to increase your rate limit and appraise more domains.",
-    "currentLimits": "Your current limits",
+    "title": "速度制限に達しました",
+    "desc": "このリクエストは通りません。きちんと無料評価を使い切りました。",
+    "currentLimits": "現在の制限",
     "limits": [
       {
-        "tier": "Not signed up",
-        "value": "3/day"
+        "tier": "未登録",
+        "value": "日3回"
       },
       {
-        "tier": "Signed up (free)",
-        "value": "12/day"
+        "tier": "登録済み（無料）",
+        "value": "日12回"
       },
       {
-        "tier": "Premium Startup ($79/mo)",
-        "value": "30/day"
+        "tier": "プレミアムスタートアップ($79/モース)",
+        "value": "日30回"
       },
       {
-        "tier": "Premium Enterprise ($129/mo)",
-        "value": "Unlimited"
+        "tier": "プレミアムエンタープライス($129/モース)",
+        "value": "無限"
       }
     ],
-    "signup": "Sign Up Free",
-    "home": "Go Back Home"
+    "signup": "無料登録",
+    "home": "ホームに戻る"
   },
   "search": {
-    "placeholder": "Enter any domain name, e.g., brand.com",
-    "button": "Search",
-    "loading": "Checking {domain}...",
-    "available": "Available for registration",
-    "taken": "Taken",
-    "rating": "Rating",
-    "buildWith": "What you could build with this",
-    "appraise": "Appraise this name",
-    "whoisTitle": "WHOIS Details",
+    "placeholder": "何のドメインを入力してください、例 brand.com",
+    "button": "検索",
+    "loading": "{domain}を確認中...",
+    "available": "登録可能",
+    "taken": "使用中",
+    "rating": "評価",
+    "buildWith": "これで何を構築できる",
+    "appraise": "この名前を評価",
+    "whoisTitle": "WHOIS詳細",
     "whoisLabels": [
-      "Registrar",
-      "Expires",
-      "Registrant",
-      "Nameservers"
+      "調査者",
+      "有效期限",
+      "所有者",
+      "ネームサーバー"
     ],
-    "fullAppraisal": "Full Appraisal",
-    "copyDomain": "Copy Domain",
-    "empty": "Enter a domain name above to check availability"
+    "fullAppraisal": "完全な評価",
+    "copyDomain": "ドメインをコピー",
+    "empty": "利用可能性を確認するにはドメイン名を入力"
   },
   "apikeys": {
-    "title": "API Keys",
-    "loading": "Loading...",
-    "createTitle": "Create New Key",
-    "placeholder": "Key name (e.g., production)",
-    "create": "Create",
-    "creating": "Creating...",
-    "yourKeys": "Your Keys",
-    "noKeys": "No API keys yet. Create one above.",
-    "created": "Created:",
-    "lastUsed": "Last used:",
-    "delete": "Delete",
-    "newKey": "Your new API key (copy it now, it won't be shown again):",
-    "dismiss": "Dismiss"
+    "title": "APIキー",
+    "loading": "読み込み中...",
+    "createTitle": "新しいキーを作る",
+    "placeholder": "キー名（例 生産）",
+    "create": "作成",
+    "creating": "作成中...",
+    "yourKeys": "あなたのキー",
+    "noKeys": "まだAPIキーがありません。上で作ってください。",
+    "created": "作成日:",
+    "lastUsed": "最終使用:",
+    "delete": "削除",
+    "newKey": "新しいAPIキー（今すぐコピーしてください。再び表示されません）:",
+    "dismiss": "閉じる"
   },
   "scanPage": {
-    "title": "Domain Scanner",
-    "desc": "Find available domains matching your criteria",
-    "config": "Scan Configuration",
-    "wordList": "Word List",
-    "customWords": "Custom words",
-    "customPlaceholder": "Enter one word per line...",
-    "tlds": "TLDs",
-    "startScan": "Start Scan",
-    "scanning": "Scanning...",
-    "progress": "Scan Progress",
-    "status": "Status",
-    "progressLabel": "Progress",
-    "available": "Available",
-    "results": "Results ({count} domains)",
-    "availableOnly": "Available only",
-    "sortByDomain": "Sort by domain",
-    "sortByPrice": "Sort by price",
-    "exportCsv": "Export CSV",
-    "domain": "Domain",
-    "statusHeader": "Status",
-    "price": "Price",
-    "actions": "Actions",
-    "availableBadge": "Available",
-    "errorBadge": "Error",
-    "takenBadge": "Taken",
-    "appraise": "Appraise",
-    "noResults": "No scan results yet",
-    "noResultsDesc": "Configure your scan settings and click \"Start Scan\" to find available domains.",
-    "recentScans": "Recent Scans",
-    "scan": "scan"
+    "title": "ドメインスキャナー",
+    "desc": "キリタリアルに合う利用可能なドメインを見つける",
+    "config": "スキャン設定",
+    "wordList": "単語リスト",
+    "customWords": "カスタム単語",
+    "customPlaceholder": "1行ごと1つ単語を入力...",
+    "tlds": "TLD",
+    "startScan": "スキャン開始",
+    "scanning": "スキャン中...",
+    "progress": "スキャン進換",
+    "status": "状態",
+    "progressLabel": "進換",
+    "available": "利用可能",
+    "results": "結果（{count}ドメイン）",
+    "availableOnly": "利用可能のみ",
+    "sortByDomain": "ドメイン順でソート",
+    "sortByPrice": "価格順でソート",
+    "exportCsv": "CSVエスポーート",
+    "domain": "ドメイン",
+    "statusHeader": "状態",
+    "price": "価格",
+    "actions": "アクション",
+    "availableBadge": "利用可能",
+    "errorBadge": "エラー",
+    "takenBadge": "使用中",
+    "appraise": "評価",
+    "noResults": "まだスキャン結果がありません",
+    "noResultsDesc": "スキャン設定を設定し、「スキャン開始」をクリックしましょう。",
+    "recentScans": "過去のスキャン",
+    "scan": "スキャン"
   },
   "appraisePage": {
-    "badge": "16-DIMENSION ENGINE",
-    "title": "Domain Appraisal",
-    "desc": "Comprehensive valuation across RDAP data, TLD scoring, brandability, commercial intent, and 12 more dimensions.",
-    "placeholder": "Enter domain (e.g. techstart.com)",
-    "analyzing": "Analyzing...",
-    "button": "Appraise",
-    "devMode": "Dev mode — unlimited",
-    "appraisalsLeft": "{count} appraisal{plural} left today",
-    "devBypass": "Dev bypass",
-    "activate": "Activate",
-    "loading": "Loading...",
-    "error": "Error",
-    "estimatedValue": "Estimated Value",
-    "analysis": "16-Dimension Analysis",
-    "fullAccess": "FULL ACCESS",
-    "unlocked": "3 OF 16 UNLOCKED",
-    "aboveAvg": "Above average",
-    "belowAvg": "Below average",
-    "avg": "Average",
-    "unlockPrompt": "Unlock all 13 remaining dimensions with a premium plan",
-    "viewPricing": "View pricing",
-    "whoisHint": "Want WHOIS + DNS data?",
-    "domainLookup": "Try Domain Lookup — no account required",
-    "domainLookupCta": "Domain Lookup",
-    "deeperHint": "Want deeper analysis?",
-    "extendedInsights": "Extended Insights — backlinks, trademarks, comparables",
-    "extendedInsightsCta": "Extended Insights",
-    "recentAppraisals": "Recent Appraisals",
-    "limitTitle": "Daily limit reached",
-    "limitDesc": "You've used all {limit} appraisals today. Create an account to get {signed} per day.",
-    "createAccount": "Create account",
-    "goBack": "Go back",
-    "redirecting": "Redirecting...",
-    "redirectDesc": "Taking you to account creation.",
+    "badge": "16次元エンジン",
+    "title": "ドメイン評価",
+    "desc": "RDAPデータ、TLDスコアリング、ブランドバリリティ、商業的意固および12つのさらな次元を綴んだ総合的評価。",
+    "placeholder": "ドメインを入力（例 techstart.com）",
+    "analyzing": "分析中...",
+    "button": "評価",
+    "devMode": "開発モード — 無限",
+    "appraisalsLeft": "今日の残り評価: {count}回",
+    "devBypass": "開発ブライパス",
+    "activate": "有力化",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "estimatedValue": "推定価値",
+    "analysis": "16次元分析",
+    "fullAccess": "完全アクセス",
+    "unlocked": "16つ中3つがブロック解除済み",
+    "aboveAvg": "平均以上",
+    "belowAvg": "平均以下",
+    "avg": "平均",
+    "unlockPrompt": "プレミアムプランで残り13次元をブロックする",
+    "viewPricing": "料金を観てみる",
+    "whoisHint": "WHOIS+DNSデータが必要ですか？",
+    "domainLookup": "ドメイン検索を試してみる — アカウントは不要",
+    "domainLookupCta": "ドメイン検索",
+    "deeperHint": "もっと深い分析が必要ですか？",
+    "extendedInsights": "拡張情報 — バックリン、トランジフィール、比較データ",
+    "extendedInsightsCta": "拡張情報",
+    "recentAppraisals": "過去の評価",
+    "limitTitle": "日次限度を到達",
+    "limitDesc": "今日の{limit}回の評価を使い切りました。",
+    "createAccount": "アカウントを作る",
+    "goBack": "戻る",
+    "redirecting": "リダイレクト中...",
+    "redirectDesc": "アカウント作成ページへリダイレクトされます。",
     "modules": [
-      "Registration Data (RDAP)",
-      "TLD Premium Tier",
-      "Domain Length",
-      "Word Count",
-      "Pronounceability",
-      "Word Segmentation",
-      "Keyword Popularity",
-      "Commercial Intent (CPC)",
-      "Search Results",
-      "Cross-TLD Registration",
-      "Trademark Check",
-      "Domain Authority",
-      "Brandability Score"
+      "登録データ(RDAP)",
+      "TLDプレミアレベル",
+      "ドメイン長さ",
+      "単語数",
+      "発音可能性",
+      "単語セグメンテーション",
+      "キュールワード人気度",
+      "商業的意固(CPC)",
+      "検索結果",
+      "多数TLD登録",
+      "トランジフィール確証",
+      "ドメイン権威",
+      "ブランドバリリティスコア"
     ]
   },
   "helpDocs": {
-    "badge": "Documentation",
-    "title1": "Every tool,",
-    "title2": "documented.",
-    "desc": "The Ceche Help Center covers the SEO Scanner, Extended Insights, Bulk Analyzer, Trademark Monitor, Domain Database, and API. Over 320 articles organized by tool, topic, and difficulty level.",
+    "badge": "ドキュメント",
+    "title1": "すべてのツール、",
+    "title2": "ドキュメントされている。",
+    "desc": "CecheヘルプセンターはSEOスキャナー、拡張された情報、一括分析器、トランジフィールモニター、ドメインデータベース、APIを綴ぶ。",
     "tools": [
       {
         "name": "Domain Lookup",
@@ -2576,280 +2579,280 @@
         ]
       }
     ],
-    "tiersTitle": "Subscription tiers",
+    "tiersTitle": "アブネスステーブル",
     "tiers": [
       {
-        "tier": "Free",
+        "tier": "無料",
         "price": "$0",
-        "features": "12 appraisals/day, basic SEO Scanner, Help Center access",
+        "features": "日12回の評価、基本SEOスキャナー、ヘルプセンターアクセス",
         "color": "#888888"
       },
       {
-        "tier": "Startup",
-        "price": "$79/mo",
-        "features": "30 appraisals/day, full scanner, Extended Insights, Bulk Analyzer, Trademark Monitor",
+        "tier": "スタートアップ",
+        "price": "$79/モース",
+        "features": "日30回の評価、完全スキャナー、拡張情報、一括分析器、トランジフィールモニター",
         "color": "#F4A261"
       },
       {
-        "tier": "Enterprise",
-        "price": "$129/mo",
-        "features": "Unlimited appraisals, all Startup features, API (10K calls/day), dedicated support",
+        "tier": "エンタープライス",
+        "price": "$129/モース",
+        "features": "無限評価、全スタートアップ機能、API（10K回/日）、専門サポート",
         "color": "#9E2A2B"
       }
     ],
     "needHelp": {
-      "badge": "Need help?",
-      "title": "Premium subscribers get 4-hour support",
-      "cta": "Contact support"
+      "badge": "お問い合わせください？",
+      "title": "プレミアムアブネストには4時間サポートがあります",
+      "cta": "サポートに連絡"
     },
-    "openTool": "Open tool"
+    "openTool": "開く"
   },
   "helpFaq": {
     "badge": "FAQ",
-    "title1": "Frequently",
-    "title2": "asked.",
-    "desc": "Answers to the most common questions about Ceche — pricing, tools, API, marketplace, and account management.",
+    "title1": "頻出",
+    "title2": "質問。",
+    "desc": "Cecheについて最も頻出される質問の答え。",
     "sections": [
       {
-        "title": "Getting started",
+        "title": "始める方",
         "items": [
           {
-            "q": "What is Ceche?",
-            "a": "Ceche is a domain marketplace where premium names are bought and sold. The appraisal engine proves value with 16-dimension scoring. The search and scanner tools help you find names. Everything connects to the marketplace."
+            "q": "Cecheとは？",
+            "a": "Cecheはプレミアム名前が購入され、販売されるドメインマーケットプレースです。"
           },
           {
-            "q": "How does the appraisal engine work?",
-            "a": "The appraisal engine uses Ceche's proprietary 16-Dimension Framework to evaluate domains across four categories: Lexical Analysis (30%), Technical Authority (25%), Market Dynamics (25%), and Brandability (20%). Each dimension is scored independently and combined using statistically derived weights."
+            "q": "評価エンジンはどう動きますか？",
+            "a": "評価エンジンは16次元のフレームワークを使ってドメインを評価します。"
           },
           {
-            "q": "What TLDs does Ceche support?",
-            "a": "Ceche supports .com, .net, .io, and .co domains. The Domain Database tracks pricing and registration data for 2,847 TLDs, but appraisal and marketplace features are currently limited to these four extensions."
+            "q": "CecheがサポートするTLDは？",
+            "a": "Cecheは.com、.net、.io、.coのドメインをサポートしています。"
           },
           {
-            "q": "How do I create an account?",
-            "a": "Click 'Signup Free' in the navigation. Free accounts include 12 appraisals per day, basic SEO Scanner access, and full Help Center access. No credit card required."
+            "q": "アカウントはどう作るんですか？",
+            "a": "ナビゲーションの「無料登録」をクリックしましょう。"
           }
         ]
       },
       {
-        "title": "Pricing & billing",
+        "title": "料金と計算",
         "items": [
           {
-            "q": "What are the subscription tiers?",
-            "a": "Free: 12 appraisals/day, basic SEO Scanner, Help Center. Startup ($79/mo): 30 appraisals/day, full SEO Scanner, Extended Insights ($5-$50/report), Bulk Analyzer, Trademark Monitor, Domain Database, priority support. Enterprise ($129/mo): unlimited appraisals, all Startup features, API access (10,000 calls/day), dedicated account manager, private Slack channel, custom reporting."
+            "q": "アブネスステーブルはどうこんでいますか？",
+            "a": "無料: 日12回の評価。スタートアップ: 日30回。エンタープライス: 無限。"
           },
           {
-            "q": "How does Try Your Luck pricing work?",
-            "a": "Try Your Luck offers mystery domain acquisitions at flat rates: .com ($79), .net ($39), .io ($29), .co ($9), or any TLD ($19 flat). Each acquisition includes a Ceche valuation report with 16-dimension scoring."
+            "q": "連遺をたてみるの価格はどう動きますか？",
+            "a": "連遺をたてみるは一定額でミステリーなドメイン取得を提供します。"
           },
           {
-            "q": "What are the marketplace fees?",
-            "a": "Standard listing: $5 per domain. Priority listing: $10 per domain (includes 72-hour visibility boost). Commission: 8-15% of final sale price on a sliding scale — 15% for transactions under $500, 12% for $500-$5,000, 10% for $5,000-$50,000, 8% for above $50,000."
+            "q": "マーケットの費用はどうこんでいますか？",
+            "a": "標準登録: $5/ドメイン。コミッション: 8-15%。"
           },
           {
-            "q": "Do you offer refunds?",
-            "a": "No. All fees for digital goods (reveals, subscriptions, marketplace, Try Your Luck) are non-refundable."
+            "q": "返金はしていますか？",
+            "a": "のい。ダウンロード商品の全ての費用は返金対象外です。"
           }
         ]
       },
       {
-        "title": "Tools",
+        "title": "ツール",
         "items": [
           {
-            "q": "What's the difference between SEO Scanner and Extended Insights?",
-            "a": "The SEO Scanner evaluates search visibility, backlink profile, organic traffic history, and keyword relevance — returning results in 3-5 seconds. Extended Insights provides deeper due diligence including trademark screening, comparable sales, and buyer intent scoring."
+            "q": "SEOスキャナーと拡張情報の違いは？",
+            "a": "SEOスキャナーは見される性とバックリンを評価します。拡張情報はより深いダウジリシャンを提供します。"
           },
           {
-            "q": "How does the Bulk Analyzer work?",
-            "a": "Upload a CSV with one column (header: 'domain') and one domain per row. Output includes Domain Name, Ceche Valuation, 16-Dimension Score, Priority Score (1-100), Recommended Action, and Estimated Sale Time. Processing time for 5,000 domains is approximately 2 minutes 28 seconds."
+            "q": "一括分析器はどう動きますか？",
+            "a": "「domain」のカレンと1ドメインごとのCSVをアップロードしましょう。"
           },
           {
-            "q": "How does the Trademark Monitor work?",
-            "a": "Add domains to your monitor list from the dashboard. The tool screens new USPTO and WIPO filings daily. You receive email alerts within 24 hours. Severity levels: Critical (identical mark in related class), High (similar mark in different class), Medium (similar mark, different goods), Low (partial match)."
+            "q": "トランジフィールモニターはどう動きますか？",
+            "a": "ダッシュボードから監視リストにドメインを追加しましょう。"
           }
         ]
       },
       {
-        "title": "API & integrations",
+        "title": "APIと組込み",
         "items": [
           {
-            "q": "How do I authenticate API requests?",
-            "a": "Include your API key in the Authorization header as a Bearer token: Authorization: Bearer YOUR_API_KEY. Generate keys from Account Settings > API Keys."
+            "q": "APIリクエストの認証はどうしますか？",
+            "a": "AuthorizationヘッドにBearerトークンとしてAPIキーを含ませてください。"
           },
           {
-            "q": "What are the API rate limits?",
-            "a": "Free: 100 calls/day. Startup ($79/mo): 500 calls/day. Enterprise ($129/mo): 10,000 calls/day. Rate limit resets daily at 00:00 UTC."
+            "q": "APIの速度制限は？",
+            "a": "無料: 100回/日。スタートアップ: 500。エンタープライス: 10,000。"
           },
           {
-            "q": "What SDKs are available?",
-            "a": "Official SDKs are available for Python, JavaScript/Node.js, Go, and Ruby. Webhook configuration is available for automated notifications with retry logic using exponential backoff."
+            "q": "利用可能なSDKは？",
+            "a": "Python、JavaScript/Node.js、Go、Ruby用の公式SDKが利用可能。"
           }
         ]
       },
       {
-        "title": "Account & support",
+        "title": "アカウントとサポート",
         "items": [
           {
-            "q": "How do I contact support?",
-            "a": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours. Enterprise subscribers can also reach the support team through the private Slack channel."
+            "q": "サポートにどう連絡しますか？",
+            "a": "プレミアムアブネストは4時間以内に返信します。"
           },
           {
-            "q": "Can I cancel my subscription?",
-            "a": "Yes. Cancel anytime from Account Settings > Billing. You retain Premium access until the end of your current billing cycle. Subscription fees are non-refundable."
+            "q": "アブネスのキャンセルはできますか？",
+            "a": "はい。アカウント設定からいずにキャンセルできます。"
           }
         ]
       }
     ],
-    "stillQuestions": "Still have questions?",
-    "supportTeam": "Our support team is here to help",
-    "contactSupport": "Contact support"
+    "stillQuestions": "まだ質問がありますか？",
+    "supportTeam": "サポートテームがお手会いします",
+    "contactSupport": "サポートに連絡"
   },
   "helpApi": {
-    "badge": "API Reference",
-    "title1": "Build with",
-    "title2": "Ceche.",
-    "desc": "A unified REST API for appraising domains, scoring brandability, monitoring trademarks, and managing marketplace listings. All requests require a Bearer token.",
-    "baseUrl": "Base URL",
-    "auth": "Authentication",
+    "badge": "APIドキュメント",
+    "title1": "一統されたAPIで",
+    "title2": "Cecheを構築。",
+    "desc": "ドメインの評価、ブランドスコアリング、トランジフィール盨視のための統合REST API。",
+    "baseUrl": "ベースURL",
+    "auth": "認証",
     "endpoints": [
       {
-        "title": "Appraise a domain",
-        "desc": "Returns a full 16-Dimension valuation. Includes estimated value, dimension scores, brandability rating, and comparable sales data."
+        "title": "ドメインを評価",
+        "desc": "完全な16次元評価を返します。"
       },
       {
-        "title": "Bulk appraisal",
-        "desc": "Appraise up to 5,000 domains in a single request. Returns individual valuations, priority scores, and recommended actions."
+        "title": "一括評価",
+        "desc": "単一のリクエストで最大5,000ドメインを評価します。"
       },
       {
-        "title": "Domain profile",
-        "desc": "Retrieve the full intelligence profile — valuation, SEO metrics, backlink profile, traffic history, and trademark status."
+        "title": "ドメインプロフィール",
+        "desc": "完全な情報プロフィールを取得します。"
       },
       {
-        "title": "Trademark check",
-        "desc": "Screen a domain name against USPTO and WIPO trademark databases. Returns conflict severity and recommended actions."
+        "title": "トランジフィール確証",
+        "desc": "USPTOとWIPOのトランジフィールデータベースに対してドメイン名をフィルタリングします。"
       },
       {
-        "title": "List a domain",
-        "desc": "List a domain on the Ceche marketplace. Standard ($5) or priority ($10) listing."
+        "title": "ドメインを登録",
+        "desc": "Cecheマーケットプレースにドメインを登録します。"
       },
       {
-        "title": "Register webhook",
-        "desc": "Register a webhook URL for real-time notifications on valuation changes, trademark alerts, and marketplace events."
+        "title": "Webhookを登録",
+        "desc": "実時間通知のためのWebhookURLを登録します。"
       }
     ],
-    "rateLimits": "Rate limits",
+    "rateLimits": "速度制限",
     "limits": [
       {
-        "tier": "Free",
-        "limit": "100 calls/day",
+        "tier": "無料",
+        "limit": "100回/日",
         "color": "#888888"
       },
       {
-        "tier": "Startup",
-        "limit": "500 calls/day",
+        "tier": "スタートアップ",
+        "limit": "500回/日",
         "color": "#F4A261"
       },
       {
-        "tier": "Enterprise",
-        "limit": "10,000 calls/day",
+        "tier": "エンタープライス",
+        "limit": "10,000回/日",
         "color": "#9E2A2B"
       }
     ],
     "enterprise": {
-      "badge": "Enterprise",
-      "title": "10,000 API calls per day",
-      "cta": "Get API key"
+      "badge": "エンタープライス",
+      "title": "1日10,000回のAPI呼出",
+      "cta": "APIキーを取得"
     },
-    "openTool": "Open tool"
+    "openTool": "開く"
   },
   "helpContact": {
-    "badge": "Contact",
-    "title1": "Get in",
-    "title2": "touch.",
-    "desc": "Premium subscribers receive responses within 4 business hours. Free account users within 24 business hours.",
+    "badge": "ご連絡",
+    "title1": "ご連絡",
+    "title2": "ください。",
+    "desc": "プレミアムアブネストは4時間以内に返信します。",
     "form": {
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "email": "Email",
-      "emailPlaceholder": "you@company.com",
-      "subject": "Subject",
+      "name": "氏名",
+      "namePlaceholder": "あなたの氏名",
+      "email": "メール",
+      "emailPlaceholder": "あなた@企業.com",
+      "subject": "件名",
       "subjects": [
-        "General inquiry",
-        "Technical support",
-        "Billing question",
-        "Partnership",
-        "Press / Media"
+        "一般のご問い合わせ",
+        "技術サポート",
+        "計算についてのご問い合わせ",
+        "パーターネッシュプ",
+        "プレス / メグリイン"
       ],
-      "message": "Message",
-      "messagePlaceholder": "How can we help?",
-      "send": "Send message"
+      "message": "メッセージ",
+      "messagePlaceholder": "どうご助かしますか？",
+      "send": "メッセージを送信"
     },
     "channels": {
-      "title": "Support channels",
+      "title": "サポートチャンネル",
       "email": {
-        "title": "Email",
+        "title": "メール",
         "value": "support@ceche.net"
       },
       "slack": {
-        "title": "Enterprise Slack",
-        "value": "Private channel for Enterprise subscribers"
+        "title": "エンタープライスSlack",
+        "value": "エンタープライスアブネスト向けのプライベルチャンル"
       }
     },
     "responseTimes": {
-      "title": "Response times",
+      "title": "対応時間",
       "times": [
         {
-          "tier": "Enterprise",
-          "time": "4 hours",
+          "tier": "エンタープライス",
+          "time": "4時間",
           "color": "#9E2A2B"
         },
         {
-          "tier": "Startup",
-          "time": "4 hours",
+          "tier": "スタートアップ",
+          "time": "4時間",
           "color": "#F4A261"
         },
         {
-          "tier": "Free",
-          "time": "24 hours",
+          "tier": "無料",
+          "time": "24時間",
           "color": "#888888"
         }
       ]
     },
     "businessHours": {
-      "title": "Business hours",
-      "desc": "Monday-Friday, 9:00 AM - 6:00 PM ET. Premium Enterprise: 24/7 Slack support. Critical issues monitored around the clock for all Enterprise subscribers."
+      "title": "営業時間",
+      "desc": "月曜日間9:00-18:00ET。プレミアムEnterprise: 24時間Slackサポート。"
     }
   },
   "helpChangelog": {
-    "badge": "Changelog",
-    "title1": "Every commit,",
-    "title2": "documented.",
-    "desc": "Every update sourced directly from our git history. Real commits, real dates, real descriptions.",
+    "badge": "変更リジスター",
+    "title1": "各コミットを、",
+    "title2": "記録。",
+    "desc": "全ての更新は直接git履歴から。",
     "comingSoon": {
-      "badge": "Coming soon",
-      "title": "Auction tracking, mobile app, ML valuation",
-      "cta": "View roadmap"
+      "badge": "即座公開",
+      "title": "オンション追跡、モバイルアプ、AI評価",
+      "cta": "ロードマップを観てみる"
     }
   },
   "premiumModal": {
-    "title": "Premium Feature",
-    "description": "{toolName} requires a premium account. Sign up to unlock this feature and many more.",
-    "redirecting": "Redirecting to signup in {count} seconds...",
-    "cta": "Create Free Account",
-    "back": "Go back"
+    "title": "プレミアム機能",
+    "description": "{toolName}はプレミアムアカウントが必要です。登録してこの機能をブロックしましょう。",
+    "redirecting": "{count}秒後に登録ページへリダイレクトします...",
+    "cta": "無料アカウントを作る",
+    "back": "戻る"
   },
   "appHeader": {
-    "home": "Home",
-    "appraise": "Appraise",
-    "scanner": "Scanner",
-    "marketplace": "Marketplace",
-    "apiKeys": "API Keys",
-    "logout": "Logout"
+    "home": "ホーム",
+    "appraise": "評価",
+    "scanner": "スキャナー",
+    "marketplace": "マーケットプレース",
+    "apiKeys": "APIキー",
+    "logout": "ログアウト"
   },
   "toolTemplate": {
-    "comingSoon": "Coming Soon",
-    "waitlistDesc": "This feature is under active development. Join the waitlist to get early access.",
-    "emailPlaceholder": "Enter your email",
-    "joinWaitlist": "Join Waitlist"
+    "comingSoon": "即座公開",
+    "waitlistDesc": "この機能は現在開発中です。リストに加入してください。",
+    "emailPlaceholder": "メールアドレスを入力",
+    "joinWaitlist": "リストに加入"
   }
 }
