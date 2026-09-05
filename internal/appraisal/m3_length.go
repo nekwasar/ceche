@@ -14,21 +14,29 @@ func (m *M3Length) Execute(domain string, ctx *ToolContext) ToolResult {
 	sld := ctx.SLD
 	length := len(sld)
 
-	// Sigmoid scoring
+	// Sigmoid scoring — shorter = exponentially more valuable
 	score := 100.0 * (1.0 - 1.0/(1.0+math.Exp(-0.8*(float64(length)-5))))
 	score = clamp(score, 0, 100)
 
-	// Multiplier from score
+	// Multiplier from length — premium for ultra-short domains
 	mult := 1.0
 	switch {
-	case score >= 95:
-		mult = 15.0
-	case score >= 75:
-		mult = 8.0
-	case score >= 50:
-		mult = 2.0
-	case score >= 25:
-		mult = 1.2
+	case length <= 1:
+		mult = 15.0 // Single char — ultra premium
+	case length == 2:
+		mult = 10.0 // Two chars — extremely premium
+	case length == 3:
+		mult = 4.0  // Three chars — very premium
+	case length == 4:
+		mult = 4.0  // Four chars — premium
+	case length <= 6:
+		mult = 2.5  // Short — good
+	case length <= 8:
+		mult = 1.8  // Medium
+	case length <= 10:
+		mult = 1.2  // Average
+	default:
+		mult = 1.0  // Long
 	}
 
 	// Digit penalty

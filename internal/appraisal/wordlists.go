@@ -152,7 +152,7 @@ var businessWords = map[string]bool{
 	"deal": true, "partner": true, "affiliate": true, "commission": true,
 	"revenue": true, "profit": true, "margin": true, "cost": true, "price": true,
 	"discount": true, "coupon": true, "promo": true, "loyalty": true,
-	"reward": true, "points": true,
+	"reward": true, "points": true, "car": true, "auto": true, "vehicle": true,
 }
 
 var creativeWords = map[string]bool{

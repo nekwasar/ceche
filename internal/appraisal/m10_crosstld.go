@@ -84,7 +84,12 @@ func checkTLDRegistration(domain, tld string) crossTLDResult {
 	}
 
 	url := fmt.Sprintf("https://rdap.org/domain/%s", domain)
-	client := &http.Client{Timeout: 8 * time.Second}
+	client := &http.Client{
+		Timeout: 8 * time.Second,
+		CheckRedirect: func(req *http.Request, via []*http.Request) error {
+			return nil // follow redirects
+		},
+	}
 
 	resp, err := client.Get(url)
 	if err != nil {

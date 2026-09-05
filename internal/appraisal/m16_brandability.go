@@ -178,18 +178,23 @@ func brandPatternScore(sld string) float64 {
 	return clamp(score, 0, 100)
 }
 
+// brandLengthScore — shorter domains are MORE brandable, not less
 func brandLengthScore(length int) float64 {
 	switch {
 	case length <= 1:
-		return 20.0
+		return 100.0 // Single char — ultimate brand
 	case length <= 2:
-		return 40.0
+		return 95.0  // Two chars — ultra premium
 	case length <= 3:
-		return 60.0
+		return 90.0  // Three chars — very premium
+	case length <= 4:
+		return 85.0  // Four chars — premium
 	case length <= 7:
-		return 100.0
+		return 80.0  // Short — great
+	case length <= 10:
+		return 60.0  // Medium — good
 	default:
-		return math.Max(10, 100-float64(length-7)*12)
+		return math.Max(20, 60-float64(length-10)*5)
 	}
 }
 

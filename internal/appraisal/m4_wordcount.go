@@ -32,11 +32,11 @@ func (m *M4WordCount) Execute(domain string, ctx *ToolContext) ToolResult {
 	mult := 1.0
 	switch {
 	case wordCount <= 1:
-		mult = 20.0
+		mult = 8.0  // Single word — premium
 	case wordCount <= 2:
-		mult = 3.0
+		mult = 3.0  // Two words — good
 	case wordCount <= 3:
-		mult = 1.5
+		mult = 1.5  // Three words — average
 	}
 
 	return ToolResult{

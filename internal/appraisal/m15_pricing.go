@@ -12,22 +12,6 @@ type M15Pricing struct{}
 
 func (m *M15Pricing) Name() string { return "m15_pricing" }
 
-// Weight profiles — .com profile from ceche CLI, default for all others
-var weightProfiles = map[string]map[string]float64{
-	"tier_10": { // .com — original ceche CLI algorithm
-		"m1_rdap": 0.12, "m3_length": 0.08, "m5_pronounce": 0.04,
-		"m7_keyword": 0.08, "m8_cpc": 0.08, "m9_search": 0.04,
-		"m10_cross": 0.0, "m11_trademark": 0.04, "m12_authority": 0.05,
-		"m14_social": 0.03, "m16_brandability": 0.08,
-	},
-	"default": { // non-.com — placeholder, will be built later
-		"m1_rdap": 0.08, "m3_length": 0.06, "m5_pronounce": 0.06,
-		"m7_keyword": 0.15, "m8_cpc": 0.15, "m9_search": 0.03,
-		"m10_cross": 0.05, "m11_trademark": 0.03, "m12_authority": 0.03,
-		"m14_social": 0.03, "m16_brandability": 0.10,
-	},
-}
-
 // TLD multipliers for scarcity base
 var tldMultipliers = map[string]float64{
 	"com": 1.0, "net": 0.8, "io": 0.4, "ai": 0.4,
@@ -62,7 +46,7 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 			if m6, ok := ctx.Results["m6_segmenter"]; ok {
 				if intent, ok := m6.Findings["intent"].(string); ok {
 					if intent == IntentHigh {
-						value *= 10.0 // CPC boost for high-intent brandable
+						value *= 10.0
 					}
 				}
 			}
@@ -82,66 +66,41 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 		}
 	}
 
-	// Stage 2: Weighted multiplier application
+	// Stage 2: Direct multiplier application (no weighted power compression)
 	breakdown := map[string]interface{}{
 		"scarcity_base": base,
 		"tld_mult":      tldMult,
 		"base_value":    value,
 	}
 
-	// Select weight profile based on M2's weight_profile from M2TLD
-	profile := "default"
-	if ctx.Results != nil {
-		if m2, ok := ctx.Results["m2_tld_table"]; ok {
-			if p, ok := m2.Findings["weight_profile"].(string); ok {
-				// Map M2's profile names to our weight profiles
-				switch p {
-				case "tier_10", "Premium":
-					profile = "tier_10" // .com only for now
-				default:
-					profile = "default"
-				}
-			}
-		}
+	// Apply key multipliers directly with diminishing returns
+	keyMultipliers := []struct {
+		name string
+		weight float64
+	}{
+		{"m3_length", 0.25},
+		{"m4_word_count", 0.20},
+		{"m5_pronounce", 0.10},
+		{"m7_keyword", 0.10},
+		{"m8_cpc", 0.10},
+		{"m9_search", 0.10},
+		{"m10_cross", 0.05},
+		{"m12_authority", 0.05},
+		{"m16_brandability", 0.15},
 	}
 
-	weights := weightProfiles[profile]
-	if weights == nil {
-		weights = weightProfiles["default"]
-	}
-
-	// Normalize weights for active modules
-	totalWeight := 0.0
-	for modName, weight := range weights {
+	for _, km := range keyMultipliers {
 		if ctx.Results != nil {
-			if mod, ok := ctx.Results[modName]; ok && mod.Multiplier != nil {
-				totalWeight += weight
-			}
-		}
-	}
-
-	if totalWeight > 0 {
-		for modName, weight := range weights {
-			if ctx.Results != nil {
-				if mod, ok := ctx.Results[modName]; ok && mod.Multiplier != nil {
-					normalizedWeight := weight / totalWeight
-					mult := *mod.Multiplier
-
-					var contribution float64
-					if modName == "m12_authority" && mult >= 1.0 {
-						contribution = 1.0 + normalizedWeight*(mult-1.0)
-					} else if mult >= 1.0 {
-						contribution = math.Pow(mult, normalizedWeight)
-					} else {
-						contribution = mult
-					}
-
-					value *= contribution
-					breakdown[modName] = map[string]interface{}{
-						"multiplier":   mult,
-						"weight":       weight,
-						"contribution": math.Round(contribution*1000) / 1000,
-					}
+			if mod, ok := ctx.Results[km.name]; ok && mod.Multiplier != nil {
+				mult := *mod.Multiplier
+				// Apply with diminishing returns: mult^(weight)
+				// This preserves direction but compresses extremes
+				contribution := math.Pow(mult, km.weight)
+				value *= contribution
+				breakdown[km.name] = map[string]interface{}{
+					"multiplier":   mult,
+					"weight":       km.weight,
+					"contribution": math.Round(contribution*1000) / 1000,
 				}
 			}
 		}
@@ -183,7 +142,6 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 			"estimated_value": math.Round(value),
 			"range_low":       math.Round(rangeLow),
 			"range_high":      math.Round(rangeHigh),
-			"weight_profile":  profile,
 			"scarcity_base":   base,
 			"tld_mult":        tldMult,
 			"breakdown":       breakdown,
@@ -195,35 +153,78 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 
 func (m *M15Pricing) calculateScarcityBase(sld string, splitStatus string) float64 {
 	length := len(sld)
+	isWord := isKnownWord(sld)
 
-	if splitStatus == IntentBrand || splitStatus == "" {
-		// Brandable domain scarcity
-		switch {
-		case length <= 4:
-			return 10000
-		case length <= 7:
-			return 1000
-		default:
-			return 500
+	// Dictionary word domains — shorter words are MORE valuable
+	if isWord {
+		var base float64 = 5000000 // Default dictionary word
+
+		// High-value commercial keywords get massive bonus
+		commercialWords := map[string]bool{
+			"business": true, "market": true, "shop": true, "store": true,
+			"pay": true, "buy": true, "sell": true, "trade": true,
+			"finance": true, "bank": true, "invest": true, "money": true,
+			"health": true, "medical": true, "legal": true, "insurance": true,
+			"real": true, "estate": true, "home": true, "car": true,
+			"auto": true, "tech": true, "digital": true, "cloud": true,
+			"software": true, "app": true, "web": true, "data": true,
+			"ai": true, "crypto": true, "bitcoin": true,
 		}
+		if commercialWords[sld] {
+			// Premium commercial keywords — highest value
+			premiumCommercial := map[string]bool{
+				"business": true, "market": true, "finance": true, "insurance": true,
+				"software": true, "digital": true, "crypto": true, "health": true,
+				"medical": true, "legal": true, "real": true, "estate": true,
+			}
+			if premiumCommercial[sld] {
+				base = 40000000  // Premium commercial keyword
+			} else {
+				switch {
+				case length <= 3:
+					base = 10000000  // Short commercial keyword (car, ai, etc.)
+				case length <= 5:
+					base = 8000000   // Short-medium
+				default:
+					base = 6000000   // Medium commercial keyword
+				}
+			}
+		} else {
+			switch {
+			case length <= 2:
+				base = 15000000
+			case length <= 3:
+				base = 12000000
+			case length <= 5:
+				base = 8000000
+			case length <= 8:
+				base = 5000000
+			default:
+				base = 2000000
+			}
+		}
+		return base
 	}
 
-	// Keyword domain scarcity (length-based)
-	var lengthBase float64
+	// Non-dictionary domains — value based on length and brandability
 	switch {
+	case length <= 1:
+		return 50000000  // Single char — ultimate (even if not dictionary)
+	case length <= 2:
+		return 30000000  // Two chars — ultra premium
 	case length <= 3:
-		lengthBase = 13000000
+		return 13000000  // Three chars — very premium
 	case length <= 4:
-		lengthBase = 1000000
+		return 500000    // Four chars
 	case length <= 5:
-		lengthBase = 100000
+		return 100000    // Five chars
 	case length <= 7:
-		lengthBase = 10000
+		return 10000     // Seven chars
+	case length <= 9:
+		return 2000      // Nine chars
 	default:
-		lengthBase = 1000
+		return 500       // Long
 	}
-
-	return lengthBase
 }
 
 func formatMoney(v float64) string {
