@@ -216,7 +216,36 @@ func queryDNSBL(domain, host string) dnsblResult {
 	}
 
 	code := parseResponseCode(ips[0])
-	return dnsblResult{Listed: true, Code: code, Source: host}
+
+	// URIBL/SURBL response format:
+	// 127.0.0.1 — default response, not listed
+	// 127.0.0.2.x — listed (x = list bitmask)
+	// 127.0.0.255.x — request accepted, domain not on any list
+	isListed := true
+	parts := strings.Split(ips[0], ".")
+	if len(parts) >= 4 {
+		thirdOctet := 0
+		for _, c := range parts[2] {
+			if c >= '0' && c <= '9' {
+				thirdOctet = thirdOctet*10 + int(c-'0')
+			}
+		}
+		fourthOctet := 0
+		for _, c := range parts[3] {
+			if c >= '0' && c <= '9' {
+				fourthOctet = fourthOctet*10 + int(c-'0')
+			}
+		}
+		// 127.0.0.1 = not listed
+		// 127.0.0.255.x = not listed (request accepted)
+		if thirdOctet == 0 && fourthOctet == 1 {
+			isListed = false
+		} else if thirdOctet == 255 {
+			isListed = false
+		}
+	}
+
+	return dnsblResult{Listed: isListed, Code: code, Source: host}
 }
 
 func parseResponseCode(ip string) int {
