@@ -149,11 +149,11 @@ func (o *Orchestrator) runPhase1(domain string, ctx *ToolContext) {
 func (o *Orchestrator) runPhase2(domain string, ctx *ToolContext) {
 	m3 := o.tools["m3_length"]
 	m4 := o.tools["m4_word_count"]
-	m5 := o.tools["m5_pronounceability"]
+	m5 := o.tools["m5_pronounce"]
 
 	o.results["m3_length"] = m3.Execute(domain, ctx)
 	o.results["m4_word_count"] = m4.Execute(domain, ctx)
-	o.results["m5_pronounceability"] = m5.Execute(domain, ctx)
+	o.results["m5_pronounce"] = m5.Execute(domain, ctx)
 }
 
 // Phase 3: Conditional — if brandable keywords found
@@ -175,7 +175,7 @@ func (o *Orchestrator) runPhase3(domain string, ctx *ToolContext) {
 func (o *Orchestrator) runPhase4(domain string, ctx *ToolContext) {
 	m8spam := o.tools["m8_spam"]
 	search := o.tools["search_domain"]
-	m10 := o.tools["m10_cross_tld"]
+	m10 := o.tools["m10_cross"]
 	m11dns := o.tools["m11_dns_history"]
 	m12 := o.tools["m12_authority"]
 
@@ -188,7 +188,7 @@ func (o *Orchestrator) runPhase4(domain string, ctx *ToolContext) {
 	// Run search tool (for competitor identification)
 	o.results["search_domain"] = search.Execute(domain, ctx)
 	
-	o.results["m10_cross_tld"] = m10.Execute(domain, ctx)
+	o.results["m10_cross"] = m10.Execute(domain, ctx)
 	o.results["m12_authority"] = m12.Execute(domain, ctx)
 }
 
@@ -288,7 +288,7 @@ func normalizeScore(value float64, results map[string]ToolResult) int {
 	if m3, ok := results["m3_length"]; ok && m3.Multiplier != nil && *m3.Multiplier >= 8.0 {
 		score += 10
 	}
-	if m5, ok := results["m5_pronounceability"]; ok && m5.Multiplier != nil && *m5.Multiplier >= 1.5 {
+	if m5, ok := results["m5_pronounce"]; ok && m5.Multiplier != nil && *m5.Multiplier >= 1.5 {
 		score += 5
 	}
 	if m16, ok := results["m16_brandability"]; ok && m16.Multiplier != nil && *m16.Multiplier >= 5.0 {

@@ -2,6 +2,7 @@ package worker
 
 import (
 	"context"
+	"sync"
 	"time"
 
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -12,6 +13,7 @@ type LockExpiryWorker struct {
 	db       *pgxpool.Pool
 	interval time.Duration
 	stopCh   chan struct{}
+	once     sync.Once
 }
 
 func NewLockExpiryWorker(db *pgxpool.Pool, interval time.Duration) *LockExpiryWorker {
@@ -45,7 +47,9 @@ func (w *LockExpiryWorker) Start(ctx context.Context) {
 }
 
 func (w *LockExpiryWorker) Stop() {
-	close(w.stopCh)
+	w.once.Do(func() {
+		close(w.stopCh)
+	})
 }
 
 func (w *LockExpiryWorker) expireLocks(ctx context.Context) {
