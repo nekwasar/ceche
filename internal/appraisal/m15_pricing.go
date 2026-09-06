@@ -62,7 +62,7 @@ func (m *M15Pricing) Execute(domain string, ctx *ToolContext) ToolResult {
 	if tldMult == 0 {
 		tldMult = 0.1
 	}
-	basePrice := priceCurve(intrinsicScore, tldMult)
+	basePrice := PriceCurve(intrinsicScore, tldMult)
 
 	// TIER 2: Apply bounded API adjustments
 	apiMultiplier := m.calculateTier2Multiplier(ctx)
@@ -291,9 +291,9 @@ func (m *M15Pricing) getTier2Breakdown(ctx *ToolContext) map[string]interface{} 
 	return breakdown
 }
 
-// priceCurve maps an intrinsic score (0-100) to a dollar value
+// PriceCurve maps an intrinsic score (0-100) to a dollar value
 // Calibrated to match expected domain values
-func priceCurve(score float64, tldMult float64) float64 {
+func PriceCurve(score float64, tldMult float64) float64 {
 	score = clamp(score, 0, 100)
 
 	// Piecewise linear curve calibrated to expected values

@@ -58,6 +58,10 @@ func NewRouter(cfg *config.Config, db *pgxpool.Pool) http.Handler {
 		r.Get("/tools/list", handleListTools())
 		r.Get("/tools/schema", handleGetToolSchema())
 
+		// Review endpoints (for AI agent review interface)
+		r.Post("/tools/review", HandleReview())
+		r.Post("/tools/apply-review", HandleApplyReview())
+
 		// Webhook (no auth — verified by HMAC signature)
 		r.Post("/webhooks/paystack", handlePaystackWebhook(db))
 
